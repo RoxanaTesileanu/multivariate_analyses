@@ -1,2 +1,15 @@
-The QR decomposition of a raw matrix Y (singular value decomposition)
+The QR decomposition of a raw data matrix Y (singular value decomposition)
 
+Notation:
+
+Y - the raw data matrix
+Z - matrix of eigenvectors of YY' 
+YY' - covariance matrix between objects
+U - matrix of eigenvectors of Y'Y
+Y'Y - covariance matrix between variables
+L - contains the eigenvalues (λI)
+
+
+The SVD of Y is:
+
+Y = ZL^1/2U' 
