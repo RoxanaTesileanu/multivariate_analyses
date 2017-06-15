@@ -1,4 +1,4 @@
-The QR-decomposition of a correlation matrix C
+The QR-decomposition of a correlation matrix C (spectral decomposition)
 
 Notations:
 C - correlation matrix
