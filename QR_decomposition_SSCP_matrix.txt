@@ -1,1 +1,2 @@
-The QR decomposition of a sums-of-squares-and-cross-products (SSCP) matrix (singular value decomposition)
+The QR decomposition of a raw matrix Y (singular value decomposition)
+
