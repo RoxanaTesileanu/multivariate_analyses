@@ -1,2 +1,30 @@
 The QR-decomposition of a correlation matrix C
 
+Notations:
+C - correlation matrix
+U - a p by p matrix with orthonormal columns (the columns are eigenvectors)
+U' - a transpose of U
+R - an invertible p by p upper triangular matrix
+L - a matrix with the eigenvalues on the diagonal
+
+The correlation matrix C can be decomposed in: 
+C = UR 
+
+From Theorem 2 (p. 289 Paul's Notes): 
+U'U = I (I of dimension p)
+
+Now we can write that:
+
+Cx = URx=b (where b is a column vector)
+
+From Theorem 3 (p. 291 Paul's Notes):
+Rx = U'b
+
+So, we can write:
+Cx = UU'b
+Because UU'=I, we can further write:
+Cx = Ib
+Now from Quinn and Keogth (2002) we know:
+Ib = L, so that Cx = L (where x is the eigenvector of C associated with L)
+
+
