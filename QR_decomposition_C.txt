@@ -1,0 +1,2 @@
+The QR-decomposition of a correlation matrix C
+
