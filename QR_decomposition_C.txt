@@ -24,7 +24,19 @@ So, we can write:
 Cx = UU'b
 Because UU'=I, we can further write:
 Cx = Ib
-Now from Quinn and Keogth (2002) we know:
-Ib = L, so that Cx = L (where x is the eigenvector of C associated with L)
+Now from Quinn and Keogh (2002, p. 407) we know:
+Ib = L, so that Cx = L (where x is the eigenvector of C associated with L).
+Thus, the correlation matrix C multiplyied with the eigenvector x gives the matrix with the eigenvalues on the diagonal L.
+It is a direct application of the definition of the characteristic equation of some matrix A (Paul's Notes, p. 311):
+λIx − Ax = 0 (λ - eigenvalues, I - identity matrix corresponding to the dimension of A)
+
+In short, the process decomposes the correlation matrix C to be able to find b (the vector of eigenvalues) by solving the eq. det(λI − A) = 0. This information on b is used to find x the eigenvector using:  Rx = U'b (U' is found out in the decomposition of C, b was previously found out by solving the characteristic eq., so we just solve now for x). This is done for each eigenvalue. 
+
+
+
+References:
+
+Quinn G, Keough M (2002):  
+
 
 
