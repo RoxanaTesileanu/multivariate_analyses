@@ -32,7 +32,7 @@ It is a direct application of the definition of the characteristic equation of s
 
 In short, the process decomposes the correlation matrix C to be able to find U (the matrix with eigenvectors as columns). Then, b (the vector of eigenvalues) is found by solving the eq. det(λI − A) = 0. Each eigenvalue has an associated eigenvector. 
 
-Suppose the eivenvalues and their associated egenvectors are known now. So, the matrix U is now known (the matrix with the eigenvectors as columns) and the eigenvalues on the diagonal of L as known. If the eigenvectors are known, the scores for each object for each of the derived variables (components) used in multivariate analyses can now be computed (Quinn and Keough 2002, p. 408).   
+Suppose the eivenvalues and their associated egenvectors are known now. So, the matrix U is now known (the matrix with the eigenvectors as columns) and the eigenvalues on the diagonal of L are now known as well. If the eigenvectors are known, the scores for each object for each of the derived variables (components) used in multivariate analyses can now be computed (Quinn and Keough 2002, p. 408).   
 
 
 
