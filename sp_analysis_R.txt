@@ -1,0 +1,4 @@
+Applied Spatial Data Analysis with R
+Bivand, Pebesma, Gomez-Rubio 2008
+
+
