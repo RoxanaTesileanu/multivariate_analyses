@@ -20,7 +20,15 @@ Grid: a collection of points or rectangular cells, organised in a regular lattic
 
 Vector data models represent entities as exactly as possible. A raster data model represents continuous surfaces. 
 
+The rPython package calls Python in R. Usage from RBloggers https://www.r-bloggers.com/calling-python-from-r-with-rpython/:
 
+library(rPython)
+ 
+# Load/run the main Python script
+python.load("myscript.py")
+# Getting the variable
+new_subs_data <- python.get("new_subs")
+head(new_subs_data)
 
 
 
