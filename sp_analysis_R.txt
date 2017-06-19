@@ -12,7 +12,15 @@ Handling spatial data in R:
 Types of spatial data:
 - spatial data have spatial reference (coord. values and a system of reference for those values). One of the most frequently used combinations is: pairs of longitude/latitude decimal degree values combined with the WGS84 (World Geodetic System 84) representation of the Earth.
 - if spatial data include additional information like e.g. time, then time is called an attribute. Attributes are non-spatial information but are believed to exist for each spatial entity.
-- 
+- the purely spatial information of entities is represented by spatial data models: point, line, polygon, grid.
+Point: a single point location (GPS reading or geocoded address). VECTOR DATA MODEL
+Line: a set of ordered points, connected by straight line segments. VECTOR DATA MODEL
+Polygon: an area, marked by one or more enclosing lines, possibly containing holes. VECTOR DATA MODEL
+Grid: a collection of points or rectangular cells, organised in a regular lattice. RASTER DATA MODEL
+
+Vector data models represent entities as exactly as possible. A raster data model represents continuous surfaces. 
+
+
 
 
 
