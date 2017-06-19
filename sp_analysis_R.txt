@@ -2,3 +2,7 @@ Applied Spatial Data Analysis with R
 Bivand, Pebesma, Gomez-Rubio 2008
 
 
+Handling spatial data in R
+
+- the sp package: classes that look like GIS data models (to GIS people) and also behave like data frames (to applied statisticians)
+- spatial data analysis is concerned with questions not directly answered by looking at the data themselves. Statistical inference reveals the processes that generate the observed data. 
