@@ -2,6 +2,8 @@ Applied Spatial Data Analysis with R
 Bivand, Pebesma, Gomez-Rubio 2008
 
 
+ch. 1: Introducing spatial data
+
 Handling spatial data in R:
 
 - the sp package: classes and methods that look like GIS data models (to GIS people) and also behave like data frames (to applied statisticians)
@@ -29,6 +31,16 @@ python.load("myscript.py")
 # Getting the variable
 new_subs_data <- python.get("new_subs")
 head(new_subs_data)
+
+The gstat package provides a wide range of functions for univariate and multivariate geostatistics.
+The geoR and geoRglm contain functions for model-based geostatistics.
+The spBayes fits Gaussian univariate and multivariate models with MCMC.
+The spTimer (also Bayesian), spatially predict and temporarily forcast large amounts of space-time data.
+....and many more in the CRAN task view Analysis of Spatial Data.
+
+
+ch. 2: Classes for spatial data in R
+
 
 
 
