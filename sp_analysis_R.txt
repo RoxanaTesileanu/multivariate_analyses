@@ -41,8 +41,52 @@ The spTimer (also Bayesian), spatially predict and temporarily forcast large amo
 
 ch. 2: Classes for spatial data in R
 
+- use the str() function to inspect the general information about the structure of smth in the R workspace (when uncertain about it)
+- slots in class definitions: name and type of components (the representation of what the class contains)
+
+Spatial Objects 
+- objects of class Spatial with two slots: the bounding box (eastings and northings) and a CRS class object (CRS- coordinate referencec system)
+- the default value of a CRS object it NA 
+- use the getclass() function to return the complete definition of a class including slot names and types of their contents and known subclasses
+ (e.g. class spatial: known subclasses are SpatialPoints, SpatialLines, SpatialPolygons, SpatialPointsDataFrame, SpatialPixels, SpatialGrid, SpatialPixelsDataFrame, SpatialGridDataFrame, SpatialLinesDataFrame, SpatialPolygonsDataFrame)
+ - ok, I guess slots are equivalent to parameters in Scala. The class CRS for example has one parameter (projargs) of type String and this string should be a PROJ.4-format string describing the projection.
+
+Example: for geographical coordinates, the projection is "+proj=longlat", so:
+library(sp)
+
+mycrs <- CRS(projargs="+proj=longlat")
+m <- matrix(c(350, 85, 370, 95 ), ncol=2,  dimnames=list(NULL, c("min", "max")))
+m
+getClass("CRS") 
+mySpatialObj <- Spatial(bbox=m, proj4string = mycrs)
 
 
+R-Output
+
+> library(sp)
+> mycrs <- CRS(projargs="+proj=longlat")
+> m <- matrix(c(350, 85, 370, 95 ), ncol=2,  dimnames=list(NULL, c("min", "max")))
+> m
+     min max
+[1,] 350 370
+[2,]  85  95
+> getClass("CRS") 
+Class "CRS" [package "sp"]
+
+Slots:
+                
+Name:   projargs
+Class: character
+> mySpatialObj <- Spatial(bbox=m, proj4string = mycrs)
+> mySpatialObj
+An object of class "Spatial"
+Slot "bbox":
+     min max
+[1,] 350 370
+[2,]  85  95
+
+Slot "proj4string":
+CRS arguments: +proj=longlat +ellps=WGS84 
 
 
 
