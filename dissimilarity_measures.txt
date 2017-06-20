@@ -5,3 +5,11 @@ Dissimilarity measures between objects for continuous variables
 - the square root of the sum over all variables, of the square of the difference between the values of each variable for the two objects
 - it is 0 for two objects with exaclty the same valures for all variables; otherwise has no upper limit and can be computed even if the objects have no variable in common at all
 
+2. City block or Manhattan 
+- the sum (across variables) of the absolute differences in the value of each variable between two objects
+- will be dominated by variables with large values 
+
+3. Minkowski
+- in addition to Euclidean and City block, this measure normalizes both measures by dividing by the sample size, i.e. the no. of variables that contribute to the disctance measure
+- for data sets with different no. of variables
+- 
