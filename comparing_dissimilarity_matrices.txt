@@ -1,0 +1,6 @@
+Comparing distance and/or dissimilarity matrices
+
+- test whether two or more matrices are correlated with each other
+- example: compare the matrix of genetic distances between 10 villages to the matrix of geographic distances between the villages.
+- example: examine spatial structure when one matrix might be differences in response of experimental units and the other might be the actual physical distances between units
+- 

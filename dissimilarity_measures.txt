@@ -51,6 +51,8 @@ ____________________________
 
 Comparison of dissimilarity measures
 
+Which of the many dissimilarity measures to use depends on the purpose of the analysis!
+Check if the model used requires a dissimilarity measure which is metric. 
 
 
 
