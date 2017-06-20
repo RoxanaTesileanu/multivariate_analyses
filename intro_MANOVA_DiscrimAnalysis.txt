@@ -1,0 +1,4 @@
+ch. 16 Multivariate Analysis of variance and discriminant analysis
+
+- examine the relationship between two or more response variables and one or more categorical predictor variables.
+-
