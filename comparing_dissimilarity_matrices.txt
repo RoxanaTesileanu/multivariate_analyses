@@ -13,3 +13,4 @@ Other approaches:
 -example: McCue et al. (1996) correlated the matrix of Cavalli-Svorza genetic distances between the 8 subpopulations of a rare annual plant in California and the matrix of geographic distance between subpopulations.
 
 For more than two matrices we can use an analogue of the coefficient of multiple correlation (r^2) and partial correlations (using the partial Mantel's test).
+
