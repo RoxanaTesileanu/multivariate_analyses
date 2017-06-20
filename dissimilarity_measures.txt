@@ -1,0 +1,7 @@
+Dissimilarity measures between objects for continuous variables
+
+1. Euclidean
+- the distance between two objects in multidimensional space
+- the square root of the sum over all variables, of the square of the difference between the values of each variable for the two objects
+- it is 0 for two objects with exaclty the same valures for all variables; otherwise has no upper limit and can be computed even if the objects have no variable in common at all
+
