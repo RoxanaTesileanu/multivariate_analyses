@@ -88,5 +88,9 @@ Slot "bbox":
 Slot "proj4string":
 CRS arguments: +proj=longlat +ellps=WGS84 
 
+_______________________________________
+
+The SpatialPoints class
+- the first subclass of the Spatial class
 
 
