@@ -11,6 +11,17 @@ ch. 16 Multivariate Analysis of variance and discriminant analysis
 
 Single factor MANOVA
 
-The MANOVA is based on the linear combination z of p response variables. This linear combination maximizes the ratio of between-group and within-group variances of z. This linear combination is also called the discriminant function for the difference between groups and is used in discriminant function analysis. 
+The MANOVA is based on the linear combination z of p response variables. This linear combination maximizes the ratio of between-group and within-group variances of z using matrix algebra. This linear combination is also called the discriminant function for the difference between groups and is used in discriminant function analysis. 
+Now, the process of determining the linear combination includes three SSCP matrices: 
+- one matrix for between groups (the effect matrix H)
+- one matrix for within groups (the error or residual matrix E)
+- one matrix for total (the total matrix T).
+
+Next we multiply H with the inverse of E, i.e. HE^-1 (we actually "divide" H by E).
+We then decompose the resulting matrix to calculate characteristic roots (eigenvalues) of each linear combination (eigenvector).
+The linear combination producing the largest eigenvalue is the linear combination that maximizes the ratio of between-group and within-group variance. 
+
+
+
 
 
