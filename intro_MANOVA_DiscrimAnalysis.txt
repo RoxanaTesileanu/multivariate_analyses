@@ -1,4 +1,16 @@
 ch. 16 Multivariate Analysis of variance and discriminant analysis
 
 - examine the relationship between two or more response variables and one or more categorical predictor variables.
--
+
+1. MANOVA
+
+- we record more than one response variable from each sampling or experimental unit and these units are allocated to or occur in treatment groups
+- example: we record abundances of many species or measure more than one physiological variables on objects that occur or are allocated to different experimental treatments. For example we have three predator treatments and measure body mass, egg mass, percentage of eggs, total mass and maturation time on mayfly. 
+
+- basically, our hypothesis is now about group effects ON A COMBINATION OF THE RESPONSE VARIABLES and we compare group centroids for two or more variables.
+
+Single factor MANOVA
+
+The MANOVA is based on the linear combination z of p response variables. This linear combination maximizes the ratio of between-group and within-group variances of z. This linear combination is also called the discriminant function for the difference between groups and is used in discriminant function analysis. 
+
+
