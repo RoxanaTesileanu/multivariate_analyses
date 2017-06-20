@@ -29,3 +29,15 @@ Dissimilarity measures between objects for continuous variables
 
 Dissimilarity measures for dichotomous (binary) variables
 
+a - is the no. of variables with non-zero values in both objects
+b - is the no. of variables with non-zero values in object 1
+c - is the no. of variables with non-zero values in object 2
+
+Jaccard's coefficient (measure of dissimilarity between two objects with binary variables)
+1-(a/(a+b+c))
+
+A slight modification is Sorensen's coeff., which replaces a by 2a.
+Sorensen's coeff. is identical to Bray-Curtis measure for binary variables.
+
+
+
