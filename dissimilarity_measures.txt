@@ -11,5 +11,21 @@ Dissimilarity measures between objects for continuous variables
 
 3. Minkowski
 - in addition to Euclidean and City block, this measure normalizes both measures by dividing by the sample size, i.e. the no. of variables that contribute to the disctance measure
-- for data sets with different no. of variables
-- 
+- for data sets with different no. of variables !
+
+4. Canberra
+- like the City block measure, except that the difference between objects for each variable is divided by the sum of the variable values in the two objects before summing across variables
+- to ensure it has an upper limit of 1, we standardize it by the no. of variables that are greater than zero in both objects
+- the Canberra measure is less influenced by variables with very large values than the City block measure!
+
+5. Bray-Curtis
+- also a modification of City block
+- the sum of differences between objects across variables is standardized by the sum of the variable values across objects, also summed across variables
+- it ranges between 0 and 1 (0 when both objects completely similar and 1 when completely dissimilar)
+
+6. Chi-square
+- is only applicable when the variables are counts!
+
+
+Dissimilarity measures for dichotomous (binary) variables
+
