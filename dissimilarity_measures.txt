@@ -26,6 +26,7 @@ Dissimilarity measures between objects for continuous variables
 6. Chi-square
 - is only applicable when the variables are counts!
 
+__________________________
 
 Dissimilarity measures for dichotomous (binary) variables
 
@@ -38,6 +39,20 @@ Jaccard's coefficient (measure of dissimilarity between two objects with binary 
 
 A slight modification is Sorensen's coeff., which replaces a by 2a.
 Sorensen's coeff. is identical to Bray-Curtis measure for binary variables.
+
+_____________________________
+
+Dissimilarity measures for mixed variables
+
+For situations that include A MIXTURE OF CONTINUOUS AND CATEGORICAL VARIABLES.
+Gower's coefficient - an "average over all possible similarities"; handles a mixture of variable types by calculating similarity for each variable separately then averaging those similatities.
+
+____________________________
+
+Comparison of dissimilarity measures
+
+
+
 
 
 
