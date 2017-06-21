@@ -28,6 +28,9 @@ One of the commonest applications of MANOVA in biology is in the ANALYSIS OF REP
 
 2. Discriminant function analysis
 
+DFA is a classification technique. It can be used to classify new observations into one of the pre-defined groups.
+Mathematically DFA is identical to single factor MANOVA. 
+Most uses of DFA in biology have focued on description and hypothesis testing rather than classification.
 
 
 
