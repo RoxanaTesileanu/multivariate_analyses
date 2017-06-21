@@ -19,8 +19,12 @@ Now, the process of determining the linear combination includes three SSCP matri
 
 Next we multiply H with the inverse of E, i.e. HE^-1 (we actually "divide" H by E).
 We then decompose the resulting matrix to calculate characteristic roots (eigenvalues) of each linear combination (eigenvector).
-The linear combination producing the largest eigenvalue is the linear combination that maximizes the ratio of between-group and within-group variance. 
+The linear combination producing the largest eigenvalue is the linear combination that maximizes the ratio of between-group and within-group variance and the eigenvector is a vector of coefficients or weights for that linear combination. 
 
+Afterwards we go through the usual statistical procedures: testing the null hypothesis, interpreting results, etc. 
+MANOVA can also be used to investigate more complex designs. The basic ideas remain the same.
+
+2. Discriminant function analysis
 
 
 
