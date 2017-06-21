@@ -24,6 +24,8 @@ The linear combination producing the largest eigenvalue is the linear combinatio
 Afterwards we go through the usual statistical procedures: testing the null hypothesis, interpreting results, etc. 
 MANOVA can also be used to investigate more complex designs. The basic ideas remain the same.
 
+One of the commonest applications of MANOVA in biology is in the ANALYSIS OF REPEATED MEASURES DESIGNS, where the differences between pairs of repeated measurements are analysed as multiple response variables using MANOVA statistics.
+
 2. Discriminant function analysis
 
 
