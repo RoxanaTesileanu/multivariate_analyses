@@ -1,0 +1,7 @@
+Principal components analysis (PCA)
+
+The components are extracted either by spectral decomposition or singular value decomposition depending on the matrix used. 
+We will have a z score for kth component for the ith object. There will be p components, but the first few summarize in general the most of the variation in the original variables. 
+
+
+
