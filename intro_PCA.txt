@@ -7,6 +7,8 @@ Don't forget to do an analysis of residuals if you retain less than p components
 You can use scaling/ordination plots to present the results.
 
 
+Correspondence analysis
+
 
 
 
