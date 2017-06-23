@@ -7,7 +7,9 @@ Don't forget to do an analysis of residuals if you retain less than p components
 You can use scaling/ordination plots to present the results.
 
 
-Correspondence analysis
+Correspondence analysis (CA)
+
+The main aim of CA is to summarize the lack of independence between objects and variables of a contingency table as a small no. of derived variables, sometimes called principal axes.
 
 
 
