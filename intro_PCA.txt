@@ -9,8 +9,7 @@ You can use scaling/ordination plots to present the results.
 
 Correspondence analysis (CA)
 
-The main aim of CA is to summarize the lack of independence between objects and variables of a contingency table as a small no. of derived variables, sometimes called principal axes.
+The main aim of CA is to summarize the lack of independence between objects and variables of a contingency table as a small no. of derived variables, sometimes called principal axes. The principal axes are obtained through SVD or spectral decomposition. Interpretation is similar to PCA.
 
 
-
-
+Canonical correlation analysis 
