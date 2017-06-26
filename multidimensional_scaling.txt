@@ -2,5 +2,10 @@ ch. 18 Multidimensional scaling
 
 1. Classical scaling - principal coordinates analysis (PCoA)
 
-The matrix of transformed dissimilarities between objects is decomposed through a spectral decomposition. We obtain the eigenvectors scale them by eigenvalues and use the coefficients to plot the objects on the scaling plot.
+The matrix of transformed dissimilarities between objects is decomposed through spectral decomposition. We obtain the eigenvectors, scale them by eigenvalues and use the coefficients to plot the objects on the scaling plot.
+
+
+You can use any dissimilarity measure you consider appropriate for your investigation.
+
+2. Enhanced multidimensional scaling
 
