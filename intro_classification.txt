@@ -18,7 +18,7 @@ Most algorithms for agglomerative cluster analysis start with a matrix of pairwi
 - the procedure continues until all objects are linked in clusters.
 
 Example: genetic structure of a rare plant
-- cluster the subpopulations of a rare annual plant based on Cavalli-Sforza genetic distances between the subpopulations. The pattern is similar to the one obtained from the MDS procedure.
+- cluster the subpopulations of a rare annual plant based on Cavalli-Sforza genetic distances between the subpopulations. The pattern is similar to the one obtained from the MDS procedure. But this is not always the case!! No hypotheses regarding group differences can be tested within the cluster analysis framework!
 
-Divisive hierarchical clustering
+
 
