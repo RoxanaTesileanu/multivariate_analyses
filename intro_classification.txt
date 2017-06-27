@@ -1,0 +1,8 @@
+ch 18.2 Classification
+
+One form of classification analysis is the discriminant function analysis where the no. of groups is known a priori.
+Another class of classification methods tries to identify the no. of groups from the data. The aim is to group together a no. of objects based on their attributes or variables to produce GROUPS OF OBJECTS where each object within a group is more similar to other objects in that group than to objects in other groups.
+
+1. Cluster analysis
+
+
