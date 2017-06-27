@@ -11,3 +11,6 @@ You can use any dissimilarity measure you consider appropriate for your investig
 
 Improves the fit between dissimilarities and inter-object distances by means of iterative algorithm. 
 You can show the relationship between inter-object distance and dissimilarity for all pairs of objects in a Shepard diagram (a scatterplot with dissimilarity on the horizontal axis and inter-object distance on the vertical axis).
+
+One measure of fit is the Kruskal's stress.
+
