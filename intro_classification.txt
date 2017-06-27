@@ -10,3 +10,15 @@ Probably the most important use of cluster analysis in biology is taxonomic and 
 
 Agglomerative hierarchical clustering
 
+Most algorithms for agglomerative cluster analysis start with a matrix of pairwise similarities or dissimilarities between the objects and the steps are as follows:
+- calculate a matrix of dissimilarities between all pairs of objects
+- the first cluster is formed between the two objects with the smallest dissimilarity
+- the dissimilarities between this cluster and the remaining objects are them recalculated
+- a second cluster is formed between cluster 1 and the object most similar to cluster 1
+- the procedure continues until all objects are linked in clusters.
+
+Example: genetic structure of a rare plant
+- cluster the subpopulations of a rare annual plant based on Cavalli-Sforza genetic distances between the subpopulations. The pattern is similar to the one obtained from the MDS procedure.
+
+Divisive hierarchical clustering
+
