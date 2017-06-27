@@ -5,4 +5,8 @@ Another class of classification methods tries to identify the no. of groups from
 
 1. Cluster analysis
 
+Combines similar objects into groups (clusters), which can be displayed in a dendrogram. 
+Probably the most important use of cluster analysis in biology is taxonomic and phylogenetic research, where the dissimilarity measures are often morphological or genetic differences between organisms, species, etc and the dendrogram represents a possible evolutionary sequence.
+
+Agglomerative hierarchical clustering
 
