@@ -1,0 +1,33 @@
+Reference: "Learning Spark" 2015
+https://spark.apache.org/docs/latest/programming-guide.html
+
+Initialize your SparkContext in Scala:
+
+import org.apache.spark.SparkConf
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkContext._
+
+val conf = new SparkConf().setMaster("local").setAppName("My App")
+// local means that Spark runs on the local machine, without connecting to a cluster
+// app name is for the case you connect to a cluster (this will the cluster manager's UI to identify your app
+
+
+val sc = new SparkContext(conf)
+
+To shut down Spark, you can call the stop() method on your SparkContext.
+
+Example: Word Counting of the README.md file in the DeepLearning directory
+
+1. initialize your context (val conf and val sc)
+2. val input = sc.textFile("README.md") // load the input data
+3. val words = input.flatMap(line => line.split(" ")) // flatMap transforms the input according to the function and flattens it to a list
+
+4. val counts = words.map(word => (word, 1)).reduceByKey{case(x,y) => x+y}
+// after numbering the words within a pair you reduce the list of key-value pairs.
+
+A few special operations are only available on RDDs of key-value pairs, like e.g. grouping or aggregating the elements by a key.
+ 
+
+
+
+
