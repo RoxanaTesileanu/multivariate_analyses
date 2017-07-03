@@ -27,6 +27,35 @@ Example: Word Counting of the README.md file in the DeepLearning directory
 
 A few special operations are only available on RDDs of key-value pairs, like e.g. grouping or aggregating the elements by a key.
  
+5. counts.saveAsTextFile("spark_output.txt")
+
+____________________________________________________________________
+
+Programming with RDDs
+
+An RDD can contain any type of Python, Java or Scala objects, including user-defined classes, and it can be split into multiple partitions, which may be computed on different nodes of the cluster. 
+
+Users can create an RDD in two ways: by loading an external dataset, or by distributing a collection of objects in their driver program.
+
+RDDs offer two types of operations: transformations and actions.
+
+val pythonLines = input.filter(line => line contains "Python") // a transformation
+
+Transformations construct a new RDD from a previous one. Actions compute a result based on an RDD and either return it to the driver program or save it to an external storage system. 
+
+pythonLines.first() // an action 
+
+!!! RDDs can be defined any time, but Spark computes them in a lazy fashion (they are created the first time they are instantiated, i.e. the first time they are used) !!!
+Spark computes just the data needed for its current result. RDDs are recomputed each time you run an action on them. If you would like 
+
+
+
+
+
+
+   
+
+
 
 
 
