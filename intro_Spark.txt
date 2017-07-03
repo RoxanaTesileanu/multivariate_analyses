@@ -147,7 +147,27 @@ transfRDDcounts foreach (println)
 65.5
 ....
 
+
 ______________________________________________________________
+
+At the end of the day don't forget to stop Spark in a nice manner or else you get weird errors about not being able to handle more than one context, etc.:
+
+sc.stop()
+//17/07/03 15:52:01 INFO SparkUI: Stopped Spark web UI at http://192.1 68.1.102:4040
+17/07/03 15:52:01 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+17/07/03 15:52:01 INFO MemoryStore: MemoryStore cleared
+17/07/03 15:52:01 INFO BlockManager: BlockManager stopped
+17/07/03 15:52:01 INFO BlockManagerMaster: BlockManagerMaster stopped
+17/07/03 15:52:01 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+17/07/03 15:52:01 INFO SparkContext: Successfully stopped SparkContext
+
+______________________________________________________________
+
+
+
+
+
+
 
 
 
