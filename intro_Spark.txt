@@ -40,13 +40,84 @@ Users can create an RDD in two ways: by loading an external dataset, or by distr
 RDDs offer two types of operations: transformations and actions.
 
 val pythonLines = input.filter(line => line contains "Python") // a transformation
+//pythonLines: org.apache.spark.rdd.RDD[String] = MapPartitionsRDD[22] at filter at <console>:17
+
 
 Transformations construct a new RDD from a previous one. Actions compute a result based on an RDD and either return it to the driver program or save it to an external storage system. 
 
 pythonLines.first() // an action 
+//res6: String = - spatial data analysis with R from Bivand, Pebesma and Gomez-Rubio 2008 "Spatial data analysis with R" and Chris Garrard 2016 "Geoprocessing with Python".
+
 
 !!! RDDs can be defined any time, but Spark computes them in a lazy fashion (they are created the first time they are instantiated, i.e. the first time they are used) !!!
-Spark computes just the data needed for its current result. RDDs are recomputed each time you run an action on them. If you would like 
+Spark computes just the data needed for its current result. RDDs are recomputed each time you run an action on them. If you would like to reuse an RDD in multiple actions, you can ask Spark to persist it using:
+
+RDD.persist()
+
+In practice you will use persist() to load a subset of your data into memory and query it repeatedly:
+
+pythonLines.persist()
+pythonLines.count() 
+// res5: Long = 1
+pythonLines.first() 
+//res6: String = - spatial data analysis with R from Bivand, Pebesma and Gomez-Rubio 2008 "Spatial data analysis with R" and Chris Garrard 2016 "Geoprocessing with Python".
+
+To summarize, every Spark session will:
+- create some input RDDs from external data
+- perform transformations to create new RDDs using e.g. filter()
+- ask Spark to persist() and intermediate RDDs that you will reuse
+- lauch actions on RDDs like e.g. count()
+
+________________________________________________________
+
+Creating RDDs: 
+loading an external data set and parallelizing a collection in your driver program
+
+The simplest way to create RDDs is to take an existing collection in your program and pass it to Spark's Context with the parallelize() method. It requires that you have your entire dataset in memory on one machine.
+
+val myRDD = sc.parallelize(List("I like", "you"))
+//myRDD: org.apache.spark.rdd.RDD[String] = ParallelCollectionRDD[23] at parallelize at <console>:17
+
+
+A more common way to create RDDs is to load data from external storage. 
+
+____________________________________________________________
+
+RDD Operations:
+transformations and actions
+
+1) Transformations are operations on RDDs that return a new RDD (map(), filter(), etc.).
+Actions are operations that return a result to the driver program or write it to storage.
+
+TRANSFORMATIONS RETURN AN RDD WHEREAS ACTIONS RETURN SOME OTHER DATA TYPE!
+
+val scalaLines = input.filter(line => line contains "Scala")
+//scalaLines: org.apache.spark.rdd.RDD[String] = MapPartitionsRDD[24] at filter at <console>:17
+
+val languageLines = pythonLines union scalaLines
+//languageLines: org.apache.spark.rdd.RDD[String] = UnionRDD[25] at union at <console>:18
+
+Transformations can operate on any number of input RDDs.
+
+SPARK KEEPS TRACK OF THE SET OF DEPENDENCIES BETWEEN DIFFERENT RDDs USING A LINEAGE GRAPH. This information can be used to recover lost data.
+
+2) Actions are operations that return a final value to the driver program or write data to an external storage system.
+
+
+println("The number of lines where the used languages appear is " + languageLines.count())
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
