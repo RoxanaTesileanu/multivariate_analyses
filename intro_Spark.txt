@@ -101,10 +101,55 @@ Transformations can operate on any number of input RDDs.
 
 SPARK KEEPS TRACK OF THE SET OF DEPENDENCIES BETWEEN DIFFERENT RDDs USING A LINEAGE GRAPH. This information can be used to recover lost data.
 
+Transformations on RDDs are lazily evaluated.
+
 2) Actions are operations that return a final value to the driver program or write data to an external storage system.
 
 
 println("The number of lines where the used languages appear is " + languageLines.count())
+
+languageLines.collect().foreach(println)
+//- spatial data analysis with R from Bivand, Pebesma and Gomez-Rubio 2008 "Spatial data analysis with R" and Chris Garrard 2016 "Geoprocessing with Python".
+- implementing neural networks in Scala using "Learning Scala" (Swartz 2015), "Learning Spark" (Karau et al. 2015), "Coursera" (Oderski et al.) https://www.coursera.org/learn/progfun1 
+
+languageLines.take(1)
+//res12: Array[String] = Array(- spatial data analysis with R from Bivand, Pebesma and Gomez-Rubio 2008 "Spatial data analysis with R" and Chris Garrard 2016 "Geoprocessing with Python".)
+
+Use take() to retrieve a small no. of elements in the RDD. 
+Use collect() to retrieve the entire RDD. Your entire dataset must fit in memory on a single machine to use collect().
+
+You can save the contents of an RDD using the saveAsTextFile() action or other ways of exporting data.
+
+myRDD.saveAsTextFile("myRDD.txt")
+
+_____________________________________________________________
+
+Passing functions to Spark in Scala
+
+def manipulatingRDDs (rdd: org.apache.spark.rdd.RDD[Int]) : org.apache.spark.rdd.RDD[Double]= {rdd.map(_ + 0.5)}
+//manipulatingRDDs: (rdd: org.apache.spark.rdd.RDD[Int])org.apache.spark.rdd.RDD[Double]
+
+
+val myRDDcounts = sc.parallelize(List(30,21,11,10,65))
+//myRDDcounts: org.apache.spark.rdd.RDD[Int] = ParallelCollectionRDD[0] at parallelize at <console>:17
+
+val transfRDDcounts= manipulatingRDDs(myRDDcounts)
+//transfRDDcounts: org.apache.spark.rdd.RDD[Double] = MapPartitionsRDD[3] at map at <console>:16
+
+transfRDDcounts foreach (println)
+
+//...
+17/07/03 15:48:58 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+30.5
+21.5
+11.5
+10.5
+65.5
+....
+
+______________________________________________________________
+
+
 
 
 
