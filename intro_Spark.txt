@@ -215,47 +215,52 @@ If you use a Tuple() in the first parameter list you start with two accumulator 
 val result = inputRDD.aggregate((0,0))(
 	(acc, value) => (acc._1 + value, acc._2 +1),
 	(acc1, acc2) => (acc1._1 +acc2._1, acc1._2 + acc2._2))
-val avg = result._1 / result._2.toDouble
+val avg = result._1/result._2.toDouble
+
+The simplest and most common operation that returns data to our driver program is collect(), which returns the entire RDD's contents. If there is an ordering defined on our data, we can also extract the top elements from an RDD using top(). It uses the default ordering of the data, but we can supply our own comparison function to extract the top elements. The foreach() action lets us perform computations on each element in the RDD without bringing it back locally. The countByValue() method returns a map of each unique value to its count.
+
+Some functions are available only on certain types of RDDs, such as mean() and variance() on numeric RDDs and join() on key/value pair RDDs. 
+
+________________________________________________________
+
+Persistence
+
+Spark's RDDs are lazily evaluated and sometimes we wish to use the same RDD multiple times. To avoid computing the same RDD multiple times (esp. for iterative algorithms), we can ask Spark to persist the data.
+
+Example: double execution 
+
+val mappedRDD2= inputRDD.map(x=> x +3)
+println(mappedRDD2.count())
+println(mappedRDD2.collect().mkString(","))
+
+To avoid computing an RDD multiple times, we can ask Spark to persist the data. 
+Spark has many levels of persistence to choose from based on what our goals are. 
+In Scala the default persist() will store the data in the JVM heap as unserialized objects. 
+When we write data out to disk or off-heap storage, that data is always serialized.
+
+Persistence levels from org.apache.spark.storage.StorageLevel:
+MEMORY_ONLY (space used high, CPU time low)
+MEMORY_ONLY_SER (space used low, CPU time high)
+MEMORY_AND_DISK (space used high, CPU time medium)
+MEMORY_AND_DISK_SER (space used low, CPU time high)
+DISK_ONLY (space used low, CPU time high)
+
+Example: persist() Scala
+val mappedRDD2= inputRDD.map(x=> x +3)
+mappedRDD2.persist(StorageLevel.DISK_ONLY)
+println(mappedRDD2.count())
+println(mappedRDD2.collect().mkString(","))
+
+RDDs also come with a method unpersist() that lets you remove them from cache.
+
+
 
  
 
 
 
+ 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
 
 
 
