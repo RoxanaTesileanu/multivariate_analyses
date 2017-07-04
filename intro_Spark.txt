@@ -188,7 +188,43 @@ val singleChar = greeting.flatMap(c => c.split(""))
 singleChar.first()
 singleChar.count()
 
-- pseudo set operations:
+- pseudo set transformations:
+RDDs support many of the operations of mathematical sets: distinct(), union(), intersection(), subtract(), even if RDDs themselves are not properly sets. These operations require that the RDDs being operated on are of the same type.
+
+val RDD1 = sc.parallelize(List("coffee", "coffee", "panda", "monkey", "tea"))
+val RDD2= sc.parallelize(List("coffee", "monkey", "kitty"))
+
+RDD1 distinct() collect() foreach(println)
+RDD1 union RDD2 collect() foreach(println) // might contain duplicates
+RDD1 intersection RDD2 collect() foreach(println)
+RDD1 subtract RDD2 collect() foreach(println) // returns what has RDD1 and doesn't have RDD2
+
+- actions: the most common action used is reduce()
+With reduce() we can easily sum the elements of the RDD, count the no. of elements and perform other types of aggregations.
+
+val sum = inputRDD reduce((x,y) => x+y)
+
+The aggregate()() function:
+using the info found at: http://homepage.cs.latrobe.edu.au/zhe/ZhenHeSparkRDDAPIExamples.html
+
+val result = inputRDD.aggregate(0)(_ + _, _ + _)
+// returns the same as val sum of course, but you can use the aggregate function to use two different operations not the same.
+
+If you use a Tuple() in the first parameter list you start with two accumulator values. Let's suppose we have both set to 0. Then, suppose we want the first acc to actually do the summing, and the second one to count the elements which have been summed. At the end we have to add the informations for both elements of the tuple to compute the average! 
+
+val result = inputRDD.aggregate((0,0))(
+	(acc, value) => (acc._1 + value, acc._2 +1),
+	(acc1, acc2) => (acc1._1 +acc2._1, acc1._2 + acc2._2))
+val avg = result._1 / result._2.toDouble
+
+ 
+
+
+
+
+
+
+
 
 
 
