@@ -253,6 +253,36 @@ println(mappedRDD2.collect().mkString(","))
 
 RDDs also come with a method unpersist() that lets you remove them from cache.
 
+_______________________________________________________________
+
+Working with key/value pairs
+
+Key/value RDDs are commonly used to perform aggregations.
+Spark provides special operations on RDDs containing key/value pairs (pair RDDs).
+We can transform a regular RDD into a pair RDD by running a map() function that returns key/value pairs. Or, you can call SparkContext.parallelize() on a collection of pairs.
+
+val pairsRDD = inputRDD.map(x=> ((0),x))
+//pairsRDD: org.apache.spark.rdd.RDD[(Int, Int)] = MapPartitionsRDD[65] at map at <console>:17
+
+val pairsRDD2 = inputRDD.map(x=> ('a',x))
+//pairsRDD2: org.apache.spark.rdd.RDD[(Char, Int)] = MapPartitionsRDD[66] at map at <console>:17
+
+val pairsRDD3= myRDD.zipWithIndex
+//pairsRDD3: org.apache.spark.rdd.RDD[(String, Long)] = ZippedWithIndexRDD[74] at zipWithIndex at <console>:17
+
+pairsRDD3.collect().foreach(println)
+//...
+(I like,0)
+(you,1)
+(very much,2)
+....
+
+val pairsRDD4 = sc.parallelize(List(('a',1), ('b',2),('c',3), ('d',4)))
+
+
+
+
+
 
 
  
