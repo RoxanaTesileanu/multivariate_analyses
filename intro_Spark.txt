@@ -163,6 +163,36 @@ sc.stop()
 
 ______________________________________________________________
 
+Common transformations and actions
+
+Additional operations are available on RDDs containing certain types of data. 
+
+Basic operations (on all types):
+
+- elementwise transformations: e.g. map() and filter()
+
+val inputRDD = sc.parallelize(List(1,2,3,4))
+val mappedRDD = inputRDD map(x=> x*x)
+val filteredRDD = inputRDD filer(x=> x != 1)
+
+! map()'s return type does not have to be the same as its input type !
+
+
+val result = mappedRDD.collect().mkString(",")
+//result: String = 1,4,9,16
+
+To produce multiple outputs from an input element we use flatMap().
+
+val greeting = sc.parallelize(List("Hi, there!"))
+val singleChar = greeting.flatMap(c => c.split(""))
+singleChar.first()
+singleChar.count()
+
+- pseudo set operations:
+
+
+
+
 
 
 
