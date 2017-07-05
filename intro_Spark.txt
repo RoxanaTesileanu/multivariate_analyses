@@ -357,14 +357,30 @@ resultComByKey collect
 //...
 res22: Array[(String, Int)] = Array((spagetti,2), (pizza,7), (mamaliga,13), (biscuiti,1))
 
-It is the same result as reduceByKey() but I've made it undestand the mechanics of it! I could use a more complex combiner: 
+It is the same result as reduceByKey() but I've made it to undestand the mechanics of it! I could use a more complex combiner to follow the example from the book at p. 54.  
 
+Example: per-key average using combineByKey() in Scala
 
+val resultComByKey2 = combFavRDD.combineByKey(
+     | (v) => (v,1),
+     | (acc : (Int,Int), v) => (acc._1 + v, acc._2 +1),
+     | (acc1: (Int, Int), acc2: (Int, Int)) => (acc1._1 + acc2._1, acc1._2 + acc2._2))
+//resultComByKey2: org.apache.spark.rdd.RDD[(String, (Int, Int))] = ShuffledRDD[19] at combineByKey at <console>:17
 
+resultComByKey2 collect()
+//res24: Array[(String, (Int, Int))] = Array((spagetti,(2,1)), (pizza,(7,2)), (mamaliga,(13,2)), (biscuiti,(1,1)))
 
+val keyAvr = resultComByKey2.map{
+     | case (key, value) => (key, value._1/value._2.toFloat)}
+//keyAvr: org.apache.spark.rdd.RDD[(String, Float)] = MapPartitionsRDD[21] at map at <console>:17
 
+keyAvr collect()
+//res26: Array[(String, Float)] = Array((spagetti,2.0), (pizza,3.5), (mamaliga,6.5), (biscuiti,1.0))
 
+val finalResult = keyAvr collectAsMap()
+//finalResult: scala.collection.Map[String,Float] = Map(spagetti -> 2.0, biscuiti -> 1.0, mamaliga -> 6.5, pizza -> 3.5)
 
+So, after collecting the RDD as Map, I've made it to come to a Scala Map at the end!
 
 
 
