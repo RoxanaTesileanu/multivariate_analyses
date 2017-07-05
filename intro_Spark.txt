@@ -65,8 +65,8 @@ pythonLines.first()
 To summarize, every Spark session will:
 - create some input RDDs from external data
 - perform transformations to create new RDDs using e.g. filter()
-- ask Spark to persist() and intermediate RDDs that you will reuse
-- lauch actions on RDDs like e.g. count()
+- ask Spark to persist() any intermediate RDDs that you will reuse
+- launch actions on RDDs like e.g. count()
 
 ________________________________________________________
 
@@ -137,7 +137,6 @@ val transfRDDcounts= manipulatingRDDs(myRDDcounts)
 //transfRDDcounts: org.apache.spark.rdd.RDD[Double] = MapPartitionsRDD[3] at map at <console>:16
 
 transfRDDcounts foreach (println)
-
 //...
 17/07/03 15:48:58 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
 30.5
@@ -181,7 +180,7 @@ val filteredRDD = inputRDD filer(x=> x != 1)
 val result = mappedRDD.collect().mkString(",")
 //result: String = 1,4,9,16
 
-To produce multiple outputs from an input element we use flatMap().
+To produce multiple outputs from one input element we use flatMap().
 
 val greeting = sc.parallelize(List("Hi, there!"))
 val singleChar = greeting.flatMap(c => c.split(""))
@@ -210,12 +209,17 @@ using the info found at: http://homepage.cs.latrobe.edu.au/zhe/ZhenHeSparkRDDAPI
 val result = inputRDD.aggregate(0)(_ + _, _ + _)
 // returns the same as val sum of course, but you can use the aggregate function to use two different operations not the same.
 
-If you use a Tuple() in the first parameter list you start with two accumulator values. Let's suppose we have both set to 0. Then, suppose we want the first acc to actually do the summing, and the second one to count the elements which have been summed. At the end we have to add the informations for both elements of the tuple to compute the average! 
+If you use a Tuple2 in the first parameter list you start with two accumulator values. Let's suppose we have both set to 0. Then, suppose we want the first acc to actually do the summing, and the second one to count the elements which have been summed. At the end we have to add the informations for both elements of the tuple to compute the average! 
 
 val result = inputRDD.aggregate((0,0))(
 	(acc, value) => (acc._1 + value, acc._2 +1),
 	(acc1, acc2) => (acc1._1 +acc2._1, acc1._2 + acc2._2))
 val avg = result._1/result._2.toDouble
+
+More general the oversimplified syntax for aggregate is: 
+
+aggregate(acc)(func1, func2)
+
 
 The simplest and most common operation that returns data to our driver program is collect(), which returns the entire RDD's contents. If there is an ordering defined on our data, we can also extract the top elements from an RDD using top(). It uses the default ordering of the data, but we can supply our own comparison function to extract the top elements. The foreach() action lets us perform computations on each element in the RDD without bringing it back locally. The countByValue() method returns a map of each unique value to its count.
 
@@ -245,7 +249,7 @@ MEMORY_AND_DISK (space used high, CPU time medium)
 MEMORY_AND_DISK_SER (space used low, CPU time high)
 DISK_ONLY (space used low, CPU time high)
 
-Example: persist() Scala
+Example: persist() in Scala
 val mappedRDD2= inputRDD.map(x=> x +3)
 mappedRDD2.persist(StorageLevel.DISK_ONLY)
 println(mappedRDD2.count())
@@ -259,6 +263,9 @@ Working with key/value pairs
 
 Key/value RDDs are commonly used to perform aggregations.
 Spark provides special operations on RDDs containing key/value pairs (pair RDDs).
+
+Creating pair RDDs:
+
 We can transform a regular RDD into a pair RDD by running a map() function that returns key/value pairs. Or, you can call SparkContext.parallelize() on a collection of pairs.
 
 val pairsRDD = inputRDD.map(x=> ((0),x))
@@ -278,6 +285,29 @@ pairsRDD3.collect().foreach(println)
 ....
 
 val pairsRDD4 = sc.parallelize(List(('a',1), ('b',2),('c',3), ('d',4)))
+
+
+Transformations on pair RDDs:
+
+
+Let's define two RDDs to work with
+
+val favRDD = sc.parallelize(List("pizza", "spagetti", "mamaliga", "biscuiti"))
+//favRDD: org.apache.spark.rdd.RDD[String] = ParallelCollectionRDD[2] at parallelize at <console>:17
+
+val orderFavRDD = sc.parallelize(List(4,2,3,4))
+orderFavRDD: org.apache.spark.rdd.RDD[Int] = ParallelCollectionRDD[3] at parallelize at <console>:17
+
+val combFavRDD = favRDD zip orderFavRDD
+combFavRDD: org.apache.spark.rdd.RDD[(String, Int)] = ZippedPartitionsRDD2[4] at zip at <console>:18
+
+combFavRDD collect() foreach(println)
+//...
+(pizza,4)
+(spagetti,2)
+(mamaliga,3)
+(biscuiti,4)
+
 
 
 
