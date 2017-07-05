@@ -1,5 +1,8 @@
 Reference: "Learning Spark" 2015
 https://spark.apache.org/docs/latest/programming-guide.html
+http://homepage.cs.latrobe.edu.au/zhe/ZhenHeSparkRDDAPIExamples.html#combineByKey
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.rdd.package
+
 
 Initialize your SparkContext in Scala:
 
@@ -292,10 +295,10 @@ Transformations on pair RDDs:
 
 Let's define two RDDs to work with
 
-val favRDD = sc.parallelize(List("pizza", "spagetti", "mamaliga", "biscuiti"))
+val favRDD = sc.parallelize(List("pizza", "spagetti", "pizza","mamaliga", "biscuiti", "mamaliga"))
 //favRDD: org.apache.spark.rdd.RDD[String] = ParallelCollectionRDD[2] at parallelize at <console>:17
 
-val orderFavRDD = sc.parallelize(List(4,2,3,4))
+val orderFavRDD = sc.parallelize(List(4,2,3,4,1,9))
 orderFavRDD: org.apache.spark.rdd.RDD[Int] = ParallelCollectionRDD[3] at parallelize at <console>:17
 
 val combFavRDD = favRDD zip orderFavRDD
@@ -305,8 +308,59 @@ combFavRDD collect() foreach(println)
 //...
 (pizza,4)
 (spagetti,2)
-(mamaliga,3)
-(biscuiti,4)
+(pizza,3)
+(mamaliga,4)
+(biscuiti,1)
+(mamaliga,9)
+
+val redByKey = combFavRDD.reduceByKey((x,y) => x+y) //combines values with the same key 
+//redByKey: org.apache.spark.rdd.RDD[(String, Int)] = ShuffledRDD[11] at reduceByKey at <console>:17
+
+redByKey collect() foreach(println)
+//...
+(spagetti,2)
+(pizza,7)
+(mamaliga,13)
+(biscuiti,1)
+
+
+combFavRDD.groupByKey() collect() foreach(println)  //groups values with the same key
+//...
+(spagetti,CompactBuffer(2))
+(pizza,CompactBuffer(4, 3))
+(mamaliga,CompactBuffer(4, 9))
+(biscuiti,CompactBuffer(1))
+
+Now, regarding the combineByKey() method. I have to take a closer look at it.
+From RDD API:
+def combineByKey[C](createCombiner: (V) ⇒ C, mergeValue: (C, V) ⇒ C, mergeCombiners: (C, C) ⇒ C): RDD[(K, C)]
+
+It seams that the oversimplified structure is: combineByKey(func1, func2, func3):RDD[(K,C)].
+I want to combine the values smaller than 3 into a list:
+
+combFavRDD.combineByKey(
+     | (v: Int) => ((v<=3).toList, (v >3).toList),
+     | (groups: (List[String],List[String]), v)=> ((groups._1, v), (groups._2, v)),
+     | (group1: (String,Int), group2: (String,Int)) => List(group1, group2))
+//error
+
+Ok, I've realized this function is actually a key aggregator by default and you can leave out the "String part" completely. So in finding the values smaller than 3 I probably should use something more "value-oriented" instead of "key-oriented"...
+Now, if I want to be key-oriented, I could for example sum the orders for each key:
+    
+val resultComByKey = combFavRDD.combineByKey(
+     | (count) => (count),
+     | (acc : (Int), v) => (acc +v),
+     | (acc1:(Int), acc2:(Int)) => (acc1 + acc2))
+//resultComByKey: org.apache.spark.rdd.RDD[(String, Int)] = ShuffledRDD[18] at combineByKey at <console>:17
+
+resultComByKey collect
+//...
+res22: Array[(String, Int)] = Array((spagetti,2), (pizza,7), (mamaliga,13), (biscuiti,1))
+
+It is the same result as reduceByKey() but I've made it undestand the mechanics of it! I could use a more complex combiner: 
+
+
+
 
 
 
