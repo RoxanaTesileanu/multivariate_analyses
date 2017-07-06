@@ -559,6 +559,30 @@ Joins:
 
 join(), leftOuterJoin(), rightOuterJoin()
 
+____________________________________________________
+
+Actions available on pair RDDs
+
+Some additional actions are available on pair RDDs to take advantage of the key/value nature of the data.
+
+- countByKey() counts the no. of times the key appears in the RDD
+- collectAsMap() collects the result as a Map to provide easy lookup
+- lookup(key) returns all values associated with the provided key
+
+ leckerObst.countByKey()
+//res57: scala.collection.Map[String,Long] = Map(apfel -> 2, banane -> 1)
+
+
+leckerObst.lookup("apfel")
+//...
+res65: Seq[Int] = WrappedArray(1, 4)
+
+_____________________________________________________
+
+Data partitioning
+
+
+
  
 
 
