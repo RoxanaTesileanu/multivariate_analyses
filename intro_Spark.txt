@@ -1,4 +1,5 @@
-Reference: "Learning Spark" 2015
+References:
+"Learning Spark" 2015
 https://spark.apache.org/docs/latest/programming-guide.html
 http://homepage.cs.latrobe.edu.au/zhe/ZhenHeSparkRDDAPIExamples.html#combineByKey
 https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.rdd.package
@@ -383,12 +384,50 @@ val finalResult = keyAvr collectAsMap()
 So, after collecting the RDD as Map, I've made it to come to a Scala Map at the end!
 
 
+You can apply a function to each value of a pair RDD without changing the key with mapValues():
 
 
+resultComByKey2.mapValues(x=>x._1/x._2.toFloat)
+//res6: org.apache.spark.rdd.RDD[(String, Float)] = MapPartitionsRDD[8] at mapValues at <console>:18
+
+resultComByKey2.mapValues(x=>x._1/x._2.toFloat) collect() foreach(println)
+//...
+(spagetti,2.0)
+(pizza,3.5)
+(mamaliga,6.5)
+(biscuiti,1.0)
+
+
+resultcomByKey.flatMapValues( x=> x to 5) collect() foreach(println)
+//...
+(spagetti,2)
+(spagetti,3)
+(spagetti,4)
+(spagetti,5)
+(biscuiti,1)
+(biscuiti,2)
+(biscuiti,3)
+(biscuiti,4)
+(biscuiti,5)
  
 
+You can retrieve the keys with rdd.keys():
+resultcomByKey2.keys collect()
+//...
+res24: Array[String] = Array(spagetti, pizza, mamaliga, biscuiti)
+
+You can retrieve the values with rdd.values():
+resultcomByKey2.values() collect()
+//...
+res26: Array[(Int, Int)] = Array((2,1), (7,2), (13,2), (1,1))
+
+You can sort the pairs by key:
+resultComByKey2.sortByKey() collect() 
+//...
+res29: Array[(String, (Int, Int))] = Array((biscuiti,(1,1)), (mamaliga,(13,2)), (pizza,(7,2)), (spagetti,(2,1)))
 
 
+Transformations on two-pair RDDs:
  
 
 
