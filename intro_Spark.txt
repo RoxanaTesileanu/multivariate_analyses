@@ -429,10 +429,136 @@ res29: Array[(String, (Int, Int))] = Array((biscuiti,(1,1)), (mamaliga,(13,2)), 
 
 Transformations on two-pair RDDs:
  
+Let's create another pair RDD to manipulate with the resultComByKey RDD.
+
+val myPair = ("mamaliga", 2)
+//newPair: (String, Int) = (mamaliga,2)
+
+val newPair = sc.parallelize(List(myPair))
+//newPair: org.apache.spark.rdd.RDD[(String, Int)] = ParallelCollectionRDD[24] at parallelize at <console>:18
 
 
+You can get only the pairs that are not in common between two pair RDDs with rdd.subtractByKey(other):
+
+resultComByKey subtractByKey(newPair)
+//res33: org.apache.spark.rdd.RDD[(String, Int)] = SubtractedRDD[25] at subtractByKey at <console>:19
+
+resultComByKey subtractByKey(newPair) collect() foreach(println)
+//...
+(pizza,7)
+(spagetti,2)
+(biscuiti,1)
+
+You can get only the pairs that are in common between two pair RDDs with rdd.join(other):
+
+resultComByKey join(newPair) collect() foreach(println)
+//...
+(mamaliga,(13,2))
+
+You can see if the RDD on the right has common keys with the RDD on the left (it is a kind of a Boolean expression, which returns Some for the pairs where the common key is present and None if the key does not exist in the other):  
+
+resultComByKey rightOuterJoin(newPair) collect() foreach(println)
+//...
+(mamaliga,(Some(13),2))
+
+resultComByKey leftOuterJoin(newPair) collect() foreach(println)
+//...
+(spagetti,(2,None))
+(pizza,(7,None))
+(mamaliga,(13,Some(2)))
+(biscuiti,(1,None))
 
 
+You can group data from both RDDs sharing the same key:
 
+resultComByKey.cogroup(newPair) collect() foreach(println)
+//...
+(spagetti,(CompactBuffer(2),CompactBuffer()))
+(pizza,(CompactBuffer(7),CompactBuffer()))
+(mamaliga,(CompactBuffer(13),CompactBuffer(2)))
+(biscuiti,(CompactBuffer(1),CompactBuffer()))
+
+Working with the value-oriented with pair RDD in Scala:
+One useful transformation on pair RDDs would be filtering on second element.
+
+Example: simple filter on second element in Scala
+Now is the time for me to filter out the values >3!
+
+val filteredPairRDD = resultComByKey.filter{
+     | case(key, value) => value >3}
+//filteredPairRDD: org.apache.spark.rdd.RDD[(String, Int)] = MapPartitionsRDD[45] at filter at <console>:17
+
+filteredPairRDD collect() foreach(println) 
+//...
+(pizza,7)
+(mamaliga,13)
+
+You can do the same for keys of course, if you might like to find out how many orders you had on mamaliga:
+resultComByKey.filter{
+     | case(key, value) => key == "mamaliga"}.collect()
+//...
+res46: Array[(String, Int)] = Array((mamaliga,13))
+
+!! Don't forget: For manipulating values of pair RDDs you also have the mapValues(func) !!
+
+__________________________________________________________________
+
+Tuning the level of parallelism
+
+Every RDD has a fixed number of partitions that determine the degree of parallelism to use when executing operations on the RDD. You can check the no. of paritions with rdd.partitions.size.
+
+resultComByKey.partitions.size
+//res49: Int = 1
+
+When performing aggregations or grouping operations, we can ask Spark to use a specific no. of partitions. When creating the grouped or aggregated RDD you can give the no. of partitions to use.
+
+____________________________________________________________________
+
+Grouping data:
+
+- groupByKey() groups the data in one RDD using the key
+- cogroup() takes two pair RDDs
+
+- groupBy() 
+
+
+Example: groupBy() in Scala
+groupBy() works on unpaired data or data where we want to use a different condition besides equality on the current key. It takes a function that it applies to every element in the source RDD and uses the result to determine the key.
+
+val leckerObst = sc.parallelize(List(
+     | ("apfel", 1),
+     | ("banane", 2),
+     | ("apfel", 4)))
+//leckerObst: org.apache.spark.rdd.RDD[(String, Int)] = ParallelCollectionRDD[49] at parallelize at <console>:17
+
+val grouped1 = leckerObst.groupByKey()
+//grouped1: org.apache.spark.rdd.RDD[(String, Iterable[Int])] = ShuffledRDD[50] at groupByKey at <console>:17
+
+grouped1 collect() foreach(println)
+//...
+(apfel,CompactBuffer(1, 4))
+(banane,CompactBuffer(2))
+
+val grouped2 = leckerObst.groupBy{ x=>
+     | if (x._2 >= 2) {"at least two of them"}
+     | else {"less than two healthy portions"}}
+//grouped2: org.apache.spark.rdd.RDD[(String, Iterable[(String, Int)])] = ShuffledRDD[52] at groupBy at <console>:17
+
+grouped2 collect() foreach(println)
+//...
+(at least two of them,CompactBuffer((banane,2), (apfel,4)))
+(less than two healthy portions,CompactBuffer((apfel,1)))
+
+grouped2 collect() 
+//...
+res53: Array[(String, Iterable[(String, Int)])] = Array((at least two of them,CompactBuffer((banane,2), (apfel,4))), (less than two healthy portions,CompactBuffer((apfel,1))))
+ 
+___________________________________________________
+
+Joins:
+
+join(), leftOuterJoin(), rightOuterJoin()
+
+ 
 
 
