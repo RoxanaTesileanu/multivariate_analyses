@@ -6,7 +6,8 @@ libraryDependencies ++= Seq(
 "org.scalanlp" % "breeze_2.11" % "0.11.2",
 "darrenjw" %% "scala-glm" % "0.2",
 "org.apache.spark" % "spark-core_2.11" % "2.1.1" % "provided",
-"org.apache.spark" % "spark-mllib_2.11" % "2.1.1" % "provided")
+"org.apache.spark" % "spark-mllib_2.11" % "2.1.1" % "provided",
+"com.databricks" % "spark-csv_2.11" % "1.5.0")
 
 resolvers ++= Seq("scalaz-bintray" at "http://dl.bintray.com/scalaz/releases",
 "Newcastle mvn repo" at "https://www.staff.ncl.ac.uk/d.j.wilkinson/mvn/")

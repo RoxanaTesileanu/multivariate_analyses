@@ -653,8 +653,49 @@ ch. 5 Loading and saving your data
 
 File formats
 
-Spark makes it simple to load and save data in a large number of file formats. 
+Spark makes it simple to load and save data in a large number of file formats. Formats range from unstructures like text, to semistructured like JSON, to structured like SequenceFiles. 
 
+Text files: records are assumed to the one per line
+JSON: common text-based format, semitructured; most libraries require one record per line
+CSV: very common text-based format, often used with spreadsheet applications
+SequenceFile: a common Hadoop file format used for key/value data
+Protocol buffers: a fast, space-efficient multilanguage format
+Object files: useful for saving data from a Spark job to be consumed by shared code. 
+
+1) Text Files
+
+When we load a single file as an RDD, each input line becomes an element in the RDD. We can also load multiple text files at the same time into a pair RDD, with the key being the name and the value being the contents of each file. 
+
+Loading a txt in Scala: 
+val input = sc.textFile("path to the file")
+
+Saving a txt file in Scala:
+result.saveAsTextFile("path to the file")
+
+2) CSV 
+
+CSV files are supposed to contain a fixed no. of fields per line, and the fields are separated by a comma. 
+
+Loading a CSV file in Scala:
+first load it, then process it
+If your CSV data happens to not contain newlines in any of the fields, you can load your data with textFile() and parse it.
+
+
+import java.io.StringReader
+import au.com.bytecode.opencsv.CSVReader
+
+val input = sc.textFile("test.csv")
+//...
+input: org.apache.spark.rdd.RDD[String] = test.csv MapPartitionsRDD[4] at textFile at <console>:19
+
+val result = input.map{ line =>
+     | val reader = new CSVReader(new StringReader (line))
+     | reader.readNext()
+     | }
+//result: org.apache.spark.rdd.RDD[Array[String]] = MapPartitionsRDD[5] at map at <console>:20
+
+result.first()
+//res8: Array[String] = Array(person, name, address)
 
 
 
