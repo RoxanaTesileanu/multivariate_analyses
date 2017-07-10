@@ -581,6 +581,29 @@ _____________________________________________________
 
 Data partitioning
 
+Control the datasets' partitioning across nodes. The lay out of the data could minimize network traffic and greatly improve performance (reduce communication across nodes). 
+
+Partitioning will not be useful in all applications, for example if an RDD is scanned only once, there is no point in partitioning it in advance. It is useful only when a dataset is used in multiple times in key-oriented operations. 
+
+Spark's partitioning is available on all RDDs of key/value pairs, and causes the system to group elements based on a function of each key. It lets the program ensure that a set of keys will appear together on same node. For example, you might range-partition the RDD into sorted ranges of keys so that the elements with keys in the same range appear on the same node. 
+
+Use the partitionBy() transformation on one "stable" dataset to hash-partition it at the start of the program. 
+
+Example: custom partitioner
+
+val userData = sc.sequenceFile[UserID, UserInfo]("hdfs://...")
+		 .partitionBy(new Hashpartitioner(100))
+		 .persist()
+
+
+
+
+
+
+
+
+ 
+
 
 
  
