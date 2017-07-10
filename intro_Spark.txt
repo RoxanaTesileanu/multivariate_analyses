@@ -587,14 +587,73 @@ Partitioning will not be useful in all applications, for example if an RDD is sc
 
 Spark's partitioning is available on all RDDs of key/value pairs, and causes the system to group elements based on a function of each key. It lets the program ensure that a set of keys will appear together on same node. For example, you might range-partition the RDD into sorted ranges of keys so that the elements with keys in the same range appear on the same node. 
 
-Use the partitionBy() transformation on one "stable" dataset to hash-partition it at the start of the program. 
+Use the partitionBy() transformation on one static dataset to hash-partition it at the start of the program. 
 
 Example: custom partitioner
 
 val userData = sc.sequenceFile[UserID, UserInfo]("hdfs://...")
 		 .partitionBy(new Hashpartitioner(100))
 		 .persist()
+Suppose we want to join userData with another pair RDD called events, now, when we call userData.join(events), Spark will shuffle only the events RDD, sending events with each particular UserID to the machine that contains the corresponding hash partition of UserData.
 
+Note that partitionBy() is a transformation, so it always returns a new RDD. RDDs can never be modified once created. Therefore it is important to persit the transformed data. The no. of partitions will control how many parallel tasks perform further opetations on the RDD. In general make this at least as large as the no. of cores of your cluster.
+
+! Failure to persist an RDD after it has been transformed with partitionBy() will negate the advantage of partitionBy(), resulting in repeated partitioning and shuffling of data across the network, similar to what occurs without any specified partitioner !
+
+Determining an RDD's partitioner:
+
+val pairs = sc.parallelize(List(1,1), (2,2), (3,3))
+//pairs: org.apache.spark.rdd.RDD[(Int, Int)] = ParallelCollectionRDD[0] at parallelize at <console>:17
+
+pairs.partitioner
+//res0: Option[org.apache.spark.Partitioner] = None
+
+
+val partitioned = pairs.partitionBy(new org.apache.spark.HashPartitioner(2))
+//partitioned: org.apache.spark.rdd.RDD[(Int, Int)] = ShuffledRDD[1] at partitionBy at <console>:18
+
+partitioned.partitioner
+//res3: Option[org.apache.spark.Partitioner] = Some(org.apache.spark.HashPartitioner@2)
+    
+
+Operations that benefit from partitioning
+
+Many of Spark's operations involve shuffling data by key across the network. All of these operations will benefit from partitioning: cogroup(), groupWith(), join(), leftOuterJoin(), rightOuterJoin(), groupByKey(), reduceByKey(), combineByKey(), lookup().
+
+ 
+Operations that affect partitioning
+
+Spark automatically sets the partitioner on RDDs created by operations that partition the data. When calling map() on a hash-partitioned RDD, Spark will not retain the partitioner. So, the key can theoretically change through map(). Spark does not analyse your functions to check weather they retain the key! Instead, it provides mapValues() and flatMapValues() which guarantee that each tuple's key remains the same.
+
+The operations that result in a partitioner being set on the output RDD: cogroup(), groupWith(), join(), leftOuterJoin(), rightOuterJoin(), groupBYKey(), reduceByKey(), combineByKey(), partitionBy(), sort(), mapValues() (if the parent RDD has a partitioner), flatMapValues() (if parent has a partitioner), and filter() (if the parent has a partitioner). All other operations will produce a result with no partitioner.
+
+For binary operations, which partitioner is set on the output depends on the parent RDDs' partitioners. By default, it is a hash partitioner, with the no. of partitions set by the level of parallelism of the operation. However, if one of the parents has a partitioner set, it will be that partitioner; and if both parents have a partitioner set, it will be the partitioner of the first parent.
+
+
+Example: algorithm that benefits from partitining
+
+datasets: (pageID, linkList), (pageID, rank)
+
+val links = sc.objectFile[(String, Seq[String])]("links")
+	      .partitionBy(new HashPartitioner(100))
+	      .persist()
+
+var ranks = links.mapValues( v => 1.0)
+
+for (i <- 0 until 10) {
+	val contributions = links.join(ranks).flatMap {
+           case(pageID, (links, ranks)) =>
+		links.map(dest => (dest, rank / links.size))
+         }
+	ranks = contributions.reduceByKey((x,y) => x + y).mapValues( v=> 0.15 + 0.85*v)
+}
+
+
+ch. 5 Loading and saving your data
+
+File formats
+
+Spark makes it simple to load and save data in a large number of file formats. 
 
 
 
