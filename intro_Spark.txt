@@ -684,6 +684,8 @@ If your CSV data happens to not contain newlines in any of the fields, you can l
 import java.io.StringReader
 import au.com.bytecode.opencsv.CSVReader
 
+//first way of loading a CSV
+
 val input = sc.textFile("test.csv")
 //...
 input: org.apache.spark.rdd.RDD[String] = test.csv MapPartitionsRDD[4] at textFile at <console>:19
@@ -698,6 +700,51 @@ result.first()
 //res8: Array[String] = Array(person, name, address)
 
 
+//second way of loading a CSV (if there are newlines embedded in fields)
+
+case class Person (name: String, address: String)
+//defined class Person
+
+I want to use the commands spark.read.csv("mycsv") so I have to start a SparkSession:
+import org.apache.spark.sql.SparkSession
+
+val spark = SparkSession.builder.config(conf=conf).appName("spark session example").getOrCreate()
+//...
+spark: org.apache.spark.sql.SparkSession = org.apache.spark.sql.SparkSession@5a5e393
+
+val db = spark.read.format("com.databricks.spark.csv").option("header", "true").load("test.csv")
+//...
+db: org.apache.spark.sql.DataFrame = [person: string, name: string ... 1 more field]
+
+___________________________________________________________________________
+
+GETTING A DATAFRAME WITH spark.read.csv("mycsv")
+
+scala> import org.apache.spark.SparkConf
+import org.apache.spark.SparkConf
+
+scala> import org.apache.spark.SparkContext
+import org.apache.spark.SparkContext
+
+scala> import org.apache.spark.SparkContext._
+import org.apache.spark.SparkContext._
+
+scala> import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.SparkSession
+
+scala> val conf = new SparkConf().setMaster("local").setAppName("My App")
+conf: org.apache.spark.SparkConf = org.apache.spark.SparkConf@31e8ee93
+
+scala> val sc = new SparkContext(conf)
+sc: org.apache.spark.SparkContext = org.apache.spark.SparkContext@bea5a3f
+
+scala> val spark= SparkSession.builder().config(conf=conf).getOrCreate()
+spark: org.apache.spark.sql.SparkSession = org.apache.spark.sql.SparkSession@14534d7f
+
+scala> val db2 = spark.read.csv("test.csv")
+db2: org.apache.spark.sql.DataFrame = [_c0: string, _c1: string ... 1 more field]
+
+____________________________________________________________________________________
 
 
 

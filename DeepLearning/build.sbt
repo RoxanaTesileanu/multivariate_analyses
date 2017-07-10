@@ -7,7 +7,9 @@ libraryDependencies ++= Seq(
 "darrenjw" %% "scala-glm" % "0.2",
 "org.apache.spark" % "spark-core_2.11" % "2.1.1" % "provided",
 "org.apache.spark" % "spark-mllib_2.11" % "2.1.1" % "provided",
-"com.databricks" % "spark-csv_2.11" % "1.5.0")
+//"com.databricks" % "spark-csv_2.11" % "1.5.0",
+"com.univocity" % "univocity-parsers" % "2.4.1",
+"org.apache.spark" % "spark-sql_2.11" % "2.1.1")
 
 resolvers ++= Seq("scalaz-bintray" at "http://dl.bintray.com/scalaz/releases",
 "Newcastle mvn repo" at "https://www.staff.ncl.ac.uk/d.j.wilkinson/mvn/")
@@ -21,6 +23,7 @@ scala-course
 
 Resolver scalaz-stream at: https://github.com/etorreborre/specs2/issues/347
 */
+
 
 
 
