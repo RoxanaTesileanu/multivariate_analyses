@@ -1,0 +1,25 @@
+References:
+"Scala for Machine Learning" - Patrick R. Nicolas
+
+ch.1 Getting started
+
+ML problems are categorized as classifications, prediction, optimization and regression.
+Classification - example: identify a disease from a set of symptoms
+Prediction - once the model is trained and validated, it can be used to predict some outcomes (a doctor collects symptoms and anticipates the health state).
+Optimization - ML techniques increase the chances that the optimization method converges towards a solution (intelligent search) (example: fighting the spread of a new virus requires optimizing a process that may evolve over time as more symptoms and cases are uncovered).
+Regression: is a classification technique particularly suitable for a continuous model.
+
+Why Scala? 
+- abstraction: monads (derived from the category and group theory to create high-level abstractions); covariant, contravariant functors and bifunctors (related to manifold and vector bundles used in non-linear model building).    
+
+- higher-kind projection: classification problems rely on the estimation of the similarity between vectors of observations. One technique consists in comparing two vectors by computing the normalized inner product. A co-vector alpha is defined as a linear map of a vector to the inner product. 
+
+- covariant functors for vectors: F[U => V] := F[U] => F[V]
+- contravariant functors for co-vector: F[U => V] := F[V] => F[U]
+- monads: extend the concept of a functor to allow the composition known as the monadic composition of morphisms on a single type.
+
+- scalability: parallelization and chaining of data processing functions using higher-order methods. So one can build scalable, distributed and concurrent applications (using Akka or Apache Spark). 
+
+Model categorization
+A model can be predictive, descriptive or adaptive.
+
