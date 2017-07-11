@@ -110,7 +110,21 @@ The first phase consists of extracting the model through clustering or training 
 Writing a simple workflow:
 For the first example a simplified version of the binomial logistic regression as the chosen classifier is used as the stock-price-volume action is treated as a continuous or pseudo-continuous process.
 
+Step 1: Scoping the problem
+
+The dataset is in CSV format. The aim is to model the stock price using its daily volume and volatility. We will consider two variables: price and volume.
+
+Step 2: Loading data
+
+val src = scala.io.Source.fromFile("CSCO.csv")
+//res0: scala.io.BufferedSource = non-empty iterator
  
+val data = src.getLines.map(_.split(",")).toArray.drop(1)
+//data: Array[Array[String]] = Array(Array(11/29/2013, 21.39, 21.44, 21.2, 21.25, 25043700, 21.25), Array(11/27/2013, 21.29, 21.35, 21.15, 21.27, 40019800, 21.27), Array(11/26/2013, 21.3, 21.41, 21.08, 21.21, 48612300, 21.21), Array(11/25/2013, 21.45, 21.52, 21.27, 21.27, 37566000, 21.27), Array(11/22/2013, 21.41, 21.5, 21.31, 21.46, 41091400, 21.46), Array(11/21/2013, 21.36, 21.49, 21.25, 21.47, 40695500, 21.47), Array(11/20/2013, 21.47, 21.47, 21.22, 21.23, 44299700, 21.23), Array(11/19/2013, 21.31, 21.54, 21.12, 21.42, 56434700, 21.42), Array(11/18/2013, 21.6, 21.72, 21.2, 21.29, 65955400, 21.29), Array(11/15/2013, 21.46, 21.69, 21.26, 21.54, 85486800, 21.54), Array(11/14/2013, 20.94, 21.44, 20.77, 21.37, 243064300, 21.37), Array(11/13/2013, 23.6, 24, 23.51, 24, 73328400, 24), Array(11...
+
+data(0)
+//res8: Array[String] = Array(11/29/2013, 21.39, 21.44, 21.2, 21.25, 25043700, 21.25)
+// date, open, high, low, close, volume, adj_close
 
 
 
