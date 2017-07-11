@@ -23,3 +23,27 @@ Why Scala?
 Model categorization
 A model can be predictive, descriptive or adaptive.
 
+- predictive models: discover patterns in the data and extract fundamental trends and relationships between factors (or features). They are used to predict and classify future events or observations. Predictive models are created through supervised learning using a training set.
+
+- descriptive models: attempt to find unusual patterns or affinities in data by grouping observations into clusters with similar properties. They are generated through unsupervised learning.
+
+- adaptive models: created through reinforcement learning (one or more decision-making agents that recommend and possibly execute actions in the attempt of solving a problem, optimizing an objective function, or resolving constraints.
+
+Taxonomy of machine learning algorithms
+
+data mining -> identifying patterns
+machine learning -> indentifying and validating models to optimize a performance criterion using data.
+
+A) Unsupervised learning
+The goal of unsupervised learning is to discover patterns of regularities and irregularities in a set of observations. There are two categories: discovery of data clusters and discovery of latent factors.
+Unsupervised learning does not require labeled data and therefore is easy to implement and execute because no expertise is needed to validate an output. 
+
+A1) Clustering
+ 
+
+
+
+
+
+
+
