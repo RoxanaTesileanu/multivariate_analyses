@@ -40,8 +40,53 @@ Unsupervised learning does not require labeled data and therefore is easy to imp
 
 A1) Clustering
  
+The purpose of data clustering is to partition a collection of data into a number of clusters or data segments. Practically, a clustering algorithm is used to organize observations into clusters, by minimizing the distance between obs. within a cluster and maximizing the distance between obs. across clusters. 
+
+A2) Dimension reduction
+
+Dimension reduction aims at finding the smallest but most relevant set of features needed to build a reliable model. 
+
+B) Supervised learning
+
+There are two categories of supervised learning algorithms:
+- generative models
+- discriminative models
+
+B1) Generative models
+Generative models attempt to fit a joint probability, p(X,Y), of two events (or random variables) X and Y, representing two sets of observed and hidden x and y variables. 
+Generative models are commonly introduced through Bayes' rule.
+
+B2) Disciminative models
+
+Contrary to generative models, discriminative models compute the conditional probability p(Y|X) directly, using the same algorithm for training and classification. 
 
 
+C) Reinforcement learning
+
+Reinforcement learning algorithms output a set of recommended actions for the adaptive system to execute. In its simplest form, this type of algorithms estimate the best course of action. The challenge is the recommended action or policy may depend on partially observable states.
+
+___________________________________
+
+For mathematics, linear algebra and optimization there are some well-established libraries to use, e.g. Apache Commons Math. 
+
+Add the dependency to your build.sbt file:
+// https://mvnrepository.com/artifact/org.apache.commons/commons-math3
+libraryDependencies += "org.apache.commons" % "commons-math3" % "3.6"
+
+In Commons Math you can find:
+- functions, differentiation, and integral and ordinary differential equations
+- statistics distributions
+- linear and non-linear optimization
+- dense and sparse vectors and matrices
+- curve fitting, correlation and regression
+
+
+For plotting you can use the JFreeChart library. Add the dependency to your build.sbt file:
+// https://mvnrepository.com/artifact/org.jfree/jfreechart
+libraryDependencies += "org.jfree" % "jfreechart" % "1.0.18"
+
+______________________________ 
+  
 
 
 
