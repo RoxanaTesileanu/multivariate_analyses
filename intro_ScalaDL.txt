@@ -87,6 +87,29 @@ libraryDependencies += "org.jfree" % "jfreechart" % "1.0.18"
 
 ______________________________ 
   
+An overview of computational workflows to perform a runtime processing of a dataset:
+
+1. Loading the dataset from files, databases, or any streaming devices
+2. Splitting the data set for parallel data processing
+3. Preprocessing data 
+4. Applying the model to classify new data
+5. Assessing the quality of the model
+
+A similar sequence of tasks is used to extract a model from a training dataset:
+
+1. Loading the dataset from files, databases, or any streaming devices
+2. Splitting the data set for parallel data processing
+3. Preprocessing data 
+4. Selecting the training, testing and validation set from the input data
+5. Extracting key features (extracting the model: supervised or unsupervised)
+6. Validating the model and tuning the model 
+7. Storing the model in a file or database so that it can be applied to future obs.
+
+The first phase consists of extracting the model through clustering or training of a supervised learning algorithm. The model is then validated against test data for which the source is the same as the training set but with different observations. Once the model is created and validated, it can be used to classify real-time data or predict future behaviour. Real-world workflows are more complex and require dynamic configuration to allow experimentation of different models. Several alternative classifiers and different filtering algorithms are applied against input data, depending on the latent noise in the raw data.
+
+
+
+
 
 
 
