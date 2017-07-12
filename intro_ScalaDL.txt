@@ -191,7 +191,13 @@ val fig = Figure()
 val plt = fig.subplot(0)
 //plt: breeze.plot.Plot = breeze.plot.Plot@23373a7e
 
-plt += plot(normalizedVolatility, normalizedVolume)
+plt += plot(normalizedVolatility, normalizedVolume, '+')
 //res4: breeze.plot.Plot = breeze.plot.Plot@23373a7e
+
+Now, back to our logistic regression model. 
+
+Step 5: Implementing the classifier
+
+
 
 
