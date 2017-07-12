@@ -1,6 +1,7 @@
 References:
 "Scala for Machine Learning" - Patrick R. Nicolas
 "Scala for Data Science" - Pascal Bugnion
+"Learning Spark" - Karau et al.
 ch.1 Getting started
 
 ML problems are categorized as classifications, prediction, optimization and regression.
@@ -198,6 +199,41 @@ Now, back to our logistic regression model.
 
 Step 5: Implementing the classifier
 
+I'll use Spark-ML for implementing the logistic regression model.   
 
+import org.apache.spark.ml.classification.LogisticRegression
+//import org.apache.spark.ml.classification.LogisticRegression
+
+val lr = new LogisticRegression().
+     | setMaxIter(10).
+     | setRegParam(0.3).
+     | setElasticNetParam(0.8)
+//lr: org.apache.spark.ml.classification.LogisticRegression = logreg_6495c4928687
+
+Now, I need a Dataset[_] to fit in the method: val lrModel = lr.fit()
+
+import org.apache.spark.SparkConf
+//import org.apache.spark.SparkConf
+
+val conf = new SparkConf().setMaster("local").setAppName("my app")
+//conf: org.apache.spark.SparkConf = org.apache.spark.SparkConf@720498b5
+
+val spark = SparkSession.builder().config(conf=conf).getOrCreate()
+//...
+spark: org.apache.spark.sql.SparkSession = org.apache.spark.sql.SparkSession@3d7b9536
+
+import spark.implicits._
+//import spark.implicits._
+
+val ds = (volatility.zip(volume)).toSeq.toDS
+// error 
+Ok I guess I have to give some definition of the hyperplane to create the two classes. Maybe I should use the decision boundary from the plot. Or I should read further to get to the gradient descent optimizer. I'll check Andrew's book for additional support. 
+
+
+
+
+
+
+ 
 
 
