@@ -5,6 +5,7 @@ References:
 "Statistical Computing with Scala: A functional approach to data science" - Darren Wilkinson, 2017, https://github.com/darrenjw/scala-course
 "Scientific computing with Scala" - Vytautas Jancauskas, 2016
 "Grokking deep learning" - Andrew Trask, 2017
+
 ch.1 Getting started
 
 ML problems are categorized as classifications, prediction, optimization and regression.
@@ -230,7 +231,10 @@ import spark.implicits._
 
 val ds = (volatility.zip(volume)).toSeq.toDS
 // error 
-Ok I guess I have to give some definition of the hyperplane to create the two classes. Maybe I should use the decision boundary from the plot. I'll check Pascal's book for additional support.  
+Ok I guess I have to give some definition of the hyperplane to create the two classes. Maybe I should use the decision boundary from the plot. I'll check Pascal's book for additional support. For the sake of having a reusable code I've created the object called ExampleLR.scala. Which will be further developed during today's routine.
+
+
+  
 
 
 
