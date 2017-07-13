@@ -26,13 +26,22 @@ val finalDS =myDS.map{ case x => if (x._1 <0.54 & x._2<0.23) Seq(0, x._1, x._2) 
 
 
 import org.apache.spark.SparkConf
-import org.apache.spark.sql.SparkSession
-
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkContext._
 
 val conf = new SparkConf().setMaster("local").setAppName("My App")
+val sc = new SparkContext(conf)
+
+val rddDS = sc.parallelize(finalDS)
+sc.stop()
+
+import org.apache.spark.sql._
+
 val spark = SparkSession.builder().config(conf = conf).getOrCreate()
+
 import spark.implicits._
 
+val sddLR = spark.createDataset(finalDS)
 
 import org.apache.spark.ml.classification.LogisticRegression 
 

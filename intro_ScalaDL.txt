@@ -246,6 +246,28 @@ myds.map{ case x => if (x._1 <0.54 & x._2<0.23) Seq( x._1, x._2,0) else Seq(x._1
 val finalDS =myds.map{ case x => if (x._1 <0.54 & x._2<0.23) Seq(0, x._1, x._2) else Seq(1, x._1, x._2)}
 //finalDS: Array[Seq[Double]] = Array(List(0.0, 0.08070508017180902, 0.032452829506222185), List(0.0, 0.06703519920658041, 0.059537274320406695), List(0.0, 0.11228597591158493, 0.07507690693943839), List(0.0, 0.08387168508368592, 0.055099549499856224), List(0.0, 0.06306471253904308, 0.06147527493891753), List(0.0, 0.0805101400804284, 0.06075928534870809), List(0.0, 0.0840741812555225, 0.0672775214715494), List(0.0, 0.14286331208328476, 0.08922380507142715), List(0.0, 0.1761143135143344, 0.10644209780066952), List(0.0, 0.14530483515048873, 0.14176485375474057), List(1.0, 0.23082032203937328, 0.42674552981240316), List(0.0, 0.14973481774997793, 0.11977625099242054), List(0.0, 0.12564359022362467, 0.05592097529392828), List(0.0, 0.05405582722177045, 0.02820499836329735), List(0.0, 0.13375957...
 
+import org.apache.spark.SparkConf
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkContext._
+
+val conf = new SparkConf().setMaster("local").setAppName("My App")
+val sc = new SparkContext(conf)
+
+val rddDS = sc.parallelize(finalDS)
+sc.stop()
+
+import org.apache.spark.sql._
+
+val spark = SparkSession.builder().config(conf = conf).getOrCreate()
+
+import spark.implicits._
+
+val sddLR = spark.createDataset(finalDS)
+//res3: org.apache.spark.sql.Dataset[Seq[Double]] = [value: array<double>]
+
+So, I've finally come to a Dataset type to use in the lr.fit().
+
+
 
   
 
