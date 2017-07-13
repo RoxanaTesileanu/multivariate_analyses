@@ -1,4 +1,4 @@
-object ExamapleLR {
+object ExampleLR {
 
 
 val src = scala.io.Source.fromFile("CSCO.csv")
@@ -20,24 +20,23 @@ val minMaxVolume = (volume.min, volume.max)
 val normalizedVolatility = volatility.map(x => (x - minMaxVolatility._1)/(minMaxVolatility._2 - minMaxVolatility._1))
 val normalizedVolume = volume.map(x=> (x - minMaxVolume._1)/(minMaxVolume._2 - minMaxVolume._1))
 
+
+var myDS = normalizedVolatility.zip(normalizedVolume)
+val finalDS =myDS.map{ case x => if (x._1 <0.54 & x._2<0.23) Seq(0, x._1, x._2) else Seq(1, x._1, x._2)}
+
+
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
-import spark.implicits._
+
 
 val conf = new SparkConf().setMaster("local").setAppName("My App")
 val spark = SparkSession.builder().config(conf = conf).getOrCreate()
+import spark.implicits._
 
 
-import org.apache.spark.ml.classification.LogisticRegression
-
-
+import org.apache.spark.ml.classification.LogisticRegression 
 
 
 }
-
-
-
-
-
 
 
