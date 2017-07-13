@@ -8,4 +8,4 @@ Experimenting with multivariate analyses in R:
 - linear algebra theory from Paul Dawkins 2017 "Paul's Math Notes on Linear Algebra", 
 - spatial data analysis with R from Bivand, Pebesma and Gomez-Rubio 2008 "Spatial data analysis with R" and Chris Garrard 2016 "Geoprocessing with Python".
 
-The final aim is to be able to build neural networks to investigate the relationships between abundance of species and site characteristics. 
+The final aim is to be able to build neural networks to investigate the relationships between abundance of species and site characteristics or species composition and site characteristics. 
