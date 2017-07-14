@@ -22,7 +22,7 @@ val normalizedVolume = volume.map(x=> (x - minMaxVolume._1)/(minMaxVolume._2 - m
 
 
 var myDS = normalizedVolatility.zip(normalizedVolume)
-val finalDS =myDS.map{ case x => if (x._1 <0.54 & x._2<0.23) Seq(0, x._1, x._2) else Seq(1, x._1, x._2)}
+val finalDS =myDS.map{ case x => if (x._1 <0.54 && x._2<0.23) Seq(0, x._1, x._2) else Seq(1, x._1, x._2)}
 
 
 import org.apache.spark.SparkConf
@@ -41,11 +41,20 @@ val spark = SparkSession.builder().config(conf = conf).getOrCreate()
 
 import spark.implicits._
 
-val sddLR = spark.createDataset(finalDS)
+val dsLR = spark.createDataset(finalDS)
 
-import org.apache.spark.ml.classification.LogisticRegression 
+import org.apache.spark.mllib.classification.{LogisticRegressionWithLBFGS, LogisticRegressionModel}
+import org.apache.spark.mllib.regression.LabeledPoint
+
+//val lrModel = new LogisticRegressionWithLBFGS().setNumClasses(2).run(dsLR)
 
 
 }
+
+/* References:
+http://technobium.com/logistic-regression-using-apache-spark/
+"Learning Spark" - Karau, Konwinski, Wendell, Zaharia, 2015
+*/
+
 
 

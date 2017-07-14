@@ -262,11 +262,20 @@ val spark = SparkSession.builder().config(conf = conf).getOrCreate()
 
 import spark.implicits._
 
-val sddLR = spark.createDataset(finalDS)
+val dsLR = spark.createDataset(finalDS)
 //res3: org.apache.spark.sql.Dataset[Seq[Double]] = [value: array<double>]
 
 So, I've finally come to a Dataset type to use in the lr.fit().
 
+val lr = new LogisticRegression()
+//res0: org.apache.spark.ml.classification.LogisticRegression = logreg_5eba13ff09dc
+
+val lrModel = lr.fit(dsLR)
+//error
+
+Ok, I guess I need to label the Dataset with LabeledPoint, because my labelling is not yet recognized by Spark. So, back to "Learning Spark". 
+
+ 
 
 
   
