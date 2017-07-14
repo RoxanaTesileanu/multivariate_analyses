@@ -33,21 +33,20 @@ val conf = new SparkConf().setMaster("local").setAppName("My App")
 val sc = new SparkContext(conf)
 
 val rddDS = sc.parallelize(finalDS)
-sc.stop()
 
-import org.apache.spark.sql._
+import org.apache.spark.mllib.regression.LabeledPoint
+import org.apache.spark.mllib.linalg._
 
-val spark = SparkSession.builder().config(conf = conf).getOrCreate()
 
-import spark.implicits._
+val parsedDS = rddDS.map{ list => LabeledPoint(list(0), Vectors.dense(list(1), list(2)))} 
 
-val dsLR = spark.createDataset(finalDS)
 
 import org.apache.spark.mllib.classification.{LogisticRegressionWithLBFGS, LogisticRegressionModel}
-import org.apache.spark.mllib.regression.LabeledPoint
 
-//val lrModel = new LogisticRegressionWithLBFGS().setNumClasses(2).run(dsLR)
 
+val lrModel = new LogisticRegressionWithLBFGS().setNumClasses(2).run(parsedDS)
+
+//sc.stop()
 
 }
 

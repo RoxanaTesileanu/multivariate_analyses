@@ -5,6 +5,8 @@ References:
 "Statistical Computing with Scala: A functional approach to data science" - Darren Wilkinson, 2017, https://github.com/darrenjw/scala-course
 "Scientific computing with Scala" - Vytautas Jancauskas, 2016
 "Grokking deep learning" - Andrew Trask, 2017
+http://technobium.com/logistic-regression-using-apache-spark/
+
 
 ch.1 Getting started
 
@@ -273,9 +275,29 @@ val lr = new LogisticRegression()
 val lrModel = lr.fit(dsLR)
 //error
 
-Ok, I guess I need to label the Dataset with LabeledPoint, because my labelling is not yet recognized by Spark. So, back to "Learning Spark". 
+Ok, I guess I need to label the Dataset with a LabeledPoint object, because my labelling is not yet recognized by Spark:
 
+import org.apache.spark.mllib.regression.LabeledPoint
+import org.apache.spark.mllib.linalg.{Vector, Vectors}
+
+val parsedDS = rddDS.map{ list =>
+     | LabeledPoint(list(0), Vectors.dense(list(1), list(2)))}
+//parsedDS: org.apache.spark.rdd.RDD[org.apache.spark.mllib.regression.LabeledPoint] = MapPartitionsRDD[2] at map at <console>:19
  
+parsedDS.first
+//...
+res9: org.apache.spark.mllib.regression.LabeledPoint = (0.0,[0.08070508017180902,0.032452829506222185])
+
+This data structure is needed by the Spark's logistic regression algorithm.
+
+
+val lrModel = new LogisticRegressionWithLBFGS().setNumClasses(2).run(parsedDS)
+//...
+lrModel: org.apache.spark.mllib.classification.LogisticRegressionModel = org.apache.spark.mllib.classification.LogisticRegressionModel: intercept = 0.0, numFeatures = 2, numClasses = 2, threshold = 0.5
+
+Now, I should not only train the model but also test it. So, I will split the original dataset into two parts: trainDS (60% of the obs.) and testDS (40% of the obs.). Then I will rerun the LR algorithm, this time on trainDS. Afterwards I will classify the obs. found in the testDS and see the error. 
+
+
 
 
   
