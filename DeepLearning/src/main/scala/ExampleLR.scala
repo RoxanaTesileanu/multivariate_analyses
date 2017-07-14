@@ -35,7 +35,7 @@ val sc = new SparkContext(conf)
 val rddDS = sc.parallelize(finalDS)
 
 import org.apache.spark.mllib.regression.LabeledPoint
-import org.apache.spark.mllib.linalg._
+import org.apache.spark.mllib.linalg.{Vectors, Vector}
 
 
 val parsedDS = rddDS.map{ list => LabeledPoint(list(0), Vectors.dense(list(1), list(2)))} 

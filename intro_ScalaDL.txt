@@ -299,7 +299,15 @@ Now, I should not only train the model but also test it. So, I will split the or
 
 Step 6: Classifying new observations and assessing the quality of the model
 
+For the moment, let's just sum up how the MLlib works in general. MLlib lets you invoke various algorithms on RDDs (the parsedDS for example is an RDD[LabeledPoint]). The features must be in numerical form (so, if you have an RDD of strings you must convert it to numerical form - process called feature extraction). Further, you transform the numerical features to vectors. Then, if you have a classification problem for example, you call a classification algorithm (e.g. logistic regression) on the RDD of vectors. This will return a model object that can be used to classify new points. At the end you evaluate the model on a test dataset. 
 
+The above workflow steps represent the "learning pipeline". You can use the pipeline API for building such pipelines. 
+
+The mllib.feature package contains algorithms to construct feature vectors from text, and ways to normalize and scale features. 
+
+  
+
+   
 
 
   
