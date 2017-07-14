@@ -297,6 +297,8 @@ lrModel: org.apache.spark.mllib.classification.LogisticRegressionModel = org.apa
 
 Now, I should not only train the model but also test it. So, I will split the original dataset into two parts: trainDS (60% of the obs.) and testDS (40% of the obs.). Then I will rerun the LR algorithm, this time on trainDS. Afterwards I will classify the obs. found in the testDS and see the error. 
 
+Step 6: Classifying new observations and assessing the quality of the model
+
 
 
 
