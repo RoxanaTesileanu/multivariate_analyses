@@ -325,9 +325,77 @@ This method of learning (using the derivative to find the lowest weight) is call
 
 Now, I will try to implement the GD in Scala. The alternative is to use the already implemented one of the Spark MLlib.
 
- 
-   
 
+@annotation.tailrec
+def updatingWeights (weight: Double, goalPred:Double,
+                     input: Double, alpha :Double) : Double = {
+
+  var prediction = input * weight
+  var error = prediction - goalPred
+  var derivative = input* (prediction - goalPred)
+
+
+    if (derivative < 0.01) weight
+    else updatingWeights(weight, goalPred, input, alpha)
+
+}
+ 
+Ok, it seams my function doesn't work for small values of the goal_derivative. So, I've set the threshold at 0.5 for the moment. So, the "improved" version is:
+
+@annotation.tailrec
+def updatingWeights (weight: Double, goalPred:Double,
+                     input: Double, alpha :Double) : Unit = {
+
+  var prediction = input * weight
+  var derivative = input* (prediction - goalPred)
+  var error = prediction - goalPred
+
+    if (derivative < 0.5) println(prediction , error)
+    else updatingWeights(weight, goalPred, input, alpha)
+
+}
+
+updatingWeights(0.5, 0.8, 2, 0.1)
+//(1.0,0.19999999999999996)   
+
+
+A better-working version is:
+
+@annotation.tailrec
+def updatingWeights (weight: Double, goalPred:Double,
+                     input: Double, alpha :Double) : Unit = {
+
+  var prediction = input * weight
+  var error = prediction - goalPred
+  var derivative = input* (prediction - goalPred)
+
+    if (error < 0.01) println(prediction , error)
+    else updatingWeights(weight - alpha * derivative, goalPred, input, alpha)
+
+}
+
+updatingWeights(0.5, 0.8, 2, 0.1)
+//(0.8093312,0.009331199999999984)
+// Yes!! It looks good!
+
+or even better:
+
+@annotation.tailrec
+def updatingWeights (weight: Double, goalPred:Double,
+                     input: Double, alpha :Double) : Unit = {
+
+  var prediction = input * weight
+  var error = prediction - goalPred
+  var derivative = input* (prediction - goalPred)
+
+    if (error < 0.001) println(prediction , error, weight)
+    else updatingWeights(weight - alpha * derivative, goalPred, input, alpha)
+
+}
+
+updatingWeights(0.5, 0.8, 2, 0.1)  
+//(0.8007255941120001,7.255941120000164E-4,0.40036279705600003)
+// (prediction, error, weight)
 
   
 
