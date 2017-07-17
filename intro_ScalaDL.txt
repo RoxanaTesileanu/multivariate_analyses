@@ -295,7 +295,7 @@ val lrModel = new LogisticRegressionWithLBFGS().setNumClasses(2).run(parsedDS)
 //...
 lrModel: org.apache.spark.mllib.classification.LogisticRegressionModel = org.apache.spark.mllib.classification.LogisticRegressionModel: intercept = 0.0, numFeatures = 2, numClasses = 2, threshold = 0.5
 
-Now, I should not only train the model but also test it. So, I will split the original dataset into two parts: trainDS (60% of the obs.) and testDS (40% of the obs.). Then I will rerun the LR algorithm, this time on trainDS. Afterwards I will classify the obs. found in the testDS and see the error. 
+Now, I should not only train the model but also test and validate it. So, I will split the original dataset into two parts: trainDS (60% of the obs.) and testDS (40% of the obs.). Then I will rerun the LR algorithm, this time on trainDS. Afterwards I will classify the obs. found in the testDS and see the error. 
 
 Step 6: Classifying new observations and assessing the quality of the model
 
@@ -311,8 +311,15 @@ _____________________________________________________________
 
 ch. Gradient Descent ("Grokking Deep Learning" - Andrew Trask)
 
+Different ways of measuring error prioritize error differently. 
+Calculate both the direction and amount of error => Gradient Descent
+Learning is calculating weight_delta and putting it on the weight. 
+Alpha allows us to control how fast the network learns given weight_delta.
 
-
+Given a certain input and goal_prediction, there is an exact relatioship defined between the error and weight. According to it, moving the weight moves the error. 
+For squared errors the relationship is: error = ((input * weight) - goal_prediction) **2. This relationship between error and weight can be graphed as a parabola. Adjusting the weight to reduce the error means that we create a function which conforms to the patterns in the data.   
+ 
+The way the error is controled by weight is described by the derivative of their relatioship (we can of course have a positive and a negative derivative).  
   
 
    
