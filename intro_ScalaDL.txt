@@ -305,6 +305,14 @@ The above workflow steps represent the "learning pipeline". You can use the pipe
 
 The mllib.feature package contains algorithms to construct feature vectors from text, and ways to normalize and scale features. 
 
+Now, I would like to further concentrate on neural learning, which is the end goal of my study process this sommer (or autumn?). So, back to "Grokking Deep Learning". 
+
+_____________________________________________________________
+
+ch. Gradient Descent ("Grokking Deep Learning" - Andrew Trask)
+
+
+
   
 
    
