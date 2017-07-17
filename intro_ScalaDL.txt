@@ -6,7 +6,7 @@ References:
 "Scientific computing with Scala" - Vytautas Jancauskas, 2016
 "Grokking deep learning" - Andrew Trask, 2017
 http://technobium.com/logistic-regression-using-apache-spark/
-
+"Learning Scala" - Jason Swartz, 2015
 
 ch.1 Getting started
 
@@ -397,9 +397,43 @@ updatingWeights(0.5, 0.8, 2, 0.1)
 //(0.8007255941120001,7.255941120000164E-4,0.40036279705600003)
 // (prediction, error, weight)
 
+
   
+If you want to see the whole list of iterations (it takes 13 iterations):
+
+@annotation.tailrec
+def updatingWeights (weight: Double, goalPred:Double,
+                     input: Double, alpha :Double) : Unit = {
+
+  var prediction = input * weight
+  var error = prediction - goalPred
+  var derivative = input* (prediction - goalPred)
+  println(prediction , error, weight)
+    if (error < 0.001) println(prediction , error, weight)
+    else  updatingWeights(weight - alpha * derivative, goalPred, input, alpha)
+
+}
+
+updatingWeights(0.5, 0.8, 2, 0.1)
+
+//(1.0,0.19999999999999996,0.5)
+(0.92,0.12,0.46)
+(0.872,0.07199999999999995,0.436)
+(0.8432000000000001,0.043200000000000016,0.42160000000000003)
+(0.8259200000000001,0.025920000000000054,0.41296000000000005)
+(0.815552,0.01555200000000001,0.407776)
+(0.8093312,0.009331199999999984,0.4046656)
+(0.80559872,0.005598719999999946,0.40279936)
+(0.803359232,0.0033592319999999898,0.401679616)
+(0.8020155392,0.0020155391999999717,0.4010077696)
+(0.8012093235200001,0.0012093235200000274,0.40060466176000004)
+(0.8007255941120001,7.255941120000164E-4,0.40036279705600003)
+(0.8007255941120001,7.255941120000164E-4,0.40036279705600003)
 
 
+_____________________________________________________________
+
+ch. Learning multiple weights at a time - Generalizing Gradient Descent
 
 
 
