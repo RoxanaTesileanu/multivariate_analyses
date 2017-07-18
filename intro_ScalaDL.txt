@@ -433,7 +433,8 @@ updatingWeights(0.5, 0.8, 2, 0.1)
 
 _____________________________________________________________
 
-ch. Learning multiple weights at a time - Generalizing Gradient Descent
+ch. Learning multiple weights at a time - Generalizing Gradient Descent 
+("Grokking Deep Learning" - Andrew Trask)
 
 
 
