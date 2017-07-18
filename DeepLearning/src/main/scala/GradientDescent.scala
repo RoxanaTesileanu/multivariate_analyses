@@ -16,3 +16,5 @@ def updatingWeights (weight: Double, goalPred:Double,
 updatingWeights(0.5, 0.8, 2, 0.1)
 }
 
+
+

@@ -436,9 +436,41 @@ _____________________________________________________________
 ch. Learning multiple weights at a time - Generalizing Gradient Descent 
 ("Grokking Deep Learning" - Andrew Trask)
 
+I've summed up the information in an object called GradientDescentMultiInput found in the GradientDescentMultiInput.scala file. 
 
+object GradientDescentMultiInput {
 
+import breeze.linalg._
+import scala.math._
 
+val myW = new DenseVector(Array(0.1, 0.2, -0.1))
+val myI = new DenseVector(Array(8.5, 0.65, 1.2))
+val goalPredict = new DenseVector(Array(1,1,0,1))
+@annotation.tailrec
+def updatingWeights (myWeights: DenseVector[Double], goalPred:Double,
+                     myInputs: DenseVector[Double], alpha :Double) : Unit = {
+
+  def predict (myInputs: DenseVector[Double], myWeights: DenseVector[Double]) : Double= {
+val dotProduct = myInputs dot myWeights
+dotProduct
+}
+  var error = predict(myInputs, myWeights) - goalPredict(0)
+  var derivative = myInputs* (predict(myInputs, myWeights) - goalPredict(0))
+
+    if (abs(error) < 0.001) println(predict(myInputs, myWeights) , error, myWeights)
+    else updatingWeights(myWeights - alpha * derivative, goalPred, myInputs, alpha)
+}
+
+}
+
+If I use the updatingWeights() function I get the following output in REPL:
  
+updatingWeights(myW, 1.0, myI, 0.01)
+//(0.9993712348198351,-6.287651801648586E-4,DenseVector(0.11598455720652519, 0.20122234849226373, -0.09774335662966704))
+ 
+_______________________________________________
+
+Gradient Descent with multiple outputs
+
 
 
