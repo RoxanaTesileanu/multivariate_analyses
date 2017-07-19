@@ -7,6 +7,13 @@ References:
 "Grokking deep learning" - Andrew Trask, 2017
 http://technobium.com/logistic-regression-using-apache-spark/
 "Learning Scala" - Jason Swartz, 2015
+"Machine learning in action" - Peter Harrington, 2012
+
+
+Key terminology
+
+- train the algorithm, i.e. allow it to learn, using a training set
+- the training set contains training instances with features (i.e. explanatory variables) and one or more target variables (i.e. response variables)
 
 ch.1 Getting started
 
