@@ -13,7 +13,7 @@ case class createData (group: Vector[(Double, Double)], labels: Vector[Char], cl
 val dataSet = createData(group, lables)
  
 
-class classifykNN (P:Vector[(Double, Double)], dataSet: createData, k: Int)  {
+def classifykNN (P:Vector[(Double, Double)], dataSet: createData, k: Int) : Char={
 
 def distance (P1: Vector[(Double,Double)], P2: Vector[(Double,Double)]) : Double = {
   
@@ -21,20 +21,22 @@ val d = sqrt(pow(P1(0)._1 - P2(0)._1, 2) + pow(P1(0)._2- P2(0)._2,2))
 d
 }
 
+def sortingDist (dataSet: createData) : Vector[(Double, Char)] = {
+
 val distances = dataSet.group map(x => distance(P, Vector(x))) 
 
-val labeledDist = distances zip(lables)
+val labeledDist = distances zip(dataSet.lables)
 
 val sortedDist = labeledDist.sortBy(_._1)
+sortedDist
+}
 
+
+def countingClasses (sortedDist: Vector[(Double, Char)]) : Char = {
 val kN = sortedDist.slice(0, k)
 
 if (kN.count(_._2 == classes(0)) > (kN.count(_._2 == classes(1))) classes(0) else classes(1)
-
-//def sortingDist (labeledDist : Vector[(Double, Char)]) : Vector[(Double, Char)] ={
-
-
-//}
+}
 
 
 }
