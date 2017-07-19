@@ -1,6 +1,5 @@
 object kNN{
 
-//import breeze.linalg._
 import scala.math._
 import scala.util.Sorting
 
@@ -10,7 +9,7 @@ val classes = Vector('A', 'B')
 
 case class createData (group: Vector[(Double, Double)], labels: Vector[Char], classes: Vector[Char]) 
 
-val dataSet = createData(group, lables)
+val dataSet = createData(group, lables, classes)
  
 
 def classifykNN (P:Vector[(Double, Double)], dataSet: createData, k: Int) : Char={
@@ -35,7 +34,7 @@ sortedDist
 def countingClasses (sortedDist: Vector[(Double, Char)]) : Char = {
 val kN = sortedDist.slice(0, k)
 
-if (kN.count(_._2 == classes(0)) > (kN.count(_._2 == classes(1))) classes(0) else classes(1)
+if (kN.count(_._2 == dataSet.classes(0)) > (kN.count(_._2 == dataSet.classes(1))) dataSet.classes(0) else dataSet.classes(1)
 }
 
 
