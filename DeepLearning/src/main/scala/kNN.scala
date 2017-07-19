@@ -12,17 +12,17 @@ val dataSet = createData(group, lables)
  
 
 
-class classifykNN (P:DenseVector[Double], dataSet: createData, k: Int)  {
+class classifykNN (P:DenseVector[(Double, Double)], dataSet: createData, k: Int)  {
 
-def distance (P1: DenseVector[Double], P2: DenseVector[Double]) : Double = {
+def distance (P1: DenseVector[(Double,Double)], P2: DenseVector[(Double,Double)]) : Double = {
   
-val d = sqrt(pow(P1(0)- P2(0),2) + pow(P1(1) - P2(1),2))
+val d = sqrt(pow(P1(0)._1 - P2(0)._1, 2) + pow(P1(0)._2- P2(0)._2,2))
 d
 }
 
-//val distances = dataSet.group map(x => distance(P, x))
+val distances = dataSet.group map(x => distance(P, DenseVector(x))) 
 
-//val labeledDist = distances.toScalaVector zip(labels.toScalaVector)
+val labeledDist = distances.toScalaVector zip(lables.toScalaVector)
 
 //def sortingDist (labeledDist : Vector[(Double, Char)]) : Vector[(Double, Char)] ={
 
