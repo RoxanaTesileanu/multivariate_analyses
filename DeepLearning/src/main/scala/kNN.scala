@@ -6,7 +6,7 @@ import scala.util.Sorting
 
 val group = Vector((1.0, 1.1), (1.0, 1.0), (0.0, 0.0), (0.0, 0.1))
 val lables = Vector('A', 'A', 'B', 'B')
-case class createData (group: Vector[(Double, Double)], labels: Vector[Char]) 
+case class createData (group: Vector[(Double, Double)], labels: Vector[Char], classes: Vector[Char]) 
 
 val dataSet = createData(group, lables)
  
@@ -23,6 +23,12 @@ d
 val distances = dataSet.group map(x => distance(P, Vector(x))) 
 
 val labeledDist = distances zip(lables)
+
+val sortedDist = labeledDist.sortBy(_._1)
+
+val kN = sortedDist.slice(0, k)
+
+if (kN.count(_._2 == classes(0)) > (kN.count(_._2 == classes(1)) classes(0) else classes(1)
 
 //def sortingDist (labeledDist : Vector[(Double, Char)]) : Vector[(Double, Char)] ={
 
