@@ -4,7 +4,7 @@
 		module="deeplearning_2.11"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170629134147"
+		publication="20170711120947"
 	>
 		<description>
 		DeepLearning
@@ -40,5 +40,9 @@
 		<dependency org="darrenjw" name="scala-glm_2.11" rev="0.2" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-core_2.11" rev="2.1.1" conf="provided->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-mllib_2.11" rev="2.1.1" conf="provided->default(compile)"/>
+		<dependency org="com.univocity" name="univocity-parsers" rev="2.4.1" conf="compile->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-sql_2.11" rev="2.1.1" conf="compile->default(compile)"/>
+		<dependency org="org.apache.commons" name="commons-math3" rev="3.6" conf="compile->default(compile)"/>
+		<dependency org="org.jfree" name="jfreechart" rev="1.0.18" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

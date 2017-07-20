@@ -1,5 +1,8 @@
 
 object GradientDescent{
+
+import scala.math._
+
 @annotation.tailrec
 def updatingWeights (weight: Double, goalPred:Double,
                      input: Double, alpha :Double) : Unit = {
@@ -8,7 +11,7 @@ def updatingWeights (weight: Double, goalPred:Double,
   var error = prediction - goalPred
   var derivative = input* (prediction - goalPred)
 
-    if (error < 0.001) println(prediction , error, weight)
+    if (abs(error) < 0.001) println(prediction , error, weight)
     else updatingWeights(weight - alpha * derivative, goalPred, input, alpha)
 
 }

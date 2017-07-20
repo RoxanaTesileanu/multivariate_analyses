@@ -10,9 +10,9 @@ libraryDependencies ++= Seq(
 //"com.databricks" % "spark-csv_2.11" % "1.5.0",
 "com.univocity" % "univocity-parsers" % "2.4.1",
 "org.apache.spark" % "spark-sql_2.11" % "2.1.1",
-"org.apache.commons" % "commons-math3" % "3.6"
+"org.apache.commons" % "commons-math3" % "3.6",
+"org.jfree" % "jfreechart" % "1.0.18"
 )
-
 resolvers ++= Seq("scalaz-bintray" at "http://dl.bintray.com/scalaz/releases",
 "Newcastle mvn repo" at "https://www.staff.ncl.ac.uk/d.j.wilkinson/mvn/")
 
