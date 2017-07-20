@@ -477,7 +477,23 @@ updatingWeights(myW, 1.0, myI, 0.01)
  
 _______________________________________________
 
-Gradient Descent with multiple outputs
+Creating a package to better organize the code:
+
+scala> import com.incds.scalaML._
+import com.incds.scalaML._
+
+scala> kNN.
+classes   classifykNN   createData   dataSet   group   lables   result
+
+It can be directly imported, and easily accessed.
+
+_________________________________________________
+
+
+
+
+
+
 
 
 
