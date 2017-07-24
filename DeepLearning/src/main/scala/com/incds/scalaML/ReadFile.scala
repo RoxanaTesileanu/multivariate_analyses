@@ -12,9 +12,10 @@ val data2 = data.map( for (i <- _) yield(i))
 
 val data3= data2.map( for (i <- _) yield (i.toDouble))
 
-val dataMatrix= data3.map { case(List(param1, param2, param3, param4)) => List(param1, param2, param3)}
+val dataMatrix= data3.map { case x => x.take(len-1)}
 
-val dataLabels = data3.map { case(List(param1, param2, param3, param4)) => List(param4)}
+val dataLabels = data3.map { case x => x.last}
+
 
 (dataMatrix, dataLabels)
 }
