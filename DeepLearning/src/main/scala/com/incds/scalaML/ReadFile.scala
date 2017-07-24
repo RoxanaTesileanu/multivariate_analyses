@@ -2,7 +2,7 @@ package com.incds.scalaML
  
 object ReadFile {
 
-def readFileClassif (filename: String, delim: String) :  (Array[List[Double]], Array[List[Double]])= {
+def readFileClassif (filename: String, delim: String) :  (Vector[Array[Double]], Vector[Double])= {
 
 val src = scala.io.Source.fromFile(filename)
 val data = src.getLines.map(_.split(delim)).toArray.drop(1)
@@ -12,9 +12,9 @@ val data2 = data.map( for (i <- _) yield(i))
 
 val data3= data2.map( for (i <- _) yield (i.toDouble))
 
-val dataMatrix= data3.map { case x => x.take(len-1)}
+val dataMatrix= data3.map{ case x => x.take(len-1)}.toVector
 
-val dataLabels = data3.map { case x => x.last}
+val dataLabels = data3.map{ case x => x.last}.toVector
 
 
 (dataMatrix, dataLabels)
