@@ -487,13 +487,30 @@ classes   classifykNN   createData   dataSet   group   lables   result
 
 It can be directly imported, and easily accessed.
 I've used the directory structure found in "Scala for Machine Learning" - Patrick R. Nicolas, 2015. 
+
+I've developed a readFileClassif() function to read txt and csv files for the kNN classifier. A first version is:
+
+def readFileClassif (filename: String, delim: String) :  (Vector[Array[Double]], Vector[Double],  Range.Partial[Double,scala.collection.immutable.NumericRange[Double]]
+)= {
+
+val src = scala.io.Source.fromFile(filename)
+val data = src.getLines.map(_.split(delim)).toArray.drop(1)
+src.close()
+val len = data(0).length
+val data2 = data.map( for (i <- _) yield(i))
+
+val data3= data2.map( for (i <- _) yield (i.toDouble))
+
+val dataMatrix= data3.map{ case x => x.take(len-1)}.toVector
+
+val dataLabels = data3.map{ case x => x.last}.toVector
+
+val classes = (dataLabels.min to dataLabels.max)
+
+(dataMatrix, dataLabels, classes)
+}
+
 _________________________________________________
-
-
-
-
-
-
 
 
 
