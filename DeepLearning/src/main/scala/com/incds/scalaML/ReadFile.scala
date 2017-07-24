@@ -1,4 +1,4 @@
-/* The function readFileClassif() reads txt and csv files. The first row is assumed to contain the header. It returns tuple with the information needed for the kNN classifier. 
+/* The function readFileClassif() reads txt and csv files. The first row is assumed to contain the header and the last column is assumed to contain the labels. It returns tuple with the information needed for the kNN classifier. 
 
 */ 
 
