@@ -1,8 +1,14 @@
+/* The function readFileClassif() reads txt and csv files. The first row is assumed to contain the header. It returns tuple with the information needed for the kNN classifier. 
+
+*/ 
+
+
 package com.incds.scalaML
- 
+
 object ReadFile {
 
-def readFileClassif (filename: String, delim: String) :  (Vector[Array[Double]], Vector[Double])= {
+def readFileClassif (filename: String, delim: String) :  (Vector[Array[Double]], Vector[Double],  Range.Partial[Double,scala.collection.immutable.NumericRange[Double]]
+)= {
 
 val src = scala.io.Source.fromFile(filename)
 val data = src.getLines.map(_.split(delim)).toArray.drop(1)
@@ -16,8 +22,9 @@ val dataMatrix= data3.map{ case x => x.take(len-1)}.toVector
 
 val dataLabels = data3.map{ case x => x.last}.toVector
 
+val classes = (dataLabels.min to dataLabels.max)
 
-(dataMatrix, dataLabels)
+(dataMatrix, dataLabels, classes)
 }
 
 }
