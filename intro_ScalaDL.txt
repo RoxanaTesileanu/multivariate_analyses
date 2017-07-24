@@ -486,7 +486,7 @@ scala> kNN.
 classes   classifykNN   createData   dataSet   group   lables   result
 
 It can be directly imported, and easily accessed.
-
+I've used the directory structure found in "Scala for Machine Learning" - Patrick R. Nicolas, 2015. 
 _________________________________________________
 
 
