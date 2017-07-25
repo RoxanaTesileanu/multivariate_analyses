@@ -53,7 +53,7 @@ return(countingClasses(sortedDist))
 
 //trying out the kNN algorithm:
 
-val result = classifykNN(Vector((0.1, 0.1)), dataSet, 3)
+val result = classifykNN(Vector(Array(0.1, 0.1)), dataSet, 3)
 
 }
 
