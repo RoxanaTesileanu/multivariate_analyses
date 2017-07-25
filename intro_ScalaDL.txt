@@ -1,14 +1,15 @@
 References:
-"Scala for Machine Learning" - Patrick R. Nicolas, 2015
-"Scala for Data Science" - Pascal Bugnion, 2016
-"Learning Spark" - Holden Karau, Andy Konwinski, Patrick Wendell, Matei Zaharia, 2015 
-"Statistical Computing with Scala: A functional approach to data science" - Darren Wilkinson, 2017, https://github.com/darrenjw/scala-course
-"Scientific computing with Scala" - Vytautas Jancauskas, 2016
-"Grokking deep learning" - Andrew Trask, 2017
-http://technobium.com/logistic-regression-using-apache-spark/
-"Learning Scala" - Jason Swartz, 2015
-"Machine learning in action" - Peter Harrington, 2012
 
+"Scala for Data Science" - Bugnion, Pascal 2016
+"Machine learning in action" - Harrington Peter, 2012
+"Scientific computing with Scala" - Jancauskas Vytautas, 2016
+"Learning Spark" -  Karau Holden, Konwinski Andy, Wendell Patrick, Zaharia Matei, 2015 
+"Scala for Machine Learning" - Nicolas, R. Patrick  2015
+"Learning Scala" - Swartz Jason, 2015
+"Grokking deep learning" - Trask Andrew, 2017
+Martin Odersky, Lex Spoon, Bill Venners - "Programming in Scala", Second Edition, 2010
+"Statistical Computing with Scala: A functional approach to data science" - Wilkinson Darren, 2017, https://github.com/darrenjw/scala-course
+http://technobium.com/logistic-regression-using-apache-spark/
 
 Key terminology
 
