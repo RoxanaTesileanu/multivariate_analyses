@@ -9,10 +9,9 @@ val dataMatrix = Vector(Array(1.0, 1.1), Array(1.0, 1.0), Array(0.0, 0.0), Array
 val dataLabels = Vector(1, 1, 2, 2)
 val classes = Range (dataLabels.min, dataLabels.max+1)
 
-case class createData (dataMatrix: Vector[Array(Double)], dataLabels: Vector[Int], classes: Range) 
+case class CreateData (dataMatrix: Vector[Array[Double]], dataLabels: Vector[Int], classes: Range) 
 
-val dataSet = createData(dataMatrix, dataLabels, classes)
- p
+val dataSet =  new CreateData(dataMatrix, dataLabels, classes)
 
 def classifykNN (P:Vector[Array(Double)], dataSet: createData, k: Int) : Unit={
 
@@ -24,9 +23,9 @@ d
 
 def sortingDist (dataSet: createData) : Vector[(Double, Char)] = {
 
-val distances = dataSet.group map(x => distance(P, Vector(x))) 
+val distances = dataSet.dataMatrix map(x => distance(P, Vector(x))) 
 
-val labeledDist = distances zip(dataSet.lables)
+val labeledDist = distances zip(dataSet.dataLabels)
 
 val sortedDist = labeledDist.sortBy(_._1)
 sortedDist

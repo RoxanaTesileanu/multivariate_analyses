@@ -516,6 +516,60 @@ Now, I would like to connect the two pieces, so they can be used together. I wil
  
 _________________________________________________
 
+Rewriting the distance() function to generalize the computation of the Euclidean distance between two vectors.  
+
+scala> P1
+res27: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(77450.0, 14.856391, 1.129823))
+
+scala> P2
+res28: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(46426.0, 7.292202, 0.548607))
+
+scala> val tuple=(P1, P2)
+tuple: (scala.collection.immutable.Vector[Array[Double]], scala.collection.immutable.Vector[Array[Double]]) = (Vector(Array(77450.0, 14.856391, 1.129823)),Vector(Array(46426.0, 7.292202, 0.548607)))
+
+scala> tuple._1(0)
+res29: Array[Double] = Array(77450.0, 14.856391, 1.129823)
+
+scala> tuple._1
+res30: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(77450.0, 14.856391, 1.129823))
+
+scala> tuple._1(0)(0)
+res31: Double = 77450.0
+
+scala> tuple._2(0)(0)
+res32: Double = 46426.0
+
+
+scala> val featuresP1 = for (i <- P1(0)) yield i 
+featuresP1: Array[Double] = Array(77450.0, 14.856391, 1.129823)
+
+scala> featuresP1(0)
+res52: Double = 77450.0
+
+scala> val featuresP2 = for (i <- P2(0)) yield i
+featuresP2: Array[Double] = Array(46426.0, 7.292202, 0.548607)
+
+scala> import breeze.linalg._
+import breeze.linalg._
+
+scala> featuresP1 - featuresP2
+res53: Array[Double] = Array(31024.0, 7.564189000000001, 0.5812160000000001)
+
+scala> val pointDiff= featuresP1 - featuresP2
+pointDiff: Array[Double] = Array(31024.0, 7.564189000000001, 0.5812160000000001)
+
+scala> for (i <- pointDiff) yield pow(i, 2)
+res54: Array[Double] = Array(9.62488576E8, 57.21695522772101, 0.33781203865600007)
+
+scala> val pointDiffPow = for (i <- pointDiff) yield pow(i, 2)
+pointDiffPow: Array[Double] = Array(9.62488576E8, 57.21695522772101, 0.33781203865600007)
+
+scala> val d = sum(pointDiffPow)
+d: Double = 9.624886335547673E8
+
+
+
+
 
 
 
