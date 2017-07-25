@@ -5,9 +5,12 @@
 
 package com.incds.scalaML
 
+
 object ReadFile {
 
-def readFileClassif (filename: String, delim: String) :  (Vector[Array[Double]], Vector[Double],  Range.Partial[Double,scala.collection.immutable.NumericRange[Double]]
+import scala.math._
+
+def readFileClassif (filename: String, delim: String) :  (Vector[Array[Double]], Vector[Int],  Range]
 )= {
 
 val src = scala.io.Source.fromFile(filename)
@@ -20,9 +23,9 @@ val data3= data2.map( for (i <- _) yield (i.toDouble))
 
 val dataMatrix= data3.map{ case x => x.take(len-1)}.toVector
 
-val dataLabels = data3.map{ case x => x.last}.toVector
+val dataLabels = data3.map{ case x => x.last.toInt}.toVector
 
-val classes = (dataLabels.min to dataLabels.max)
+val classes = Range(dataLabels.min, dataLabels.max+1)
 
 (dataMatrix, dataLabels, classes)
 }

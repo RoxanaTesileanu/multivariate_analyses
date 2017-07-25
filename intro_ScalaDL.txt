@@ -6,7 +6,7 @@ Karau Holden, Konwinski Andy, Wendell Patrick, Zaharia Matei 2015 - "Learning Sp
 Nicolas R. Patrick  2015 - "Scala for Machine Learning", Packt Publishing, Birmingham 
 Swartz Jason 2015 - "Learning Scala", Manning Publications Co., Shelter Island 
 Trask Andrew 2017 - "Grokking deep learning", Manning Publications Co., Shelter Island 
-Martin Odersky, Lex Spoon, Bill Venners 2010 - "Programming in Scala", Second Edition, Artima, Walnut Creek
+Odersky Martin, Spoon Lex, Venners Bill 2010 - "Programming in Scala", Second Edition, Artima, Walnut Creek
 Wilkinson Darren 2017 - "Statistical Computing with Scala: A functional approach to data science" -  https://github.com/darrenjw/scala-course
 http://technobium.com/logistic-regression-using-apache-spark/
 

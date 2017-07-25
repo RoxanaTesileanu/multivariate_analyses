@@ -5,18 +5,18 @@ object kNN{
 import scala.math._
 import scala.util.Sorting
 
-val group = Vector((1.0, 1.1), (1.0, 1.0), (0.0, 0.0), (0.0, 0.1))
-val lables = Vector('A', 'A', 'B', 'B')
-val classes = Vector('A', 'B')
+val dataMatrix = Vector(Array(1.0, 1.1), Array(1.0, 1.0), Array(0.0, 0.0), Array(0.0, 0.1))
+val dataLabels = Vector(1, 1, 2, 2)
+val classes = Range (dataLabels.min, dataLabels.max+1)
 
-case class createData (group: Vector[(Double, Double)], lables: Vector[Char], classes: Vector[Char]) 
+case class createData (dataMatrix: Vector[Array(Double)], dataLabels: Vector[Int], classes: Range) 
 
-val dataSet = createData(group, lables, classes)
- 
+val dataSet = createData(dataMatrix, dataLabels, classes)
+ p
 
-def classifykNN (P:Vector[(Double, Double)], dataSet: createData, k: Int) : Unit={
+def classifykNN (P:Vector[Array(Double)], dataSet: createData, k: Int) : Unit={
 
-def distance (P1: Vector[(Double,Double)], P2: Vector[(Double,Double)]) : Double = {
+def distance (P1: Vector[Array(Double)], P2: Vector[Array(Double)]) : Double = {
   
 val d = sqrt(pow(P1(0)._1 - P2(0)._1, 2) + pow(P1(0)._2- P2(0)._2,2))
 d
