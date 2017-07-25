@@ -59,5 +59,6 @@ val result = classifykNN(Vector(Array(0.1, 0.1)), dataSet, 3)
 
 /* References: 
 Machine Learning in Action - Peter Harrington, 2012 
+Programming in Scala - Martin Odersky, Lex Spoon, Bill Venners, 2010
 Learning Scala - Jason Swartz, 2015
 */
