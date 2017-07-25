@@ -4,6 +4,7 @@ object kNN{
 
 import scala.math._
 import scala.util.Sorting
+import breeze.linalg._
 
 val dataMatrix = Vector(Array(1.0, 1.1), Array(1.0, 1.0), Array(0.0, 0.0), Array(0.0, 0.1))
 val dataLabels = Vector(1, 1, 2, 2)
@@ -17,11 +18,15 @@ def classifykNN (P:Vector[Array(Double)], dataSet: createData, k: Int) : Unit={
 
 def distance (P1: Vector[Array(Double)], P2: Vector[Array(Double)]) : Double = {
   
-val d = sqrt(pow(P1(0)._1 - P2(0)._1, 2) + pow(P1(0)._2- P2(0)._2,2))
+val featuresP1 = for (i <- P1(0)) yield i
+val featuresP2 = for (i <- P2(0)) yield i
+val pointDiff = featuresP1 - featuresP2
+val pointDiffPow = for (i <- pointDiff) yield pow(i,2)
+val d = sqrt(sum(pointDiffPow))
 d
 }
 
-def sortingDist (dataSet: createData) : Vector[(Double, Char)] = {
+def sortingDist (dataSet: createData) : Vector[(Double, Int)] = {
 
 val distances = dataSet.dataMatrix map(x => distance(P, Vector(x))) 
 

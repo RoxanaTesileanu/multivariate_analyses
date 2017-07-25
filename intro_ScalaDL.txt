@@ -564,12 +564,14 @@ res54: Array[Double] = Array(9.62488576E8, 57.21695522772101, 0.3378120386560000
 scala> val pointDiffPow = for (i <- pointDiff) yield pow(i, 2)
 pointDiffPow: Array[Double] = Array(9.62488576E8, 57.21695522772101, 0.33781203865600007)
 
-scala> val d = sum(pointDiffPow)
-d: Double = 9.624886335547673E8
+scala> val d = sqrt(sum(pointDiffPow))
+d: Double = 31024.000927584555
 
 Now, I will insert the changes into the kNN.scala file. 
 
 ________________________________________________________________
+
+
 
 
 
