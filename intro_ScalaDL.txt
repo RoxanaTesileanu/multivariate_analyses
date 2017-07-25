@@ -511,6 +511,10 @@ val classes = (dataLabels.min to dataLabels.max)
 (dataMatrix, dataLabels, classes)
 }
 
+
+
+Now, I would like to connect the two pieces, so they can be used together. I will take a look at types and harmonize them.
+ 
 _________________________________________________
 
 
