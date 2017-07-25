@@ -7,7 +7,7 @@ Experimenting with multivariate analyses in R:
  
 - neural networks theory and code from Trask 2017 "Grokking deep learning",
 
-- implementing ML code in Scala using "Learning Scala" (Jason Swartz 2015), "Learning Spark" (Karau et al. 2015), "Coursera" (Martin Odersky et al.) https://www.coursera.org/learn/progfun1, "Scala for Machine Learning" (Patrick R. Nicolas 2015), "Statistical Computing with Scala: A functional approach to data science" (Darren Wilkinson 2017) https://github.com/darrenjw/scala-course, "Machine learning in action" (Peter Harrington, 2012) 
+- implementing ML code in Scala using "Learning Scala" (Jason Swartz 2015), "Programming in Scala", Second Edition (Martin Odersky, Lex Spoon, Bill Venners, 2010), "Learning Spark" (Karau et al. 2015), "Coursera" (Martin Odersky et al.) https://www.coursera.org/learn/progfun1, "Scala for Machine Learning" (Patrick R. Nicolas 2015), "Statistical Computing with Scala: A functional approach to data science" (Darren Wilkinson 2017) https://github.com/darrenjw/scala-course, "Machine learning in action" (Peter Harrington, 2012) 
 
 - linear algebra theory from Paul Dawkins 2017 "Paul's Math Notes on Linear Algebra", 
 
