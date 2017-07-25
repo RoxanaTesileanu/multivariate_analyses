@@ -1,14 +1,13 @@
 References:
 
-"Scala for Data Science" - Bugnion, Pascal 2016
-"Machine learning in action" - Harrington Peter, 2012
-"Scientific computing with Scala" - Jancauskas Vytautas, 2016
-"Learning Spark" -  Karau Holden, Konwinski Andy, Wendell Patrick, Zaharia Matei, 2015 
-"Scala for Machine Learning" - Nicolas, R. Patrick  2015
-"Learning Scala" - Swartz Jason, 2015
-"Grokking deep learning" - Trask Andrew, 2017
-Martin Odersky, Lex Spoon, Bill Venners - "Programming in Scala", Second Edition, 2010
-"Statistical Computing with Scala: A functional approach to data science" - Wilkinson Darren, 2017, https://github.com/darrenjw/scala-course
+Bugnion Pascal 2016 - "Scala for Data Science", Packt Publishing, Birmingham 
+Harrington Peter 2012 - "Machine learning in action", Manning Publications Co., Shelter Island
+Karau Holden, Konwinski Andy, Wendell Patrick, Zaharia Matei 2015 - "Learning Spark", O'Reilly, Sebastopol   
+Nicolas R. Patrick  2015 - "Scala for Machine Learning", Packt Publishing, Birmingham 
+Swartz Jason 2015 - "Learning Scala", Manning Publications Co., Shelter Island 
+Trask Andrew 2017 - "Grokking deep learning", Manning Publications Co., Shelter Island 
+Martin Odersky, Lex Spoon, Bill Venners 2010 - "Programming in Scala", Second Edition, Artima, Walnut Creek
+Wilkinson Darren 2017 - "Statistical Computing with Scala: A functional approach to data science" -  https://github.com/darrenjw/scala-course
 http://technobium.com/logistic-regression-using-apache-spark/
 
 Key terminology
@@ -516,6 +515,7 @@ val classes = (dataLabels.min to dataLabels.max)
 Now, I would like to connect the two pieces, so they can be used together. I will take a look at types and harmonize them.
  
 _________________________________________________
+
 
 
 
