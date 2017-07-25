@@ -516,7 +516,7 @@ Now, I would like to connect the two pieces, so they can be used together. I wil
  
 _________________________________________________
 
-Rewriting the distance() function to generalize the computation of the Euclidean distance between two vectors.  
+Rewriting the distance() function to generalize the computation of the Euclidean distance between any two vectors of the same length.  
 
 scala> P1
 res27: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(77450.0, 14.856391, 1.129823))
@@ -566,6 +566,10 @@ pointDiffPow: Array[Double] = Array(9.62488576E8, 57.21695522772101, 0.337812038
 
 scala> val d = sum(pointDiffPow)
 d: Double = 9.624886335547673E8
+
+Now, I will insert the changes into the kNN.scala file. 
+
+________________________________________________________________
 
 
 
