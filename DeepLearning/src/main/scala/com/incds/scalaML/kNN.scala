@@ -14,7 +14,7 @@ case class CreateData (dataMatrix: Vector[Array[Double]], dataLabels: Vector[Int
 
 val dataSet =  new CreateData(dataMatrix, dataLabels, classes)
 
-def classifykNN (P:Vector[Array[Double]], dataSet: createData, k: Int) : Unit={
+def classifykNN (P:Vector[Array[Double]], dataSet: createData, k: Int) : Int={
 
 def distance (P1: Vector[Array[Double]], P2: Vector[Array[Double]]) : Double = {
   
@@ -42,12 +42,11 @@ def countingClasses (sortedDist: Vector[(Double, Int)]) : Int = {
 val kN = sortedDist.slice(0, k)
 val countClasses =for (i <- dataSet.classes) yield(kN.count(_._2 == i)) 
 val classesAndCounts = classes zip countClasses
-
-if ((kN.count(_._2 == dataSet.classes(0))) > (kN.count(_._2 == dataSet.classes(1)))) dataSet.classes(0) else dataSet.classes(1)
+val result = classesAndCounts.sortBy(_._2).last._1
+result
 
 }
-
-println(countingClasses(sortedDist))
+return(countingClasses(sortedDist))
 
 }
 
