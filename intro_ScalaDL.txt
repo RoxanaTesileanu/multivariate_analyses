@@ -721,20 +721,75 @@ ___________________________________________________________________
 
 In order to reduce the type families used in the kNN classifier, and stick to Scala types, I will organize the code for the basic vector operations (dot product and elementwise operations) in the BasicVectorOP.scala file. 
 
-scala> val a = Vector(0.1, 0.1, 0.3)
-a: scala.collection.immutable.Vector[Double] = Vector(0.1, 0.1, 0.3)
+Now, I can use the vector operations to compute the Euclidean distances for two vectors of the same length inside the kNN classifier:
 
-scala> val b = Vector(0.1,0.1, 0.2)
-b: scala.collection.immutable.Vector[Double] = Vector(0.1, 0.1, 0.2)
+object kNN{
 
-scala> val pairs = a zip b
-pairs: scala.collection.immutable.Vector[(Double, Double)] = Vector((0.1,0.1), (0.1,0.1), (0.3,0.2))
 
-scala> val pairProd = for (p <- pairs) yield { p._1 * p._2} 
-pairProd: scala.collection.immutable.Vector[Double] = Vector(0.010000000000000002, 0.010000000000000002, 0.06)
+import scala.math._
+import scala.util.Sorting
+import com.incds.scalaML.BasicVectorOP._
 
-scala> val dot = pairProd.sum
-dot: Double = 0.08
+val dataMatrix = Vector(Array(1.0, 1.1), Array(1.0, 1.0), Array(0.0, 0.0), Array(0.0, 0.1))
+val dataLabels = Vector(1, 1, 2, 2)
+val classes = Range (dataLabels.min, dataLabels.max+1)
+
+case class CreateData (dataMatrix: Vector[Array[Double]], dataLabels: Vector[Int], classes: Range) 
+
+val dataSet =  new CreateData(dataMatrix, dataLabels, classes)
+
+def classifykNN (P:Vector[Array[Double]], dataSet: CreateData, k: Int) : Int={
+
+def distance (P1: Vector[Array[Double]], P2: Vector[Array[Double]]) : Double = {
+  
+val featuresP1 = for (i <- P1(0)) yield i
+val featuresP2 = for (i <- P2(0)) yield i
+val pointDiff = arraySubt(featuresP1, featuresP2)
+val pointDiffPow = for (i <- pointDiff) yield pow(i,2)
+val d = sqrt(pointDiffPow.sum)
+d
+}
+
+def sortingDist (dataSet: CreateData) : Vector[(Double, Int)] = {
+
+val distances = dataSet.dataMatrix map(x => distance(P, Vector(x)))
+
+val labeledDist = distances zip (dataSet.dataLabels) 
+
+val sortedDist = labeledDist.sortBy(_._1)
+sortedDist
+}
+
+val sortedDist = sortingDist(dataSet)
+
+def countingClasses (sortedDist: Vector[(Double, Int)]) : Int = {
+val kN = sortedDist.slice(0, k)
+val countClasses =for (i <- dataSet.classes) yield(kN.count(_._2 == i)) 
+val classesAndCounts = classes zip countClasses
+val result = classesAndCounts.sortBy(_._2).last._1
+result
+
+}
+return(countingClasses(sortedDist))
+
+}
+
+
+//trying out the kNN algorithm:
+
+val result = classifykNN(Vector(Array(0.1, 0.1)), dataSet, 3)
+
+}
+
+/* References: 
+Machine Learning in Action - Peter Harrington, 2012 
+Programming in Scala - Martin Odersky, Lex Spoon, Bill Venners, 2010
+Learning Scala - Jason Swartz, 2015
+*/
+________________________________________________________________________________
+
+
+
 
 
 

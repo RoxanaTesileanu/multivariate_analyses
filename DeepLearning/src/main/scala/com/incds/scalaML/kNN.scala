@@ -22,9 +22,9 @@ def distance (P1: Vector[Array[Double]], P2: Vector[Array[Double]]) : Double = {
   
 val featuresP1 = for (i <- P1(0)) yield i
 val featuresP2 = for (i <- P2(0)) yield i
-val pointDiff = arrSubt(featuresP1, featuresP2)
+val pointDiff = arraySubt(featuresP1, featuresP2)
 val pointDiffPow = for (i <- pointDiff) yield pow(i,2)
-val d = sqrt(sum(pointDiffPow))
+val d = sqrt(pointDiffPow.sum)
 d
 }
 
