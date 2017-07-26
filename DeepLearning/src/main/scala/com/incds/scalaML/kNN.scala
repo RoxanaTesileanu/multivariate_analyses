@@ -14,7 +14,7 @@ case class CreateData (dataMatrix: Vector[Array[Double]], dataLabels: Vector[Int
 
 val dataSet =  new CreateData(dataMatrix, dataLabels, classes)
 
-def classifykNN (P:Vector[Array[Double]], dataSet: createData, k: Int) : Int={
+def classifykNN (P:Vector[Array[Double]], dataSet: CreateData, k: Int) : Int={
 
 def distance (P1: Vector[Array[Double]], P2: Vector[Array[Double]]) : Double = {
   
@@ -26,11 +26,11 @@ val d = sqrt(sum(pointDiffPow))
 d
 }
 
-def sortingDist (dataSet: createData) : Vector[(Double, Int)] = {
+def sortingDist (dataSet: CreateData) : Vector[(Double, Int)] = {
 
 val distances = dataSet.dataMatrix map(x => distance(P, Vector(x))) 
 
-val labeledDist = distances zip(dataSet.dataLabels)
+val labeledDist = Vector(distances zip(dataSet.dataLabels))
 
 val sortedDist = labeledDist.sortBy(_._1)
 sortedDist

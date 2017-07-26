@@ -10,8 +10,7 @@ object ReadFile {
 
 import scala.math._
 
-def readFileClassif (filename: String, delim: String) :  (Vector[Array[Double]], Vector[Int],  Range]
-)= {
+def readFileClassif (filename: String, delim: String) :  (Vector[Array[Double]], Vector[Int],  Range) = {
 
 val src = scala.io.Source.fromFile(filename)
 val data = src.getLines.map(_.split(delim)).toArray.drop(1)
