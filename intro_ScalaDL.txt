@@ -719,6 +719,24 @@ Martin Odersky, Lex Spoon, Bill Venners - "Programming in Scala", Second Edition
 
 ___________________________________________________________________
 
+In order to reduce the type families used in the kNN classifier, and stick to Scala types, I will organize the code for the basic vector operations (dot product and elementwise operations) in the BasicVectorOP.scala file. 
+
+scala> val a = Vector(0.1, 0.1, 0.3)
+a: scala.collection.immutable.Vector[Double] = Vector(0.1, 0.1, 0.3)
+
+scala> val b = Vector(0.1,0.1, 0.2)
+b: scala.collection.immutable.Vector[Double] = Vector(0.1, 0.1, 0.2)
+
+scala> val pairs = a zip b
+pairs: scala.collection.immutable.Vector[(Double, Double)] = Vector((0.1,0.1), (0.1,0.1), (0.3,0.2))
+
+scala> val pairProd = for (p <- pairs) yield { p._1 * p._2} 
+pairProd: scala.collection.immutable.Vector[Double] = Vector(0.010000000000000002, 0.010000000000000002, 0.06)
+
+scala> val dot = pairProd.sum
+dot: Double = 0.08
+
+
 
 
 
