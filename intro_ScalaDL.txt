@@ -788,11 +788,51 @@ Learning Scala - Jason Swartz, 2015
 */
 ________________________________________________________________________________
 
+Now, for the multiplication of two matrices, I will use two scala.Vectors of type Vector[Array[Double]] and return a scala.Vector of type Vector[Array[Double]]. 
 
+Suppose you have a matrix a of shape 2x3 and a matrix b of shape 3x2. If you want the product of axb you get c of form 2x2.
 
+ 
+scala> val a = Vector(Array(2.0, 1.0, 2.0),Array(1.0, 1.0, 3.0))
+a: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(2.0, 1.0, 2.0), Array(1.0, 1.0, 3.0))
 
+scala> val b = Vector(Array(1.0, 2.0), Array(2.0, 2.0), Array(1.0, 1.0))
+b: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(1.0, 2.0), Array(2.0, 2.0), Array(1.0, 1.0))
 
+scala> import com.incds.scalaML.BasicVectorOP._
+import com.incds.scalaML.BasicVectorOP._
+// I will use the dot product 
 
+scala> val bvalues = b.map{ array =>  array(0)} .toArray
+bvalues: Array[Double] = Array(1.0, 2.0, 1.0)
+
+scala> val c11 = dot(a(0), bvalues)
+c11: Double = 6.0
+
+// I guess I will transpose b and then compute the dot products needed.
+
+scala> b.transpose
+res6: scala.collection.immutable.Vector[scala.collection.immutable.Vector[Double]] = Vector(Vector(1.0, 2.0, 1.0), Vector(2.0, 2.0, 1.0))
+
+scala> val tb = b.transpose.map{case x=> x.toArray}
+tb: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(1.0, 2.0, 1.0), Array(2.0, 2.0, 1.0))
+
+scala> val c11 = dot(a(0), tb(0))
+c11: Double = 6.0
+
+scala> val c12 = dot(a(0), tb(1))
+c12: Double = 8.0
+
+scala> val c21 = dot(a(1), tb(0))
+c21: Double = 6.0
+
+scala> val c22 = dot(a(1), tb(1))
+c22: Double = 7.0
+
+scala> val c = Array(Array(c11, c12), Array(c21,c22))
+c: Array[Array[Double]] = Array(Array(6.0, 8.0), Array(6.0, 7.0))
+
+Let's see how I can make a function out of this!
 
 
 
