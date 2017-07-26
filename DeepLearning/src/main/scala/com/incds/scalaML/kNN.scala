@@ -1,10 +1,12 @@
 package com.incds.scalaML
 
+
 object kNN{
+
 
 import scala.math._
 import scala.util.Sorting
-import breeze.linalg._
+import com.incds.scalaML.BasicVectorOP._
 
 val dataMatrix = Vector(Array(1.0, 1.1), Array(1.0, 1.0), Array(0.0, 0.0), Array(0.0, 0.1))
 val dataLabels = Vector(1, 1, 2, 2)
@@ -20,7 +22,7 @@ def distance (P1: Vector[Array[Double]], P2: Vector[Array[Double]]) : Double = {
   
 val featuresP1 = for (i <- P1(0)) yield i
 val featuresP2 = for (i <- P2(0)) yield i
-val pointDiff = featuresP1 - featuresP2
+val pointDiff = arrSubt(featuresP1, featuresP2)
 val pointDiffPow = for (i <- pointDiff) yield pow(i,2)
 val d = sqrt(sum(pointDiffPow))
 d
@@ -28,9 +30,9 @@ d
 
 def sortingDist (dataSet: CreateData) : Vector[(Double, Int)] = {
 
-val distances = dataSet.dataMatrix map(x => distance(P, Vector(x))) 
+val distances = dataSet.dataMatrix map(x => distance(P, Vector(x)))
 
-val labeledDist = Vector(distances zip(dataSet.dataLabels))
+val labeledDist = distances zip (dataSet.dataLabels) 
 
 val sortedDist = labeledDist.sortBy(_._1)
 sortedDist
@@ -62,3 +64,4 @@ Machine Learning in Action - Peter Harrington, 2012
 Programming in Scala - Martin Odersky, Lex Spoon, Bill Venners, 2010
 Learning Scala - Jason Swartz, 2015
 */
+

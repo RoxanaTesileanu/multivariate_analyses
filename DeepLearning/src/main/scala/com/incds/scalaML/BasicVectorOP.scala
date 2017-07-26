@@ -36,3 +36,12 @@ elementwiseMultipl
 }
 
 }
+
+/* References:
+
+Swartz Jason 2015 - "Learning Scala", Manning Publications Co., Shelter Island 
+Trask Andrew 2017 - "Grokking deep learning", Manning Publications Co., Shelter Island 
+Odersky Martin, Spoon Lex, Venners Bill 2010 - "Programming in Scala", Second Edition, Artima, Walnut Creek
+*/
+
+
