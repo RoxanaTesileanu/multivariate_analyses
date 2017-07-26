@@ -834,6 +834,20 @@ c: Array[Array[Double]] = Array(Array(6.0, 8.0), Array(6.0, 7.0))
 
 Let's see how I can make a function out of this!
 
+scala> dot((for (i<- a) yield i), (for (j<- tb) yield j))
+<console>:17: error: type mismatch;
+ found   : scala.collection.immutable.Vector[Array[Double]]
+ required: Array[Double]
+       dot((for (i<- a) yield i), (for (j<- tb) yield j))
+                  ^
+scala> a zip tb
+res21: scala.collection.immutable.Vector[(Array[Double], Array[Double])] = Vector((Array(2.0, 1.0, 2.0),Array(1.0, 2.0, 1.0)), (Array(1.0, 1.0, 3.0),Array(2.0, 2.0, 1.0)))
+
+scala> val pairs = a zip tb
+pairs: scala.collection.immutable.Vector[(Array[Double], Array[Double])] = Vector((Array(2.0, 1.0, 2.0),Array(1.0, 2.0, 1.0)), (Array(1.0, 1.0, 3.0),Array(2.0, 2.0, 1.0)))
+
+
+
 
 
 

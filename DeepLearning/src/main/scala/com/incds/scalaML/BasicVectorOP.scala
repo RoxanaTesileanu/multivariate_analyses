@@ -35,6 +35,22 @@ val elementwiseMultipl = arrayOP(a,b, _ * _)
 elementwiseMultipl
 }
 
+/*def arrayOP2 (a: Array[Array[Double]], b: Array[Array[Double]], f: (Array[Double], Array[Double]) => Array[Double]) = {
+val pairs = (a zip b).toArray
+val OP = for (p <- pairs) yield {f(p._1, p._2)}
+OP
+}
+*/
+
+def matrixMultipl (a: Array[Array[Double]], b: Array[Array[Double]]) : Array[Array[Double]] = {
+
+val tb = b.transpose.map{case x=> x.toArray}
+val pairs1 = (a zip tb).toArray
+val mMultipl1 = pairs1.map( p=> dot(p._1, p._2))
+val pairs0 = (a.reverse zip tb).toArray
+val mMultipl0 = pairs0.map( p => dot(p._1, p._2))
+val product = Array(Array(mMultipl0(0), mMultipl1(1)), Array(mMultipl1(0), mMultipl0(1)))
+product
 }
 
 /* References:
