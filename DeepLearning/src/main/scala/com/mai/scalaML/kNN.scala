@@ -6,7 +6,7 @@ object kNN{
 
 import scala.math._
 import scala.util.Sorting
-import com.incds.scalaML.BasicVectorOP._
+import com.mai.scalaML.BasicVectorOP._
 
 val dataMatrix = Vector(Array(1.0, 1.1), Array(1.0, 1.0), Array(0.0, 0.0), Array(0.0, 0.1))
 val dataLabels = Vector(1, 1, 2, 2)
