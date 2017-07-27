@@ -889,7 +889,7 @@ For two matrices a and b of type Array[Array[Double]] the matrix product is c:
 
 def matrixMultipl (a:Array[Array[Double]], b: Array[Array[Double]]) : Array[Array[Double]] = {
 val tb = b.transpose
-assert( tb(0).length == a(0) length, "Matrices cannot be multiplied!")
+assert( tb(0).length == a(0).length, "Matrices cannot be multiplied!")
 val c = for (i <- a) yield (tb.map { j => dot(j, i) })
 c
 }
