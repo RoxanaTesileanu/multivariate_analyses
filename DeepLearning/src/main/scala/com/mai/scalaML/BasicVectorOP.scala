@@ -8,6 +8,7 @@ object BasicVectorOP {
 
 
 def dot (a : Array[Double], b: Array[Double]) : Double = {
+assert(a.length == b.length, "The dot product cannot be computed!")
 val pairs = a zip b
 val pairProd = for (p <- pairs) yield {p._1 * p._2}
 val dot = pairProd.sum
@@ -21,16 +22,19 @@ OP
 }
 
 def arrayAdd (a: Array[Double], b:Array[Double]) : Array[Double] = {
+assert(a.length == b.length, "Arrays cannot be added!")
 val elementwiseAddition = arrayOP(a,b, _ + _)
 elementwiseAddition
 }
 
 def arraySubt (a: Array[Double], b: Array[Double]) : Array[Double] = {
+assert(a.length == b.length, "Arrays cannot be subtracted!")
 val elementwiseSubtraction = arrayOP(a,b, _ - _)
 elementwiseSubtraction
 }
 
 def arrayMultipl (a: Array[Double], b:Array[Double]) : Array[Double] = {
+assert(a.length == b.length, "Elementwise multiplication is not possible!")
 val elementwiseMultipl = arrayOP(a,b, _ * _)
 elementwiseMultipl
 }
