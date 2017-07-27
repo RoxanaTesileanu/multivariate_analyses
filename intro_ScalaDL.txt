@@ -846,12 +846,56 @@ res21: scala.collection.immutable.Vector[(Array[Double], Array[Double])] = Vecto
 scala> val pairs = a zip tb
 pairs: scala.collection.immutable.Vector[(Array[Double], Array[Double])] = Vector((Array(2.0, 1.0, 2.0),Array(1.0, 2.0, 1.0)), (Array(1.0, 1.0, 3.0),Array(2.0, 2.0, 1.0)))
 
+______retrying with new a and b:
+
+scala> val ais = for (i <- a) yield i
+ais: Array[Array[Double]] = Array(Array(0.1, 0.2), Array(0.1, 0.2))
+
+scala> ais(0)
+res1: Array[Double] = Array(0.1, 0.2)
+
+scala> val ajs = for (j <- b) yield j
+ajs: Array[Array[Double]] = Array(Array(0.3, 0.4), Array(0.5, 0.6))
+
+//the first row of the matrix product:
+scala> ajs.map{ j => dot(j, ais(0))}
+res13: Array[Double] = Array(0.11000000000000001, 0.16999999999999998)
 
 
+scala> ais.map{ i => ajs.map{ j => dot(j, ais(_))}}
+<console>:17: error: missing parameter type for expanded function ((x$1) => ais(x$1))
+       ais.map{ i => ajs.map{ j => dot(j, ais(_))}}
+
+scala> ais.foreach{ ajs.map{j => dot(j, _)}}
+<console>:17: error: missing parameter type for expanded function ((x$1) => dot(j, x$1))
+       ais.foreach{ ajs.map{j => dot(j, _)}}
+                                        ^
+scala> val product = ais.foreach{x=> ajs.map{j => dot(j, x)}}
+product: Unit = ()
+
+scala> val product = a.foreach{ i => b.map{j => dot(j, i)}}
+product: Unit = ()
 
 
+def mM (a: Array[Array[Double]], b: Array[Array[Double]]) : Array[Array[Double]] = {
+
+val rows = a.foreach { i => b.map{j => dot(j,i)} }
+return rows
+}
 
 
+_____________________________
+For two matrices a and b of type Array[Array[Double]] the matrix product is c:
+
+def matrixMultipl (a:Array[Array[Double]], b: Array[Array[Double]]) : Array[Array[Double]] = {
+val tb = b.transpose
+assert( tb(0).length == a(0) length, "Matrices cannot be multiplied!")
+val c = for (i <- a) yield (tb.map { j => dot(j, i) })
+c
+}
+
+Wow! That's all!
+_____________________________
 
 
 
