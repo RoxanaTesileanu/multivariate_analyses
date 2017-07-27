@@ -1,4 +1,4 @@
-package com.incds.scalaML
+package com.mai.scalaML
 /* 
 The BasicVectorOP object offers basic operations for two arrays: dot product, elementwise addition, subtraction, and multiplication. I will extend it to matrices multiplication.    
  
@@ -53,6 +53,7 @@ val product = Array(Array(mMultipl0(0), mMultipl1(1)), Array(mMultipl1(0), mMult
 product
 }
 
+}
 /* References:
 
 Swartz Jason 2015 - "Learning Scala", Manning Publications Co., Shelter Island 

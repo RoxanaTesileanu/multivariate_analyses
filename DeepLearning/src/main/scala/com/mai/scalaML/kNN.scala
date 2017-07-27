@@ -1,4 +1,4 @@
-package com.incds.scalaML
+package com.mai.scalaML
 
 
 object kNN{
