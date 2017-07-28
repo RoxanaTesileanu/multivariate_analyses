@@ -897,6 +897,14 @@ c
 Wow! That's all!
 _____________________________
 
+Data can also be standardized so that each observation is expressed relative to the maximum value of that variable across all objects. This standardization results in observations being expressed as a proportion of the largest value for a variable, and is basically standardization based on the range within a variable (Quinn and Keough 2002). Standardization of variables is essential if the variables are measured in very different units or scales(Quinn and Keough 2002, Harrington 2012, Nicolas 2015). 
+
+I will implement in the object AutoNorm the code for normalizing an entire dataset. 
+
+
+def autoNorm (dataMatrix : Array[Array[Double]]) : Array[Array[Double]] = {
 
 
 
+
+}
