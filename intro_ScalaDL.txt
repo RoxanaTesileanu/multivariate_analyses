@@ -907,10 +907,13 @@ I will implement in the object AutoNorm the code for normalizing an entire datas
 
 def autoNorm (dataMatrix : Array[Array[Double]]) : Array[Array[Double]] = {
 
-
+.......
 
 
 }
+
+Let's see how I fill this in.
+I will experiment a bit in REPL:
 
 
 scala> import com.mai.scalaML.ReadFile._
