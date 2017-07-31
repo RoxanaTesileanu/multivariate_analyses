@@ -1020,6 +1020,40 @@ normalizedDataMatrix: scala.collection.immutable.IndexedSeq[scala.collection.imm
 scala> normalizedDataMatrix.map{ v => v.toArray}
 res35: scala.collection.immutable.IndexedSeq[Array[Double]] = Vector(Array(0.15873259342850568, 0.3419546659888891, 0.9872441587123406), Array(0.2854294260076912, 0.06892523280719681, 0.47449628503016766), Array(0.8232007274878661, 0.6284800736390028, 0.2524892865215854), Array(0.4201023303715228, 0.07982026591745278, 0.07857829588853851), Array(0.7997217139789423, 0.4848018932137898, 0.608960546188209), Array(0.3938514127945833, 0.3265298552072533, 0.7153351617512443), Array(0.46745477852157813, 0.6346454184592456, 0.3203119051961182), Array(0.7395067544618891, 0.41261212287246607, 0.4415363668073096), Array(0.3887568065035662, 0.586689815251899, 0.8893600596331007), Array(0.5504585145661915, 0.17799301498340125, 0.4903093260527125), Array(0.6932499205679664, 0.40086711111325685, 0.984...
 
+_____________________________________-
+
+Now, the function autoNorm() looks like:
+
+object AutoNorm {
+
+
+def autoNorm (dataMatrix : Vector[Array[Double]]) : Vector[Array[Double]] = {
+
+val len = dataMatrix(0).length
+val variables = for (i <- 0 to (len -1)) yield { for (a <- dataMatrix) yield a(i) }
+val normalizedVariables = for (v <- variables) yield { v.map{ a => (a - v.min)/(v.max - v.min)}}
+val minMaxRange = for (v <- variables) yield { (v.min, v.max, v.max - v.min) }
+val len2 = normalizedVariables(0).length
+val normalizedDataMatrix = for (i <- 0 to (len2-1)) yield { for (nv <- normalizedVariables) yield  (nv(i))}  
+val normalizedDataMatrix2 = normalizedDataMatrix.map{ v => v.toArray}.toVector
+
+normalizedDataMatrix2
+}
+
+
+}
+
+/* References:
+
+Harrington Peter 2012 - "Machine learning in action", Manning Publications Co., Shelter Island
+Odersky Martin, Spoon Lex, Venners Bill 2010 - "Programming in Scala", Second Edition, Artima, Walnut Creek
+
+*/
+
+_____________________________________________________
+
+
+
 
 
 
