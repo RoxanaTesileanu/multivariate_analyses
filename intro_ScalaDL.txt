@@ -1,3 +1,10 @@
+Work paper: Scala for statistical computation 
+Project: scalaML package
+Author: Roxana Tesileanu (INCDS)
+Contact: roxana.te@web.de
+
+
+
 References:
 
 Bugnion Pascal 2016 - "Scala for Data Science", Packt Publishing, Birmingham 
