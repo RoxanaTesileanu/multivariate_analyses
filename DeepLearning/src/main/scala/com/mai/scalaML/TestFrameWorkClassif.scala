@@ -27,5 +27,5 @@ def testFrameWorkClassif ( ) : ... = {
 Harrington Peter 2012 - "Machine learning in action", Manning Publications Co., Shelter Island
 Odersky Martin, Spoon Lex, Venners Bill 2010 - "Programming in Scala", Second Edition, Artima, Walnut Creek
 Bugnion Pascal 2016 - "Scala for Data Science", Packt Publishing, Birmingham
-
+Scala Standard Library 2.12.0 - scala.util.Try - http://www.scala-lang.org/api/2.12.0/scala/util/Try.html
 */
