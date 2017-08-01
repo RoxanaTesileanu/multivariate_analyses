@@ -12,6 +12,7 @@ Dawkins Paul 2005 - "Paul's notes on linear algebra", Lamar University, http://t
 Harrington Peter 2012 - "Machine learning in action", Manning Publications Co., Shelter Island
 Karau Holden, Konwinski Andy, Wendell Patrick, Zaharia Matei 2015 - "Learning Spark", O'Reilly, Sebastopol   
 Nicolas R. Patrick  2015 - "Scala for Machine Learning", Packt Publishing, Birmingham 
+Scala Standard Library 2.12.0 - http://www.scala-lang.org/api/2.12.0/scala/index.html
 Swartz Jason 2015 - "Learning Scala", Manning Publications Co., Shelter Island 
 Trask Andrew 2017 - "Grokking deep learning", Manning Publications Co., Shelter Island 
 Odersky Martin, Spoon Lex, Venners Bill 2010 - "Programming in Scala", Second Edition, Artima, Walnut Creek
