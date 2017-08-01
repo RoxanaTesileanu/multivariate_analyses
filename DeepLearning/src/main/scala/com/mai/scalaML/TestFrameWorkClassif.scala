@@ -7,6 +7,7 @@ package com.mai.scalaML
 object TestFrameWorkClassif {
 
 import scala.util.Random._
+// the shuffle function to shuffle the data first, and then take the first 30% of the obs. for the test set and get the error rate
 
 def testFrameWorkClassif ( ) : ... = {
 
@@ -24,5 +25,5 @@ def testFrameWorkClassif ( ) : ... = {
 
 Harrington Peter 2012 - "Machine learning in action", Manning Publications Co., Shelter Island
 Odersky Martin, Spoon Lex, Venners Bill 2010 - "Programming in Scala", Second Edition, Artima, Walnut Creek
-
+Bugnion Pascal 2016 - "Scala for Data Science", Packt Publishing, Birmingham
 */
