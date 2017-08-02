@@ -1088,6 +1088,29 @@ Scala Standard Library 2.12.0 - scala.util.Try - http://www.scala-lang.org/api/2
 _______________________________________________________  
 
 Experimenting in REPL in order to get the way towards the solution for the testing framework:
+
+
+scala> import com.mai.scalaML.ReadFile._
+import com.mai.scalaML.ReadFile._
+
+scala> val path = "/home/roxana/Private/Literature/stats/Peter_Harrington/machinelearninginaction/Ch02/datingTestSet2.txt"
+path: String = /home/roxana/Private/Literature/stats/Peter_Harrington/machinelearninginaction/Ch02/datingTestSet2.txt
+
+scala> val myData = readFileClassif(path, "\t")
+myData: (Vector[Array[Double]], Vector[Int], Range) = (Vector(Array(14488.0, 7.153469, 1.673904), Array(26052.0, 1.441871, 0.805124), Array(75136.0, 13.147394, 0.428964), Array(38344.0, 1.669788, 0.134296), Array(72993.0, 10.14174, 1.032955), Array(35948.0, 6.830792, 1.213192), Array(42666.0, 13.276369, 0.54388), Array(67497.0, 8.631577, 0.749278), Array(35483.0, 12.273169, 1.508053), Array(50242.0, 3.723498, 0.831917), Array(63275.0, 8.385879, 1.669485), Array(5569.0, 4.875435, 0.728658), Array(51052.0, 4.680098, 0.625224), Array(77372.0, 15.29957, 0.331351), Array(43673.0, 1.889461, 0.191283), Array(61364.0, 7.516754, 1.269164), Array(69673.0, 14.239195, 0.261333), Array(15669.0, 0.0, 1.250185), Array(28488.0, 10.528555, 1.304844), Array(6487.0, 3.540265, 0.822483), Array(37708.0, 2.9...
+
+scala> val dataMatrix = myData._1
+dataMatrix: Vector[Array[Double]] = Vector(Array(14488.0, 7.153469, 1.673904), Array(26052.0, 1.441871, 0.805124), Array(75136.0, 13.147394, 0.428964), Array(38344.0, 1.669788, 0.134296), Array(72993.0, 10.14174, 1.032955), Array(35948.0, 6.830792, 1.213192), Array(42666.0, 13.276369, 0.54388), Array(67497.0, 8.631577, 0.749278), Array(35483.0, 12.273169, 1.508053), Array(50242.0, 3.723498, 0.831917), Array(63275.0, 8.385879, 1.669485), Array(5569.0, 4.875435, 0.728658), Array(51052.0, 4.680098, 0.625224), Array(77372.0, 15.29957, 0.331351), Array(43673.0, 1.889461, 0.191283), Array(61364.0, 7.516754, 1.269164), Array(69673.0, 14.239195, 0.261333), Array(15669.0, 0.0, 1.250185), Array(28488.0, 10.528555, 1.304844), Array(6487.0, 3.540265, 0.822483), Array(37708.0, 2.991551, 0.83392), Ar...
+
+scala> val dataLabels = myData._2
+dataLabels: Vector[Int] = Vector(2, 1, 1, 1, 1, 3, 3, 1, 3, 1, 1, 2, 1, 1, 1, 1, 1, 2, 3, 2, 1, 2, 3, 2, 3, 2, 3, 2, 1, 3, 1, 3, 1, 2, 1, 1, 2, 3, 3, 1, 2, 3, 3, 3, 1, 1, 1, 1, 2, 2, 1, 3, 2, 2, 2, 2, 3, 1, 2, 1, 2, 2, 2, 2, 2, 3, 2, 3, 1, 2, 3, 2, 2, 1, 3, 1, 1, 3, 3, 1, 2, 3, 1, 3, 1, 2, 2, 1, 1, 3, 3, 1, 2, 1, 3, 3, 2, 1, 1, 3, 1, 2, 3, 3, 2, 3, 3, 1, 2, 3, 2, 1, 3, 1, 2, 1, 1, 2, 3, 2, 3, 2, 3, 2, 1, 3, 3, 3, 1, 3, 2, 2, 3, 1, 3, 3, 3, 1, 3, 1, 1, 3, 3, 2, 3, 3, 1, 2, 3, 2, 2, 3, 3, 3, 1, 2, 2, 1, 1, 3, 2, 3, 3, 1, 2, 1, 3, 1, 2, 3, 2, 3, 1, 1, 1, 3, 2, 3, 1, 3, 2, 1, 3, 2, 2, 3, 2, 3, 2, 1, 1, 3, 1, 3, 2, 2, 2, 3, 2, 2, 1, 2, 2, 3, 1, 3, 3, 2, 1, 1, 1, 2, 1, 3, 3, 3, 3, 2, 1, 1, 1, 2, 3, 2, 1, 3, 1, 3, 2, 2, 3, 1, 3, 1, 1, 2, 1, 2, 2, 1, 3, 1, 3, 2, 3, 1, 2, 3, 1, 1, 1, 1, 2, 3, 2,...
+  
+scala> val dataPlusLables = dataMatrix.zip(dataLabels)
+dataPlusLables: scala.collection.immutable.Vector[(Array[Double], Int)] = Vector((Array(14488.0, 7.153469, 1.673904),2), (Array(26052.0, 1.441871, 0.805124),1), (Array(75136.0, 13.147394, 0.428964),1), (Array(38344.0, 1.669788, 0.134296),1), (Array(72993.0, 10.14174, 1.032955),1), (Array(35948.0, 6.830792, 1.213192),3), (Array(42666.0, 13.276369, 0.54388),3), (Array(67497.0, 8.631577, 0.749278),1), (Array(35483.0, 12.273169, 1.508053),3), (Array(50242.0, 3.723498, 0.831917),1), (Array(63275.0, 8.385879, 1.669485),1), (Array(5569.0, 4.875435, 0.728658),2), (Array(51052.0, 4.680098, 0.625224),1), (Array(77372.0, 15.29957, 0.331351),1), (Array(43673.0, 1.889461, 0.191283),1), (Array(61364.0, 7.516754, 1.269164),1), (Array(69673.0, 14.239195, 0.261333),1), (Array(15669.0, 0.0, 1.250185),2),...
+//for reshuffling reasons I've zipped the data with the labels
+
+scala> import scala.util.Random._
+import scala.util.Random._
   
 
 
