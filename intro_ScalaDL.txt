@@ -1117,6 +1117,27 @@ shuffledDataPlusLabels: scala.collection.immutable.Vector[(Array[Double], Int)] 
 
 Now, that I've shuffled the dataPlusLabels in a randomly chosen order, I can extract around 30% of the data. 
 
+scala> val len2 = shuffledDataPlusLabels.length
+len2: Int = 999
+
+
+So, 30% means 333 observations. 
+
+scala> val testAndClassSets = shuffledDataPlusLabels.splitAt(333)
+testAndClassSets: (scala.collection.immutable.Vector[(Array[Double], Int)], scala.collection.immutable.Vector[(Array[Double], Int)]) = (Vector((Array(40328.0, 0.0, 0.816676),1), (Array(18983.0, 10.448091, 0.267652),3), (Array(17591.0, 7.875477, 0.227085),2), (Array(42776.0, 11.309897, 0.086291),3), (Array(36642.0, 3.14931, 0.639669),1), (Array(26501.0, 11.573696, 1.061347),3), (Array(38889.0, 3.356646, 0.32423),1), (Array(7055.0, 0.0, 0.802985),2), (Array(67671.0, 7.156949, 1.691682),1), (Array(39808.0, 10.839526, 0.836323),3), (Array(81046.0, 15.833048, 1.568245),1), (Array(75039.0, 7.686054, 1.381455),1), (Array(9824.0, 8.426781, 0.202558),2), (Array(25862.0, 4.425992, 1.363842),1), (Array(9875.0, 0.0, 1.496715),2), (Array(2299.0, 3.733617, 0.698269),2), (Array(36768.0, 10.264062, 0.9...
+
+scala> val testDataSet = testAndClassSets._1
+testDataSet: scala.collection.immutable.Vector[(Array[Double], Int)] = Vector((Array(40328.0, 0.0, 0.816676),1), (Array(18983.0, 10.448091, 0.267652),3), (Array(17591.0, 7.875477, 0.227085),2), (Array(42776.0, 11.309897, 0.086291),3), (Array(36642.0, 3.14931, 0.639669),1), (Array(26501.0, 11.573696, 1.061347),3), (Array(38889.0, 3.356646, 0.32423),1), (Array(7055.0, 0.0, 0.802985),2), (Array(67671.0, 7.156949, 1.691682),1), (Array(39808.0, 10.839526, 0.836323),3), (Array(81046.0, 15.833048, 1.568245),1), (Array(75039.0, 7.686054, 1.381455),1), (Array(9824.0, 8.426781, 0.202558),2), (Array(25862.0, 4.425992, 1.363842),1), (Array(9875.0, 0.0, 1.496715),2), (Array(2299.0, 3.733617, 0.698269),2), (Array(36768.0, 10.264062, 0.982593),3), (Array(77372.0, 15.29957, 0.331351),1), (Array(8579.0,...
+
+scala> val classifDataSet = testAndClassSets._2
+classifDataSet: scala.collection.immutable.Vector[(Array[Double], Int)] = Vector((Array(11752.0, 5.580018, 0.158401),2), (Array(55807.0, 3.213631, 0.432044),1), (Array(17262.0, 2.540946, 1.583286),2), (Array(59016.0, 1.96557, 0.005697),1), (Array(14402.0, 10.482619, 1.694972),2), (Array(2459.0, 0.0, 0.290218),2), (Array(20944.0, 4.194791, 0.235483),2), (Array(37885.0, 2.7288, 0.331502),1), (Array(63082.0, 9.183738, 0.01228),1), (Array(9517.0, 3.846162, 0.619968),2), (Array(17521.0, 0.0, 0.431468),2), (Array(5459.0, 7.871839, 0.717662),2), (Array(15560.0, 12.409743, 0.790295),3), (Array(6122.0, 9.751503, 1.18205),3), (Array(78727.0, 15.546043, 0.729742),1), (Array(37422.0, 11.029636, 0.505769),3), (Array(27353.0, 11.375155, 1.528626),3), (Array(25931.0, 8.765721, 0.152808),3), (Array(237...
+
+scala> classifDataSet.length
+res1: Int = 666
+
+scala> testDataSet.length
+res2: Int = 333
+
  
 
 
