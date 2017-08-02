@@ -1,4 +1,4 @@
-/* In order to test the kNN classifier you can use the testFrameWorkClassif() function. The error rate is given by the total number of errors (misclassified observations) divied by the total number of tested observations.   
+/* In order to test the kNN classifier you can use the testFrameWorkClassif() function. The error rate is given by the total number of errors (misclassified observations) divied by the total number of tested observations. The testFrameWorkClassif() function takes three parameters: the dataset of type [CreateData], a partition from 0 to 1, which indicates the proportion of test to total data (e.g. partition= 0.3 means 30% of the whole dataset) and an Int which indicates the number of k nearest neighbors used by the kNN classifier.   
 
 */
 
@@ -9,7 +9,7 @@ object TestFrameWorkClassif {
 import scala.util.Random._
 import com.mai.scalaML.kNN._
 
-/*def testFrameWorkClassif ( dataSet: CreateData, partition : Double, k :Int) : Double = {
+def testFrameWorkClassif ( dataSet: CreateData, partition : Double, k :Int) : Double = {
 
 val dataMatrix = dataSet.dataMatrix
 val dataLabels = dataSet.dataLabels
@@ -35,10 +35,6 @@ val errorRate = wrongResults.toDouble / (testDataSet.length).toDouble
 errorRate 
 
 }
-*/
-
-
-
 
 }
 
