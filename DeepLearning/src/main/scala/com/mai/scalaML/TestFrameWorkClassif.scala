@@ -10,12 +10,12 @@ import scala.util.Random._
 import scala.util.{Try, Success, Failure}
 // the shuffle function to shuffle the data first, and then take the first 30% of the obs. for the test set and get the error rate
 
-def testFrameWorkClassif ( ) : ... = {
+/*def testFrameWorkClassif ( ) : ... = {
 
 ....
 
 }
-
+*/
 
 
 

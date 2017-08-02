@@ -1087,7 +1087,8 @@ Scala Standard Library 2.12.0 - scala.util.Try - http://www.scala-lang.org/api/2
 
 _______________________________________________________  
 
-
+Experimenting in REPL in order to get the way towards the solution for the testing framework:
+  
 
 
 
