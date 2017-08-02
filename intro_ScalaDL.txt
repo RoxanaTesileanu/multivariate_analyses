@@ -1192,6 +1192,8 @@ scala> val errorRate = wrongResults.toDouble/(testDataSet.length).toDouble
 errorRate: Double = 0.33633633633633636
 
 Ok, I haven't applied the Try monad as planned. But the error rate is there!
+I will now insert the pieces in the testFrameWorkClassif() function in the TestFrameWorkClassif.scala file:
+
 
 
 
