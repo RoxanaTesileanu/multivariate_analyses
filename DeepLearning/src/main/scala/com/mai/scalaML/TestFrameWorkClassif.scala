@@ -16,6 +16,8 @@ val dataPlusLabels = dataMatrix.zip(dataLabels)
 val shuffledDataPlusLabels = shuffle(dataPlusLabels)
 val lenDataSet = shuffledDataPlusLabels.length
 val testAndClassSets = shuffledDataPlusLabels.splitAt(lenDataSet * partition)
+val testDataSet = testAndClassSets._1
+val classifDataSet = testAndClassSets._2
 
 
 }
