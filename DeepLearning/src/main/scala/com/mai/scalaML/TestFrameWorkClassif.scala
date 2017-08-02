@@ -25,6 +25,8 @@ val classesTest = dataSet.classes
 val usedTestDataSet = new CreateData(testDataMatrix, testDataLabels, classesTest)
 val classifDataMatrix = classifDataSet.map{ x => x._1 }
 val clssifDataLabels = classifDataSet.map{ x => x._2 }
+val usedClassifDataSet = new CreateData(classifDataMatrix, classifDataLabels, classesTest)
+val resultsTestData = testDataMatrix.map{ x => classifykNN(Vector(x), usedClassifDataSet, k) }
  
 
 }
