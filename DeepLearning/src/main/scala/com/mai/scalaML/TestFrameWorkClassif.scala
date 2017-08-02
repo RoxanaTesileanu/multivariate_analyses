@@ -10,6 +10,11 @@ import scala.util.Random._
 
 /*def testFrameWorkClassif ( dataset: CreateData, partition : Double, k :Int) : Double = {
 
+val dataMatrix = dataSet.dataMatrix
+val dataLabels = dataSet.dataLabels
+val dataPlusLabels = dataMatrix.zip(dataLabels)
+val shuffledDataPlusLabels = shuffle(dataPlusLabels)
+val lenDataSet = shuffledDataPlusLabels.length
 
 
 }
