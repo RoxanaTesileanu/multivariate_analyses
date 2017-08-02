@@ -23,6 +23,8 @@ val testDataMatrix = testDataSet.map{ x => x._1 }
 val testDataLabels = testDataSet.map{ x => x._2 }
 val classesTest = dataSet.classes
 val usedTestDataSet = new CreateData(testDataMatrix, testDataLabels, classesTest)
+val classifDataMatrix = classifDataSet.map{ x => x._1 }
+val clssifDataLabels = classifDataSet.map{ x => x._2 }
  
 
 }
