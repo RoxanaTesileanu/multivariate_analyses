@@ -1147,16 +1147,26 @@ testDataMatrix: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(
 scala> val testDataLabels = testDataSet.map {x => x._2}
 testDataLabels: scala.collection.immutable.Vector[Int] = Vector(1, 3, 2, 3, 1, 3, 1, 2, 1, 3, 1, 1, 2, 1, 2, 2, 3, 1, 2, 1, 2, 3, 1, 2, 2, 1, 2, 1, 2, 2, 1, 2, 2, 2, 2, 1, 3, 2, 1, 3, 2, 2, 3, 3, 2, 2, 1, 3, 1, 3, 2, 2, 2, 3, 2, 3, 1, 2, 3, 2, 3, 1, 3, 3, 2, 2, 1, 3, 3, 1, 2, 2, 2, 2, 1, 2, 1, 3, 3, 1, 2, 1, 2, 3, 1, 1, 3, 1, 2, 2, 3, 1, 3, 3, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 3, 2, 1, 3, 1, 1, 3, 2, 1, 2, 3, 2, 1, 2, 1, 2, 1, 2, 2, 3, 1, 2, 3, 2, 1, 3, 3, 1, 2, 3, 3, 2, 2, 1, 1, 2, 3, 3, 3, 2, 3, 3, 1, 3, 1, 2, 2, 3, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 2, 2, 2, 3, 3, 1, 3, 1, 3, 1, 1, 2, 1, 3, 2, 3, 2, 2, 2, 1, 1, 2, 2, 3, 1, 1, 3, 2, 1, 1, 3, 1, 2, 2, 1, 2, 1, 1, 2, 3, 3, 1, 2, 3, 3, 1, 2, 3, 2, 1, 1, 3, 1, 3, 3, 3, 1, 3, 3, 3, 3, 3, 2, 3, 3, 2, 2, 1, 3, 1, 2, 2, 3, 2, 3, 2, 1, 2, 3, 1, 2, 2, 1...
 
-
-scala> val classes = myData._3
-classes: Range = Range(1, 2, 3)
-
 scala> import com.mai.scalaML.kNN._
 import com.mai.scalaML.kNN._
 
+scala> val classesTest = myData._3
+classesTest: Range = Range(1, 2, 3)
+
+scala> val usedTestDataSet = new CreateData(testDataMatrix, testDataLabels, classesTest)
+usedTestDataSet: com.mai.scalaML.kNN.CreateData = CreateData(Vector([D@34558178, [D@eb533f6, [D@7f224f03, [D@2e566c3, [D@1a2379a6, [D@3daec397, [D@5099c976, [D@79636ed8, [D@780cc61b, [D@33f510f6, [D@2db9ad87, [D@4fce1346, [D@516c38ba, [D@4a05f0c1, [D@2a30a993, [D@155bdbb0, [D@25429849, [D@4024f7d8, [D@6ff7b27e, [D@24ba726b, [D@158b2665, [D@7276993b, [D@2040a149, [D@579eb600, [D@1bea0a98, [D@5d13e79f, [D@78fc5f9d, [D@5a70c834, [D@1105a728, [D@53689588, [D@49f228cf, [D@159f68ad, [D@299fa1d1, [D@3e4ca5bf, [D@66a056e9, [D@8149090, [D@5cd1396a, [D@76b1e12, [D@63981708, [D@4f248bfb, [D@1a6be11c, [D@45afe7cd, [D@66ac8827, [D@d3cbc5a, [D@489adfe0, [D@72b1d8b1, [D@70de8b70, [D@18e8275d, [D@6939e7f, [D@7a1bba4c, [D@7e9a2b74, [D@27112935, [D@3deb3bce, [D@1a052fe5, [D@35eb665a, [D@1b9db953, [D@7fcc...
+
+scala> val classifDataMatrix = classifDataSet.map{ x=> x._1}
+classifDataMatrix: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(11752.0, 5.580018, 0.158401), Array(55807.0, 3.213631, 0.432044), Array(17262.0, 2.540946, 1.583286), Array(59016.0, 1.96557, 0.005697), Array(14402.0, 10.482619, 1.694972), Array(2459.0, 0.0, 0.290218), Array(20944.0, 4.194791, 0.235483), Array(37885.0, 2.7288, 0.331502), Array(63082.0, 9.183738, 0.01228), Array(9517.0, 3.846162, 0.619968), Array(17521.0, 0.0, 0.431468), Array(5459.0, 7.871839, 0.717662), Array(15560.0, 12.409743, 0.790295), Array(6122.0, 9.751503, 1.18205), Array(78727.0, 15.546043, 0.729742), Array(37422.0, 11.029636, 0.505769), Array(27353.0, 11.375155, 1.528626), Array(25931.0, 8.765721, 0.152808), Array(23762.0, 12.979069, 0.504068), Array(43673.0, 1.889461, 0.191283), Array(19251.0...
+
+scala> val classifDataLabels = classifDataSet.map{ x=> x._2}
+classifDataLabels: scala.collection.immutable.Vector[Int] = Vector(2, 1, 2, 1, 2, 2, 2, 1, 1, 2, 2, 2, 3, 3, 1, 3, 3, 3, 3, 1, 2, 2, 3, 3, 3, 1, 2, 3, 2, 3, 2, 2, 3, 2, 2, 2, 2, 3, 2, 3, 1, 2, 1, 3, 2, 1, 1, 1, 1, 1, 3, 1, 2, 3, 2, 2, 2, 3, 1, 2, 3, 3, 2, 2, 1, 1, 1, 3, 1, 1, 1, 3, 3, 2, 2, 3, 3, 2, 2, 1, 1, 3, 1, 1, 3, 3, 3, 2, 2, 3, 2, 3, 3, 1, 1, 1, 2, 3, 2, 3, 3, 2, 3, 1, 2, 1, 1, 2, 2, 2, 1, 2, 3, 2, 2, 1, 2, 1, 1, 1, 1, 3, 2, 3, 3, 3, 1, 3, 2, 1, 1, 2, 1, 3, 3, 3, 1, 2, 2, 1, 3, 1, 2, 2, 3, 1, 2, 1, 3, 1, 3, 3, 3, 3, 1, 2, 3, 2, 2, 3, 2, 1, 1, 1, 2, 3, 2, 1, 1, 3, 1, 1, 1, 3, 2, 3, 3, 2, 2, 2, 1, 3, 3, 1, 1, 2, 1, 2, 3, 1, 1, 3, 3, 2, 3, 2, 3, 2, 3, 2, 1, 3, 1, 1, 1, 3, 2, 1, 2, 3, 3, 2, 3, 2, 2, 1, 3, 1, 3, 1, 1, 2, 3, 2, 3, 1, 1, 3, 3, 1, 2, 2, 3, 3, 2, 1, 1, 1, 3, 3, 2, 1, 3, 1...
+
+scala> val usedClassifDataSet = new CreateData(classifDataMatrix, classifDataLabels, classesTest)
+usedClassifDataSet: com.mai.scalaML.kNN.CreateData = CreateData(Vector([D@1398c33a, [D@19db9ef1, [D@790b7937, [D@45e77d82, [D@1033e717, [D@55dadff6, [D@77bac6bb, [D@9cfaea3, [D@64bfbd2, [D@56da182, [D@2443208a, [D@508d2817, [D@9c1dcbf, [D@61481db4, [D@5c322667, [D@65c67066, [D@62657c45, [D@43e17800, [D@e2d7f05, [D@583e7be6, [D@1170a3f0, [D@5999e8a6, [D@3c2961c7, [D@1763ccef, [D@31892d0, [D@155286cd, [D@6202faf9, [D@6b8f46e2, [D@2c46c751, [D@2da358fa, [D@5803ba85, [D@492a5f31, [D@53cc750a, [D@649f9301, [D@210dda85, [D@3a45da42, [D@a118c25, [D@128e01fd, [D@5d1828db, [D@491b7ef0, [D@4f6db352, [D@2d8ec2ab, [D@314c7931, [D@23b26d16, [D@1e7bd11, [D@5aa7ac1c, [D@870d388, [D@381ad54d, [D@4a9f86a, [D@630973af, [D@6d6b00d5, [D@3b51088, [D@4894c23c, [D@6028448a, [D@55f09df2, [D@7eeaf694, [D@10015e...
 
 
-
+Now, I will use the two sets to finally get this error!
 
 
 
