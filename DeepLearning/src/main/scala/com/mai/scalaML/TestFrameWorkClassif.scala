@@ -16,7 +16,7 @@ val dataLabels = dataSet.dataLabels
 val dataPlusLabels = dataMatrix.zip(dataLabels)
 val shuffledDataPlusLabels = shuffle(dataPlusLabels)
 val lenDataSet = shuffledDataPlusLabels.length
-val testAndClassSets = shuffledDataPlusLabels.splitAt(lenDataSet * partition)
+val testAndClassSets = shuffledDataPlusLabels.splitAt((lenDataSet.toDouble * partition).toInt)
 val testDataSet = testAndClassSets._1
 val classifDataSet = testAndClassSets._2
 val testDataMatrix = testDataSet.map{ x => x._1 }
@@ -24,7 +24,7 @@ val testDataLabels = testDataSet.map{ x => x._2 }
 val classesTest = dataSet.classes
 val usedTestDataSet = new CreateData(testDataMatrix, testDataLabels, classesTest)
 val classifDataMatrix = classifDataSet.map{ x => x._1 }
-val clssifDataLabels = classifDataSet.map{ x => x._2 }
+val classifDataLabels = classifDataSet.map{ x => x._2 }
 val usedClassifDataSet = new CreateData(classifDataMatrix, classifDataLabels, classesTest)
 val resultsTestData = testDataMatrix.map{ x => classifykNN(Vector(x), usedClassifDataSet, k) }
 val errorRateTuple = resultsTestData.zip(testDataLabels)
