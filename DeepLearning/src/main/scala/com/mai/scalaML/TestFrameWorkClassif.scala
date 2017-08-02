@@ -27,7 +27,12 @@ val classifDataMatrix = classifDataSet.map{ x => x._1 }
 val clssifDataLabels = classifDataSet.map{ x => x._2 }
 val usedClassifDataSet = new CreateData(classifDataMatrix, classifDataLabels, classesTest)
 val resultsTestData = testDataMatrix.map{ x => classifykNN(Vector(x), usedClassifDataSet, k) }
- 
+val errorRateTuple = resultsTestData.zip(testDataLabels)
+val errorRateMatch = errorRateTuple.map{ x => if (x._1 == x._2) 1 ; else 0 }
+val goodResults = errorRateMatch.count( _ == 1)
+val wrongResults = errorRateMatch.count( _ == 0)
+val errorRate = wrongResults.toDouble / (testDataSet.length).toDouble
+errorRate 
 
 }
 */
