@@ -1115,7 +1115,9 @@ import scala.util.Random._
 scala> val shuffledDataPlusLabels = shuffle(dataPlusLables)
 shuffledDataPlusLabels: scala.collection.immutable.Vector[(Array[Double], Int)] = Vector((Array(40328.0, 0.0, 0.816676),1), (Array(18983.0, 10.448091, 0.267652),3), (Array(17591.0, 7.875477, 0.227085),2), (Array(42776.0, 11.309897, 0.086291),3), (Array(36642.0, 3.14931, 0.639669),1), (Array(26501.0, 11.573696, 1.061347),3), (Array(38889.0, 3.356646, 0.32423),1), (Array(7055.0, 0.0, 0.802985),2), (Array(67671.0, 7.156949, 1.691682),1), (Array(39808.0, 10.839526, 0.836323),3), (Array(81046.0, 15.833048, 1.568245),1), (Array(75039.0, 7.686054, 1.381455),1), (Array(9824.0, 8.426781, 0.202558),2), (Array(25862.0, 4.425992, 1.363842),1), (Array(9875.0, 0.0, 1.496715),2), (Array(2299.0, 3.733617, 0.698269),2), (Array(36768.0, 10.264062, 0.982593),3), (Array(77372.0, 15.29957, 0.331351),1), (Ar...
 
+Now, that I've shuffled the dataPlusLabels in a randomly chosen order, I can extract around 30% of the data. 
 
+ 
 
 
 
