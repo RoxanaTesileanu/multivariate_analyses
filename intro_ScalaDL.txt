@@ -11,6 +11,7 @@ Bugnion Pascal 2016 - "Scala for Data Science", Packt Publishing, Birmingham
 Dawkins Paul 2005 - "Paul's notes on linear algebra", Lamar University, http://tutorial.math.lamar.edu
 Harrington Peter 2012 - "Machine learning in action", Manning Publications Co., Shelter Island
 Karau Holden, Konwinski Andy, Wendell Patrick, Zaharia Matei 2015 - "Learning Spark", O'Reilly, Sebastopol   
+Mitchell, Tom M. 1997 - "Machine Learning", McGraw-Hill
 Nicolas R. Patrick  2015 - "Scala for Machine Learning", Packt Publishing, Birmingham 
 Scala Standard Library 2.12.0 - http://www.scala-lang.org/api/2.12.0/scala/index.html
 Swartz Jason 2015 - "Learning Scala", Manning Publications Co., Shelter Island 
@@ -1253,6 +1254,9 @@ I would like to find out more about the field of ML in general so, I've started 
 
 We can say that a machine learns with respect to a particular task T, performance metric P, and type of experience E, if the system reliably improves its performance P at task T, following experience E.  
 
+A very informative paper indeed. I will try to work through the first chapters of his book "Machine Learning". 
+
+ 
 
 
 
