@@ -1272,11 +1272,45 @@ Definition: A computer program is said to learn from experience E with respect t
 In general to have a well-defined learning problem, we must identify three features: the class of tasks, the measure of performance to be improved, and the source of experience.
 
 Designing a learning system
+
 - choosing the training experience:
 	- direct and indirect training examples
 	- the degree to which the learner controls the sequence of training examples (none to full control)
 	- how well it represents the distribution of examples over which the final system performance P must be measured.
 In general, learning is most relliable when the training examples follow a distribution similar to that of future test examples. Most current theory of ML rests on the crucial assumption that the distribution of training examples is identical to the distribution of test examples. 
+
+Example: A checkers learning problem
+Task T: playing checkers
+Performance measure P: percent of games won 
+Training experience E: games played against itself
+Needs further specification: the exact type of knowledge to be learned, a representation of this target knowledge, a learning mechanism
+
+- choosing the target function:
+	- type of knowledge to be learned and how this will be used by the performance program: specify the legal moves in order for the program to choose the best move among these legal moves.
+The legal moves which define some large search space are known a priori, but the best strategy is not known (e.g. optimization problems). So, we must learn to choose among these legal moves using a function called for example ChooseMove(). We use the notation ChooseMove : B -> M. We reduce the problem of improving performance P at task T to the problem of learning some particular traget function such as ChooseMove. Instead of ChooseMove we can use an evaluation function V:B -> R to denote that V maps any legal board state from the set B to some real value. We then define the target value V(b) for an arbitrary board state b in B as follows:
+final board state won => V(b) = 100 
+final board state lost => V(b) = -100
+final board state drawn => V(b) = 0
+not a final state => V(b) = V(b') i.e. searching ahead for the optimal line of play, all the way to the end of the game. 
+=> nonoperational definition of V!
+
+The goal of learning in this case is to discover an OPERATIONAL DESCRIPTION OF V. 
+V-hat is the function learned by the program, an approximation of the ideal target function V (function approximation). 
+
+The learning task is: discover an operational description of the ideal target function V.
+
+- choosing a representation for the target function
+
+
+
+
+
+
+
+
+
+ 
+
 
 
 
