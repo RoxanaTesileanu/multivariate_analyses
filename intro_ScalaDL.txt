@@ -1258,7 +1258,7 @@ Mixed types also exist.
 
 We can say that a machine learns with respect to a particular task T, performance metric P, and type of experience E, if the system reliably improves its performance P at task T, following experience E.  
 
-A very informative paper indeed. I will try to work through the first chapters of his book "Machine Learning". 
+Two very informative papers indeed. I will try to work through the first chapters of Mitchell's book "Machine Learning". 
 
 Ch. 1 - Introduction
 
@@ -1272,7 +1272,14 @@ Definition: A computer program is said to learn from experience E with respect t
 In general to have a well-defined learning problem, we must identify three features: the class of tasks, the measure of performance to be improved, and the source of experience.
 
 Designing a learning system
-- choosing the training experience
+- choosing the training experience:
+	- direct and indirect training examples
+	- the degree to which the learner controls the sequence of training examples (none to full control)
+	- how well it represents the distribution of examples over which the final system performance P must be measured.
+In general, learning is most relliable when the training examples follow a distribution similar to that of future test examples. Most current theory of ML rests on the crucial assumption that the distribution of training examples is identical to the distribution of test examples. 
+
+
+
   
  
 
