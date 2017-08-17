@@ -1250,7 +1250,10 @@ I can now enjoy the summer holiday! And continue when I'm back mid August!
 
 ________________________________________________________ 
 
-I would like to find out more about the field of ML in general so, I've started reading the paper of Tom Mitchell "The discipline of Machine Learning" (2006). The field of ML has grown to a variety of supervised and unsupervised algorithms. E.g. the supervised learning of classification and regression functions, i.e. learning some initially unknown function f: X -> Y given a set of labeled training examples {<xi, yi>} of inputs xi and outputs yi=f(xi). Algorithms from SVM to Bayesian classifiers may be used to estimate the function f from the data.  
+I would like to find out more about the field of ML in general so, I've started reading the paper of Tom Mitchell "The discipline of Machine Learning" (2006) and "Machine learning: trends, perspectives and prospects" (2015) (Jordan M.I., Mitchell, T.M.). The field of ML has grown to a variety of supervised and unsupervised algorithms. E.g. the supervised learning of classification and regression functions, i.e. learning some initially unknown function f: X -> Y given a set of labeled training examples {<xi, yi>} of inputs xi and outputs yi=f(xi). Algorithms like decision trees, decision forests, SVM, logistic regression, neural networks, kernel machines and  Bayesian classifiers may be used to estimate the function f from the data. Deep learning systems make use of gradient-based optimization algorithms to adjust parameters throughout a multilayered network based on errors at its output. 
+
+Unsupervised learning generally involves the analysis of unlabled data under assumptions about structural properties of the data. 
+Reinforcement learning uses training data that is intermediate between supervised and unsupervised learning. 
 
 We can say that a machine learns with respect to a particular task T, performance metric P, and type of experience E, if the system reliably improves its performance P at task T, following experience E.  
 
@@ -1268,7 +1271,7 @@ Definition: A computer program is said to learn from experience E with respect t
 In general to have a well-defined learning problem, we must identify three features: the class of tasks, the measure of performance to be improved, and the source of experience.
 
 Designing a learning system
-
+- choosing the 
  
 
 
