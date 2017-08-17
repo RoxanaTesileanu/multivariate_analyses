@@ -1249,6 +1249,8 @@ I can now enjoy the summer holiday! And continue when I'm back mid August!
 
 ________________________________________________________ 
 
+I would like to find out more about the field of ML so, I've started reading the paper of Tom Mitchell "The discipline of Machine Learning" (2006). The field of ML has grown to a variety of supervised and unsupervised algorithms. E.g. the supervised learning of classification and regression functions, i.e. learning some initially unknown function f: X -> Y given a set of labeled training examples {<xi, yi>} of inputs xi and outputs yi=f(xi). 
+
 
 
 
