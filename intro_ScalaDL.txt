@@ -1254,6 +1254,7 @@ I would like to find out more about the field of ML in general so, I've started 
 
 Unsupervised learning generally involves the analysis of unlabled data under assumptions about structural properties of the data. 
 Reinforcement learning uses training data that is intermediate between supervised and unsupervised learning. 
+Mixed types also exist.
 
 We can say that a machine learns with respect to a particular task T, performance metric P, and type of experience E, if the system reliably improves its performance P at task T, following experience E.  
 
@@ -1271,7 +1272,8 @@ Definition: A computer program is said to learn from experience E with respect t
 In general to have a well-defined learning problem, we must identify three features: the class of tasks, the measure of performance to be improved, and the source of experience.
 
 Designing a learning system
-- choosing the 
+- choosing the training experience
+  
  
 
 
