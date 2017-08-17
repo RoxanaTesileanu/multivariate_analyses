@@ -1256,10 +1256,20 @@ We can say that a machine learns with respect to a particular task T, performanc
 
 A very informative paper indeed. I will try to work through the first chapters of his book "Machine Learning". 
 
+Ch. 1 - Introduction
+
  
+- learn = improve automatically with experience
+- how to make computers learn => new levels of competence and customization
 
 
+Definition: A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.
 
+In general to have a well-defined learning problem, we must identify three features: the class of tasks, the measure of performance to be improved, and the source of experience.
+
+Designing a learning system
+
+ 
 
 
 
