@@ -1320,6 +1320,23 @@ Decision trees
 
 We need some quantitative way of determining how to split the data. Using information theory, you can measure the information before and after the split. The CHANGE IN INFORMATION BEFORE AND AFTER THE SPLIT IS KNOWN AS THE INFORMATION GAIN. The split with the highest information gain is your best option.
 
+THE MEASURE OF INFORMATION OF A SET IS KNOWN AS THE SHANNON ENTROPY, OR JUST ENTROPY FOR SHORT.
+Entropy is defined as the expected value of the information. If you're classifying smth. that can take on multiple values, the information for xi is defined as:
+l(xi) = p(xi)log2 (1/p(xi)), where p(xi) is the probability of choosing this class. If you have n classes, you need the expected value of all the information of all possible classes for xi. This gives the entropy H =>  H IS A MEASURE OF THE AMOUNT OF UNCERTAINTY IN THE DATA SET S!
+
+H(S) = sum_across_all_classes_x(p(xi)log2(1/p(xi)))
+
+
+
+
+
+H = 
+
+
+
+
+
+
 
  
 
