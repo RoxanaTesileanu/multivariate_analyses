@@ -1333,7 +1333,11 @@ ____________________________________
 
 Induction of Decision Trees - Quinlan JR 1986
 
-
+The TDIDT family of learning systems:
+- general-purpose systems
+- applications that they address all involve classification
+- the product of learning is a piece of procedural knowledge that can assign an object to one of a specified number of disjoint classes
+- 
 
 
 
