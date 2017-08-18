@@ -1301,6 +1301,20 @@ The learning task is: discover an operational description of the ideal target fu
 
 - choosing a representation for the target function
 
+- choosing a function approximation algorithm
+
+
+__________________________________________________________________________
+
+I'll come back to it at a later time. 
+Now I will try to implement the decision trees algorithm using the book of Peter Harrington "Machine Learning in Action" (2012)
+
+
+
+Decision trees
+
+
+
 
 
 
