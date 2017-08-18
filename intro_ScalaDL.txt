@@ -1357,7 +1357,11 @@ ID3:
 
 How to form a decision tree for an arbitrary collection C of objects?
 - If C is empty or contains only objects of one class, the simplest decision tree is just a leaf labelled with the class. 
-- Otherwise, let T be any test on an object with possible values V1, V2,..., Vw for its attributes 1 to w. 
+- Otherwise, let T be any test on an object with possible values V1, V2,..., Vp for its attributes 1 to p. The combinations of these values of the attributes result in possible outcomes (possible worlds): w1, w2, ...., wn (from 1 to n) (Pfeffer). Each object in C will give one of these outcomes for T, so T partitions C in C1 to Cn, each Ci containing those objects having an outcome wi. 
+
+
+ 
+ 
    
 
 
