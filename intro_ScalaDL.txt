@@ -1342,11 +1342,20 @@ The TDIDT family of learning systems:
 The underlying strategy is non-incremental learning from examples. The systems are presented with a set of cases, guided by the frequency information in the examples.
 The trees are constructed beginning with the root of the tree and proceeding down to its leaves (Top-Down Induction of decision trees). 
 
-A classification rule is developed.
+A classification rule is developed, that can determine the class of any object from its values of the attributes. The classification rule will be expressed as a decision tree.
+
 ID3 embeds a tree-building method in an iterative outer shell.
 
 The induction task: 
-- we have a universe of objects/outcomes (Avi Pfeffer 2016) that are described   
+- we have a universe of objects/outcomes (Avi Pfeffer 2016) that are described in terms of a collection of attributes. Each attribute measures some important feature of an object and will be limited here to taking a (usually small) set of discrete, mutually exclusive values. Each object in the universe belongs to one of a set of mutually exclusive classes.
+
+Leaves in a decision tree are class names, other nodes represent attribute-based tests with a branch for each possible value.  
+
+ID3:
+- was designed for sets with many attributes and large training sets (30000 objects with 50 attributes)
+- its basic structure is iterative
+- 
+   
 
 
 
