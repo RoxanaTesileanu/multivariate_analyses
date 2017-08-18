@@ -1307,13 +1307,18 @@ The learning task is: discover an operational description of the ideal target fu
 __________________________________________________________________________
 
 I'll come back to it at a later time. 
-Now I will try to implement the decision trees algorithm using the book of Peter Harrington "Machine Learning in Action" (2012)
+Now I will try to implement the decision tree-building algorithm using the book of Peter Harrington "Machine Learning in Action" (2012)
 
 
 
 Decision trees
 
 
+- decide how to split the dataset using information theory
+- which feature is used to split the data? To determine this you try every feature and measure which split will give you the best results => split the data into subsets. Then you repeat the process for the subsets until you've classified all the data.
+- the ID3 algorithm will be used to tell us how to split the data and when to stop splitting it.
+
+We need some quantitative way of determining how to split the data. 
 
 
 
