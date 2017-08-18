@@ -1354,7 +1354,10 @@ Leaves in a decision tree are class names, other nodes represent attribute-based
 ID3:
 - was designed for sets with many attributes and large training sets (30000 objects with 50 attributes)
 - its basic structure is iterative
-- 
+
+How to form a decision tree for an arbitrary collection C of objects?
+- If C is empty or contains only objects of one class, the simplest decision tree is just a leaf labelled with the class. 
+- Otherwise, let T be any test on an object with possible values V1, V2,..., Vw for its attributes 1 to w. 
    
 
 
