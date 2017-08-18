@@ -1326,6 +1326,12 @@ l(xi) = p(xi)log2 (1/p(xi)), where p(xi) is the probability of choosing this cla
 
 H(S) = sum_across_all_classes_x(p(xi)log2(1/p(xi)))
 
+Now, I will write the code which will do the entropy calculations on a given dataset.
+
+
+
+
+
 
 
 
