@@ -1357,7 +1357,9 @@ ID3:
 
 How to form a decision tree for an arbitrary collection C of objects?
 - If C is empty or contains only objects of one class, the simplest decision tree is just a leaf labelled with the class. 
-- Otherwise, let T be any test on an object with possible values V1, V2,..., Vp for its attributes 1 to p. The combinations of these values of the attributes result in possible outcomes (possible worlds): w1, w2, ...., wn (from 1 to n) (Pfeffer). Each object in C will give one of these outcomes for T, so T partitions C in C1 to Cn, each Ci containing those objects having an outcome wi. 
+- Otherwise, let T be any test on an object with possible values V1, V2,..., Vp for its attributes 1 to p. The combinations of these values of the attributes result in possible worlds: W1, W2, ...., Wn (from 1 to n) (Pfeffer). Each object in C will give one of these worlds for T, so T partitions C in C1 to Cn, each Ci containing those objects belonging to a world Wi, and having one of the outcome classes as leafs (e.g. P for "positive" or N for "negative" for a binary example).
+
+Choosing a test comes down to selecting an attribute for the root of the tree. ID3 adopts an information-based method that depends on two assumptions. Let C contain p objects of class P and n of class N. The assumptions are:
 
 
  
