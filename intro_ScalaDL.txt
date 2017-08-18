@@ -1342,8 +1342,11 @@ The TDIDT family of learning systems:
 The underlying strategy is non-incremental learning from examples. The systems are presented with a set of cases, guided by the frequency information in the examples.
 The trees are constructed beginning with the root of the tree and proceeding down to its leaves (Top-Down Induction of decision trees). 
 
+A classification rule is developed.
+ID3 embeds a tree-building method in an iterative outer shell.
 
- 
+The induction task: 
+- we have a universe of objects/outcomes (Avi Pfeffer 2016) that are described   
 
 
 
