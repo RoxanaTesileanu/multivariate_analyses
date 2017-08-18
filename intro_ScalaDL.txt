@@ -1336,8 +1336,15 @@ Induction of Decision Trees - Quinlan JR 1986
 The TDIDT family of learning systems:
 - general-purpose systems
 - applications that they address all involve classification
-- the product of learning is a piece of procedural knowledge that can assign an object to one of a specified number of disjoint classes
-- 
+- the product of learning is a piece of procedural knowledge that can assign an object to one of a specified number of disjoint classes (classification tasks are a subset of procedural taks)
+- their representation of acquired knowledge in the form of decision trees
+
+The underlying strategy is non-incremental learning from examples. The systems are presented with a set of cases, guided by the frequency information in the examples.
+The trees are constructed beginning with the root of the tree and proceeding down to its leaves (Top-Down Induction of decision trees). 
+
+
+ 
+
 
 
 
