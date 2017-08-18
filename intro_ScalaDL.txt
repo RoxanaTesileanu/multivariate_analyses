@@ -1357,10 +1357,19 @@ ID3:
 
 How to form a decision tree for an arbitrary collection C of objects?
 - If C is empty or contains only objects of one class, the simplest decision tree is just a leaf labelled with the class. 
-- Otherwise, let T be any test on an object with possible values V1, V2,..., Vp for its attributes 1 to p. The combinations of these values of the attributes result in possible worlds: W1, W2, ...., Wn (from 1 to n) (Pfeffer). Each object in C will give one of these worlds for T, so T partitions C in C1 to Cn, each Ci containing those objects belonging to a world Wi, and having one of the outcome classes as leafs (e.g. P for "positive" or N for "negative" for a binary example).
+- Otherwise, let T be any test on an object with possible values V1, V2,..., Vp for its attributes 1 to p. The combinations of these values of the attributes result in possible worlds: W1, W2, ...., Wn (from 1 to n) (Pfeffer 2016). Each object in C will give one of these worlds for T, so T partitions C in C1 to Cn, each Ci containing those objects belonging to a world Wi, and having one of the outcome classes as leafs (e.g. P for "positive" or N for "negative" for a binary example).
 
 Choosing a test comes down to selecting an attribute for the root of the tree. ID3 adopts an information-based method that depends on two assumptions. Let C contain p objects of class P and n of class N. The assumptions are:
 
+(1) any correct decision tree for C will classify objects in the same proportion as their representation in C. An arbitrary object will be determined to belong to class P with probability p/(p+n) and to class N with probability n/(p+n). 
+
+(2) when a decision tree is used to classify an object, it returns a class. With the expected information to generate the choice of the class given by:
+
+I(p, n) = - p/(p+n)*log2(p/(p+n)) - n/(p+n)*log2(n/(p+n)), which is the formula for the entropy of a data set, i.e. H(s) from above.
+
+If an attribute A which is chosen as the root of the tree has values A1, A2,..., Ap (from 1 to p), it will partition C into C11, C12, ... C1p, where C1i contains those objects in C that have the value Ai of A. Let C1i contain pi objects of class P and ni objects of class N. The expected information required for the subtree for C1i is I(pi, ni). 
+
+ 
 
  
  
