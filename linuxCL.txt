@@ -1,6 +1,11 @@
+Using Vim
+
 - vim starts in command mode
 - change to insert mode with the i key
 - to exit insert mode and return to command mode, press the Esc key
 - save your changes with ":"
 - to write the file to the hard drive we use ":w"
+- move the cursor with "l" (right arrow), "h" (left arrow), "j" down one line, "k" up one line, "0" (to the beginning of the current line", "^" (first non-white space of the line), "$" (the end of the current line, "Ctrl-f" (page down), "Ctrl-b" (page up), "numberG" (to line number, ex: 1G), "G" the last line of the file
 
+- appending text
+ 
