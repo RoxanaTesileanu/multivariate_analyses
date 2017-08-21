@@ -22,7 +22,21 @@ Using Vim
 - "d0" to the beginning of the line
 
 - cutting, copying, and pasting text: the d commad also cuts text (copies it into a paste buffer) that we can later recall with the p command to paste the contents of the buffer after the cursor or the P command to paste the contents before the cursor
-- the "y" command ("yank" - copy) to copy text: "yy" the current line, "5yy" the current line and the next 4 lines, "y$"  
+- the "y" command ("yank" - copy) to copy text: "yy" the current line, "6yy" the current line and the next 4 lines, "y$" to the end of the current line, "y0" to the beginning of the line, "yG" from the end of the line to the end of the file, "y20G" from the current line to the 20th line of the file
 
+- joining lines with "J" 
 
- 
+- search and replace: move the cursor to locations based on searches. vim can also perform replacements.
+- searching within a line: "f" searches a line and moves the cursor to the next instance of a specified character. Ex: "fa" will move the cursor to the next occurence of "a". The search may be repeated by typing a semicolon.
+- search the entire file: use "/" followed by the searched word and the Enter key and repeat the search using the previous search with the "n" command. 
+- global search and replace: substitution over a range of lines or the entire file: ":%s/line/LINE/g" (g stands for global, i.e. the subst. is performed on every instance of the search string); to change the file back to its previous form type ":%s/line/LINE/gc"  
+
+Editing multiple files:
+- vim file1 file2 file3...
+- switch betw. files: ":n" and ":N" to switch back
+- ":buffers" displays a list of files being edited
+- you can perform switching with ":buffer 2" to switch to file 2
+  
+Opening additional files:
+-   
+
