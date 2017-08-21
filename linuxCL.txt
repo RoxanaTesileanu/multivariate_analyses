@@ -11,12 +11,18 @@ Using Vim
 
 - appending text: move the cursor to the end of the line and type "a". This will append text at the end of that line. Or use "A" to move to the end of the line and start appending.
 - you can use "o" to insert a line below the current line; and "O" to inser a line above the current line
-
+    
 - undo changes by using "u"
 
 - deleting text: "x" will delete the current character; "3x" will delete the current and the next two characters
-- "dd" deletes the current line, "5dd" deletes the current line and the next 4 lines
-- 
+- "dd" deletes the current line, "6dd" deletes the current line and the next 5 lines 
+- "dG" to the end of the file
+- "d20G" to the 20th line of the file
+- "d$" to the end of the current line
+- "d0" to the beginning of the line
+
+- cutting, copying, and pasting text: the d commad also cuts text (copies it into a paste buffer) that we can later recall with the p command to paste the contents of the buffer after the cursor or the P command to paste the contents before the cursor
+- the "y" command ("yank" - copy) to copy text: "yy" the current line, "5yy" the current line and the next 4 lines, "y$"  
 
 
  
