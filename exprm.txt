@@ -1,0 +1,6 @@
+my second file for vim
+- some words: cezar messed the kitchen sink
+- switched with :buffer 2 
+
+Opening additional files: (this line was copied from another file with yank and pasted with p)
+

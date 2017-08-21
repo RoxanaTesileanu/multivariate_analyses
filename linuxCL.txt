@@ -1,5 +1,6 @@
 Reference: The Linux Command Line, William E. Shotts, Jr., 2009
 
+
 Using Vim
 
 - vim starts in command mode
@@ -38,5 +39,11 @@ Editing multiple files:
 - you can perform switching with ":buffer 2" to switch to file 2
   
 Opening additional files:
--   
+- to add an additional file use the ":e your_file_name" command
+- then check the files open with ":buffers"
+- you can only switch with "buffer no."
+
+Copying content from one file into another:
+- copy with yank, swich with buffer and paste with p
+  
 
