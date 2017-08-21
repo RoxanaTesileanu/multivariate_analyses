@@ -1,3 +1,5 @@
+Reference: The Linux Command Line, William E. Shotts, Jr., 2009
+
 Using Vim
 
 - vim starts in command mode
@@ -14,7 +16,7 @@ Using Vim
 
 - deleting text: "x" will delete the current character; "3x" will delete the current and the next two characters
 - "dd" deletes the current line, "5dd" deletes the current line and the next 4 lines
-
+- 
 
 
  
