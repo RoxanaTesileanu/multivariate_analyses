@@ -1,0 +1,6 @@
+- vim starts in command mode
+- change to insert mode with the i key
+- to exit insert mode and return to command mode, press the Esc key
+- save your changes with ":"
+- to write the file to the hard drive we use ":w"
+
