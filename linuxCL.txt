@@ -1,5 +1,5 @@
-Reference: The Linux Command Line, William E. Shotts, Jr., 2009
-
+Reference:	The Linux Command Line, William E. Shotts, Jr., 2009
+		The Linux Development Platform, Rehman Refeeq Ur, Christopher Paul, 2003
 
 Using Vim
 
