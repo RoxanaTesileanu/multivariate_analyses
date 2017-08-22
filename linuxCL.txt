@@ -1,6 +1,7 @@
 Reference:	The Linux Command Line, William E. Shotts, Jr., 2009
 		The Linux Development Platform, Rehman Refeeq Ur, Christopher Paul, 2003
 		VIM Tutor 1.7, Bram Moolenaar et al. 
+		vim-scala: Vim support for writing Scala code, Derek Wyatt
 Using Vim
 
 - vim starts in command mode
