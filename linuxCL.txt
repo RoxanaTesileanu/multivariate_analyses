@@ -1,6 +1,6 @@
 Reference:	The Linux Command Line, William E. Shotts, Jr., 2009
 		The Linux Development Platform, Rehman Refeeq Ur, Christopher Paul, 2003
-
+		VIM Tutor 1.7, Bram Moolenaar et al. 
 Using Vim
 
 - vim starts in command mode
@@ -14,6 +14,8 @@ Using Vim
 - you can use "o" to insert a line below the current line; and "O" to inser a line above the current line
     
 - undo changes by using "u"
+- redo changes by using 
+
 
 - deleting text: "x" will delete the current character; "3x" will delete the current and the next two characters
 - "dd" deletes the current line, "6dd" deletes the current line and the next 5 lines 
@@ -22,8 +24,33 @@ Using Vim
 - "d$" to the end of the current line
 - "d0" to the beginning of the line
 
+
+
 - cutting, copying, and pasting text: the d commad also cuts text (copies it into a paste buffer) that we can later recall with the p command to paste the contents of the buffer after the cursor or the P command to paste the contents before the cursor
 - the "y" command ("yank" - copy) to copy text: "yy" the current line, "6yy" the current line and the next 4 lines, "y$" to the end of the current line, "y0" to the beginning of the line, "yG" from the end of the line to the end of the file, "y20G" from the current line to the 20th line of the file
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Lesson 1 SUMMARY
+
+
+  1. The cursor is moved using either the arrow keys or the hjkl keys.
+         h (left)       j (down)       k (up)       l (right)
+
+  2. To start Vim from the shell prompt type:  vim FILENAME <ENTER>
+
+  3. To exit Vim type:     <ESC>   :q!   <ENTER>  to trash all changes.
+             OR type:      <ESC>   :wq   <ENTER>  to save the changes.
+
+  4. To delete the character at the cursor type:  x
+
+  5. To insert or append text type:
+         i   type inserted text   <ESC>         insert before the cursor
+         A   type appended text   <ESC>         append after the line
+
+NOTE: Pressing <ESC> will place you in Normal mode or will cancel
+      an unwanted and partially completed command.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - joining lines with "J" 
 
@@ -47,4 +74,6 @@ Copying content from one file into another:
 - copy with yank, swich with buffer and paste with p
   
 Inserting an entire file into another:
+- while you are in the current file use the command ":r other_file_to_be_inserted_in_the_current"
+ 
 

@@ -57,3 +57,8 @@ Copying content from one file into another:
   
 Inserting an entire file into another:
 
+
+
+
+Using the vimtutor.
+
