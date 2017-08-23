@@ -1,3 +1,8 @@
+Using Linux as a development platform for Scala projects 
+
+Author: Roxana Tesileanu, INCDS, roxana.te@web.de
+
+
 References:	The Linux Command Line, William E. Shotts, Jr., 2009
 		The Linux Development Platform, Rafeeq Ur Rehman, Christopher Paul, 2003
 		VIM Tutor 1.7, Bram Moolenaar et al. (started in the shell with the vimtutor command) 
@@ -26,7 +31,7 @@ Life cycle of a software development project (Rehman, Paul 2003, p.2):
 - documentation
 - support and new features
 
-Software development is not just "writing code". Each project starts with a requirement analysis which investigates the real-world need of the final product. Which functions should the new software carry in real-world problem solving within the specified domain? Functional specifications present the functionality of a software product on an abstract level "defining its input/outpt behavior". Further,      
+Software development is not just "writing code". Each project starts with a requirement analysis which investigates the real-world need of the final product. Which functions should the new software carry in real-world problem solving within the specified domain? Functional specifications present the functionality of a software product on an abstract level "defining its input/outpt behavior". Further, on the basis of the functional specifications, an architecture of the product is created. The architecture defines the different components of the product and how they interact with each other. 
 
 A) USING VIM
 
