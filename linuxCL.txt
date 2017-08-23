@@ -19,7 +19,7 @@ Components of a development system (Rehman, Paul 2003, p.10):
 - version control system
 - bug tracking
  
-For the Scala projects developed on Linux as an operating system, working with SBT condenses the list of the above components, making the process of development more accessible, as it unites different steps in one tool (compiling, building, testing and debugging). Another advantageof using SBT is the opportunity of working interactively in REPL to develop bits of code which can be then inserted in the editor of choice, working from within the Linux command line.             
+For the Scala projects developed on Linux as an operating system, working with SBT condenses the list of the above components, making the process of development more accessible, as it unites different steps in one tool (compiling, building, testing and debugging). Another advantage of using SBT is the opportunity of working interactively in REPL to develop bits of code which can be then inserted in the editor of choice, working from within the Linux command line.             
 
 Life cycle of a software development project (Rehman, Paul 2003, p.2):
 - requirement gathering
@@ -39,7 +39,7 @@ A) USING VIM AS AN EDITOR FOR THE SCALA CODE
 As an editor which can be used from within the command line, VIM can also be adapted to support editing Scala code, after installing the vim-scala package of Derek Wyatt found at https://github.com/derekwyatt/vim-scala. You install vim under Linux using the package tools (dpkg, apt-get, aptitude, rpm, yum, etc.). Afterwards you open the command line and launch vim by typing vim plus ENTER. 
  
 - vim starts in command mode
-- change to insert mode with the i key
+- change to insert mode with the "i" key
 - to exit insert mode and return to command mode, press the Esc key
 - save your changes with ":"
 - to write the file to the hard drive we use ":w"
@@ -159,4 +159,6 @@ Printing:
 - ":[range]ha[rdcopy][!] [arguments]" 
 - ":[range]ha[rdcopy][!] > {filename} to print to another file
 
+Matching parantheses:
+- find the corresponding paranthesis or bracket with "%" (move the cursor on the first paranthesis or bracket then type %). This command is useful in debugging a program with unmatched parantheses!
 
