@@ -31,10 +31,12 @@ Life cycle of a software development project (Rehman, Paul 2003, p.2):
 - documentation
 - support and new features
 
-Software development is not just "writing code". Each project starts with a requirement analysis which investigates the real-world need of the final product. Which functions should the new software carry in real-world problem solving within the specified domain? Functional specifications present the functionality of a software product on an abstract level "defining its input/outpt behavior". Further, on the basis of the functional specifications, an architecture of the product is created. The architecture defines the different components of the product and how they interact with each other. 
+Software development is not just "writing code". Each project starts with a requirement analysis which investigates the real-world need of the final product. Which functions should the new software carry in real-world problem solving within the specified domain? Functional specifications present the functionality of a software product on an abstract level "defining its input/outpt behavior". Further, on the basis of the functional specifications, an architecture of the product is created. The architecture "defines the different components of the product and how they interact with each other".  
 
-A) USING VIM
+A) USING VIM AS AN EDITOR FOR THE SCALA CODE
 
+As an editor which can be used from within the command line, VIM can also be adapted to support editing Scala code, after installing the vim-scala package of Derek Wyatt found at https://github.com/derekwyatt/vim-scala. You install vim under Linux using the package tools (dpkg, apt-get, aptitude, rpm, yum, etc.). Afterwards you open the command line and launch vim by typing vim plus ENTER. 
+ 
 - vim starts in command mode
 - change to insert mode with the i key
 - to exit insert mode and return to command mode, press the Esc key
