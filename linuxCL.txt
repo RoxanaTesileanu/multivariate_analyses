@@ -5,7 +5,7 @@ Author: Roxana Tesileanu, INCDS, roxana.te@web.de
 
 References:	The Linux Command Line, William E. Shotts, Jr., 2009
 		The Linux Development Platform, Rafeeq Ur Rehman, Christopher Paul, 2003
-		VIM Tutor 1.7, Bram Moolenaar et al. (started in the shell with the vimtutor command) 
+		VIM Tutor 1.7, Michael C. Pierce, Robert K. Ware (started in the shell with the vimtutor command) 
 		vim-scala: Vim support for writing Scala code, Derek Wyatt, https://github.com/derekwyatt/vim-scala
 		SBT in Action: the Simple Scala Build Tool, Joshua Suereth, Matthew Farwell, 2016
 
