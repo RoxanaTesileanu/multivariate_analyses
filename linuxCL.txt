@@ -16,6 +16,17 @@ Components of a development system (Rehman, Paul 2003, p.10):
  
 For the Scala projects developed on Linux as an operating system, working with SBT condenses the list of the above components, making the process of development more accessible, as it unites different steps in one tool (compiling, building, testing and debugging). Another advantageof using SBT is the opportunity of working interactively in REPL to develop bits of code which can be then inserted in the editor of choice, working from within the Linux command line.             
 
+Life cycle of a software development project (Rehman, Paul 2003, p.2):
+- requirement gathering
+- writing functional specifications
+- creating architecture and design documents
+- implementation and coding
+- testing and quality assurance
+- software release
+- documentation
+- support and new features
+
+Software development is not just "writing code". Each project starts with a requirement analysis which investigates the real-world need of the final product. Which functions should the new software carry in real-world problem solving within the specified domain? Functional specifications present the functionality of a software product on an abstract level "defining its input/outpt behavior". Further,      
 
 A) USING VIM
 
