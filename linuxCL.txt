@@ -36,14 +36,14 @@ Software development "is not just writing code". Each project starts with a requ
 
 A) USING VIM AS AN EDITOR FOR THE SCALA CODE
 
-As an editor which can be used from within the command line, VIM can also be adapted to support editing Scala code, after installing the vim-scala package of Derek Wyatt found at https://github.com/derekwyatt/vim-scala. You install vim under Linux using the package tools (dpkg, apt-get, aptitude, rpm, yum, etc.). Afterwards you open the command line and launch vim by typing vim plus ENTER. 
+As an editor which can be used from within the command line, VIM can also be adapted to support editing Scala code, after installing the vim-scala package of Derek Wyatt found at https://github.com/derekwyatt/vim-scala. You install vim under Linux using the package tools (dpkg, apt-get, aptitude, rpm, yum, etc.). Afterwards you open the command line and launch vim by typing vim <ENTER>. 
  
 - vim starts in command mode
 - change to insert mode with the "i" key
 - to exit insert mode and return to command mode, press the Esc key
 - save your changes with ":"
 - to write the file to the hard drive we use ":w"
-- move the cursor with "l" (right arrow), "h" (left arrow), "j" down one line, "k" up one line, "0" (to the beginning of the current line", "^" (first non-white space of the line), "$" (the end of the current line, "Ctrl-f" (page down), "Ctrl-b" (page up), "numberG" (to line number, ex: 1G), "G" the last line of the file
+- move the cursor with "l" (right arrow), "h" (left arrow), "j" down one line, "k" up one line, "0" (to the beginning of the current line", "^" (first non-white space of the line), "$" (the end of the current line, "Ctrl-f" (page down), "Ctrl-b" (page up), "numberG" (to line number, ex: 1G), "G" the last line of the file, "gg" moves to the first line.
 
 - appending text: move the cursor to the end of the line and type "a". This will append text at the end of that line. Or use "A" to move to the end of the line and start appending.
 - you can use "o" to insert a line below the current line; and "O" to inser a line above the current line
@@ -133,7 +133,8 @@ ce - change to the end of the word; c$ change to the end of the line; rx -to rep
 - joining lines with "J" 
 
 - search and replace: move the cursor to locations based on searches. vim can also perform replacements.
-- searching within a line: "f" searches a line and moves the cursor to the next instance of a specified character. Ex: "fa" will move the cursor to the next occurence of "a". The search may be repeated by typing a semicolon.
+- searching within a line: "f" searches a line and moves the cursor to the next instance of a specified character. Ex: "fa" will move the cursor to the next occurence of "a". The search may be repeated by typing a semicolon. You can also use the substitute command for a line: ":s/thee/the <ENTER>" to substitute the FIRST OCCURRENCE of the searched word. 
+The ":#,#s/old/new/g" command replaces old with new within a range of lines.
 - search the entire file: use "/" followed by the searched word and the Enter key and repeat the search using the previous search with the "n" command. 
 - global search and replace: substitution over a range of lines or the entire file: ":%s/line/LINE/g" (g stands for global, i.e. the subst. is performed on every instance of the search string); to change the file back to its previous form type ":%s/line/LINE/gc"  
 
@@ -151,7 +152,7 @@ Opening additional files:
 Copying content from one file into another:
 - copy with yank, swich with buffer and paste with p
   
-Inserting an entire file into another:
+Inserting an entire file into another (retrieving and merging files):
 - while you are in the current file use the command ":r other_file_to_be_inserted_in_the_current"
  
 Printing:
@@ -161,4 +162,17 @@ Printing:
 
 Matching parantheses:
 - find the corresponding paranthesis or bracket with "%" (move the cursor on the first paranthesis or bracket then type %). This command is useful in debugging a program with unmatched parantheses!
+
+Executing an external command:
+- type ":!" to place you in command-line mode, then type and execute any external shell command
+- for ex. ":! ls <ENTER>" to execute the ls command. 
+
+Selecting text to write:
+- type v to place you in visual mode, and move the cursor to the end line of your selection. The selected text will be highlighted. 
+- then press the ":" and at the bottom of the screen ":'<,>'" will appear, this indicatesyou've selected smth.. Then, complete the command with "w TEST <ENTER>", to write the selection to the file named TEST. 
+
+You can use the selection in visual mode with other operators too (d deletes the text, y yanks the text). 
+
+
+
 
