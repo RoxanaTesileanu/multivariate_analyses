@@ -8,6 +8,7 @@ References:	The Linux Command Line, William E. Shotts, Jr., 2009
 		VIM Tutor 1.7, Michael C. Pierce, Robert K. Ware (started in the shell with the vimtutor command) 
 		vim-scala: Vim support for writing Scala code, Derek Wyatt, https://github.com/derekwyatt/vim-scala
 		SBT in Action: the Simple Scala Build Tool, Joshua Suereth, Matthew Farwell, 2016
+		Learning Scala, Jason Swartz, 2015
 
 
 Components of a development system (Rehman, Paul 2003, p.10):
@@ -138,7 +139,10 @@ The ":#,#s/old/new/g" command replaces old with new within a range of lines.
 - search the entire file: use "/" followed by the searched word and the Enter key and repeat the search using the previous search with the "n" command. 
 - global search and replace: substitution over a range of lines or the entire file: ":%s/line/LINE/g" (g stands for global, i.e. the subst. is performed on every instance of the search string); to change the file back to its previous form type ":%s/line/LINE/gc"  
 - you can search using the 'ic' option by entering: ":set ic" (it will find also combinations with capitals). To disable ignoring case enter: ":set noic".
+- you can also enable the 'is'(":set is") option which shows partial matches for a search phrase. You can diasble it with ":set nois". 
 
+TYPING ":set xxx" SETS THE OPTION 'xxx'. 
+PREPEND "no" TO SET AN OPTION OFF (":set noxxx")
 
 Editing multiple files:
 - vim file1 file2 file3...
@@ -178,6 +182,16 @@ You can use the selection in visual mode with other operators too (d deletes the
 Replace mode:
 - enter the replace mode by typing "R", and leave it with <ESC>. In replace mode every typed character deletes an existing character.
 
- 
+Getting help:
+- type ":help <ENTER>"
+- type ^W ^W to jump from one window to another and :q<ENTER> to close the help window.
+- type ":help some_command" to find out more on a particular command.
+- type ":help user-manual" to get to the user manual.
+
+Autocompletion:
+- when starting a ":" command you can use the autocompletion with ^D
+
+
+B) USING SBT 
 
 
