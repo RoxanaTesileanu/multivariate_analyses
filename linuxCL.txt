@@ -1,10 +1,23 @@
-Reference:	The Linux Command Line, William E. Shotts, Jr., 2009
-		The Linux Development Platform, Rehman Refeeq Ur, Christopher Paul, 2003
-		VIM Tutor 1.7, Bram Moolenaar et al. 
+References:	The Linux Command Line, William E. Shotts, Jr., 2009
+		The Linux Development Platform, Rafeeq Ur Rehman, Christopher Paul, 2003
+		VIM Tutor 1.7, Bram Moolenaar et al. (started in the shell with the vimtutor command) 
 		vim-scala: Vim support for writing Scala code, Derek Wyatt, https://github.com/derekwyatt/vim-scala
+		SBT in Action: the Simple Scala Build Tool, Joshua Suereth, Matthew Farwell, 2016
 
 
-Using Vim
+Components of a development system (Rehman, Paul 2003, p.10):
+- hardware platform
+- operating system
+- editors
+- compilers and assemblers
+- debuggers
+- version control system
+- bug tracking
+ 
+For the Scala projects developed on Linux as an operating system, working with SBT condenses the list of the above components, making the process of development more accessible, as it unites different steps in one tool (compiling, building, testing and debugging). Another advantageof using SBT is the opportunity of working interactively in REPL to develop bits of code which can be then inserted in the editor of choice, working from within the Linux command line.             
+
+
+A) USING VIM
 
 - vim starts in command mode
 - change to insert mode with the i key
@@ -122,4 +135,9 @@ Copying content from one file into another:
 Inserting an entire file into another:
 - while you are in the current file use the command ":r other_file_to_be_inserted_in_the_current"
  
+Printing:
+- ":ha" and the file is sent to the default printer
+- ":[range]ha[rdcopy][!] [arguments]" 
+- ":[range]ha[rdcopy][!] > {filename} to print to another file
+
 
