@@ -137,6 +137,8 @@ ce - change to the end of the word; c$ change to the end of the line; rx -to rep
 The ":#,#s/old/new/g" command replaces old with new within a range of lines.
 - search the entire file: use "/" followed by the searched word and the Enter key and repeat the search using the previous search with the "n" command. 
 - global search and replace: substitution over a range of lines or the entire file: ":%s/line/LINE/g" (g stands for global, i.e. the subst. is performed on every instance of the search string); to change the file back to its previous form type ":%s/line/LINE/gc"  
+- you can search using the 'ic' option by entering: ":set ic" (it will find also combinations with capitals). To disable ignoring case enter: ":set noic".
+
 
 Editing multiple files:
 - vim file1 file2 file3...
@@ -173,6 +175,9 @@ Selecting text to write:
 
 You can use the selection in visual mode with other operators too (d deletes the text, y yanks the text). 
 
+Replace mode:
+- enter the replace mode by typing "R", and leave it with <ESC>. In replace mode every typed character deletes an existing character.
 
+ 
 
 
