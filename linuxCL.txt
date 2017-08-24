@@ -153,5 +153,8 @@ Next, open a Scala REPL session in SBT using the commands introduced at the begi
 
 
 Creating a Scala project
+In this section we will create a Scala project called Scala_Playground in order to continue the playground series of Linux introductions started by William Shotts in this book "The Linux Command Line". 
 
- 
+Open the terminal with <C^-ALT-T>. It starts directly in your home directory. Next, create a directory called Scala_Playground ("$ mkdir Scala_Playground <ENTER>"). Check if the directory was created with the command "$ls <ENTER>" which lists the contents of the directory in which you are placed.   
+  
+
