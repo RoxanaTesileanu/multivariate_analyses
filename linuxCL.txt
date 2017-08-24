@@ -32,7 +32,7 @@ Life cycle of a software development project (Rehman, Paul 2003, p.2):
 - documentation
 - support and new features
 
-Software development "is not just writing code". Each project starts with a requirement analysis which investigates the real-world need of the final product. Which functions should the new software carry in real-world problem solving within the specified domain? Functional specifications present the functionality of a software product on an abstract level "defining its input/outpt behavior". Further, on the basis of the functional specifications, an architecture of the product is created. The architecture "defines the different components of the product and how they interact with each other", without providing the explicit details on how they should be implemented to reach the desired functionality. This happens at the design stage, when you create design documents which define each individual component to the level of functions and procedures. Using the design documents and development tools (SBT, editor) the code is then implemented and tested. Testing involves: unit testing (testing one part or one component of the product using test cases to test functionality of this part of the software), sanity testing to check if all components compile, regression or stress testing to check the long-term behavior of the product when used continuously over a period of time, and functional testing using test cases built on functional specifications. If a bug (an anomaly) is found it must be reported and fixed. The documentation includes: technical documentation developed during the development process, technical documentation prepared for technical support staff, and end-user manuals and guides. The last stage of the life cycle of a software development project is the support and release of new versions depending on requirements.       
+Software development "is not just writing code". Each project starts with a requirement analysis which investigates the real-world need of the final product. Which functions should the new software carry in real-world problem solving within the specified domain? Functional specifications present the functionality of a software product at an abstract level "defining its input/outpt behavior". Further, on the basis of the functional specifications, an architecture of the product is created. The architecture "defines the different components of the product and how they interact with each other", without providing the explicit details on how they should be implemented to reach the desired functionality. This happens at the design stage, when you create design documents which define each individual component to the level of functions and procedures. Using the design documents and development tools (SBT, editor) the code is then implemented and tested. Testing involves: unit testing (testing one part or one component of the product using test cases to test functionality of this part of the software), sanity testing to check if all components compile, regression or stress testing to check the long-term behavior of the product when used continuously over a period of time, and functional testing using test cases built on functional specifications. If a bug (an anomaly) is found it must be reported and fixed. The documentation includes: technical documentation developed during the development process, technical documentation prepared for technical support staff, and end-user manuals and guides. The last stage of the life cycle of a software development project is the support and release of new versions depending on requirements.       
 
 
 A) USING VIM AS AN EDITOR FOR THE SCALA CODE
@@ -41,29 +41,35 @@ As an editor which can be used from within the command line, VIM can also be ada
  
 - vim starts in command mode
 - change to insert mode with the "i" key
-- to exit insert mode and return to command mode, press the Esc key
+- to exit insert mode and return to command mode, press the <ESC> key
 - save your changes with ":"
 - to write the file to the hard drive we use ":w"
-- move the cursor with "l" (right arrow), "h" (left arrow), "j" down one line, "k" up one line, "0" (to the beginning of the current line", "^" (first non-white space of the line), "$" (the end of the current line, "Ctrl-f" (page down), "Ctrl-b" (page up), "numberG" (to line number, ex: 1G), "G" the last line of the file, "gg" moves to the first line.
+- to exit vim type ":wq" to save the changes, or ":q!" to trash all changes
 
-- appending text: move the cursor to the end of the line and type "a". This will append text at the end of that line. Or use "A" to move to the end of the line and start appending.
+PRESSING <ESC> WILL PLACE YOU IN COMMAND MODE OR WILL CANCEL AN UNWANTED AND PARTIALLY COMPLETED COMMAND!
+ 
+Move the cursor with "l" (right arrow), "h" (left arrow), "j" down one line, "k" up one line, "0" (to the beginning of the current line), "^" (first non-white space of the line), "$" (the end of the current line, "C^-f" (page down), "C^-b" (page up), "numberG" (to line number, ex: 1G), "G" the last line of the file, "gg" moves to the first line.
+
+Appending text: move the cursor to the end of the line and type "a". This will append text at the end of that line. Or use "A" to move to the end of the line and start appending.
 - you can use "o" to insert a line below the current line; and "O" to inser a line above the current line
     
 - undo changes by using "u"
 - redo changes by using "C^r" 
 
 
-- deleting text: "x" will delete the current character; "3x" will delete the current and the next two characters
+Deleting text: 
+- "x" will delete the current character; "3x" will delete the current and the next two characters
+- "dw" deletes the word,
 - "dd" deletes the current line, "6dd" deletes the current line and the next 5 lines 
 - "dG" to the end of the file
 - "d20G" to the 20th line of the file
 - "d$" to the end of the current line
 - "d0" to the beginning of the line
 
-
-
-- cutting, copying, and pasting text: the d commad also cuts text (copies it into a paste buffer) that we can later recall with the p command to paste the contents of the buffer after the cursor or the P command to paste the contents before the cursor
+Cutting, copying, and pasting text: 
+- the d commad also cuts text (copies it into a paste buffer) that we can later recall with the p command to paste the contents of the buffer after the cursor or the P command to paste the contents before the cursor
 - the "y" command ("yank" - copy) to copy text: "yy" the current line, "6yy" the current line and the next 4 lines, "y$" to the end of the current line, "y0" to the beginning of the line, "yG" from the end of the line to the end of the file, "y20G" from the current line to the 20th line of the file
+- the change operator "c" allows you to change from the cursor to where the motion takes you (ce - to the end of the word, c$ to the end of the line).
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  Lesson 1 SUMMARY
@@ -133,7 +139,7 @@ ce - change to the end of the word; c$ change to the end of the line; rx -to rep
 
 - joining lines with "J" 
 
-- search and replace: move the cursor to locations based on searches. vim can also perform replacements.
+Search and replace: move the cursor to locations based on searches. vim can also perform replacements.
 - searching within a line: "f" searches a line and moves the cursor to the next instance of a specified character. Ex: "fa" will move the cursor to the next occurence of "a". The search may be repeated by typing a semicolon. You can also use the substitute command for a line: ":s/thee/the <ENTER>" to substitute the FIRST OCCURRENCE of the searched word. 
 The ":#,#s/old/new/g" command replaces old with new within a range of lines.
 - search the entire file: use "/" followed by the searched word and the Enter key and repeat the search using the previous search with the "n" command. 
