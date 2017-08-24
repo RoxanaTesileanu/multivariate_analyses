@@ -148,8 +148,8 @@ $ sudo apt-get install sbt
 
 If you are using rpm distributions visit the download page http://www.scala-sbt.org/download.html. 
 
-Next, open a Scala REPL session in SBT using the commands introduced at the beginning of this section and type in some commands. 
-
+Next, open a Scala REPL session in SBT using the commands introduced at the beginning of this section and type in some commands. You exit the console with <C^d>and a second <C^d> will get you out of the SBT and back to the command-line (which can also be closed with <C^d>). 
+ 
 
 
 Creating a Scala project
