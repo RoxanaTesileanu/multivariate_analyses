@@ -153,8 +153,18 @@ Next, open a Scala REPL session in SBT using the commands introduced at the begi
 
 
 Creating a Scala project
-In this section we will create a Scala project called Scala_Playground in order to continue the playground series of Linux introductions started by William Shotts in this book "The Linux Command Line". 
+In this section we will create a Scala project called Scala_Playground in order to continue the playground series of Linux introductions started by William Shotts in his book "The Linux Command Line". 
 
-Open the terminal with <C^-ALT-T>. It starts directly in your home directory. Next, create a directory called Scala_Playground ("$ mkdir Scala_Playground <ENTER>"). Check if the directory was created with the command "$ls <ENTER>" which lists the contents of the directory in which you are placed. Further, switch to the Scala_Playground directory ("$ cd Scala_Playground") and create a part of the inner structure of the current directory by adding another directory called src with its subdirecotry main, with its subdirecotry scala. This is done with the command "$ mkdir -p src/main/scala" which creates the entire chain of directories.    
+Open the terminal with <C^-ALT-T>. It starts directly in your home directory. Next, create a directory called Scala_Playground ("$ mkdir Scala_Playground <ENTER>"). Check if the directory was created with the command "$ls <ENTER>" which lists the contents of the directory in which you are placed. Further, switch to the Scala_Playground directory ("$ cd Scala_Playground") and create a part of the inner structure of the current directory by adding another directory called src with its subdirecotry main, with its subdirecotry scala. This is done with the command "$ mkdir -p src/main/scala" which creates the entire chain of directories.Check it with "$ls" and "$cd" commands, return to the Scala_Playground directory with "cd - ". Next, in the Scala_Playground directory, create a second directory called project. The ls command should print now for the Scala_Playground two contents: project and src.  
+The final step in creating the Scala project is to create two files: one directly in the Scala_Playground directory called build.sbt and the second in the Scala_Playground/project directory called build.properties. Open vim when you are in the Scala_playground/project directory and type in "sbt.version = 0.13.15" (without " ").Go in the command mode with <ESC> and save the changes and give the open file a name: ":w build.properties". Exit vim with :q. 
+
+THE build.properties FILE SETS THE VERSION OF SBT.
+
+Next, when you are in the Scala_Playground directory open vim and edit the basic settings of the Scala project: project name, Scala version used, and the dependencies you need. For the moment we will ignore dependencies and create the basic Scala project. Type in vim the following lines:
+name := "Scala_Playground"
+scalaVersion := "2.11.10"
+The above two lines are not in Scala, they are in SBT's own language.
+Now, get into the command line mode with <ESC> and save the changes and give the file the name build.sbt.  
+You should now have three objects in the Scala_Playground directory: the build.sbt file, the project directory and the src directory. 
   
 
