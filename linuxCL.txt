@@ -171,5 +171,9 @@ You should now have three objects in the Scala_Playground directory: the build.s
 You can now launch SBT while you are in the Scala_Playground directory using the"$ sbt" command. You can see the SBT's output as it uses the information from the two edited files and creates the desired Scala project. When the output is finished you get to see the SBT prompt ">". The project was created successfully. Now, launch the Scala REPL with the command "> console", when the REPL is open you get to see the Scala prompt "scala>". You can type in some commands to see if it works. 
 Type <C^d> to get back to SBT and a second <C^d> to get bach to the command-line. 
 
+You can see that the Scala_Playground directory has gained some additional directories: the Scala_Playground/target directory and the Scala_Playground/project/target directory. These are created by SBT when it creates the Scala project. 
+
+In the src/main/scala directory you should place your Scala codes in form of scala files.   
+
 Some basic SBT tasks
 Open SBT. When you see the SBT prompt ">"  
