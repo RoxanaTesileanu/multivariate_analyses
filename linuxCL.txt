@@ -133,4 +133,23 @@ Autocompletion:
 
 B) USING SBT 
 
+- installing SBT
+- creating a Scala project
+- some SBT basic tasks (console, compile, reload, a.o)
 
+Installing SBT
+You can use the Scala REPL either directly from within the command-line initiating a REPL sesssion with the command "$ scala", or lauching a SBT-session with the command "$sbt" and then from within SBT launch the Scala REPL using the command "> console". On Ubuntu you can install the Scala language using the apt command ("$ sudo apt install scala") with no additional commands. Check the package management tool you use to get the same result. You can open the Scala REPL and type in some commands. For guidance check the book of Jason Swartz, "Learning Scala" for a great introduction to the Scala language. 
+Installing SBT requires a look at the SBT homepage in order to get the two commands needed to install it using the command-line. At the time the present document is written the commands for Ubuntu  are:
+
+$ echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
+$ sudo apt-get update
+$ sudo apt-get install sbt
+
+If you are using other rpm distributions visit the download page http://www.scala-sbt.org/download.html. 
+
+Next, open a Scala REPL session in SBT using the commands introduced at the beginning of this section. 
+
+
+
+ 
