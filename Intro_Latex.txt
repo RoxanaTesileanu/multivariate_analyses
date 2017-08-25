@@ -78,5 +78,16 @@ C) Strukturieren von Dokumenten: Hinzufuegen von Paragraphen und Abschnitten
 D) Pakete erklaert: Hinzufuegen von LaTex-Funktionen
 
 - "\usepackage{PAKAGENAME}" Direktive zur Praeambel hinzufuegen!
-- fuer Ubuntu kann man gleich texlive-full Installieren ("$ sudo apt-get install texlive-full") um alle Packete zu erhalten. 
+- fuer Ubuntu kann man gleich texlive-full Installieren ("$ sudo apt-get install texlive-full") um alle Packete zu erhalten.
+
+Verwendung von Umgebungen:
+- fuer mathematische Formeln gibt es eine Umgebung namens equation. Alles innerhalb dieser Umgebung wird im MATH MODE verarbeitet. Ausserdem werden Gleichungen fuer uns nummeririert.
+Beispiel: 
+\begin{equation}
+f(x) = x^2
+\end{equation}
+
+Einbinden von Paketen:
+ 
+ 
 
