@@ -62,7 +62,18 @@ The components of a development system are (Rehman and Paul, 2003, p.10):
 
 Der Titel, das Datum und der Author sind nicht in der document Umgebung.
 Der Teil vor dem Hauptdokument wird in LaTex Praeambel gennant. 
-Man schaltet die Seitennummerierung aus mit "\pagenumbering{gobble}" und ein mit "\pagenumbering{arabic}".
+Man schaltet die Seitennummerierung aus mit "\pagenumbering{gobble}" und ein mit "\pagenumbering{arabic}". Fuer Roemische Nummer gibt es "\pagenumbering{roman}".
+
+C) Strukturieren von Dokumenten: Hinzufuegen von Paragraphen und Abschnitten
+
+- Ueberschrifte formatieren und deren automatische Nummerierung durchfuehren
+- es gibt:
+	\section{}
+	\subsection{}
+	\subsubsection{}
+	\paragraph{}
+	\subparagraph{}
+- die Ueberschriften und Unterueberschrieften werden spaeter im automatisch generierten Inhaltsverzeichnis im Dokument erscheinen.
 
  
 
