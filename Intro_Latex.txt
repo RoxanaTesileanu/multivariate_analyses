@@ -143,19 +143,15 @@ Man kann Mathe-Befehle auch kombinieren:
 
 Fuer MATRIZEN gibt es eine spezielle Umgebung! Sie kann nur im Mathe Modus verwendet werden.
 
+\begin{equation}
+\left[
 \begin{matrix}
 1 & 0 \\
 0 & 1 
 \end{matrix}
-
-Die oben erzeugte Matrix ist ohne Klammern.
-Fuer eine Matrix mit Klammern:
-\left[
-\begin{matrix}
-1 & 0 \\
-0 & 1
-\end{matrix}
 \right]
+\end{equation}
+
 
 Dies funktioniert fuer andere Klammerformen auch und ist nicht auf Matrizen beschraenkt:
 \left(\frac{1}{\sqrt{x}}\right)
