@@ -156,6 +156,8 @@ Fuer MATRIZEN gibt es eine spezielle Umgebung! Sie kann nur im Mathe Modus verwe
 Dies funktioniert fuer andere Klammerformen auch und ist nicht auf Matrizen beschraenkt:
 \left(\frac{1}{\sqrt{x}}\right)
 
+ES GIBT AUCH ZEICHEN FUER DAS GRIECHISCHE ALPHABET UND ANDERE MATHEMATISCHE ZEICHEN (z.B. \lambda)!!
+
 
 
  
