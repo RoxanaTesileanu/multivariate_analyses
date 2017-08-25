@@ -22,10 +22,10 @@ Es koennen mehrere Umgebungen definiert werden, aber es is zwingend erforderlich
 
 Beispiel einer Hierarchie:
 \begin{document}
-	begin{environment1}
-		begin{environment2}
-		end{environment2}
-	end{environment1}
+	\begin{environment1}
+		\begin{environment2}
+		\end{environment2}
+	\end{environment1}
 \end{document}
 
 Viele vordefinierte Umgebungen sind in Packeten erhalten, welche erst in das Dok eingebettet werden muessen.
