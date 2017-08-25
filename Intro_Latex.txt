@@ -7,5 +7,12 @@ Installation:
 
 Grundlegende Struktur einer LaTex Datei:
 - man beginnt mit einer leeren .tex Datei, zu welcher nach und nach die LaTex Befehle hinzugefuegt werden
+- befor das Dok betrachtet werden kann, muss es zuerst kompiliert werden (d.h. es muss zunaechst eine .pdf Datei erstellt werden).
+- Beispiel: 
+	\documentclass{article}
+	\begin{document}
+	Hello world!
+	\end{document}
+- dann tut man kompilieren mit pdflatex: "$ pdflatex erstesLaTexDok.tex"
    
 
