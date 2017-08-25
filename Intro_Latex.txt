@@ -60,3 +60,9 @@ The components of a development system are (Rehman and Paul, 2003, p.10):
 \end{document}
 
 
+Der Titel, das Datum und der Author sind nicht in der document Umgebung.
+Der Teil vor dem Hauptdokument wird in LaTex Praeambel gennant. 
+Man schaltet die Seitennummerierung aus mit "\pagenumbering{gobble}" und ein mit "\pagenumbering{arabic}".
+
+ 
+
