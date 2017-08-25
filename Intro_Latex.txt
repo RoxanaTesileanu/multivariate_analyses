@@ -1,10 +1,11 @@
 www.latex-tutorial.com/de/tutorials/
-Schritt fuer Schritt Einfuehrung in Latex
+Schritt fuer Schritt Einfuehrung in LaTex
 
 Installation:
 - $ sudo apt-get install texlive
 - im vim den Text schreiben und dann mit pdflatex kompilieren
 
-Grundlegende Struktur einer Latex Datei:
-- 
+Grundlegende Struktur einer LaTex Datei:
+- man beginnt mit einer leeren .tex Datei, zu welcher nach und nach die LaTex Befehle hinzugefuegt werden
+   
 
