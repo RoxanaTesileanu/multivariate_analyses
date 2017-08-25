@@ -158,6 +158,10 @@ Dies funktioniert fuer andere Klammerformen auch und ist nicht auf Matrizen besc
 
 ES GIBT AUCH ZEICHEN FUER DAS GRIECHISCHE ALPHABET UND ANDERE MATHEMATISCHE ZEICHEN (z.B. \lambda)!!
 
+F) Hinzufuegen von Abbildungen
+
+Die eingebetteten Bilder werden automatisch indiziert und durchnummeriert. Um Bilder einzubinden wird die figure Umgebung benutzt. Ausserdem muss das graphicx Paket eingebunden werden.
+
 
 
  
