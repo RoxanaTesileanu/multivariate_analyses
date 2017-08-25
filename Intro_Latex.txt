@@ -1,18 +1,62 @@
 www.latex-tutorial.com/de/tutorials/
 Schritt fuer Schritt Einfuehrung in LaTex
 
-Installation:
+A) Installation:
 - $ sudo apt-get install texlive
 - im vim den Text schreiben und dann mit pdflatex kompilieren
 
 Grundlegende Struktur einer LaTex Datei:
 - man beginnt mit einer leeren .tex Datei, zu welcher nach und nach die LaTex Befehle hinzugefuegt werden
-- befor das Dok betrachtet werden kann, muss es zuerst kompiliert werden (d.h. es muss zunaechst eine .pdf Datei erstellt werden).
+- bevor das Dok betrachtet werden kann, muss es zuerst kompiliert werden (d.h. es muss zunaechst eine .pdf Datei erstellt werden).
 - Beispiel: 
 	\documentclass{article}
 	\begin{document}
 	Hello world!
 	\end{document}
 - dann tut man kompilieren mit pdflatex: "$ pdflatex erstesLaTexDok.tex"
-   
+- man merkt die Seitennummer die automatisch aufgetacht ist durch die Dokumentenklasse article
+- Befehle beginnen mit einem Backslash "\": "\befehl{option}"
+- man legt eine Umgebung fest mit "\begin" und "\end"
+
+Es koennen mehrere Umgebungen definiert werden, aber es is zwingend erforderlich die document Umgebung zu definieren!
+
+Beispiel einer Hierarchie:
+\begin{document}
+	begin{environment1}
+		begin{environment2}
+		end{environment2}
+	end{environment1}
+\end{document}
+
+Viele vordefinierte Umgebungen sind in Packeten erhalten, welche erst in das Dok eingebettet werden muessen.
+
+B) Titelseite
+
+     
+\documentclass{article}
+
+\title{Using Linux as a development platform for Scala projects}
+\date{2017-08-24}
+\author{Roxana Tesileanu, INCDS}
+
+\begin{document}
+	\maketitle
+	\newpage
+
+1. Introduction
+
+The components of a development system are (Rehman and Paul, 2003, p.10):
+- hardware platform
+- operating system
+- editors 
+- compilers and assemblers
+- debuggers
+- version control system
+- bug tracking
+
+.....
+
+  
+\end{document}
+
 
