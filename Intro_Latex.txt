@@ -100,11 +100,30 @@ Packete fuegen die Unterstuezung fuer Bilder, Links, Literaturverzeichnisse und 
 E) Setzen von Mathematik in LaTex
 Gleichungen, Matrizen und Brueche
 
-- Formel direkt im Text einbetten: Formel mit "$" zu umgeben
+- Formel direkt im Text einbetten: Formel mit "$" zu umgeben (braucht man keine Umgebung festlegen, nur den $ Zeichen):
 	Bsp.: This formula $f(x) = x^2$ is an example
 
-- die equation und align Umgebungen
+- die equation und align Umgebungen: die equation Umgebung ist fuer einzelne Gleichungen nuetzlich und die align Umgebung fuer mehrere Gleichungen, um sie z.B. auszurichten:
 
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{equation*}
+1+2=3
+\end{equation*}
+
+\begin{align}
+1+2 &= 3\\
+1 &= 3-2
+\end{align}
+
+\end{document}
+
+Die Gleichungen werden am &-Zeichen ausgerichtet.
+
+ZEILENUMBRUCH IST "\\"!
  
  
 
