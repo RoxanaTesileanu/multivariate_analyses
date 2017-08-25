@@ -88,6 +88,23 @@ f(x) = x^2
 \end{equation}
 
 Einbinden von Paketen:
+
+Beispiel: 
+\usepackage{amsmath}
+....
+\begin{equation}
+\end{equation}
+
+Packete fuegen die Unterstuezung fuer Bilder, Links, Literaturverzeichnisse und mehr hinzu.
+
+E) Setzen von Mathematik in LaTex
+Gleichungen, Matrizen und Brueche
+
+- Formel direkt im Text einbetten: Formel mit "$" zu umgeben
+	Bsp.: This formula $f(x) = x^2$ is an example
+
+- die equation und align Umgebungen
+
  
  
 
