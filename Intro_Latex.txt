@@ -75,5 +75,8 @@ C) Strukturieren von Dokumenten: Hinzufuegen von Paragraphen und Abschnitten
 	\subparagraph{}
 - die Ueberschriften und Unterueberschrieften werden spaeter im automatisch generierten Inhaltsverzeichnis im Dokument erscheinen.
 
- 
+D) Pakete erklaert: Hinzufuegen von LaTex-Funktionen
+
+- "\usepackage{PAKAGENAME}" Direktive zur Praeambel hinzufuegen!
+- fuer Ubuntu kann man gleich texlive-full Installieren ("$ sudo apt-get install texlive-full") um alle Packete zu erhalten. 
 
