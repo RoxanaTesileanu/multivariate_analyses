@@ -7,7 +7,7 @@
 
 \usepackage{amsmath} | {graphics} | {verbatim} | etc.
 
-% Hauptdocument
+% Hauptdokument
 
 \begin{document} ... \end{document}
 

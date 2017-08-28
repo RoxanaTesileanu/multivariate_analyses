@@ -194,6 +194,18 @@ Man kann ein Appendix mit: "\begin{appendix} ... \end{appendix}" erzeugen.
 
 DIE ABBILDUNGEN- UND TABELLENVERZEICHNISSE ERSCHEINEN AUCH ERST NACH ZWEIMALIGEM KOMPILIEREN!
 
+I) Literaturverzeichnis mit Bibtex und Biblatex
+
+- dafuer muss man eine .bib Datei anlegen
+- die .bib Datei kann man auch automatisch mit Zotero generiert werden
+
+A random citation looks like this: \cite{odersky_programming_2010} and it is embedded in text.
+\bibliography{MyLibrary}
+\bibliographystyle{ieeetr} | {apalike} 
+
+- nachher muss man auch die .tex Datei und die .bib Datei kompilieren mit: $ pdflatex erstesLaTexDok.tex; bibtex MyLibrary
+- und anschliessend die doppelte Kompilation mit pdflatex.
+
 
  
 
