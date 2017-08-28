@@ -9,7 +9,7 @@
 
 % Hauptdocument
 
-\begin{document} ... \end{figure}
+\begin{document} ... \end{document}
 
 \pagenumbering{gobble} | {arabic} | {roman}
 
@@ -17,18 +17,29 @@
 \newpage
 \newline | \\
 
+\tableofcontents
+\newpage
+
+\listoffigures
+\listoftables
+
 \section{ my section } | \subsection { my subsection } | \subsubsection { mysubsubsection}
+
+\paragraph{ my paragraph } | \subparagraph{ my sub paragraph}
+
+
 
 % zusaeztliche Umgebungen
 \begin{figure} ... \end{figure}
 
 \begin{equation} ... \end{equation}
 
-\begin{matrix} ... \end{matrix} (im Math-Modus)
+\begin{matrix} ... \end{matrix} (im Mathe-Modus)
 
 \begin{align} ... \end{align} (mit &-Zeichen zu dem =-Zeichen zu benuzten)
 
-
-
+\begin{appendix} ... \end{appendix} (here kann man auch Abb.- und Tabellenverzeichnisse eingefuegt werden)
+ 
+\begin{comment} ... \end{comment} | \iffalse ... \fi
 
 

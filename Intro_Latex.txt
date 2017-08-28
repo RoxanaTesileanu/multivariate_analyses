@@ -162,11 +162,38 @@ F) Hinzufuegen von Abbildungen
 
 Die eingebetteten Bilder werden automatisch indiziert und durchnummeriert. Um Bilder einzubinden wird die figure Umgebung benutzt. Ausserdem muss das graphicx Paket eingebunden werden.
 
+Das Bild an einer bestimmten Position fixieren:
+- "[h!]" fuer here
+- "[t]" fuer oben auf der Seite
+- "[b]" fuer unten auf der Seite
+- "[p]" fuer eine eigene Seite
+- "[!]" erzwingt die angegebene Position
+
 G) Kommentare 
 - um eine Zeile auszukommentieren benutzt man: "%"
 - um mehrere Zeilen auszukommentieren benutzt man:"\iffalse ...... \fi
 - man kann auch den Paket verbatim zum Praeambel hinzufuegen und comment Umgebung benutzen: "\begin{comment}", "\end{comment}".
  
+H) Inhaltsverzeichnis 
+
+- zusaezlich kann man auch Abbildungen- und Tabellenverzeichnisse erstellen
+
+Bsp. Inhaltsverzeichnis:
+\tableofcontents
+\newpage
+
+DAS INHALTSVERZEICHNIS ERSCHEINT ERST NACH ZWEIMALIGEM KOMPILIEREN DES OBIGEN CODES.
+
+Man kann eine Tabelle mit: "\begin{table} .... \end{table}" erzeugen.
+Man kann ein Appendix mit: "\begin{appendix} ... \end{appendix}" erzeugen.
+
+
+\begin{appendix}
+\listoffigures
+\listoftables
+
+DIE ABBILDUNGEN- UND TABELLENVERZEICHNISSE ERSCHEINEN AUCH ERST NACH ZWEIMALIGEM KOMPILIEREN!
+
 
  
 
