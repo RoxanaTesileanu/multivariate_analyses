@@ -1,4 +1,6 @@
 www.latex-tutorial.com/de/tutorials/
+http://www.bibtex.org/Using/de/
+
 Schritt fuer Schritt Einfuehrung in LaTex
 
 A) Installation:
@@ -197,15 +199,23 @@ DIE ABBILDUNGEN- UND TABELLENVERZEICHNISSE ERSCHEINEN AUCH ERST NACH ZWEIMALIGEM
 I) Literaturverzeichnis mit Bibtex und Biblatex
 
 - dafuer muss man eine .bib Datei anlegen
-- die .bib Datei kann man auch automatisch mit Zotero generiert werden
+- die .bib Datei kann auch automatisch mit Zotero generiert werden
+- man braucht auch den Paket cite. Dieser muss im Praeambel eingefuegt werden mit "\usepackage{cite}".
 
 A random citation looks like this: \cite{odersky_programming_2010} and it is embedded in text.
-\bibliography{MyLibrary}
-\bibliographystyle{ieeetr} | {apalike} 
+\bibliography{MyLibrary}{}
+\bibliographystyle{ieeetr} | {apalike} | {plain} 
 
-- nachher muss man auch die .tex Datei und die .bib Datei kompilieren mit: $ pdflatex erstesLaTexDok.tex; bibtex MyLibrary
-- und anschliessend die doppelte Kompilation mit pdflatex.
+- nachher muss man auch die .tex Datei und die .bib Datei kompilieren mit: $ pdflatex erstesLaTexDok.tex; bibtex MyLibrary ; pdflatex erstesLaTexDok ; pdflatex erstesLaTexDok
 
+Um den BibLaTeX Paket zu benuzten soll man den zuerst dem Praeambel hinzufuegen "\usepackage{biblatex}". Kompilieren geht in diesem Fall auf gleicher Weise. An der Stelle wo das Literaturverzeichnis hisoll benuzt man den Befehl "\printbibligraphy". Anstatt dem "\cite{}" Befehl soll man den "\autocite{}" Befehl benuzten.
+
+J) Fussnoten 
+
+- mittem im Text mit dem Befehl: "\footnote{\label{myfootnote} My foot note text comes here}"
+- wenn man eine Referenz zu der Fussnote haben moechte: "\ref{myfootnote}"
+
+   
 
  
 
