@@ -262,7 +262,9 @@ another line \\
 
 Fuer groessere Tabellen und Plots kann man die Daten direkt aus .csv Dateien erzeugt werden.
 
+L) Tabellen aus .csv Dateien einlesen
 
+- 
 
  
 
