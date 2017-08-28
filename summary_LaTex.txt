@@ -1,0 +1,34 @@
+% Praeambel
+\documentclass{article} | {book} | etc.
+
+\title{my title}
+\data{ y-d-m }
+\author{my name}
+
+\usepackage{amsmath} | {graphics} | {verbatim} | etc.
+
+% Hauptdocument
+
+\begin{document} ... \end{figure}
+
+\pagenumbering{gobble} | {arabic} | {roman}
+
+\maketitle
+\newpage
+\newline | \\
+
+\section{ my section } | \subsection { my subsection } | \subsubsection { mysubsubsection}
+
+% zusaeztliche Umgebungen
+\begin{figure} ... \end{figure}
+
+\begin{equation} ... \end{equation}
+
+\begin{matrix} ... \end{matrix} (im Math-Modus)
+
+\begin{align} ... \end{align} (mit &-Zeichen zu dem =-Zeichen zu benuzten)
+
+
+
+
+

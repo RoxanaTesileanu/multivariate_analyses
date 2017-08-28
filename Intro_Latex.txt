@@ -162,7 +162,11 @@ F) Hinzufuegen von Abbildungen
 
 Die eingebetteten Bilder werden automatisch indiziert und durchnummeriert. Um Bilder einzubinden wird die figure Umgebung benutzt. Ausserdem muss das graphicx Paket eingebunden werden.
 
-
+G) Kommentare 
+- um eine Zeile auszukommentieren benutzt man: "%"
+- um mehrere Zeilen auszukommentieren benutzt man:"\iffalse ...... \fi
+- man kann auch den Paket verbatim zum Praeambel hinzufuegen und comment Umgebung benutzen: "\begin{comment}", "\end{comment}".
+ 
 
  
 
