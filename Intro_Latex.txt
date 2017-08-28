@@ -215,7 +215,33 @@ J) Fussnoten
 - mittem im Text mit dem Befehl: "\footnote{\label{myfootnote} My foot note text comes here}"
 - wenn man eine Referenz zu der Fussnote haben moechte: "\ref{myfootnote}"
 
-   
+K) Tabellen
+
+- um eine Tabelle einzufuegen benoetigt man mehrere Umgebungen:
+	- table Umgebung: bettet die anderen Umgebungen ein und setzt die Ueberschrift
+	- tabular Umgebung: enthaelt die eigentlichen Daten
+	- center Umgebung: richtet die Tabelle mittig auf der Seite
+
+Spalten werden mit dem &-Zeichen getrennt und Zeilen mit dem  \hline -Operator. Der newline \\ Operator markiert das Ende einer Zeile. 
+
+Bsp.:
+\begin{table}[h!]
+\centering
+\caption{Caption for the table.}
+\label{tab: table1}
+\begin{tabular}{l|c|r}
+
+1 & 2 & 3 \\
+\hline
+a & b & c \\
+
+\end{tabular}
+\end{table}
+
+
+
+
+ 
 
  
 

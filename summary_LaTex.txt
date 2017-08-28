@@ -5,7 +5,7 @@
 \data{ y-d-m }
 \author{my name}
 
-\usepackage{amsmath} | {graphics} | {verbatim} | cite | biblatex | etc.
+\usepackage{amsmath} | {graphics} | {verbatim} | cite | biblatex | float | etc.
 
 % Hauptdokument
 
