@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{verbatim}
 \usepackage{cite}
+\usepackage{booktabs}
 \usepackage{float}
 %\usepackage[backend=bibtex, style=verbose-trad2]{biblatex}
 %\bibliography{MyLibrary}
@@ -83,8 +84,24 @@ Residual SS & Groups SS & Total SS \\
 \end{tabular}
 \end{table}
 
+\begin{table}[h!]
+\centering
+\caption{Caption for the table.}
+\label{tab: table2}
+\begin{tabular}{ccc}
+\toprule
 
+1 & 2 & 3 \\
 
+\midrule
+
+4 & 5 & 6 \\
+
+another line \\
+
+\bottomrule
+\end{tabular}
+\end{table}
 
 
 \section{Using vim as an editor for the Scala code}
