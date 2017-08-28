@@ -40,6 +40,7 @@
 
 \begin{appendix} ... \end{appendix} (here kann man auch Abb.- und Tabellenverzeichnisse eingefuegt werden)
  
-\begin{comment} ... \end{comment} | \iffalse ... \fi
+\begin{comment} ... \end{comment} | \iffalse ... \fi | %
+
 
 
