@@ -1,5 +1,8 @@
 www.latex-tutorial.com/de/tutorials/
 http://www.bibtex.org/Using/de/
+"A Guide to LaTeX and Electronic Publishing", 4th edition, Helmut Kopka, Patrick W. Daly, 2004
+
+
 
 Schritt fuer Schritt Einfuehrung in LaTex
 
@@ -274,7 +277,23 @@ Some text for the appendix B.
 \end{appendices}
 \end{document}
 
+M) Listen mit itemize
 
+\begin{itemize}
+\item Your first item.
+\item Your second item.
+\item Your third item.
+\end{itemize}
+
+
+Fuer durchnummerierte Listen:
+\begin{enumerate}
+\item ....
+\item ....
+\item ....
+\end{enumerate}
+
+Fuer mehrere Beispiele rund um Listen siehe Kopka und Daly (S. 69).
 
 
   
