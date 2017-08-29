@@ -9,6 +9,7 @@
 \usepackage{cite}
 \usepackage{booktabs}
 \usepackage{float}
+\usepackage[titletoc, toc, title]{appendix}
 %\usepackage[backend=bibtex, style=verbose-trad2]{biblatex}
 %\bibliography{MyLibrary}
 
@@ -113,16 +114,19 @@ variable 1 & variable 2 & variable 3 \\
 \bibliography{MyLibrary}
 \bibliographystyle{plain}
 %\printbibliography
-\section{Appendix}
-\begin{appendix}
-
-Additional information comes here.
 \listoffigures
 \listoftables
 
-\end{appendix}
+\begin{appendices}
 
-  
+\section{Source File 1}
+
+Some code.
+
+\section{Source File 2}
+
+Some code.
+\end{appendices}  
 \end{document}
 
 
