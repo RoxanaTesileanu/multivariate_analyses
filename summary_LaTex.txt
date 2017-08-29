@@ -5,7 +5,8 @@
 \data{ y-d-m }
 \author{my name}
 
-\usepackage{amsmath} | {graphics} | {verbatim} | cite | biblatex | float | etc.
+\usepackage{amsmath} | {graphics} | {verbatim} | {cite} | {biblatex} | {float} | [titletoc, toc, title]{appendix} | etc.
+
 
 % Hauptdokument
 
@@ -41,7 +42,7 @@
 
 \begin{align} ... \end{align} (mit &-Zeichen zu dem =-Zeichen zu benuzten)
 
-\begin{appendix} ... \end{appendix} (here kann man auch Abb.- und Tabellenverzeichnisse eingefuegt werden)
+\begin{appendices} ... \section{..} ... \section{...} ... \end{appendices} (here kann man auch Abb.- und Tabellenverzeichnisse eingefuegt werden)
  
 \begin{comment} ... \end{comment} | \iffalse ... \fi | %
 

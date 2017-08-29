@@ -262,9 +262,24 @@ another line \\
 
 Fuer groessere Tabellen und Plots kann man die Daten direkt aus .csv Dateien erzeugt werden.
 
-L) Tabellen aus .csv Dateien einlesen
+L) Anhaenge hinzufuegen
 
-- 
+- um Anhaenge einfuegen zu koennen braucht man den appendix Packet mit den Optionen titletoc, toc and title: "\usepackage[titletoc, toc, title]{appendix}"
+- dann an der Stelle wo die Anhaenge hinkommen sollten benutzt man die appendices Umgebung:
+\begin{appendices}
+\section{ title of appendix A}
+Some text for the appendix A.
+\section{ title of appendix B}
+Some text for the appendix B.
+\end{appendices}
+\end{document}
+
+
+
+
+  
+
+ 
 
  
 
