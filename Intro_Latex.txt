@@ -277,7 +277,7 @@ Some text for the appendix B.
 \end{appendices}
 \end{document}
 
-M) Listen mit itemize
+M) Auflistungen mit den Umgebungen itemize und enumerate 
 
 \begin{itemize}
 \item Your first item.
