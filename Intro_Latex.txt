@@ -295,6 +295,8 @@ Fuer durchnummerierte Listen:
 
 Fuer mehrere Beispiele rund um Listen siehe Kopka und Daly (S. 69).
 
+Check more free templates under:
+https://www.overleaf.com/latex/templates
 
   
 
