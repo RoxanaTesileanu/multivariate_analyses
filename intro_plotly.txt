@@ -1,3 +1,8 @@
+References:
+
+https://plot.ly/scala/line-and-scatter/
+https://asidatascience.github.io/scala-plotly-client/latest/api/#co.theasi.plotly.package
+
 Using plotly in Scala
 
 Add the dependency to the SBT file:
