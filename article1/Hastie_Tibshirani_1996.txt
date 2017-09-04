@@ -1,3 +1,6 @@
 Discriminant Adaptive Nearest Neighbor Classification and Regression 1996
 
-
+- locally adaptive form of nearest neighbors classification for the case when class conditional probabilities are not locally constant
+- use a local LDA to estimate an effective metric for computing neighborhoods
+- propose a method for global dimension reduction that combines local dimension information
+-     
