@@ -18,8 +18,23 @@ Discriminant adaptive NN:
 ________________________________________________________________
 
 From Hastie, Tibshirani, Friedman (2009, The Elements of Statistical Learning)
-- in the case of mixtures of tightly clustered Gaussians, a linear decision boudary is unlikely to be optimal => optimal decision boudary is nonlinear and disjoint => k- NN methods are better suited for such a scenario
+- in the case of mixtures of tightly clustered Gaussians, a linear decision boudary is unlikely to be optimal => optimal decision boudary is nonlinear and disjoint => k- NN methods are better suited for such a scenario (p.14).
+
+- NN methods use the observations in the training set T closest in input space to x to form Y-hat. 
+- the k NN fit for Y-hat is defined as: Y-hat(x) = 1/k sum(yi).
+- xi belongs to Nk(x). Nk(x) is the neihborhood of x defined by the k closest points xi in the training sample.
+- closeness implies a metric which we assume to be the Euclidean distance
+Any particular subregion of the decision boundary depends on a handful of input points and their particular positions (high variance and low bias of the decision boundary). 
+______________________________________________________________
+
+This is an observation-based approach (distances between observations).
+MANOVA is a variable-based approach (variance of variables). 
+In high-dimensional spaces it could be helpful to combine the two approaces. This is what Hastie and Tibshirani do in combining the LDA and NN in DANN.
 
  
+ 
+
+
+  
 
 
