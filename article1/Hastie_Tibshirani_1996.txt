@@ -18,6 +18,8 @@ Discriminant adaptive NN:
 ________________________________________________________________
 
 From Hastie, Tibshirani, Friedman (2009, The Elements of Statistical Learning)
-- in the case of mixtures of tightly clustered Gaussians, a linear decision boudary is unlikely to be optimal. 
+- in the case of mixtures of tightly clustered Gaussians, a linear decision boudary is unlikely to be optimal => optimal decision boudary is nonlinear and disjoint => k- NN methods are better suited for such a scenario
+
+ 
 
 
