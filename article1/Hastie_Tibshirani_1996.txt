@@ -29,7 +29,18 @@ ______________________________________________________________
 
 This is an observation-based approach (distances between observations).
 MANOVA is a variable-based approach (variance of variables). 
-In high-dimensional spaces it could be helpful to combine the two approaces. This is what Hastie and Tibshirani do in combining the LDA and NN in DANN.
+In high-dimensional spaces it could be helpful to combine the two approaches. This is what Hastie and Tibshirani do in combining the LDA and NN in DANN.
+They find local subspaces where linear approaches apply.
+______________________________________________________________
+
+
+Now, if the dataset passes the MANOVA test of differences in group centroids, there is a linear combination which can discriminate between groups globally. But, in the zones where the groups are overlapping, if the groups are clustered tightly, the predictions might be false. This is where the predicted class is rathermore correctly assigned by the majority vote of NN methods (for cases where the majority vote is correct and the prediction from the linear combination is false).
+
+From the error cases from the linear combination obtained in MANOVA (which represent the residual), you delineate spaces for kNN application. In the machine-learning pipeline you can vary the no. of k and see how the error rate behaves for each space. 
+
+_______________________________________________________________
+
+           
 
  
  
