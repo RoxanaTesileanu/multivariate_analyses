@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  4 SEP 2017 16:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  4 SEP 2017 16:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -302,7 +302,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Overfull \hbox (25.0462pt too wide) in paragraph at lines 58--58
+Overfull \hbox (25.0462pt too wide) in paragraph at lines 59--59
  \OT1/ptm/m/sc/10 src/main/scala/com/mai/scalaML/BasicVectorOP.scala 
  []
 
@@ -310,12 +310,12 @@ Overfull \hbox (25.0462pt too wide) in paragraph at lines 58--58
 
 
 ]
-Overfull \hbox (1.84657pt too wide) in paragraph at lines 70--70
+Overfull \hbox (1.84657pt too wide) in paragraph at lines 71--71
  \OT1/ptm/m/sc/10 src/main/scala/com/mai/scalaML/AutoNorm.scala 
  []
 
 
-Overfull \hbox (67.16542pt too wide) in paragraph at lines 74--74
+Overfull \hbox (67.16542pt too wide) in paragraph at lines 75--75
  \OT1/ptm/m/sc/10 src/main/scala/mai/com/scalaML/TestFrameWorkClassif.scala 
  []
 
@@ -335,7 +335,7 @@ Here is how much of TeX's memory you used:
 e/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on Tesileanu2017.pdf (2 pages, 57441 bytes).
+Output written on Tesileanu2017.pdf (2 pages, 57449 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream
