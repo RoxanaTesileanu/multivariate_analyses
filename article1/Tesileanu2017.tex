@@ -34,10 +34,10 @@ The "Big Data phenomenon" is real but, unfortunately, it can not be generalized 
 On the contrary, machine-learning, being a study field which "sits at the crossroads of computer science, statistics and a variety of other disciplines concerned with automatic improvement over time, and inference and decision-making under uncertainty" (Jordan and Mitchell 2015, p. 256), is welcomed in real-world environmental decision-making facing the need of proposing courses of action under the cloud of uncertainties and regarding issues characterized by multiple attributes (Vatn and Bromley, 1994).   
 Moreover, machine-learning is used not only in analyzing data from observational studies (which might benefit from larger time series datasets), but also from experimental studies (which can't produce large amounts of data but benefit from an experimental design, delivering data which provides stronger inference about effects and causal relationships - Quinn and Keough, 2002) (Harrington 2012).
 Indeed, a combination of machine-learning classifiers with the benefits of a MANOVA experimental design used for collecting training data, might produce useful research results, in ecological research too. Thus, in order to be able to use the power of machine-learning algorithms adapted to small ecological datasets, a statistical package written in Scala is currently under development at INCDS.
-The idea of adapting machine-learning algorithms to real-world data requirements is not new. 
+The idea of adapting the use of machine-learning algorithms to real-world data requirements is not new. 
 Hastie and Tibshirani (1996), describe the Discriminant Adaptive Nearest Neighbor (DANN) procedure as a locally adaptive form of nearest neighbors classification using a modified linear discriminant analysis (LDA) procedure to estimate an effective metric for computing neighborhoods.
 The main idea of combining distance-based approaches with approaches based on the association between variables is driven by the fact that a multivariate dataset can be analysed in both ways (Quinn and Keough 2002): calculating scores for the derived variables (components) for each object, and calculating dissimilarity measures (distances) for every possible pair of objects.      
-  
+The present paper introduces the Scala functions used to run the kNN algorithm and then it delineates a possible use of the classifier within a real-world classification pipeline for reducing error.    
    
 \section{Basic vector operations in Scala}
 
@@ -72,7 +72,7 @@ The main idea of combining distance-based approaches with approaches based on th
  
 
 \section*{Acknowledgment}
-The author would like to thank Jeff Druce and Mike Reposa for very useful learning tips.
+The author would like to thank Jeff Druce and Mike Reposa from CRA for very useful learning tips and Georgeta Ionescu from INCDS for giving me the financial support needed.
 %\begin{thebibliography}{1}
 %\bibitem{ item: 1}
 %...
