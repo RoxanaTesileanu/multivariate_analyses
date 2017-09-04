@@ -3,4 +3,21 @@ Discriminant Adaptive Nearest Neighbor Classification and Regression 1996
 - locally adaptive form of nearest neighbors classification for the case when class conditional probabilities are not locally constant
 - use a local LDA to estimate an effective metric for computing neighborhoods
 - propose a method for global dimension reduction that combines local dimension information
--     
+- the classification problem: J classes, N training observations.
+The training observations consist of predictor measurements x={x1, x2, ..., xp) on p predictors and the known class memberships for the training data. 
+The goal is to predict the class membership of an observation with predictor vector x0.
+
+Nearest neighbor classification:
+- we find the set of K nearest neighbors in the training set of x0 and then classify x0 as the most frequent class among the K neighbors. 
+
+Discriminant adaptive NN:
+- let B and W denote the between and within sum of squares matrices.
+- we determine the local decision boundaries from centroid information
+- from MANOVA information: we take the linear combination producing the largest eigenvalue (i.e. the one which maximizes the explained variance between groups) 
+
+________________________________________________________________
+
+From Hastie, Tibshirani, Friedman (2009, The Elements of Statistical Learning)
+- in the case of mixtures of tightly clustered Gaussians, a linear decision boudary is unlikely to be optimal. 
+
+
