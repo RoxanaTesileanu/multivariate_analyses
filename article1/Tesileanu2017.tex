@@ -55,12 +55,14 @@ The kNN classifier reads CSV and text files for classification tasks, uses basic
 
 \subsection{Basic vector operations}
 
-Because most statistical algorithms manipulate datasets which are actually collections of vectors, manipulating vectors is an essential task. The scalaML package offers this functionality, using the Scala main types while developing machine-learning algorithms. This makes the process of synchronizing types in further development stages easier. The vector operations are found in the BasicVectorOP.scala source file and include: vector addition, vector subtraction, elementwise multiplication and dot product for any two vectors of type Array[Double], and matrix multiplication for any two matrices of type Array[Array[Double]], where each Array[Double] represents an observation (object), and all elements with the same index of inside arrays (i.e. index inside of any Array[Double] within the Array[Array[Double]]) represent a column (i.e. a variable) of the multivariate dataset (Dawkins 2005, Odersky et al. 2010, Swartz 2015, Trask 2017).
+Because most statistical algorithms manipulate datasets which are actually collections of vectors, manipulating vectors is an essential task. The scalaML package offers this functionality, using the Scala main types while developing machine-learning algorithms. This makes the process of synchronizing types in further development stages easier.
+ The vector operations are found in the BasicVectorOP.scala source file (see appendix A) and include: vector addition, vector subtraction, elementwise multiplication and dot product for any two vectors of type Array[Double], and matrix multiplication for any two matrices of type Array[Array[Double]], where each Array[Double] represents an observation (object), and all elements with the same index of inside arrays (i.e. index inside of any Array[Double] within the Array[Array[Double]]) represent a column (i.e. a variable) of the multivariate dataset (Dawkins 2005, Odersky et al. 2010, Swartz 2015, Trask 2017).
+
 The documentation of the kNN classifier offeres worked examples of functions' application in REPL (see Tesileanu 2017 INCDS Technical Report, https://www.researchgate.net/profile/Roxana[underline]Tesileanu/publications).  
 
 \subsection{Reading files for classification tasks}
 
-The ReadFile.scala source file of the scalaML package contains the function used to read CSV and text files for classification tasks. It returns a tuple with the information needed for the kNN algorithm (a data matrix of type Vector[Array[Double]], the data labels in the form of a Vector[Int],  and the used classesin the form of a Range[Int])(Harrington 2012, Odersky et al. 2010, Swartz 2015)(see Tesileanu 2017 for details).
+The ReadFile.scala source file (appendix B) of the scalaML package contains the function used to read CSV and text files for classification tasks. It returns a tuple with the information needed for the kNN algorithm (a data matrix of type Vector[Array[Double]], the data labels in the form of a Vector[Int],  and the used classes in the form of a Range[Int]) (Harrington 2012, Odersky et al. 2010, Swartz 2015) (see Tesileanu 2017 for details).
  
 \subsection{KNN classification function}
 
