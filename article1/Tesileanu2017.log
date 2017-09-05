@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  5 SEP 2017 10:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  5 SEP 2017 10:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -335,6 +335,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--52
 
 
 ]
+Underfull \hbox (badness 2698) in paragraph at lines 58--60
+\OT1/ptm/m/n/10 which are ac-tu-ally col-lec-tions of vec-tors, ma-nip-u-lat-in
+g
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 58--60
+\OT1/ptm/m/n/10 machine-learning al-go-rithms. This makes the pro-cess of
+ []
+
+
+Underfull \hbox (badness 8019) in paragraph at lines 58--60
+\OT1/ptm/m/n/10 for any two ma-tri-ces of type Ar-ray[Array[Double]],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
+\OT1/ptm/m/n/10 where each Ar-ray[Double] rep-re-sents an ob-ser-va-tion
+ []
+
+
+Overfull \hbox (66.26617pt too wide) in paragraph at lines 58--60
+\OT1/ptm/m/n/10 https://www.researchgate.net/profile/Roxana[underline]Tesileanu
+/publications). 
+ []
+
+
 Overfull \hbox (25.0462pt too wide) in paragraph at lines 72--72
  \OT1/ptm/m/sc/10 src/main/scala/com/mai/scalaML/BasicVectorOP.scala 
  []
@@ -363,7 +390,7 @@ Here is how much of TeX's memory you used:
 are/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on Tesileanu2017.pdf (2 pages, 58978 bytes).
+Output written on Tesileanu2017.pdf (2 pages, 58982 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream
