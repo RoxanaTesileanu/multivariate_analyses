@@ -69,16 +69,22 @@ The ReadFile.scala source file (appendix B) of the scalaML package contains the 
 The kNN classification function (see appendix C) implements in Scala the pseudocode of the kNN algorithm (Harrington 2012, Odersky et al. 2010, Swartz 2015). 
 It starts by calculating the Euclidean distance between a new object (which is going to be classified by the algorithm) and every object of the dataset, it sorts the distances in increasing order, it then takes k objects with the lowest distances and finds the majority class among these k objects, returning it as the prediction for the class of the new object (Harrington 2012).
 The documentation of the kNN classifier gives a thorough example of its use (see Tesileanu 2017). 
-The variables can also be scaled from 0 to 1 before using the kNN classifier, if a normalization is required. For this purpose a normalizing function can be used (see appendix D)(Quinn and Keough 2002, Harrington 2012, Odersky et al. 2010). 
+The variables can also be scaled from 0 to 1 before using the kNN classifier, if a normalization is required. For this purpose a normalizing function can be used (see appendix D) (Quinn and Keough 2002, Harrington 2012, Odersky et al. 2010). 
 
 \subsection{Testing framework}    
 
-
-
+In order to test the accuracy of the kNN classifier, an error rate can be computed using the testing function provided in the TestFrameWorkClassif.scala source file (see appendix E) (Harrington 2012, Odersky et al. 2010, Bugnion 2016).
+ The error rate is given by the total number of errors (misclassified observations) divided by the total number of tested observations (see Tesileanu 2017 for details on its use). 
 
 \section{The machine-learning pipeline for reducing error}
 
+
+
+
 \section{Conclusion}
+
+
+
 \appendices
 \section{Source file - src/main/scala/com/mai/scalaML/BasicVectorOP.scala}
 
