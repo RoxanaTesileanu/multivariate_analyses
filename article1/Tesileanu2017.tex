@@ -58,7 +58,7 @@ The kNN classifier reads CSV and text files for classification tasks, uses basic
 Because most statistical algorithms manipulate datasets which are actually collections of vectors, manipulating vectors is an essential task. The scalaML package offers this functionality, using the Scala main types while developing machine-learning algorithms. This makes the process of synchronizing types in further development stages easier.
  The vector operations are found in the BasicVectorOP.scala source file (see appendix A) and include: vector addition, vector subtraction, elementwise multiplication and dot product for any two vectors of type Array[Double], and matrix multiplication for any two matrices of type Array[Array[Double]], where each Array[Double] represents an observation (object), and all elements with the same index of inside arrays (i.e. index inside of any Array[Double] within the Array[Array[Double]]) represent a column (i.e. a variable) of the multivariate dataset (Dawkins 2005, Odersky et al. 2010, Swartz 2015, Trask 2017, Scala Standard Library 2.12.0. - EPFL 2003-2016).
 
-The documentation of the kNN classifier offeres worked examples of functions' application in REPL (see Tesileanu 2017 INCDS Technical Report, https://www.researchgate.net/profile/\\ Roxana[underline]Tesileanu/publications).  
+The documentation of the kNN classifier offeres worked examples of functions' application in REPL (see Tesileanu 2017 INCDS Technical Report, https://www.researchgate.net/publication/318815119\underline{\space}\\Introduction\underline{\space}to\underline{\space}statistical\underline{\space}computing\underline{\space}in\underline{\space}Scala\underline{\space}an\underline{\space}application\underline{\space}of\underline{\space}\\the\underline{\space}k-Nearest\underline{\space}Neighbors\underline{\space}classifier).  
 
 \subsection{Reading files for classification tasks}
 
@@ -73,7 +73,7 @@ The variables can also be scaled from 0 to 1 before using the kNN classifier, if
 
 \subsection{Testing framework}    
 
-In order to test the accuracy of the kNN classifier, an error rate can be computed using the testing function provided in the TestFrameWorkClassif.scala source file (see appendix E) (Harrington 2012, Odersky et al. 2010, Bugnion 2016, Scala Standard Library 2.12.0. - EPFL 2003-2016).
+In order to test the accuracy of the kNN classifier, an error rate can be computed using the testing function provided in the TestFrameWorkClassif.scala source file (see appendix E) (Harrington 2012, Odersky et al. 2010, Scala Standard Library 2.12.0. - EPFL 2003-2016).
  The error rate is given by the total number of errors (misclassified observations) divided by the total number of tested observations (see Tesileanu 2017 for details on its use). 
 
 \section{The machine-learning pipeline for reducing error}
@@ -112,7 +112,7 @@ In order to test the accuracy of the kNN classifier, an error rate can be comput
 The author would like to thank Jeff Druce and Mike Reposa from CRA for very useful learning tips and Georgeta Ionescu from INCDS for giving me the financial support needed. The present document was edited using the LaTeX document class IEEEtran developed by Michael Shell.  
 
 \section*{Note}
-This paper is part of the project "Experimenting with Scala and R for multivariate analyses", which  is stored on my GitHub profile under the following link: https://github.com/RoxanaTesileanu/multivariate[underline]analyses.  
+This paper is part of the project "Experimenting with Scala and R for multivariate analyses", which  is stored on my GitHub profile under the following link: https://github.com/RoxanaTesileanu/multivariate\underline{\space}analyses.  
 %\begin{thebibliography}{1}
 %\bibitem{ item: 1}
 %...
