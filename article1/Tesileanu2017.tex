@@ -84,7 +84,12 @@ The machine-learning workflow for classification tasks for high-dimensional data
 
 The present paper proposes a combination of the MANOVA experimental design and analysis, with a further data classification step using the kNN classifier. 
 The background idea is that, if two or more groups differ in their group centroids, they are, globally speaking, suitable for classification tasks. If, not, then we probably miss the variables which make a difference, or, we don't really have two different populations, and further classifications miss their point.
-In the first case, we further investigate (add new variables or remove current variables), and if the MANOVA test indicates group differences, we are able to find a first decision boundary using the linear combination with the highest eigenvalue. The decision boundary ideally separates the different groups. Though, variables overlap in the decision space, forming a "transition zone". This is wherethe residual variance comes from. KNN can then be further applied to investigate the situation occurring in the neighborhood of the points located in the transition zone, and the best techniques to do this logically appear to be distance-based (i.e. based on dissimilarity measures between objects). Now, the question is how we delineate the transition zone? We can check the objects which produce the MANOVA residual (analysis of the residual) (Quinn and Keough 2002).        
+In the first case, we further investigate (add new variables or remove current variables), and if the MANOVA test indicates group differences, we are able to find a first decision boundary using the linear combination with the highest eigenvalue.
+ The decision boundary ideally separates the different groups.
+ Though, variables overlap in the decision space, forming a "transition zone". This is where the residual variance comes from. 
+KNN can then be further applied to investigate the situation occurring in the neighborhood of the points located in the transition zone, and the best techniques to do this logically appear to be distance-based (i.e. based on dissimilarity measures between objects). 
+Now, the question is how we delineate the transition zone? We can check the objects which produce the MANOVA residual (analysis of the residual) (Quinn and Keough 2002).        
+
 
 \section{Conclusion}
 
