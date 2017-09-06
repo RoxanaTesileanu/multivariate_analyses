@@ -76,9 +76,11 @@ The variables can also be scaled from 0 to 1 before using the kNN classifier, if
 In order to test the accuracy of the kNN classifier, an error rate can be computed using the testing function provided in the TestFrameWorkClassif.scala source file (see appendix E) (Harrington 2012, Odersky et al. 2010, Scala Standard Library 2.12.0. - EPFL 2003-2016).
  The error rate is given by the total number of errors (misclassified observations) divided by the total number of tested observations (see Tesileanu 2017 for details on its use). 
 
-\section{The machine-learning pipeline for reducing error}
+\section{The learning pipeline for reducing error}
 
-The machine-learning workflow for classification tasks for high-dimensional datasets (i.e. more than three variables recorded for each object) generally consists of the following steps: data collection, reading the data in R, Scala, or other programming language used for statistical computation, analyzing the data using multivariate analyses like (MANOVA, PCA, cluster analysis, etc.), applying and testing the classification algorithm (kNN, Bayes classifier, etc.) (Harrington 2012, Karau et al. 2015). Real-world workflows are itterative, requiring a dynamic configuration of the used algorithms and eventually the application of different algorithms to compare the results. Such workflows are called in machine-learning practice "learning pipelines"  (Karau et al. 2015).    
+The machine-learning workflow for classification tasks for high-dimensional datasets (i.e. more than three variables recorded for each object) generally consists of the following steps: data collection, reading the data in R, Scala, or other programming language used for statistical computation, analyzing the data using multivariate analyses like (MANOVA, PCA, cluster analysis, etc.), applying and testing the classification algorithm (kNN, Bayes classifier, etc.) (Harrington 2012, Karau et al. 2015). Real-world workflows are itterative, requiring a dynamic configuration of the used algorithms and eventually the application of different algorithms to compare the results. Such workflows are called in machine-learning practice "learning pipelines"  (Karau et al. 2015).
+
+    
 
 
 \section{Conclusion}
