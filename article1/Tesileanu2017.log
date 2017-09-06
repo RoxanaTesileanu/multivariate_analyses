@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  6 SEP 2017 09:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  6 SEP 2017 10:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -347,12 +347,6 @@ Underfull \hbox (badness 7540) in paragraph at lines 61--62
 
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 \OT1/ptm/m/n/10 (see Tesileanu 2017 IN-CDS Tech-ni-cal Re-port,
- []
-
-
-Overfull \hbox (8.92738pt too wide) in paragraph at lines 61--62
-\OT1/ptm/m/n/10 Introduction$[]$to$[]$statistical$[]$computing$[]$in$[]$Scala$[
-]$an$[]$application$[]$of$[]$ 
  []
 
 
