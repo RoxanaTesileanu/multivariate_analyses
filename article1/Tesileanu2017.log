@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  6 SEP 2017 12:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  6 SEP 2017 12:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -392,32 +392,32 @@ Underfull \hbox (badness 1910) in paragraph at lines 90--95
  []
 
 [2]
-Overfull \hbox (25.0462pt too wide) in paragraph at lines 101--101
+Overfull \hbox (25.0462pt too wide) in paragraph at lines 102--102
  \OT1/ptm/m/sc/10 src/main/scala/com/mai/scalaML/BasicVectorOP.scala 
  []
 
 
-Overfull \hbox (1.84657pt too wide) in paragraph at lines 113--113
+Overfull \hbox (1.84657pt too wide) in paragraph at lines 114--114
  \OT1/ptm/m/sc/10 src/main/scala/com/mai/scalaML/AutoNorm.scala 
  []
 
 
-Overfull \hbox (67.16542pt too wide) in paragraph at lines 117--117
+Overfull \hbox (67.16542pt too wide) in paragraph at lines 118--118
  \OT1/ptm/m/sc/10 src/main/scala/mai/com/scalaML/TestFrameWorkClassif.scala 
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 127--132
+Underfull \hbox (badness 6893) in paragraph at lines 128--133
 []\OT1/ptm/m/n/10 This pa-per is part of the project "Ex-per-i-ment-ing
  []
 
 
-Underfull \hbox (badness 1895) in paragraph at lines 127--132
+Underfull \hbox (badness 1895) in paragraph at lines 128--133
 \OT1/ptm/m/n/10 with Scala and R for mul-ti-vari-ate anal-y-ses", which is
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 127--132
+Underfull \hbox (badness 1365) in paragraph at lines 128--133
 \OT1/ptm/m/n/10 stored on my GitHub pro-file un-der the fol-low-ing link:
  []
 
@@ -437,7 +437,7 @@ Here is how much of TeX's memory you used:
 e/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on Tesileanu2017.pdf (3 pages, 64990 bytes).
+Output written on Tesileanu2017.pdf (3 pages, 65106 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream
