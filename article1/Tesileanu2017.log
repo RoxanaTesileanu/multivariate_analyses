@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  6 SEP 2017 09:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  6 SEP 2017 09:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -356,36 +356,36 @@ Overfull \hbox (8.92738pt too wide) in paragraph at lines 61--62
  []
 
 
-Overfull \hbox (25.0462pt too wide) in paragraph at lines 89--89
+Overfull \hbox (25.0462pt too wide) in paragraph at lines 91--91
  \OT1/ptm/m/sc/10 src/main/scala/com/mai/scalaML/BasicVectorOP.scala 
  []
 
 
-Overfull \hbox (1.84657pt too wide) in paragraph at lines 101--101
+Overfull \hbox (1.84657pt too wide) in paragraph at lines 103--103
  \OT1/ptm/m/sc/10 src/main/scala/com/mai/scalaML/AutoNorm.scala 
  []
 
 
-Overfull \hbox (67.16542pt too wide) in paragraph at lines 105--105
+Overfull \hbox (67.16542pt too wide) in paragraph at lines 107--107
  \OT1/ptm/m/sc/10 src/main/scala/mai/com/scalaML/TestFrameWorkClassif.scala 
  []
 
-
-Underfull \hbox (badness 6893) in paragraph at lines 115--120
+[2]
+Underfull \hbox (badness 6893) in paragraph at lines 117--122
 []\OT1/ptm/m/n/10 This pa-per is part of the project "Ex-per-i-ment-ing
  []
 
 
-Underfull \hbox (badness 1895) in paragraph at lines 115--120
+Underfull \hbox (badness 1895) in paragraph at lines 117--122
 \OT1/ptm/m/n/10 with Scala and R for mul-ti-vari-ate anal-y-ses", which is
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 115--120
+Underfull \hbox (badness 1365) in paragraph at lines 117--122
 \OT1/ptm/m/n/10 stored on my GitHub pro-file un-der the fol-low-ing link:
  []
 
-[2] [3
+[3
 
 ] (./Tesileanu2017.aux) ) 
 Here is how much of TeX's memory you used:
@@ -395,13 +395,13 @@ Here is how much of TeX's memory you used:
  6723 multiletter control sequences out of 15000+600000
  36782 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,5n,23p,685b,233s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,5n,23p,796b,204s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r
 .enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on Tesileanu2017.pdf (3 pages, 63067 bytes).
+Output written on Tesileanu2017.pdf (3 pages, 63803 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream
