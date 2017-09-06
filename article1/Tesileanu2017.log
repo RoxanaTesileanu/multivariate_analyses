@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  6 SEP 2017 13:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  6 SEP 2017 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -302,32 +302,32 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Underfull \hbox (badness 1584) in paragraph at lines 32--37
+Underfull \hbox (badness 1584) in paragraph at lines 33--38
 \OT1/ptm/m/n/10 courses of ac-tion un-der the cloud of un-cer-tain-ties and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--37
+Underfull \hbox (badness 10000) in paragraph at lines 33--38
 
  []
 
 
-Underfull \hbox (badness 4981) in paragraph at lines 39--42
+Underfull \hbox (badness 4981) in paragraph at lines 40--43
 []\OT1/ptm/m/n/10 The idea of adapt-ing the use of machine-learning
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 39--42
+Underfull \hbox (badness 2119) in paragraph at lines 40--43
 \OT1/ptm/m/n/10 vari-ables (com-po-nents) for each ob-ject, and cal-cu-lat-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--42
+Underfull \hbox (badness 10000) in paragraph at lines 40--43
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--52
+Underfull \hbox (badness 10000) in paragraph at lines 49--53
 
  []
 
@@ -335,89 +335,89 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--52
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 []\OT1/ptm/m/n/10 The doc-u-men-ta-tion of the kNN clas-si-fier of-feres
  []
 
 
-Underfull \hbox (badness 7540) in paragraph at lines 61--62
+Underfull \hbox (badness 7540) in paragraph at lines 62--63
 \OT1/ptm/m/n/10 worked ex-am-ples of func-tions' ap-pli-ca-tion in REPL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 \OT1/ptm/m/n/10 (see Tesileanu 2017 IN-CDS Tech-ni-cal Re-port,
  []
 
 
-Underfull \hbox (badness 3977) in paragraph at lines 81--84
+Underfull \hbox (badness 3977) in paragraph at lines 82--85
 \OT1/ptm/m/n/10 PCA, clus-ter anal-y-sis, etc.), ap-ply-ing and test-ing the
  []
 
 
-Underfull \hbox (badness 3623) in paragraph at lines 81--84
+Underfull \hbox (badness 3623) in paragraph at lines 82--85
 \OT1/ptm/m/n/10 (Har-ring-ton 2012). Real-world work-flows are it-ter-a-tive,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--84
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
 
  []
 
 
-Underfull \hbox (badness 5652) in paragraph at lines 85--88
+Underfull \hbox (badness 5652) in paragraph at lines 86--89
 []\OT1/ptm/m/n/10 The present pa-per pro-poses a com-bi-na-tion of the
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 85--88
+Underfull \hbox (badness 4072) in paragraph at lines 86--89
 \OT1/ptm/m/n/10 data clas-si-fi-ca-tion step us-ing the kNN clas-si-fier. The
  []
 
 
-Underfull \hbox (badness 1616) in paragraph at lines 85--88
+Underfull \hbox (badness 1616) in paragraph at lines 86--89
 \OT1/ptm/m/n/10 two dif-fer-ent pop-u-la-tions, and fur-ther clas-si-fi-ca-tion
 s are
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--88
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
  []
 
 
-Underfull \hbox (badness 1910) in paragraph at lines 90--96
+Underfull \hbox (badness 1910) in paragraph at lines 91--97
 []\OT1/ptm/m/n/10 The de-ci-sion bound-ary ide-ally sep-a-rates the dif-fer-ent
 
  []
 
 [2]
-Overfull \hbox (25.0462pt too wide) in paragraph at lines 103--103
+Overfull \hbox (25.0462pt too wide) in paragraph at lines 104--104
  \OT1/ptm/m/sc/10 src/main/scala/com/mai/scalaML/BasicVectorOP.scala 
  []
 
 
-Overfull \hbox (1.84657pt too wide) in paragraph at lines 115--115
+Overfull \hbox (1.84657pt too wide) in paragraph at lines 116--116
  \OT1/ptm/m/sc/10 src/main/scala/com/mai/scalaML/AutoNorm.scala 
  []
 
 
-Overfull \hbox (67.16542pt too wide) in paragraph at lines 119--119
+Overfull \hbox (67.16542pt too wide) in paragraph at lines 120--120
  \OT1/ptm/m/sc/10 src/main/scala/mai/com/scalaML/TestFrameWorkClassif.scala 
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 129--134
+Underfull \hbox (badness 6893) in paragraph at lines 130--135
 []\OT1/ptm/m/n/10 This pa-per is part of the project "Ex-per-i-ment-ing
  []
 
 
-Underfull \hbox (badness 1895) in paragraph at lines 129--134
+Underfull \hbox (badness 1895) in paragraph at lines 130--135
 \OT1/ptm/m/n/10 with Scala and R for mul-ti-vari-ate anal-y-ses", which is
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 129--134
+Underfull \hbox (badness 1365) in paragraph at lines 130--135
 \OT1/ptm/m/n/10 stored on my GitHub pro-file un-der the fol-low-ing link:
  []
 
@@ -437,7 +437,7 @@ Here is how much of TeX's memory you used:
 e/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on Tesileanu2017.pdf (3 pages, 65093 bytes).
+Output written on Tesileanu2017.pdf (3 pages, 65120 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream
