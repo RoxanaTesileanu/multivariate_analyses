@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  7 SEP 2017 12:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  7 SEP 2017 12:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -533,18 +533,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--1
-\OT1/ptm/m/n/10 Fur-ther doc-u-men-ta-tion on us-ing the kNN clas-si-fier,
- []
-
-
-Underfull \hbox (badness 4872) in paragraph at lines 133--1
-\OT1/ptm/m/n/10 and on us-ing Linux as a de-vel-op-ment plat-form for
- []
-
-
-Underfull \hbox (badness 1902) in paragraph at lines 133--1
-\OT1/ptm/m/n/10 Scala projects can be found un-der the fol-low-ing link:
+Underfull \hbox (badness 2941) in paragraph at lines 133--1
+\OT1/ptm/m/n/10 projects [[]14[]] can be found un-der the fol-low-ing link:
  []
 
 
@@ -577,10 +567,10 @@ e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on Tesileanu2017.pdf (3 pages, 72626 bytes).
+Output written on Tesileanu2017.pdf (3 pages, 72694 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
+ 186 PDF objects out of 1000 (max. 8388607)
+ 173 compressed objects within 2 object streams
  44 named destinations out of 1000 (max. 500000)
  129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
