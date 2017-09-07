@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  7 SEP 2017 10:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  7 SEP 2017 12:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -403,8 +403,14 @@ LaTeX Info: Redefining \nameref on input line 10.
 \openout3 = `Tesileanu2017.out'.
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 32--37
-\OT1/ptm/m/n/10 courses of ac-tion un-der the cloud of un-cer-tain-ties and
+Underfull \hbox (badness 1546) in paragraph at lines 32--37
+\OT1/ptm/m/n/10 decision-making un-der un-cer-tainty" [[]5[]], is wel-comed in
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 32--37
+\OT1/ptm/m/n/10 an ex-per-i-men-tal de-sign, de-liv-er-ing data which pro-vides
+
  []
 
 
@@ -418,8 +424,15 @@ Underfull \hbox (badness 4981) in paragraph at lines 39--42
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 39--42
-\OT1/ptm/m/n/10 vari-ables (com-po-nents) for each ob-ject, and cal-cu-lat-ing
+Underfull \hbox (badness 2884) in paragraph at lines 39--42
+\OT1/ptm/m/n/10 and Tib-shi-rani [[]4[]], de-scribe the Dis-crim-i-nant Adap-ti
+ve
+ []
+
+
+Underfull \hbox (badness 3179) in paragraph at lines 39--42
+\OT1/ptm/m/n/10 for each ob-ject, and cal-cu-lat-ing dis-sim-i-lar-ity mea-sure
+s
  []
 
 
@@ -428,40 +441,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--42
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 48--52
-\OT1/ptm/m/n/10 and as-sem-blers, de-bug-gers, ver-sion con-trol sys-tem and
- []
-
-
-Underfull \hbox (badness 1577) in paragraph at lines 48--52
-\OT1/ptm/m/n/10 bug track-ing. For im-ple-ment-ing Scala projects, work-ing
- []
-
-
-Underfull \hbox (badness 4832) in paragraph at lines 48--52
-\OT1/ptm/m/n/10 lo-cated in the src sub-di-rec-tory (Suereth and Far-well
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 48--52
 \OT1/ptm/m/n/10 ([]https://docs.scala-lang.org/overviews/repl/overview.html[]),
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--52
-\OT1/ptm/m/n/10 within a SBT ses-sion (for fur-ther de-tails and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--52
-\OT1/ptm/m/n/10 ref-er-ences see Tesileanu 2017 Linux-Scala.docx
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--52
-\OT1/ptm/m/n/10 Linux$[]$as$[]$a$[]$development$[]$platform$[]$for$[]$Scala$[]$
-projects[]). In
  []
 
 
@@ -473,28 +455,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--52
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
-[]\OT1/ptm/m/n/10 The doc-u-men-ta-tion of the kNN clas-si-fier of-feres
- []
-
-
-Underfull \hbox (badness 7540) in paragraph at lines 61--62
-\OT1/ptm/m/n/10 worked ex-am-ples of func-tions' ap-pli-ca-tion in REPL
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
-\OT1/ptm/m/n/10 (see Tesileanu 2017 IN-CDS Tech-ni-cal Re-port,
- []
-
-
-Underfull \hbox (badness 3977) in paragraph at lines 81--84
-\OT1/ptm/m/n/10 PCA, clus-ter anal-y-sis, etc.), ap-ply-ing and test-ing the
+Underfull \hbox (badness 8038) in paragraph at lines 81--84
+\OT1/ptm/m/n/10 recorded for each ob-ject) gen-er-ally con-sists of the
  []
 
 
 Underfull \hbox (badness 3623) in paragraph at lines 81--84
-\OT1/ptm/m/n/10 (Har-ring-ton 2012). Real-world work-flows are it-ter-a-tive,
+\OT1/ptm/m/n/10 ap-pro-pri-ate model. Real-world work-flows are it-ter-a-tive,
  []
 
 
@@ -544,48 +511,49 @@ Overfull \hbox (67.16542pt too wide) in paragraph at lines 123--123
  \OT1/ptm/m/sc/10 src/main/scala/mai/com/scalaML/TestFrameWorkClassif.scala 
  []
 
-
-Underfull \hbox (badness 6893) in paragraph at lines 133--138
+(./Tesileanu2017.bbl
+Underfull \hbox (badness 6893) in paragraph at lines 133--1
 []\OT1/ptm/m/n/10 This pa-per is part of the project "Ex-per-i-ment-ing
  []
 
 
-Underfull \hbox (badness 1895) in paragraph at lines 133--138
+Underfull \hbox (badness 1895) in paragraph at lines 133--1
 \OT1/ptm/m/n/10 with Scala and R for mul-ti-vari-ate anal-y-ses", which is
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 133--138
+Underfull \hbox (badness 1365) in paragraph at lines 133--1
 \OT1/ptm/m/n/10 stored on my GitHub pro-file un-der the fol-low-ing link:
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
-[3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 142.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 142.
  (./Tesileanu2017.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 142.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 142.
 Package rerunfilecheck Info: File `Tesileanu2017.out' has not changed.
-(rerunfilecheck)             Checksum: C983F2A192C1934F05F5AD6C551A106B;1205.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
+(rerunfilecheck)             Checksum: 0ABEBF8D73242592E0E9994A54F54AEA;1252.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 142.
  ) 
 Here is how much of TeX's memory you used:
- 6718 strings out of 493029
- 101939 string characters out of 6136234
- 201280 words of memory out of 5000000
- 10182 multiletter control sequences out of 15000+600000
- 36782 words of font info for 67 fonts, out of 8000000 for 9000
+ 6756 strings out of 493029
+ 102766 string characters out of 6136234
+ 200962 words of memory out of 5000000
+ 10199 multiletter control sequences out of 15000+600000
+ 37918 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,5n,28p,859b,316s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,6n,28p,773b,316s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on Tesileanu2017.pdf (3 pages, 68012 bytes).
+Output written on Tesileanu2017.pdf (3 pages, 72413 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
