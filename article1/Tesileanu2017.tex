@@ -66,19 +66,19 @@ The ReadFile.scala source file (appendix B) of the scalaML package contains the 
  
 \subsection{KNN classification function}
 
-The kNN classification function (see appendix C) implements in Scala the pseudocode of the kNN algorithm (Harrington 2012, Odersky et al. 2010, Swartz 2015, Scala Standard Library 2.12.0. - EPFL 2003-2016). 
-It starts by calculating the Euclidean distance between a new object (which is going to be classified by the algorithm) and every object of the dataset, it sorts the distances in increasing order, it then takes k objects with the lowest distances and finds the majority class among those k objects, returning it as the prediction for the class of the new object (Harrington 2012).
-The documentation of the kNN classifier gives a thorough example of its use (see Tesileanu 2017). 
-The variables can also be scaled from 0 to 1 before using the kNN classifier, if a normalization is required. For this purpose a normalizing function can be used (see appendix D) (Quinn and Keough 2002, Harrington 2012, Odersky et al. 2010, Scala Standard Library 2.12.0. - EPFL 2003-2016). 
+The kNN classification function (see appendix C) implements in Scala the pseudocode of the kNN algorithm \cite{harrington_machine_2012}, \cite{odersky_programming_2010}, \cite{swartz_learning_2015}, \cite{noauthor_scala_2003}. 
+It starts by calculating the Euclidean distance between a new object (which is going to be classified by the algorithm) and every object of the dataset, it sorts the distances in increasing order, it then takes k objects with the lowest distances and finds the majority class among those k objects, returning it as the prediction for the class of the new object \cite{harrington_machine_2012}.
+The documentation of the kNN classifier gives a thorough example of its use (see \cite{tesileanu_introduction_2017}). 
+The variables can also be scaled from 0 to 1 before using the kNN classifier, if a normalization is required. For this purpose a normalizing function can be used (see appendix D) \cite{quinn_experimental_2002}, \cite{harrington_machine_2012}, \cite{odersky_programming_2010}, \cite{noauthor_scala_2003}. 
 
 \subsection{Testing framework}    
 
-In order to test the accuracy of the kNN classifier, an error rate can be computed using the testing function provided in the TestFrameWorkClassif.scala source file (see appendix E) (Harrington 2012, Odersky et al. 2010, Scala Standard Library 2.12.0. - EPFL 2003-2016).
- The error rate is given by the total number of errors (misclassified observations) divided by the total number of tested observations (see Tesileanu 2017 for details on its use). 
+In order to test the accuracy of the kNN classifier, an error rate can be computed using the testing function provided in the TestFrameWorkClassif.scala source file (see appendix E) \cite{harrington_machine_2012}, \cite{odersky_programming_2010}, \cite{noauthor_scala_2003}.
+ The error rate is given by the total number of errors (misclassified observations) divided by the total number of tested observations (see \cite{tesileanu_introduction_2017} for details on its use). 
 
 \section{The learning pipeline for reducing error}
 
-The machine-learning workflow for classification tasks for high-dimensional datasets (i.e. more than three variables recorded for each object) generally consists of the following steps: data collection, reading the data in R, Scala, or other programming language used for statistical computation, analyzing the data using multivariate analyses like (MANOVA, PCA, cluster analysis, etc.), applying and testing the classification algorithm (kNN, Bayes classifier, etc.), deciding on and argumenting the choice of the most appropriate model (Harrington 2012).
+The machine-learning workflow for classification tasks for high-dimensional datasets (i.e. more than three variables recorded for each object) generally consists of the following steps: data collection, reading the data in R, Scala, or other programming language used for statistical computation, analyzing the data using multivariate analyses like (MANOVA, PCA, cluster analysis, etc.), applying and testing the classification algorithm (kNN, Bayes classifier, etc.), deciding on and argumenting the choice of the most appropriate model. 
  Real-world workflows are itterative, requiring a dynamic configuration of the used algorithms and eventually the application of different algorithms to compare the results.
  Such workflows are called in machine-learning practice "learning pipelines"  (Karau et al. 2015).\\
 
