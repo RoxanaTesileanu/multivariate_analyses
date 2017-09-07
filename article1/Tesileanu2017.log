@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  7 SEP 2017 12:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  7 SEP 2017 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -502,21 +502,39 @@ Overfull \hbox (25.0462pt too wide) in paragraph at lines 107--107
  []
 
 
-Overfull \hbox (310.94174pt too wide) in paragraph at lines 109--111
+Overfull \hbox (3.50655pt too wide) in paragraph at lines 109--111
 []\OT1/ptm/m/n/10 https://github.com/RoxanaTesileanu/multivariate$[]$analyses/b
-lob/master/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala[] 
+lob/ 
  []
 
 
-Overfull \hbox (287.06201pt too wide) in paragraph at lines 114--116
-[]\OT1/ptm/m/n/10 https://github.com/RoxanaTesileanu/multivariate$[]$analyses/b
-lob/master/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala[] 
+Overfull \hbox (55.4352pt too wide) in paragraph at lines 109--111
+\OT1/ptm/m/n/10 master/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorO
+P.scala[] 
  []
 
 
-Overfull \hbox (270.39249pt too wide) in paragraph at lines 119--121
+Overfull \hbox (3.50655pt too wide) in paragraph at lines 114--116
 []\OT1/ptm/m/n/10 https://github.com/RoxanaTesileanu/multivariate$[]$analyses/b
-lob/master/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala[] 
+lob/ 
+ []
+
+
+Overfull \hbox (31.55547pt too wide) in paragraph at lines 114--116
+\OT1/ptm/m/n/10 master/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.sca
+la[] 
+ []
+
+
+Overfull \hbox (3.50655pt too wide) in paragraph at lines 119--121
+[]\OT1/ptm/m/n/10 https://github.com/RoxanaTesileanu/multivariate$[]$analyses/b
+lob/ 
+ []
+
+
+Overfull \hbox (14.88594pt too wide) in paragraph at lines 119--121
+\OT1/ptm/m/n/10 master/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala[] 
+
  []
 
 
@@ -525,9 +543,15 @@ Overfull \hbox (1.84657pt too wide) in paragraph at lines 122--122
  []
 
 
-Overfull \hbox (294.28223pt too wide) in paragraph at lines 124--126
+Overfull \hbox (3.50655pt too wide) in paragraph at lines 124--126
 []\OT1/ptm/m/n/10 https://github.com/RoxanaTesileanu/multivariate$[]$analyses/b
-lob/master/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala[] 
+lob/ 
+ []
+
+
+Overfull \hbox (38.77568pt too wide) in paragraph at lines 124--126
+\OT1/ptm/m/n/10 master/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.sca
+la[] 
  []
 
 
@@ -536,10 +560,15 @@ Overfull \hbox (67.16542pt too wide) in paragraph at lines 127--127
  []
 
 
-Overfull \hbox (342.77132pt too wide) in paragraph at lines 129--131
+Overfull \hbox (3.50655pt too wide) in paragraph at lines 129--131
 []\OT1/ptm/m/n/10 https://github.com/RoxanaTesileanu/multivariate$[]$analyses/b
-lob/master/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.sca
-la[] 
+lob/ 
+ []
+
+
+Overfull \hbox (87.26477pt too wide) in paragraph at lines 129--131
+\OT1/ptm/m/n/10 master/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWor
+kClassif.scala[] 
  []
 
 (./Tesileanu2017.bbl
@@ -598,10 +627,10 @@ e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on Tesileanu2017.pdf (3 pages, 73113 bytes).
+Output written on Tesileanu2017.pdf (3 pages, 73418 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 178 compressed objects within 2 object streams
+ 196 PDF objects out of 1000 (max. 8388607)
+ 183 compressed objects within 2 object streams
  44 named destinations out of 1000 (max. 500000)
  129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
