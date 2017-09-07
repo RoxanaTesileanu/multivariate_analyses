@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  7 SEP 2017 12:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  7 SEP 2017 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -508,33 +508,15 @@ lob/
  []
 
 
-Overfull \hbox (55.4352pt too wide) in paragraph at lines 109--111
-\OT1/ptm/m/n/10 master/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorO
-P.scala[] 
- []
-
-
 Overfull \hbox (3.50655pt too wide) in paragraph at lines 114--116
 []\OT1/ptm/m/n/10 https://github.com/RoxanaTesileanu/multivariate$[]$analyses/b
 lob/ 
  []
 
 
-Overfull \hbox (31.55547pt too wide) in paragraph at lines 114--116
-\OT1/ptm/m/n/10 master/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.sca
-la[] 
- []
-
-
 Overfull \hbox (3.50655pt too wide) in paragraph at lines 119--121
 []\OT1/ptm/m/n/10 https://github.com/RoxanaTesileanu/multivariate$[]$analyses/b
 lob/ 
- []
-
-
-Overfull \hbox (14.88594pt too wide) in paragraph at lines 119--121
-\OT1/ptm/m/n/10 master/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala[] 
-
  []
 
 
@@ -549,12 +531,6 @@ lob/
  []
 
 
-Overfull \hbox (38.77568pt too wide) in paragraph at lines 124--126
-\OT1/ptm/m/n/10 master/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.sca
-la[] 
- []
-
-
 Overfull \hbox (67.16542pt too wide) in paragraph at lines 127--127
  \OT1/ptm/m/sc/10 src/main/scala/mai/com/scalaML/TestFrameWorkClassif.scala 
  []
@@ -563,12 +539,6 @@ Overfull \hbox (67.16542pt too wide) in paragraph at lines 127--127
 Overfull \hbox (3.50655pt too wide) in paragraph at lines 129--131
 []\OT1/ptm/m/n/10 https://github.com/RoxanaTesileanu/multivariate$[]$analyses/b
 lob/ 
- []
-
-
-Overfull \hbox (87.26477pt too wide) in paragraph at lines 129--131
-\OT1/ptm/m/n/10 master/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWor
-kClassif.scala[] 
  []
 
 (./Tesileanu2017.bbl
@@ -627,10 +597,10 @@ e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on Tesileanu2017.pdf (3 pages, 73418 bytes).
+Output written on Tesileanu2017.pdf (3 pages, 73630 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 183 compressed objects within 2 object streams
+ 201 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
  44 named destinations out of 1000 (max. 500000)
  129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
