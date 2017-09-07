@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  7 SEP 2017 13:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  7 SEP 2017 13:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -552,12 +552,6 @@ Underfull \hbox (badness 2941) in paragraph at lines 138--1
 \OT1/ptm/m/n/10 projects [[]14[]] can be found un-der the fol-low-ing link:
  []
 
-
-Overfull \hbox (19.50674pt too wide) in paragraph at lines 138--1
-[]\OT1/ptm/m/n/10 https://www.researchgate.net/profile/Roxana$[]$Tesileanu/publ
-ications[] 
- []
-
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
  [3]
@@ -582,10 +576,10 @@ e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on Tesileanu2017.pdf (3 pages, 73484 bytes).
+Output written on Tesileanu2017.pdf (3 pages, 73543 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 188 compressed objects within 2 object streams
+ 202 PDF objects out of 1000 (max. 8388607)
+ 189 compressed objects within 2 object streams
  44 named destinations out of 1000 (max. 500000)
  129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
