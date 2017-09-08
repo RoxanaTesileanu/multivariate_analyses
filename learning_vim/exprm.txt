@@ -1,0 +1,64 @@
+my second file for vim
+- some words: cezar messed the kitchen sink
+- switched with :buffer 2 
+
+Opening additional files: (this line was copied from another file with yank and pasted with p)
+
+The following lines were copied into this file with the :r linuxCL.txt command:
+
+
+Reference: The Linux Command Line, William E. Shotts, Jr., 2009
+
+
+Using Vim
+
+- vim starts in command mode
+- change to insert mode with the i key
+- to exit insert mode and return to command mode, press the Esc key
+- save your changes with ":"
+- to write the file to the hard drive we use ":w"
+- move the cursor with "l" (right arrow), "h" (left arrow), "j" down one line, "k" up one line, "0" (to the beginning of the current line", "^" (first non-white space of the line), "$" (the end of the current line, "Ctrl-f" (page down), "Ctrl-b" (page up), "numberG" (to line number, ex: 1G), "G" the last line of the file
+
+- appending text: move the cursor to the end of the line and type "a". This will append text at the end of that line. Or use "A" to move to the end of the line and start appending.
+- you can use "o" to insert a line below the current line; and "O" to inser a line above the current line
+    
+- undo changes by using "u"
+
+- deleting text: "x" will delete the current character; "3x" will delete the current and the next two characters
+- "dd" deletes the current line, "6dd" deletes the current line and the next 5 lines 
+- "dG" to the end of the file
+- "d20G" to the 20th line of the file
+- "d$" to the end of the current line
+- "d0" to the beginning of the line
+
+- cutting, copying, and pasting text: the d commad also cuts text (copies it into a paste buffer) that we can later recall with the p command to paste the contents of the buffer after the cursor or the P command to paste the contents before the cursor
+- the "y" command ("yank" - copy) to copy text: "yy" the current line, "6yy" the current line and the next 4 lines, "y$" to the end of the current line, "y0" to the beginning of the line, "yG" from the end of the line to the end of the file, "y20G" from the current line to the 20th line of the file
+
+- joining lines with "J" 
+
+- search and replace: move the cursor to locations based on searches. vim can also perform replacements.
+- searching within a line: "f" searches a line and moves the cursor to the next instance of a specified character. Ex: "fa" will move the cursor to the next occurence of "a". The search may be repeated by typing a semicolon.
+- search the entire file: use "/" followed by the searched word and the Enter key and repeat the search using the previous search with the "n" command. 
+- global search and replace: substitution over a range of lines or the entire file: ":%s/line/LINE/g" (g stands for global, i.e. the subst. is performed on every instance of the search string); to change the file back to its previous form type ":%s/line/LINE/gc"  
+
+Editing multiple files:
+- vim file1 file2 file3...
+- switch betw. files: ":n" and ":N" to switch back
+- ":buffers" displays a list of files being edited
+- you can perform switching with ":buffer 2" to switch to file 2
+  
+Opening additional files:
+- to add an additional file use the ":e your_file_name" command
+- then check the files open with ":buffers"
+- you can only switch with "buffer no."
+
+Copying content from one file into another:
+- copy with yank, swich with buffer and paste with p
+  
+Inserting an entire file into another:
+
+
+
+
+Using the vimtutor.
+

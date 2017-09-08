@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+
+\bibitem{odersky_programming_2010}
+Martin Odersky, Lex Spoon, and Bill Venners.
+\newblock {\em Programming in {Scala}}.
+\newblock Artima, Walnut Creek, second edition, 2010.
+
+\bibitem{rehman_linux_2003}
+Rafeeq~Ur Rehman and Christopher Paul.
+\newblock {\em The {Linux} {Development} {Platform}}.
+\newblock Pearson, 2003.
+
+\end{thebibliography}

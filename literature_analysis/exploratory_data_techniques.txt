@@ -1,0 +1,9 @@
+Graphing techniques 
+
+- describing distributions and checking for outliers for each variable separately with boxplots
+- examine bivariate relationships between variables with scatterplot matrices (SPLOMS)
+- represent each object in symbolic form so that each symbol describes the relative value of all of the variables (e.g. using Chernoff faces, where different features of the face represent different variables; or represent each object with a star where each veriable is represented by a point on the star and the value of the variable is indicated by how far the point is from the center)
+- graphing relationships between objects using a scatterplot where the axes represent the new derived variables from an eigenanalysis (common in discriminant function analysis, principal components analysis and correspondence analysis).
+- we can graphically represent a dissimilarity matrix between objects in a scatterplot, the basis for multidimensional scaling.
+
+

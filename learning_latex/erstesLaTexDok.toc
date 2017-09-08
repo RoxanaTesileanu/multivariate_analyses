@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Using vim as an editor for the Scala code}{5}
+\contentsline {section}{\numberline {3}Using SBT}{5}
+\contentsline {subsection}{\numberline {3.1}Installing SBT}{5}
+\contentsline {subsection}{\numberline {3.2}Creating a Scala project}{5}
+\contentsline {subsection}{\numberline {3.3}Some SBT functionalities}{5}
+\contentsline {section}{\numberline {4}References}{5}
+\contentsline {section}{Appendices}{5}
+\contentsline {section}{Appendix \numberline {A}Source File 1}{5}
+\contentsline {section}{Appendix \numberline {B}Source File 2}{6}

@@ -1,0 +1,308 @@
+www.latex-tutorial.com/de/tutorials/
+http://www.bibtex.org/Using/de/
+"A Guide to LaTeX and Electronic Publishing", 4th edition, Helmut Kopka, Patrick W. Daly, 2004
+
+
+
+Schritt fuer Schritt Einfuehrung in LaTex
+
+A) Installation:
+- $ sudo apt-get install texlive
+- im vim den Text schreiben und dann mit pdflatex kompilieren
+
+Grundlegende Struktur einer LaTex Datei:
+- man beginnt mit einer leeren .tex Datei, zu welcher nach und nach die LaTex Befehle hinzugefuegt werden
+- bevor das Dok betrachtet werden kann, muss es zuerst kompiliert werden (d.h. es muss zunaechst eine .pdf Datei erstellt werden).
+- Beispiel: 
+	\documentclass{article}
+	\begin{document}
+	Hello world!
+	\end{document}
+- dann tut man kompilieren mit pdflatex: "$ pdflatex erstesLaTexDok.tex"
+- man merkt die Seitennummer die automatisch aufgetacht ist durch die Dokumentenklasse article
+- Befehle beginnen mit einem Backslash "\": "\befehl{option}"
+- man legt eine Umgebung fest mit "\begin" und "\end"
+
+Es koennen mehrere Umgebungen definiert werden, aber es is zwingend erforderlich die document Umgebung zu definieren!
+
+Beispiel einer Hierarchie:
+\begin{document}
+	\begin{environment1}
+		\begin{environment2}
+		\end{environment2}
+	\end{environment1}
+\end{document}
+
+Viele vordefinierte Umgebungen sind in Packeten erhalten, welche erst in das Dok eingebettet werden muessen.
+
+B) Titelseite
+
+     
+\documentclass{article}
+
+\title{Using Linux as a development platform for Scala projects}
+\date{2017-08-24}
+\author{Roxana Tesileanu, INCDS}
+
+\begin{document}
+	\maketitle
+	\newpage
+
+1. Introduction
+
+The components of a development system are (Rehman and Paul, 2003, p.10):
+- hardware platform
+- operating system
+- editors 
+- compilers and assemblers
+- debuggers
+- version control system
+- bug tracking
+
+.....
+
+  
+\end{document}
+
+
+Der Titel, das Datum und der Author sind nicht in der document Umgebung.
+Der Teil vor dem Hauptdokument wird in LaTex Praeambel gennant. 
+Man schaltet die Seitennummerierung aus mit "\pagenumbering{gobble}" und ein mit "\pagenumbering{arabic}". Fuer Roemische Nummer gibt es "\pagenumbering{roman}".
+
+C) Strukturieren von Dokumenten: Hinzufuegen von Paragraphen und Abschnitten
+
+- Ueberschrifte formatieren und deren automatische Nummerierung durchfuehren
+- es gibt:
+	\section{}
+	\subsection{}
+	\subsubsection{}
+	\paragraph{}
+	\subparagraph{}
+- die Ueberschriften und Unterueberschrieften werden spaeter im automatisch generierten Inhaltsverzeichnis im Dokument erscheinen.
+
+D) Pakete erklaert: Hinzufuegen von LaTex-Funktionen
+
+- "\usepackage{PAKAGENAME}" Direktive zur Praeambel hinzufuegen!
+- fuer Ubuntu kann man gleich texlive-full Installieren ("$ sudo apt-get install texlive-full") um alle Packete zu erhalten.
+
+Verwendung von Umgebungen:
+- fuer mathematische Formeln gibt es eine Umgebung namens equation. Alles innerhalb dieser Umgebung wird im MATH MODE verarbeitet. Ausserdem werden Gleichungen fuer uns nummeririert.
+Beispiel: 
+\begin{equation}
+f(x) = x^2
+\end{equation}
+
+Einbinden von Paketen:
+
+Beispiel: 
+\usepackage{amsmath}
+....
+\begin{equation}
+\end{equation}
+
+Packete fuegen die Unterstuezung fuer Bilder, Links, Literaturverzeichnisse und mehr hinzu.
+
+E) Setzen von Mathematik in LaTex
+Gleichungen, Matrizen und Brueche
+
+- Formel direkt im Text einbetten: Formel mit "$" zu umgeben (braucht man keine Umgebung festlegen, nur den $ Zeichen):
+	Bsp.: This formula $f(x) = x^2$ is an example
+
+- die equation und align Umgebungen: die equation Umgebung ist fuer einzelne Gleichungen nuetzlich und die align Umgebung fuer mehrere Gleichungen, um sie z.B. auszurichten:
+
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{equation*}
+1+2=3
+\end{equation*}
+
+\begin{align}
+1+2 &= 3\\
+1 &= 3-2
+\end{align}
+
+\end{document}
+
+Die Gleichungen werden am &-Zeichen ausgerichtet.
+Der Asterisk * zeigt an, dass die Gleichungen nicht nummeriert werden sollen.
+ 
+ZEILENUMBRUCH IST "\\"!
+ 
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+\begin{align}
+f(x) &= x^2 \\
+g(x) &= \frac{1}{x}\\
+F(x) &= \int^a_b\frac{1}{3}x^3
+\end{align}
+
+\end{document}
+
+Man kann Mathe-Befehle auch kombinieren:
+\frac{1}{\sqrt{x}}
+
+Fuer MATRIZEN gibt es eine spezielle Umgebung! Sie kann nur im Mathe Modus verwendet werden.
+
+\begin{equation}
+\left[
+\begin{matrix}
+1 & 0 \\
+0 & 1 
+\end{matrix}
+\right]
+\end{equation}
+
+
+Dies funktioniert fuer andere Klammerformen auch und ist nicht auf Matrizen beschraenkt:
+\left(\frac{1}{\sqrt{x}}\right)
+
+ES GIBT AUCH ZEICHEN FUER DAS GRIECHISCHE ALPHABET UND ANDERE MATHEMATISCHE ZEICHEN (z.B. \lambda)!!
+
+F) Hinzufuegen von Abbildungen
+
+Die eingebetteten Bilder werden automatisch indiziert und durchnummeriert. Um Bilder einzubinden wird die figure Umgebung benutzt. Ausserdem muss das graphicx Paket eingebunden werden.
+
+Das Bild an einer bestimmten Position fixieren:
+- "[h!]" fuer here
+- "[t]" fuer oben auf der Seite
+- "[b]" fuer unten auf der Seite
+- "[p]" fuer eine eigene Seite
+- "[!]" erzwingt die angegebene Position
+
+G) Kommentare 
+- um eine Zeile auszukommentieren benutzt man: "%"
+- um mehrere Zeilen auszukommentieren benutzt man:"\iffalse ...... \fi
+- man kann auch den Paket verbatim zum Praeambel hinzufuegen und comment Umgebung benutzen: "\begin{comment}", "\end{comment}".
+ 
+H) Inhaltsverzeichnis 
+
+- zusaezlich kann man auch Abbildungen- und Tabellenverzeichnisse erstellen
+
+Bsp. Inhaltsverzeichnis:
+\tableofcontents
+\newpage
+
+DAS INHALTSVERZEICHNIS ERSCHEINT ERST NACH ZWEIMALIGEM KOMPILIEREN DES OBIGEN CODES.
+
+Man kann eine Tabelle mit: "\begin{table} .... \end{table}" erzeugen.
+Man kann ein Appendix mit: "\begin{appendix} ... \end{appendix}" erzeugen.
+
+
+\begin{appendix}
+\listoffigures
+\listoftables
+
+DIE ABBILDUNGEN- UND TABELLENVERZEICHNISSE ERSCHEINEN AUCH ERST NACH ZWEIMALIGEM KOMPILIEREN!
+
+I) Literaturverzeichnis mit Bibtex und Biblatex
+
+- dafuer muss man eine .bib Datei anlegen
+- die .bib Datei kann auch automatisch mit Zotero generiert werden
+- man braucht auch den Paket cite. Dieser muss im Praeambel eingefuegt werden mit "\usepackage{cite}".
+
+A random citation looks like this: \cite{odersky_programming_2010} and it is embedded in text.
+\bibliography{MyLibrary}{}
+\bibliographystyle{ieeetr} | {apalike} | {plain} 
+
+- nachher muss man auch die .tex Datei und die .bib Datei kompilieren mit: $ pdflatex erstesLaTexDok.tex; bibtex MyLibrary ; pdflatex erstesLaTexDok ; pdflatex erstesLaTexDok
+
+Um den BibLaTeX Paket zu benuzten soll man den zuerst dem Praeambel hinzufuegen "\usepackage{biblatex}". Kompilieren geht in diesem Fall auf gleicher Weise. An der Stelle wo das Literaturverzeichnis hisoll benuzt man den Befehl "\printbibligraphy". Anstatt dem "\cite{}" Befehl soll man den "\autocite{}" Befehl benuzten.
+
+J) Fussnoten 
+
+- mittem im Text mit dem Befehl: "\footnote{\label{myfootnote} My foot note text comes here}"
+- wenn man eine Referenz zu der Fussnote haben moechte: "\ref{myfootnote}"
+
+K) Tabellen
+
+- um eine Tabelle einzufuegen benoetigt man mehrere Umgebungen:
+	- table Umgebung: bettet die anderen Umgebungen ein und setzt die Ueberschrift
+	- tabular Umgebung: enthaelt die eigentlichen Daten
+	- center Umgebung: richtet die Tabelle mittig auf der Seite
+
+Spalten werden mit dem &-Zeichen getrennt und Zeilen mit dem  \hline -Operator. Der newline \\ Operator markiert das Ende einer Zeile. 
+
+Bsp.:
+\begin{table}[h!]
+\centering
+\caption{Caption for the table.}
+\label{tab: table1}
+\begin{tabular}{l|c|r}
+
+1 & 2 & 3 \\
+\hline
+a & b & c \\
+
+\end{tabular}
+\end{table}
+
+
+Um eine schoenere Tabelle zu erzeugen kann man den booktabs Paket benutzen. 
+\begin{table}[h!]
+\centering
+\caption{Caption for the table.}
+\label{tab: table1}
+\begin{tabular}{ccc}
+\toprule
+
+1 & 2 & 3 \\
+
+\midrule
+
+4 & 5 & 6 \\
+
+another line \\
+
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+Fuer groessere Tabellen und Plots kann man die Daten direkt aus .csv Dateien erzeugt werden.
+
+L) Anhaenge hinzufuegen
+
+- um Anhaenge einfuegen zu koennen braucht man den appendix Packet mit den Optionen titletoc, toc and title: "\usepackage[titletoc, toc, title]{appendix}"
+- dann an der Stelle wo die Anhaenge hinkommen sollten benutzt man die appendices Umgebung:
+\begin{appendices}
+\section{ title of appendix A}
+Some text for the appendix A.
+\section{ title of appendix B}
+Some text for the appendix B.
+\end{appendices}
+\end{document}
+
+M) Auflistungen mit den Umgebungen itemize und enumerate 
+
+\begin{itemize}
+\item Your first item.
+\item Your second item.
+\item Your third item.
+\end{itemize}
+
+
+Fuer durchnummerierte Listen:
+\begin{enumerate}
+\item ....
+\item ....
+\item ....
+\end{enumerate}
+
+Fuer mehrere Beispiele rund um Listen siehe Kopka und Daly (S. 69).
+
+Check more free templates under:
+https://www.overleaf.com/latex/templates
+
+  
+
+ 
+
+ 
+
+ 
+

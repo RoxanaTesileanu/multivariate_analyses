@@ -1,0 +1,1420 @@
+Work paper: Scala for statistical computation 
+Project: scalaML package
+Author: Roxana Tesileanu (INCDS)
+Contact: roxana.te@web.de
+
+
+
+References:
+
+Bugnion Pascal 2016 - "Scala for Data Science", Packt Publishing, Birmingham 
+Dawkins Paul 2005 - "Paul's notes on linear algebra", Lamar University, http://tutorial.math.lamar.edu
+Harrington Peter 2012 - "Machine learning in action", Manning Publications Co., Shelter Island
+Karau Holden, Konwinski Andy, Wendell Patrick, Zaharia Matei 2015 - "Learning Spark", O'Reilly, Sebastopol   
+Mitchell, Tom M. 1997 - "Machine Learning", McGraw-Hill
+Nicolas R. Patrick  2015 - "Scala for Machine Learning", Packt Publishing, Birmingham 
+Scala Standard Library 2.12.0 - http://www.scala-lang.org/api/2.12.0/scala/index.html
+Swartz Jason 2015 - "Learning Scala", Manning Publications Co., Shelter Island 
+Trask Andrew 2017 - "Grokking deep learning", Manning Publications Co., Shelter Island 
+Odersky Martin, Spoon Lex, Venners Bill 2010 - "Programming in Scala", Second Edition, Artima, Walnut Creek
+Quinn Gerry, Keough Michael 2002 - "Experimental Design and Data Analysis for Biologists"
+Wilkinson Darren 2017 - "Statistical Computing with Scala: A functional approach to data science" -  https://github.com/darrenjw/scala-course
+http://technobium.com/logistic-regression-using-apache-spark/
+
+Key terminology
+
+- train the algorithm, i.e. allow it to learn, using a training set
+- the training set contains training instances with features (i.e. explanatory variables) and one or more target variables (i.e. response variables)
+
+ch.1 Getting started
+
+ML problems are categorized as classifications, prediction, optimization and regression.
+Classification - example: identify a disease from a set of symptoms
+Prediction - once the model is trained and validated, it can be used to predict some outcomes (a doctor collects symptoms and anticipates the health state).
+Optimization - ML techniques increase the chances that the optimization method converges towards a solution (intelligent search) (example: fighting the spread of a new virus requires optimizing a process that may evolve over time as more symptoms and cases are uncovered).
+Regression: is a classification technique particularly suitable for a continuous model.
+
+Why Scala? 
+- abstraction: monads (derived from the category and group theory to create high-level abstractions); covariant, contravariant functors and bifunctors (related to manifold and vector bundles used in non-linear model building).    
+
+- higher-kind projection: classification problems rely on the estimation of the similarity between vectors of observations. One technique consists in comparing two vectors by computing the normalized inner product. A co-vector alpha is defined as a linear map of a vector to the inner product. 
+
+- covariant functors for vectors: F[U => V] := F[U] => F[V]
+- contravariant functors for co-vector: F[U => V] := F[V] => F[U]
+- monads: extend the concept of a functor to allow the composition known as the monadic composition of morphisms on a single type.
+
+- scalability: parallelization and chaining of data processing functions using higher-order methods. So one can build scalable, distributed and concurrent applications (using Akka or Apache Spark). 
+
+Model categorization
+A model can be predictive, descriptive or adaptive.
+
+- predictive models: discover patterns in the data and extract fundamental trends and relationships between factors (or features). They are used to predict and classify future events or observations. Predictive models are created through supervised learning using a training set.
+
+- descriptive models: attempt to find unusual patterns or affinities in data by grouping observations into clusters with similar properties. They are generated through unsupervised learning.
+
+- adaptive models: created through reinforcement learning (one or more decision-making agents that recommend and possibly execute actions in the attempt of solving a problem, optimizing an objective function, or resolving constraints.
+
+Taxonomy of machine learning algorithms
+
+data mining -> identifying patterns
+machine learning -> indentifying and validating models to optimize a performance criterion using data.
+
+A) Unsupervised learning
+The goal of unsupervised learning is to discover patterns of regularities and irregularities in a set of observations. There are two categories: discovery of data clusters and discovery of latent factors.
+Unsupervised learning does not require labeled data and therefore is easy to implement and execute because no expertise is needed to validate an output. 
+
+A1) Clustering
+ 
+The purpose of data clustering is to partition a collection of data into a number of clusters or data segments. Practically, a clustering algorithm is used to organize observations into clusters, by minimizing the distance between obs. within a cluster and maximizing the distance between obs. across clusters. 
+
+A2) Dimension reduction
+
+Dimension reduction aims at finding the smallest but most relevant set of features needed to build a reliable model. 
+
+B) Supervised learning
+
+There are two categories of supervised learning algorithms:
+- generative models
+- discriminative models
+
+B1) Generative models
+Generative models attempt to fit a joint probability, p(X,Y), of two events (or random variables) X and Y, representing two sets of observed and hidden x and y variables. 
+Generative models are commonly introduced through Bayes' rule.
+
+B2) Disciminative models
+
+Contrary to generative models, discriminative models compute the conditional probability p(Y|X) directly, using the same algorithm for training and classification. 
+
+
+C) Reinforcement learning
+
+Reinforcement learning algorithms output a set of recommended actions for the adaptive system to execute. In its simplest form, this type of algorithms estimate the best course of action. The challenge is the recommended action or policy may depend on partially observable states.
+
+___________________________________
+
+For mathematics, linear algebra and optimization there are some well-established libraries to use, e.g. Apache Commons Math. 
+
+Add the dependency to your build.sbt file:
+// https://mvnrepository.com/artifact/org.apache.commons/commons-math3
+libraryDependencies += "org.apache.commons" % "commons-math3" % "3.6"
+
+In Commons Math you can find:
+- functions, differentiation, and integral and ordinary differential equations
+- statistics distributions
+- linear and non-linear optimization
+- dense and sparse vectors and matrices
+- curve fitting, correlation and regression
+
+
+For plotting you can use the JFreeChart library. Add the dependency to your build.sbt file:
+// https://mvnrepository.com/artifact/org.jfree/jfreechart
+libraryDependencies += "org.jfree" % "jfreechart" % "1.0.18"
+
+______________________________ 
+  
+An overview of computational workflows to perform a runtime processing of a dataset:
+
+1. Loading the dataset from files, databases, or any streaming devices
+2. Splitting the data set for parallel data processing
+3. Preprocessing data 
+4. Applying the model to classify new data
+5. Assessing the quality of the model
+
+A similar sequence of tasks is used to extract a model from a training dataset:
+
+1. Loading the dataset from files, databases, or any streaming devices
+2. Splitting the data set for parallel data processing
+3. Preprocessing data 
+4. Selecting the training, testing and validation set from the input data
+5. Extracting key features (extracting the model: supervised or unsupervised)
+6. Validating the model and tuning the model 
+7. Storing the model in a file or database so that it can be applied to future obs.
+
+The first phase consists of extracting the model through clustering or training of a supervised learning algorithm. The model is then validated against test data for which the source is the same as the training set but with different observations. Once the model is created and validated, it can be used to classify real-time data or predict future behaviour. Real-world workflows are more complex and require dynamic configuration to allow experimentation of different models. Several alternative classifiers and different filtering algorithms are applied against input data, depending on the latent noise in the raw data.
+
+Writing a simple workflow:
+For the first example a simplified version of the binomial logistic regression as the chosen classifier is used as the stock-price-volume action is treated as a continuous or pseudo-continuous process.
+
+Step 1: Scoping the problem
+
+The dataset is in CSV format. The aim is to model the stock price using its daily volume and volatility. We will consider two variables: price and volume.
+
+Step 2: Loading data
+
+val src = scala.io.Source.fromFile("CSCO.csv")
+//res0: scala.io.BufferedSource = non-empty iterator
+ 
+val data = src.getLines.map(_.split(",")).toArray.drop(1)
+//data: Array[Array[String]] = Array(Array(11/29/2013, 21.39, 21.44, 21.2, 21.25, 25043700, 21.25), Array(11/27/2013, 21.29, 21.35, 21.15, 21.27, 40019800, 21.27), Array(11/26/2013, 21.3, 21.41, 21.08, 21.21, 48612300, 21.21), Array(11/25/2013, 21.45, 21.52, 21.27, 21.27, 37566000, 21.27), Array(11/22/2013, 21.41, 21.5, 21.31, 21.46, 41091400, 21.46), Array(11/21/2013, 21.36, 21.49, 21.25, 21.47, 40695500, 21.47), Array(11/20/2013, 21.47, 21.47, 21.22, 21.23, 44299700, 21.23), Array(11/19/2013, 21.31, 21.54, 21.12, 21.42, 56434700, 21.42), Array(11/18/2013, 21.6, 21.72, 21.2, 21.29, 65955400, 21.29), Array(11/15/2013, 21.46, 21.69, 21.26, 21.54, 85486800, 21.54), Array(11/14/2013, 20.94, 21.44, 20.77, 21.37, 243064300, 21.37), Array(11/13/2013, 23.6, 24, 23.51, 24, 73328400, 24), Array(11...
+
+data(0)
+//res8: Array[String] = Array(11/29/2013, 21.39, 21.44, 21.2, 21.25, 25043700, 21.25)
+// date, open, high, low, close, volume, adj_close
+
+val data2 = data.map(x => List(x(2), x(3), x(5)))
+//data2: Array[List[String]] = Array(List(21.44, 21.2, 25043700), List(21.35, 21.15, 40019800), List(21.41, 21.08, 48612300), List(21.52, 21.27, 37566000), List(21.5, 21.31, 41091400), List(21.49, 21.25, 40695500), List(21.47, 21.22, 44299700), List(21.54, 21.12, 56434700), List(21.72, 21.2, 65955400), List(21.69, 21.26, 85486800), List(21.44, 20.77, 243064300), List(24, 23.51, 73328400), List(23.84, 23.43, 38020200), List(23.58, 23.4, 22694900), List(23.52, 23.09, 30884100), List(23.56, 23.07, 35502900), List(23.37, 23.02, 48142600), List(23.25, 22.42, 46327100), List(22.64, 22.42, 28606700), List(22.68, 22.4, 33328700), List(22.71, 22.44, 34497400), List(22.94, 22.66, 30465600), List(22.93, 22.56, 30074200), List(22.55, 22.31, 24072100), List(22.63, 22.35, 34253400), List(22.43, 22.1, 5...
+// get only the needed variables
+
+val data3=data2.map{ case(List(param1, param2, param3))  => List(param1.toDouble, param2.toDouble, param3.toDouble)}
+//data3: Array[List[Double]] = Array(List(21.44, 21.2, 2.50437E7), List(21.35, 21.15, 4.00198E7), List(21.41, 21.08, 4.86123E7), List(21.52, 21.27, 3.7566E7), List(21.5, 21.31, 4.10914E7), List(21.49, 21.25, 4.06955E7), List(21.47, 21.22, 4.42997E7), List(21.54, 21.12, 5.64347E7), List(21.72, 21.2, 6.59554E7), List(21.69, 21.26, 8.54868E7), List(21.44, 20.77, 2.430643E8), List(24.0, 23.51, 7.33284E7), List(23.84, 23.43, 3.80202E7), List(23.58, 23.4, 2.26949E7), List(23.52, 23.09, 3.08841E7), List(23.56, 23.07, 3.55029E7), List(23.37, 23.02, 4.81426E7), List(23.25, 22.42, 4.63271E7), List(22.64, 22.42, 2.86067E7), List(22.68, 22.4, 3.33287E7), List(22.71, 22.44, 3.44974E7), List(22.94, 22.66, 3.04656E7), List(22.93, 22.56, 3.00742E7), List(22.55, 22.31, 2.40721E7), List(22.63, 22.35, 3.425...
+
+data3.size
+//res39: Int = 3000
+
+val finalData = data3.map{
+     | case (List(param1, param2, param3)) => List(1-param2/param1 , param3)}
+//finalData: Array[List[Double]] = Array(List(0.011194029850746356, 2.50437E7), List(0.009367681498829161, 4.00198E7), List(0.015413358243811404, 4.86123E7), List(0.011617100371747235, 3.7566E7), List(0.008837209302325677, 4.10914E7), List(0.011167985109353129, 4.06955E7), List(0.011644154634373516, 4.42997E7), List(0.01949860724233976, 5.64347E7), List(0.023941068139963106, 6.59554E7), List(0.019824804057169243, 8.54868E7), List(0.03125000000000011, 2.430643E8), List(0.02041666666666664, 7.33284E7), List(0.01719798657718119, 3.80202E7), List(0.007633587786259555, 2.26949E7), List(0.01828231292517002, 3.08841E7), List(0.020797962648556823, 3.55029E7), List(0.014976465554129237, 4.81426E7), List(0.035698924731182746, 4.63271E7), List(0.009717314487632467, 2.86067E7), List(0.012345679012345...
+//the final dataset is reduced to two variables: relative volatility and volume.
+
+src.close()
+//the file needs to be closed to avoid leaking of the file handle.
+
+
+Step 3: Preprocessing data
+
+Normalization is not always needed. 
+But, if you believe the model can favorise a particular feature, then normalizing data imposes a single range of values for all the features. 
+Normalization techniques include linear normalization and Z-score.
+
+Linear normalization using min and max values, so that all the observations share the same scaling factor. Let's see how I can adapt Patrick's code to my modest data scientist programming skills. 
+
+val volatility = finalData.map { 
+     | case List(param1, param2) => param1}
+//volatility: Array[Double] = Array(0.011194029850746356, 0.009367681498829161, 0.015413358243811404, 0.011617100371747235, 0.008837209302325677, 0.011167985109353129, 0.011644154634373516, 0.01949860724233976, 0.023941068139963106, 0.019824804057169243, 0.03125000000000011, 0.02041666666666664, 0.01719798657718119, 0.007633587786259555, 0.01828231292517002, 0.020797962648556823, 0.014976465554129237, 0.035698924731182746, 0.009717314487632467, 0.012345679012345734, 0.011889035667106973, 0.012205754141238034, 0.016136066288704787, 0.010643015521064392, 0.012372956252761691, 0.01471243869817207, 0.019434628975265045, 0.025217391304347747, 0.012981393336218172, 0.016421780466724267, 0.020104895104894993, 0.021030042918455005, 0.010674637062339842, 0.012414383561643816, 0.01753635585970914, ...
+
+val volume = finalData.map {
+     | case List(param1, param2) => param2}
+//volume: Array[Double] = Array(2.50437E7, 4.00198E7, 4.86123E7, 3.7566E7, 4.10914E7, 4.06955E7, 4.42997E7, 5.64347E7, 6.59554E7, 8.54868E7, 2.430643E8, 7.33284E7, 3.80202E7, 2.26949E7, 3.08841E7, 3.55029E7, 4.81426E7, 4.63271E7, 2.86067E7, 3.33287E7, 3.44974E7, 3.04656E7, 3.00742E7, 2.40721E7, 3.42534E7, 5.01303E7, 4.90214E7, 6.4553E7, 3.45946E7, 4.44866E7, 6.93663E7, 4.0483E7, 2.62012E7, 2.91031E7, 2.77738E7, 3.88175E7, 4.54383E7, 3.18657E7, 2.95759E7, 3.36078E7, 3.81611E7, 4.00847E7, 3.01376E7, 4.03357E7, 8.24555E7, 5.45779E7, 2.65638E7, 2.97624E7, 2.69103E7, 3.74204E7, 4.00909E7, 2.95413E7, 1.99995E7, 3.21199E7, 1.85099E7, 2.234E7, 2.51532E7, 2.93024E7, 2.27447E7, 2.86158E7, 2.3926E7, 2.74439E7, 3.1875E7, 3.52484E7, 2.66055E7, 2.80359E7, 3.97687E7, 3.57085E7, 4.12686E7, 2.4327E7, 3.33...
+ 
+val minMaxVolatility = (volatility.min, volatility.max) 
+//minMaxVolatility: (Double, Double) = (4.115226337448874E-4,0.1340153452685422)
+
+val minMaxVolume = (volume.min, volume.max)
+//minMaxVolume: (Double, Double) = (7099200.0,5.600402E8)
+
+
+val normalizedVolatility = volatility.map(
+     | x => (x-minMaxVolatility._1)/(minMaxVolatility._2 - minMaxVolatility._1))
+//normalizedVolatility: Array[Double] = Array(0.08070508017180902, 0.06703519920658041, 0.11228597591158493, 0.08387168508368592, 0.06306471253904308, 0.0805101400804284, 0.0840741812555225, 0.14286331208328476, 0.1761143135143344, 0.14530483515048873, 0.23082032203937328, 0.14973481774997793, 0.12564359022362467, 0.05405582722177045, 0.13375957318432788, 0.1525887479322935, 0.10901591461344078, 0.2641197040738504, 0.06965213771857956, 0.08932496199021613, 0.08590707067368558, 0.08827765010685647, 0.11769531249074021, 0.07658083942169104, 0.0895291271097316, 0.10703972223548107, 0.14238444654027108, 0.18566735727621417, 0.09408316659346425, 0.11983383047910999, 0.14740126504449985, 0.15432582599878392, 0.07681752083283515, 0.08983920288499864, 0.12817622196914646, 0.1525832420107761, 0.15...
+
+val normalizedVolume = volume.map(
+     | x => (x-minMaxVolume._1)/(minMaxVolume._2 - minMaxVolume._1))
+//normalizedVolume: Array[Double] = Array(0.032452829506222185, 0.059537274320406695, 0.07507690693943839, 0.055099549499856224, 0.06147527493891753, 0.06075928534870809, 0.0672775214715494, 0.08922380507142715, 0.10644209780066952, 0.14176485375474057, 0.42674552981240316, 0.11977625099242054, 0.05592097529392828, 0.02820499836329735, 0.043015258409125026, 0.05136841001119469, 0.07422744922152635, 0.07094409710981822, 0.03889655496698563, 0.04743634492649306, 0.04954995198402723, 0.04225839646544568, 0.04155054517570591, 0.03069568000925958, 0.049108675247449544, 0.07782222696454053, 0.07581676887769219, 0.10390584167207713, 0.04972573927417211, 0.06761553221772305, 0.1126107487055581, 0.060374976715418104, 0.034546181238142945, 0.039794299934351046, 0.037390245975610414, 0.0573629012860...
+
+
+Step 4: Discovering patterns
+
+Plotting variables:
+I'll use breeze-viz for this task with code from Pascal Bugnion's book.
+
+import breeze.plot._
+//import breeze.plot._
+
+val fig = Figure()
+//fig: breeze.plot.Figure = breeze.plot.Figure@49c2fa79
+
+val plt = fig.subplot(0)
+//plt: breeze.plot.Plot = breeze.plot.Plot@23373a7e
+
+plt += plot(normalizedVolatility, normalizedVolume, '+')
+//res4: breeze.plot.Plot = breeze.plot.Plot@23373a7e
+
+Now, back to our logistic regression model. 
+
+Step 5: Implementing the classifier
+
+I'll use Spark-ML for implementing the logistic regression model.   
+
+import org.apache.spark.ml.classification.LogisticRegression
+//import org.apache.spark.ml.classification.LogisticRegression
+
+val lr = new LogisticRegression().
+     | setMaxIter(10).
+     | setRegParam(0.3).
+     | setElasticNetParam(0.8)
+//lr: org.apache.spark.ml.classification.LogisticRegression = logreg_6495c4928687
+
+Now, I need a Dataset[_] to fit in the method: val lrModel = lr.fit()
+
+import org.apache.spark.SparkConf
+//import org.apache.spark.SparkConf
+
+val conf = new SparkConf().setMaster("local").setAppName("my app")
+//conf: org.apache.spark.SparkConf = org.apache.spark.SparkConf@720498b5
+
+val spark = SparkSession.builder().config(conf=conf).getOrCreate()
+//...
+spark: org.apache.spark.sql.SparkSession = org.apache.spark.sql.SparkSession@3d7b9536
+
+import spark.implicits._
+//import spark.implicits._
+
+val ds = (volatility.zip(volume)).toSeq.toDS
+// error 
+Ok I guess I have to give some definition of the hyperplane to create the two classes. Maybe I should use the decision boundary from the plot. I'll check Pascal's book for additional support. For the sake of having a reusable code I've created the object called ExampleLR, stored in ExampleLR.scala, which will be further developed during today's routine. Now, back to REPL to see how things work with the logistic regression endeavor. 
+
+var myds = normalizedVolatility.zip(normalizedVolume)
+//myds: Array[(Double, Double)] = Array((0.08070508017180902,0.032452829506222185), (0.06703519920658041,0.059537274320406695), (0.11228597591158493,0.07507690693943839), (0.08387168508368592,0.055099549499856224), (0.06306471253904308,0.06147527493891753), (0.0805101400804284,0.06075928534870809), (0.0840741812555225,0.0672775214715494), (0.14286331208328476,0.08922380507142715), (0.1761143135143344,0.10644209780066952), (0.14530483515048873,0.14176485375474057), (0.23082032203937328,0.42674552981240316), (0.14973481774997793,0.11977625099242054), (0.12564359022362467,0.05592097529392828), (0.05405582722177045,0.02820499836329735), (0.13375957318432788,0.043015258409125026), (0.1525887479322935,0.05136841001119469), (0.10901591461344078,0.07422744922152635), (0.2641197040738504,0.0709440...
+
+myds.map{ case x => if (x._1 <0.54 & x._2<0.23) Seq( x._1, x._2,0)} 
+//res30: Array[Any] = Array(List(0.08070508017180902, 0.032452829506222185, 0.0), List(0.06703519920658041, 0.059537274320406695, 0.0), List(0.11228597591158493, 0.07507690693943839, 0.0), List(0.08387168508368592, 0.055099549499856224, 0.0), List(0.06306471253904308, 0.06147527493891753, 0.0), List(0.0805101400804284, 0.06075928534870809, 0.0), List(0.0840741812555225, 0.0672775214715494, 0.0), List(0.14286331208328476, 0.08922380507142715, 0.0), List(0.1761143135143344, 0.10644209780066952, 0.0), List(0.14530483515048873, 0.14176485375474057, 0.0), (), List(0.14973481774997793, 0.11977625099242054, 0.0), List(0.12564359022362467, 0.05592097529392828, 0.0), List(0.05405582722177045, 0.02820499836329735, 0.0), List(0.13375957318432788, 0.043015258409125026, 0.0), List(0.1525887479322935, ...
+
+myds.map{ case x => if (x._1 <0.54 & x._2<0.23) Seq( x._1, x._2,0) else Seq(x._1, x._2, 1)}
+//res31: Array[Seq[Double]] = Array(List(0.08070508017180902, 0.032452829506222185, 0.0), List(0.06703519920658041, 0.059537274320406695, 0.0), List(0.11228597591158493, 0.07507690693943839, 0.0), List(0.08387168508368592, 0.055099549499856224, 0.0), List(0.06306471253904308, 0.06147527493891753, 0.0), List(0.0805101400804284, 0.06075928534870809, 0.0), List(0.0840741812555225, 0.0672775214715494, 0.0), List(0.14286331208328476, 0.08922380507142715, 0.0), List(0.1761143135143344, 0.10644209780066952, 0.0), List(0.14530483515048873, 0.14176485375474057, 0.0), List(0.23082032203937328, 0.42674552981240316, 1.0), List(0.14973481774997793, 0.11977625099242054, 0.0), List(0.12564359022362467, 0.05592097529392828, 0.0), List(0.05405582722177045, 0.02820499836329735, 0.0), List(0.133759573184327...
+
+
+val finalDS =myds.map{ case x => if (x._1 <0.54 & x._2<0.23) Seq(0, x._1, x._2) else Seq(1, x._1, x._2)}
+//finalDS: Array[Seq[Double]] = Array(List(0.0, 0.08070508017180902, 0.032452829506222185), List(0.0, 0.06703519920658041, 0.059537274320406695), List(0.0, 0.11228597591158493, 0.07507690693943839), List(0.0, 0.08387168508368592, 0.055099549499856224), List(0.0, 0.06306471253904308, 0.06147527493891753), List(0.0, 0.0805101400804284, 0.06075928534870809), List(0.0, 0.0840741812555225, 0.0672775214715494), List(0.0, 0.14286331208328476, 0.08922380507142715), List(0.0, 0.1761143135143344, 0.10644209780066952), List(0.0, 0.14530483515048873, 0.14176485375474057), List(1.0, 0.23082032203937328, 0.42674552981240316), List(0.0, 0.14973481774997793, 0.11977625099242054), List(0.0, 0.12564359022362467, 0.05592097529392828), List(0.0, 0.05405582722177045, 0.02820499836329735), List(0.0, 0.13375957...
+
+import org.apache.spark.SparkConf
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkContext._
+
+val conf = new SparkConf().setMaster("local").setAppName("My App")
+val sc = new SparkContext(conf)
+
+val rddDS = sc.parallelize(finalDS)
+sc.stop()
+
+import org.apache.spark.sql._
+
+val spark = SparkSession.builder().config(conf = conf).getOrCreate()
+
+import spark.implicits._
+
+val dsLR = spark.createDataset(finalDS)
+//res3: org.apache.spark.sql.Dataset[Seq[Double]] = [value: array<double>]
+
+So, I've finally come to a Dataset type to use in the lr.fit().
+
+val lr = new LogisticRegression()
+//res0: org.apache.spark.ml.classification.LogisticRegression = logreg_5eba13ff09dc
+
+val lrModel = lr.fit(dsLR)
+//error
+
+Ok, I guess I need to label the Dataset with a LabeledPoint object, because my labelling is not yet recognized by Spark:
+
+import org.apache.spark.mllib.regression.LabeledPoint
+import org.apache.spark.mllib.linalg.{Vector, Vectors}
+
+val parsedDS = rddDS.map{ list =>
+     | LabeledPoint(list(0), Vectors.dense(list(1), list(2)))}
+//parsedDS: org.apache.spark.rdd.RDD[org.apache.spark.mllib.regression.LabeledPoint] = MapPartitionsRDD[2] at map at <console>:19
+ 
+parsedDS.first
+//...
+res9: org.apache.spark.mllib.regression.LabeledPoint = (0.0,[0.08070508017180902,0.032452829506222185])
+
+This data structure is needed by the Spark's logistic regression algorithm.
+
+
+val lrModel = new LogisticRegressionWithLBFGS().setNumClasses(2).run(parsedDS)
+//...
+lrModel: org.apache.spark.mllib.classification.LogisticRegressionModel = org.apache.spark.mllib.classification.LogisticRegressionModel: intercept = 0.0, numFeatures = 2, numClasses = 2, threshold = 0.5
+
+Now, I should not only train the model but also test and validate it. So, I will split the original dataset into two parts: trainDS (60% of the obs.) and testDS (40% of the obs.). Then I will rerun the LR algorithm, this time on trainDS. Afterwards I will classify the obs. found in the testDS and see the error. 
+
+Step 6: Classifying new observations and assessing the quality of the model
+
+For the moment, let's just sum up how the MLlib works in general. MLlib lets you invoke various algorithms on RDDs (the parsedDS for example is an RDD[LabeledPoint]). The features must be in numerical form (so, if you have an RDD of strings you must convert it to numerical form - process called feature extraction). Further, you transform the numerical features to vectors. Then, if you have a classification problem for example, you call a classification algorithm (e.g. logistic regression) on the RDD of vectors. This will return a model object that can be used to classify new points. At the end you evaluate the model on a test dataset. 
+
+The above workflow steps represent the "learning pipeline". You can use the pipeline API for building such pipelines. 
+
+The mllib.feature package contains algorithms to construct feature vectors from text, and ways to normalize and scale features. 
+
+Now, I would like to further concentrate on neural learning, which is the end goal of my study process this sommer (or autumn?). So, back to "Grokking Deep Learning". 
+
+_____________________________________________________________
+
+ch. Gradient Descent ("Grokking Deep Learning" - Andrew Trask)
+
+Different ways of measuring error prioritize error differently. 
+Calculate both the direction and amount of error => Gradient Descent
+Learning is calculating weight_delta and putting it on the weight. 
+Alpha allows us to control how fast the network learns given weight_delta and it is the simplest way to prevent overcorrections of weights.
+
+Given a certain input and goal_prediction, there is an exact relatioship defined between the error and weight. According to it, moving the weight moves the error. 
+For squared errors the relationship is: error = ((input * weight) - goal_prediction) **2. This relationship between error and weight can be graphed as a parabola. Adjusting the weight to reduce the error means that we create a function which conforms to the patterns in the data.   
+ 
+The way the error is controled by weight is described by the derivative of their relationship (we can of course have a positive and a negative derivative).  
+  
+This method of learning (using the derivative to find the lowest weight) is called Gradient Descent.
+
+Now, I will try to implement the GD in Scala. The alternative is to use the already implemented one of the Spark MLlib.
+
+
+@annotation.tailrec
+def updatingWeights (weight: Double, goalPred:Double,
+                     input: Double, alpha :Double) : Double = {
+
+  var prediction = input * weight
+  var error = prediction - goalPred
+  var derivative = input* (prediction - goalPred)
+
+
+    if (derivative < 0.01) weight
+    else updatingWeights(weight, goalPred, input, alpha)
+
+}
+ 
+Ok, it seams my function doesn't work for small values of the goal_derivative. So, I've set the threshold at 0.5 for the moment. So, the "improved" version is:
+
+@annotation.tailrec
+def updatingWeights (weight: Double, goalPred:Double,
+                     input: Double, alpha :Double) : Unit = {
+
+  var prediction = input * weight
+  var derivative = input* (prediction - goalPred)
+  var error = prediction - goalPred
+
+    if (derivative < 0.5) println(prediction , error)
+    else updatingWeights(weight, goalPred, input, alpha)
+
+}
+
+updatingWeights(0.5, 0.8, 2, 0.1)
+//(1.0,0.19999999999999996)   
+
+
+A better-working version is:
+
+@annotation.tailrec
+def updatingWeights (weight: Double, goalPred:Double,
+                     input: Double, alpha :Double) : Unit = {
+
+  var prediction = input * weight
+  var error = prediction - goalPred
+  var derivative = input* (prediction - goalPred)
+
+    if (error < 0.01) println(prediction , error)
+    else updatingWeights(weight - alpha * derivative, goalPred, input, alpha)
+
+}
+
+updatingWeights(0.5, 0.8, 2, 0.1)
+//(0.8093312,0.009331199999999984)
+// Yes!! It looks good!
+
+or even better:
+
+@annotation.tailrec
+def updatingWeights (weight: Double, goalPred:Double,
+                     input: Double, alpha :Double) : Unit = {
+
+  var prediction = input * weight
+  var error = prediction - goalPred
+  var derivative = input* (prediction - goalPred)
+
+    if (error < 0.001) println(prediction , error, weight)
+    else updatingWeights(weight - alpha * derivative, goalPred, input, alpha)
+
+}
+
+updatingWeights(0.5, 0.8, 2, 0.1)  
+//(0.8007255941120001,7.255941120000164E-4,0.40036279705600003)
+// (prediction, error, weight)
+
+
+  
+If you want to see the whole list of iterations (it takes 13 iterations):
+
+@annotation.tailrec
+def updatingWeights (weight: Double, goalPred:Double,
+                     input: Double, alpha :Double) : Unit = {
+
+  var prediction = input * weight
+  var error = prediction - goalPred
+  var derivative = input* (prediction - goalPred)
+  println(prediction , error, weight)
+    if (error < 0.001) println(prediction , error, weight)
+    else  updatingWeights(weight - alpha * derivative, goalPred, input, alpha)
+
+}
+
+updatingWeights(0.5, 0.8, 2, 0.1)
+
+//(1.0,0.19999999999999996,0.5)
+(0.92,0.12,0.46)
+(0.872,0.07199999999999995,0.436)
+(0.8432000000000001,0.043200000000000016,0.42160000000000003)
+(0.8259200000000001,0.025920000000000054,0.41296000000000005)
+(0.815552,0.01555200000000001,0.407776)
+(0.8093312,0.009331199999999984,0.4046656)
+(0.80559872,0.005598719999999946,0.40279936)
+(0.803359232,0.0033592319999999898,0.401679616)
+(0.8020155392,0.0020155391999999717,0.4010077696)
+(0.8012093235200001,0.0012093235200000274,0.40060466176000004)
+(0.8007255941120001,7.255941120000164E-4,0.40036279705600003)
+(0.8007255941120001,7.255941120000164E-4,0.40036279705600003)
+
+
+_____________________________________________________________
+
+ch. Learning multiple weights at a time - Generalizing Gradient Descent 
+("Grokking Deep Learning" - Andrew Trask)
+
+I've summed up the information in an object called GradientDescentMultiInput found in the GradientDescentMultiInput.scala file. 
+
+object GradientDescentMultiInput {
+
+import breeze.linalg._
+import scala.math._
+
+val myW = new DenseVector(Array(0.1, 0.2, -0.1))
+val myI = new DenseVector(Array(8.5, 0.65, 1.2))
+val goalPredict = new DenseVector(Array(1,1,0,1))
+@annotation.tailrec
+def updatingWeights (myWeights: DenseVector[Double], goalPred:Double,
+                     myInputs: DenseVector[Double], alpha :Double) : Unit = {
+
+  def predict (myInputs: DenseVector[Double], myWeights: DenseVector[Double]) : Double= {
+val dotProduct = myInputs dot myWeights
+dotProduct
+}
+  var error = predict(myInputs, myWeights) - goalPredict(0)
+  var derivative = myInputs* (predict(myInputs, myWeights) - goalPredict(0))
+
+    if (abs(error) < 0.001) println(predict(myInputs, myWeights) , error, myWeights)
+    else updatingWeights(myWeights - alpha * derivative, goalPred, myInputs, alpha)
+}
+
+}
+
+If I use the updatingWeights() function I get the following output in REPL:
+ 
+updatingWeights(myW, 1.0, myI, 0.01)
+//(0.9993712348198351,-6.287651801648586E-4,DenseVector(0.11598455720652519, 0.20122234849226373, -0.09774335662966704))
+ 
+_______________________________________________
+
+Creating a package to better organize the code:
+
+scala> import com.incds.scalaML._
+import com.incds.scalaML._
+
+scala> kNN.
+classes   classifykNN   createData   dataSet   group   lables   result
+
+It can be directly imported, and easily accessed.
+I've used the directory structure found in "Scala for Machine Learning" - Patrick R. Nicolas, 2015. 
+
+I've developed a readFileClassif() function to read txt and csv files for the kNN classifier. A first version is:
+
+def readFileClassif (filename: String, delim: String) :  (Vector[Array[Double]], Vector[Double],  Range.Partial[Double,scala.collection.immutable.NumericRange[Double]]
+)= {
+
+val src = scala.io.Source.fromFile(filename)
+val data = src.getLines.map(_.split(delim)).toArray.drop(1)
+src.close()
+val len = data(0).length
+val data2 = data.map( for (i <- _) yield(i))
+
+val data3= data2.map( for (i <- _) yield (i.toDouble))
+
+val dataMatrix= data3.map{ case x => x.take(len-1)}.toVector
+
+val dataLabels = data3.map{ case x => x.last}.toVector
+
+val classes = (dataLabels.min to dataLabels.max)
+
+(dataMatrix, dataLabels, classes)
+}
+
+
+
+Now, I would like to connect the two pieces, so they can be used together. I will take a look at types and harmonize them.
+ 
+_________________________________________________
+
+Rewriting the distance() function to generalize the computation of the Euclidean distance between any two vectors of the same length.  
+
+scala> P1
+res27: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(77450.0, 14.856391, 1.129823))
+
+scala> P2
+res28: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(46426.0, 7.292202, 0.548607))
+
+scala> val tuple=(P1, P2)
+tuple: (scala.collection.immutable.Vector[Array[Double]], scala.collection.immutable.Vector[Array[Double]]) = (Vector(Array(77450.0, 14.856391, 1.129823)),Vector(Array(46426.0, 7.292202, 0.548607)))
+
+scala> tuple._1(0)
+res29: Array[Double] = Array(77450.0, 14.856391, 1.129823)
+
+scala> tuple._1
+res30: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(77450.0, 14.856391, 1.129823))
+
+scala> tuple._1(0)(0)
+res31: Double = 77450.0
+
+scala> tuple._2(0)(0)
+res32: Double = 46426.0
+
+
+scala> val featuresP1 = for (i <- P1(0)) yield i 
+featuresP1: Array[Double] = Array(77450.0, 14.856391, 1.129823)
+
+scala> featuresP1(0)
+res52: Double = 77450.0
+
+scala> val featuresP2 = for (i <- P2(0)) yield i
+featuresP2: Array[Double] = Array(46426.0, 7.292202, 0.548607)
+
+scala> import breeze.linalg._
+import breeze.linalg._
+
+scala> featuresP1 - featuresP2
+res53: Array[Double] = Array(31024.0, 7.564189000000001, 0.5812160000000001)
+
+scala> val pointDiff= featuresP1 - featuresP2
+pointDiff: Array[Double] = Array(31024.0, 7.564189000000001, 0.5812160000000001)
+
+scala> for (i <- pointDiff) yield pow(i, 2)
+res54: Array[Double] = Array(9.62488576E8, 57.21695522772101, 0.33781203865600007)
+
+scala> val pointDiffPow = for (i <- pointDiff) yield pow(i, 2)
+pointDiffPow: Array[Double] = Array(9.62488576E8, 57.21695522772101, 0.33781203865600007)
+
+scala> val d = sqrt(sum(pointDiffPow))
+d: Double = 31024.000927584555
+
+Now, I will insert the changes into the kNN.scala file. 
+
+
+scala> val P1 = Vector(Array(Array(77450.0, 14.856391, 1.129823)))
+P1: breeze.linalg.Vector[Array[Double]] = DenseVector([D@667be34)
+
+scala> val distances = dataSet.dataMatrix map( x=> distance(P1, Vector(Array(x))))
+distances: scala.collection.immutable.Vector[Double] = Vector(0.0, 18718.004130667512, 31024.000927584555, 44762.000418007105, 12560.001576641347, 68896.0011072336, 48589.00012328926, 35400.00142176573, 45257.00022869998, 12555.00273208817, 75095.00046353479, 77450.00103368315, 7044.000956972936, 20051.002841053505, 35718.00041844302, 66021.00029182745, 2180.0012493614036, 71991.00033999975, 3930.0055391827186, 37171.00046264545, 55910.000285509755, 59756.00061195033, 55121.00143892454, 30880.001367161516, 35047.00019327526, 43796.000780691946, 68279.00076000624, 49328.00037572751, 43355.00013366811, 75676.00068585876, 37319.00008701404, 63456.00003209632, 386.00661965600756, 66240.00091045827, 71328.0001826955, 62109.001123802365, 33077.00165700684, 48996.00010404805, 13679.00181392445...
+
+scala> val labeledDist = distances zip (dataSet.dataLabels)
+labeledDist: scala.collection.immutable.Vector[(Double, Int)] = Vector((0.0,1), (18718.004130667512,1), (31024.000927584555,3), (44762.000418007105,3), (12560.001576641347,1), (68896.0011072336,2), (48589.00012328926,3), (35400.00142176573,1), (45257.00022869998,3), (12555.00273208817,1), (75095.00046353479,2), (77450.00103368315,2), (7044.000956972936,1), (20051.002841053505,1), (35718.00041844302,3), (66021.00029182745,3), (2180.0012493614036,1), (71991.00033999975,2), (3930.0055391827186,1), (37171.00046264545,3), (55910.000285509755,3), (59756.00061195033,2), (55121.00143892454,1), (30880.001367161516,1), (35047.00019327526,3), (43796.000780691946,1), (68279.00076000624,2), (49328.00037572751,3), (43355.00013366811,3), (75676.00068585876,2), (37319.00008701404,3), (63456.00003209632...
+
+scala> val sortedDist = labeledDist.sortBy(_._1)
+sortedDist: scala.collection.immutable.Vector[(Double, Int)] = Vector((0.0,1), (161.120438300205,1), (173.00515756722783,1), (182.04765200342902,1), (308.11047550436575,1), (321.0392636712786,1), (376.01853200357624,1), (386.00661965600756,1), (571.0055385221787,1), (611.0124221068621,1), (734.0412160720301,1), (749.0074477461468,1), (1082.0009169207688,1), (1131.0000398225413,1), (1192.007199015331,1), (1277.0002488976609,1), (1566.0161464292753,1), (1615.0056991610954,1), (1744.0001251974127,1), (1782.0005957077963,1), (1817.001032104643,1), (1891.0047885256513,1), (2104.0019703106777,1), (2180.0012493614036,1), (2278.006402895448,1), (2411.0106754328895,1), (2774.0000315879506,1), (3059.0046650435334,1), (3253.0002638609362,1), (3326.000001724017,1), (3412.0008808321795,1), (3436.000...
+
+scala> sortedDist.slice(0,3)
+res63: scala.collection.immutable.Vector[(Double, Int)] = Vector((0.0,1), (161.120438300205,1), (173.00515756722783,1))
+
+scala> kN.count(_._2 == dataSet.classes(0)) 
+res69: Int = 3
+
+scala> kN.count(_._2 == dataSet.classes(1))
+res70: Int = 0
+
+scala> kN.count(_._2 == dataSet.classes(2))
+res71: Int = 0
+
+scala> val countClasses =for (i <- dataSet.classes) yield(kN.count(_._2 == i)) 
+countClasses: scala.collection.immutable.IndexedSeq[Int] = Vector(3, 0, 0)
+
+scala> classes zip countClasses
+res79: scala.collection.immutable.IndexedSeq[(Int, Int)] = Vector((1,3), (2,0), (3,0))
+
+scala> val classesAndCounts = classes zip countClasses
+classesAndCounts: scala.collection.immutable.IndexedSeq[(Int, Int)] = Vector((1,3), (2,0), (3,0))
+
+scala> classesAndCounts.sortBy(_._2)
+res82: scala.collection.immutable.IndexedSeq[(Int, Int)] = Vector((2,0), (3,0), (1,3))
+
+scala> classesAndCounts.sortBy(_._2).last
+res83: (Int, Int) = (1,3)
+
+scala> classesAndCounts.sortBy(_._2).last._1
+res84: Int = 1
+
+scala> val result = classesAndCounts.sortBy(_._2).last._1
+result: Int = 1
+________________________________________________________________
+
+The new adapted kNN classifier is in the kNN.scala file in the package com.incds.scalaML:
+
+object kNN{
+
+import scala.math._
+import scala.util.Sorting
+import breeze.linalg._
+
+val dataMatrix = Vector(Array(1.0, 1.1), Array(1.0, 1.0), Array(0.0, 0.0), Array(0.0, 0.1))
+val dataLabels = Vector(1, 1, 2, 2)
+val classes = Range (dataLabels.min, dataLabels.max+1)
+
+case class CreateData (dataMatrix: Vector[Array[Double]], dataLabels: Vector[Int], classes: Range) 
+
+val dataSet =  new CreateData(dataMatrix, dataLabels, classes)
+
+def classifykNN (P:Vector[Array[Double]], dataSet: createData, k: Int) : Int={
+
+def distance (P1: Vector[Array[Double]], P2: Vector[Array[Double]]) : Double = {
+  
+val featuresP1 = for (i <- P1(0)) yield i
+val featuresP2 = for (i <- P2(0)) yield i
+val pointDiff = featuresP1 - featuresP2
+val pointDiffPow = for (i <- pointDiff) yield pow(i,2)
+val d = sqrt(sum(pointDiffPow))
+d
+}
+
+def sortingDist (dataSet: createData) : Vector[(Double, Int)] = {
+
+val distances = dataSet.dataMatrix map(x => distance(P, Vector(x))) 
+
+val labeledDist = distances zip(dataSet.dataLabels)
+
+val sortedDist = labeledDist.sortBy(_._1)
+sortedDist
+}
+
+val sortedDist = sortingDist(dataSet)
+
+def countingClasses (sortedDist: Vector[(Double, Int)]) : Int = {
+val kN = sortedDist.slice(0, k)
+val countClasses =for (i <- dataSet.classes) yield(kN.count(_._2 == i)) 
+val classesAndCounts = classes zip countClasses
+val result = classesAndCounts.sortBy(_._2).last._1
+result
+
+}
+return(countingClasses(sortedDist))
+
+}
+
+
+//trying out the kNN algorithm:
+
+val result = classifykNN(Vector(Array(0.1, 0.1)), dataSet, 3)
+
+}
+
+/* References: 
+Machine Learning in Action - Peter Harrington, 2012 
+Programming in Scala - Martin Odersky, Lex Spoon, Bill Venners, 2010
+Learning Scala - Jason Swartz, 2015
+*/
+
+
+The needed data can be read with the readFileClassif() function found in the ReadFile.scala file of the same package.
+
+object ReadFile {
+
+import scala.math._
+
+def readFileClassif (filename: String, delim: String) :  (Vector[Array[Double]], Vector[Int],  Range]
+)= {
+
+val src = scala.io.Source.fromFile(filename)
+val data = src.getLines.map(_.split(delim)).toArray.drop(1)
+src.close()
+val len = data(0).length
+val data2 = data.map( for (i <- _) yield(i))
+
+val data3= data2.map( for (i <- _) yield (i.toDouble))
+
+val dataMatrix= data3.map{ case x => x.take(len-1)}.toVector
+
+val dataLabels = data3.map{ case x => x.last.toInt}.toVector
+
+val classes = Range(dataLabels.min, dataLabels.max+1)
+
+(dataMatrix, dataLabels, classes)
+}
+
+}
+
+/* References:
+
+Peter Harrington - "Machine Learning in Action", 2012
+Jason Swartz - "Learning Scala", 2015
+Martin Odersky, Lex Spoon, Bill Venners - "Programming in Scala", Second Edition, 2010
+*/
+
+___________________________________________________________________
+
+In order to reduce the type families used in the kNN classifier, and stick to Scala types, I will organize the code for the basic vector operations (dot product and elementwise operations) in the BasicVectorOP.scala file. 
+
+Now, I can use the vector operations to compute the Euclidean distances for two vectors of the same length inside the kNN classifier:
+
+object kNN{
+
+
+import scala.math._
+import scala.util.Sorting
+import com.incds.scalaML.BasicVectorOP._
+
+val dataMatrix = Vector(Array(1.0, 1.1), Array(1.0, 1.0), Array(0.0, 0.0), Array(0.0, 0.1))
+val dataLabels = Vector(1, 1, 2, 2)
+val classes = Range (dataLabels.min, dataLabels.max+1)
+
+case class CreateData (dataMatrix: Vector[Array[Double]], dataLabels: Vector[Int], classes: Range) 
+
+val dataSet =  new CreateData(dataMatrix, dataLabels, classes)
+
+def classifykNN (P:Vector[Array[Double]], dataSet: CreateData, k: Int) : Int={
+
+def distance (P1: Vector[Array[Double]], P2: Vector[Array[Double]]) : Double = {
+  
+val featuresP1 = for (i <- P1(0)) yield i
+val featuresP2 = for (i <- P2(0)) yield i
+val pointDiff = arraySubt(featuresP1, featuresP2)
+val pointDiffPow = for (i <- pointDiff) yield pow(i,2)
+val d = sqrt(pointDiffPow.sum)
+d
+}
+
+def sortingDist (dataSet: CreateData) : Vector[(Double, Int)] = {
+
+val distances = dataSet.dataMatrix map(x => distance(P, Vector(x)))
+
+val labeledDist = distances zip (dataSet.dataLabels) 
+
+val sortedDist = labeledDist.sortBy(_._1)
+sortedDist
+}
+
+val sortedDist = sortingDist(dataSet)
+
+def countingClasses (sortedDist: Vector[(Double, Int)]) : Int = {
+val kN = sortedDist.slice(0, k)
+val countClasses =for (i <- dataSet.classes) yield(kN.count(_._2 == i)) 
+val classesAndCounts = classes zip countClasses
+val result = classesAndCounts.sortBy(_._2).last._1
+result
+
+}
+return(countingClasses(sortedDist))
+
+}
+
+
+//trying out the kNN algorithm:
+
+val result = classifykNN(Vector(Array(0.1, 0.1)), dataSet, 3)
+
+}
+
+/* References: 
+Machine Learning in Action - Peter Harrington, 2012 
+Programming in Scala - Martin Odersky, Lex Spoon, Bill Venners, 2010
+Learning Scala - Jason Swartz, 2015
+*/
+________________________________________________________________________________
+
+Now, for the multiplication of two matrices, I will use two scala.Vectors of type Vector[Array[Double]] and return a scala.Vector of type Vector[Array[Double]]. 
+
+Suppose you have a matrix a of shape 2x3 and a matrix b of shape 3x2. If you want the product of axb you get c of form 2x2.
+
+ 
+scala> val a = Vector(Array(2.0, 1.0, 2.0),Array(1.0, 1.0, 3.0))
+a: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(2.0, 1.0, 2.0), Array(1.0, 1.0, 3.0))
+
+scala> val b = Vector(Array(1.0, 2.0), Array(2.0, 2.0), Array(1.0, 1.0))
+b: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(1.0, 2.0), Array(2.0, 2.0), Array(1.0, 1.0))
+
+scala> import com.incds.scalaML.BasicVectorOP._
+import com.incds.scalaML.BasicVectorOP._
+// I will use the dot product 
+
+scala> val bvalues = b.map{ array =>  array(0)} .toArray
+bvalues: Array[Double] = Array(1.0, 2.0, 1.0)
+
+scala> val c11 = dot(a(0), bvalues)
+c11: Double = 6.0
+
+// I guess I will transpose b and then compute the dot products needed.
+
+scala> b.transpose
+res6: scala.collection.immutable.Vector[scala.collection.immutable.Vector[Double]] = Vector(Vector(1.0, 2.0, 1.0), Vector(2.0, 2.0, 1.0))
+
+scala> val tb = b.transpose.map{case x=> x.toArray}
+tb: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(1.0, 2.0, 1.0), Array(2.0, 2.0, 1.0))
+
+scala> val c11 = dot(a(0), tb(0))
+c11: Double = 6.0
+
+scala> val c12 = dot(a(0), tb(1))
+c12: Double = 8.0
+
+scala> val c21 = dot(a(1), tb(0))
+c21: Double = 6.0
+
+scala> val c22 = dot(a(1), tb(1))
+c22: Double = 7.0
+
+scala> val c = Array(Array(c11, c12), Array(c21,c22))
+c: Array[Array[Double]] = Array(Array(6.0, 8.0), Array(6.0, 7.0))
+
+Let's see how I can make a function out of this!
+
+scala> dot((for (i<- a) yield i), (for (j<- tb) yield j))
+<console>:17: error: type mismatch;
+ found   : scala.collection.immutable.Vector[Array[Double]]
+ required: Array[Double]
+       dot((for (i<- a) yield i), (for (j<- tb) yield j))
+                  ^
+scala> a zip tb
+res21: scala.collection.immutable.Vector[(Array[Double], Array[Double])] = Vector((Array(2.0, 1.0, 2.0),Array(1.0, 2.0, 1.0)), (Array(1.0, 1.0, 3.0),Array(2.0, 2.0, 1.0)))
+
+scala> val pairs = a zip tb
+pairs: scala.collection.immutable.Vector[(Array[Double], Array[Double])] = Vector((Array(2.0, 1.0, 2.0),Array(1.0, 2.0, 1.0)), (Array(1.0, 1.0, 3.0),Array(2.0, 2.0, 1.0)))
+
+______retrying with new a and b:
+
+scala> val ais = for (i <- a) yield i
+ais: Array[Array[Double]] = Array(Array(0.1, 0.2), Array(0.1, 0.2))
+
+scala> ais(0)
+res1: Array[Double] = Array(0.1, 0.2)
+
+scala> val ajs = for (j <- b) yield j
+ajs: Array[Array[Double]] = Array(Array(0.3, 0.4), Array(0.5, 0.6))
+
+//the first row of the matrix product:
+scala> ajs.map{ j => dot(j, ais(0))}
+res13: Array[Double] = Array(0.11000000000000001, 0.16999999999999998)
+
+
+scala> ais.map{ i => ajs.map{ j => dot(j, ais(_))}}
+<console>:17: error: missing parameter type for expanded function ((x$1) => ais(x$1))
+       ais.map{ i => ajs.map{ j => dot(j, ais(_))}}
+
+scala> ais.foreach{ ajs.map{j => dot(j, _)}}
+<console>:17: error: missing parameter type for expanded function ((x$1) => dot(j, x$1))
+       ais.foreach{ ajs.map{j => dot(j, _)}}
+                                        ^
+scala> val product = ais.foreach{x=> ajs.map{j => dot(j, x)}}
+product: Unit = ()
+
+scala> val product = a.foreach{ i => b.map{j => dot(j, i)}}
+product: Unit = ()
+
+
+def mM (a: Array[Array[Double]], b: Array[Array[Double]]) : Array[Array[Double]] = {
+
+val rows = a.foreach { i => b.map{j => dot(j,i)} }
+return rows
+}
+
+
+_____________________________
+For two matrices a and b of type Array[Array[Double]] the matrix product is c:
+
+def matrixMultipl (a:Array[Array[Double]], b: Array[Array[Double]]) : Array[Array[Double]] = {
+val tb = b.transpose
+assert( tb(0).length == a(0).length, "Matrices cannot be multiplied!")
+val c = for (i <- a) yield (tb.map { j => dot(j, i) })
+c
+}
+
+Wow! That's all!
+_____________________________
+
+Data can also be standardized so that each observation is expressed relative to the maximum value of that variable across all objects. This standardization results in observations being expressed as a proportion of the largest value for a variable, and is basically standardization based on the range within a variable (Quinn and Keough 2002). Standardization of variables is essential if the variables are measured in very different units or scales(Quinn and Keough 2002, Harrington 2012, Nicolas 2015). 
+
+I will implement in the object AutoNorm the code for normalizing an entire dataset. 
+
+// to scale everything from 0 to 1:
+
+def autoNorm (dataMatrix : Array[Array[Double]]) : Array[Array[Double]] = {
+
+.......
+
+
+}
+
+Let's see how I fill this in.
+I will experiment a bit in REPL:
+
+
+scala> import com.mai.scalaML.ReadFile._
+import com.mai.scalaML.ReadFile._
+
+scala> val path = "/home/roxana/Private/Literature/stats/Peter_Harrington/machinelearninginaction/Ch02/datingTestSet2.txt"
+path: String = /home/roxana/Private/Literature/stats/Peter_Harrington/machinelearninginaction/Ch02/datingTestSet2.txt
+
+scala> val myData = readFileClassif(path, "\t")
+myData: (Vector[Array[Double]], Vector[Int], Range) = (Vector(Array(14488.0, 7.153469, 1.673904), Array(26052.0, 1.441871, 0.805124), Array(75136.0, 13.147394, 0.428964), Array(38344.0, 1.669788, 0.134296), Array(72993.0, 10.14174, 1.032955), Array(35948.0, 6.830792, 1.213192), Array(42666.0, 13.276369, 0.54388), Array(67497.0, 8.631577, 0.749278), Array(35483.0, 12.273169, 1.508053), Array(50242.0, 3.723498, 0.831917), Array(63275.0, 8.385879, 1.669485), Array(5569.0, 4.875435, 0.728658), Array(51052.0, 4.680098, 0.625224), Array(77372.0, 15.29957, 0.331351), Array(43673.0, 1.889461, 0.191283), Array(61364.0, 7.516754, 1.269164), Array(69673.0, 14.239195, 0.261333), Array(15669.0, 0.0, 1.250185), Array(28488.0, 10.528555, 1.304844), Array(6487.0, 3.540265, 0.822483), Array(37708.0, 2.9...
+
+scala> val dataMatrix = myData._1
+dataMatrix: Vector[Array[Double]] = Vector(Array(14488.0, 7.153469, 1.673904), Array(26052.0, 1.441871, 0.805124), Array(75136.0, 13.147394, 0.428964), Array(38344.0, 1.669788, 0.134296), Array(72993.0, 10.14174, 1.032955), Array(35948.0, 6.830792, 1.213192), Array(42666.0, 13.276369, 0.54388), Array(67497.0, 8.631577, 0.749278), Array(35483.0, 12.273169, 1.508053), Array(50242.0, 3.723498, 0.831917), Array(63275.0, 8.385879, 1.669485), Array(5569.0, 4.875435, 0.728658), Array(51052.0, 4.680098, 0.625224), Array(77372.0, 15.29957, 0.331351), Array(43673.0, 1.889461, 0.191283), Array(61364.0, 7.516754, 1.269164), Array(69673.0, 14.239195, 0.261333), Array(15669.0, 0.0, 1.250185), Array(28488.0, 10.528555, 1.304844), Array(6487.0, 3.540265, 0.822483), Array(37708.0, 2.991551, 0.83392), Ar...
+
+
+scala> for (a <- dataMatrix) yield a(0)
+res7: scala.collection.immutable.Vector[Double] = Vector(14488.0, 26052.0, 75136.0, 38344.0, 72993.0, 35948.0, 42666.0, 67497.0, 35483.0, 50242.0, 63275.0, 5569.0, 51052.0, 77372.0, 43673.0, 61364.0, 69673.0, 15669.0, 28488.0, 6487.0, 37708.0, 22620.0, 28782.0, 19739.0, 36788.0, 5741.0, 28567.0, 6808.0, 41611.0, 36661.0, 43605.0, 15360.0, 63796.0, 10743.0, 70808.0, 72011.0, 5914.0, 14851.0, 33553.0, 44952.0, 17934.0, 27738.0, 29290.0, 42330.0, 36429.0, 39623.0, 32404.0, 27268.0, 5477.0, 14254.0, 68613.0, 41539.0, 7917.0, 21331.0, 8338.0, 5176.0, 18983.0, 68837.0, 13438.0, 48849.0, 12285.0, 7826.0, 5565.0, 10346.0, 1823.0, 9744.0, 16857.0, 39336.0, 65230.0, 2463.0, 27353.0, 16191.0, 12258.0, 42377.0, 25607.0, 77450.0, 58732.0, 46426.0, 32688.0, 64890.0, 8554.0, 28861.0, 42050.0, 32193.0,...
+
+scala> val len = dataMatrix(0).length
+len: Int = 3
+
+
+scala> for (i <- 0 to len) yield {for (a <- dataMatrix) yield a(i)}
+//error
+
+scala> for (i <- 0 to (len-1)) yield {for (a <- dataMatrix) yield a(i)}
+res13: scala.collection.immutable.IndexedSeq[scala.collection.immutable.Vector[Double]] = Vector(Vector(14488.0, 26052.0, 75136.0, 38344.0, 72993.0, 35948.0, 42666.0, 67497.0, 35483.0, 50242.0, 63275.0, 5569.0, 51052.0, 77372.0, 43673.0, 61364.0, 69673.0, 15669.0, 28488.0, 6487.0, 37708.0, 22620.0, 28782.0, 19739.0, 36788.0, 5741.0, 28567.0, 6808.0, 41611.0, 36661.0, 43605.0, 15360.0, 63796.0, 10743.0, 70808.0, 72011.0, 5914.0, 14851.0, 33553.0, 44952.0, 17934.0, 27738.0, 29290.0, 42330.0, 36429.0, 39623.0, 32404.0, 27268.0, 5477.0, 14254.0, 68613.0, 41539.0, 7917.0, 21331.0, 8338.0, 5176.0, 18983.0, 68837.0, 13438.0, 48849.0, 12285.0, 7826.0, 5565.0, 10346.0, 1823.0, 9744.0, 16857.0, 39336.0, 65230.0, 2463.0, 27353.0, 16191.0, 12258.0, 42377.0, 25607.0, 77450.0, 58732.0, 46426.0, 32688...
+
+scala> val data =  for (i <- 0 to (len-1)) yield {for (a <- dataMatrix) yield a(i)}
+data: scala.collection.immutable.IndexedSeq[scala.collection.immutable.Vector[Double]] = Vector(Vector(14488.0, 26052.0, 75136.0, 38344.0, 72993.0, 35948.0, 42666.0, 67497.0, 35483.0, 50242.0, 63275.0, 5569.0, 51052.0, 77372.0, 43673.0, 61364.0, 69673.0, 15669.0, 28488.0, 6487.0, 37708.0, 22620.0, 28782.0, 19739.0, 36788.0, 5741.0, 28567.0, 6808.0, 41611.0, 36661.0, 43605.0, 15360.0, 63796.0, 10743.0, 70808.0, 72011.0, 5914.0, 14851.0, 33553.0, 44952.0, 17934.0, 27738.0, 29290.0, 42330.0, 36429.0, 39623.0, 32404.0, 27268.0, 5477.0, 14254.0, 68613.0, 41539.0, 7917.0, 21331.0, 8338.0, 5176.0, 18983.0, 68837.0, 13438.0, 48849.0, 12285.0, 7826.0, 5565.0, 10346.0, 1823.0, 9744.0, 16857.0, 39336.0, 65230.0, 2463.0, 27353.0, 16191.0, 12258.0, 42377.0, 25607.0, 77450.0, 58732.0, 46426.0, 32688....
+
+scala> data(0)
+res16: scala.collection.immutable.Vector[Double] = Vector(14488.0, 26052.0, 75136.0, 38344.0, 72993.0, 35948.0, 42666.0, 67497.0, 35483.0, 50242.0, 63275.0, 5569.0, 51052.0, 77372.0, 43673.0, 61364.0, 69673.0, 15669.0, 28488.0, 6487.0, 37708.0, 22620.0, 28782.0, 19739.0, 36788.0, 5741.0, 28567.0, 6808.0, 41611.0, 36661.0, 43605.0, 15360.0, 63796.0, 10743.0, 70808.0, 72011.0, 5914.0, 14851.0, 33553.0, 44952.0, 17934.0, 27738.0, 29290.0, 42330.0, 36429.0, 39623.0, 32404.0, 27268.0, 5477.0, 14254.0, 68613.0, 41539.0, 7917.0, 21331.0, 8338.0, 5176.0, 18983.0, 68837.0, 13438.0, 48849.0, 12285.0, 7826.0, 5565.0, 10346.0, 1823.0, 9744.0, 16857.0, 39336.0, 65230.0, 2463.0, 27353.0, 16191.0, 12258.0, 42377.0, 25607.0, 77450.0, 58732.0, 46426.0, 32688.0, 64890.0, 8554.0, 28861.0, 42050.0, 32193.0...
+
+scala> data(1)
+res17: scala.collection.immutable.Vector[Double] = Vector(7.153469, 1.441871, 13.147394, 1.669788, 10.14174, 6.830792, 13.276369, 8.631577, 12.273169, 3.723498, 8.385879, 4.875435, 4.680098, 15.29957, 1.889461, 7.516754, 14.239195, 0.0, 10.528555, 3.540265, 2.991551, 5.297865, 6.593803, 2.81676, 12.458258, 0.0, 9.968648, 1.364838, 0.230453, 11.865402, 0.12046, 8.545204, 5.856649, 9.665618, 9.778763, 4.932976, 2.216246, 14.305636, 12.591889, 3.424649, 0.0, 8.533823, 9.829528, 11.492186, 3.570968, 1.771228, 3.513921, 4.398172, 4.276823, 5.946014, 13.79897, 10.393591, 3.007577, 1.031938, 4.751212, 3.692269, 10.448091, 10.585786, 1.604501, 3.679497, 3.795146, 2.531885, 9.73334, 6.093067, 7.71296, 11.470364, 2.886529, 10.054373, 9.97247, 2.335785, 11.375155, 0.0, 4.126787, 6.319522, 8.680527...
+
+scala> data(2)
+res18: scala.collection.immutable.Vector[Double] = Vector(1.673904, 0.805124, 0.428964, 0.134296, 1.032955, 1.213192, 0.54388, 0.749278, 1.508053, 0.831917, 1.669485, 0.728658, 0.625224, 0.331351, 0.191283, 1.269164, 0.261333, 1.250185, 1.304844, 0.822483, 0.83392, 0.638306, 0.187108, 1.686209, 0.649617, 1.656418, 0.731232, 0.640103, 1.151996, 0.88281, 1.352013, 1.340429, 0.160006, 0.778626, 1.084103, 0.632026, 0.587095, 0.632317, 0.686581, 1.004504, 0.147573, 0.205324, 0.23862, 0.263499, 0.832254, 0.207612, 0.991854, 0.975024, 1.174874, 1.614244, 0.724375, 1.663724, 0.297302, 0.486174, 0.064693, 1.655113, 0.267652, 0.329557, 0.069064, 0.961466, 0.696694, 1.659173, 0.977746, 1.413798, 1.054927, 0.760461, 0.934416, 1.138351, 0.881876, 1.366145, 1.528626, 0.605619, 0.357501, 1.058602, 0.0...
+
+scala> val v1 = data(0)
+scala> val v2 = data(1)
+scala> val v3 = data(2)
+
+So, my variables are: 
+scala> val variables = for (i <- 0 to (len -1)) yield { for (a <- dataMatrix) yield a(i)}
+variables: scala.collection.immutable.IndexedSeq[scala.collection.immutable.Vector[Double]] = Vector(Vector(14488.0, 26052.0, 75136.0, 38344.0, 72993.0, 35948.0, 42666.0, 67497.0, 35483.0, 50242.0, 63275.0, 5569.0, 51052.0, 77372.0, 43673.0, 61364.0, 69673.0, 15669.0, 28488.0, 6487.0, 37708.0, 22620.0, 28782.0, 19739.0, 36788.0, 5741.0, 28567.0, 6808.0, 41611.0, 36661.0, 43605.0, 15360.0, 63796.0, 10743.0, 70808.0, 72011.0, 5914.0, 14851.0, 33553.0, 44952.0, 17934.0, 27738.0, 29290.0, 42330.0, 36429.0, 39623.0, 32404.0, 27268.0, 5477.0, 14254.0, 68613.0, 41539.0, 7917.0, 21331.0, 8338.0, 5176.0, 18983.0, 68837.0, 13438.0, 48849.0, 12285.0, 7826.0, 5565.0, 10346.0, 1823.0, 9744.0, 16857.0, 39336.0, 65230.0, 2463.0, 27353.0, 16191.0, 12258.0, 42377.0, 25607.0, 77450.0, 58732.0, 46426.0, 3...
+
+Getting the min, max and range for each variable:
+scala> for (v <- variables) yield { (v.min, v.max, v.max - v.min) }
+res1: scala.collection.immutable.IndexedSeq[(Double, Double, Double)] = Vector((0.0,91273.0,91273.0), (0.0,20.919349,20.919349), (0.001156,1.695517,1.694361))
+
+scala> val minMaxRange = for (v <- variables) yield { (v.min, v.max, v.max - v.min) }
+minMaxRange: scala.collection.immutable.IndexedSeq[(Double, Double, Double)] = Vector((0.0,91273.0,91273.0), (0.0,20.919349,20.919349), (0.001156,1.695517,1.694361))
+
+The returned Seq contains tuples with the min, max and range for each of the variables. 
+
+Now, I can compute the normalized values for each variable:
+
+scala> for (v <- variables) yield { v.map{ a => (a - v.min)/(v.max - v.min)}}
+res13: scala.collection.immutable.IndexedSeq[scala.collection.immutable.Vector[Double]] = Vector(Vector(0.15873259342850568, 0.2854294260076912, 0.8232007274878661, 0.4201023303715228, 0.7997217139789423, 0.3938514127945833, 0.46745477852157813, 0.7395067544618891, 0.3887568065035662, 0.5504585145661915, 0.6932499205679664, 0.061014757924030105, 0.5593329900408665, 0.8476986622549932, 0.4784876140808344, 0.6723127321332705, 0.7633473206753366, 0.1716717977934329, 0.3121185892870838, 0.0710724967953283, 0.41313422370251884, 0.24782794473721692, 0.31533969520011396, 0.21626329801803382, 0.40305457254609794, 0.06289921444457836, 0.31298412454942864, 0.07458941855751428, 0.4558960481193781, 0.4016631424408094, 0.47774259638666416, 0.16828634974198284, 0.6989580708424178, 0.11770183953633605...
+
+
+scala> val normalizedVariables = for (v <- variables) yield { v.map{ a => (a - v.min)/(v.max - v.min)}}
+normalizedVariables: scala.collection.immutable.IndexedSeq[scala.collection.immutable.Vector[Double]] = Vector(Vector(0.15873259342850568, 0.2854294260076912, 0.8232007274878661, 0.4201023303715228, 0.7997217139789423, 0.3938514127945833, 0.46745477852157813, 0.7395067544618891, 0.3887568065035662, 0.5504585145661915, 0.6932499205679664, 0.061014757924030105, 0.5593329900408665, 0.8476986622549932, 0.4784876140808344, 0.6723127321332705, 0.7633473206753366, 0.1716717977934329, 0.3121185892870838, 0.0710724967953283, 0.41313422370251884, 0.24782794473721692, 0.31533969520011396, 0.21626329801803382, 0.40305457254609794, 0.06289921444457836, 0.31298412454942864, 0.07458941855751428, 0.4558960481193781, 0.4016631424408094, 0.47774259638666416, 0.16828634974198284, 0.6989580708424178, 0.117...
+
+scala> val normalizedV1 = normalizedVariables(0)
+normalizedV1: scala.collection.immutable.Vector[Double] = Vector(0.15873259342850568, 0.2854294260076912, 0.8232007274878661, 0.4201023303715228, 0.7997217139789423, 0.3938514127945833, 0.46745477852157813, 0.7395067544618891, 0.3887568065035662, 0.5504585145661915, 0.6932499205679664, 0.061014757924030105, 0.5593329900408665, 0.8476986622549932, 0.4784876140808344, 0.6723127321332705, 0.7633473206753366, 0.1716717977934329, 0.3121185892870838, 0.0710724967953283, 0.41313422370251884, 0.24782794473721692, 0.31533969520011396, 0.21626329801803382, 0.40305457254609794, 0.06289921444457836, 0.31298412454942864, 0.07458941855751428, 0.4558960481193781, 0.4016631424408094, 0.47774259638666416, 0.16828634974198284, 0.6989580708424178, 0.11770183953633605, 0.7757825424824428, 0.788962781983719...
+
+scala> val normalizedV2 = normalizedVariables(1)
+normalizedV2: scala.collection.immutable.Vector[Double] = Vector(0.3419546659888891, 0.06892523280719681, 0.6284800736390028, 0.07982026591745278, 0.4848018932137898, 0.3265298552072533, 0.6346454184592456, 0.41261212287246607, 0.586689815251899, 0.17799301498340125, 0.40086711111325685, 0.23305863867943502, 0.2237210154101832, 0.731359756940811, 0.09032121410661488, 0.3593206461635111, 0.6806710380901433, 0.0, 0.5032926693846926, 0.1692339948054789, 0.1430040198669662, 0.2532519056878873, 0.3152011565943089, 0.13464854953182337, 0.5955375571199658, 0.0, 0.47652763955513144, 0.06524285244249235, 0.01101626059204806, 0.5671974782771682, 0.005758305385124556, 0.4084832658989532, 0.27996325315859494, 0.4620420071389411, 0.46745063625067873, 0.23580925008708445, 0.10594239811191065, 0.68384...
+
+scala> val normalizedV3 = normalizedVariables(2)
+normalizedV3: scala.collection.immutable.Vector[Double] = Vector(0.9872441587123406, 0.47449628503016766, 0.2524892865215854, 0.07857829588853851, 0.608960546188209, 0.7153351617512443, 0.3203119051961182, 0.4415363668073096, 0.8893600596331007, 0.4903093260527125, 0.9846360958497039, 0.4293665871676697, 0.36832056450779965, 0.19487877730896783, 0.11221162432326996, 0.7483694442919779, 0.1535546439041031, 0.7371681713637177, 0.7694275304967477, 0.4847414453000275, 0.49149148262973474, 0.3760414693208826, 0.10974756855239232, 0.9945064835651908, 0.3827171423327142, 0.976924043931606, 0.43088574394712814, 0.3771020461401082, 0.6792177109836688, 0.5203460183514611, 0.7972663440671733, 0.7904295483666115, 0.09375215789315265, 0.45885735094233165, 0.6391477377017059, 0.3723350572870834, 0.34...
+
+
+scala> normalizedVariables.map{ nv => Array(nv(0), nv(1), nv(2))}
+res15: scala.collection.immutable.IndexedSeq[Array[Double]] = Vector(Array(0.15873259342850568, 0.2854294260076912, 0.8232007274878661), Array(0.3419546659888891, 0.06892523280719681, 0.6284800736390028), Array(0.9872441587123406, 0.47449628503016766, 0.2524892865215854))
+//not the desired one
+
+scala> for (i <- 0 to (len-1)) yield { for (nv <- normalizedVariables) yield  (nv(i))}  
+res31: scala.collection.immutable.IndexedSeq[scala.collection.immutable.IndexedSeq[Double]] = Vector(Vector(0.15873259342850568, 0.3419546659888891, 0.9872441587123406), Vector(0.2854294260076912, 0.06892523280719681, 0.47449628503016766), Vector(0.8232007274878661, 0.6284800736390028, 0.2524892865215854))
+// still not entirely ok, not for all values
+
+
+scala> val len2 = normalizedVariables(0).length
+len2: Int = 999
+
+
+scala> for (i <- 0 to (len2-1)) yield { for (nv <- normalizedVariables) yield  (nv(i))}  
+res32: scala.collection.immutable.IndexedSeq[scala.collection.immutable.IndexedSeq[Double]] = Vector(Vector(0.15873259342850568, 0.3419546659888891, 0.9872441587123406), Vector(0.2854294260076912, 0.06892523280719681, 0.47449628503016766), Vector(0.8232007274878661, 0.6284800736390028, 0.2524892865215854), Vector(0.4201023303715228, 0.07982026591745278, 0.07857829588853851), Vector(0.7997217139789423, 0.4848018932137898, 0.608960546188209), Vector(0.3938514127945833, 0.3265298552072533, 0.7153351617512443), Vector(0.46745477852157813, 0.6346454184592456, 0.3203119051961182), Vector(0.7395067544618891, 0.41261212287246607, 0.4415363668073096), Vector(0.3887568065035662, 0.586689815251899, 0.8893600596331007), Vector(0.5504585145661915, 0.17799301498340125, 0.4903093260527125), Vector(0.6...
+//ok, this is it!
+
+scala> val normalizedDataMatrix = for (i <- 0 to (len2-1)) yield { for (nv <- normalizedVariables) yield  (nv(i))}  
+normalizedDataMatrix: scala.collection.immutable.IndexedSeq[scala.collection.immutable.IndexedSeq[Double]] = Vector(Vector(0.15873259342850568, 0.3419546659888891, 0.9872441587123406), Vector(0.2854294260076912, 0.06892523280719681, 0.47449628503016766), Vector(0.8232007274878661, 0.6284800736390028, 0.2524892865215854), Vector(0.4201023303715228, 0.07982026591745278, 0.07857829588853851), Vector(0.7997217139789423, 0.4848018932137898, 0.608960546188209), Vector(0.3938514127945833, 0.3265298552072533, 0.7153351617512443), Vector(0.46745477852157813, 0.6346454184592456, 0.3203119051961182), Vector(0.7395067544618891, 0.41261212287246607, 0.4415363668073096), Vector(0.3887568065035662, 0.586689815251899, 0.8893600596331007), Vector(0.5504585145661915, 0.17799301498340125, 0.49030932605271...
+
+scala> normalizedDataMatrix.map{ v => v.toArray}
+res35: scala.collection.immutable.IndexedSeq[Array[Double]] = Vector(Array(0.15873259342850568, 0.3419546659888891, 0.9872441587123406), Array(0.2854294260076912, 0.06892523280719681, 0.47449628503016766), Array(0.8232007274878661, 0.6284800736390028, 0.2524892865215854), Array(0.4201023303715228, 0.07982026591745278, 0.07857829588853851), Array(0.7997217139789423, 0.4848018932137898, 0.608960546188209), Array(0.3938514127945833, 0.3265298552072533, 0.7153351617512443), Array(0.46745477852157813, 0.6346454184592456, 0.3203119051961182), Array(0.7395067544618891, 0.41261212287246607, 0.4415363668073096), Array(0.3887568065035662, 0.586689815251899, 0.8893600596331007), Array(0.5504585145661915, 0.17799301498340125, 0.4903093260527125), Array(0.6932499205679664, 0.40086711111325685, 0.984...
+
+_____________________________________-
+
+Now, the function autoNorm() looks like:
+
+object AutoNorm {
+
+
+def autoNorm (dataMatrix : Vector[Array[Double]]) : Vector[Array[Double]] = {
+
+val len = dataMatrix(0).length
+val variables = for (i <- 0 to (len -1)) yield { for (a <- dataMatrix) yield a(i) }
+val normalizedVariables = for (v <- variables) yield { v.map{ a => (a - v.min)/(v.max - v.min)}}
+val minMaxRange = for (v <- variables) yield { (v.min, v.max, v.max - v.min) }
+val len2 = normalizedVariables(0).length
+val normalizedDataMatrix = for (i <- 0 to (len2-1)) yield { for (nv <- normalizedVariables) yield  (nv(i))}  
+val normalizedDataMatrix2 = normalizedDataMatrix.map{ v => v.toArray}.toVector
+
+normalizedDataMatrix2
+}
+
+
+}
+
+/* References:
+
+Harrington Peter 2012 - "Machine learning in action", Manning Publications Co., Shelter Island
+Odersky Martin, Spoon Lex, Venners Bill 2010 - "Programming in Scala", Second Edition, Artima, Walnut Creek
+
+*/
+
+_____________________________________________________
+
+I would like to add a testing framework for the kNN classifier. So next, I will develop the TestFrameWorkClassif object, found in TestFrameWorkClassif.scala. In its incipient stage it looks like this:
+
+/* In order to test the kNN classifier you can use the testFrameWorkClassif() function. The error rate is given by the total number of errors (misclassified observations) divied by the total number of tested observations. For testing the Try monadic collection, with its subtypes Success and Failure, will be used.  
+
+*/
+
+package com.mai.scalaML
+
+object TestFrameWorkClassif {
+
+import scala.util.Random._
+import scala.util.{Try, Success, Failure}
+// the shuffle function to shuffle the data first, and then take the first 30% of the obs. for the test set and get the error rate
+
+def testFrameWorkClassif ( ) : ... = {
+
+....
+
+}
+
+
+
+}
+
+/* References:
+
+Harrington Peter 2012 - "Machine learning in action", Manning Publications Co., Shelter Island
+Odersky Martin, Spoon Lex, Venners Bill 2010 - "Programming in Scala", Second Edition, Artima, Walnut Creek
+Bugnion Pascal 2016 - "Scala for Data Science", Packt Publishing, Birmingham
+Scala Standard Library 2.12.0 - scala.util.Try - http://www.scala-lang.org/api/2.12.0/scala/util/Try.html
+*/
+
+_______________________________________________________  
+
+Experimenting in REPL in order to get the way towards the solution for the testing framework:
+
+
+scala> import com.mai.scalaML.ReadFile._
+import com.mai.scalaML.ReadFile._
+
+scala> val path = "/home/roxana/Private/Literature/stats/Peter_Harrington/machinelearninginaction/Ch02/datingTestSet2.txt"
+path: String = /home/roxana/Private/Literature/stats/Peter_Harrington/machinelearninginaction/Ch02/datingTestSet2.txt
+
+scala> val myData = readFileClassif(path, "\t")
+myData: (Vector[Array[Double]], Vector[Int], Range) = (Vector(Array(14488.0, 7.153469, 1.673904), Array(26052.0, 1.441871, 0.805124), Array(75136.0, 13.147394, 0.428964), Array(38344.0, 1.669788, 0.134296), Array(72993.0, 10.14174, 1.032955), Array(35948.0, 6.830792, 1.213192), Array(42666.0, 13.276369, 0.54388), Array(67497.0, 8.631577, 0.749278), Array(35483.0, 12.273169, 1.508053), Array(50242.0, 3.723498, 0.831917), Array(63275.0, 8.385879, 1.669485), Array(5569.0, 4.875435, 0.728658), Array(51052.0, 4.680098, 0.625224), Array(77372.0, 15.29957, 0.331351), Array(43673.0, 1.889461, 0.191283), Array(61364.0, 7.516754, 1.269164), Array(69673.0, 14.239195, 0.261333), Array(15669.0, 0.0, 1.250185), Array(28488.0, 10.528555, 1.304844), Array(6487.0, 3.540265, 0.822483), Array(37708.0, 2.9...
+
+scala> val dataMatrix = myData._1
+dataMatrix: Vector[Array[Double]] = Vector(Array(14488.0, 7.153469, 1.673904), Array(26052.0, 1.441871, 0.805124), Array(75136.0, 13.147394, 0.428964), Array(38344.0, 1.669788, 0.134296), Array(72993.0, 10.14174, 1.032955), Array(35948.0, 6.830792, 1.213192), Array(42666.0, 13.276369, 0.54388), Array(67497.0, 8.631577, 0.749278), Array(35483.0, 12.273169, 1.508053), Array(50242.0, 3.723498, 0.831917), Array(63275.0, 8.385879, 1.669485), Array(5569.0, 4.875435, 0.728658), Array(51052.0, 4.680098, 0.625224), Array(77372.0, 15.29957, 0.331351), Array(43673.0, 1.889461, 0.191283), Array(61364.0, 7.516754, 1.269164), Array(69673.0, 14.239195, 0.261333), Array(15669.0, 0.0, 1.250185), Array(28488.0, 10.528555, 1.304844), Array(6487.0, 3.540265, 0.822483), Array(37708.0, 2.991551, 0.83392), Ar...
+
+scala> val dataLabels = myData._2
+dataLabels: Vector[Int] = Vector(2, 1, 1, 1, 1, 3, 3, 1, 3, 1, 1, 2, 1, 1, 1, 1, 1, 2, 3, 2, 1, 2, 3, 2, 3, 2, 3, 2, 1, 3, 1, 3, 1, 2, 1, 1, 2, 3, 3, 1, 2, 3, 3, 3, 1, 1, 1, 1, 2, 2, 1, 3, 2, 2, 2, 2, 3, 1, 2, 1, 2, 2, 2, 2, 2, 3, 2, 3, 1, 2, 3, 2, 2, 1, 3, 1, 1, 3, 3, 1, 2, 3, 1, 3, 1, 2, 2, 1, 1, 3, 3, 1, 2, 1, 3, 3, 2, 1, 1, 3, 1, 2, 3, 3, 2, 3, 3, 1, 2, 3, 2, 1, 3, 1, 2, 1, 1, 2, 3, 2, 3, 2, 3, 2, 1, 3, 3, 3, 1, 3, 2, 2, 3, 1, 3, 3, 3, 1, 3, 1, 1, 3, 3, 2, 3, 3, 1, 2, 3, 2, 2, 3, 3, 3, 1, 2, 2, 1, 1, 3, 2, 3, 3, 1, 2, 1, 3, 1, 2, 3, 2, 3, 1, 1, 1, 3, 2, 3, 1, 3, 2, 1, 3, 2, 2, 3, 2, 3, 2, 1, 1, 3, 1, 3, 2, 2, 2, 3, 2, 2, 1, 2, 2, 3, 1, 3, 3, 2, 1, 1, 1, 2, 1, 3, 3, 3, 3, 2, 1, 1, 1, 2, 3, 2, 1, 3, 1, 3, 2, 2, 3, 1, 3, 1, 1, 2, 1, 2, 2, 1, 3, 1, 3, 2, 3, 1, 2, 3, 1, 1, 1, 1, 2, 3, 2,...
+  
+scala> val dataPlusLables = dataMatrix.zip(dataLabels)
+dataPlusLables: scala.collection.immutable.Vector[(Array[Double], Int)] = Vector((Array(14488.0, 7.153469, 1.673904),2), (Array(26052.0, 1.441871, 0.805124),1), (Array(75136.0, 13.147394, 0.428964),1), (Array(38344.0, 1.669788, 0.134296),1), (Array(72993.0, 10.14174, 1.032955),1), (Array(35948.0, 6.830792, 1.213192),3), (Array(42666.0, 13.276369, 0.54388),3), (Array(67497.0, 8.631577, 0.749278),1), (Array(35483.0, 12.273169, 1.508053),3), (Array(50242.0, 3.723498, 0.831917),1), (Array(63275.0, 8.385879, 1.669485),1), (Array(5569.0, 4.875435, 0.728658),2), (Array(51052.0, 4.680098, 0.625224),1), (Array(77372.0, 15.29957, 0.331351),1), (Array(43673.0, 1.889461, 0.191283),1), (Array(61364.0, 7.516754, 1.269164),1), (Array(69673.0, 14.239195, 0.261333),1), (Array(15669.0, 0.0, 1.250185),2),...
+//for reshuffling reasons I've zipped the data with the labels
+
+scala> import scala.util.Random._
+import scala.util.Random._
+  
+scala> val shuffledDataPlusLabels = shuffle(dataPlusLables)
+shuffledDataPlusLabels: scala.collection.immutable.Vector[(Array[Double], Int)] = Vector((Array(40328.0, 0.0, 0.816676),1), (Array(18983.0, 10.448091, 0.267652),3), (Array(17591.0, 7.875477, 0.227085),2), (Array(42776.0, 11.309897, 0.086291),3), (Array(36642.0, 3.14931, 0.639669),1), (Array(26501.0, 11.573696, 1.061347),3), (Array(38889.0, 3.356646, 0.32423),1), (Array(7055.0, 0.0, 0.802985),2), (Array(67671.0, 7.156949, 1.691682),1), (Array(39808.0, 10.839526, 0.836323),3), (Array(81046.0, 15.833048, 1.568245),1), (Array(75039.0, 7.686054, 1.381455),1), (Array(9824.0, 8.426781, 0.202558),2), (Array(25862.0, 4.425992, 1.363842),1), (Array(9875.0, 0.0, 1.496715),2), (Array(2299.0, 3.733617, 0.698269),2), (Array(36768.0, 10.264062, 0.982593),3), (Array(77372.0, 15.29957, 0.331351),1), (Ar...
+
+Now, that I've shuffled the dataPlusLabels in a randomly chosen order, I can extract around 30% of the data. 
+
+scala> val len2 = shuffledDataPlusLabels.length
+len2: Int = 999
+
+
+So, 30% means 333 observations. 
+
+scala> val testAndClassSets = shuffledDataPlusLabels.splitAt(333)
+testAndClassSets: (scala.collection.immutable.Vector[(Array[Double], Int)], scala.collection.immutable.Vector[(Array[Double], Int)]) = (Vector((Array(40328.0, 0.0, 0.816676),1), (Array(18983.0, 10.448091, 0.267652),3), (Array(17591.0, 7.875477, 0.227085),2), (Array(42776.0, 11.309897, 0.086291),3), (Array(36642.0, 3.14931, 0.639669),1), (Array(26501.0, 11.573696, 1.061347),3), (Array(38889.0, 3.356646, 0.32423),1), (Array(7055.0, 0.0, 0.802985),2), (Array(67671.0, 7.156949, 1.691682),1), (Array(39808.0, 10.839526, 0.836323),3), (Array(81046.0, 15.833048, 1.568245),1), (Array(75039.0, 7.686054, 1.381455),1), (Array(9824.0, 8.426781, 0.202558),2), (Array(25862.0, 4.425992, 1.363842),1), (Array(9875.0, 0.0, 1.496715),2), (Array(2299.0, 3.733617, 0.698269),2), (Array(36768.0, 10.264062, 0.9...
+
+scala> val testDataSet = testAndClassSets._1
+testDataSet: scala.collection.immutable.Vector[(Array[Double], Int)] = Vector((Array(40328.0, 0.0, 0.816676),1), (Array(18983.0, 10.448091, 0.267652),3), (Array(17591.0, 7.875477, 0.227085),2), (Array(42776.0, 11.309897, 0.086291),3), (Array(36642.0, 3.14931, 0.639669),1), (Array(26501.0, 11.573696, 1.061347),3), (Array(38889.0, 3.356646, 0.32423),1), (Array(7055.0, 0.0, 0.802985),2), (Array(67671.0, 7.156949, 1.691682),1), (Array(39808.0, 10.839526, 0.836323),3), (Array(81046.0, 15.833048, 1.568245),1), (Array(75039.0, 7.686054, 1.381455),1), (Array(9824.0, 8.426781, 0.202558),2), (Array(25862.0, 4.425992, 1.363842),1), (Array(9875.0, 0.0, 1.496715),2), (Array(2299.0, 3.733617, 0.698269),2), (Array(36768.0, 10.264062, 0.982593),3), (Array(77372.0, 15.29957, 0.331351),1), (Array(8579.0,...
+
+scala> val classifDataSet = testAndClassSets._2
+classifDataSet: scala.collection.immutable.Vector[(Array[Double], Int)] = Vector((Array(11752.0, 5.580018, 0.158401),2), (Array(55807.0, 3.213631, 0.432044),1), (Array(17262.0, 2.540946, 1.583286),2), (Array(59016.0, 1.96557, 0.005697),1), (Array(14402.0, 10.482619, 1.694972),2), (Array(2459.0, 0.0, 0.290218),2), (Array(20944.0, 4.194791, 0.235483),2), (Array(37885.0, 2.7288, 0.331502),1), (Array(63082.0, 9.183738, 0.01228),1), (Array(9517.0, 3.846162, 0.619968),2), (Array(17521.0, 0.0, 0.431468),2), (Array(5459.0, 7.871839, 0.717662),2), (Array(15560.0, 12.409743, 0.790295),3), (Array(6122.0, 9.751503, 1.18205),3), (Array(78727.0, 15.546043, 0.729742),1), (Array(37422.0, 11.029636, 0.505769),3), (Array(27353.0, 11.375155, 1.528626),3), (Array(25931.0, 8.765721, 0.152808),3), (Array(237...
+
+scala> classifDataSet.length
+res1: Int = 666
+
+scala> testDataSet.length
+res2: Int = 333
+
+ 
+Now, I will use the testDataSet to get the error rate!
+
+scala> val testDataMatrix = testDataSet.map { x => x._1}
+testDataMatrix: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(40328.0, 0.0, 0.816676), Array(18983.0, 10.448091, 0.267652), Array(17591.0, 7.875477, 0.227085), Array(42776.0, 11.309897, 0.086291), Array(36642.0, 3.14931, 0.639669), Array(26501.0, 11.573696, 1.061347), Array(38889.0, 3.356646, 0.32423), Array(7055.0, 0.0, 0.802985), Array(67671.0, 7.156949, 1.691682), Array(39808.0, 10.839526, 0.836323), Array(81046.0, 15.833048, 1.568245), Array(75039.0, 7.686054, 1.381455), Array(9824.0, 8.426781, 0.202558), Array(25862.0, 4.425992, 1.363842), Array(9875.0, 0.0, 1.496715), Array(2299.0, 3.733617, 0.698269), Array(36768.0, 10.264062, 0.982593), Array(77372.0, 15.29957, 0.331351), Array(8579.0, 1.933803, 1.374388), Array(64191.0, 8.342034, 1.388569), Array(6808.0, 1.364...
+
+scala> val testDataLabels = testDataSet.map {x => x._2}
+testDataLabels: scala.collection.immutable.Vector[Int] = Vector(1, 3, 2, 3, 1, 3, 1, 2, 1, 3, 1, 1, 2, 1, 2, 2, 3, 1, 2, 1, 2, 3, 1, 2, 2, 1, 2, 1, 2, 2, 1, 2, 2, 2, 2, 1, 3, 2, 1, 3, 2, 2, 3, 3, 2, 2, 1, 3, 1, 3, 2, 2, 2, 3, 2, 3, 1, 2, 3, 2, 3, 1, 3, 3, 2, 2, 1, 3, 3, 1, 2, 2, 2, 2, 1, 2, 1, 3, 3, 1, 2, 1, 2, 3, 1, 1, 3, 1, 2, 2, 3, 1, 3, 3, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 3, 2, 1, 3, 1, 1, 3, 2, 1, 2, 3, 2, 1, 2, 1, 2, 1, 2, 2, 3, 1, 2, 3, 2, 1, 3, 3, 1, 2, 3, 3, 2, 2, 1, 1, 2, 3, 3, 3, 2, 3, 3, 1, 3, 1, 2, 2, 3, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 2, 2, 2, 3, 3, 1, 3, 1, 3, 1, 1, 2, 1, 3, 2, 3, 2, 2, 2, 1, 1, 2, 2, 3, 1, 1, 3, 2, 1, 1, 3, 1, 2, 2, 1, 2, 1, 1, 2, 3, 3, 1, 2, 3, 3, 1, 2, 3, 2, 1, 1, 3, 1, 3, 3, 3, 1, 3, 3, 3, 3, 3, 2, 3, 3, 2, 2, 1, 3, 1, 2, 2, 3, 2, 3, 2, 1, 2, 3, 1, 2, 2, 1...
+
+scala> import com.mai.scalaML.kNN._
+import com.mai.scalaML.kNN._
+
+scala> val classesTest = myData._3
+classesTest: Range = Range(1, 2, 3)
+
+scala> val usedTestDataSet = new CreateData(testDataMatrix, testDataLabels, classesTest)
+usedTestDataSet: com.mai.scalaML.kNN.CreateData = CreateData(Vector([D@34558178, [D@eb533f6, [D@7f224f03, [D@2e566c3, [D@1a2379a6, [D@3daec397, [D@5099c976, [D@79636ed8, [D@780cc61b, [D@33f510f6, [D@2db9ad87, [D@4fce1346, [D@516c38ba, [D@4a05f0c1, [D@2a30a993, [D@155bdbb0, [D@25429849, [D@4024f7d8, [D@6ff7b27e, [D@24ba726b, [D@158b2665, [D@7276993b, [D@2040a149, [D@579eb600, [D@1bea0a98, [D@5d13e79f, [D@78fc5f9d, [D@5a70c834, [D@1105a728, [D@53689588, [D@49f228cf, [D@159f68ad, [D@299fa1d1, [D@3e4ca5bf, [D@66a056e9, [D@8149090, [D@5cd1396a, [D@76b1e12, [D@63981708, [D@4f248bfb, [D@1a6be11c, [D@45afe7cd, [D@66ac8827, [D@d3cbc5a, [D@489adfe0, [D@72b1d8b1, [D@70de8b70, [D@18e8275d, [D@6939e7f, [D@7a1bba4c, [D@7e9a2b74, [D@27112935, [D@3deb3bce, [D@1a052fe5, [D@35eb665a, [D@1b9db953, [D@7fcc...
+
+scala> val classifDataMatrix = classifDataSet.map{ x=> x._1}
+classifDataMatrix: scala.collection.immutable.Vector[Array[Double]] = Vector(Array(11752.0, 5.580018, 0.158401), Array(55807.0, 3.213631, 0.432044), Array(17262.0, 2.540946, 1.583286), Array(59016.0, 1.96557, 0.005697), Array(14402.0, 10.482619, 1.694972), Array(2459.0, 0.0, 0.290218), Array(20944.0, 4.194791, 0.235483), Array(37885.0, 2.7288, 0.331502), Array(63082.0, 9.183738, 0.01228), Array(9517.0, 3.846162, 0.619968), Array(17521.0, 0.0, 0.431468), Array(5459.0, 7.871839, 0.717662), Array(15560.0, 12.409743, 0.790295), Array(6122.0, 9.751503, 1.18205), Array(78727.0, 15.546043, 0.729742), Array(37422.0, 11.029636, 0.505769), Array(27353.0, 11.375155, 1.528626), Array(25931.0, 8.765721, 0.152808), Array(23762.0, 12.979069, 0.504068), Array(43673.0, 1.889461, 0.191283), Array(19251.0...
+
+scala> val classifDataLabels = classifDataSet.map{ x=> x._2}
+classifDataLabels: scala.collection.immutable.Vector[Int] = Vector(2, 1, 2, 1, 2, 2, 2, 1, 1, 2, 2, 2, 3, 3, 1, 3, 3, 3, 3, 1, 2, 2, 3, 3, 3, 1, 2, 3, 2, 3, 2, 2, 3, 2, 2, 2, 2, 3, 2, 3, 1, 2, 1, 3, 2, 1, 1, 1, 1, 1, 3, 1, 2, 3, 2, 2, 2, 3, 1, 2, 3, 3, 2, 2, 1, 1, 1, 3, 1, 1, 1, 3, 3, 2, 2, 3, 3, 2, 2, 1, 1, 3, 1, 1, 3, 3, 3, 2, 2, 3, 2, 3, 3, 1, 1, 1, 2, 3, 2, 3, 3, 2, 3, 1, 2, 1, 1, 2, 2, 2, 1, 2, 3, 2, 2, 1, 2, 1, 1, 1, 1, 3, 2, 3, 3, 3, 1, 3, 2, 1, 1, 2, 1, 3, 3, 3, 1, 2, 2, 1, 3, 1, 2, 2, 3, 1, 2, 1, 3, 1, 3, 3, 3, 3, 1, 2, 3, 2, 2, 3, 2, 1, 1, 1, 2, 3, 2, 1, 1, 3, 1, 1, 1, 3, 2, 3, 3, 2, 2, 2, 1, 3, 3, 1, 1, 2, 1, 2, 3, 1, 1, 3, 3, 2, 3, 2, 3, 2, 3, 2, 1, 3, 1, 1, 1, 3, 2, 1, 2, 3, 3, 2, 3, 2, 2, 1, 3, 1, 3, 1, 1, 2, 3, 2, 3, 1, 1, 3, 3, 1, 2, 2, 3, 3, 2, 1, 1, 1, 3, 3, 2, 1, 3, 1...
+
+scala> val usedClassifDataSet = new CreateData(classifDataMatrix, classifDataLabels, classesTest)
+usedClassifDataSet: com.mai.scalaML.kNN.CreateData = CreateData(Vector([D@1398c33a, [D@19db9ef1, [D@790b7937, [D@45e77d82, [D@1033e717, [D@55dadff6, [D@77bac6bb, [D@9cfaea3, [D@64bfbd2, [D@56da182, [D@2443208a, [D@508d2817, [D@9c1dcbf, [D@61481db4, [D@5c322667, [D@65c67066, [D@62657c45, [D@43e17800, [D@e2d7f05, [D@583e7be6, [D@1170a3f0, [D@5999e8a6, [D@3c2961c7, [D@1763ccef, [D@31892d0, [D@155286cd, [D@6202faf9, [D@6b8f46e2, [D@2c46c751, [D@2da358fa, [D@5803ba85, [D@492a5f31, [D@53cc750a, [D@649f9301, [D@210dda85, [D@3a45da42, [D@a118c25, [D@128e01fd, [D@5d1828db, [D@491b7ef0, [D@4f6db352, [D@2d8ec2ab, [D@314c7931, [D@23b26d16, [D@1e7bd11, [D@5aa7ac1c, [D@870d388, [D@381ad54d, [D@4a9f86a, [D@630973af, [D@6d6b00d5, [D@3b51088, [D@4894c23c, [D@6028448a, [D@55f09df2, [D@7eeaf694, [D@10015e...
+
+
+Now, I will use the two sets to finally get this error!
+
+
+scala> val resultsTestData = testDataMatrix.map{ x=> classifykNN(Vector(x), usedClassifDataSet, 3)} 
+resultsTestData: scala.collection.immutable.Vector[Int] = Vector(1, 2, 2, 2, 2, 1, 1, 2, 1, 2, 1, 1, 2, 2, 2, 2, 2, 1, 2, 1, 2, 1, 1, 2, 2, 1, 2, 1, 2, 2, 1, 2, 2, 2, 2, 1, 1, 2, 1, 1, 2, 2, 1, 2, 2, 2, 1, 1, 1, 1, 2, 2, 2, 1, 2, 1, 1, 2, 1, 2, 1, 1, 2, 1, 2, 2, 1, 2, 1, 1, 2, 2, 2, 2, 1, 2, 1, 1, 2, 1, 2, 1, 2, 1, 2, 2, 1, 1, 2, 2, 2, 1, 2, 1, 2, 2, 2, 2, 1, 1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 2, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 2, 1, 2, 2, 1, 1, 2, 1, 2, 1, 2, 1, 2, 1, 1, 1, 2, 2, 1, 1, 1, 2, 1, 2, 1, 1, 1, 2, 1, 2, 2, 2, 1, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 2, 2, 2, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 2, 1, 2, 2, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 2, 1, 2, 1, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 1, 1, 2, 2, ...
+
+Now, I have to compare the results with the true labels of the test data.
+
+scala> val errorRateTuple = resultsTestData.zip(testDataLabels)
+errorRateTuple: scala.collection.immutable.Vector[(Int, Int)] = Vector((1,1), (2,3), (2,2), (2,3), (2,1), (1,3), (1,1), (2,2), (1,1), (2,3), (1,1), (1,1), (2,2), (2,1), (2,2), (2,2), (2,3), (1,1), (2,2), (1,1), (2,2), (1,3), (1,1), (2,2), (2,2), (1,1), (2,2), (1,1), (2,2), (2,2), (1,1), (2,2), (2,2), (2,2), (2,2), (1,1), (1,3), (2,2), (1,1), (1,3), (2,2), (2,2), (1,3), (2,3), (2,2), (2,2), (1,1), (1,3), (1,1), (1,3), (2,2), (2,2), (2,2), (1,3), (2,2), (1,3), (1,1), (2,2), (1,3), (2,2), (1,3), (1,1), (2,3), (1,3), (2,2), (2,2), (1,1), (2,3), (1,3), (1,1), (2,2), (2,2), (2,2), (2,2), (1,1), (2,2), (1,1), (1,3), (2,3), (1,1), (2,2), (1,1), (2,2), (1,3), (2,1), (2,1), (1,3), (1,1), (2,2), (2,2), (2,3), (1,1), (2,3), (1,3), (2,2), (2,2), (2,2), (2,2), (1,1), (1,1), (1,1), (1,1), (2,1), (1,1)...
+
+
+scala> val errorRateMatch = errorRateTuple.map{ x => if (x._1 == x._2) 1; else 0}
+errorRateMatch: scala.collection.immutable.Vector[Int] = Vector(1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1...
+
+
+scala> val goodResults = errorRateMatch.count( _ == 1)
+goodResults: Int = 221
+
+scala> val wrongResults = errorRateMatch.count( _ ==0)
+wrongResults: Int = 112
+
+scala> val errorRate = wrongResults.toDouble/(testDataSet.length).toDouble
+errorRate: Double = 0.33633633633633636
+
+Ok, I haven't applied the Try monad as planned. But the error rate is there!
+I will now insert the pieces in the testFrameWorkClassif() function in the TestFrameWorkClassif.scala file:
+
+
+/* In order to test the kNN classifier you can use the testFrameWorkClassif() function. The error rate is given by the total number of errors (misclassified observations) divied by the total number of tested observations. The testFrameWorkClassif() function takes three parameters: the dataset of type [CreateData], a partition from 0 to 1, which indicates the proportion of test to total data (e.g. partition= 0.3 means 30% of the whole dataset) and an Int which indicates the number of k nearest neighbors used by the kNN classifier.   
+
+*/
+
+package com.mai.scalaML
+
+object TestFrameWorkClassif {
+
+import scala.util.Random._
+import com.mai.scalaML.kNN._
+
+def testFrameWorkClassif ( dataSet: CreateData, partition : Double, k :Int) : Double = {
+
+val dataMatrix = dataSet.dataMatrix
+val dataLabels = dataSet.dataLabels
+val dataPlusLabels = dataMatrix.zip(dataLabels)
+val shuffledDataPlusLabels = shuffle(dataPlusLabels)
+val lenDataSet = shuffledDataPlusLabels.length
+val testAndClassSets = shuffledDataPlusLabels.splitAt((lenDataSet.toDouble * partition).toInt)
+val testDataSet = testAndClassSets._1
+val classifDataSet = testAndClassSets._2
+val testDataMatrix = testDataSet.map{ x => x._1 }
+val testDataLabels = testDataSet.map{ x => x._2 }
+val classesTest = dataSet.classes
+val usedTestDataSet = new CreateData(testDataMatrix, testDataLabels, classesTest)
+val classifDataMatrix = classifDataSet.map{ x => x._1 }
+val classifDataLabels = classifDataSet.map{ x => x._2 }
+val usedClassifDataSet = new CreateData(classifDataMatrix, classifDataLabels, classesTest)
+val resultsTestData = testDataMatrix.map{ x => classifykNN(Vector(x), usedClassifDataSet, k) }
+val errorRateTuple = resultsTestData.zip(testDataLabels)
+val errorRateMatch = errorRateTuple.map{ x => if (x._1 == x._2) 1 ; else 0 }
+val goodResults = errorRateMatch.count( _ == 1)
+val wrongResults = errorRateMatch.count( _ == 0)
+val errorRate = wrongResults.toDouble / (testDataSet.length).toDouble
+errorRate 
+
+}
+
+}
+
+/* References:
+
+Harrington Peter 2012 - "Machine learning in action", Manning Publications Co., Shelter Island
+Odersky Martin, Spoon Lex, Venners Bill 2010 - "Programming in Scala", Second Edition, Artima, Walnut Creek
+Bugnion Pascal 2016 - "Scala for Data Science", Packt Publishing, Birmingham
+Scala Standard Library 2.12.0 -scala.util.Random - http://www.scala-lang.org/api/2.12.1/scala/util/Random.html
+*/
+
+_______________________________________________________
+
+I can now enjoy the summer holiday! And continue when I'm back mid August!
+
+________________________________________________________ 
+
+I would like to find out more about the field of ML in general so, I've started reading the paper of Tom Mitchell "The discipline of Machine Learning" (2006) and "Machine learning: trends, perspectives and prospects" (2015) (Jordan M.I., Mitchell, T.M.). The field of ML has grown to a variety of supervised and unsupervised algorithms. E.g. the supervised learning of classification and regression functions, i.e. learning some initially unknown function f: X -> Y given a set of labeled training examples {<xi, yi>} of inputs xi and outputs yi=f(xi). Algorithms like decision trees, decision forests, SVM, logistic regression, neural networks, kernel machines and  Bayesian classifiers may be used to estimate the function f from the data. Deep learning systems make use of gradient-based optimization algorithms to adjust parameters throughout a multilayered network based on errors at its output. 
+
+Unsupervised learning generally involves the analysis of unlabled data under assumptions about structural properties of the data. 
+Reinforcement learning uses training data that is intermediate between supervised and unsupervised learning. 
+Mixed types also exist.
+
+We can say that a machine learns with respect to a particular task T, performance metric P, and type of experience E, if the system reliably improves its performance P at task T, following experience E.  
+
+Two very informative papers indeed. I will try to work through the first chapters of Mitchell's book "Machine Learning". 
+
+Ch. 1 - Introduction
+
+ 
+- learn = improve automatically with experience
+- how to make computers learn => new levels of competence and customization
+
+
+Definition: A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.
+
+In general to have a well-defined learning problem, we must identify three features: the class of tasks, the measure of performance to be improved, and the source of experience.
+
+Designing a learning system
+
+- choosing the training experience:
+	- direct and indirect training examples
+	- the degree to which the learner controls the sequence of training examples (none to full control)
+	- how well it represents the distribution of examples over which the final system performance P must be measured.
+In general, learning is most relliable when the training examples follow a distribution similar to that of future test examples. Most current theory of ML rests on the crucial assumption that the distribution of training examples is identical to the distribution of test examples. 
+
+Example: A checkers learning problem
+Task T: playing checkers
+Performance measure P: percent of games won 
+Training experience E: games played against itself
+Needs further specification: the exact type of knowledge to be learned, a representation of this target knowledge, a learning mechanism
+
+- choosing the target function:
+	- type of knowledge to be learned and how this will be used by the performance program: specify the legal moves in order for the program to choose the best move among these legal moves.
+The legal moves which define some large search space are known a priori, but the best strategy is not known (e.g. optimization problems). So, we must learn to choose among these legal moves using a function called for example ChooseMove(). We use the notation ChooseMove : B -> M. We reduce the problem of improving performance P at task T to the problem of learning some particular traget function such as ChooseMove. Instead of ChooseMove we can use an evaluation function V:B -> R to denote that V maps any legal board state from the set B to some real value. We then define the target value V(b) for an arbitrary board state b in B as follows:
+final board state won => V(b) = 100 
+final board state lost => V(b) = -100
+final board state drawn => V(b) = 0
+not a final state => V(b) = V(b') i.e. searching ahead for the optimal line of play, all the way to the end of the game. 
+=> nonoperational definition of V!
+
+The goal of learning in this case is to discover an OPERATIONAL DESCRIPTION OF V. 
+V-hat is the function learned by the program, an approximation of the ideal target function V (function approximation). 
+
+The learning task is: discover an operational description of the ideal target function V.
+
+- choosing a representation for the target function
+
+- choosing a function approximation algorithm
+
+
+__________________________________________________________________________
+
+I'll come back to it at a later time. 
+Now I will try to implement the decision tree-building algorithm using the book of Peter Harrington "Machine Learning in Action" (2012)
+
+
+
+Decision trees
+
+
+- decide how to split the dataset using information theory
+- which feature is used to split the data? To determine this you try every feature and measure which split will give you the best results => split the data into subsets. Then you repeat the process for the subsets until you've classified all the data.
+- the ID3 algorithm will be used to tell us how to split the data and when to stop splitting it.
+
+We need some quantitative way of determining how to split the data. Using information theory, you can measure the information before and after the split. The CHANGE IN INFORMATION BEFORE AND AFTER THE SPLIT IS KNOWN AS THE INFORMATION GAIN. The split with the highest information gain is your best option.
+
+THE MEASURE OF INFORMATION OF A SET IS KNOWN AS THE SHANNON ENTROPY, OR JUST ENTROPY FOR SHORT.
+Entropy is defined as the expected value of the information. If you're classifying smth. that can take on multiple values, the information for xi is defined as:
+l(xi) = p(xi)log2 (1/p(xi)), where p(xi) is the probability of choosing this class. If you have n classes, you need the expected value of all the information of all possible classes for xi. This gives the entropy H =>  H IS A MEASURE OF THE AMOUNT OF UNCERTAINTY IN THE DATA SET S!
+
+H(S) = sum_across_all_classes_x(p(xi)log2(1/p(xi)))
+
+Now, I will write the code which will do the entropy calculations on a given dataset.
+Before I start I will read through the paper of Quinlan 1986 to clarify the terms and notations.
+
+____________________________________
+
+Induction of Decision Trees - Quinlan JR 1986
+
+The TDIDT family of learning systems:
+- general-purpose systems
+- applications that they address all involve classification
+- the product of learning is a piece of procedural knowledge that can assign an object to one of a specified number of disjoint classes (classification tasks are a subset of procedural taks)
+- their representation of acquired knowledge in the form of decision trees
+
+The underlying strategy is non-incremental learning from examples. The systems are presented with a set of cases, guided by the frequency information in the examples.
+The trees are constructed beginning with the root of the tree and proceeding down to its leaves (Top-Down Induction of decision trees). 
+
+A classification rule is developed, that can determine the class of any object from its values of the attributes. The classification rule will be expressed as a decision tree.
+
+ID3 embeds a tree-building method in an iterative outer shell.
+
+The induction task: 
+- we have a universe of objects/outcomes (Avi Pfeffer 2016) that are described in terms of a collection of attributes. Each attribute measures some important feature of an object and will be limited here to taking a (usually small) set of discrete, mutually exclusive values. Each object in the universe belongs to one of a set of mutually exclusive classes.
+
+Leaves in a decision tree are class names, other nodes represent attribute-based tests with a branch for each possible value.  
+
+ID3:
+- was designed for sets with many attributes and large training sets (30000 objects with 50 attributes)
+- its basic structure is iterative
+
+How to form a decision tree for an arbitrary collection C of objects?
+- If C is empty or contains only objects of one class, the simplest decision tree is just a leaf labelled with the class. 
+- Otherwise, let T be any test on an object with possible values V1, V2,..., Vp for its attributes 1 to p. The combinations of these values of the attributes result in possible worlds: W1, W2, ...., Wn (from 1 to n) (Pfeffer 2016). Each object in C will give one of these worlds for T, so T partitions C in C1 to Cn, each Ci containing those objects belonging to a world Wi, and having one of the outcome classes as leafs (e.g. P for "positive" or N for "negative" for a binary example).
+
+Choosing a test comes down to selecting an attribute for the root of the tree. ID3 adopts an information-based method that depends on two assumptions. Let C contain p objects of class P and n of class N. The assumptions are:
+
+(1) any correct decision tree for C will classify objects in the same proportion as their representation in C. An arbitrary object will be determined to belong to class P with probability p/(p+n) and to class N with probability n/(p+n). 
+
+(2) when a decision tree is used to classify an object, it returns a class. With the expected information to generate the choice of the class given by:
+
+I(p, n) = - p/(p+n)*log2(p/(p+n)) - n/(p+n)*log2(n/(p+n)), which is the formula for the entropy of a data set, i.e. H(s) from above.
+
+If an attribute A which is chosen as the root of the tree has values A1, A2,..., Ap (from 1 to p), it will partition C into C11, C12, ... C1p, where C1i contains those objects in C that have the value Ai of A. Let C1i contain pi objects of class P and ni objects of class N. The expected information required for the subtree for C1i is I(pi, ni). 
+
+ 
+
+ 
+ 
+   
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+ 
+
+
+
+
+
+
+
+

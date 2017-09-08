@@ -1,0 +1,22 @@
+References:
+
+https://plot.ly/scala/line-and-scatter/
+https://asidatascience.github.io/scala-plotly-client/latest/api/#co.theasi.plotly.package
+
+Using plotly in Scala
+
+Add the dependency to the SBT file:
+"co.theasi" %% "plotly" % "0.2.0"
+
+Then open REPL and type the commands for the first plotly plot:
+
+import co.theasi.plotly._
+val xs = (0.0 to 2.0 by 0.1)
+val ys = xs.map(x => x*x)
+val plot = Plot().withScatter(xs, ys)
+draw(plot, "my-first-plot")
+
+You can check the plot in the online account:
+https://plot.ly/~RoxanaTesileanu/1/
+
+

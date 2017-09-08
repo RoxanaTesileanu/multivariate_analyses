@@ -1,0 +1,16 @@
+Comparing distance and/or dissimilarity matrices
+
+- test whether two or more matrices are correlated with each other
+- example: compare the matrix of genetic distances between 10 villages to the matrix of geographic distances between the villages.
+- example: examine spatial structure when one matrix might be differences in response of experimental units and the other might be the actual physical distances between units
+
+Mantel's test is used for testing null hypotheses about correlations between matrices. 
+
+Other approaches:
+- using the Z statistic in Mantel's test instead of the correlation coefficient. Where Z is the sum of the products of the corresponding elements in the two matrices.
+- using the regression coeff. (slope) for elements in one matrix regressed against elements in the other matrix
+
+-example: McCue et al. (1996) correlated the matrix of Cavalli-Svorza genetic distances between the 8 subpopulations of a rare annual plant in California and the matrix of geographic distance between subpopulations.
+
+For more than two matrices we can use an analogue of the coefficient of multiple correlation (r^2) and partial correlations (using the partial Mantel's test).
+

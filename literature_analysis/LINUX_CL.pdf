@@ -1,0 +1,471 @@
+%!PS-Adobe-3.0
+%%Title: linuxCL.txt
+%%For: roxana
+%%Creator: VIM - Vi IMproved 7.4 (2013 Aug 10)
+%%CreationDate: Thu Aug 24 13:01:11 2017
+%%DocumentData: Clean8Bit
+%%Orientation: Portrait
+%%Pages: (atend)
+%%PageOrder: Ascend
+%%BoundingBox: 61 42 577 752
+%%DocumentMedia: letter 612 792 0 () ()
+%%DocumentNeededResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%DocumentSuppliedResources: procset VIM-Prolog 1.4 1
+%%+ encoding VIM-latin1 1.0 0
+%%Requirements: duplex collate
+%%EndComments
+%%BeginDefaults
+%%PageResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%PageMedia: letter
+%%EndDefaults
+%%BeginProlog
+%%BeginResource: procset VIM-Prolog
+%%BeginDocument: /usr/share/vim/vim74/print/prolog.ps
+%!PS-Adobe-3.0 Resource-ProcSet
+%%Title: VIM-Prolog
+%%Version: 1.4 1
+%%EndComments
+% Editing of this file is NOT RECOMMENDED.  You run a very good risk of causing
+% all PostScript printing from VIM failing if you do.  PostScript is not called
+% a write-only language for nothing!
+/packedarray where not{userdict begin/setpacking/pop load def/currentpacking
+false def end}{pop}ifelse/CP currentpacking def true setpacking
+/bd{bind def}bind def/ld{load def}bd/ed{exch def}bd/d/def ld
+/db{dict begin}bd/cde{currentdict end}bd
+/T true d/F false d
+/SO null d/sv{/SO save d}bd/re{SO restore}bd
+/L2 systemdict/languagelevel 2 copy known{get exec}{pop pop 1}ifelse 2 ge d
+/m/moveto ld/s/show ld /ms{m s}bd /g/setgray ld/r/setrgbcolor ld/sp{showpage}bd
+/gs/gsave ld/gr/grestore ld/cp/currentpoint ld
+/ul{gs UW setlinewidth cp UO add 2 copy newpath m 3 1 roll add exch lineto
+stroke gr}bd
+/bg{gs r cp BO add 4 -2 roll rectfill gr}bd
+/sl{90 rotate 0 exch translate}bd
+L2{
+/sspd{mark exch{setpagedevice}stopped cleartomark}bd
+/nc{1 db/NumCopies ed cde sspd}bd
+/sps{3 db/Orientation ed[3 1 roll]/PageSize ed/ImagingBBox null d cde sspd}bd
+/dt{2 db/Tumble ed/Duplex ed cde sspd}bd
+/c{1 db/Collate ed cde sspd}bd
+}{
+/nc{/#copies ed}bd
+/sps{statusdict/setpage get exec}bd
+/dt{statusdict/settumble 2 copy known{get exec}{pop pop pop}ifelse
+statusdict/setduplexmode 2 copy known{get exec}{pop pop pop}ifelse}bd
+/c{pop}bd
+}ifelse
+/ffs{findfont exch scalefont d}bd/sf{setfont}bd
+/ref{1 db findfont dup maxlength dict/NFD ed{exch dup/FID ne{exch NFD 3 1 roll
+put}{pop pop}ifelse}forall/Encoding findresource dup length 256 eq{NFD/Encoding
+3 -1 roll put}{pop}ifelse NFD dup/FontType get 3 ne{/CharStrings}{/CharProcs}
+ifelse 2 copy known{2 copy get dup maxlength dict copy[/questiondown/space]{2
+copy known{2 copy get 2 index/.notdef 3 -1 roll put pop exit}if pop}forall put
+}{pop pop}ifelse dup NFD/FontName 3 -1 roll put NFD definefont pop end}bd
+CP setpacking
+(\004)cvn{}bd
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%BeginResource: encoding VIM-latin1
+%%BeginDocument: /usr/share/vim/vim74/print/latin1.ps
+%!PS-Adobe-3.0 Resource-Encoding
+%%Title: VIM-latin1
+%%Version: 1.0 0
+%%EndComments
+/VIM-latin1[
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quotesingle
+/parenleft /parenright /asterisk /plus /comma /minus /period /slash
+/zero /one /two /three /four /five /six /seven
+/eight /nine /colon /semicolon /less /equal /greater /question
+/at /A /B /C /D /E /F /G
+/H /I /J /K /L /M /N /O
+/P /Q /R /S /T /U /V /W
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+/grave /a /b /c /d /e /f /g
+/h /i /j /k /l /m /n /o
+/p /q /r /s /t /u /v /w
+/x /y /z /braceleft /bar /braceright /asciitilde /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis]
+/Encoding defineresource pop
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%EndProlog
+%%BeginSetup
+612 792 0 sps
+1 nc
+T F dt
+T c
+%%IncludeResource: font Courier
+/_F0 /VIM-latin1 /Courier ref
+/F0 10 /_F0 ffs
+%%IncludeResource: font Courier-Bold
+/_F1 /VIM-latin1 /Courier-Bold ref
+/F1 10 /_F1 ffs
+%%IncludeResource: font Courier-Oblique
+/_F2 /VIM-latin1 /Courier-Oblique ref
+/F2 10 /_F2 ffs
+%%IncludeResource: font Courier-BoldOblique
+/_F3 /VIM-latin1 /Courier-BoldOblique ref
+/F3 10 /_F3 ffs
+/UO -1 d
+/UW 0.5 d
+/BO -2.5 d
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(linuxCL.txt                                                                     Page 1)61.2 744.9 ms
+F0 sf
+(Using Linux as a development platform for Scala projects )61.2 724.9 ms
+(Author: Roxana Tesileanu, INCDS, roxana.te@web.de)61.2 704.9 ms
+(References:     The Linux Command Line, William E. Shotts, Jr., 2009)61.2 674.9 ms
+(                The Linux Development Platform, Rafeeq Ur Rehman, Christopher Paul, 20)61.2 664.9 ms
+(03)61.2 654.9 ms
+(                VIM Tutor 1.7, Michael C. Pierce, Robert K. Ware \(started in the shell)61.2 644.9 ms
+( with the vimtutor command\) )61.2 634.9 ms
+(                vim-scala: Vim support for writing Scala code, Derek Wyatt, https://gi)61.2 624.9 ms
+(thub.com/derekwyatt/vim-scala)61.2 614.9 ms
+(                SBT in Action: the Simple Scala Build Tool, Joshua Suereth, Matthew Fa)61.2 604.9 ms
+(rwell, 2016)61.2 594.9 ms
+(                Learning Scala, Jason Swartz, 2015)61.2 584.9 ms
+(Components of a development system \(Rehman, Paul 2003, p.10\):)61.2 554.9 ms
+(- hardware platform)61.2 544.9 ms
+(- operating system)61.2 534.9 ms
+(- editors)61.2 524.9 ms
+(- compilers and assemblers)61.2 514.9 ms
+(- debuggers)61.2 504.9 ms
+(- version control system)61.2 494.9 ms
+(- bug tracking)61.2 484.9 ms
+( )61.2 474.9 ms
+(For the Scala projects developed on Linux as an operating system, working with SBT con)61.2 464.9 ms
+(denses the list of the above components, making the process of development more access)61.2 454.9 ms
+(ible, as it unites different steps in one tool \(compiling, building, testing and debug)61.2 444.9 ms
+(ging\). Another advantage of using SBT is the opportunity of working interactively in R)61.2 434.9 ms
+(EPL to develop bits of code which can be then inserted in the editor of choice, workin)61.2 424.9 ms
+(g from within the Linux command line.             )61.2 414.9 ms
+(Life cycle of a software development project \(Rehman, Paul 2003, p.2\):)61.2 394.9 ms
+(- requirement gathering)61.2 384.9 ms
+(- writing functional specifications)61.2 374.9 ms
+(- creating architecture and design documents)61.2 364.9 ms
+(- implementation and coding)61.2 354.9 ms
+(- testing and quality assurance)61.2 344.9 ms
+(- software release)61.2 334.9 ms
+(- documentation)61.2 324.9 ms
+(- support and new features)61.2 314.9 ms
+(Software development "is not just writing code". Each project starts with a requiremen)61.2 294.9 ms
+(t analysis which investigates the real-world need of the final product. Which function)61.2 284.9 ms
+(s should the new software carry in real-world problem solving within the specified dom)61.2 274.9 ms
+(ain? Functional specifications present the functionality of a software product at an a)61.2 264.9 ms
+(bstract level "defining its input/outpt behavior". Further, on the basis of the functi)61.2 254.9 ms
+(onal specifications, an architecture of the product is created. The architecture "defi)61.2 244.9 ms
+(nes the different components of the product and how they interact with each other", wi)61.2 234.9 ms
+(thout providing the explicit details on how they should be implemented to reach the de)61.2 224.9 ms
+(sired functionality. This happens at the design stage, when you create design document)61.2 214.9 ms
+(s which define each individual component to the level of functions and procedures. Usi)61.2 204.9 ms
+(ng the design documents and development tools \(SBT, editor\) the code is then implement)61.2 194.9 ms
+(ed and tested. Testing involves: unit testing \(testing one part or one component of th)61.2 184.9 ms
+(e product using test cases to test functionality of this part of the software\), sanity)61.2 174.9 ms
+( testing to check if all components compile, regression or stress testing to check the)61.2 164.9 ms
+( long-term behavior of the product when used continuously over a period of time, and f)61.2 154.9 ms
+(unctional testing using test cases built on functional specifications. If a bug \(an an)61.2 144.9 ms
+(omaly\) is found it must be reported and fixed. The documentation includes: technical d)61.2 134.9 ms
+(ocumentation developed during the development process, technical documentation prepare)61.2 124.9 ms
+(d for technical support staff, and end-user manuals and guides. The last stage of the )61.2 114.9 ms
+(life cycle of a software development project is the support and release of new version)61.2 104.9 ms
+(s depending on requirements.       )61.2 94.9 ms
+(A\) USING VIM AS AN EDITOR FOR THE SCALA CODE)61.2 64.9 ms
+(As an editor which can be used from within the command line, VIM can also be adapted t)61.2 44.9 ms
+re sp
+%%PageTrailer
+%%Page: 2 2
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(linuxCL.txt                                                                     Page 2)61.2 744.9 ms
+F0 sf
+(o support editing Scala code, after installing the vim-scala package of Derek Wyatt fo)61.2 724.9 ms
+(und at https://github.com/derekwyatt/vim-scala. You install vim under Linux using the )61.2 714.9 ms
+(package tools \(dpkg, apt-get, aptitude, rpm, yum, etc.\). Afterwards you open the comma)61.2 704.9 ms
+(nd line and launch vim by typing vim <ENTER>. )61.2 694.9 ms
+( )61.2 684.9 ms
+(- vim starts in command mode)61.2 674.9 ms
+(- change to insert mode with the "i" key)61.2 664.9 ms
+(- to exit insert mode and return to command mode, press the <ESC> key)61.2 654.9 ms
+(- save your changes with ":")61.2 644.9 ms
+(- to write the file to the hard drive we use ":w")61.2 634.9 ms
+(- to exit vim type ":wq" to save the changes, or ":q!" to trash all changes)61.2 624.9 ms
+(PRESSING <ESC> WILL PLACE YOU IN COMMAND MODE OR WILL CANCEL AN UNWANTED AND PARTIALLY)61.2 604.9 ms
+( COMPLETED COMMAND!)61.2 594.9 ms
+( )61.2 584.9 ms
+(Move the cursor with "l" \(right arrow\), "h" \(left arrow\), "j" down one line, "k" up on)61.2 574.9 ms
+(e line, "0" \(to the beginning of the current line\), "^" \(first non-white space of the )61.2 564.9 ms
+(line\), "$" \(the end of the current line, "C^-f" \(page down\), "C^-b" \(page up\), "number)61.2 554.9 ms
+(G" \(to line number, ex: 1G\), "G" the last line of the file, "gg" moves to the first li)61.2 544.9 ms
+(ne.)61.2 534.9 ms
+(Appending text: move the cursor to the end of the line and type "a". This will append )61.2 514.9 ms
+(text at the end of that line. Or use "A" to move to the end of the line and start appe)61.2 504.9 ms
+(nding.)61.2 494.9 ms
+(- you can use "o" to insert a line below the current line; and "O" to inser a line abo)61.2 484.9 ms
+(ve the current line)61.2 474.9 ms
+(    )61.2 464.9 ms
+(- undo changes by using "u")61.2 454.9 ms
+(- redo changes by using "C^r" )61.2 444.9 ms
+(Deleting text: )61.2 414.9 ms
+(- "x" will delete the current character; "3x" will delete the current and the next two)61.2 404.9 ms
+( characters)61.2 394.9 ms
+(- "dw" deletes the word,)61.2 384.9 ms
+(- "dd" deletes the current line, "6dd" deletes the current line and the next 5 lines )61.2 374.9 ms
+(- "dG" to the end of the file)61.2 364.9 ms
+(- "d20G" to the 20th line of the file)61.2 354.9 ms
+(- "d$" to the end of the current line)61.2 344.9 ms
+(- "d0" to the beginning of the line)61.2 334.9 ms
+(Cutting, copying, and pasting text: )61.2 314.9 ms
+(- the d commad also cuts text \(copies it into a paste buffer\) that we can later recall)61.2 304.9 ms
+( with the p command to paste the contents of the buffer after the cursor or the P comm)61.2 294.9 ms
+(and to paste the contents before the cursor)61.2 284.9 ms
+(- the "y" command \("yank" - copy\) to copy text: "yy" the current line, "6yy" the curre)61.2 274.9 ms
+(nt line and the next 4 lines, "y$" to the end of the current line, "y0" to the beginni)61.2 264.9 ms
+(ng of the line, "yG" from the end of the line to the end of the file, "y20G" from the )61.2 254.9 ms
+(current line to the 20th line of the file)61.2 244.9 ms
+(- the change operator "c" allows you to change from the cursor to where the motion tak)61.2 234.9 ms
+(es you \(ce - to the end of the word, c$ to the end of the line\).)61.2 224.9 ms
+(- joining lines with "J" )61.2 214.9 ms
+(Search and replace: move the cursor to locations based on searches. vim can also perfo)61.2 194.9 ms
+(rm replacements.)61.2 184.9 ms
+(- searching within a line: "f" searches a line and moves the cursor to the next instan)61.2 174.9 ms
+(ce of a specified character. Ex: "fa" will move the cursor to the next occurence of "a)61.2 164.9 ms
+(". The search may be repeated by typing a semicolon. You can also use the substitute c)61.2 154.9 ms
+(ommand for a line: ":s/thee/the <ENTER>" to substitute the FIRST OCCURRENCE of the sea)61.2 144.9 ms
+(rched word. )61.2 134.9 ms
+(The ":#,#s/old/new/g" command replaces old with new within a range of lines.)61.2 124.9 ms
+(- search the entire file: use "/" followed by the searched word and the Enter key and )61.2 114.9 ms
+(repeat the search using the previous search with the "n" command. )61.2 104.9 ms
+(- global search and replace: substitution over a range of lines or the entire file: ":)61.2 94.9 ms
+(%s/line/LINE/g" \(g stands for global, i.e. the subst. is performed on every instance o)61.2 84.9 ms
+(f the search string\); to change the file back to its previous form type ":%s/line/LINE)61.2 74.9 ms
+(/gc"  )61.2 64.9 ms
+(- you can search using the 'ic' option by entering: ":set ic" \(it will find also combi)61.2 54.9 ms
+(nations with capitals\). To disable ignoring case enter: ":set noic".)61.2 44.9 ms
+re sp
+%%PageTrailer
+%%Page: 3 3
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(linuxCL.txt                                                                     Page 3)61.2 744.9 ms
+F0 sf
+(- you can also enable the 'is'\(":set is"\) option which shows partial matches for a sea)61.2 724.9 ms
+(rch phrase. You can diasble it with ":set nois". )61.2 714.9 ms
+(TYPING ":set xxx" SETS THE OPTION 'xxx'. )61.2 694.9 ms
+(PREPEND "no" TO SET AN OPTION OFF \(":set noxxx"\))61.2 684.9 ms
+(Editing multiple files:)61.2 664.9 ms
+(- vim file1 file2 file3...)61.2 654.9 ms
+(- switch betw. files: ":n" and ":N" to switch back)61.2 644.9 ms
+(- ":buffers" displays a list of files being edited)61.2 634.9 ms
+(- you can perform switching with ":buffer 2" to switch to file 2)61.2 624.9 ms
+(  )61.2 614.9 ms
+(Opening additional files:)61.2 604.9 ms
+(- to add an additional file use the ":e your_file_name" command)61.2 594.9 ms
+(- then check the files open with ":buffers")61.2 584.9 ms
+(- you can only switch with "buffer no.")61.2 574.9 ms
+(Copying content from one file into another:)61.2 554.9 ms
+(- copy with yank, swich with buffer and paste with p)61.2 544.9 ms
+(  )61.2 534.9 ms
+(Inserting an entire file into another \(retrieving and merging files\):)61.2 524.9 ms
+(- while you are in the current file use the command ":r other_file_to_be_inserted_in_t)61.2 514.9 ms
+(he_current")61.2 504.9 ms
+( )61.2 494.9 ms
+(Printing:)61.2 484.9 ms
+(- ":ha" and the file is sent to the default printer)61.2 474.9 ms
+(- ":[range]ha[rdcopy][!] [arguments]" )61.2 464.9 ms
+(- ":[range]ha[rdcopy][!] > {filename} to print to another file)61.2 454.9 ms
+(Matching parantheses:)61.2 434.9 ms
+(- find the corresponding paranthesis or bracket with "%" \(move the cursor on the first)61.2 424.9 ms
+( paranthesis or bracket then type %\). This command is useful in debugging a program wi)61.2 414.9 ms
+(th unmatched parantheses!)61.2 404.9 ms
+(Executing an external command:)61.2 384.9 ms
+(- type ":!" to place you in command-line mode, then type and execute any external shel)61.2 374.9 ms
+(l command)61.2 364.9 ms
+(- for ex. ":! ls <ENTER>" to execute the ls command. )61.2 354.9 ms
+(Selecting text to write:)61.2 334.9 ms
+(- type v to place you in visual mode, and move the cursor to the end line of your sele)61.2 324.9 ms
+(ction. The selected text will be highlighted. )61.2 314.9 ms
+(- then press the ":" and at the bottom of the screen ":'<,>'" will appear, this indica)61.2 304.9 ms
+(tesyou've selected smth.. Then, complete the command with "w TEST <ENTER>", to write t)61.2 294.9 ms
+(he selection to the file named TEST. )61.2 284.9 ms
+(You can use the selection in visual mode with other operators too \(d deletes the text,)61.2 264.9 ms
+( y yanks the text\). )61.2 254.9 ms
+(Replace mode:)61.2 234.9 ms
+(- enter the replace mode by typing "R", and leave it with <ESC>. In replace mode every)61.2 224.9 ms
+( typed character deletes an existing character.)61.2 214.9 ms
+(Getting help:)61.2 194.9 ms
+(- type ":help <ENTER>")61.2 184.9 ms
+(- type ^W ^W to jump from one window to another and :q<ENTER> to close the help window)61.2 174.9 ms
+(.)61.2 164.9 ms
+(- type ":help some_command" to find out more on a particular command.)61.2 154.9 ms
+(- type ":help user-manual" to get to the user manual.)61.2 144.9 ms
+(Autocompletion:)61.2 124.9 ms
+(- when starting a ":" command you can use the autocompletion with ^D)61.2 114.9 ms
+(B\) USING SBT )61.2 84.9 ms
+(- installing SBT)61.2 64.9 ms
+(- creating a Scala project)61.2 54.9 ms
+(- some SBT basic tasks \(console, compile, reload, a.o\))61.2 44.9 ms
+re sp
+%%PageTrailer
+%%Page: 4 4
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(linuxCL.txt                                                                     Page 4)61.2 744.9 ms
+F0 sf
+(Installing SBT)61.2 714.9 ms
+(You can use the Scala REPL either directly from within the command-line initiating a R)61.2 704.9 ms
+(EPL sesssion with the command "$ scala", or by lauching a SBT-session with the command)61.2 694.9 ms
+( "$sbt" and then from within SBT launch the Scala REPL using the command "> console". )61.2 684.9 ms
+(On Ubuntu you can install the Scala language using the apt command \("$ sudo apt instal)61.2 674.9 ms
+(l scala"\) with no additional commands. Check the package management tool you use to ge)61.2 664.9 ms
+(t the same result. You can open the Scala REPL and type in some commands. For guidance)61.2 654.9 ms
+( check the book of Jason Swartz, "Learning Scala" for a great introduction to the Scal)61.2 644.9 ms
+(a language. )61.2 634.9 ms
+(Installing SBT requires a look at the SBT homepage in order to get the four commands n)61.2 624.9 ms
+(eeded to install it using the command-line. At the time the present document is writte)61.2 614.9 ms
+(n the commands for Ubuntu  are:)61.2 604.9 ms
+($ echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d)61.2 584.9 ms
+(/sbt.list)61.2 574.9 ms
+($ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B)61.2 564.9 ms
+(2DF73499E82A75642AC823)61.2 554.9 ms
+($ sudo apt-get update)61.2 544.9 ms
+($ sudo apt-get install sbt)61.2 534.9 ms
+(If you are using rpm distributions visit the download page http://www.scala-sbt.org/do)61.2 514.9 ms
+(wnload.html. )61.2 504.9 ms
+(Next, open a Scala REPL session in SBT using the commands introduced at the beginning )61.2 484.9 ms
+(of this section and type in some commands. You exit the console with <C^d>and a second)61.2 474.9 ms
+( <C^d> will get you out of the SBT and back to the command-line \(which can also be clo)61.2 464.9 ms
+(sed with <C^d>\). )61.2 454.9 ms
+( )61.2 444.9 ms
+(Creating a Scala project)61.2 414.9 ms
+(In this section we will create a Scala project called Scala_Playground in order to con)61.2 404.9 ms
+(tinue the playground series of Linux introductions started by William Shotts in his bo)61.2 394.9 ms
+(ok "The Linux Command Line". )61.2 384.9 ms
+(Open the terminal with <C^-ALT-T>. It starts directly in your home directory. Next, cr)61.2 364.9 ms
+(eate a directory called Scala_Playground \("$ mkdir Scala_Playground <ENTER>"\). Check i)61.2 354.9 ms
+(f the directory was created with the command "$ls <ENTER>" which lists the contents of)61.2 344.9 ms
+( the directory in which you are placed. Further, switch to the Scala_Playground direct)61.2 334.9 ms
+(ory \("$ cd Scala_Playground"\) and create a part of the inner structure of the current )61.2 324.9 ms
+(directory by adding another directory called src with its subdirectory main, with its )61.2 314.9 ms
+(subdirectory scala. This is done with the command "$ mkdir -p src/main/scala" which cr)61.2 304.9 ms
+(eates the entire chain of directories.Check it with "$ls" and "$cd" commands, return t)61.2 294.9 ms
+(o the Scala_Playground directory with "cd - ". Next, in the Scala_Playground directory)61.2 284.9 ms
+(, create a second directory called project. The ls command should print now for the Sc)61.2 274.9 ms
+(ala_Playground two contents: project and src.  )61.2 264.9 ms
+(The final step in creating the Scala project is to create two files: one directly in t)61.2 254.9 ms
+(he Scala_Playground directory called build.sbt and the second in the Scala_Playground/)61.2 244.9 ms
+(project directory called build.properties. Open vim when you are in the Scala_playgrou)61.2 234.9 ms
+(nd/project directory and type in:)61.2 224.9 ms
+(sbt.version = 0.13.15 )61.2 204.9 ms
+(Go in the command mode with <ESC> and save the changes and give the open file a name: )61.2 184.9 ms
+(":w build.properties". Exit vim with ":q". )61.2 174.9 ms
+(THE build.properties FILE SETS THE VERSION OF SBT.)61.2 154.9 ms
+(Next, when you are in the Scala_Playground directory open vim and edit the basic setti)61.2 134.9 ms
+(ngs of the Scala project: project name, Scala version used, and the dependencies you n)61.2 124.9 ms
+(eed. For the moment we will ignore dependencies and create the basic Scala project. Ty)61.2 114.9 ms
+(pe in vim the following lines:)61.2 104.9 ms
+(name := "Scala_Playground")61.2 94.9 ms
+(scalaVersion := "2.11.10")61.2 84.9 ms
+(The above two lines are not in Scala, they are in SBT's own language.)61.2 74.9 ms
+(Now, get into the command line mode with <ESC> and save the changes and give the file )61.2 64.9 ms
+(the name build.sbt \(":w build.sbt"\). Exit vim with ":q".  )61.2 54.9 ms
+(You should now have three objects in the Scala_Playground directory: the build.sbt fil)61.2 44.9 ms
+re sp
+%%PageTrailer
+%%Page: 5 5
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(linuxCL.txt                                                                     Page 5)61.2 744.9 ms
+F0 sf
+(e, the project directory and the src directory. )61.2 724.9 ms
+(  )61.2 714.9 ms
+(You can now launch SBT while you are in the Scala_Playground directory using the"$ sbt)61.2 694.9 ms
+(" command. You can see the SBT's output as it uses the information from the two edited)61.2 684.9 ms
+( files and creates the desired Scala project. When the output is finished you get to s)61.2 674.9 ms
+(ee the SBT prompt ">". The project was created successfully. Now, launch the Scala REP)61.2 664.9 ms
+(L with the command "> console", when the REPL is open you get to see the Scala prompt )61.2 654.9 ms
+("scala>". You can type in some commands to see if it works. )61.2 644.9 ms
+(Type <C^d> to get back to SBT and a second <C^d> to get back to the command-line. )61.2 634.9 ms
+(You can see that the Scala_Playground directory has gained some additional directories)61.2 614.9 ms
+(: the Scala_Playground/target directory and the Scala_Playground/project/target direct)61.2 604.9 ms
+(ory. These are created by SBT when it creates the Scala project. )61.2 594.9 ms
+(In the src/main/scala directory you should place your Scala codes in form of scala fil)61.2 574.9 ms
+(es.   )61.2 564.9 ms
+(Some basic SBT tasks)61.2 544.9 ms
+(Open SBT. When you see the SBT prompt ">" type in your first SBT command: "help". This)61.2 534.9 ms
+( generates an output which you can use to get further information about SBT and about )61.2 524.9 ms
+(the configuration of your project \(command "about", command "settings"\). The command ")61.2 514.9 ms
+(reload" reloads the project in the current directory, which is useful after you've cha)61.2 504.9 ms
+(nged the settings or after you've changed the source files. It does the sanity check a)61.2 494.9 ms
+(s it compiles the source files and outputs the errors encountered in the compilation p)61.2 484.9 ms
+(rocess, accompanied by messages indicating possible reasons. It is very often helpful )61.2 474.9 ms
+(to try to read them in order to debug the code. )61.2 464.9 ms
+( )61.2 454.9 ms
+(The command "tasks" is also listed in the help output. The SBT tasks show much of the )61.2 444.9 ms
+(functions SBT can take over. Type in "tasks" and check the default list of SBT tasks: )61.2 434.9 ms
+(- starting the Scala REPL with the command "console")61.2 424.9 ms
+(- compile source files with the command "complile")61.2 414.9 ms
+(- run an application with the command "run" )61.2 404.9 ms
+(- tests the code executing all tests)61.2 394.9 ms
+(- and many more.)61.2 384.9 ms
+(For a detailed introduction in SBT you should check the SBT documentation at http://ww)61.2 364.9 ms
+(w.scala-sbt.org/documentation.html and read the book of Joshua Suereth and Matthew Far)61.2 354.9 ms
+(well "SBT in action: the Simple Scala Build Tool". )61.2 344.9 ms
+(    )61.2 324.9 ms
+re sp
+%%PageTrailer
+%%Trailer
+%%Pages: 5
+%%EOF
+

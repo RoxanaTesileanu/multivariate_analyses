@@ -1,0 +1,46 @@
+The QR-decomposition of a correlation matrix C (spectral decomposition)
+
+Notations:
+C - correlation matrix
+U - a p by p matrix with orthonormal columns (the columns are eigenvectors)
+U' - a transpose of U
+R - an invertible p by p upper triangular matrix
+L - a matrix with the eigenvalues on the diagonal
+
+The correlation matrix C can be decomposed in: 
+C = UR 
+
+From Theorem 2 (p. 289 Paul's Notes): 
+U'U = I (I of dimension p)
+
+Now we can write that:
+
+Cx = URx=b (where b is a column vector)
+
+From Theorem 3 (p. 291 Paul's Notes):
+Rx = U'b
+
+So, we can write:
+Cx = UU'b
+Because UU'=I, we can further write:
+Cx = Ib
+Now from Quinn and Keogh (2002, p. 407) we know:
+Ib = L, so that Cx = L (where x is the eigenvector of C associated with L).
+Thus, the correlation matrix C multiplyied with the eigenvector x gives the matrix with the eigenvalues on the diagonal L.
+It is a direct application of the definition of the characteristic equation of some matrix A (Paul's Notes, p. 311):
+λIx − Ax = 0 (λ - eigenvalues, I - identity matrix corresponding to the dimension of A)
+
+In short, the process decomposes the correlation matrix C to be able to find U (the matrix with eigenvectors as columns). Then, b (the vector of eigenvalues) is found by solving the eq. det(λI − A) = 0. Each eigenvalue has an associated eigenvector. 
+
+Suppose the eivenvalues and their associated egenvectors are known now. So, the matrix U is now known (the matrix with the eigenvectors as columns) and the eigenvalues on the diagonal of L are now known as well. If the eigenvectors are known, the scores for each object for each of the derived variables (components) used in multivariate analyses can now be computed (Quinn and Keough 2002, p. 408).   
+
+
+
+References:
+
+Dawkins P (2005): Notes on Linear Algebra, Paul's Math Notes, Lamar University, https://www.cs.cornell.edu/courses/cs485/2006sp/LinAlg_Complete.pdf
+Quinn G, Keough M (2002): Experimental design and data analysis for biologists, CUP
+
+
+
+

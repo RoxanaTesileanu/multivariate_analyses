@@ -1,0 +1,15 @@
+Principal components analysis (PCA)
+
+The components are extracted either by spectral decomposition or singular value decomposition depending on the matrix used. 
+We will have a z score for kth component for the ith object. There will be p components, but the first few summarize in general the most of the variation in the original variables. 
+
+Don't forget to do an analysis of residuals if you retain less than p components (which variables contribute to large Q-values)?
+You can use scaling/ordination plots to present the results.
+
+
+Correspondence analysis (CA)
+
+The main aim of CA is to summarize the lack of independence between objects and variables of a contingency table as a small no. of derived variables, sometimes called principal axes. The principal axes are obtained through SVD or spectral decomposition. Interpretation is similar to PCA.
+
+
+

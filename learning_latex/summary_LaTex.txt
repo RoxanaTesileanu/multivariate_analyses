@@ -1,0 +1,52 @@
+% Praeambel
+\documentclass{article} | {book} | etc.
+
+\title{my title}
+\data{ y-d-m }
+\author{my name}
+
+\usepackage{amsmath} | {graphics} | {verbatim} | {cite} | {biblatex} | {float} | [titletoc, toc, title]{appendix} | etc.
+
+
+% Hauptdokument
+
+\begin{document} ... \end{document}
+
+\pagenumbering{gobble} | {arabic} | {roman}
+
+\maketitle
+\newpage
+\newline | \\
+
+\tableofcontents
+\newpage
+
+\listoffigures
+\listoftables
+
+\section{ my section } | \subsection { my subsection } | \subsubsection { mysubsubsection}
+
+\paragraph{ my paragraph } | \subparagraph{ my sub paragraph}
+
+\cite{citation field} | \autocite[1]{citation field}
+
+\footnote{\label{footnote1}{...} 
+\ref{footnote1} 
+
+% zusaeztliche Umgebungen
+\begin{figure} ... \end{figure}
+
+\begin{equation} ... \end{equation}
+
+\begin{matrix} ... \end{matrix} (im Mathe-Modus)
+
+\begin{align} ... \end{align} (mit &-Zeichen zu dem =-Zeichen zu benuzten)
+
+\begin{appendices} ... \section{..} ... \section{...} ... \end{appendices} (here kann man auch Abb.- und Tabellenverzeichnisse eingefuegt werden)
+ 
+\begin{comment} ... \end{comment} | \iffalse ... \fi | %
+
+\begin{itemize} ... \item ... \item ... \end{itemize}
+
+\begin{enumerate} ... \item ... \item ... \end{enumerate}
+

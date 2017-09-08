@@ -1,0 +1,29 @@
+The QR decomposition of a raw data matrix Y (singular value decomposition)
+
+Notation:
+
+Y - the raw data matrix
+Z - matrix of eigenvectors of YY' 
+YY' - covariance matrix between objects
+U - matrix of eigenvectors of Y'Y
+Y'Y - covariance matrix between variables
+L - contains the eigenvalues (λI)
+
+
+The SVD of Y is:
+
+Y = ZL^1/2U' 
+
+
+The L was used in square root form because of the scaling needed because we are dealing with the original variables and not the covariances or correlations (Quinn and Keough 2002). 
+
+Z contains the eigenvectors of Y'Y which form the linear comninations for the principal component scores for objects scaled by the square root. 
+When you have extracted all the components you can rebuild the matrix of raw data (Quinn and Keough 2002). 
+
+The advantage of SVD is that it can be applied to association matrices that are not square (in correspondence analysis).
+
+
+References:
+
+Dawkins P (2005): Notes on Linear Algebra, Paul's Math Notes, Lamar University, https://www.cs.cornell.edu/courses/cs485/2006sp/LinAlg_Complete.pdf
+Quinn G, Keough M (2002): Experimental design and data analysis for biologists, CUP

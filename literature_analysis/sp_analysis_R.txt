@@ -1,0 +1,96 @@
+Applied Spatial Data Analysis with R
+Bivand, Pebesma, Gomez-Rubio 2008
+
+
+ch. 1: Introducing spatial data
+
+Handling spatial data in R:
+
+- the sp package: classes and methods that look like GIS data models (to GIS people) and also behave like data frames (to applied statisticians)
+- spatial data analysis is concerned with questions not directly answered by looking at the data themselves. Statistical inference reveals the processes that generate the observed data. 
+- sp package: classes and methods for POINTS, LINES, POLYGONS, and GRIDS.
+- for special tasks it might be efficient to combine R with Python to create a more efficient workflow. 
+
+Types of spatial data:
+- spatial data have spatial reference (coord. values and a system of reference for those values). One of the most frequently used combinations is: pairs of longitude/latitude decimal degree values combined with the WGS84 (World Geodetic System 84) representation of the Earth.
+- if spatial data include additional information like e.g. time, then time is called an attribute. Attributes are non-spatial information but are believed to exist for each spatial entity.
+- the purely spatial information of entities is represented by spatial data models: point, line, polygon, grid.
+Point: a single point location (GPS reading or geocoded address). VECTOR DATA MODEL
+Line: a set of ordered points, connected by straight line segments. VECTOR DATA MODEL
+Polygon: an area, marked by one or more enclosing lines, possibly containing holes. VECTOR DATA MODEL
+Grid: a collection of points or rectangular cells, organised in a regular lattice. RASTER DATA MODEL
+
+Vector data models represent entities as exactly as possible. A raster data model represents continuous surfaces. 
+
+The rPython package calls Python in R. Usage from RBloggers https://www.r-bloggers.com/calling-python-from-r-with-rpython/:
+
+library(rPython)
+ 
+# Load/run the main Python script
+python.load("myscript.py")
+# Getting the variable
+new_subs_data <- python.get("new_subs")
+head(new_subs_data)
+
+The gstat package provides a wide range of functions for univariate and multivariate geostatistics.
+The geoR and geoRglm contain functions for model-based geostatistics.
+The spBayes fits Gaussian univariate and multivariate models with MCMC.
+The spTimer (also Bayesian), spatially predict and temporarily forcast large amounts of space-time data.
+....and many more in the CRAN task view Analysis of Spatial Data.
+
+
+ch. 2: Classes for spatial data in R
+
+- use the str() function to inspect the general information about the structure of smth in the R workspace (when uncertain about it)
+- slots in class definitions: name and type of components (the representation of what the class contains)
+
+Spatial Objects 
+- objects of class Spatial with two slots: the bounding box (eastings and northings) and a CRS class object (CRS- coordinate referencec system)
+- the default value of a CRS object it NA 
+- use the getclass() function to return the complete definition of a class including slot names and types of their contents and known subclasses
+ (e.g. class spatial: known subclasses are SpatialPoints, SpatialLines, SpatialPolygons, SpatialPointsDataFrame, SpatialPixels, SpatialGrid, SpatialPixelsDataFrame, SpatialGridDataFrame, SpatialLinesDataFrame, SpatialPolygonsDataFrame)
+ - ok, I guess slots are equivalent to parameters in Scala. The class CRS for example has one parameter (projargs) of type String and this string should be a PROJ.4-format string describing the projection.
+
+Example: for geographical coordinates, the projection is "+proj=longlat", so:
+library(sp)
+
+mycrs <- CRS(projargs="+proj=longlat")
+m <- matrix(c(350, 85, 370, 95 ), ncol=2,  dimnames=list(NULL, c("min", "max")))
+m
+getClass("CRS") 
+mySpatialObj <- Spatial(bbox=m, proj4string = mycrs)
+
+
+R-Output
+
+> library(sp)
+> mycrs <- CRS(projargs="+proj=longlat")
+> m <- matrix(c(350, 85, 370, 95 ), ncol=2,  dimnames=list(NULL, c("min", "max")))
+> m
+     min max
+[1,] 350 370
+[2,]  85  95
+> getClass("CRS") 
+Class "CRS" [package "sp"]
+
+Slots:
+                
+Name:   projargs
+Class: character
+> mySpatialObj <- Spatial(bbox=m, proj4string = mycrs)
+> mySpatialObj
+An object of class "Spatial"
+Slot "bbox":
+     min max
+[1,] 350 370
+[2,]  85  95
+
+Slot "proj4string":
+CRS arguments: +proj=longlat +ellps=WGS84 
+
+_______________________________________
+
+The SpatialPoints class
+- the first subclass of the Spatial class
+
+

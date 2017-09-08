@@ -1,0 +1,17 @@
+R-mode and Q-mode analyses 
+
+A multivariate dataset can be analysed in two ways:
+- based on the association between variables: calculates scores for the derived variables (components) for each object, forms LINEAR COMBINATIONS OF VARIABLES => R-mode analysis
+- based on the dissimilarity or similarity measures between objects: the dissmilarity indices are calculated for every possible pair of objects; the derived variables are LINEAR COMBINATIONS OF THE OBJECTS => Q-mode analysis
+
+A data matrix of n rows by p variables is converted to:
+- a p by p MATRIX OF ASSOCIATIONS BETWEEN VARIABLES (R-mode analyses)
+
+OR
+
+- a n by n MATRIX OF DISSIMILARITIES BETWEEN OBJECTS (Q-mode analyses)
+
+
+Tips:
+Choose the dissimilarity measure that best represents biologically meaningful differences between objects!
+

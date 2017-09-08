@@ -1,0 +1,319 @@
+%!PS-Adobe-3.0
+%%Title: Intro_Latex.txt
+%%For: roxana
+%%Creator: VIM - Vi IMproved 7.4 (2013 Aug 10)
+%%CreationDate: Fri Aug 25 13:44:10 2017
+%%DocumentData: Clean8Bit
+%%Orientation: Portrait
+%%Pages: (atend)
+%%PageOrder: Ascend
+%%BoundingBox: 61 42 577 752
+%%DocumentMedia: letter 612 792 0 () ()
+%%DocumentNeededResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%DocumentSuppliedResources: procset VIM-Prolog 1.4 1
+%%+ encoding VIM-latin1 1.0 0
+%%Requirements: duplex collate
+%%EndComments
+%%BeginDefaults
+%%PageResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%PageMedia: letter
+%%EndDefaults
+%%BeginProlog
+%%BeginResource: procset VIM-Prolog
+%%BeginDocument: /usr/share/vim/vim74/print/prolog.ps
+%!PS-Adobe-3.0 Resource-ProcSet
+%%Title: VIM-Prolog
+%%Version: 1.4 1
+%%EndComments
+% Editing of this file is NOT RECOMMENDED.  You run a very good risk of causing
+% all PostScript printing from VIM failing if you do.  PostScript is not called
+% a write-only language for nothing!
+/packedarray where not{userdict begin/setpacking/pop load def/currentpacking
+false def end}{pop}ifelse/CP currentpacking def true setpacking
+/bd{bind def}bind def/ld{load def}bd/ed{exch def}bd/d/def ld
+/db{dict begin}bd/cde{currentdict end}bd
+/T true d/F false d
+/SO null d/sv{/SO save d}bd/re{SO restore}bd
+/L2 systemdict/languagelevel 2 copy known{get exec}{pop pop 1}ifelse 2 ge d
+/m/moveto ld/s/show ld /ms{m s}bd /g/setgray ld/r/setrgbcolor ld/sp{showpage}bd
+/gs/gsave ld/gr/grestore ld/cp/currentpoint ld
+/ul{gs UW setlinewidth cp UO add 2 copy newpath m 3 1 roll add exch lineto
+stroke gr}bd
+/bg{gs r cp BO add 4 -2 roll rectfill gr}bd
+/sl{90 rotate 0 exch translate}bd
+L2{
+/sspd{mark exch{setpagedevice}stopped cleartomark}bd
+/nc{1 db/NumCopies ed cde sspd}bd
+/sps{3 db/Orientation ed[3 1 roll]/PageSize ed/ImagingBBox null d cde sspd}bd
+/dt{2 db/Tumble ed/Duplex ed cde sspd}bd
+/c{1 db/Collate ed cde sspd}bd
+}{
+/nc{/#copies ed}bd
+/sps{statusdict/setpage get exec}bd
+/dt{statusdict/settumble 2 copy known{get exec}{pop pop pop}ifelse
+statusdict/setduplexmode 2 copy known{get exec}{pop pop pop}ifelse}bd
+/c{pop}bd
+}ifelse
+/ffs{findfont exch scalefont d}bd/sf{setfont}bd
+/ref{1 db findfont dup maxlength dict/NFD ed{exch dup/FID ne{exch NFD 3 1 roll
+put}{pop pop}ifelse}forall/Encoding findresource dup length 256 eq{NFD/Encoding
+3 -1 roll put}{pop}ifelse NFD dup/FontType get 3 ne{/CharStrings}{/CharProcs}
+ifelse 2 copy known{2 copy get dup maxlength dict copy[/questiondown/space]{2
+copy known{2 copy get 2 index/.notdef 3 -1 roll put pop exit}if pop}forall put
+}{pop pop}ifelse dup NFD/FontName 3 -1 roll put NFD definefont pop end}bd
+CP setpacking
+(\004)cvn{}bd
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%BeginResource: encoding VIM-latin1
+%%BeginDocument: /usr/share/vim/vim74/print/latin1.ps
+%!PS-Adobe-3.0 Resource-Encoding
+%%Title: VIM-latin1
+%%Version: 1.0 0
+%%EndComments
+/VIM-latin1[
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quotesingle
+/parenleft /parenright /asterisk /plus /comma /minus /period /slash
+/zero /one /two /three /four /five /six /seven
+/eight /nine /colon /semicolon /less /equal /greater /question
+/at /A /B /C /D /E /F /G
+/H /I /J /K /L /M /N /O
+/P /Q /R /S /T /U /V /W
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+/grave /a /b /c /d /e /f /g
+/h /i /j /k /l /m /n /o
+/p /q /r /s /t /u /v /w
+/x /y /z /braceleft /bar /braceright /asciitilde /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis]
+/Encoding defineresource pop
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%EndProlog
+%%BeginSetup
+612 792 0 sps
+1 nc
+T F dt
+T c
+%%IncludeResource: font Courier
+/_F0 /VIM-latin1 /Courier ref
+/F0 10 /_F0 ffs
+%%IncludeResource: font Courier-Bold
+/_F1 /VIM-latin1 /Courier-Bold ref
+/F1 10 /_F1 ffs
+%%IncludeResource: font Courier-Oblique
+/_F2 /VIM-latin1 /Courier-Oblique ref
+/F2 10 /_F2 ffs
+%%IncludeResource: font Courier-BoldOblique
+/_F3 /VIM-latin1 /Courier-BoldOblique ref
+/F3 10 /_F3 ffs
+/UO -1 d
+/UW 0.5 d
+/BO -2.5 d
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(Intro_Latex.txt                                                                 Page 1)61.2 744.9 ms
+F0 sf
+(www.latex-tutorial.com/de/tutorials/)61.2 724.9 ms
+(Schritt fuer Schritt Einfuehrung in LaTex)61.2 714.9 ms
+(A\) Installation:)61.2 694.9 ms
+(- $ sudo apt-get install texlive)61.2 684.9 ms
+(- im vim den Text schreiben und dann mit pdflatex kompilieren)61.2 674.9 ms
+(Grundlegende Struktur einer LaTex Datei:)61.2 654.9 ms
+(- man beginnt mit einer leeren .tex Datei, zu welcher nach und nach die LaTex Befehle )61.2 644.9 ms
+(hinzugefuegt werden)61.2 634.9 ms
+(- bevor das Dok betrachtet werden kann, muss es zuerst kompiliert werden \(d.h. es muss)61.2 624.9 ms
+( zunaechst eine .pdf Datei erstellt werden\).)61.2 614.9 ms
+(- Beispiel: )61.2 604.9 ms
+(        \\documentclass{article})61.2 594.9 ms
+(        \\begin{document})61.2 584.9 ms
+(        Hello world!)61.2 574.9 ms
+(        \\end{document})61.2 564.9 ms
+(- dann tut man kompilieren mit pdflatex: "$ pdflatex erstesLaTexDok.tex")61.2 554.9 ms
+(- man merkt die Seitennummer die automatisch aufgetacht ist durch die Dokumentenklasse)61.2 544.9 ms
+( article)61.2 534.9 ms
+(- Befehle beginnen mit einem Backslash "\\": "\\befehl{option}")61.2 524.9 ms
+(- man legt eine Umgebung fest mit "\\begin" und "\\end")61.2 514.9 ms
+(Es koennen mehrere Umgebungen definiert werden, aber es is zwingend erforderlich die d)61.2 494.9 ms
+(ocument Umgebung zu definieren!)61.2 484.9 ms
+(Beispiel einer Hierarchie:)61.2 464.9 ms
+(\\begin{document})61.2 454.9 ms
+(        begin{environment1})61.2 444.9 ms
+(                begin{environment2})61.2 434.9 ms
+(                end{environment2})61.2 424.9 ms
+(        end{environment1})61.2 414.9 ms
+(\\end{document})61.2 404.9 ms
+(Viele vordefinierte Umgebungen sind in Packeten erhalten, welche erst in das Dok einge)61.2 384.9 ms
+(bettet werden muessen.)61.2 374.9 ms
+(B\) Titelseite)61.2 354.9 ms
+(     )61.2 334.9 ms
+(\\documentclass{article})61.2 324.9 ms
+(\\title{Using Linux as a development platform for Scala projects})61.2 304.9 ms
+(\\date{2017-08-24})61.2 294.9 ms
+(\\author{Roxana Tesileanu, INCDS})61.2 284.9 ms
+(\\begin{document})61.2 264.9 ms
+(        \\maketitle)61.2 254.9 ms
+(        \\newpage)61.2 244.9 ms
+(1. Introduction)61.2 224.9 ms
+(The components of a development system are \(Rehman and Paul, 2003, p.10\):)61.2 204.9 ms
+(- hardware platform)61.2 194.9 ms
+(- operating system)61.2 184.9 ms
+(- editors )61.2 174.9 ms
+(- compilers and assemblers)61.2 164.9 ms
+(- debuggers)61.2 154.9 ms
+(- version control system)61.2 144.9 ms
+(- bug tracking)61.2 134.9 ms
+(.....)61.2 114.9 ms
+(  )61.2 94.9 ms
+(\\end{document})61.2 84.9 ms
+(Der Titel, das Datum und der Author sind nicht in der document Umgebung.)61.2 54.9 ms
+(Der Teil vor dem Hauptdokument wird in LaTex Praeambel gennant. )61.2 44.9 ms
+re sp
+%%PageTrailer
+%%Page: 2 2
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(Intro_Latex.txt                                                                 Page 2)61.2 744.9 ms
+F0 sf
+(Man schaltet die Seitennummerierung aus mit "\\pagenumbering{gobble}" und ein mit "\\pag)61.2 724.9 ms
+(enumbering{arabic}". Fuer Roemische Nummer gibt es "\\pagenumbering{roman}".)61.2 714.9 ms
+(C\) Strukturieren von Dokumenten: Hinzufuegen von Paragraphen und Abschnitten)61.2 694.9 ms
+(- Ueberschrifte formatieren und deren automatische Nummerierung durchfuehren)61.2 674.9 ms
+(- es gibt:)61.2 664.9 ms
+(        \\section{})61.2 654.9 ms
+(        \\subsection{})61.2 644.9 ms
+(        \\subsubsection{})61.2 634.9 ms
+(        \\paragraph{})61.2 624.9 ms
+(        \\subparagraph{})61.2 614.9 ms
+(- die Ueberschriften und Unterueberschrieften werden spaeter im automatisch generierte)61.2 604.9 ms
+(n Inhaltsverzeichnis im Dokument erscheinen.)61.2 594.9 ms
+(D\) Pakete erklaert: Hinzufuegen von LaTex-Funktionen)61.2 574.9 ms
+(- "\\usepackage{PAKAGENAME}" Direktive zur Praeambel hinzufuegen!)61.2 554.9 ms
+(- fuer Ubuntu kann man gleich texlive-full Installieren \("$ sudo apt-get install texli)61.2 544.9 ms
+(ve-full"\) um alle Packete zu erhalten.)61.2 534.9 ms
+(Verwendung von Umgebungen:)61.2 514.9 ms
+(- fuer mathematische Formeln gibt es eine Umgebung namens equation. Alles innerhalb di)61.2 504.9 ms
+(eser Umgebung wird im MATH MODE verarbeitet. Ausserdem werden Gleichungen fuer uns num)61.2 494.9 ms
+(meririert.)61.2 484.9 ms
+(Beispiel: )61.2 474.9 ms
+(\\begin{equation})61.2 464.9 ms
+(f\(x\) = x^2)61.2 454.9 ms
+(\\end{equation})61.2 444.9 ms
+(Einbinden von Paketen:)61.2 424.9 ms
+(Beispiel: )61.2 404.9 ms
+(\\usepackage{amsmath})61.2 394.9 ms
+(....)61.2 384.9 ms
+(\\begin{equation})61.2 374.9 ms
+(\\end{equation})61.2 364.9 ms
+(Packete fuegen die Unterstuezung fuer Bilder, Links, Literaturverzeichnisse und mehr h)61.2 344.9 ms
+(inzu.)61.2 334.9 ms
+(E\) Setzen von Mathematik in LaTex)61.2 314.9 ms
+(Gleichungen, Matrizen und Brueche)61.2 304.9 ms
+(- Formel direkt im Text einbetten: Formel mit "$" zu umgeben \(braucht man keine Umgebu)61.2 284.9 ms
+(ng festlegen, nur den $ Zeichen\):)61.2 274.9 ms
+(        Bsp.: This formula $f\(x\) = x^2$ is an example)61.2 264.9 ms
+(- die equation und align Umgebungen: die equation Umgebung ist fuer einzelne Gleichung)61.2 244.9 ms
+(en nuetzlich und die align Umgebung fuer mehrere Gleichungen, um sie z.B. auszurichten)61.2 234.9 ms
+(:)61.2 224.9 ms
+(\\documentclass{article})61.2 204.9 ms
+(\\usepackage{amsmath})61.2 194.9 ms
+(\\begin{document})61.2 174.9 ms
+(\\begin{equation*})61.2 154.9 ms
+(1+2=3)61.2 144.9 ms
+(\\end{equation*})61.2 134.9 ms
+(\\begin{align})61.2 114.9 ms
+(1+2 &= 3\\\\)61.2 104.9 ms
+(1 &= 3-2)61.2 94.9 ms
+(\\end{align})61.2 84.9 ms
+(\\end{document})61.2 64.9 ms
+(Die Gleichungen werden am &-Zeichen ausgerichtet.)61.2 44.9 ms
+re sp
+%%PageTrailer
+%%Page: 3 3
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(Intro_Latex.txt                                                                 Page 3)61.2 744.9 ms
+F0 sf
+(Der Asterisk * zeigt an, dass die Gleichungen nicht nummeriert werden sollen.)61.2 724.9 ms
+( )61.2 714.9 ms
+(ZEILENUMBRUCH IST "\\\\"!)61.2 704.9 ms
+( )61.2 694.9 ms
+(\\documentclass{article})61.2 684.9 ms
+(\\usepackage{amsmath})61.2 674.9 ms
+(\\begin{document})61.2 664.9 ms
+(\\begin{align})61.2 644.9 ms
+(f\(x\) &= x^2 \\\\)61.2 634.9 ms
+(g\(x\) &= \\frac{1}{x}\\\\)61.2 624.9 ms
+(F\(x\) &= \\int^a_b\\frac{1}{3}x^3)61.2 614.9 ms
+(\\end{align})61.2 604.9 ms
+(\\end{document})61.2 584.9 ms
+(Man kann Mathe-Befehle auch kombinieren:)61.2 564.9 ms
+(\\frac{1}{\\sqrt{x}})61.2 554.9 ms
+(Fuer MATRIZEN gibt es eine spezielle Umgebung! Sie kann nur im Mathe Modus verwendet w)61.2 534.9 ms
+(erden.)61.2 524.9 ms
+(\\begin{equation})61.2 504.9 ms
+(\\left[)61.2 494.9 ms
+(\\begin{matrix})61.2 484.9 ms
+(1 & 0 \\\\)61.2 474.9 ms
+(0 & 1 )61.2 464.9 ms
+(\\end{matrix})61.2 454.9 ms
+(\\right])61.2 444.9 ms
+(\\end{equation})61.2 434.9 ms
+(Dies funktioniert fuer andere Klammerformen auch und ist nicht auf Matrizen beschraenk)61.2 404.9 ms
+(t:)61.2 394.9 ms
+(\\left\(\\frac{1}{\\sqrt{x}}\\right\))61.2 384.9 ms
+(ES GIBT AUCH ZEICHEN FUER DAS GRIECHISCHE ALPHABET UND ANDERE MATHEMATISCHE ZEICHEN \(z)61.2 364.9 ms
+(.B. \\lambda\)!!)61.2 354.9 ms
+(F\) Hinzufuegen von Abbildungen)61.2 334.9 ms
+(Die eingebetteten Bilder werden automatisch indiziert und durchnummeriert. Um Bilder e)61.2 314.9 ms
+(inzubinden wird die figure Umgebung benutzt. Ausserdem muss das graphicx Paket eingebu)61.2 304.9 ms
+(nden werden.)61.2 294.9 ms
+( )61.2 254.9 ms
+re sp
+%%PageTrailer
+%%Trailer
+%%Pages: 3
+%%EOF
+
