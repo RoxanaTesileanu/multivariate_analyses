@@ -1,0 +1,8 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Running the kNN algorithm}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Basic vector operations}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Reading files for classification tasks}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{KNN classification function}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Testing framework}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{The learning pipeline for reducing error}{}% 7
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 8
