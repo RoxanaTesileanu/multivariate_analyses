@@ -1,5 +1,5 @@
 # multivariate_analyses
-Experimenting with multivariate analyses in R:
+Experimenting with Scala and R for multivariate analyses:
 
 - statistical theory from Quinn and Keough 2002 "Experimental design and data analysis for biologists", 
 
