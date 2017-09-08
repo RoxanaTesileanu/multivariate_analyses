@@ -3,46 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: formattedJMLR_Tesileanu.aux
 The style file: plainnat.bst
 Database file #1: formattedJMLR_Tesileanu.bib
-Warning--empty journal in jordan_machine_2015
 You've used 15 entries,
             2773 wiz_defined-function locations,
-            670 strings with 6730 characters,
-and the built_in function-call counts, 5429 in all, are:
-= -- 454
+            672 strings with 6887 characters,
+and the built_in function-call counts, 5444 in all, are:
+= -- 458
 > -- 265
 < -- 13
 + -- 94
 - -- 78
-* -- 372
-:= -- 860
-add.period$ -- 45
+* -- 374
+:= -- 864
+add.period$ -- 46
 call.type$ -- 15
 change.case$ -- 63
 chr.to.int$ -- 14
-cite$ -- 31
+cite$ -- 30
 duplicate$ -- 287
 empty$ -- 506
 format.name$ -- 105
-if$ -- 1133
+if$ -- 1137
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 21
-newline$ -- 82
+newline$ -- 83
 num.names$ -- 60
-pop$ -- 172
+pop$ -- 169
 preamble$ -- 1
 purify$ -- 56
 quote$ -- 0
 skip$ -- 209
 stack$ -- 0
 substring$ -- 105
-swap$ -- 17
+swap$ -- 18
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 120
-warning$ -- 1
+warning$ -- 0
 while$ -- 51
 width$ -- 0
-write$ -- 196
-(There was 1 warning)
+write$ -- 199

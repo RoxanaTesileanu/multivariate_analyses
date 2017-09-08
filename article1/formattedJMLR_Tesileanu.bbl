@@ -30,7 +30,7 @@ Trevor Hastie and Robert Tibshirani.
 \bibitem[Jordan and Mitchell(2015)]{jordan_machine_2015}
 M.~I. Jordan and T.~M. Mitchell.
 \newblock Machine learning: trends, perspectives, and prospects.
-\newblock 349\penalty0 (6245):\penalty0 255--260, July 2015.
+\newblock \emph{Science}, 349\penalty0 (6245):\penalty0 255--260, July 2015.
 
 \bibitem[Karau et~al.(2015)Karau, Konwinski, Wendell, and
   Zaharia]{karau_learning_2015}
@@ -68,6 +68,8 @@ Jason Swartz.
 Roxana Tesileanu.
 \newblock Introduction to statistical computing in {Scala}: an application of
   the k-{Nearest} {Neighbors} classifier, 2017{\natexlab{a}}.
+\newblock URL
+  \url{https://www.researchgate.net/publication/318815119_Introduction_to_statistical_computing_in_Scala_an_application_of_the_k-Nearest_Neighbors_classifier}.
 
 \bibitem[Tesileanu(2017{\natexlab{b}})]{tesileanu_using_2017}
 Roxana Tesileanu.
