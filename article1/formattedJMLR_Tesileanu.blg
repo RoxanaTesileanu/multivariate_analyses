@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: formattedJMLR_Tesileanu.aux
+The style file: plainnat.bst
+Database file #1: formattedJMLR_Tesileanu.bib
+Warning--to sort, need author or key in noauthor_scala_2003
+Warning--empty year in hastie_discriminant_nodate
+Warning--empty year in hastie_discriminant_nodate
+Warning--empty journal in jordan_machine_2015
+You've used 15 entries,
+            2773 wiz_defined-function locations,
+            669 strings with 6732 characters,
+and the built_in function-call counts, 5377 in all, are:
+= -- 451
+> -- 255
+< -- 12
++ -- 91
+- -- 75
+* -- 376
+:= -- 834
+add.period$ -- 44
+call.type$ -- 15
+change.case$ -- 62
+chr.to.int$ -- 14
+cite$ -- 35
+duplicate$ -- 287
+empty$ -- 509
+format.name$ -- 101
+if$ -- 1128
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 21
+newline$ -- 81
+num.names$ -- 56
+pop$ -- 177
+preamble$ -- 1
+purify$ -- 55
+quote$ -- 0
+skip$ -- 206
+stack$ -- 0
+substring$ -- 106
+swap$ -- 17
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 120
+warning$ -- 4
+while$ -- 48
+width$ -- 0
+write$ -- 193
+(There were 4 warnings)

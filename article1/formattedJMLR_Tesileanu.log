@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  8 SEP 2017 12:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  8 SEP 2017 12:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -210,20 +210,20 @@ LaTeX Warning: Unused global option(s):
 (./formattedJMLR_Tesileanu.aux)
 \openout1 = `formattedJMLR_Tesileanu.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -254,7 +254,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box27
-Package hyperref Info: Link coloring OFF on input line 6.
+Package hyperref Info: Link coloring OFF on input line 5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -264,180 +264,59 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count107
 )
-LaTeX Info: Redefining \ref on input line 6.
-LaTeX Info: Redefining \pageref on input line 6.
-LaTeX Info: Redefining \nameref on input line 6.
+LaTeX Info: Redefining \ref on input line 5.
+LaTeX Info: Redefining \pageref on input line 5.
+LaTeX Info: Redefining \nameref on input line 5.
 
 (./formattedJMLR_Tesileanu.out) (./formattedJMLR_Tesileanu.out)
 \@outlinefile=\write3
 \openout3 = `formattedJMLR_Tesileanu.out'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
   
  []
 
 
-Package natbib Warning: Citation `jordan_machine_2015' on page 1 undefined on i
-nput line 38.
-
-
-Package natbib Warning: Citation `jordan_machine_2015' on page 1 undefined on i
-nput line 40.
-
-
-Package natbib Warning: Citation `vatn_choices_1994' on page 1 undefined on inp
-ut line 40.
-
-
-Package natbib Warning: Citation `quinn_experimental_2002' on page 1 undefined 
-on input line 41.
-
-
-Package natbib Warning: Citation `harrington_machine_2012' on page 1 undefined 
-on input line 41.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--43
+Underfull \hbox (badness 10000) in paragraph at lines 37--42
 
  []
 
 
-Package natbib Warning: Citation `hastie_discriminant_nodate' on page 1 undefin
-ed on input line 46.
-
-
-Package natbib Warning: Citation `quinn_experimental_2002' on page 1 undefined 
-on input line 47.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--48
+Underfull \hbox (badness 10000) in paragraph at lines 44--47
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 48.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 47.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 48.
-LaTeX Font Info:    Try loading font information for U+msa on input line 48.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+LaTeX Font Info:    Try loading font information for U+msa on input line 47.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 48.
+LaTeX Font Info:    Try loading font information for U+msb on input line 47.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-
-Package natbib Warning: Citation `rehman_linux_2003' on page 2 undefined on inp
-ut line 54.
-
-
-Package natbib Warning: Citation `suereth_sbt_2016' on page 2 undefined on inpu
-t line 55.
-
-
-Package natbib Warning: Citation `tesileanu_using_2017' on page 2 undefined on 
-input line 56.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--58
+Underfull \hbox (badness 10000) in paragraph at lines 53--57
 
  []
 
 
-Package natbib Warning: Citation `dawkins_pauls_2005' on page 2 undefined on in
-put line 65.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Package natbib Warning: Citation `odersky_programming_2010' on page 2 undefined
- on input line 65.
-
-
-Package natbib Warning: Citation `swartz_learning_2015' on page 2 undefined on 
-input line 65.
-
-
-Package natbib Warning: Citation `trask_grokking_2017' on page 2 undefined on i
-nput line 65.
-
-
-Package natbib Warning: Citation `noauthor_scala_2003' on page 2 undefined on i
-nput line 65.
-
-
-Package natbib Warning: Citation `tesileanu_introduction_2017' on page 2 undefi
-ned on input line 67.
-
-
-Package natbib Warning: Citation `harrington_machine_2012' on page 2 undefined 
-on input line 71.
-
-
-Package natbib Warning: Citation `odersky_programming_2010' on page 2 undefined
- on input line 71.
-
-
-Package natbib Warning: Citation `swartz_learning_2015' on page 2 undefined on 
-input line 71.
-
-
-Package natbib Warning: Citation `noauthor_scala_2003' on page 2 undefined on i
-nput line 71.
-
-
-Package natbib Warning: Citation `tesileanu_introduction_2017' on page 2 undefi
-ned on input line 71.
-
-
-Package natbib Warning: Citation `harrington_machine_2012' on page 2 undefined 
-on input line 75.
-
-
-Package natbib Warning: Citation `odersky_programming_2010' on page 2 undefined
- on input line 75.
-
-
-Package natbib Warning: Citation `swartz_learning_2015' on page 2 undefined on 
-input line 75.
-
-
-Package natbib Warning: Citation `noauthor_scala_2003' on page 2 undefined on i
-nput line 75.
-
-
-Package natbib Warning: Citation `harrington_machine_2012' on page 2 undefined 
-on input line 76.
-
-
-Package natbib Warning: Citation `tesileanu_introduction_2017' on page 2 undefi
-ned on input line 77.
-
-
-Package natbib Warning: Citation `quinn_experimental_2002' on page 2 undefined 
-on input line 78.
-
-
-Package natbib Warning: Citation `harrington_machine_2012' on page 2 undefined 
-on input line 78.
-
-
-Package natbib Warning: Citation `odersky_programming_2010' on page 2 undefined
- on input line 78.
-
-
-Package natbib Warning: Citation `noauthor_scala_2003' on page 2 undefined on i
-nput line 78.
 
 ! Argument of \firstpageno has an extra }.
 <inserted text> 
                 \par 
-l.79 
+l.71 
      
 ? q
 OK, entering \batchmode...
@@ -445,53 +324,21 @@ Runaway argument?
 ! Paragraph ended before \firstpageno was complete.
 <to be read again> 
                    \par 
-l.79 
+l.71 
      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
  [2]
-
-Package natbib Warning: Citation `harrington_machine_2012' on page 3 undefined 
-on input line 82.
-
-
-Package natbib Warning: Citation `odersky_programming_2010' on page 3 undefined
- on input line 82.
-
-
-Package natbib Warning: Citation `noauthor_scala_2003' on page 3 undefined on i
-nput line 82.
-
-
-Package natbib Warning: Citation `tesileanu_introduction_2017' on page 3 undefi
-ned on input line 83.
-
-
-Package natbib Warning: Citation `karau_learning_2015' on page 3 undefined on i
-nput line 89.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--90
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--94
+Underfull \hbox (badness 10000) in paragraph at lines 90--93
 
  []
-
-
-Package natbib Warning: Citation `quinn_experimental_2002' on page 3 undefined 
-on input line 99.
-
-
-Package natbib Warning: Citation `karau_learning_2015' on page 3 undefined on i
-nput line 107.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (60.0366pt too wide) has occurred while \output is active
@@ -500,32 +347,16 @@ tion of the K-Nearest Neighbors Classifier
  []
 
  [3]
-
-Package natbib Warning: Citation `tesileanu_introduction_2017' on page 4 undefi
-ned on input line 116.
-
-
-Package natbib Warning: Citation `tesileanu_using_2017' on page 4 undefined on 
-input line 116.
-
-
-Overfull \hbox (58.36714pt too wide) in paragraph at lines 116--117
+Overfull \hbox (58.36714pt too wide) in paragraph at lines 115--116
 \OT1/cmr/m/n/10 stored on my GitHub pro-file un-der the fol-low-ing link: []htt
 ps://github.com/RoxanaTesileanu/multivariate$[]$analyses[].
- []
-
-
-Overfull \hbox (121.19121pt too wide) in paragraph at lines 116--117
-\OT1/cmr/m/n/10 for Scala projects \OT1/cmr/bx/n/10 ? \OT1/cmr/m/n/10 can be fo
-und un-der the fol-low-ing link: []https://www.researchgate.net/profile/Roxana$
-[]$Tesileanu/publications[]. 
  []
 
 ! Argument of \firstpageno has an extra }.
 <inserted text> 
                 \par 
-l.140 \section*
-               {Appendix E: Source file - TestFrameWorkClassif.scala}
+l.133 
+      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -537,42 +368,66 @@ Runaway argument?
 ! Paragraph ended before \firstpageno was complete.
 <to be read again> 
                    \par 
-l.140 \section*
-               {Appendix E: Source file - TestFrameWorkClassif.scala}
+l.133 
+      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
- [4]
-No file formattedJMLR_Tesileanu.bbl.
+ [4] (./formattedJMLR_Tesileanu.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 72--77
+[]$\OT1/cmtt/m/n/10 https : / / www . researchgate . net / publication / 319260
+791 _ Using _ Linux _ as _ a _ development _
+ []
 
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 156.
 
 Overfull \hbox (60.0366pt too wide) has occurred while \output is active
  \OT1/cmr/m/sc/9 Introduction to Statistical Computing in Scala - an Implementa
 tion of the K-Nearest Neighbors Classifier  
  []
 
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 156.
+ [5])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
+! Argument of \firstpageno has an extra }.
+<inserted text> 
+                \par 
+l.149 \end{document}
+                    
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \firstpageno was complete.
+<to be read again> 
+                   \par 
+l.149 \end{document}
+                    
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+ [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
  (./formattedJMLR_Tesileanu.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 156.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 156.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
 Package rerunfilecheck Info: File `formattedJMLR_Tesileanu.out' has not changed
 .
 (rerunfilecheck)             Checksum: 65851A298C691F3FD76AF9C025067CDD;528.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 156.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 5833 strings out of 493029
- 84495 string characters out of 6136234
- 171372 words of memory out of 5000000
- 9304 multiletter control sequences out of 15000+600000
- 8278 words of font info for 32 fonts, out of 8000000 for 9000
+ 5887 strings out of 493029
+ 85938 string characters out of 6136234
+ 171911 words of memory out of 5000000
+ 9337 multiletter control sequences out of 15000+600000
+ 8792 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,28p,788b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,10n,28p,788b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
@@ -581,12 +436,14 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmtt8.pfb>
-Output written on formattedJMLR_Tesileanu.pdf (5 pages, 148553 bytes).
+sfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+t10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb
+>
+Output written on formattedJMLR_Tesileanu.pdf (6 pages, 186995 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
+ 255 PDF objects out of 1000 (max. 8388607)
+ 232 compressed objects within 3 object streams
+ 38 named destinations out of 1000 (max. 500000)
  65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
