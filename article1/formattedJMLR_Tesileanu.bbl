@@ -1,4 +1,4 @@
-\begin{thebibliography}{13}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,10 +10,22 @@ Paul Dawkins.
 \newblock \emph{Paul's notes on linear algebra}.
 \newblock Math {Tutorial} {Lamar} {University}. Lamar University, 2005.
 
+\bibitem[EPFL(2017)]{epfl_scala_2017}
+EPFL.
+\newblock Scala {Standard} {Library} 2.12.0, 2017.
+\newblock URL \url{http://www.scala-lang.org/api/2.12.0/scala/index.html}.
+
 \bibitem[Harrington(2012)]{harrington_machine_2012}
 Peter Harrington.
 \newblock \emph{Machine learning in action}.
 \newblock Manning Publications Co., Shelter Island, 2012.
+
+\bibitem[Hastie and Tibshirani(1996)]{hastie_discriminant_1996}
+Trevor Hastie and Robert Tibshirani.
+\newblock Discriminant {Adaptive} {Nearest} {Neighbor} {Classification} and
+  {Regression}.
+\newblock \emph{IEEE Trans. Pattern Anal. Match. Intell.}, 18\penalty0
+  (6):\penalty0 607--616, 1996.
 
 \bibitem[Jordan and Mitchell(2015)]{jordan_machine_2015}
 M.~I. Jordan and T.~M. Mitchell.
@@ -56,8 +68,6 @@ Jason Swartz.
 Roxana Tesileanu.
 \newblock Introduction to statistical computing in {Scala}: an application of
   the k-{Nearest} {Neighbors} classifier, 2017{\natexlab{a}}.
-\newblock URL
-  \url{https://www.researchgate.net/publication/318815119_Introduction_to_statistical_computing_in_Scala_an_application_of_the_k-Nearest_Neighbors_classifier}.
 
 \bibitem[Tesileanu(2017{\natexlab{b}})]{tesileanu_using_2017}
 Roxana Tesileanu.

@@ -3,48 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: formattedJMLR_Tesileanu.aux
 The style file: plainnat.bst
 Database file #1: formattedJMLR_Tesileanu.bib
-Warning--I didn't find a database entry for "hastie_discriminant_nodate"
-Warning--I didn't find a database entry for "noauthor_scala_2003"
 Warning--empty journal in jordan_machine_2015
-You've used 13 entries,
+You've used 15 entries,
             2773 wiz_defined-function locations,
-            661 strings with 6625 characters,
-and the built_in function-call counts, 4690 in all, are:
-= -- 387
-> -- 234
-< -- 11
-+ -- 83
-- -- 69
-* -- 322
-:= -- 750
-add.period$ -- 40
-call.type$ -- 13
-change.case$ -- 54
-chr.to.int$ -- 12
-cite$ -- 27
-duplicate$ -- 252
-empty$ -- 434
-format.name$ -- 92
-if$ -- 976
+            670 strings with 6730 characters,
+and the built_in function-call counts, 5429 in all, are:
+= -- 454
+> -- 265
+< -- 13
++ -- 94
+- -- 78
+* -- 372
+:= -- 860
+add.period$ -- 45
+call.type$ -- 15
+change.case$ -- 63
+chr.to.int$ -- 14
+cite$ -- 31
+duplicate$ -- 287
+empty$ -- 506
+format.name$ -- 105
+if$ -- 1133
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 20
-newline$ -- 73
-num.names$ -- 52
-pop$ -- 151
+missing$ -- 21
+newline$ -- 82
+num.names$ -- 60
+pop$ -- 172
 preamble$ -- 1
-purify$ -- 49
+purify$ -- 56
 quote$ -- 0
-skip$ -- 179
+skip$ -- 209
 stack$ -- 0
-substring$ -- 76
-swap$ -- 15
+substring$ -- 105
+swap$ -- 17
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 98
+type$ -- 120
 warning$ -- 1
-while$ -- 43
+while$ -- 51
 width$ -- 0
-write$ -- 173
-(There were 3 warnings)
+write$ -- 196
+(There was 1 warning)
