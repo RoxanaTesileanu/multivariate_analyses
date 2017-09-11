@@ -1393,5 +1393,5 @@ I should take a look at Pearl 1978a "Entropy, information and rational decisions
 PEARL (1978):
 - measuring information: entropic measures of information, uncertainty, disorder and complexity.
 - explore the boundaries which delimit the applicability of the entropy concept in the general framework of decision making problems.
-- ENTROPY SEEN AS A MEASURE OF THE EFFORT NECESSARY FOR REMOVING UNCERTAINTY using a given system of information gathering resources.  
+- ENTROPY SEEN AS A MEASURE OF THE EFFORT NECESSARY FOR REMOVING UNCERTAINTY using a given system of information gathering resources. Instead of simply seeing it as a measure of uncertainty content of various types (e.g. probabilities, signals, etc.)  
 
