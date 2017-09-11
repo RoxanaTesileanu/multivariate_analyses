@@ -1399,7 +1399,7 @@ PEARL (1978):
 		W  = {w1, w2, ..., wz} is a set of outcomes (mutually exclusive states of nature, one of which is sure to occur)
 		O = {o1, o2, ...0n} mutually exclusive classes (i.e. terminal actions) from which one must be selected
 		P(W) = {P(w1), P(w2), ..., P(wz)} set of prior probability weights on the states, where each P(w) measures the likelihood that event w with o will occur next
-		  			 
+		u(w, o) 	  			 
 
 
 
