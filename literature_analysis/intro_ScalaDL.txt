@@ -1391,5 +1391,5 @@ As a rule of thumb is seams logical to choose that attribute to branch on which 
 
 I should take a look at Pearl 1978a "Entropy, information and rational decisions". 
 PEARL (1978):
-
+- measuring information: entropic measures of information, uncertainty, disorder and complexity.
 
