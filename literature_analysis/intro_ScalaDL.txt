@@ -1396,8 +1396,9 @@ PEARL (1978):
 - ENTROPY SEEN AS A MEASURE OF THE EFFORT NECESSARY FOR REMOVING UNCERTAINTY using a given system of information gathering resources. Instead of simply seeing it as a measure of uncertainty content of various types (e.g. probabilities, signals, etc.).
 - entropy and the value of informative decisions:
 	- a decision problem is characterised by the following elements:
-		O = {o1, o2, ..., 0z} is a set of outcomes (mutually exclusive states of nature, one of which is sure to occur)
-		 
+		W  = {w1, w2, ..., wz} is a set of outcomes (mutually exclusive states of nature, one of which is sure to occur)
+		O = {o1, o2, ...0n} mutually exclusive classes (i.e. terminal actions) from which one must be selected
+		P(W) = 			 
 
 
 
