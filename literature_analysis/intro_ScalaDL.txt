@@ -1376,12 +1376,13 @@ E(A) = sum ((p_Ai +n_Ai)/(p+n)I_Ai(p_Ai, n_Ai))
 
 
 __________________________________________
-Main strategy for decision trees in Scala:
+
+Main work strategy for decision trees in Scala:
 - reading through Harrington (2012) and Quinlan (1986)
 - implementing the algorithm (ID3 or C4.5)  in Scala 
 - adapting scala-graph (http://www.scala-graph.org/) to draw  decision trees in Scala
 
-  
+_________________________________________  
  
 
 
