@@ -1400,7 +1400,7 @@ PEARL (1978):
 		O = {o1, o2, ...0n} mutually exclusive classes (i.e. terminal actions) from which one must be selected
 		P(W) = {P(w1), P(w2), ..., P(wz)} set of prior probability weights on the states, where each P(w) measures the likelihood that event w with o will occur next
 		u(w, o) - a payoff matrix on WxO, where each u(w,o) entry represents the terminal benefit or expected utility associated with the joint occurence of o belongs to O and z belongs to W. 
-		T - a set of tests or information sources where each t belongs to T is characterised by a conditional probability matrix Pt(y|w)     	  			 
+		T - a set of tests or information sources where each t belongs to T is characterised by a conditional probability matrix P_t(y|w),      	  			 
 
 
 
