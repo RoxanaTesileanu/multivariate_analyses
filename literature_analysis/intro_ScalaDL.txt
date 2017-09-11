@@ -1387,7 +1387,11 @@ _________________________________________
 The information gained by branching on A is therefore:
 gain(A) = overall_I(p,n) - E(A)
 
-I should take a look at Pearl 1978a "Entropy, information and rational decisions".   
+As a rule of thumb is seams logical to choose that attribute to branch on which gains the most information (i.e. minimizes E(A)).
+
+I should take a look at Pearl 1978a "Entropy, information and rational decisions". 
+
+   
 
  
  
