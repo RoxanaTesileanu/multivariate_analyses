@@ -1386,7 +1386,8 @@ _________________________________________
  
 The information gained by branching on A is therefore:
 gain(A) = overall_I(p,n) - E(A)
- 
+
+I should take a look at Pearl 1978a "Entropy, information and rational decisions".   
 
  
  
