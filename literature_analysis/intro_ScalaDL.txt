@@ -1384,7 +1384,9 @@ Main work strategy for decision trees in Scala:
 
 _________________________________________  
  
-
+The information gained by branching on A is therefore:
+gain(A) = overall_I(p,n) - E(A)
+ 
 
  
  
