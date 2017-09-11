@@ -1371,7 +1371,7 @@ If an attribute A which is chosen as the root of the tree has values A1, A2,...,
 Let C_Ai contain pi objects of class P and ni objects of class N. 
 The expected information required for the subtree for C_Ai is I_Ai(pi, ni).
  Every partition of C with regard to A, will have its own amount of expected information.    
-The expected information required for the tree with A as root is obtained as the weighted average:
+The expected information required for the tree with repspect to A (i.e. with A as root) is obtained as the weighted average:
 E(A) = sum ((pi +ni)/(p+n)I_Ai(pi, ni))
  
  
