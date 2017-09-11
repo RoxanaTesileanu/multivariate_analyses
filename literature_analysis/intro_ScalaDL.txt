@@ -1404,7 +1404,7 @@ PEARL (1978):
 This discussion on entropy makes me think at the variation of a multivariate dataset. We have our classes (the set O of outcomes) and we have variables varying among those classes. We could check if we can form groups of objects which have the same outcome (class) (applying the MANOVA test of centroid differences between groups). Next we can use the information from the linear combination with the highest eigenvalue and extract the variable which explains most of the variation between group centroids. Next, we take the second linear combination (which is orthogonal to the first) and extract the second variable which explains some of the variation not explained by the first linear combination. And so on. 
 The first extracted variable is the root of the tree. The second variable is the node, etc. 
 
-          
+So I should check how can I implement MANOVA in Scala.           
 
 
 
