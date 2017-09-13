@@ -1,0 +1,901 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes
+compile options:
+0 items
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.12.2
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+24 items
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/GradientDescent$.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/GradientDescent.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/MultipleInpNN$.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/MultipleInpNN.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/MultipleOut1Inp$.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/MultipleOut1Inp.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/SimplestNetwork$.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/SimplestNetwork.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/AutoNorm$.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/AutoNorm.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/BasicVectorOP$.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/BasicVectorOP.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/ReadFile$.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/ReadFile.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/TestFrameWorkClassif$.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/TestFrameWorkClassif.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/kNN$.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/kNN$CreateData$.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/kNN$CreateData.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/kNN.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/kNN$.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/kNN$createData$.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/kNN$createData.class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/kNN.class
+binary dependencies:
+20 items
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> /home/roxana/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> /home/roxana/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> /home/roxana/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> /home/roxana/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> /home/roxana/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> /home/roxana/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> /home/roxana/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> /home/roxana/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> /home/roxana/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> /home/roxana/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+2 items
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> /home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+24 items
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> GradientDescent
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> GradientDescent$
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> MultipleInpNN
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> MultipleInpNN$
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> MultipleOut1Inp
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> MultipleOut1Inp$
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> SimplestNetwork
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> SimplestNetwork$
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> com.mai.scalaML.AutoNorm
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> com.mai.scalaML.AutoNorm$
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> com.mai.scalaML.BasicVectorOP
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> com.mai.scalaML.BasicVectorOP$
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> com.mai.scalaML.ReadFile
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> com.mai.scalaML.ReadFile$
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> com.mai.scalaML.TestFrameWorkClassif
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> com.mai.scalaML.TestFrameWorkClassif$
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> com.mai.scalaML.kNN
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> com.mai.scalaML.kNN$
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> com.mai.scalaML.kNN$CreateData
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> com.mai.scalaML.kNN$CreateData$
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> kNN
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> kNN$
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> kNN$createData
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> kNN$createData$
+used names:
+657 items
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> *
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> -
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> <
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> <init>
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> Any
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> AnyRef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> Boolean
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> Double
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> GradientDescent
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> Nothing
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> Object
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> Predef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> T1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> T2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> T3
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> Tuple3
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> Unit
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> abs
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> alpha
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> derivative
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> error
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> goalPred
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> input
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> math
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> package
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> prediction
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> println
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> scala
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> updatingWeights
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> weight
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> *
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> +
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> <init>
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> <repeated>
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> A1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> Any
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> AnyRef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> Array
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> ArrayOps
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> B
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> CanBuildFrom
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> Class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> ClassTag
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> Double
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> DoubleIsFractional
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> Function1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> Function2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> GenIterable
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> MultipleInpNN
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> Nothing
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> Numeric
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> Object
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> Predef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> T
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> That
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> Tuple2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> WrappedArray
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> _$4
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> _$7
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> _1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> _2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> _root_
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> apply
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> arrayOp
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> arrayOpAdd
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> arrayOpMultipl
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> canBuildFrom
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> dotProduct
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> doubleArrayOps
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> elementwiseAddition
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> elementwiseMultiplication
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> f
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> map
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> materializeClassTag
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> math
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> myI
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> myInputs
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> myOp
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> myPairProd
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> myPairs
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> myPred
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> myW
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> myWeights
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> neural_network
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> ofDouble
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> ofRef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> p
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> package
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> refArrayOps
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> reflect
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> scala
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> sum
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> testAdd
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> testMultipl
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> wrapDoubleArray
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> zip
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> *
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> <init>
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> <repeated>
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> Any
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> AnyRef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> Array
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> ArrayOps
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> B
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> CanBuildFrom
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> ClassTag
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> Double
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> Function1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> MultipleOut1Inp
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> Nothing
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> Object
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> Predef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> T
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> That
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> _$4
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> apply
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> canBuildFrom
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> doubleArrayOps
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> i
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> map
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> materializeClassTag
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> myInput
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> myPredictions
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> myWeights
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> neural_network
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> ofDouble
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> package
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> reflect
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> scala
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> testMultipleOut1Inp
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> *
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> <init>
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> AnyRef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> Double
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> Function2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> Object
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> SimplestNetwork
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> apply
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> input
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> myPrediction
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> neural_network
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> scala
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> weight
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> -
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> /
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> <init>
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> A
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> Any
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> AnyRef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> Array
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> AutoNorm
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> B
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> CanBuildFrom
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> ClassTag
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> Coll
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> Double
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> Function1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> Inclusive
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> IndexedSeq
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> Int
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> Nothing
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> Object
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> Ordering
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> Predef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> Range
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> RichInt
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> T
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> T1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> T2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> T3
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> That
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> Tuple3
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> Vector
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> a
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> apply
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> canBuildFrom
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> com
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> dataMatrix
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> i
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> immutable
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> intWrapper
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> len
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> len2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> length
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> mai
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> map
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> materializeClassTag
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> math
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> max
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> min
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> normalizedDataMatrix
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> normalizedDataMatrix2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> normalizedVariables
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> nv
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> package
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> reflect
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> scala
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> scalaML
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> to
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> toArray
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> toVector
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> v
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> variables
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> $conforms
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> *
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> +
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> -
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> <:<
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> <byname>
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> <init>
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> ==
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> A
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> A1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> Any
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> AnyRef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> Array
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> ArrayOps
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> B
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> BasicVectorOP
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> Boolean
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> CanBuildFrom
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> Class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> ClassTag
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> Double
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> DoubleIsFractional
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> Function1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> Function2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> GenIterable
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> Int
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> Nothing
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> Numeric
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> OP
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> Object
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> Predef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> ScalaRunTime
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> T
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> That
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> Tuple2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> U
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> Unit
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> WrappedArray
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> _$2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> _$3
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> _$4
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> _$7
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> _1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> _2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> _root_
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> a
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> apply
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> arrayClass
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> arrayOP
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> assert
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> b
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> c
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> canBuildFrom
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> com
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> dot
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> doubleArrayOps
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> elementwiseAddition
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> elementwiseMultipl
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> elementwiseSubtraction
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> f
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> i
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> j
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> length
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> mai
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> map
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> materializeClassTag
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> math
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> ofDouble
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> ofRef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> p
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> package
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> pairProd
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> pairs
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> refArrayOps
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> reflect
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> runtime
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> scala
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> scalaML
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> sum
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> tb
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> transpose
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> wrapDoubleArray
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> zip
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> +
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> -
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> <init>
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Any
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> AnyRef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Array
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> ArrayOps
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> B
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> BufferedSource
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> CanBuildFrom
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Class
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> ClassTag
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Codec
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Double
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Function1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Int
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Iterator
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Nothing
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Object
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Ordering
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Predef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Range
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> ReadFile
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> ScalaRunTime
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Source
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> String
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> StringOps
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> T
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> T1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> T2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> T3
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> That
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Tuple3
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Unit
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> Vector
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> _$2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> _$3
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> _$4
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> _$7
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> apply
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> arrayClass
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> augmentString
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> canBuildFrom
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> classes
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> close
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> com
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> data
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> data2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> data3
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> dataLabels
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> dataMatrix
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> delim
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> doubleArrayOps
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> drop
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> fallbackSystemCodec
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> filename
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> fromFile
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> getLines
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> i
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> intArrayOps
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> io
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> last
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> len
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> length
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> mai
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> map
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> materializeClassTag
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> math
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> max
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> min
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> ofDouble
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> ofInt
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> ofRef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> package
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> refArrayOps
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> reflect
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> runtime
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> scala
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> scalaML
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> split
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> src
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> take
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> toArray
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> toDouble
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> toInt
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> toVector
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> *
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> /
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> <init>
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> <repeated>
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> ==
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> A
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> A1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> Any
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> AnyRef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> Array
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> B
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> Boolean
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> CC
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> CanBuildFrom
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> Coll
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> CreateData
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> Double
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> Function1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> GenIterable
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> Int
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> Nothing
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> Object
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> Random
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> Range
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> T
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> TestFrameWorkClassif
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> That
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> TraversableOnce
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> Tuple2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> Vector
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> X
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> _1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> _2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> apply
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> canBuildFrom
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> classes
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> classesTest
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> classifDataLabels
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> classifDataMatrix
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> classifDataSet
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> classifykNN
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> com
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> count
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> dataLabels
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> dataMatrix
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> dataPlusLabels
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> dataSet
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> errorRate
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> errorRateMatch
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> errorRateTuple
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> immutable
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> k
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> kNN
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> lenDataSet
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> length
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> mai
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> map
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> package
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> partition
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> resultsTestData
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> scala
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> scalaML
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> shuffle
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> shuffledDataPlusLabels
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> splitAt
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> testAndClassSets
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> testDataLabels
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> testDataMatrix
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> testDataSet
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> toDouble
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> toInt
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> usedClassifDataSet
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> util
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> wrongResults
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> x
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> zip
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> &&
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> +
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> <init>
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> <repeated>
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> ==
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> A
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> A1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> AbstractFunction3
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Any
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> AnyRef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Array
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> ArrayOps
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> B
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> BasicVectorOP
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Boolean
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> CanBuildFrom
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> ClassTag
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Coll
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> CreateData
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Double
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> DoubleIsFractional
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Function1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> GenIterable
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> IndexOutOfBoundsException
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> IndexedSeq
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Int
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Iterator
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> None
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Nothing
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Numeric
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Object
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Option
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Ordering
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> P
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> P1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> P2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Predef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Product
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Range
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> ScalaRunTime
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Serializable
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Some
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Sorting
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> String
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> T
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> T0
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> T1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> T2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> T3
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> That
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Tuple2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Tuple3
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> Vector
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> _$4
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> _1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> _2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> _hashCode
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> _root_
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> _toString
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> apply
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> arraySubt
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> asInstanceOf
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> canBuildFrom
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> classes
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> classesAndCounts
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> classifykNN
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> com
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> count
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> countClasses
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> countingClasses
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> d
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> dataLabels
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> dataMatrix
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> dataSet
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> distance
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> distances
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> doubleArrayOps
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> eq
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> featuresP1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> featuresP2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> i
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> immutable
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> isInstanceOf
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> k
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> kN
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> kNN
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> labeledDist
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> last
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> mai
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> map
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> materializeClassTag
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> math
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> max
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> min
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> ofDouble
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> package
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> pointDiff
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> pointDiffPow
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> pow
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> reflect
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> result
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> runtime
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> scala
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> scalaML
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> slice
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> sortBy
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> sortedDist
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> sortingDist
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> sqrt
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> sum
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> toString
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> typedProductIterator
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> util
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> x
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> zip
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> ||
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> &&
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> +
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> -
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> <init>
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> <repeated>
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> ==
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> >
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> A
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> A1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> AbstractFunction3
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Any
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> AnyRef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> B
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Boolean
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> CanBuildFrom
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Char
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Coll
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Double
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Function1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> GenIterable
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> IndexOutOfBoundsException
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Int
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Iterator
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> None
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Nothing
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Object
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Option
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Ordering
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> P
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> P1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> P2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Predef
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Product
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> ScalaRunTime
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Serializable
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Some
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Sorting
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> String
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> T
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> T0
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> T1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> T2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> T3
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> That
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Tuple2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Tuple3
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Unit
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> Vector
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> _1
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> _2
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> _hashCode
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> _root_
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> _toString
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> apply
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> asInstanceOf
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> canBuildFrom
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> classes
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> classifykNN
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> count
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> countingClasses
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> createData
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> d
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> dataSet
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> distance
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> distances
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> eq
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> group
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> immutable
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> isInstanceOf
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> k
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> kN
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> kNN
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> labeledDist
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> lables
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> map
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> math
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> package
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> pow
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> println
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> result
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> runtime
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> scala
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> slice
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> sortBy
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> sortedDist
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> sortingDist
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> sqrt
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> toString
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> typedProductIterator
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> util
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> x
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> zip
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> ||
+product stamps:
+24 items
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/GradientDescent$.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/GradientDescent.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/MultipleInpNN$.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/MultipleInpNN.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/MultipleOut1Inp$.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/MultipleOut1Inp.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/SimplestNetwork$.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/SimplestNetwork.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/AutoNorm$.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/AutoNorm.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/BasicVectorOP$.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/BasicVectorOP.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/ReadFile$.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/ReadFile.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/TestFrameWorkClassif$.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/TestFrameWorkClassif.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/kNN$.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/kNN$CreateData$.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/kNN$CreateData.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/com/mai/scalaML/kNN.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/kNN$.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/kNN$createData$.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/kNN$createData.class -> lastModified(1504168869000)
+/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.12/classes/kNN.class -> lastModified(1504168869000)
+source stamps:
+17 items
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/ExampleLR.scala -> hash(649e94434ff463bcf9bcae5bbfbce409848fc682)
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> hash(8cbccce5d32556d2c9f4cb43e6b39699a9703532)
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescentMultiInput.scala -> hash(69f8f4b3008290333a6e9b45a22af212e73f07d7)
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> hash(5e0e793626a3e17000f152c8b6f8f61abda1213f)
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpOut.scala -> hash(8ec7ea1ebf27238a49a7830accbb2c31907806f1)
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> hash(d4dda9cad61924227d137726970ed6a1b710debe)
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> hash(98759e08b3a27895a46869b1a178daae71801c2e)
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/UsingBreeze.scala -> hash(5c52c81bbeaa28a3c5701786bab0d3f3a5c44aea)
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> hash(e64b38039f3b6ea0d83334a2fca8f7c1315311cc)
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> hash(6bb16f48ad27b8f34d3307541a4e376ed3d88e92)
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> hash(06c927316d582c7034fe28fb17ddd44b5c5fdef9)
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> hash(ebaaff70d282f66f17ffb5d4fd8cec1eb1b5244f)
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> hash(ab96bec44bc56ea19a53f5fde27d0447f8cfb87b)
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/intro_breeze.scala -> hash(a4aefbb4fc17128465b886c410b3ee286c9950e0)
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/intro_breeze_viz.scala -> hash(0528c756507043361005c60fee122dfb22cb761e)
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> hash(f3f9eee2515a4ae6a967e56a3341f5750cf53395)
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/poisson_app.scala -> hash(8f0f69f1378d26e863b725406b3b60f524da286d)
+binary stamps:
+2 items
+/home/roxana/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar -> lastModified(1492071552000)
+/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar -> lastModified(1501205457000)
+class names:
+2 items
+/home/roxana/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar -> scala.Product
+/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar -> java.lang.Object
+internal apis:
+17 items
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/ExampleLR.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwuCFR6gAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAAc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFeN3NyQHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3Rvcnl0ABJMamF2YS9sYW5nL1N0cmluZztMAA9zb3VyY2VEaXJlY3RvcnlxAH4AGnhwdABRL2hvbWUvcm94YW5hL1ByaXZhdGUvbXVsdGl2YXJpYXRlX2FuYWx5c2VzL0RlZXBMZWFybmluZy90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUZJ6UQ0/0Y7z5vK5bv7zkCYSPxoI=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwxMUU2gAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAVc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hw2a6wD3QABm5vdGlmeXNxAH4ADA3ix210AA91cGRhdGluZ1dlaWdodHNzcQB+AAy8qDZydAAEd2FpdHNxAH4ADNH0BpN0AA0kYXNJbnN0YW5jZU9mc3EAfgAM0WCkFHQABmVxdWFsc3NxAH4ADJ8+imF0AAxhc0luc3RhbmNlT2ZzcQB+AAxpD035dAAMc3luY2hyb25pemVkc3EAfgAM+esDo3QADSRpc0luc3RhbmNlT2ZzcQB+AAye6Pb9dAAJbm90aWZ5QWxsc3EAfgAMYa+E13QADGlzSW5zdGFuY2VPZnNxAH4ADKiMo9h0AAI9PXNxAH4ADD2Km1J0AAVjbG9uZXNxAH4ADCggTOh0AA9HcmFkaWVudERlc2NlbnRzcQB+AAxI62M4dAAIdG9TdHJpbmdzcQB+AAz8hivydAACIT1zcQB+AAyql/a5dAAIZ2V0Q2xhc3NzcQB+AAzYTmsfdAACbmVzcQB+AAyN2rcpdAACZXFzcQB+AAyVXaZRdAACIyNzcQB+AAztGFe+dAAIZmluYWxpemVzcQB+AAw5hJLwdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBBeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAcQB+ACd1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAABdAAYc2NhbGEuYW5ub3RhdGlvbi50YWlscmVjc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamVjdDt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AFlzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AQUwACWluaGVyaXRlZHEAfgBBTAAHcGFyZW50c3EAfgBBeHEAfgBec3EAfgBZdXEAfgA8AAAAAHNxAH4AWXVxAH4APAAAAABzcQB+AFl1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AF10AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AF1zcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+AHZ0AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AHdzcQB+AGp0AANBbnlzcQB+AG5zcQB+AHF1cQB+AHQAAAACc3EAfgB2dAAFc2NhbGFxAH4AfXVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFeN3NyQHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AFEvaG9tZS9yb3hhbmEvUHJpdmF0ZS9tdWx0aXZhcmlhdGVfYW5hbHlzZXMvRGVlcExlYXJuaW5nL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABSMvMzl0yVW0sn0y0Pms5aZqXA1Mg==
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescentMultiInput.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwuCFR6gAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAAc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFeN3NyQHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3Rvcnl0ABJMamF2YS9sYW5nL1N0cmluZztMAA9zb3VyY2VEaXJlY3RvcnlxAH4AGnhwdABRL2hvbWUvcm94YW5hL1ByaXZhdGUvbXVsdGl2YXJpYXRlX2FuYWx5c2VzL0RlZXBMZWFybmluZy90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUafj0swCCkDM6bptFoiryEuc/B9c=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwL1wDCwAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAfc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwua+72HQABm5vdGlmeXNxAH4ADLr73K10AAR3YWl0c3EAfgAMjxKS63QADSRhc0luc3RhbmNlT2ZzcQB+AAwTGOK5dAAGZXF1YWxzc3EAfgAM1HPS3XQAE2VsZW1lbnR3aXNlQWRkaXRpb25zcQB+AAz+o36bdAAObmV1cmFsX25ldHdvcmtzcQB+AAyJKV+8dAAMYXNJbnN0YW5jZU9mc3EAfgAMYtW+4HQAB3Rlc3RBZGRzcQB+AAyvta2KdAAMc3luY2hyb25pemVkc3EAfgAMmh4WwnQADSRpc0luc3RhbmNlT2ZzcQB+AAxpo0Q0dAAJbm90aWZ5QWxsc3EAfgAM9G/3qnQACmFycmF5T3BBZGRzcQB+AAwRCRYydAAMaXNJbnN0YW5jZU9mc3EAfgAMGRfCJnQAC3Rlc3RNdWx0aXBsc3EAfgAMf7ErGXQAA215SXNxAH4ADPjQfBl0AAI9PXNxAH4ADCjw/2p0AANteVdzcQB+AAzst6PrdAAFY2xvbmVzcQB+AAyK9+8XdAAZZWxlbWVudHdpc2VNdWx0aXBsaWNhdGlvbnNxAH4ADCxAFp10AA1NdWx0aXBsZUlucE5Oc3EAfgAMp5+oa3QABm15UHJlZHNxAH4ADFxHR0N0AAh0b1N0cmluZ3NxAH4ADOVj1EF0AAIhPXNxAH4ADPKMgzp0AAhnZXRDbGFzc3NxAH4ADPwo1dR0AA5hcnJheU9wTXVsdGlwbHNxAH4ADGmmmR90AAdhcnJheU9wc3EAfgAMd2QpGHQAAm5lc3EAfgAMDDg0NnQAAmVxc3EAfgAM0yz4OHQAAiMjc3EAfgAM6SeffnQACGZpbmFsaXplc3EAfgAMVWkzgXQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AVXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHEAfgA1dXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyACF4c2J0aS5hcGkuQWJzdHJhY3RMYXp5JFN0cmljdExhenkNZhxrKRYquAIAAUwABXZhbHVldAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgBsc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AFVMAAlpbmhlcml0ZWRxAH4AVUwAB3BhcmVudHNxAH4AVXhxAH4AcXNxAH4AbHVxAH4AUAAAAABzcQB+AGx1cQB+AFAAAAAAc3EAfgBsdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBwdAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBwc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCJdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCKc3EAfgB9dAADQW55c3EAfgCBc3EAfgCEdXEAfgCHAAAAAnNxAH4AiXQABXNjYWxhcQB+AJB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXjdzckB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABRL2hvbWUvcm94YW5hL1ByaXZhdGUvbXVsdGl2YXJpYXRlX2FuYWx5c2VzL0RlZXBMZWFybmluZy90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUXg55Niaj4XAA8VLItvj2Gr2hIT8=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpOut.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwuCFR6gAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAAc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFeN3NyQHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3Rvcnl0ABJMamF2YS9sYW5nL1N0cmluZztMAA9zb3VyY2VEaXJlY3RvcnlxAH4AGnhwdABRL2hvbWUvcm94YW5hL1ByaXZhdGUvbXVsdGl2YXJpYXRlX2FuYWx5c2VzL0RlZXBMZWFybmluZy90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUjsfqHr8nI4pJp4MKzLssMZB4BvE=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhw4njUlgAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAWc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hw3Hko43QABm5vdGlmeXNxAH4ADIhTsQJ0AAR3YWl0c3EAfgAMComOU3QADSRhc0luc3RhbmNlT2ZzcQB+AAwyYrdrdAATdGVzdE11bHRpcGxlT3V0MUlucHNxAH4ADA0+FkV0AAZlcXVhbHNzcQB+AAwngjcNdAAObmV1cmFsX25ldHdvcmtzcQB+AAzikUt5dAAMYXNJbnN0YW5jZU9mc3EAfgAM+vSWwHQADHN5bmNocm9uaXplZHNxAH4ADAe8T7t0AA0kaXNJbnN0YW5jZU9mc3EAfgAMw8GxynQACW5vdGlmeUFsbHNxAH4ADCPDmmV0AAxpc0luc3RhbmNlT2ZzcQB+AAwfSC6KdAAPTXVsdGlwbGVPdXQxSW5wc3EAfgAMLZkP+XQAAj09c3EAfgAMaaIKBXQABWNsb25lc3EAfgAMzZw+5nQACHRvU3RyaW5nc3EAfgAMTFqG7HQAAiE9c3EAfgAMiHC08XQACGdldENsYXNzc3EAfgAMFvXQ1HQAAm5lc3EAfgAMBohM1XQAAmVxc3EAfgAM2Xni8nQAAiMjc3EAfgAMPNn7yXQACGZpbmFsaXplc3EAfgAM8FKnAnQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AQ3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHEAfgAldXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyACF4c2J0aS5hcGkuQWJzdHJhY3RMYXp5JFN0cmljdExhenkNZhxrKRYquAIAAUwABXZhbHVldAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgBac3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AENMAAlpbmhlcml0ZWRxAH4AQ0wAB3BhcmVudHNxAH4AQ3hxAH4AX3NxAH4AWnVxAH4APgAAAABzcQB+AFp1cQB+AD4AAAAAc3EAfgBadXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBedAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBec3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgB3dAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgB4c3EAfgBrdAADQW55c3EAfgBvc3EAfgBydXEAfgB1AAAAAnNxAH4Ad3QABXNjYWxhcQB+AH51cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXjdzckB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABRL2hvbWUvcm94YW5hL1ByaXZhdGUvbXVsdGl2YXJpYXRlX2FuYWx5c2VzL0RlZXBMZWFybmluZy90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU1N2pytYZJCJ9E3cmlw7WobcQ3r4=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwx9udpQAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAWc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwuVkPk3QABm5vdGlmeXNxAH4ADG+GHfp0AAR3YWl0c3EAfgAMoNua6XQADSRhc0luc3RhbmNlT2ZzcQB+AAxROwMydAAGZXF1YWxzc3EAfgAMFABl+XQADG15UHJlZGljdGlvbnNxAH4ADCxnULl0AA5uZXVyYWxfbmV0d29ya3NxAH4ADNw9LYB0AAxhc0luc3RhbmNlT2ZzcQB+AAxhp23edAAMc3luY2hyb25pemVkc3EAfgAMXrLEbnQADSRpc0luc3RhbmNlT2ZzcQB+AAyAGjYjdAAPU2ltcGxlc3ROZXR3b3Jrc3EAfgAMXtYRyHQACW5vdGlmeUFsbHNxAH4ADFRv9+Z0AAxpc0luc3RhbmNlT2ZzcQB+AAwnyDe8dAACPT1zcQB+AAyWGHUYdAAFY2xvbmVzcQB+AAy6lyPJdAAIdG9TdHJpbmdzcQB+AAxQf+rPdAACIT1zcQB+AAyoooerdAAIZ2V0Q2xhc3NzcQB+AAznMudYdAACbmVzcQB+AAxjFAwXdAACZXFzcQB+AAwmUq3DdAACIyNzcQB+AAxrqHAsdAAIZmluYWxpemVzcQB+AAwDOjCEdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBDeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAcQB+ACF1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamVjdDt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AFpzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AQ0wACWluaGVyaXRlZHEAfgBDTAAHcGFyZW50c3EAfgBDeHEAfgBfc3EAfgBadXEAfgA+AAAAAHNxAH4AWnVxAH4APgAAAABzcQB+AFp1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AF50AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AF5zcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+AHd0AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AHhzcQB+AGt0AANBbnlzcQB+AG9zcQB+AHJ1cQB+AHUAAAACc3EAfgB3dAAFc2NhbGFxAH4AfnVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFeN3NyQHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AFEvaG9tZS9yb3hhbmEvUHJpdmF0ZS9tdWx0aXZhcmlhdGVfYW5hbHlzZXMvRGVlcExlYXJuaW5nL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABSYdZ4Is6J4laRoabGheNqucYAcLg==
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/UsingBreeze.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwuCFR6gAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAAc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFeN3NyQHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3Rvcnl0ABJMamF2YS9sYW5nL1N0cmluZztMAA9zb3VyY2VEaXJlY3RvcnlxAH4AGnhwdABRL2hvbWUvcm94YW5hL1ByaXZhdGUvbXVsdGl2YXJpYXRlX2FuYWx5c2VzL0RlZXBMZWFybmluZy90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUXFLIG76qKKPFcBeGurDT86XESuo=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhw0PVOEQAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAVc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwg1zUUXQABm5vdGlmeXNxAH4ADE8RcaJ0AAR3YWl0c3EAfgAMAIXY9HQADSRhc0luc3RhbmNlT2ZzcQB+AAxsFEo3dAAGZXF1YWxzc3EAfgAMwV93V3QADGFzSW5zdGFuY2VPZnNxAH4ADC4YERN0AAxzeW5jaHJvbml6ZWRzcQB+AAwEMzCvdAANJGlzSW5zdGFuY2VPZnNxAH4ADKJS46t0AAlub3RpZnlBbGxzcQB+AAzhAYiXdAAMaXNJbnN0YW5jZU9mc3EAfgAM1qkERnQACEF1dG9Ob3Jtc3EAfgAMocnisnQACGF1dG9Ob3Jtc3EAfgAMCEj8X3QAAj09c3EAfgAMagcoFHQABWNsb25lc3EAfgAMCPZkTnQACHRvU3RyaW5nc3EAfgAMFWTwVHQAAiE9c3EAfgAMi94Dk3QACGdldENsYXNzc3EAfgAMUXWJvHQAAm5lc3EAfgAMipB39XQAAmVxc3EAfgAMSY0g8HQAAiMjc3EAfgAMSlp0BXQACGZpbmFsaXplc3EAfgAMriUphnQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AQXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHQAGGNvbS5tYWkuc2NhbGFNTC5BdXRvTm9ybXVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AWXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBBTAAJaW5oZXJpdGVkcQB+AEFMAAdwYXJlbnRzcQB+AEF4cQB+AF5zcQB+AFl1cQB+ADwAAAAAc3EAfgBZdXEAfgA8AAAAAHNxAH4AWXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AXXQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AXXNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4AdnQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4Ad3NxAH4AanQAA0FueXNxAH4AbnNxAH4AcXVxAH4AdAAAAAJzcQB+AHZ0AAVzY2FsYXEAfgB9dXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAANzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAHY29tLm1haXNxAH4Ah3QAD2NvbS5tYWkuc2NhbGFNTHNxAH4Ah3QAA2NvbXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXjdzckB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABRL2hvbWUvcm94YW5hL1ByaXZhdGUvbXVsdGl2YXJpYXRlX2FuYWx5c2VzL0RlZXBMZWFybmluZy90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU5ks4A587bqDYMzSi/Kj3wTFTEcw=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhw1cQQvgAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAac3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hw8kOBs3QABm5vdGlmeXNxAH4ADIF2eWF0AANkb3RzcQB+AAzZTqvGdAAJYXJyYXlTdWJ0c3EAfgAMKNIk4nQABHdhaXRzcQB+AAxM+KvkdAANJGFzSW5zdGFuY2VPZnNxAH4ADJxnGD50AAZlcXVhbHNzcQB+AAxk0tbBdAAMYXNJbnN0YW5jZU9mc3EAfgAM+2uBtXQADHN5bmNocm9uaXplZHNxAH4ADO5zgTN0AA0kaXNJbnN0YW5jZU9mc3EAfgAMwlt9j3QADW1hdHJpeE11bHRpcGxzcQB+AAz5xJANdAAIYXJyYXlBZGRzcQB+AAx0LmvudAAJbm90aWZ5QWxsc3EAfgAMBLvo+3QAB2FycmF5T1BzcQB+AAxLtyCtdAAMaXNJbnN0YW5jZU9mc3EAfgAMueP7lnQAAj09c3EAfgAMW00qP3QABWNsb25lc3EAfgAM8OfUWnQADGFycmF5TXVsdGlwbHNxAH4ADOxquAp0AAh0b1N0cmluZ3NxAH4ADAEvQXB0AAIhPXNxAH4ADKJYAV90AAhnZXRDbGFzc3NxAH4ADB6zxK50AAJuZXNxAH4ADKub8Sl0AA1CYXNpY1ZlY3Rvck9Qc3EAfgAM+/0wuXQAAmVxc3EAfgAMOjBBQXQAAiMjc3EAfgAMI9iCFHQACGZpbmFsaXplc3EAfgAMpo8skXQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AS3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHQAHWNvbS5tYWkuc2NhbGFNTC5CYXNpY1ZlY3Rvck9QdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyACF4c2J0aS5hcGkuQWJzdHJhY3RMYXp5JFN0cmljdExhenkNZhxrKRYquAIAAUwABXZhbHVldAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgBjc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AEtMAAlpbmhlcml0ZWRxAH4AS0wAB3BhcmVudHNxAH4AS3hxAH4AaHNxAH4AY3VxAH4ARgAAAABzcQB+AGN1cQB+AEYAAAAAc3EAfgBjdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBndAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBnc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCAdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCBc3EAfgB0dAADQW55c3EAfgB4c3EAfgB7dXEAfgB+AAAAAnNxAH4AgHQABXNjYWxhcQB+AId1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAA3NyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAdjb20ubWFpc3EAfgCRdAAPY29tLm1haS5zY2FsYU1Mc3EAfgCRdAADY29tc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFeN3NyQHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AFEvaG9tZS9yb3hhbmEvUHJpdmF0ZS9tdWx0aXZhcmlhdGVfYW5hbHlzZXMvRGVlcExlYXJuaW5nL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABRrsW9IrSe4800zB1QaTjdu09iOkg==
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwj0KeLwAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAVc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwLLLhIHQABm5vdGlmeXNxAH4ADBDeNHd0AAR3YWl0c3EAfgAM1KMuznQADSRhc0luc3RhbmNlT2ZzcQB+AAzX9ogedAAGZXF1YWxzc3EAfgAMRW8SinQAD3JlYWRGaWxlQ2xhc3NpZnNxAH4ADDdV8xV0AAxhc0luc3RhbmNlT2ZzcQB+AAysaujBdAAMc3luY2hyb25pemVkc3EAfgAMD1/MTnQADSRpc0luc3RhbmNlT2ZzcQB+AAwiJbBPdAAJbm90aWZ5QWxsc3EAfgAMWDqBWHQADGlzSW5zdGFuY2VPZnNxAH4ADIGc/x90AAhSZWFkRmlsZXNxAH4ADETw/B50AAI9PXNxAH4ADGJQ4510AAVjbG9uZXNxAH4ADEpZIbt0AAh0b1N0cmluZ3NxAH4ADPSVwlt0AAIhPXNxAH4ADFvsoaB0AAhnZXRDbGFzc3NxAH4ADJjrcZx0AAJuZXNxAH4ADPSU0Ep0AAJlcXNxAH4ADMpnUYh0AAIjI3NxAH4ADFEJENV0AAhmaW5hbGl6ZXNxAH4ADJ8Qzj90AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AEF4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cAB0ABhjb20ubWFpLnNjYWxhTUwuUmVhZEZpbGV1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamVjdDt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AFlzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AQUwACWluaGVyaXRlZHEAfgBBTAAHcGFyZW50c3EAfgBBeHEAfgBec3EAfgBZdXEAfgA8AAAAAHNxAH4AWXVxAH4APAAAAABzcQB+AFl1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AF10AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AF1zcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+AHZ0AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AHdzcQB+AGp0AANBbnlzcQB+AG5zcQB+AHF1cQB+AHQAAAACc3EAfgB2dAAFc2NhbGFxAH4AfXVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAADc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQAB2NvbS5tYWlzcQB+AId0AA9jb20ubWFpLnNjYWxhTUxzcQB+AId0AANjb21zcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAV43c3JAdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAUS9ob21lL3JveGFuYS9Qcml2YXRlL211bHRpdmFyaWF0ZV9hbmFseXNlcy9EZWVwTGVhcm5pbmcvdGFyZ2V0L3NjYWxhLTIuMTIvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFAbJJzFtWCxwNP4o+xfd1EtcX975
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwmV7PuQAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAVc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwGrYqpnQABm5vdGlmeXNxAH4ADKLirr90AAR3YWl0c3EAfgAMAyd0O3QADSRhc0luc3RhbmNlT2ZzcQB+AAyjz5YkdAAGZXF1YWxzc3EAfgAMHkzV+HQAFFRlc3RGcmFtZVdvcmtDbGFzc2lmc3EAfgAMLl1wk3QADGFzSW5zdGFuY2VPZnNxAH4ADDdNdzN0AAxzeW5jaHJvbml6ZWRzcQB+AAxsKvQfdAANJGlzSW5zdGFuY2VPZnNxAH4ADNkzZQt0AAlub3RpZnlBbGxzcQB+AAzmvZ5JdAAMaXNJbnN0YW5jZU9mc3EAfgAMBLXKh3QAAj09c3EAfgAMYnxNnXQABWNsb25lc3EAfgAMaxlhCXQAFHRlc3RGcmFtZVdvcmtDbGFzc2lmc3EAfgAM7O2f2XQACHRvU3RyaW5nc3EAfgAME1QnwnQAAiE9c3EAfgAMwqDoi3QACGdldENsYXNzc3EAfgAMo5So+HQAAm5lc3EAfgAM7laZ5HQAAmVxc3EAfgAM3P00QXQAAiMjc3EAfgAMRGlueHQACGZpbmFsaXplc3EAfgAM0vGTj3QACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AQXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHQAJGNvbS5tYWkuc2NhbGFNTC5UZXN0RnJhbWVXb3JrQ2xhc3NpZnVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AWXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBBTAAJaW5oZXJpdGVkcQB+AEFMAAdwYXJlbnRzcQB+AEF4cQB+AF5zcQB+AFl1cQB+ADwAAAAAc3EAfgBZdXEAfgA8AAAAAHNxAH4AWXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AXXQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AXXNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4AdnQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4Ad3NxAH4AanQAA0FueXNxAH4AbnNxAH4AcXVxAH4AdAAAAAJzcQB+AHZ0AAVzY2FsYXEAfgB9dXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAANzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAHY29tLm1haXNxAH4Ah3QAD2NvbS5tYWkuc2NhbGFNTHNxAH4Ah3QAA2NvbXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXjdzckB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABRL2hvbWUvcm94YW5hL1ByaXZhdGUvbXVsdGl2YXJpYXRlX2FuYWx5c2VzL0RlZXBMZWFybmluZy90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU66r/cNKC9m8X/7XU/YzsHrG1JE8=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwvXuw5wAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAqc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwmrXKOHQABm5vdGlmeXNxAH4ADIP8FN90AAd1bmFwcGx5c3EAfgAMsye8EXQAB2N1cnJpZWRzcQB+AAyQjYhudAAKZGF0YU1hdHJpeHNxAH4ADH2NtO50AAR3YWl0c3EAfgAMoTrMgHQADmNvcHkkZGVmYXVsdCQyc3EAfgAMzD+R4nQADSRhc0luc3RhbmNlT2ZzcQB+AAwZhDsWdAAKQ3JlYXRlRGF0YXNxAH4ADAceWB90AAdjbGFzc2Vzc3EAfgAMApI2WHQADHByb2R1Y3RBcml0eXNxAH4ADAqYS7N0AAZlcXVhbHNzcQB+AAzxbmojdAAHZGF0YVNldHNxAH4ADJgyncF0AAxhc0luc3RhbmNlT2ZzcQB+AAyne0eXdAAGcmVzdWx0c3EAfgAM8t+P5nQACmRhdGFMYWJlbHNzcQB+AAyfhJV5dAAMc3luY2hyb25pemVkc3EAfgAMFfwjZnQADSRpc0luc3RhbmNlT2ZzcQB+AAyXZzQjdAAGdHVwbGVkc3EAfgAMYLf06nQACGNhbkVxdWFsc3EAfgAM57qZZnQADXByb2R1Y3RQcmVmaXhzcQB+AAz7wSTTdAALY2xhc3NpZnlrTk5zcQB+AAyHHszadAAJbm90aWZ5QWxsc3EAfgAM7vd8wXQADGlzSW5zdGFuY2VPZnNxAH4ADPkUMKd0AAY8aW5pdD5zcQB+AAw/tT56dAAFYXBwbHlzcQB+AAyx+80sdAACPT1zcQB+AAxxkmKbdAAFY2xvbmVzcQB+AAxg5NyEdAAGJGluaXQkc3EAfgAMMLgMLnQAA2tOTnNxAH4ADGtAuNZ0AA5jb3B5JGRlZmF1bHQkM3NxAH4ADKAMj0J0AARjb3B5c3EAfgAMPPuzf3QACHRvU3RyaW5nc3EAfgAMVd6Z3XQAAiE9c3EAfgAMIIhnk3QACGdldENsYXNzc3EAfgAMpgPqjnQADmNvcHkkZGVmYXVsdCQxc3EAfgAMNa0g5XQAAm5lc3EAfgAMhRQp7nQAAmVxc3EAfgAMdQmCYnQAD3Byb2R1Y3RJdGVyYXRvcnNxAH4ADEvjCpB0AAIjI3NxAH4ADGTp2VF0AAhmaW5hbGl6ZXNxAH4ADIadFpd0AA5wcm9kdWN0RWxlbWVudHNxAH4ADH2ra750AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AGt4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cAB0ABNjb20ubWFpLnNjYWxhTUwua05OdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyACF4c2J0aS5hcGkuQWJzdHJhY3RMYXp5JFN0cmljdExhenkNZhxrKRYquAIAAUwABXZhbHVldAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgCDc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AGtMAAlpbmhlcml0ZWRxAH4Aa0wAB3BhcmVudHNxAH4Aa3hxAH4AiHNxAH4Ag3VxAH4AZgAAAABzcQB+AIN1cQB+AGYAAAAAc3EAfgCDdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgCHdAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgCHc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCgdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgChc3EAfgCUdAADQW55c3EAfgCYc3EAfgCbdXEAfgCeAAAAAnNxAH4AoHQABXNjYWxhcQB+AKd1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAA3NyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAdjb20ubWFpc3EAfgCxdAAPY29tLm1haS5zY2FsYU1Mc3EAfgCxdAADY29tc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFeN3NyQHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AFEvaG9tZS9yb3hhbmEvUHJpdmF0ZS9tdWx0aXZhcmlhdGVfYW5hbHlzZXMvRGVlcExlYXJuaW5nL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABSrlr7ES8VuoZpT9f3ifQRH+M+4ew==
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/intro_breeze.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwuCFR6gAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAAc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFeN3NyQHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3Rvcnl0ABJMamF2YS9sYW5nL1N0cmluZztMAA9zb3VyY2VEaXJlY3RvcnlxAH4AGnhwdABRL2hvbWUvcm94YW5hL1ByaXZhdGUvbXVsdGl2YXJpYXRlX2FuYWx5c2VzL0RlZXBMZWFybmluZy90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUpK77tPwXEoRluIbEELPuKGyZUOA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/intro_breeze_viz.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwuCFR6gAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAAc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFeN3NyQHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3Rvcnl0ABJMamF2YS9sYW5nL1N0cmluZztMAA9zb3VyY2VEaXJlY3RvcnlxAH4AGnhwdABRL2hvbWUvcm94YW5hL1ByaXZhdGUvbXVsdGl2YXJpYXRlX2FuYWx5c2VzL0RlZXBMZWFybmluZy90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUBSjHVlBwQzYQBcYP7hIt+yLLdh4=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwSfQqLwAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAqc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwBEG/03QABm5vdGlmeXNxAH4ADLV8l9R0AAd1bmFwcGx5c3EAfgAMDQJQDXQAB2N1cnJpZWRzcQB+AAzAEVnrdAAEd2FpdHNxAH4ADOEVsEF0AA5jb3B5JGRlZmF1bHQkMnNxAH4ADMVtBYF0AA0kYXNJbnN0YW5jZU9mc3EAfgAM7ySJT3QAB2NsYXNzZXNzcQB+AAwZx8u3dAAMcHJvZHVjdEFyaXR5c3EAfgAMgByJtHQABmVxdWFsc3NxAH4ADCEZJcN0AAdkYXRhU2V0c3EAfgAMcTuROHQADGFzSW5zdGFuY2VPZnNxAH4ADOszNdZ0AAZyZXN1bHRzcQB+AAzJa7DgdAAMc3luY2hyb25pemVkc3EAfgAMhM95hnQACmNyZWF0ZURhdGFzcQB+AAy42BOddAANJGlzSW5zdGFuY2VPZnNxAH4ADJ5KhwV0AAZ0dXBsZWRzcQB+AAzQp+9DdAAIY2FuRXF1YWxzcQB+AAyJsIFddAANcHJvZHVjdFByZWZpeHNxAH4ADBjDP0F0AAtjbGFzc2lmeWtOTnNxAH4ADIB14wd0AAlub3RpZnlBbGxzcQB+AAwh/utudAAMaXNJbnN0YW5jZU9mc3EAfgAMYzdbhXQABjxpbml0PnNxAH4ADF641BV0AAZsYWJsZXNzcQB+AAzKcL+5dAAFYXBwbHlzcQB+AAxuZh4udAACPT1zcQB+AAxyZcF4dAAFY2xvbmVzcQB+AAzZwJijdAAGJGluaXQkc3EAfgAMErRdkHQAA2tOTnNxAH4ADM3732x0AA5jb3B5JGRlZmF1bHQkM3NxAH4ADMe9CeZ0AARjb3B5c3EAfgAM0go1SHQACHRvU3RyaW5nc3EAfgAMQXXw93QAAiE9c3EAfgAMDn7tynQACGdldENsYXNzc3EAfgAMHJsoN3QADmNvcHkkZGVmYXVsdCQxc3EAfgAMA0LcjHQAAm5lc3EAfgAMuwQKx3QABWdyb3Vwc3EAfgAMckZFq3QAAmVxc3EAfgAMhPs18nQAD3Byb2R1Y3RJdGVyYXRvcnNxAH4ADB46KTt0AAIjI3NxAH4ADIoHj5x0AAhmaW5hbGl6ZXNxAH4ADOzqn/Z0AA5wcm9kdWN0RWxlbWVudHNxAH4ADAjrLYZ0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AGt4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cABxAH4ARXVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AgnNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBrTAAJaW5oZXJpdGVkcQB+AGtMAAdwYXJlbnRzcQB+AGt4cQB+AIdzcQB+AIJ1cQB+AGYAAAAAc3EAfgCCdXEAfgBmAAAAAHNxAH4AgnVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AhnQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AhnNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4An3QABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AoHNxAH4Ak3QAA0FueXNxAH4Al3NxAH4AmnVxAH4AnQAAAAJzcQB+AJ90AAVzY2FsYXEAfgCmdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAV43c3JAdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAUS9ob21lL3JveGFuYS9Qcml2YXRlL211bHRpdmFyaWF0ZV9hbmFseXNlcy9EZWVwTGVhcm5pbmcvdGFyZ2V0L3NjYWxhLTIuMTIvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFPP57uJRWkrmqWflajNB9XUM9TOV
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/poisson_app.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwuCFR6gAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAAc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFeN3NyQHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3Rvcnl0ABJMamF2YS9sYW5nL1N0cmluZztMAA9zb3VyY2VEaXJlY3RvcnlxAH4AGnhwdABRL2hvbWUvcm94YW5hL1ByaXZhdGUvbXVsdGl2YXJpYXRlX2FuYWx5c2VzL0RlZXBMZWFybmluZy90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUjw9p8TeNJuhjtyVAaztg9STaKG0=
+external apis:
+0 items
+source infos:
+17 items
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/ExampleLR.scala -> 
+AAAAAAAAAAA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescent.scala -> 
+AAAAAAAAAAA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/GradientDescentMultiInput.scala -> 
+AAAAAAAAAAA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpNN.scala -> 
+AAAAAAAAAAA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleInpOut.scala -> 
+AAAAAAAAAAA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/MultipleOut1Inp.scala -> 
+AAAAAAAAAAA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/SimplestNetwork.scala -> 
+AAAAAAAAAAA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/UsingBreeze.scala -> 
+AAAAAAAAAAA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/AutoNorm.scala -> 
+AAAAAAAAAAA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/BasicVectorOP.scala -> 
+AAAAAAAAAAA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/ReadFile.scala -> 
+AAAAAAAAAAA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/TestFrameWorkClassif.scala -> 
+AAAAAAAAAAA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/com/mai/scalaML/kNN.scala -> 
+AAAAAAAAAAA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/intro_breeze.scala -> 
+AAAAAAAAAAA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/intro_breeze_viz.scala -> 
+AAAAAAAAAAA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/kNN.scala -> 
+AAAAAAAAAAA=
+/home/roxana/Private/multivariate_analyses/DeepLearning/src/main/scala/poisson_app.scala -> 
+AAAAAAAAAAA=
+compilations:
+1 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXjdzckB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAUS9ob21lL3JveGFuYS9Qcml2YXRlL211bHRpdmFyaWF0ZV9hbmFseXNlcy9EZWVwTGVhcm5pbmcvdGFyZ2V0L3NjYWxhLTIuMTIvY2xhc3Nlc3QAAS8=

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="deeplearning_2.12"
+		revision="0.1-SNAPSHOT"
+		conf="runtime"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20170831115140"/>
+	<dependencies>
+		<module organisation="org.scala-graph" name="graph-core_2.12">
+			<revision name="1.11.5" status="release" pubdate="20170421095300" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-graph.org " downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3192" time="0" location="/home/roxana/.ivy2/cache/org.scala-graph/graph-core_2.12/ivy-1.11.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-graph/graph-core_2.12/1.11.5/graph-core_2.12-1.11.5.pom"/>
+				<caller organisation="default" name="deeplearning_2.12" conf="compile, runtime" rev="1.11.5" rev-constraint-default="1.11.5" rev-constraint-dynamic="1.11.5" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="graph-core_2.12" type="jar" ext="jar" status="no" details="" size="1432752" time="0" location="/home/roxana/.ivy2/cache/org.scala-graph/graph-core_2.12/jars/graph-core_2.12-1.11.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-graph/graph-core_2.12/1.11.5/graph-core_2.12-1.11.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.plotly-scala" name="plotly-core_2.11">
+			<revision name="0.3.2" status="release" pubdate="20170413122820" resolver="public" artresolver="public" homepage="https://github.com/alexarchambault/plotly-scala" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="LGPL 3.0" url="http://opensource.org/licenses/LGPL-3.0"/>
+				<metadata-artifact status="successful" details="" size="2137" time="247" location="/home/roxana/.ivy2/cache/org.plotly-scala/plotly-core_2.11/ivy-0.3.2.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/org.plotly-scala/plotly-core_2.11/ivy-0.3.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/plotly-scala/plotly-core_2.11/0.3.2/plotly-core_2.11-0.3.2.pom"/>
+				<caller organisation="default" name="deeplearning_2.12" conf="compile, runtime" rev="0.3.2" rev-constraint-default="0.3.2" rev-constraint-dynamic="0.3.2" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="plotly-core_2.11" type="jar" ext="jar" status="successful" details="" size="351863" time="430" location="/home/roxana/.ivy2/cache/org.plotly-scala/plotly-core_2.11/jars/plotly-core_2.11-0.3.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/plotly-scala/plotly-core_2.11/0.3.2/plotly-core_2.11-0.3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.2" status="release" pubdate="20170413111911" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.2/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/home/roxana/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.2/scala-library-2.12.2.pom"/>
+				<caller organisation="org.plotly-scala" name="plotly-core_2.11" conf="default, compile, runtime, master" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.3.2"/>
+				<caller organisation="org.scala-graph" name="graph-core_2.12" conf="default, compile, runtime, master" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="1.11.5"/>
+				<caller organisation="default" name="deeplearning_2.12" conf="compile, runtime" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5278660" time="0" location="/home/roxana/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.2/scala-library-2.12.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

@@ -1,3 +1,5 @@
+/*
+
 /* Using the Breeze Linear Algebra Cheat Sheet 
 https://github.com/scalanlp/breeze/wiki/Linear-Algebra-Cheat-Sheet
 (after updating the dependencies in build.sbt to add the breeze library)
@@ -83,7 +85,7 @@ val randMatrix = DenseMatrix.rand(2,3)
  write matrices to files with breeze.linalg.csvwrite function
 */
 
-
+*/
 
  
 

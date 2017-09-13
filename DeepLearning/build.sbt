@@ -3,8 +3,7 @@ scalaVersion := "2.11.10"
 
 //scalaVersion := "2.12.2"
 libraryDependencies ++= Seq(
-"co.theasi" %% "plotly" % "0.2.0",
-"org.webjars.bower" % "plotly.js" % "1.30.0"
+"co.theasi" %% "plotly" % "0.2.0"
 
 //"org.scala-graph" % "graph-core" % "1.11.5"
 )

@@ -1,4 +1,4 @@
-object ExampleLR {
+/*object ExampleLR {
 
 
 val src = scala.io.Source.fromFile("CSCO.csv")
@@ -55,5 +55,5 @@ http://technobium.com/logistic-regression-using-apache-spark/
 "Learning Spark" - Karau, Konwinski, Wendell, Zaharia, 2015
 */
 
-
+*/
 

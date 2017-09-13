@@ -1,3 +1,5 @@
+/*
+
 object GradientDescentMultiInput {
 
 import breeze.linalg._
@@ -23,4 +25,4 @@ dotProduct
 
 }
 
-
+*/

@@ -1,3 +1,4 @@
+/*
 import breeze.linalg._
 
 
@@ -35,3 +36,5 @@ val testMultipleInpOut2 = neural_network2(myWeights2, myInputs)
 
 
 }
+
+*/
