@@ -11,4 +11,8 @@ Multivariate techniques are useful for:
 
 Multivariate analysis is concerned with both the discovery and testing of patterns in associative data.
 
+- characteristics of objects are measured: MULTIVARIATE ANALYSIS IS CONCERNED WITH ASSOCIATION AMONG MULTIPLE VARIATES (i.e. variables).
 
+- the process of scientific inquiry: search for naturalistic regularities in phenomena  as well as their incorporation into models for subsequent testing under changed conditions. Multivariate analysis can help the process of discovery (hypothesis creation) as the process of confirmation (hypothesis testing).
+
+-  
