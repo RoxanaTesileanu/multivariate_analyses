@@ -15,4 +15,10 @@ Multivariate analysis is concerned with both the discovery and testing of patter
 
 - the process of scientific inquiry: search for naturalistic regularities in phenomena  as well as their incorporation into models for subsequent testing under changed conditions. Multivariate analysis can help the process of discovery (hypothesis creation) as the process of confirmation (hypothesis testing).
 
--  
+- a DATA MATRIX or more DATA MATRICES are the heart of multivariate analyses. 
+=> emphasize certain aspects of the association among variables at the expense of supressing less important details.
+
+IN MULTIVARIATE ANALYSIS WE ARE INTERESTED IN ACCOUNTING FOR THE VARIATION IN ONE VARIABLE OR GROUP OF VARIABLES IN TERMS OF COVARIATION WITH OTHER VARIABLES.
+=> We analyse associative data: nature and degree of association between a SET OF RESPONSE and a SET OF PREDICTOR variables, finding a function or formula by which we can estimate values of the response variables from values of predictor variables (called the regression problem).
+
+   
