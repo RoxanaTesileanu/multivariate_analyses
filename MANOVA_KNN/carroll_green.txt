@@ -9,5 +9,6 @@ Multivariate techniques are useful for:
 - discovering regularities in the behavior of two or more variables
 - testing alternative models of association between two or more variables, including the determination of whether and how two or more groups (or other entities) differ in their multivariate profiles.
 
+Multivariate analysis is concerned with both the discovery and testing of patterns in associative data.
 
 
