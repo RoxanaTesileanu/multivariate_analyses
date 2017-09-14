@@ -55,8 +55,10 @@ The above classification criteria result in four major subdivisions of interest:
 
 - analysis of interobject similarity: cluster analysis and other types of object-grouping procedures.
 
-The first two => dependence structures (response and predictor variables).
-The last tow => interdependence either of variables or objects. 
+The first two categories  => dependence structures (response and predictor variables).
+The last two categories => interdependence either of variables or objects. 
+
+WITHIN EACH OF THE ABOVE CATEGORIES, VARIOUS TECHNIQUES ARE DIFFERENTIATED IN TERMS OF THE TYPE OF THE VARIABLES!!!
 
 
  
