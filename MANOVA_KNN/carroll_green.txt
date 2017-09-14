@@ -19,6 +19,15 @@ Multivariate analysis is concerned with both the discovery and testing of patter
 => emphasize certain aspects of the association among variables at the expense of supressing less important details.
 
 IN MULTIVARIATE ANALYSIS WE ARE INTERESTED IN ACCOUNTING FOR THE VARIATION IN ONE VARIABLE OR GROUP OF VARIABLES IN TERMS OF COVARIATION WITH OTHER VARIABLES.
-=> We analyse associative data: nature and degree of association between a SET OF RESPONSE and a SET OF PREDICTOR variables, finding a function or formula by which we can estimate values of the response variables from values of predictor variables (called the regression problem).
+=> We analyse associative data: nature and degree of association between a SET OF RESPONSE and a SET OF PREDICTOR variables, finding a function or formula by which we can estimate values of the response variables from values of predictor variables (called the regression problem), stating the statistical confidence.
+
+In some cases we have no prior information for distinguishing between response and predictor variables. We are then interested in their interdependence as a whole. 
+
+_________________________________________
+
+A classification of techniques for analysing associative data
+
+- according to the data matrix, which is a set of objects (m rows) and a set of measurements on those objects (the n columns). Cell entries represent the value X_ij of object i on variable j. 
+ 
 
    
