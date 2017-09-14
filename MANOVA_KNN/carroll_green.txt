@@ -28,6 +28,7 @@ _________________________________________
 A classification of techniques for analysing associative data
 
 - according to the data matrix, which is a set of objects (m rows) and a set of measurements on those objects (the n columns). Cell entries represent the value X_ij of object i on variable j. 
- 
 
-   
+- cell values may consist of continuous, discrete and categorical variables or standardized (or their normalized, ranked, ratio-scaled,  etc.  versions) or combinations of these.  
+
+-     
