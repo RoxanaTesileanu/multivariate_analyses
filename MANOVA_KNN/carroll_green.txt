@@ -3,5 +3,11 @@ Summarization of Carroll and Green - Mathematical Tools for Applied Multivariate
 Author: Roxana Tesileanu
 Date: September 2017
 
+Ch.1 - The Nature of Multivariate Data Analysis
+
+Multivariate techniques are useful for:
+- discovering regularities in the behavior of two or more variables
+- testing alternative models of association between two or more variables, including the determination of whether and how two or more groups (or other entities) differ in their multivariate profiles.
+
 
 
