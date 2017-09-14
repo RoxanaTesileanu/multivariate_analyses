@@ -29,7 +29,7 @@ A classification of techniques for analysing associative data
 
 - the data matrix, which is a set of objects (m rows) and a set of measurements on those objects (the n columns). Cell entries represent the value X_ij of object i on variable j. 
 
-- cell values may consist of continuous, discrete and categorical variables or standardized (or their normalized, ranked, ratio-scaled,  etc.  versions) or combinations of these.  
+- cell values may consist of continuous, discrete and categorical variables or standardized (or their normalized, ranked, etc.  versions) or combinations of these.  
 
 - classifying multivariate techniques according to:
 	- purpose of the study and types of assumptions desired by the researcher
@@ -43,6 +43,21 @@ A classification of techniques for analysing associative data
 			- no division in subsets at all.
 
 If we do partition the dataset we are usually concerned with the LINEAR COMPOSITES OF THE VARIABLES IN THAT SUBSET AND EACH COMPOSITE'S ASSOCIATION WITH OTHER VARIABLES. 
+If we choose association of variables, most multivariate analyses assume linear relationships among the variables. A LINEAR MODEL IS OFTEN A GOOD APPROXIMATION TO A NONLINEAR ONE, AT LEAST OVER RANGES OF THE VARIABLES IN QUESTION.
+
+The above classification criteria result in four major subdivisions of interest:
+
+- single criterion, multiple predictor association: multiple regression analysis, analysis of variance and covariance, and two-group discriminant analysis
+
+- multiple criterion, multiple predictor association: canonical correlation, MANOVA and MANCOVA, and multiple discriminant analysis
+
+- analysis of variables interdependence: factor analysis, multidimentional scaling, PCA
+
+- analysis of interobject similarity: cluster analysis and other types of object-grouping procedures.
+
+The first two => dependence structures (response and predictor variables).
+The last tow => interdependence either of variables or objects. 
+
 
  
     
