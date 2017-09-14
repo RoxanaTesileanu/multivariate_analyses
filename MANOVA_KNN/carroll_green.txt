@@ -40,6 +40,9 @@ A classification of techniques for analysing associative data
 			- one response variable and more predictor variables
 			- composites of response variables and composites of predictor variables
 			- composites of response variables and one predictor variable
+			- no division in subsets at all.
+
+If we do partition the dataset we are usually concerned with the LINEAR COMPOSITES OF THE VARIABLES IN THAT SUBSET AND EACH COMPOSITE'S ASSOCIATION WITH OTHER VARIABLES. 
 
  
     
