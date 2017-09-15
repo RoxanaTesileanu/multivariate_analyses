@@ -3,10 +3,11 @@ author: Roxana Tesileanu, roxana.te@web.de
 beginning date: september 2017
 
 
-From regression trees to variarion trees
+From regression trees to variation trees
 
 Paper aims: 
 
+Development of the theoretical basis for variation trees (decision trees based on MANOVA).
 
 
 
