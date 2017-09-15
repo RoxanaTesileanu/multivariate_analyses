@@ -1,4 +1,4 @@
-desired journal: IEEE Computing in Science Engineering
+desired journal: IEEE Computing in Science and Engineering
 author: Roxana Tesileanu, roxana.te@web.de
 affiliation:INCDS, Brasov Station
 date: september 2017
