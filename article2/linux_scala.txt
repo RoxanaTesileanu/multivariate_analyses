@@ -1,0 +1,8 @@
+desired journal: IEEE Computing in Science Engineering
+author: Roxana Tesileanu
+date: september 2017
+
+
+Using Linux as a Development Platform for Scala Projects
+
+
