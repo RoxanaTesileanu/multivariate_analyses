@@ -12,7 +12,21 @@ In order to implement software development projects, one should consider which t
 
 It is also important to understand that the software development process "is not just writing code", but rather a more comprehensive process (Rehman and Paul, 2003). Rehman and Paul (2003) describe the software development process as comprising the following steps: requirement gathering, writing functional specifications, creating architecture and design documents, implementation and coding, testing and quality assurance, software release, documentation, and, support and development and release of new features. Each project starts with a requirement analysis which investigates the real-world need of the final product. Which functions should the new software carry in real-world problem solving within the specified domain? Functional specifications present the functionality of a software product at an abstract level "defining its input/output behavior". Further, on the basis of the functional specifications, an architecture of the product is created. The architecture "defines the different components of the product and how they interact with each other", without providing the explicit details on how they should be implemented to reach the desired functionality. This happens at the design stage, when design documents are created which define each individual component to the level of functions and procedures. Using the design documents and development tools (SBT and editor) the code is then implemented and tested. There are more types of testing: unit testing (testing one part or one component of the product using test cases to test functionality of this part of the software), sanity testing to check if all components compile, regression or stress testing to check the long-term behavior of the product when used continuously over a period of time, and functional testing using test cases built on functional specifications. If a bug (an anomaly) is found it must be reported and fixed. The documentation includes: technical documentation developed during the development process, technical documentation prepared for technical support staff, and end-user manuals and guides. Finally, the last stage of the life cycle of a software development project is the support and release of new versions depending on requirements.       
 
+The present article aims at introducing the reader to the tools needed to put in motion the development system of Scala projects on Linux, with emphasis on the Ubuntu distribution. The following sections will cover brief introductions in using the VIM editor as an editor for Scala code and using SBT to create and manage Scala projects.
 
+2. Using VIM as an editor for Scala code
+
+
+
+
+3. Using SBT to create and manage Scala projects
+3.1 Installing SBT
+3.2 Creating a Scala project
+3.3 Some basic SBT tasks
+
+
+   
+4. Conclusion
  
 
 
@@ -22,7 +36,9 @@ It is also important to understand that the software development process "is not
 
 
 
+Biography:
 
+Roxana Tesileanu graduated Forestry and Environmental Sciences (Dipl. Forstwirtin, the German equivalent to BSc plus MSc in Forestry) in 2008 at Albert-Ludwigs-Universitaet in Freiburg i. Br., Germany, worked as project team member in more international projects (at WSL and Agroscope in Switzerland), and since 2014  as research assistant at INCDS Romania. She is specialized in soil chemistry, environmental statistics and bioinformatics.
 
 
 
