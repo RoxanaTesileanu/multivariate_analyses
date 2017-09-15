@@ -7,4 +7,12 @@ date: september 2017
 The MANOVA-KNN pipeline for reducing error in KNN classification tasks
 
 
+Paper aims: 
+
+Develop the theoretical basis for the MANOVA-KNN pipeline (without Scala implementation, which will follow afterwards). 
+
+The nature-inspired pipeline (inspired from diffusion processes in soils) will combine MANOVA with an adaptive KNN classifier. 
+
+The KNN algorithm will be adaptive by means of a gradient k-improvement optimization of the neighborhood size and direction. 
+
 
