@@ -1,0 +1,15 @@
+desired journal: IEEE Transactions on Evolutionary Computation
+author: Roxana Tesileanu, roxana.te@web.de
+beginning date: september 2017
+
+
+From regression trees to variarion trees
+
+Paper aims: 
+
+
+
+
+
+
+
