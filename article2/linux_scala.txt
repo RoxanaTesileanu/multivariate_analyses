@@ -8,7 +8,7 @@ Using Linux as a Development Platform for Scala Projects
 
 1. Introduction
 
-In order to implement software development projects, one should consider which tools to choose for the different components of the development system - which are according to Rehman and Paul (2003): the hardware platform, the operating system, editors, compilers and assemblers, debuggers, version control system and bug tracking (Tesileanu 2017). 
+In order to implement software development projects, one should consider which tools to choose for the different components of the development system - which are according to Rehman and Paul (2003): the hardware platform, the operating system, editors, compilers and assemblers, debuggers, version control system and bug tracking (Tesileanu 2017). For implementing Scala projects, working with the Simple Build Tool (SBT) (http://www.scala-sbt.org) condenses the list of the components of a development system, as it unites different steps in on tool (compiling, building, testing and debugging) (Suereth and Farwell, 2016). Another 
 
 
 
@@ -28,5 +28,7 @@ Bibliography:
 1. Rafeeq Ur Rehman and Christopher Paul. The Linux Development Platform. Pearson, 2003.
 
 2. Roxana Tesileanu. Introduction to Statistical Computing in Scala - an Implementation of the K-Nearest Neighbors Classifier. IEEE Transactions on Neural Networks and Learning Systems. Submitted, under review, 2017.
+
+3. Joshua Suereth and Matthew Farwell. SBT in action: the Simple Scala Build Tool. Manning Publications Co., Shelter Island. 2016
 
 
