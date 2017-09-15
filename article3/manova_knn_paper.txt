@@ -1,0 +1,10 @@
+desired journal: IEEE Transactions on Evolutionary Computation
+author: Roxana Tesileanu, roxana.te@web.de
+affiliation: INCDS, Brasov Station
+date: september 2017
+
+
+The MANOVA-KNN pipeline for reducing error in KNN classification tasks
+
+
+
