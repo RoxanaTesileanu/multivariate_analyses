@@ -6,6 +6,10 @@ date: september 2017
 
 Using Linux as a Development Platform for Scala Projects
 
+Abstract
+
+Scala has already proven its advantages, and many big projects are implemented using this language. Though, newcomers and researchers from other branches than computer science might experience anxiety facing this functional programming language. With no reason though, because there already are many useful learning resources available. This paper offers an introduction into the software development process of Scala projects.      
+
 1. Introduction
 
 In order to implement software development projects, one should consider which tools to choose for the different components of the development system, which according to Rehman and Paul (2003) are the following: the hardware platform, the operating system, editors, compilers and assemblers, debuggers, version control system and bug tracking (Tesileanu 2017). For implementing Scala projects, working with the Simple Build Tool (SBT) (http://www.scala-sbt.org) condenses the list of the components of a development system, as it unites different steps in one tool (compiling, building, testing and debugging) (see Suereth and Farwell, 2016). Another advantage of using SBT is the opportunity of working interactively in Scala REPL, a tool for evaluating expressions in Scala (https://docs.scala-lang.org/overviews/repl/overview.html) within a SBT session, to develop bits of code which can then be inserted in the editor of choice.  
