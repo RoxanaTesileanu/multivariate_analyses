@@ -59,11 +59,14 @@ To excute and external command, i.e. a command as if you were in the command lin
 Finally for getting help in VIM you type ":help <ENTER>". To close the help window use ":q". To find help on a specific command use ":help some_command", for example type ":help user-manual" to get to the user manual. For an interactive tutorial for VIM you can also use the "VIM Tutor" initially created by Pierce and Ware, which can be started in the command line with the command "$ vimtutor <ENTER>". A short introduction in VIM can be also found in Shotts (2009), a lecture which gently introduces readers to the Linux command line. 
 
 
-    
-
-
 3. Using SBT to create and manage Scala projects
+
+In this section you will find out how to install SBT and use it to create and manage Scala projects. 
+
 3.1 Installing SBT
+
+
+
 3.2 Creating a Scala project
 3.3 Some basic SBT tasks
 
@@ -92,5 +95,10 @@ Bibliography:
 2. Roxana Tesileanu. Introduction to Statistical Computing in Scala - an Implementation of the K-Nearest Neighbors Classifier. IEEE Transactions on Neural Networks and Learning Systems. Submitted, under review, 2017.
 
 3. Joshua Suereth and Matthew Farwell. SBT in action: the Simple Scala Build Tool. Manning Publications Co., Shelter Island. 2016
+
+4. Michael C. Pierce and Robert K. Ware. VIM Tutor 1.7.
+
+5. William E. Shotts. The Linux Command Line. 2009
+
 
 
