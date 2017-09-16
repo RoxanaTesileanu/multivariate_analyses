@@ -17,7 +17,7 @@ The present article aims at introducing the reader to the tools needed to put in
 2. Using VIM as an editor for Scala code
 
 VIM is an editor which can be used from within the Linux command line and can be adapted to support the editing of Scala code by installing the vim-scala package of Derek Wyatt found at https://github.com/derekwyatt/vim-scala. 
-Under Linux you can install VIM using the package tools at hand (like e.g. dphg, apt-get, aptitude, rpm or yum) depending on the installed distribution. In Ubuntu the command for installing VIM is: “$ sudo apt install vim”. Afterwards, you open the command line and launch VIM by typing “$ vim <ENTER>”. The following instructions will make the first VIM session easy to handle:
+Under Linux you can install VIM using the package tools at hand (like e.g. dphg, apt-get, aptitude, rpm or yum) depending on the installed distribution. In Ubuntu the command for installing VIM is: “$ sudo apt install vim”. Afterwards, you open the command line and launch VIM by typing “$ vim <ENTER>”. The following instructions will make the first VIM session easy to pass through:
 - because VIM starts in command mode you can change to insert mode with the "i" key
 - to exit insert mode and return to command mode, press the <ESC> key
 - to write the open file to the hard drive use ":w" in command mode
