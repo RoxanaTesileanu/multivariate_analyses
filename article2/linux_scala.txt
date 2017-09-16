@@ -80,11 +80,46 @@ Next, open a Scala REPL session in SBT using the commands introduced at the begi
 
 3.2 Creating a Scala project
 
+In this section we will create a Scala project called Scala_Playground in order to continue the playground series of Linux introductions started by William Shotts (2009) in his book "The Linux Command Line". 
 
+Open the terminal with <CTRL-ALT-t>. It starts directly in your home directory. Next, create a directory called Scala_Playground ("$ mkdir Scala_Playground <ENTER>"). Check if the directory was created with the command "$ls <ENTER>" which lists the contents of the directory in which you are placed. Further, switch to the Scala_Playground directory ("$ cd Scala_Playground") and create a part of the inner structure of the current directory by adding another directory called src with its subdirectory main, with its subdirectory scala. This is done with the command "$ mkdir -p src/main/scala" which creates the entire chain of directories. Check it with "$ls" and "$cd" commands, return to the Scala_Playground directory with "cd - ". 
+
+Next, in the Scala_Playground directory, create a second directory called project. The ls command should print now for the Scala_Playground two contents: project and src.  
+
+The final step in creating the Scala project is to create two files: one directly in the Scala_Playground directory called build.sbt and the second in the Scala_Playground/project directory called build.properties. Open VIM when you are in the Scala_playground/project directory and type in:
+
+sbt.version = 0.13.15 
+
+Go in the command mode with <ESC> and save the changes and give the open file a name: ":w build.properties". Exit vim with ":q". 
+
+The build.properties file sets the version of SBT.
+
+Next, when you are in the Scala_Playground directory open VIM and edit the basic settings of the Scala project: project name, Scala version used, and the dependencies you need. For the moment we will ignore dependencies and create the basic Scala project. Type in the file opened in VIM the following two lines:
+name := "Scala_Playground"
+scalaVersion := "2.11.10"
+The above two lines are not in Scala, they are in SBT's own language.
+Now, get into the command line mode with <ESC> and save the changes and give the file the name build.sbt (":w build.sbt"). Exit VIM with ":q".  
+You should now have three objects in the Scala_Playground directory: the build.sbt file, the project directory and the src directory. 
+  
+You can now launch SBT while you are in the Scala_Playground directory using the "$ sbt" command. You can see the SBT's output as it uses the information from the two edited files and creates the desired Scala project. When the output is finished you get to see the SBT prompt ">". The project was created successfully. Now, launch the Scala REPL with the command "> console". When the REPL is open you get to see the Scala prompt "scala>". You can type in some expressions to see if it works. 
+Type ":q" to get back to SBT and "exit" to get back to the command-line. 
+
+You can see that the Scala_Playground directory has gained some additional directories: the Scala_Playground/target directory and the Scala_Playground/project/target directory. These are created by SBT when it creates the Scala project. 
+
+In the src/main/scala directory you should place your Scala codes in form of scala files.   
 
 3.3 Some basic SBT tasks
 
+Open SBT. When you see the SBT prompt ">" type in your first SBT command: "help". This generates an output which you can use to get further information about SBT and about the configuration of your project (command "about", command "settings"). The command "reload" reloads the project in the current directory, which is useful after you've changed the project settings or after you've changed the source files. It does the sanity check as it compiles the source files and outputs the errors encountered in the compilation process, accompanied by messages indicating possible reasons. It is very often helpful to try to read them in order to debug the code. 
+ 
+The command "tasks" is also listed in the help output. The SBT tasks show much of the functions SBT can take over. Type in "tasks" and check the default list of SBT tasks: 
+- starting the Scala REPL with the command "console"
+- compile source files with the command "complile"
+- run an application with the command "run" 
+- tests the code executing all tests
+- and many more.
 
+For a detailed introduction in SBT you should check the SBT documentation at http://www.scala-sbt.org/documentation.html and read the book of Joshua Suereth and Matthew Farwell (2016) "SBT in action: the Simple Scala Build Tool". 
    
 4. Conclusion
  
