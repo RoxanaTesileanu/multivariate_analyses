@@ -56,7 +56,7 @@ A useful debugging command is the matching parentheses command. You can find out
 
 To excute and external command, i.e. a command as if you were in the command line, with the ":! your_command" command. For example the ":! ls <ENTER>" command will list the objects of the working directory. 
 
-Finally for getting help in VIM you type ":help <ENTER>". To close the help window use ":q". To find help on a specific command use ":help some_command", for example type ":help user-manual" to get to the user manual. For an interactive tutorial for VIM you can also use the "VIM Tutor" initially created by Pierce and Ware, which can be started in the command line with the command "$ vimtutor <ENTER>". A short introduction in VIM can be also found in Shotts (2009), a lecture which gently introduces readers to the Linux command line. 
+Finally for getting help in VIM you type ":help <ENTER>". To close the help window use ":q". To find help on a specific command use ":help some_command", for example type ":help user-manual" to get to the user manual. For an interactive tutorial for VIM you can also use the "VIM Tutor" initially created by Pierce and Ware, which can be started in the command line with the command "$ vimtutor <ENTER>". A short introduction in VIM can be also found in Shotts (2009), a lecture which gently introduces readers to the Linux command line in general. 
 
 
 3. Using SBT to create and manage Scala projects
@@ -65,9 +65,12 @@ In this section you will find out how to install SBT and use it to create and ma
 
 3.1 Installing SBT
 
-
+You can use the Scala REPL either directly from within the command-line, initiating a REPL sesssion with the command "$ scala", or, by launching a SBT-session with the command "$ sbt" and then from within SBT launch the Scala REPL using the command "> console". On Ubuntu you can install the Scala language using the apt command ("$ sudo apt install scala") with no additional commands. Check the package management tool you use to get the same result. You can open the Scala REPL and type in some expressions; to exit type ":q" (VIM is useful after all). For guidance, check the book of Jason Swartz, "Learning Scala" for a great introduction to the Scala language. 
 
 3.2 Creating a Scala project
+
+
+
 3.3 Some basic SBT tasks
 
 
@@ -100,5 +103,6 @@ Bibliography:
 
 5. William E. Shotts. The Linux Command Line. 2009
 
+6. Jason Swartz. Learning Scala. O'Reilly. 2009
 
 
