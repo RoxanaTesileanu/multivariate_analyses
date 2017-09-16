@@ -6,6 +6,7 @@ date: september 2017
 
 Using Linux as a Development Platform for Scala Projects
 
+
 Abstract
 
 Scala has already proven its advantages, and many big projects are implemented using this language. Though, newcomers and researchers from other branches than computer science might experience anxiety facing this functional programming language. With no reason though, because there already are many useful learning resources available. This paper offers an introduction into the software development process of Scala projects.      
