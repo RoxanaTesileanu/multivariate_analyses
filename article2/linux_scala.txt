@@ -25,12 +25,13 @@ Under Linux you can install VIM using the package tools at hand (like e.g. dphg,
 - to exit VIM type ":wq" to quit and save changes, or ":q!" to discard changes (both in command mode)
 - pressing <ESC> will not just place you in command mode but also cancel an unwanted and partially completed command in command mode.
 
+The following paragraphs will help you navigate through the VIM file, and, process text (append, delete, copy, paste, search and replace, edit multiple files and get help). 
+
 To move the cursor you use: "l" (or right arrow), "h" (or left arrow), "j" (meaning going down one line), or "k" (meaning going up one line). Moving inside the current line is possible with "0" (to go to the beginning of the current line) and "$" (to go to the end of the current line). To go to the end of the file, i.e. to the last line of the file you use "G" and to go to the beginning of the file, i.e. to the first line you use "gg". To go to a specific line you use "numberG" (for example: 2G to go the the second line).
 
 When you are in command mode, you can start inserting text by using the "i" key to place you in insert mode, but there are also other commands which can place you in insert mode so that you can start appending text. One of them is the "a" key, which lets you append text right at the spot where the cursor is placed, or the "A" key which lets you append text directly at the end of the line. You can also use the "o" key to open a line below the current line or "O" to open a line above the current line. 
 
 You can undo changes by using the "u" key and redo changes the using "<CTRL>r".
-
    
 Deleting text in command mode goes with (but not only) the following commands:
 - the "x" key deleted the current character; "3x" will delete the current character and the next two characters
@@ -39,7 +40,7 @@ Deleting text in command mode goes with (but not only) the following commands:
 - the "d$" command will delete to the end of the line
 - the "d0" command will delete to the beginning of the line.
 
-
+Cutting, copying and pasting text 
 
 
 3. Using SBT to create and manage Scala projects
