@@ -40,7 +40,13 @@ Deleting text in command mode goes with (but not only) the following commands:
 - the "d$" command will delete to the end of the line
 - the "d0" command will delete to the beginning of the line.
 
-Cutting, copying and pasting text 
+The commnads based on "d" nut just delete text but also copy it to a paste baffer, which can be later recalled with the "p" command to paste the contents of the buffer after the cursor or the "P" command to paste the contents of the buffer before the cursor.
+
+Cutting, copying and pasting text is done more traditionally with the "y" command (which stands for "yank", i.e. copy). To copy the current line you use "yy" ("6yy" means copy the current line and the next five lines). To copy to the end of the line use "y$" and to the beginning of the line use "y0". You can join lines with "J".
+
+Searching and replacing is done within the line and within the whole file. Searching within the line is done with "f" (for example "fa" will move the cursor to the next occurence of "a"). You can also use the substitute command for a line (for example: while in command mode "s:caar/car<ENTER>" means substitute "caar" with "car", and replaces the first occurence of the searched word). The ":#,#s/big/small/g" replaces "big" with "small" within a range of lines. 
+To search the entire file use "/" followed by the searched word and the <ENTER> key. You can go to the next occurrence of the searched word with the "n" (from "next") command. 
+
 
 
 3. Using SBT to create and manage Scala projects
