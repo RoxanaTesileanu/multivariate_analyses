@@ -79,6 +79,8 @@ We could develop linear functions of the demographics that would enable us to as
 3) Dimension-reduction methods
 
 - a set of t variables, each of which is expressed as a linear composite of the original n variables
-- 
+- suppose we want to portray the association across the m individuals in terms of fewer variables than the original n variables. If so, we might employ factor analysis, multidimensional scaling, or some other dimension-reduction method to represent the original set of n correlated variables as linear or non-linear composites of a set of t (t<n) underlying or LATENT VARIABLES in such a way as to retain as much of the original information as possible. The composites themselves might be chosen to obey other conditions, such as being mutually uncorrelated.
+
+  
    
     
