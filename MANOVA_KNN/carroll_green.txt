@@ -76,6 +76,9 @@ WITHIN EACH OF THE ABOVE CATEGORIES, VARIOUS TECHNIQUES ARE DIFFERENTIATED IN TE
 - more predictor variables (e.g. demographic characteristics)
 We could develop linear functions of the demographics that would enable us to assign each individual to one of the mutually exclussive groups (which is formed from a combination of the response dummies)  => MULTIPLE DISCRIMINANT ANALYSIS 
 
+3) Dimension-reduction methods
 
+- a set of t variables, each of which is expressed as a linear composite of the original n variables
+- 
    
     
