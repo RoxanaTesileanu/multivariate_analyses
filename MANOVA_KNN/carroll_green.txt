@@ -83,8 +83,10 @@ We could develop linear functions of the demographics that would enable us to as
 
 FIND BASIC DIMENSIONS, SO THAT THESE BASIC DIMENSIONS ACCOUNT FOR THE OBSERVABLE DEMOGRAPHIC VARIABLES.
 
-4) Inter-object simmilarity
+4) Inter-object similarity
 
-
+- the profile of each object (observation)
+- develop a measure of inter-object similarity with respect to patterns in the recorded n variables
+-   
    
     
