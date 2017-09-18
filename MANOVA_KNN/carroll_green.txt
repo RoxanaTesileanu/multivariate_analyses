@@ -94,6 +94,9 @@ ____________________________________________________________________
 
 To a large extent the study of multivariate techniques is the study of linear transformations (i.e. data matrices undergo linear transformations).
 
-    
+
+Multiple regression aside from being the most popular multivariate technique in applied research, provides a vehicle for subsequent discussion of all basi matrix operations and, in particular, the topics of determinants, matrix inversion, and matrix rank. These aspects of matrix algebra are essential in understanding the procedures for solving simultaneous equations, as appearing in multiple regression and other multivariate procedures. 
+__________________________________________________________________    
    
+
     
