@@ -47,11 +47,11 @@ If we choose association of variables, most multivariate analyses assume linear 
 
 The above classification criteria result in four major subdivisions of interest:
 
-- single criterion, multiple predictor association: multiple regression analysis, analysis of variance and covariance, and two-group discriminant analysis
+- single response, multiple predictor association: multiple regression analysis, analysis of variance and covariance, and two-group discriminant analysis
 
-- multiple criterion, multiple predictor association: canonical correlation, MANOVA and MANCOVA, and multiple discriminant analysis
+- multiple response, multiple predictor association: canonical correlation, multiple  MANOVA and MANCOVA, and multiple discriminant analysis
 
-- analysis of variables interdependence: factor analysis, multidimentional scaling, PCA
+- analysis of variables interdependence: factor analysis, PCA
 
 - analysis of interobject similarity: cluster analysis and other types of object-grouping procedures.
 
