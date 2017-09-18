@@ -68,5 +68,6 @@ WITHIN EACH OF THE ABOVE CATEGORIES, VARIOUS TECHNIQUES ARE DIFFERENTIATED IN TE
 - this is a prototypical application of multiple regression in which one tries to predict values of the response variable from a linear composite (linear combination) of the predictors
 
 - predictors can be either continuous or dummies
--  
+- the response variable can be also continuous or could represent the PRIOR CATEGORISATION OF THE RESPONSE VARIABLE based on some classification rule and dummy coded. If our purpose is to develop a linear composite (linear combination) of the predictors that enables us to classify each individual in either category, then we would employ two- (or more) group DISCRIMINANT ANALYSIS.
+   
     
