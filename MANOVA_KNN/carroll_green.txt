@@ -65,5 +65,8 @@ WITHIN EACH OF THE ABOVE CATEGORIES, VARIOUS TECHNIQUES ARE DIFFERENTIATED IN TE
 
 - dataset: we have n variables, of which 1 variable is the response variable, the rest of the variables (n-1) are the predictor variables
 
+- this is a prototypical application of multiple regression in which one tries to predict values of the response variable from a linear composite (linear combination) of the predictors
+
+- predictors can be either continuous or dummies
 -  
     
