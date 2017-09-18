@@ -72,5 +72,10 @@ WITHIN EACH OF THE ABOVE CATEGORIES, VARIOUS TECHNIQUES ARE DIFFERENTIATED IN TE
 
 2) Multiple response, multiple predictor association
 
+- more response variables (e.g. consumption of beer, wine and liquor) 
+- more predictor variables (e.g. demographic characteristics)
+We could develop linear functions of the demographics that would enable us to assign each individual to one of the mutually exclussive groups (which is formed from a combination of the response dummies)  => MULTIPLE DISCRIMINANT ANALYSIS 
+
+
    
     
