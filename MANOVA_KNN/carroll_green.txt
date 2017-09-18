@@ -90,6 +90,8 @@ FIND BASIC DIMENSIONS, SO THAT THESE BASIC DIMENSIONS ACCOUNT FOR THE OBSERVABLE
 
 We could cluster individual objects into similar groups on the basis of the overall similarity of their profiles. INFORMATION ON SPECIFIC VARIABLES IS LOST IN THE COMPUTATION OF INTERINDIVIDUAL SIMILARITY MEASURES!
 
-    
+____________________________________________________________________
+
+To a large extent the study of multivariate techniques is the study of linear transformations.     
    
     
