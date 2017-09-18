@@ -61,5 +61,9 @@ The last two categories => interdependence either of variables or objects.
 WITHIN EACH OF THE ABOVE CATEGORIES, VARIOUS TECHNIQUES ARE DIFFERENTIATED IN TERMS OF THE TYPE OF THE VARIABLES!!!
 
 
- 
+1) Single response, multiple predictor association
+
+- dataset: we have n variables, of which 1 variable is the response variable, the rest of the variables (n-1) are the predictor variables
+
+-  
     
