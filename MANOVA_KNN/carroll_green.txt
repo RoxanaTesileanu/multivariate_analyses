@@ -92,6 +92,8 @@ We could cluster individual objects into similar groups on the basis of the over
 
 ____________________________________________________________________
 
-To a large extent the study of multivariate techniques is the study of linear transformations.     
+To a large extent the study of multivariate techniques is the study of linear transformations (i.e. data matrices undergo linear transformations).
+
+    
    
     
