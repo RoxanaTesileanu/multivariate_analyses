@@ -99,4 +99,6 @@ Multiple regression aside from being the most popular multivariate technique in 
 __________________________________________________________________    
    
 
-    
+Ch. 2 - Vector and Matrix Operations for Multivariate Analysis
+
+
