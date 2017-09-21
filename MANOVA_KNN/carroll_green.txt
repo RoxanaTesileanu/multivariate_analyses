@@ -103,11 +103,16 @@ Ch. 2 - Vector and Matrix Operations for Multivariate Analysis
 
 - vectors are ordered n-tuples of numbers that are subject to certain manipulative rules
 
-- discuss the mean-corrected sums of squares and cross product (SSCP) matrices, covariance matrices and correlation matrices which are of particular interest to multivariate analysis
+- discuss the mean-corrected sums of squares and cross product (SSCP) matrices, covariance matrices and correlation matrices which are of particular interest to multivariate analysis; it shows the implementation details of the statistical matrices, making the implementation in Scala easier to imagine.
+- check the hand-written notes  
+
 
 See Paul Dawkins (2005) for details on vectors and matrices and Quinn and Keough (2002) for statistical matrices.
 
+
 _________________________________________________________________
+
+ch. 3 - Vector and Matrix Concepts from a Geometric Viewpoint
 
 
 
