@@ -107,13 +107,15 @@ Ch. 2 - Vector and Matrix Operations for Multivariate Analysis
 - check the hand-written notes  
 
 
-See Paul Dawkins (2005) for details on vectors and matrices and Quinn and Keough (2002) for statistical matrices.
+See Paul Dawkins (2005) for more details on vectors and matrices and Quinn and Keough (2002) for statistical matrices.
 
 
 _________________________________________________________________
 
 ch. 3 - Vector and Matrix Concepts from a Geometric Viewpoint
 
+- this ch. should develop the intuitive geometric reasoning of the material from ch. 2
 
+- 
 
 
