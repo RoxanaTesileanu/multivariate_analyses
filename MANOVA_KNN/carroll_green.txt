@@ -116,6 +116,7 @@ ch. 3 - Vector and Matrix Concepts from a Geometric Viewpoint
 
 - this ch. should develop the intuitive geometric reasoning of the material from ch. 2
 
--  
+- from p. 83 to p. 124 similar to Paul Dawkins (2005).
+  
 
 
