@@ -116,6 +116,6 @@ ch. 3 - Vector and Matrix Concepts from a Geometric Viewpoint
 
 - this ch. should develop the intuitive geometric reasoning of the material from ch. 2
 
-- 
+-  
 
 
