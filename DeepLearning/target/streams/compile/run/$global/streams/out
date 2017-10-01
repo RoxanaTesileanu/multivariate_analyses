@@ -1,60 +1,17 @@
 [0m[[0minfo[0m] [0mRunning firstGUI FirstGUI.scala[0m
 [0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
-[0m[[0mdebug[0m] [0mWaiting for thread run-main-2 to terminate.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-1 to terminate.[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
 [0m[[0mdebug[0m] [0m	/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.11/classes[0m
 [0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar[0m
 [0m[[0mdebug[0m] [0m	/home/roxana/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.10.jar[0m
 [0m[[0mdebug[0m] [0m	/home/roxana/.ivy2/cache/org.scalafx/scalafx_2.11/jars/scalafx_2.11-8.0.92-R10.jar[0m
 [0m[[0mdebug[0m] [0m	/home/roxana/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.10.jar[0m
-[0m[[31merror[0m] [0m(run-main-2) java.lang.IllegalStateException: Application launch must not be called more than once[0m
-java.lang.IllegalStateException: Application launch must not be called more than once
-	at com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:162)
-	at com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:143)
-	at javafx.application.Application.launch(Application.java:191)
-	at scalafx.application.JFXApp$class.main(JFXApp.scala:289)
-	at firstGUI$.main(firstGUI.scala:4)
-	at firstGUI.main(firstGUI.scala)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at sbt.Run.invokeMain(Run.scala:67)
-	at sbt.Run.run0(Run.scala:61)
-	at sbt.Run.sbt$Run$$execute$1(Run.scala:51)
-	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:55)
-	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
-	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
-	at sbt.Logger$$anon$4.apply(Logger.scala:84)
-	at sbt.TrapExit$App.run(TrapExit.scala:248)
-	at java.lang.Thread.run(Thread.java:748)
-[0m[[0mdebug[0m] [0m	Thread run-main-2 exited.[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-1 exited.[0m
 [0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mInterrupting thread Thread-4[0m
+[0m[[0mdebug[0m] [0m	Interrupted Thread-4[0m
+[0m[[0mdebug[0m] [0mInterrupting thread Glass/Prism Shutdown Hook[0m
+[0m[[0mdebug[0m] [0m	Interrupted Glass/Prism Shutdown Hook[0m
 [0m[[0mdebug[0m] [0mSandboxed run complete..[0m
-java.lang.RuntimeException: Nonzero exit code: 1
-	at scala.sys.package$.error(package.scala:27)
-	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:2135)
-	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:2135)
-	at scala.Option.foreach(Option.scala:236)
-	at sbt.BuildCommon$class.toError(Defaults.scala:2135)
-	at sbt.Defaults$.toError(Defaults.scala:39)
-	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$46$$anonfun$apply$47.apply(Defaults.scala:776)
-	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$46$$anonfun$apply$47.apply(Defaults.scala:774)
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
-	at sbt.std.Transform$$anon$4.work(System.scala:63)
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
-	at sbt.Execute.work(Execute.scala:237)
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-[0m[[31merror[0m] [0m(compile:[31mrun[0m) Nonzero exit code: 1[0m
+[0m[[0mdebug[0m] [0mExited with code 0[0m
