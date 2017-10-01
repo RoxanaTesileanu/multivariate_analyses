@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
 
 unmanagedJars in Compile += Attributed.blank(file("/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar"))
 
-
+fork := true
 
 
 //"co.theasi" %% "plotly" % "0.2.0"
@@ -37,6 +37,7 @@ unmanagedJars in Compile += Attributed.blank(file("/usr/lib/jvm/java-8-openjdk-a
 Joshua Suereth, Matthew Farwell, 2016, sbt in Action - The Simple Scala Build Tool, Manning
 
 Jarek Sacha, Coding on the Staircase (https://codingonthestaircase.wordpress.com/2013/05/)
+Jarek Sacha, ScalaFX-Tutorials (https://github.com/scalafx/ScalaFX-Tutorials/blob/3449d6341ef276ffc353c7a511579a59fd9a8c3f/hello-sbt/build.sbt)
 
 Wilkinson D. J., 2017 - Statistical Computing with Scala: A functional approach to data science, https://github.com/darrenjw/scala-course
 
