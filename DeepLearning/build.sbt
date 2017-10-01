@@ -35,9 +35,15 @@ unmanagedJars in Compile += Attributed.blank(file("/usr/lib/jvm/java-8-openjdk-a
 
 /* References:
 Joshua Suereth, Matthew Farwell, 2016, sbt in Action - The Simple Scala Build Tool, Manning
-Wilkinson D. J., 2017 - Statistical Computing with Scala: A func-
-tional approach to data science, https://github.com/darrenjw/
-scala-course
+
+Jarek Sacha, Coding on the Staircase (https://codingonthestaircase.wordpress.com/2013/05/)
+
+Wilkinson D. J., 2017 - Statistical Computing with Scala: A functional approach to data science, https://github.com/darrenjw/scala-course
+
+
+
+
+
 
 Resolver scalaz-stream at: https://github.com/etorreborre/specs2/issues/347
 */
