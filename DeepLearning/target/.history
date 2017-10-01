@@ -197,3 +197,7 @@ reload
 console
 reload
 console
+:q
+exit
+quit
+exit

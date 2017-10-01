@@ -3,10 +3,13 @@ scalaVersion := "2.11.10"
 
 //scalaVersion := "2.12.2"
 libraryDependencies ++= Seq(
-"co.theasi" %% "plotly" % "0.2.0"
+"org.scalafx" %% "scalafx" % "8.0.92-R10"
+)
+
+//"co.theasi" %% "plotly" % "0.2.0"
 
 //"org.scala-graph" % "graph-core" % "1.11.5"
-)
+
 
 //"org.specs2" % "specs2-core_2.11" % "3.5" % "test",
 //"com.cra.figaro" % "figaro" % "2.1.0.0",
