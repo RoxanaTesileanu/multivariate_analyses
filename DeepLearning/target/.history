@@ -267,3 +267,9 @@ exit
 console
 exit
 console
+run FirstGUI.scala
+reload
+run FirstGUI.scala
+exit
+console
+run FirstGUI.scala
