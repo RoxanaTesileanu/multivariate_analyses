@@ -7,7 +7,7 @@
 		revision="0.1-SNAPSHOT"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20171001160156"/>
+		date="20171001164317"/>
 	<dependencies>
 		<module organisation="org.scala-lang" name="scala-reflect">
 			<revision name="2.11.10" status="release" pubdate="20170405202200" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.10/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
@@ -22,12 +22,12 @@
 			</revision>
 		</module>
 		<module organisation="org.scalafx" name="scalafx_2.11">
-			<revision name="8.0.92-R10" status="release" pubdate="20160423000940" resolver="public" artresolver="public" homepage="http://www.scalafx.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+			<revision name="8.0.92-R10" status="release" pubdate="20160423000940" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalafx.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
 				<license name="BSD" url="https://github.com/scalafx/scalafx/blob/master/LICENSE.txt"/>
-				<metadata-artifact status="successful" details="" size="3490" time="263" location="/home/roxana/.ivy2/cache/org.scalafx/scalafx_2.11/ivy-8.0.92-R10.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/org.scalafx/scalafx_2.11/ivy-8.0.92-R10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalafx/scalafx_2.11/8.0.92-R10/scalafx_2.11-8.0.92-R10.pom"/>
+				<metadata-artifact status="no" details="" size="3034" time="0" location="/home/roxana/.ivy2/cache/org.scalafx/scalafx_2.11/ivy-8.0.92-R10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalafx/scalafx_2.11/8.0.92-R10/scalafx_2.11-8.0.92-R10.pom"/>
 				<caller organisation="default" name="deeplearning_2.11" conf="compile" rev="8.0.92-R10" rev-constraint-default="8.0.92-R10" rev-constraint-dynamic="8.0.92-R10" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="scalafx_2.11" type="jar" ext="jar" status="successful" details="" size="2776538" time="4544" location="/home/roxana/.ivy2/cache/org.scalafx/scalafx_2.11/jars/scalafx_2.11-8.0.92-R10.jar">
+					<artifact name="scalafx_2.11" type="jar" ext="jar" status="no" details="" size="2776538" time="0" location="/home/roxana/.ivy2/cache/org.scalafx/scalafx_2.11/jars/scalafx_2.11-8.0.92-R10.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalafx/scalafx_2.11/8.0.92-R10/scalafx_2.11-8.0.92-R10.jar"/>
 					</artifact>
 				</artifacts>

@@ -1,10 +1,16 @@
 name := "DeepLearning"
 scalaVersion := "2.11.10"
 
-//scalaVersion := "2.12.2"
+//scalaVersion := "2.10.1"
 libraryDependencies ++= Seq(
 "org.scalafx" %% "scalafx" % "8.0.92-R10"
+
 )
+
+unmanagedJars in Compile += Attributed.blank(file("/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar"))
+
+
+
 
 //"co.theasi" %% "plotly" % "0.2.0"
 

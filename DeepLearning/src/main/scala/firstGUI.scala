@@ -1,9 +1,11 @@
-import scalafx.application.JFXApp
+/*import scalafx.application.JFXApp
+import scalafx.application.JFXApp.PrimaryStage
 
-val app = new JFXApp{
-	stage = new JFXApp.PrimaryStage{
+object firstGUI extends JFXApp {
+
+	stage = new PrimaryStage{
 		title = "First GUI"
 	}
 }
-app.main(args)
 
+*/
