@@ -4,7 +4,7 @@
 		module="deeplearning_2.11"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170831134256"
+		publication="20171001160156"
 	>
 		<description>
 		DeepLearning
@@ -34,6 +34,6 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.10" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.10" conf="scala-tool->default,optional(default);compile->default(compile)"/>
-		<dependency org="co.theasi" name="plotly_2.11" rev="0.2.0" conf="compile->default(compile)"/>
+		<dependency org="org.scalafx" name="scalafx_2.11" rev="8.0.92-R10" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
