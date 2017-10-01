@@ -2,7 +2,7 @@
 
 import javax.swing.JFrame
 import javafx.embed.swing.JFXPanel
-import javax.swing.Utilities
+import javax.swing.SwingUtilities
 
 val frame = new JFrame ("my frame")
 val panel = new JFXPanel()
