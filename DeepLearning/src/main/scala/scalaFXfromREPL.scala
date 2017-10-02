@@ -12,7 +12,8 @@ val panel = new JFXPanel()
 frame.add(panel)
 frame.setSize(600, 600)
 frame.setVisible(true)
-
+// use frame.dispose() to close the GUI 
+ 
 }
 
 /*

@@ -16,7 +16,7 @@ val panel = new JFXPanel()
 frame.add(panel)
 frame.setSize(600, 600)
 frame.setVisible(true)
-frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+// use frame.dispose() if you want to close the GUI
 
 }
 
