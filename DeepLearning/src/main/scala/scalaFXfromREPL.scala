@@ -4,11 +4,16 @@ import javax.swing.JFrame
 import javafx.embed.swing.JFXPanel
 import javax.swing.SwingUtilities
 
+
+object REPL {
+
 val frame = new JFrame ("my frame")
 val panel = new JFXPanel()
 frame.add(panel)
 frame.setSize(600, 600)
 frame.setVisible(true)
+
+}
 
 /*
 References:

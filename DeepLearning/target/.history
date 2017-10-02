@@ -285,3 +285,25 @@ exit
 console
 reload
 console
+reload
+console
+exit
+console
+reload
+console
+compile scalaPlot
+sbt
+exit
+console
+reload
+console
+exit
+console
+exit
+console
+exit
+console
+exit
+console
+exit
+console
