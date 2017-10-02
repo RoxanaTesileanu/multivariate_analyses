@@ -24,6 +24,7 @@ frame.setVisible(true)
 References:
 Irina Fedortsova: Integrating JavaFX into Swing Applications ( http://docs.oracle.com/javafx/2/swing/swing-fx-interoperability.htm )
 
+https://bugs.openjdk.java.net/browse/JDK-8089371
 */
 
 
