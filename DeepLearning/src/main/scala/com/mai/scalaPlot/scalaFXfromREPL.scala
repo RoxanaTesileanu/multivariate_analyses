@@ -11,7 +11,7 @@ import javax.swing.WindowConstants
 //import scalafx.application.Platform
 import scala.concurrent.ExecutionContext.Implicits.global //use Future
 
-
+Future{
 
 object REPL {
 
@@ -26,7 +26,7 @@ frame.setVisible(true)
 // use frame.dispose() if you want to close the GUI
 
 }
-
+}
 /*
 References:
 
