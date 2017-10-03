@@ -9,15 +9,16 @@ import javafx.embed.swing.JFXPanel
 import javax.swing.SwingUtilities
 import javax.swing.WindowConstants
 //import scalafx.application.Platform
+import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global //use Future
 
 
-concurrent.Future{
+
 object REPL {
 
 val frame = new JFrame ("my frame")
 val panel = new JFXPanel()
-frame.add(panel)
+concurrent.Future{frame.add(panel)}
 frame.setSize(600, 600)
 
 frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE)
@@ -26,7 +27,6 @@ frame.setVisible(true)
 
 // use frame.dispose() if you want to close the GUI
 
-}
 }
 /*
 References:
