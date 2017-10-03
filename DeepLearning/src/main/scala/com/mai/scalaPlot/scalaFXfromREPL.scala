@@ -15,7 +15,8 @@ import scala.concurrent.ExecutionContext.Implicits.global //use Future
 
 
 object REPL {
-
+def makeFrame ( title: String, size: (Int, Int) ) : Future[JFrame] = {
+Future{
 val frame = new JFrame ("my frame")
 val panel = new JFXPanel()
 concurrent.Future{frame.add(panel)}
@@ -24,7 +25,8 @@ frame.setSize(600, 600)
 frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE)
 //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
 frame.setVisible(true)
-
+}
+}
 // use frame.dispose() if you want to close the GUI
 
 }
