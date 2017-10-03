@@ -32,7 +32,7 @@ frame
 }
 // use frame.dispose() if you want to close the GUI
 
-}
+
 /*
 References:
 
