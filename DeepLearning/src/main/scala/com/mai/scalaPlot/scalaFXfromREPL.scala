@@ -1,4 +1,5 @@
 
+
 // this code creates a GUI in REPL
 
 package com.mai.scalaPlot
@@ -7,17 +8,16 @@ package com.mai.scalaPlot
 import javax.swing.JFrame
 import javafx.embed.swing.JFXPanel
 import javax.swing.SwingUtilities
-import javax.swing.WindowConstants
+//import javax.swing.WindowConstants
 import scalafx.application.Platform
 //import scala.concurrent.Future
 //import scala.concurrent.ExecutionContext.Implicits.global //use Future
 //import scalafx.event.ActionEvent
-
+import scalafx.scene.Scene
+import scalafx.stage.Stage
+import scalafx.scene.canvas.Canvas
 
 object REPL {
-
-
-def makeGUI ( title: String, size: (Int, Int) ) : JFrame = {
 
 Platform.runLater{
 val frame = new JFrame (title)
@@ -28,8 +28,6 @@ frame.setSize(size)
 //frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE)
 frame.setVisible(true)
 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
-}
-
 }
 
 }
