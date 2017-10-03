@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
 
 unmanagedJars in Compile += Attributed.blank(file("/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar"))
 
-fork := true
+fork in run := true
 
 
 //"co.theasi" %% "plotly" % "0.2.0"
