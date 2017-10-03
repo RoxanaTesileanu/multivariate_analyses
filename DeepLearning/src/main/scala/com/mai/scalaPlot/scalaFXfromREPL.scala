@@ -11,7 +11,6 @@ import javax.swing.WindowConstants
 //import scalafx.application.Platform
 import scala.concurrent.ExecutionContext.Implicits.global //use Future
 
-Future{
 
 object REPL {
 
@@ -22,11 +21,13 @@ frame.setSize(600, 600)
 
 frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE)
 //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+Future{
 frame.setVisible(true)
+}
 // use frame.dispose() if you want to close the GUI
 
 }
-}
+
 /*
 References:
 
