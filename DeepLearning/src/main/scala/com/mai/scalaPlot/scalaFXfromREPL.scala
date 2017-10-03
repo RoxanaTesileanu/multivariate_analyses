@@ -18,8 +18,8 @@ object REPL {
 
 
 def makeFrame ( title: String, size: (Int, Int) ) : Future[JFrame] = {
-
-val frame : Future[JFrame] = Future {new JFrame (title)}
+Future{
+val frame = new JFrame (title)
 val panel = new JFXPanel()
 frame.add(panel)
 frame.setSize(600, 600)
@@ -27,8 +27,10 @@ frame.setSize(600, 600)
 frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE)
 //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
 frame.setVisible(true)
+}
 frame
 }
+
 }
 // use frame.dispose() if you want to close the GUI
 
