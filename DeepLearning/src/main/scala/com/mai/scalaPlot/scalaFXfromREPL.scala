@@ -19,7 +19,7 @@ object REPL {
 
 def makeFrame ( title: String, size: (Int, Int) ) : Future[JFrame] = {
 
-val frame : Future[JFrame] = future {new JFrame (title)}
+val frame : Future[JFrame] = Future {new JFrame (title)}
 val panel = new JFXPanel()
 frame.add(panel)
 frame.setSize(600, 600)
