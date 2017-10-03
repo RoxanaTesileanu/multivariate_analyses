@@ -19,7 +19,7 @@ def makeFrame ( title: String, size: (Int, Int) ) : Future[JFrame] = {
 Future{
 val frame = new JFrame ("my frame")
 val panel = new JFXPanel()
-concurrent.Future{frame.add(panel)}
+frame.add(panel)
 frame.setSize(600, 600)
 
 frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE)
