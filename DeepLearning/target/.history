@@ -325,3 +325,5 @@ exit
 console
 exit
 console
+sbt
+console

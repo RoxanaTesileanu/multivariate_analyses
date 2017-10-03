@@ -8,32 +8,32 @@ import javax.swing.JFrame
 import javafx.embed.swing.JFXPanel
 import javax.swing.SwingUtilities
 import javax.swing.WindowConstants
-//import scalafx.application.Platform
-import scala.concurrent.Future
-import scala.concurrent.ExecutionContext.Implicits.global //use Future
-import scalafx.event.ActionEvent
-import scala.util.{Failure, Success}
+import scalafx.application.Platform
+//import scala.concurrent.Future
+//import scala.concurrent.ExecutionContext.Implicits.global //use Future
+//import scalafx.event.ActionEvent
+
 
 object REPL {
 
 
-def makeFrame ( title: String, size: (Int, Int) ) : Future[JFrame] = {
-Future{
+def makeGUI ( title: String, size: (Int, Int) ) : JFrame = {
+
+Platform.runLater{
 val frame = new JFrame (title)
 val panel = new JFXPanel()
 frame.add(panel)
-frame.setSize(600, 600)
+frame.setSize(size)
 
-frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE)
-//frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+//frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE)
 frame.setVisible(true)
-frame
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
 }
-frame.onComplete {
-        case Success(value) => println("the frame is there")
-        
 
 }
+
+}
+
 // use frame.dispose() if you want to close the GUI
 
 
