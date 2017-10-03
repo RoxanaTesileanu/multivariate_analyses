@@ -15,9 +15,11 @@ import scalafx.event.ActionEvent
 
 
 object REPL {
+
+
 def makeFrame ( title: String, size: (Int, Int) ) : Future[JFrame] = {
-Future{
-val frame = new JFrame ("my frame")
+
+val frame : Future[JFrame] = future {new JFrame (title)}
 val panel = new JFXPanel()
 frame.add(panel)
 frame.setSize(600, 600)

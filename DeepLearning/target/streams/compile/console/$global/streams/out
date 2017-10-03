@@ -6,23 +6,22 @@
 [0m[[0minfo[0m] [0m[0m
 [0m[[0mdebug[0m] [0mDisposing 1 top-level windows...[0m
 [0m[[0mdebug[0m] [0mWaiting 2 s to let AWT thread exit.[0m
-[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Java2D Disposer,10,system][0m
+[0m[[0mdebug[0m] [0mInterrupting thread AWT-EventQueue-0[0m
+[0m[[0mdebug[0m] [0m	Interrupted AWT-EventQueue-0[0m
+[0m[[0mdebug[0m] [0mInterrupting thread Glass/Prism Shutdown Hook[0m
+[0m[[0mdebug[0m] [0m	Interrupted Glass/Prism Shutdown Hook[0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[XToolkt-Shutdown-Thread,5,system][0m
+[0m[[0mdebug[0m] [0mInterrupting thread JavaFX Application Thread[0m
+[0m[[0mdebug[0m] [0m	Interrupted JavaFX Application Thread[0m
 [0m[[0mdebug[0m] [0mInterrupting thread QuantumRenderer-0[0m
 [0m[[0mdebug[0m] [0m	Interrupted QuantumRenderer-0[0m
 [0m[[0mdebug[0m] [0mInterrupting thread Thread-3[0m
 [0m[[0mdebug[0m] [0m	Interrupted Thread-3[0m
-[0m[[0mdebug[0m] [0mInterrupting thread JavaFX Application Thread[0m
-[0m[[0mdebug[0m] [0m	Interrupted JavaFX Application Thread[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-5[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-5[0m
 [0m[[0mdebug[0m] [0mInterrupting thread run-main-0[0m
 [0m[[0mdebug[0m] [0m	Interrupted run-main-0[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-3[0m
-[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-3[0m
-[0m[[0mdebug[0m] [0mInterrupting thread AWT-EventQueue-0[0m
-[0m[[0mdebug[0m] [0m	Interrupted AWT-EventQueue-0[0m
-[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[AWT-Shutdown,5,system][0m
-[0m[[0mdebug[0m] [0mInterrupting thread Glass/Prism Shutdown Hook[0m
-[0m[[0mdebug[0m] [0m	Interrupted Glass/Prism Shutdown Hook[0m
-[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[XToolkt-Shutdown-Thread,5,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[process reaper,10,system][0m
 [0m[[0mdebug[0m] [0mNot interrupting system thread Thread[AWT-XAWT,6,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Java2D Disposer,10,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[AWT-Shutdown,5,system][0m
+[0m[[0mdebug[0m] [0mInterrupting thread ForkJoinPool-1-worker-5[0m
+[0m[[0mdebug[0m] [0m	Interrupted ForkJoinPool-1-worker-5[0m
