@@ -3,7 +3,8 @@ scalaVersion := "2.11.10"
 
 //scalaVersion := "2.10.1"
 libraryDependencies ++= Seq(
-"org.scalafx" %% "scalafx" % "8.0.92-R10"
+"org.scalafx" %% "scalafx" % "8.0.92-R10",
+ "org.scala-lang" % "scala-swing" % "2.10.2"
 
 )
 

@@ -9,7 +9,7 @@ import javax.swing.JFrame
 import javafx.embed.swing.JFXPanel
 import javax.swing.SwingUtilities
 //import javax.swing.WindowConstants
-import scalafx.application.Platform
+//import scalafx.application.Platform
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global //use Future
 import scalafx.event.ActionEvent
