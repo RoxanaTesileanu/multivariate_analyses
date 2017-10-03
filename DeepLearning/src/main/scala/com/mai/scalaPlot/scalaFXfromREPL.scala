@@ -25,6 +25,7 @@ frame.setSize(600, 600)
 frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE)
 //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
 frame.setVisible(true)
+frame
 }
 }
 // use frame.dispose() if you want to close the GUI
