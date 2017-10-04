@@ -307,6 +307,35 @@ scala> countDown(10)
 2
 1
 
+scala> def countFromTo (from: Int, to: Int) : Unit = {
+     | if (from <= to) {
+     | println(from)
+     | countFromTo(from+1, to)
+     | }
+     | }
+countFromTo: (from: Int, to: Int)Unit
+
+scala> countFromTo(1,12_
+<console>:1: error: Invalid literal number
+       countFromTo(1,12_
+                     ^
+
+scala> countFromTo(1,12)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+
+
+
 scala> 
 
 
