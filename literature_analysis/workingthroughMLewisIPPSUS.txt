@@ -175,6 +175,24 @@ scala> val price = if (order == "food") {
 price: AnyVal = 0.5
 
 scala> \\ great comments on Unit and AnyVal types! 
+     | 
+     | 
+You typed two blank lines.  Starting a new command.
+
+scala> // read "=>" as "rocket"
+
+scala> // Higher Order Functions
+
+scala> //functions that you pass functions into
+
+scala> // they can return functions
+
+scala> // THE KEY IS TO PASS THE FUNCTION YOU WANT TO USE IN THE PARAMETER LIST OF THE HOF. 
+
+scala> // YOU PASS IN THE FUNCTION AS LAMBDA EXPRESSION.
+
+scala> // YOU CAN ALSO USE UNDERSCORES
+
 
 
 
