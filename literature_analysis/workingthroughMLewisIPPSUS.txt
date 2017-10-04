@@ -257,4 +257,27 @@ scala> //oops!
 
 scala> // not much memory available on my PC....
 
+scala> def squareSum (n: Int) : Int = if (n<2) 1 else n*n+squareSume(n-1)
+<console>:11: error: not found: value squareSume
+       def squareSum (n: Int) : Int = if (n<2) 1 else n*n+squareSume(n-1)
+                                                          ^
+
+scala> def squareSum (n: Int) : Int = if (n<2) 1 else n*n+squareSum(n-1)
+squareSum: (n: Int)Int
+
+scala> squareSum(2)
+res14: Int = 5
+
+scala> squareSum(3)
+res15: Int = 14
+
+scala> squareSum(4)
+res16: Int = 30
+
+scala> squareSum(14)
+res17: Int = 1015
+
+scala> squareSum(140)
+res18: Int = 924490
+
 
