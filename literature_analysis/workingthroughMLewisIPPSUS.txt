@@ -352,6 +352,9 @@ fact: (n: Int)Int
 scala> fact(5)
 res3: Int = 120
 
+scala> // a call on 5 takes us to 4 (there still is a "5*" waiting there to be executed. The callstack remembers where you are when you call functions, so when the function is done it returns to that point and does whatever is waiting there.   
+
+
 
 
 
