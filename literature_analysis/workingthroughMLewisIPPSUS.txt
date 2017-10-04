@@ -354,6 +354,12 @@ res3: Int = 120
 
 scala> // a call on 5 takes us to 4 (there still is a "5*" waiting there to be executed. The callstack remembers where you are when you call functions, so when the function is done it returns to that point and does whatever is waiting there.   
 
+scala> // the fact(4) is going to give a value to be multiplied with 5.
+
+scala> // and so on. 
+
+scala> // until we hit out base case.
+
 
 
 
