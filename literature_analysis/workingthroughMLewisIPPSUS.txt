@@ -259,7 +259,6 @@ scala> def squareSum (n: Int) : Int = if (n<2) 1 else n*n+squareSume(n-1)
 <console>:11: error: not found: value squareSume
        def squareSum (n: Int) : Int = if (n<2) 1 else n*n+squareSume(n-1)
                                                           ^
-
 scala> def squareSum (n: Int) : Int = if (n<2) 1 else n*n+squareSum(n-1)
 squareSum: (n: Int)Int
 
@@ -277,6 +276,38 @@ res17: Int = 1015
 
 scala> squareSum(140)
 res18: Int = 924490
+
+scala> def countDown (n:Int) : Unit = {
+     | if (n>0) {
+     | println(n)
+     | countdown(n-1)
+     | }
+     | }
+<console>:14: error: not found: value countdown
+       countdown(n-1)
+       ^
+
+scala> def countDown (n:Int) : Unit = {
+     | if (n>0) {
+     | println(n)
+     | countDown(n-1)
+     | }
+     | }
+countDown: (n: Int)Unit
+
+scala> countDown(10)
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+scala> 
 
 
 
