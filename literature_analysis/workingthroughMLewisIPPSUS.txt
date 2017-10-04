@@ -338,6 +338,15 @@ scala> countFromTo(1,12)
 
 scala> 
 
+_______________________ new REPL session _______________________________
+
+scala> // Going through a program line by line in order to figure out what it is doing is called tracing
+
+scala> // in case of sequential execution is easy.
+
+scala> // tracing recursive functions is a little bit harder
+
+
 
 
 
