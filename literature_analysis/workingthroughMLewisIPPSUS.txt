@@ -1,0 +1,84 @@
+scala> val age = 34
+age: Int = 34
+
+scala> val response = if (age >=18) "Come in" else "Get lost"
+response: String = Come in
+
+scala> //an expression returns a value
+
+scala> var response2 = " "
+response2: String = " "
+
+scala> if (age >= 18) {
+     | response2 = "come in"
+     | } else {
+     | response2 = "get lost"
+     | }
+
+scala> response2
+res1: String = come in
+
+scala> // a statement returns a reassigned var or the return of a println call
+
+scala> // a statement makes something happen (like a side effect), whereas an expression returns a value which we can use later.
+
+scala> if (age >= 18) {
+     | println ("come in")
+     | } else {
+     | println ("get lost")
+     | }
+come in
+
+scala> // Code blocks
+
+scala> // code blocks are expressions and they have the value of the last thing that is in them
+
+scala> {
+     | println ("Giving back the 6")
+     | 6
+     | }
+Giving back the 6
+res3: Int = 6
+
+scala> import scala.io.StdIn._
+import scala.io.StdIn._
+
+scala> println("How old are you?")
+How old are you?
+
+scala> val age = readInt
+age: Int = 34
+
+scala> val response = if (age >= 18) {
+     | "old enough"
+     | } else {
+     | println ("too young")
+     | "for too much coffee"
+     | }
+response: String = old enough
+
+scala> // if and code blocks are used together if you want an output and a value 
+
+scala> // this is because you can have only one expression inside the true or false parts.
+
+scala> 
+
+scala> //Comparison operators
+
+scala> // ==     != (bang equal)   CHECK FOR EQUALITY
+
+scala> // CHECK FOR IDENTITY: are the two objects the same object?
+
+scala> // you use: s1 eq s2 instead of ==
+
+scala> 
+
+scala> 
+
+scala> //Boolean logic
+
+scala> // && AND     || INCLUSIVE OR     ^ EXCLUSIVE OR
+
+scala> // ! NOT
+
+
