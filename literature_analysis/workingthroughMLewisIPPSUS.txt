@@ -253,9 +253,7 @@ res12: BigInt = 870
 scala> factorial(30)
 res13: BigInt = 870
 
-scala> //oops! 
-
-scala> // not much memory available on my PC....
+scala> //oops! some external effect.... 
 
 scala> def squareSum (n: Int) : Int = if (n<2) 1 else n*n+squareSume(n-1)
 <console>:11: error: not found: value squareSume
