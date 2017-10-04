@@ -362,7 +362,10 @@ scala> // until we hit out base case.
 
 scala> // so, the recursions are calling themselves going down the callstack, waiting and remembering values and the operations what need to be done, and the values are returned back-up to give us the end result. 
 
+_______________________ new REPL session _______________________________
 
+
+https://www.youtube.com/watch?v=sl4H7PhUSWk&list=PLLMXbkbDbVt9MIJ9DV4ps-_trOzWtphYO&t=5
 
 
 
