@@ -81,4 +81,34 @@ scala> // && AND     || INCLUSIVE OR     ^ EXCLUSIVE OR
 
 scala> // ! NOT
 
+scala> val age = readInt
+age: Int = 19
+
+scala> // val cost = 8 OR 12 based upon age
+
+scala> val cost = if (age < 13 || age >=55) 8 else 12
+cost: Int = 12
+
+scala> val cost2 = if (age >= 13 && age < 55) 12 else 8
+cost2: Int = 12
+
+scala> // && and || are short-circuit operations
+
+scala> // for && is the first is true it continues evaluating and if it's false it stops evaluating
+
+scala> // for || if the first is false it continues evaluating
+
+scala> // SHORT-CIRCUIT MEANS THAT IF THE VALUE CAN BE DETERMINED FROM THE FIRST PART WE WON'T EVALUATE THE SECOND ONE.
+
+scala> val n = 2
+n: Int = 2
+
+scala> val d = 0
+d: Int = 0
+
+scala> val frac = n/d > 10
+java.lang.ArithmeticException: / by zero
+  ... 33 elided
+
+
 
