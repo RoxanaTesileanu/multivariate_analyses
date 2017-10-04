@@ -205,5 +205,56 @@ scala> // you keep moving towards the base case.
 
 scala> // in such a way that you change the current return value. 
 
+scala> // Note: in a recursive function you have to specify the return type!
+
+scala> def factorial (n: Int) : Int = if (n<2) 1 else n*factorial(n-1)
+factorial: (n: Int)Int
+
+scala> // we have an if-expression that produces the different cases!
+
+scala> factorial(5)
+res5: Int = 120
+
+scala> factorial(10)
+res6: Int = 3628800
+
+scala> factorial(16)
+res7: Int = 2004189184
+
+scala> factorial(17)
+res8: Int = -288522240
+
+scala> // this is where Ints are at their limit. 
+
+scala> def factorial (n: Long) : Long = if (n< 2) 1 else n*factorial(n-1)
+factorial: (n: Long)Long
+
+scala> factorial(17)
+res9: Long = 355687428096000
+
+scala> // for very large numbers: use Long!!!!
+
+scala> factorial(20)
+res10: Long = 2432902008176640000
+
+scala> factorial(30)
+res11: Long = -8764578968847253504
+
+scala> // now we should use BigInt:
+
+scala> def factorial (n: BigInt) : BigInt = if (n<2) 1 else n*(n-1)
+factorial: (n: BigInt)BigInt
+
+scala> // the BigInt type can store any-size number!
+
+scala> factorial(30)
+res12: BigInt = 870
+
+scala> factorial(30)
+res13: BigInt = 870
+
+scala> //oops! 
+
+scala> // not much memory available on my PC....
 
 
