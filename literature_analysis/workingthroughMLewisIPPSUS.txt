@@ -110,5 +110,71 @@ scala> val frac = n/d > 10
 java.lang.ArithmeticException: / by zero
   ... 33 elided
 
+scala> val frac = d>0 && n/d>10
+frac: Boolean = false
+
+scala> // we don't get the exception anymore
+
+scala> // because if the first part is false, the second part never gets evaluated 
+
+scala> 
+
+scala> 
+
+scala> // Operator precedence
+
+scala> // * / %, + -, :, = !, < >, &, ^, |
+
+scala> // other symbols,  * / %, + -, :, = !, < >, &, ^, |, letter, assignment
+
+scala> val operatorPrecendece = "// other symbols,  * / %, + -, :, = !, < >, &, ^, |, letter, assignment"
+operatorPrecendece: String = // other symbols,  * / %, + -, :, = !, < >, &, ^, |, letter, assignment
+
+scala> 
+
+scala> 
+
+scala> // Nesting ifs
+
+scala> val order = readline
+<console>:10: error: not found: value readline
+       val order = readline
+                   ^
+
+scala> val order = readLine
+order: String = drink
+
+scala> val size = readLine
+size: String = s
+
+scala> val price = if (order == "food") {
+     | if (size.toLowerCase.startsWith("s")) {
+     | 1.0
+     | } else if (size.toLowerCase.startsWith("m")) {
+     | 1.5
+     | } else if (size.toLowerCase.startsWith("l")) {
+     | 2.0
+     | }
+     | } else if (order == "drink") { 
+     | if (size.toLowerCase.startsWith("s")) {
+     | 0.5
+     | } else if (size.toLowerCase.startsWith("m")) {
+     | 0.7
+     | } else if (size.toLowerCase.startsWith("l")) {
+     | 0.9
+     | }
+     | } else if (order == "combo") {
+     | if (size.toLowerCase.startsWith("s")) {
+     | 1.5
+     | } else if (size.toLowerCase.startsWith("m")) {
+     | 2.5
+     | } else if (size.toLowerCase.startsWith("l")) {
+     | 3.0
+     | }
+     | }
+price: AnyVal = 0.5
+
+scala> \\ great comments on Unit and AnyVal types! 
+
 
 
