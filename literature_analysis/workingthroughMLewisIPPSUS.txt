@@ -360,6 +360,9 @@ scala> // and so on.
 
 scala> // until we hit out base case.
 
+scala> // so, the recursions are calling themselves going down the callstack, waiting and remembering values and the operations what need to be done, and the values are returned back-up to give us the end result. 
+
+
 
 
 
