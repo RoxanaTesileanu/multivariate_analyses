@@ -346,6 +346,14 @@ scala> // in case of sequential execution is easy.
 
 scala> // tracing recursive functions is a little bit harder
 
+scala> def fact (n:Int) :Int = if (n<2) 1 else n*fact(n-1)
+fact: (n: Int)Int
+
+scala> fact(5)
+res3: Int = 120
+
+
+
 
 
 
