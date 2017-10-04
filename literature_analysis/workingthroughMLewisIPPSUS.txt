@@ -1,3 +1,7 @@
+Working through "Introduction to Programming and Problem Solving Using Scala" of Mark Lewis
+https://www.youtube.com/playlist?list=PLLMXbkbDbVt9MIJ9DV4ps-_trOzWtphYO
+
+
 scala> val age = 34
 age: Int = 34
 
