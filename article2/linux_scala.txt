@@ -128,7 +128,7 @@ For a detailed introduction in SBT you should check the SBT documentation at htt
 
 3.4 Managing dependencies 
 
-For many software developers, the main reason of using SBT is that it offers an easy management of dependencies. Scala, like most programming languages, is extended by external libraries which offer additional functionality. Also the assemblage and integration of internal libraries in form of .jar files is possible. 
+For many software developers, the main reason of using SBT is that it offers an easy management of dependencies. Scala, like most programming languages, is extended by external libraries which offer additional functionality. Also the packaging and integration of internal libraries in form of .jar files into the project is possible. Internal libraries are called unmanaged dependencies and external libraries are called managed dependencies.  
 
 3.4.1 Using external Scala libraries
  
@@ -160,6 +160,7 @@ unmanagedJars in Compile := Attributed.blank(file("mypath/*.jar")).
 The above setting is equivalent to the use of "-cp" when starting the Scala interpreter from outside SBT ("$ scala - cp mypath/*.jar ").      
 
 If more than one .jar file is used, then you should create a new directory called lib inside the Scala project in which you can place the used jars. The lib directory will serve as common location and will make the jars available to the compiler and interpreter, because all jars added to it are placed on the project classpath. 
+
 
 
 
