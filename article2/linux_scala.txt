@@ -66,7 +66,7 @@ Finally for getting help in VIM you type ":help <ENTER>". To close the help wind
 
 3. Using SBT to create and manage Scala projects
 
-In this section the reader will find out how to install SBT and use it to create and manage Scala projects. 
+In this section the reader will find out how to install SBT and use it to create and manage Scala projects. Furthermore, the issue of integrating external and internal dependencies will be discussed.
 
 3.1 Installing SBT
 
@@ -137,6 +137,7 @@ For data analysis, for example, the best known external libraries are Spark (htt
 For GUI programming, the best known external libraries are Scala.swing (http://www.scala-lang.org/api/2.9.1/scala/swing/package.html) which is actually a Scala package but needs to be added to the dependencies list in order to be imported and used in Scala code, and ScalaFX (http://www.scalafx.org/) which is based on Scala and sits on top of JavaFX (see Lewis 2015 for an introduction in GUI programming using Scala).     
 
 
+
 4. Conclusion
  
 
@@ -153,7 +154,8 @@ Bibliography:
 
 1. Rafeeq Ur Rehman and Christopher Paul. The Linux Development Platform. Pearson, 2003.
 
-2. Roxana Tesileanu. Introduction to Statistical Computing in Scala - an Implementation of the K-Nearest Neighbors Classifier. IEEE Transactions on Neural Networks and Learning Systems. Submitted, under review, 2017.
+2. Roxana Tesileanu. Introduction to Statistical Computing in Scala - an Implementation of the K-Nearest Neighbors Classifier. 2017.
+https://www.researchgate.net/publication/319505548_Introduction_to_Statistical_Computing_in_Scala-an_Implementation_of_the_K-Nearest_Neighbors_classifier
 
 3. Joshua Suereth and Matthew Farwell. SBT in action: the Simple Scala Build Tool. Manning Publications Co., Shelter Island. 2016
 
@@ -166,7 +168,8 @@ Bibliography:
 7. Mark C. Lewis. Introduction to Programming and Problem Solving Using Scala. Trinity University. Texas. 2015 
 http://www.programmingusingscala.net/home/introduction-to-programming-and-problem-solving-using-scala
 
-8. Holden Karau. 2015
+8. Holden Karau, Andy Konwinski, Patrick Wendell, and Matei Zaharia. Learning Spark. O’Reilly,
+Sebastopol, 2015.
 
-9. Avi Pfeffer. 2016
+9. Avi Pfeffer. Practical Probabilistic Programming. Manning Publications Co., Shelter Island. 2016
 
