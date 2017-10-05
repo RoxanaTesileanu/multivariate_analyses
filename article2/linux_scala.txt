@@ -138,6 +138,12 @@ For GUI programming, the best known external libraries are Scala.swing (http://w
 
 
 
+
+3.4.2 Using internal Scala libraries
+
+
+
+
 4. Conclusion
  
 
