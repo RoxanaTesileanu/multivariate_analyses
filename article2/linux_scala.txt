@@ -148,7 +148,7 @@ where the exact library coordinates are found in the Maven Repository.
 
 Figure 1 presents the contents of the build.sbt file which includes the dependencies of a Scala project which uses the Spark's MLlib (Spark's library for Machine Learning).         
 
-Fig. 1: The contents of the build.sbt file of a Scala project with external and one internal dependency (if more than one .jar file is needed, then they should be placed in the project's lib directory).   
+Fig. 1: The contents of the build.sbt file of a Scala project with external and one internal dependency (if more than one .jar file is needed, then they should be placed in the project's lib directory instead of specifying them in the build.sbt file).   
 
 
 3.4.2 Using internal Scala libraries
