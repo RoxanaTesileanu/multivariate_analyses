@@ -162,9 +162,13 @@ The above setting is equivalent to the use of "-cp" when starting the Scala inte
 If more than one .jar file is used, then you should create a new directory called lib inside the Scala project's directory in which you can place the necessary jars. The lib directory will serve as common location and will make the jars available to the compiler and interpreter, all the jars added to it being placed on the project classpath. 
 
 
+______________
 
+Additional issues:
 
+- discuss about "fork := true"
 
+______________
 
 
 
