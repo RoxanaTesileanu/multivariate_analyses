@@ -159,7 +159,8 @@ unmanagedJars in Compile := Attributed.blank(file("mypath/*.jar")).
 
 The above setting is equivalent to the use of "-cp" when starting the Scala interpreter from outside SBT ("$ scala - cp mypath/*.jar ").      
 
-If more than one .jar file is used, then creating a new directory called lib inside the Scala project in which the used jars are placed, will serve as common location to make the jars available to the compiler and interpreter.
+If more than one .jar file is used, then you should create a new directory called lib inside the Scala project in which you can place the used jars. The lib directory will serve as common location and will make the jars available to the compiler and interpreter, because all jars added to it are placed on the project classpath. 
+
 
 
 
