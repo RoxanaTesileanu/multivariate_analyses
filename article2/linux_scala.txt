@@ -133,7 +133,7 @@ For many software developers, the main reason of using SBT is that it offers an 
 3.4.1 Using external Scala libraries
  
 Depending on the field in which a software developer is active, it is often necessary to use field-specific external Scala libraries. 
-For data analysis, for example, the best known external libraries are Spark (http://spark.apache.org/) for distributed computation, ScalaNLP (http://www.scalanlp.org/) which is a suite of Machine Learning and numerical computing libraries.    
+For data analysis, for example, the best known external libraries are Spark (http://spark.apache.org/) which is a general engine for large scale data processing, ScalaNLP (http://www.scalanlp.org/) which is a suite of Machine Learning and numerical computinng libraries, or Figaro (https://www.cra.com/work/case-studies/figaro) which is a probabilistic programming language for probabilistic modeling based on Scala.    
 
 
 4. Conclusion
