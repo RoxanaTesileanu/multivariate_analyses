@@ -153,8 +153,7 @@ Fig. 1: The contents of the build.sbt file of a Scala project with external and 
 
 3.4.2 Using internal Scala libraries
 
-Sometimes it is necessary to use internal libraries in form of .jar files. Jar files are automatically created from compiled source files by setting the variable "exportJars" of the build.sbt file to true (exportJars := true). The process of a .jar creation is called packaging. The newly created .jar file is in the project's target/scala-2.11 directory.   
-
+Sometimes it is necessary to use internal libraries in form of .jar files. Jar files are automatically created from compiled source files by setting the variable "exportJars" of the build.sbt file to true (exportJars := true). The process of .jar creation is called packaging. The newly created .jar file is in the project's target/scala-2.11 directory. If you want to make use of internal libraries in form of .jar files in your Scala code, they have to be added to classpath so that they become available during compilation, testing, running, and when using the interpreter (SBT Documentation).
 
 4. Conclusion
  
@@ -190,4 +189,6 @@ http://www.programmingusingscala.net/home/introduction-to-programming-and-proble
 Sebastopol, 2015.
 
 9. Avi Pfeffer. Practical Probabilistic Programming. Manning Publications Co., Shelter Island. 2016
+
+10. SBT Documentation. http://www.scala-sbt.org/1.0/docs/Library-Management.html. 2017
 
