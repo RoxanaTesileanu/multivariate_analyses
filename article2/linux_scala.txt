@@ -155,11 +155,15 @@ Fig. 1: The contents of the build.sbt file of a Scala project with external and 
 
 Sometimes it is necessary to use internal libraries in form of .jar files. Jar files are automatically created from compiled source files by setting the variable "exportJars" of the build.sbt file to true (exportJars := true). The process of .jar creation is called packaging. The newly created .jar file is in the project's target/scala-2.11 directory. If you want to make use of internal libraries in form of .jar files in your Scala code, they have to be added to classpath so that they become available during compilation, testing, running, and when using Scala REPL (SBT Documentation). This can be achieved by overriding the settings variable called "unmanaged Jars" and indicating the path to the .jar file you want to use:
 
-unmanagedJars in Compile := ("mypath/*.jar").classpath. 
+unmanagedJars in Compile := file("mypath/*.jar").  
 
-The above setting is equivalent to the use of "-cp" when starting the Scala interpreter from outside SBT ("$ scala - cp "mypath/*.jar").      
+The above setting is equivalent to the use of "-cp" when starting the Scala interpreter from outside SBT ("$ scala - cp mypath/*.jar ").      
 
 If more than one .jar file is used, then creating a new directory inside the Scala project in which the used jars are placed, will serve as common location which needs to be indicated in the build.sbt file in order to become available to the compiler and interpreter. 
+
+
+
+
 
 4. Conclusion
  
