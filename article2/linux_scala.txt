@@ -133,7 +133,8 @@ For many software developers, the main reason of using SBT is that it offers an 
 3.4.1 Using external Scala libraries
  
 Depending on the field in which a software developer is active, it is often necessary to use field-specific external Scala libraries. 
-For data analysis, for example, the best known external libraries are Spark (http://spark.apache.org/) which is a general engine for large scale data processing, ScalaNLP (http://www.scalanlp.org/) which is a suite of Machine Learning and numerical computinng libraries, or Figaro (https://www.cra.com/work/case-studies/figaro) which is a probabilistic programming language for probabilistic modeling based on Scala.    
+For data analysis, for example, the best known external libraries are Spark (http://spark.apache.org/) which is a general engine for large scale data processing (see Karau et al. 2015 for an introduction in Spark), ScalaNLP (http://www.scalanlp.org/) which is a suite of Machine Learning and numerical computinng libraries, or Figaro (https://www.cra.com/work/case-studies/figaro) which is a probabilistic programming language for probabilistic modeling based on Scala (see Pfeffer 2016 for an introduction in Figaro). 
+For GUI programming, the best known external libraries are Scala.swing (http://www.scala-lang.org/api/2.9.1/scala/swing/package.html) which is actually a Scala package but needs to be added to the dependencies list in order to be imported and used in Scala code, and ScalaFX (see Lewis 2015 for an introduction in GUI programming using Scala).     
 
 
 4. Conclusion
@@ -162,6 +163,10 @@ Bibliography:
 
 6. Jason Swartz. Learning Scala. O'Reilly. 2009
 
-7. Mark C. Lewis. Introduction to Programming and Problem Solving Using Scala. Trinity University. Texas. 
+7. Mark C. Lewis. Introduction to Programming and Problem Solving Using Scala. Trinity University. Texas. 2015 
 http://www.programmingusingscala.net/home/introduction-to-programming-and-problem-solving-using-scala
+
+8. Holden Karau. 2015
+
+9. Avi Pfeffer. 2016
 
