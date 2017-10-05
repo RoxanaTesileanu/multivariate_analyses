@@ -1,7 +1,7 @@
-journal: IEEE Computing in Science and Engineering
+journal: Computer
 author: Roxana Tesileanu, roxana.te@web.de
 affiliation: INCDS, Brasov Station
-date: september 2017
+date: October 2017
 
 
 Using Linux as a Development Platform for Scala Projects
@@ -66,11 +66,11 @@ Finally for getting help in VIM you type ":help <ENTER>". To close the help wind
 
 3. Using SBT to create and manage Scala projects
 
-In this section you will find out how to install SBT and use it to create and manage Scala projects. 
+In this section the reader will find out how to install SBT and use it to create and manage Scala projects. 
 
 3.1 Installing SBT
 
-You can use the Scala REPL either directly from within the command-line, initiating a REPL sesssion with the command "$ scala", or, by launching a SBT-session with the command "$ sbt" and then from within SBT launch the Scala REPL using the command "> console". On Ubuntu you can install the Scala language using the apt command ("$ sudo apt install scala") with no additional commands. Check the package management tool you use to get the same result. You can open the Scala REPL and type in some expressions; to exit type ":q" (VIM is useful after all). For guidance, check the book of Jason Swartz, "Learning Scala" for a great introduction to the Scala language. 
+You can use the Scala REPL either directly from within the command-line, initiating a REPL sesssion with the command "$ scala", or, by launching a SBT-session with the command "$ sbt" and then from within SBT launch the Scala REPL using the command "> console". On Ubuntu you can install the Scala language using the apt command ("$ sudo apt install scala") with no additional commands. Check the package management tool you use to get the same result. You can open the Scala REPL and type in some expressions; to exit type ":q" (VIM is useful after all). For guidance, check the book of Jason Swartz "Learning Scala" and the book of Mark Lewis "Introduction to Programming and Problem Solving Using Scala" for a great introduction to the Scala language. 
 
 Installing SBT requires a look at the SBT homepage (http://www.scala-sbt.org/) in order to get the four commands needed to install it using the command line. At the time the present document is written the commands for Ubuntu  are:
 
@@ -79,7 +79,7 @@ $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A
 $ sudo apt-get update
 $ sudo apt-get install sbt
 
-If you are using rpm distributions visit the SBT download page: http://www.scala-sbt.org/download.html. 
+If you are using rpm distributions visit the SBT download page (http://www.scala-sbt.org/download.html) and look for the appropriate installing commands. 
 
 Next, open a Scala REPL session in SBT using the commands introduced at the beginning of this section and type in some expressions. You exit the console with ":q" and the command "> exit" gets you out of the SBT and back to the command-line.
 
@@ -115,7 +115,7 @@ In the src/main/scala directory you should place your Scala codes in form of sca
 
 3.3 Some basic SBT tasks
 
-Open SBT. When you see the SBT prompt ">" type in your first SBT command: "help". This generates an output which you can use to get further information about SBT and about the configuration of your project (command "about", command "settings"). The command "reload" reloads the project in the current directory, which is useful after you've changed the project settings or after you've changed the source files. It does the sanity check as it compiles the source files and outputs the errors encountered in the compilation process, accompanied by messages indicating possible reasons. It is very often helpful to try to read them in order to debug the code. 
+Open SBT. When you see the SBT prompt ">" type in your first SBT command: "help". This generates an output which you can use to get further information about SBT and about the configuration of your project (command "about", command "settings"). The command "reload" reloads the project in the current directory, which is useful after you've changed the project settings (for example after adding dependencies) or after you've changed or added source files. It does the sanity check as it compiles the source files and outputs the errors encountered in the compilation process, accompanied by messages indicating possible reasons. It is very often helpful to try to read them in order to debug the code. 
  
 The command "tasks" is also listed in the help output. The SBT tasks show much of the functions SBT can take over. Type in "tasks" and check the default list of SBT tasks: 
 - starting the Scala REPL with the command "console"
@@ -125,6 +125,10 @@ The command "tasks" is also listed in the help output. The SBT tasks show much o
 - and many more.
 
 For a detailed introduction in SBT you should check the SBT documentation at http://www.scala-sbt.org/documentation.html and read the book of Joshua Suereth and Matthew Farwell (2016) "SBT in action: the Simple Scala Build Tool". 
+
+3.4 Managing dependencies
+
+
    
 4. Conclusion
  
@@ -152,4 +156,6 @@ Bibliography:
 
 6. Jason Swartz. Learning Scala. O'Reilly. 2009
 
+7. Mark C. Lewis. Introduction to Programming and Problem Solving Using Scala. Trinity University. Texas. 
+http://www.programmingusingscala.net/home/introduction-to-programming-and-problem-solving-using-scala
 
