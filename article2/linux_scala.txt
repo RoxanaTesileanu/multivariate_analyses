@@ -66,7 +66,7 @@ Finally for getting help in VIM you type ":help <ENTER>". To close the help wind
 
 3. Using SBT to create and manage Scala projects
 
-In this section the reader will find out how to install SBT and use it to create and manage Scala projects. Furthermore, the issue of integrating external and internal dependencies will be discussed.
+In this section the reader will find out how to install SBT and use it to create and manage Scala projects. Furthermore, the issue of integrating external (managed) and internal (unmanaged) dependencies will be discussed.
 
 3.1 Installing SBT
 
