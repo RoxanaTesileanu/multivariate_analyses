@@ -153,7 +153,7 @@ Fig. 1: The contents of the build.sbt file of a Scala project with external and 
 
 3.4.2 Using internal Scala libraries
 
-Sometimes it is necessary to use internal libraries in form of .jar files. Jar files are created from compiled source files and created by setting the variable "exportJars" to true (exportJars := true). 
+Sometimes it is necessary to use internal libraries in form of .jar files. Jar files are automatically created from compiled source files by setting the variable "exportJars" of the build.sbt file to true (exportJars := true). The process of a .jar creation is called packaging.  
 
 
 4. Conclusion
