@@ -109,7 +109,7 @@ You should now have three objects in the Scala_Playground directory: the build.s
 You can now launch SBT while you are in the Scala_Playground directory using the "$ sbt" command. You can see the SBT's output as it uses the information from the two edited files and creates the desired Scala project. When the output is finished you get to see the SBT prompt ">". The project was created successfully. Now, launch the Scala REPL with the command "> console". When the REPL is open you get to see the Scala prompt "scala>". You can type in some expressions to see if it works. 
 Type ":q" to get back to SBT and "exit" to get back to the command-line. 
 
-You can see that the Scala_Playground directory has gained some additional directories: the Scala_Playground/target directory and the Scala_Playground/project/target directory. These are created by SBT when it creates the Scala project, and serve as locations for the output of SBT tasks (e.g. output following compilations or packaging).  
+You can see that the Scala_Playground directory has gained some additional directories: the Scala_Playground/target directory and the Scala_Playground/project/target directory. These are created by SBT when it creates the Scala project, and serve as locations for the output of SBT tasks (e.g. output following compilations or packaging actions).  
 
 In the src/main/scala directory you should place your Scala codes in form of scala files.   
 
@@ -160,7 +160,9 @@ The above setting is equivalent to the use of "-cp" when starting the Scala inte
 
 If more than one .jar file is used, then you should create a new directory called lib inside the Scala project's directory in which you can place the necessary jars. The lib directory will serve as common location and will make the jars available to the compiler and interpreter, all the jars added to it being placed on the project classpath (SBT Documentation 2017). 
 
+3.4.3 Using a forked Java Virtual Machine (JVM)
 
+Running applications with the run action or using the REPL in SBT with the console action  
 ______________
 
 Additional issues:
