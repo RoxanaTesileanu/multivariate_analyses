@@ -119,9 +119,9 @@ Open SBT. When you see the SBT prompt ">" type in your first SBT command: "help"
  
 The command "tasks" is also listed in the help output. The SBT tasks show much of the functions SBT can take over. Type in "tasks" and check the default list of SBT tasks: 
 - starting the Scala REPL with the command "console"
-- compile source files with the command "complile"
-- run an application with the command "run" 
-- tests the code executing all tests
+- compiling source files with the command "complile"
+- running an application with the command "run" 
+- testing the code executing all tests
 - and many more.
 
 For a detailed introduction in SBT you should check the SBT documentation at http://www.scala-sbt.org/documentation.html and read the book of Joshua Suereth and Matthew Farwell (2016) "SBT in action: the Simple Scala Build Tool". 
@@ -132,7 +132,7 @@ Depending on the field in which a software developer is active, it is often nece
 
 For GUI programming, the best known libraries are Scala.swing (http://www.scala-lang.org/api/2.9.1/scala/swing/package.html) which is actually a Scala package but needs to be added to the dependencies list in order to be imported and used in Scala projects, and ScalaFX (http://www.scalafx.org/) which is based on Scala and sits on top of JavaFX (see Lewis 2015 for an introduction in GUI programming using Scala).   
 
-For many software developers, the main reason of using SBT is that it offers an easy management of dependencies from repositories. Also the packaging and integration of libraries in form of .jar files into the project is possible. Internal libraries in form of .jar files are called unmanaged dependencies and you should place them into the project's lib directory, which should be created inside the project's directory if you intend to use libraries in form of .jar files for a Scala project. External libraries are found on repositories and are called managed dependencies, as they are configured in the build definition and downloaded automatically from repositories (SBT Documentation).  
+For many software developers, the main reason of using SBT is that it offers an easy management of dependencies from repositories. Also the packaging and integration of libraries in form of .jar files into the project is possible. Internal libraries in form of .jar files are called unmanaged dependencies and you should place them into the project's lib directory, which should be created inside the project's directory if you intend to use libraries in form of .jar files for a Scala project. External libraries are found on repositories and are called managed dependencies, as they are configured in the build definition and downloaded automatically from repositories (SBT Documentation 2017).  
 
 3.4.1 Using external Scala libraries
  
