@@ -162,7 +162,7 @@ If more than one .jar file is used, then you should create a new directory calle
 
 3.4.3 Using a forked Java Virtual Machine (JVM)
 
-Running applications with the run action or using the REPL in SBT with the console action dispose the code to use the same JVM as SBT (SBT Documentation 2017). There are some situations though, when running code in the same JVM as SBT causes problems, and demand that the code is run in a different instance of JVM. In SBT this is called forking the JVM (Suereth and Farwell 2016). You can enable forking by setting the variable called "fork" in your build.sbt file to true ("fork := true"). The situations requiring JVM forking appear either when the user code makes use of System.exit (which shuts down the JVM), or when it starts multiple threads (some of which may not terminate until JVM terminates) like in the case of creating a GUI.     
+Running applications with the run action or using the REPL in SBT with the console action dispose the code to use the same JVM as SBT (SBT Documentation 2017). There are some situations though, when running code in the same JVM as SBT causes problems, and demand that the code is run in a different instance of JVM. In SBT this is called forking the JVM (Suereth and Farwell 2016). You can enable forking by setting the variable called "fork" in your build.sbt file to true ("fork := true"). The situations requiring JVM forking appear either when the user code makes use of System.exit (which shuts down the JVM), or when it starts multiple threads (some of which may not terminate until JVM terminates) like in the case of creating a GUI (SBT Documentation 2017).      
 
 
 
