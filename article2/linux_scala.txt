@@ -168,7 +168,7 @@ Running applications with the run task or using the REPL in SBT with the console
 4. Conclusion
  
 
-The advantages of learning Scala are manifold (Swartz 2016) and it is not the scope of this paper to cover them all. Though, from my personal point of view, the biggest advantage of Scala is that it allows you, through its functional nature, to express your ideas in a natural manner, and this is very important in developing code for statistical computation. This is why I believe Scala will allow researchers advance their statistical skills by paying more attention to the pseudocode, and not to the details of how to implement it. This paper should offer a starting point for those willing to join this principle.     
+The advantages of learning Scala are manifold (Swartz 2016) and it is not the scope of this paper to cover them all. Though, from my personal point of view, the biggest advantage of Scala is that it allows you, through its functional nature, to express your ideas in a natural manner, and this is very important in developing code for statistical computation. This is why I believe Scala will allow researchers advance their statistical skills by paying more attention to the pseudocode, and not to the details of how to implement it. This paper should offer a starting point for those willing to learn this functional programming language.     
  
 
 Biography:
