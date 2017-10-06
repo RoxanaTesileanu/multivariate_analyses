@@ -22,7 +22,7 @@ The present article aims at introducing the reader to the tools needed to put in
 2. Using VIM as an editor for Scala code
 
 VIM is an editor which can be used from within the Linux command line and can be adapted to support the editing of Scala code by installing the vim-scala package of Derek Wyatt found at https://github.com/derekwyatt/vim-scala. 
-Under Linux you can install VIM using the package tools at hand (like e.g. dphg, apt-get, aptitude, rpm or yum) depending on the installed distribution. In Ubuntu the command for installing VIM is: “$ sudo apt install vim”. Afterwards, you open the command line and launch VIM by typing “$ vim <ENTER>”. The following instructions will make the first VIM session easy to pass through:
+Under Linux you can install VIM using the package tools at hand (like e.g. dpkg, apt-get, aptitude, rpm or yum) depending on the installed distribution. In Ubuntu the command for installing VIM is: “$ sudo apt install vim”. Afterwards, you open the command line and launch VIM by typing “$ vim <ENTER>”. The following instructions will make the first VIM session easy to pass through:
 - because VIM starts in command mode you can change to insert mode with the "i" key
 - to exit insert mode and return to command mode, press the <ESC> key
 - to write the open file to the hard drive use the command ":w filename" (in command mode) or just ":w" if the file already has a name 
@@ -45,7 +45,7 @@ Deleting text in command mode goes with (but not only) the following commands:
 - the "d$" command will delete to the end of the line
 - the "d0" command will delete to the beginning of the line.
 
-The commnads based on "d" nut just delete text but also copy it to a paste baffer, which can be later recalled with the "p" command to paste the contents of the buffer after the cursor or the "P" command to paste the contents of the buffer before the cursor.
+The commands based on "d" nut just delete text but also copy it to a paste buffer, which can be later recalled with the "p" command to paste the contents of the buffer after the cursor or the "P" command to paste the contents of the buffer before the cursor.
 
 Cutting, copying and pasting text is done more traditionally with the "y" command (which stands for "yank", i.e. copy). To copy the current line you use "yy" ("6yy" means copy the current line and the next five lines). To copy to the end of the line use "y$" and to the beginning of the line use "y0". You can join lines with "J".
 
@@ -87,7 +87,7 @@ Next, open a Scala REPL session in SBT using the commands introduced at the begi
 
 In this section we will create a Scala project called Scala_Playground in order to continue the playground series of Linux introductions started by William Shotts (2009) in his book "The Linux Command Line". 
 
-Open the terminal with <CTRL-ALT-t>. It starts directly in your home directory. Next, create a directory called Scala_Playground ("$ mkdir Scala_Playground <ENTER>"). Check if the directory was created with the command "$ls <ENTER>" which lists the contents of the directory in which you are placed. Further, switch to the Scala_Playground directory ("$ cd Scala_Playground") and create a part of the inner structure of the current directory by adding another directory called src with its subdirectory main, with its subdirectory scala. This is done with the command "$ mkdir -p src/main/scala" which creates the entire chain of directories. Check it with "$ls" and "$cd" commands, return to the Scala_Playground directory with "cd - ". 
+Open the terminal with <CTRL-ALT-t>. It starts directly in your home directory. Next, create a directory called Scala_Playground ("$ mkdir Scala_Playground <ENTER>"). Check if the directory was created with the command "$ls <ENTER>" which lists the contents of the directory in which you are placed. Further, switch to the Scala_Playground directory ("$ cd Scala_Playground <ENTER>") and create a part of the inner structure of the current directory by adding another directory called src with its subdirectory main, with its subdirectory scala. This is done with the command "$ mkdir -p src/main/scala" which creates the entire chain of directories. Check it with "$ls" and "$cd" commands, return to the Scala_Playground directory with "cd - ". 
 
 Next, in the Scala_Playground directory, create a second directory called project. The ls command should print now for the Scala_Playground two contents: project and src.  
 
@@ -109,7 +109,7 @@ You should now have three objects in the Scala_Playground directory: the build.s
 You can now launch SBT while you are in the Scala_Playground directory using the "$ sbt" command. You can see the SBT's output as it uses the information from the two edited files and creates the desired Scala project. When the output is finished you get to see the SBT prompt ">". The project was created successfully. Now, launch the Scala REPL with the command "> console". When the REPL is open you get to see the Scala prompt "scala>". You can type in some expressions to see if it works. 
 Type ":q" to get back to SBT and "exit" to get back to the command-line. 
 
-You can see that the Scala_Playground directory has gained some additional directories: the Scala_Playground/target directory and the Scala_Playground/project/target directory. These are created by SBT when it creates the Scala project. 
+You can see that the Scala_Playground directory has gained some additional directories: the Scala_Playground/target directory and the Scala_Playground/project/target directory. These are created by SBT when it creates the Scala project, and serve as locations for the output of SBT tasks (e.g. output following compilations or packaging).  
 
 In the src/main/scala directory you should place your Scala codes in form of scala files.   
 
