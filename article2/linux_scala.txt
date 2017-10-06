@@ -162,7 +162,7 @@ If more than one .jar file is used, then you should create a new directory calle
 
 3.4.3 Using a forked Java Virtual Machine (JVM)
 
-Running applications with the run action or using the REPL in SBT with the console action  
+Running applications with the run action or using the REPL in SBT with the console action allow the code to use of the same JVM as SBT.   
 ______________
 
 Additional issues:
