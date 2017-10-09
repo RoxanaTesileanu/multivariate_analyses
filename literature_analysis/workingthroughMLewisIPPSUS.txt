@@ -559,6 +559,17 @@ You typed two blank lines.  Starting a new command.
 
 scala> 
 
+scala> // expression -> returns a value; statement -> side effects
+
+scala> // we can have as many cases we want. firstly, the expr is evaluated, then it compares the expr. to each of the patterns and the first pattern which matches is the one that will be used.
+
+scala> // example: convert fact with match
+
+scala> def fact2 (n:Int) : Int = n match {
+     | case 0 => 1
+     | case _ => n*fact2(n-1)
+     | }
+fact2: (n: Int)Int
 
 
 
