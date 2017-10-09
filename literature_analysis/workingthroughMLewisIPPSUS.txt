@@ -515,6 +515,8 @@ scala> // 2,6,5, quit
 
 scala> // now we're going to write the HOF which can be used for both operations! 
 
+scala> // the key is to ABSTRACT THE THINGS THAT CHANGE. These are the base and the operations done. 
+
 
 
 
