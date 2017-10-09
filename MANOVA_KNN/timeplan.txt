@@ -1,0 +1,28 @@
+Timeplan for developing the Manova-KNN pipeline
+
+Roxana Tesileanu
+
+
+October 2017:
+
+for the Scala part:
+- work through Mark Lewis Introduction into Programming
+
+
+for the statistical part: 
+- work through Carroll and Green 1997 
+
+for the graphical part:
+
+- try to trace the code in SwiftVis2 
+
+November 2017:
+
+combine the parts
+- implementing MANOVA in Scala
+
+December 2017:
+
+- testing the algorithm 
+
+
