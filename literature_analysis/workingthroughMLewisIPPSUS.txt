@@ -571,6 +571,22 @@ scala> def fact2 (n:Int) : Int = n match {
      | }
 fact2: (n: Int)Int
 
+scala> def countDown2 (n:Int) : Unit = n match {
+     | case 0 =>    // we do nothing  
+     | case _ => 
+     | println(n)
+     | countDown2(n-1)
+     | }
+countDown2: (n: Int)Unit
+
+scala> countDown2(5)
+5
+4
+3
+2
+1
+
+scala> 
 
 
 
