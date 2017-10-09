@@ -531,6 +531,10 @@ scala> val (s,c) = inputAndCount(0, _ + _)
 s: Int = 9
 c: Int = 2
 
+scala> val (s,c) = inputAndCount(1, _ * _)
+s: Int = 30
+c: Int = 2
+
 
 
 
