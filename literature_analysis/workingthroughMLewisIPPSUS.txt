@@ -587,6 +587,34 @@ scala> countDown2(5)
 1
 
 scala> 
+scala> (readInt, readInt) match {
+     | case (0,0) => "zero, zero"
+     | case (1,0) => "one, zero"
+     | case (_, _) => "something, something"
+     | case (1,1) => "one, one"
+     | }
+<console>:19: warning: unreachable code
+       case (1,1) => "one, one"
+                     ^
+java.lang.NumberFormatException: For input string: ""
+  at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+  at java.lang.Integer.parseInt(Integer.java:592)
+  at java.lang.Integer.parseInt(Integer.java:615)
+  at scala.collection.immutable.StringLike$class.toInt(StringLike.scala:273)
+  at scala.collection.immutable.StringOps.toInt(StringOps.scala:29)
+  at scala.io.StdIn$class.readInt(StdIn.scala:110)
+  at scala.io.StdIn$.readInt(StdIn.scala:229)
+  ... 47 elided
+
+scala> (readInt, readInt) match {
+     | case (0,0) => "zero, zero"
+     | case (1,0) => "one, zero"
+     | case (1,1) => "one, one"
+     | case (_, _) => "something, something"
+     | }
+res14: String = something, something
+
+
 
 
 
