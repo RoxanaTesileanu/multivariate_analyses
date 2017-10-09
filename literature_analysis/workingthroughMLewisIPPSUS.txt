@@ -721,6 +721,34 @@ scala> // the size cannot be modified, just its elements. If the size is modifie
 
 scala> // In general we use arrays when we know upfront how many elements we will have in that array. 
 
+scala> // Arrays Functions
+
+scala> def setArray (arr: Array[Int], v:Int, i:Int) : Unit = {} // returns Unit because the only thing that it does is that it mutates the array.
+setArray: (arr: Array[Int], v: Int, i: Int)Unit
+
+scala> arr(100)
+java.lang.ArrayIndexOutOfBoundsException: 100
+  ... 42 elided
+
+scala> def setArray (arr: Array[Int], v:Int, i:Int) : Unit = {
+     | if (i < arr.length) {
+     | arr(i) = v
+     | setArray(arr, v, i+1)
+     | }
+     | }
+setArray: (arr: Array[Int], v: Int, i: Int)Unit
+
+scala> val arr2 = setArray(arr, 99, 0)
+arr2: Unit = ()
+
+scala> println (setArray(arr, 99, 0))
+()
+
+scala> setArray(arr, 99, 0)
+
+scala> arr
+res33: Array[Int] = Array(99, 99, 99, 99, 99)
+
 
 
 
