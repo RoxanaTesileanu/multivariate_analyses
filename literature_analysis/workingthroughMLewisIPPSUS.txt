@@ -673,6 +673,9 @@ scala> def safeReadInt :Int = {
      | }
 safeReadInt: Int
 
+scala> // this shows how you use recursion until you get an input which doesn't throws a NumberFormatException.
+
+
 
 
 
