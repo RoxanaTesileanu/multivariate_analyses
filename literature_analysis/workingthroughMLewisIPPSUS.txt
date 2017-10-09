@@ -486,6 +486,34 @@ res4: (Int, Int) = (4,2)
 
 scala> // 1,3,quit
 
+scala> val (s,c) = sumAndCount()
+s: Int = 25
+c: Int = 4
+
+scala> println(s/4.toDouble)
+6.25
+
+scala> 
+
+scala> //Abstracting Recursion
+
+scala> def multAndCount () : (Int, Int) = {
+     | val input = readLine.toLowerCase.trim
+     | if (input == "quit") (1,0) 
+     | else {
+     | val (prod, count) = multAndCount()
+     | (input.toInt*prod, count +1)
+     | }
+     | }
+multAndCount: ()(Int, Int)
+
+scala> val (s,c) = multAndCount()
+s: Int = 60
+c: Int = 3
+
+scala> // 2,6,5, quit
+
+scala> // now we're going to write the HOF which can be used for both operations! 
 
 
 
