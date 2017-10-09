@@ -614,6 +614,33 @@ scala> (readInt, readInt) match {
      | }
 res14: String = something, something
 
+scala> def fizzBuzz (i: Int) : Unit = {
+     | if ( i<=100) {
+     | (i%3, i%5) match {
+     | case (0,0) => "fizzbuzz"
+     | case (0, _) => "fizz"
+     | case (_, 0) => "buzz"
+     | case _ => i
+     | }
+     | fizzBuzz(i+1)
+     | }
+     | }
+fizzBuzz: (i: Int)Unit
+
+scala> fizzBuzz(90)
+fizzbuzz
+91
+92
+fizz
+94
+buzz
+fizz
+97
+98
+fizz
+buzz
+
+
 
 
 
