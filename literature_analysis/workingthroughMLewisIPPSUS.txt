@@ -479,7 +479,7 @@ scala> def sumAndCount () : (Int, Int) = {
      | }
 sumAndCount: ()(Int, Int)
 
-scala> //so you assign the return values of sumAndCount() to some vals and then you add up user input to the sum and 1 to the count accumulator.
+scala> //so you assign the return values of sumAndCount() to some vals and then you add up user input to the sum accumulator and 1 to the count accumulator.
 
 scala> sumAndCount()
 res4: (Int, Int) = (4,2)
@@ -541,6 +541,23 @@ scala> val (s,c) = inputAndCount( Int.MaxValue, _ min _)
 s: Int = 3
 c: Int = 7
 
+scala> val (s,c) = inputAndCount( Int.MaxValue, _ min _)
+s: Int = 2147483647
+c: Int = 0
+
+scala> // expr match { } inside we have cases of patterns.
+
+scala> /* expr match {
+     | case pattern1 => ...
+     | case pattern2 => ...
+     | ....
+     | }
+     | */
+     | 
+     | 
+You typed two blank lines.  Starting a new command.
+
+scala> 
 
 
 
