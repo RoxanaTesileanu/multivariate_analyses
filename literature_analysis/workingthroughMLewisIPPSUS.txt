@@ -675,6 +675,58 @@ safeReadInt: Int
 
 scala> // this shows how you use recursion until you get an input which doesn't throws a NumberFormatException.
 
+scala> safeReadInt
+This wasn's a valid input. Please try again.
+res21: Int = 8
+
+scala> // this type of try/catch constructs catch possible exceptions which make a program crash. So, when you believe a possible exception might be caused by a wrong type you should use it. 
+
+
+Arrays
+
+scala> Array(3,4,4,6,7)
+res22: Array[Int] = Array(3, 4, 4, 6, 7)
+
+scala> Array[Double](3,4,4,6,7)
+res23: Array[Double] = Array(3.0, 4.0, 4.0, 6.0, 7.0)
+
+scala> val arr = re22
+<console>:14: error: not found: value re22
+       val arr = re22
+                 ^
+
+scala> val arr = res22
+arr: Array[Int] = Array(3, 4, 4, 6, 7)
+
+scala> arr.length
+res24: Int = 5
+
+scala> arr.size
+res25: Int = 5
+
+scala> // arrays are mutable!!!
+
+scala> arr(2)
+res26: Int = 4
+
+scala> arr(2) = 99
+
+scala> arr(2)
+res28: Int = 99
+
+scala> arr
+res29: Array[Int] = Array(3, 4, 99, 6, 7)
+
+scala> // the size cannot be modified, just its elements. If the size is modified, a new array is created.
+
+scala> // In general we use arrays when we know upfront how many elements we will have in that array. 
+
+
+
+
+
+
+
 
 
 
