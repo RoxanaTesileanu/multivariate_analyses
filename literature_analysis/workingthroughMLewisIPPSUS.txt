@@ -469,6 +469,23 @@ scala> //ok, it can't take any arguments. it can only have return values.
 
 scala> //this is the trick by recursion with  user input. 
 
+scala> def sumAndCount () : (Int, Int) = {
+     | val input = readLine.toLowerCase.trim
+     | if (input == "quit") (0,0)
+     | else {
+     | val (sum, count) = sumAndCount()
+     | (input.toInt + sum, count +1)
+     | }
+     | }
+sumAndCount: ()(Int, Int)
+
+scala> //so you assign the return values of sumAndCount() to some vals and then you add up user input to the sum and 1 to the count accumulator.
+
+scala> sumAndCount()
+res4: (Int, Int) = (4,2)
+
+scala> // 1,3,quit
+
 
 
 
