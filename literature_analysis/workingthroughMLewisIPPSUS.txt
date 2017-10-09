@@ -640,6 +640,27 @@ fizz
 fizz
 buzz
 
+scala> // The try/catch construct (used as expression or statement)
+
+scala> val i = try {
+     | readInt 
+     | } catch {
+     | case e: NumberFormatException => 0
+     | }
+i: Int = 8
+
+scala> readInt
+java.lang.NumberFormatException: For input string: "a"
+  at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+  at java.lang.Integer.parseInt(Integer.java:580)
+  at java.lang.Integer.parseInt(Integer.java:615)
+  at scala.collection.immutable.StringLike$class.toInt(StringLike.scala:273)
+  at scala.collection.immutable.StringOps.toInt(StringOps.scala:29)
+  at scala.io.StdIn$class.readInt(StdIn.scala:110)
+  at scala.io.StdIn$.readInt(StdIn.scala:229)
+  ... 42 elided
+
+scala> 
 
 
 
