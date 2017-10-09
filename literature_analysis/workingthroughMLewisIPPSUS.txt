@@ -434,6 +434,23 @@ scala> //8, 1,-1
 
 scala> 
 
+scala> // we don't pass any arguments,thus, we don't have something to count down towards the base case; our base case comes from the user input.
+
+scala> def sumUntilQuit () : Int = {
+     | val input = readLine.toLowerCase.trim
+     | if (input == "quit") 0
+     | else input.toInt + sumUntilQuit()
+     | }
+sumUntilQuit: ()Int
+
+scala> sumUntilQuit()
+res3: Int = 15
+
+scala> // 5,5,5, quit
+
+
+
+
 
 
 
