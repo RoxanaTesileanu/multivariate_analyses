@@ -535,6 +535,11 @@ scala> val (s,c) = inputAndCount(1, _ * _)
 s: Int = 30
 c: Int = 2
 
+scala> // for the minimum, the base value is some large value which cannot be the min.
+
+scala> val (s,c) = inputAndCount( Int.MaxValue, _ min _)
+s: Int = 3
+c: Int = 7
 
 
 
