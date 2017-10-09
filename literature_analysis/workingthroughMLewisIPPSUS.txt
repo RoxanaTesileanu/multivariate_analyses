@@ -368,8 +368,78 @@ scala> // so, the recursions are calling themselves going down the callstack, wa
 
 _______________________ new REPL session _______________________________
 
+Tracing by Substitution: for pure functions (no prints, no reads, no assignments to vars) 
 
-https://www.youtube.com/watch?v=sl4H7PhUSWk&list=PLLMXbkbDbVt9MIJ9DV4ps-_trOzWtphYO&t=5
+Example: 
+def fact (n:Int) : Int = if (n<2) 1 else n*fact(n-1)
+
+fact(5)
+if (5<2) 1 else 5*fact(5-1)
+5*fact(5-1)
+5*fact(4)
+5*(if(4<2) 1 else 4*fact(4-1))
+5*(4*fact(4-1))
+5*4*fact(3)
+5*4*(if (3<2) 1 else 3*fact(3-1))
+5*4*3*fact(2)
+5*4*3* (if (2<2) 1 else 2*fact(1))
+5*4*3*2*fact(1)
+5*4*3*2* (if (1<2) 1 else 1*fact(0))
+5*4*3*2*1
+
+____________________________________________________________________
+
+Recursion and User Input
+
+scala> import io.StdIn._
+import io.StdIn._
+
+scala> def sum (n:Int) : Int = { 
+     | if (n<1) 0
+     | else {
+     | val input = readInt
+     | input + sum(n-1)
+     | }
+     | }
+sum: (n: Int)Int
+
+scala> sum(3)
+res0: Int = 18
+
+scala> // 5,6,7
+
+scala> sum(3)
+res1: Int = 16
+
+scala> //5, 10, 1
+
+scala> //you add up readInts
+
+scala> 
+
+scala> def sumPositive() : Int = {
+     | val input = readInt
+     | if(input >=0) {
+     | input  + sumPositive()
+     | } else 0
+     | }
+sumPositive: ()Int
+
+scala> // when we call the function we are not passing anything because we only use the user input!! 
+
+scala> sumPositive()
+res2: Int = 9
+
+scala> //8, 1,-1
+
+scala> 
+
+
+
+
+ 
+
+
 
 
 
