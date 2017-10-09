@@ -662,6 +662,17 @@ java.lang.NumberFormatException: For input string: "a"
 
 scala> 
 
+scala> def safeReadInt :Int = {
+     | try {
+     | readInt
+     | } catch {
+     | case e: NumberFormatException => 
+     | println ("This wasn's a valid input. Please try again.")
+     | safeReadInt
+     | }
+     | }
+safeReadInt: Int
+
 
 
 
