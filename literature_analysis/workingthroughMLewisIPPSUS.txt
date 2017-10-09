@@ -448,6 +448,28 @@ res3: Int = 15
 
 scala> // 5,5,5, quit
 
+scala> def sumAndCount () : (Int, Int) = {
+     | val imput = readLine.toLowerCase.trim
+     | if (input == "quit") (0.0)
+     | else sumAndCount(input.toInt + sum, count +0)
+     | }
+<console>:17: error: not found: value input
+       if (input == "quit") (0.0)
+           ^
+<console>:17: error: type mismatch;
+ found   : Double(0.0)
+ required: (Int, Int)
+       if (input == "quit") (0.0)
+                             ^
+<console>:18: error: too many arguments for method sumAndCount: ()(Int, Int)
+       else sumAndCount(input.toInt + sum, count +0)
+                       ^
+
+scala> //ok, it can't take any arguments. it can only have return values.
+
+scala> //this is the trick by recursion with  user input. 
+
+
 
 
 
