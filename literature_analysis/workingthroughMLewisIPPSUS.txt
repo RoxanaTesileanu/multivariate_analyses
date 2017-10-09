@@ -517,6 +517,20 @@ scala> // now we're going to write the HOF which can be used for both operations
 
 scala> // the key is to ABSTRACT THE THINGS THAT CHANGE. These are the base and the operations done. 
 
+scala> def inputAndCount (base: Int, op: (Int, Int) => Int) : (Int, Int) = {
+     | val input = readLine.toLowerCase.trim
+     | if (input == "quit") (base, 0)
+     | else {
+     | val (value, count) = inputAndCount(base, op)
+     | ( op(input.toInt, value), count +1 )
+     | }
+     | }
+inputAndCount: (base: Int, op: (Int, Int) => Int)(Int, Int)
+
+scala> val (s,c) = inputAndCount(0, _ + _)
+s: Int = 9
+c: Int = 2
+
 
 
 
