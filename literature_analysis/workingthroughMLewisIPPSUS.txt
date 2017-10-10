@@ -917,6 +917,30 @@ scala> // the second argument that is used is not a passed by value argument but
 
 scala> // you can apply the function based upon the index within the array.
 
+scala> Array.tabulate(10)(i => i)
+res17: Array[Int] = Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+scala> Array.tabulate(10)(i => i+1)
+res18: Array[Int] = Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+scala> Array.tabulate(10)(i => i*3)
+res19: Array[Int] = Array(0, 3, 6, 9, 12, 15, 18, 21, 24, 27)
+
+scala> Array.tabulate(10)(_*3)
+res20: Array[Int] = Array(0, 3, 6, 9, 12, 15, 18, 21, 24, 27)
+
+scala> Array.tabulate(10)(i => 1)
+res21: Array[Int] = Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+scala> Array.tabulate(10)(i => Math.random)
+res22: Array[Double] = Array(0.20191398398631388, 0.6265324706044582, 0.48655836432577704, 0.7116700805114097, 0.6609740626109651, 0.19503212412721582, 0.22931306287334907, 0.7324552123193775, 0.01191449330197314, 0.6359747030068716)
+
+scala> Array.tabulate(10)(i => 0)
+res23: Array[Int] = Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+
+scala> Array.tabulate(10)(i => 7)
+res24: Array[Int] = Array(7, 7, 7, 7, 7, 7, 7, 7, 7, 7)
+
 
 
  
