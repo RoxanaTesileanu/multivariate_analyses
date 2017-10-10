@@ -959,6 +959,19 @@ res25: Array[Int] = Array(9, 3, 1, 8, 6)
 
 scala> // Drop drops elements from left!
 
+scala> a.init
+res26: Array[Int] = Array(5, 2, 9, 3, 1, 8)
+
+scala> // init leaves out the last element
+
+scala> a.last
+res27: Int = 6
+
+scala> a.slice(2,4)
+res28: Array[Int] = Array(9, 3)
+
+scala> // slice is inclusive on the first index and exclusive on the second index.
+
 
 
  
