@@ -870,6 +870,12 @@ operateOnList2: (lst: List[Int], base: Int, f: (Int, Int) => Int)Int
 scala> operateOnList2(lst, 0, _ + _)
 res13: Int = 22
 
+scala> // if we need to express head and tail in the case pattern we use h::t (something cons something).
+
+scala> // you can use head and tail to go through the recursion.
+
+scala> // and pull a list apart.
+
 
  
 
