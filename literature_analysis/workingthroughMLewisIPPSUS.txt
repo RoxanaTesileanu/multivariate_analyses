@@ -1360,7 +1360,11 @@ scala> //concatencates values to string.
 scala> a.foldLeft("")(_+_+",")
 res118: String = 5,2,9,3,1,8,6,
 
-scala> 
+scala> // reduceLeft takes a function with two arguments!
+
+scala> // foldLeft takes two lists of parameters: acc and function with two param.
+
+
 
 
 
