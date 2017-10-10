@@ -1255,6 +1255,16 @@ scala> a.foreach(println)
 
 scala> //foreach more for sife effects
 
+scala> a.indexWhere(_ % 2 == 0)
+res101: Int = 1
+
+scala> a
+res102: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
+
+
+scala> // find the index where some predicate is satisfied
+
+
 
 
 
