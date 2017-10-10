@@ -1269,6 +1269,29 @@ res103: Int = 5
 
 scala> //does the same thing as indexOf!
 
+scala> a.lastIndexWhere(_ ==8)
+res104: Int = 5
+
+scala> a.lastIndexWhere( _ %3 ==0)
+res105: Int = 6
+
+scala> a.partition( _ %2==0)
+res106: (Array[Int], Array[Int]) = (Array(2, 8, 6),Array(5, 9, 3, 1))
+
+scala> // partition returns a tuple of two collections: the first which satisfies a predicate and the second with elements which don't satisfy a predicate.
+
+scala> val (evens, odds) = a.partition(_%2 ==0)
+evens: Array[Int] = Array(2, 8, 6)
+odds: Array[Int] = Array(5, 9, 3, 1)
+
+scala> //takeWhile
+
+scala> a.takeWhile(_ %3 !=0)
+res107: Array[Int] = Array(5, 2)
+
+scala> a
+res108: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
+
 
 
 
