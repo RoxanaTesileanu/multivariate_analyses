@@ -1177,6 +1177,36 @@ scala> // HIGHER-ORDER METHODS (map and filter)
 
 scala>
 
+scala> a
+res76: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
+
+scala> a.map(_ *2)
+res77: Array[Int] = Array(10, 4, 18, 6, 2, 16, 12)
+
+scala> //map returns a new collection
+
+scala> a.map(_ * _)
+<console>:19: error: missing parameter type for expanded function ((x$1, x$2) => x$1.$times(x$2))
+       a.map(_ * _)
+             ^
+<console>:19: error: missing parameter type for expanded function ((x$1: <error>, x$2) => x$1.$times(x$2))
+       a.map(_ * _)
+                 ^
+
+scala> a.map(_ /0.5)
+res79: Array[Double] = Array(10.0, 4.0, 18.0, 6.0, 2.0, 16.0, 12.0)
+
+scala> 
+
+scala> // filter: passes in a predicate to filter 
+
+scala> a.filter( i => i%2 ==1)
+res80: Array[Int] = Array(5, 9, 3, 1)
+
+scala> a.filter( i => i%2 ==1).map(_ *2)
+res81: Array[Int] = Array(10, 18, 6, 2)
+
+
 
  
 
