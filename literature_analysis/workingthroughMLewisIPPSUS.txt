@@ -1003,6 +1003,34 @@ scala> // Methods that do Boolean tests and searching inside collections
 
 scala> 
 
+scala> a
+res34: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
+
+scala> a.contains(3)
+res35: Boolean = true
+
+scala> a.contains(99)
+res36: Boolean = false
+
+scala> a.endsWith(Array(1,8,6))
+res37: Boolean = true
+
+scala> a.endsWith(Array(1,8,4))
+res38: Boolean = false
+
+scala> a.endsWith(List(1,8,6))
+res39: Boolean = true
+
+scala> a.isEmpty
+res40: Boolean = false
+
+scala> a.nonEmpty
+res41: Boolean = true
+
+scala> a.startsWith((Array(5,2,9))
+     | )
+res42: Boolean = true
+
 
  
 
