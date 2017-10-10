@@ -1232,6 +1232,13 @@ scala>
 
 scala> //flatmap
 
+scala> val arr3 = Array(Array(1,2,3,4), Array(5,6,7,8))
+arr3: Array[Array[Int]] = Array(Array(1, 2, 3, 4), Array(5, 6, 7, 8))
+
+scala> arr3.flatMap(i=> i)
+res90: Array[Int] = Array(1, 2, 3, 4, 5, 6, 7, 8)
+
+
 
 
  
