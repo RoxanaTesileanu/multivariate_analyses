@@ -861,6 +861,15 @@ operateOnList: (lst: List[Int], base: Int, f: (Int, Int) => Int)Int
 scala> operateOnList(lst, 0, _ + _)
 res12: Int = 22
 
+scala> def operateOnList2 (lst : List[Int], base :Int, f: (Int, Int) => Int) : Int = lst match {
+     | case Nil => base
+     | case h :: t => f( h, operateOnList2(t, base, f))
+     | }
+operateOnList2: (lst: List[Int], base: Int, f: (Int, Int) => Int)Int
+
+scala> operateOnList2(lst, 0, _ + _)
+res13: Int = 22
+
 
  
 
