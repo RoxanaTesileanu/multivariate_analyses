@@ -1206,6 +1206,22 @@ res80: Array[Int] = Array(5, 9, 3, 1)
 scala> a.filter( i => i%2 ==1).map(_ *2)
 res81: Array[Int] = Array(10, 18, 6, 2)
 
+scala> 
+
+scala> a.count( _%2 ==0)
+res82: Int = 3
+
+scala> a.dropWhile(_<9)
+res83: Array[Int] = Array(9, 3, 1, 8, 6)
+
+scala> // dropWhile drops things until it meets a 9 and is less than 9
+
+scala> a.dropWhile(_<1)
+res84: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
+
+scala> a.dropWhile(_ >1)
+res85: Array[Int] = Array(1, 8, 6)
+
 
 
  
