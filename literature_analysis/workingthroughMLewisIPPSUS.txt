@@ -1455,6 +1455,22 @@ java.util.NoSuchElementException: next on empty iterator
 scala> res0.hasNext
 res15: Boolean = false
 
+scala> // -> the combinations method give back an iterator
+
+scala> // Another method that gives back an iterator is grouped.
+
+scala> Array.tabulate(15)(i=>i)
+res16: Array[Int] = Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14)
+
+scala> Array.tabulate(15)(i=>i).grouped(3)
+res17: Iterator[Array[Int]] = non-empty iterator
+
+scala> Array.tabulate(15)(i=>i).grouped(3).foreach( a => println( a.mkString(",")))
+0,1,2
+3,4,5
+6,7,8
+9,10,11
+12,13,14
 
 
 
