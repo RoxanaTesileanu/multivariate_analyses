@@ -1292,6 +1292,29 @@ res107: Array[Int] = Array(5, 2)
 scala> a
 res108: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
 
+scala> 
+
+scala> // reduce and fold
+
+scala> 
+
+scala> a.reduceLeft(_ + _)
+res109: Int = 34
+
+scala> a.sum
+res110: Int = 34
+
+scala> a.reduceLeft((a,b) => {println(a+","+b); a+b})
+5,2
+7,9
+16,3
+19,1
+20,8
+28,6
+res111: Int = 34
+
+scala> a
+res112: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
 
 
 
