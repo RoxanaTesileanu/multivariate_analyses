@@ -890,6 +890,14 @@ ones: Array[Int] = Array(1, 1, 1, 1, 1, 1, 1)
 scala> val randomArr = Array.fill(10)(Math.random)
 randomArr: Array[Double] = Array(0.3840458302727937, 0.18531876116607027, 0.40188798438581586, 0.8813083321922234, 0.8483406976447233, 0.23323373087375598, 0.769075009059168, 0.7098601334456789, 0.7922765871511024, 0.6774729303710884)
 
+scala> // the second argument of Array.fill()() is PASSED BY VALUE!
+
+scala> // PASSED BY NAME AND PASSED BY VALUE
+
+scala> // when it's passed by name it's not evaluated until it's needed.
+
+scala> // when it's passed by value it's evaluated over and over again every time it is used.
+
 
  
 
