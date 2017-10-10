@@ -972,6 +972,31 @@ res28: Array[Int] = Array(9, 3)
 
 scala> // slice is inclusive on the first index and exclusive on the second index.
 
+scala> a.splitAt(3)
+res29: (Array[Int], Array[Int]) = (Array(5, 2, 9),Array(3, 1, 8, 6))
+
+scala> // with splitAt I get a tuple of two arrays. 
+
+scala> // the argument indicates how many values go into the first collection. 
+
+scala> a.take(3)
+res30: Array[Int] = Array(5, 2, 9)
+
+scala> // take the first 3 elements
+
+scala> a
+res31: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
+
+scala> a.dropRight(3)
+res32: Array[Int] = Array(5, 2, 9, 3)
+
+scala> // drops off the last 3 elements
+
+scala> a.takeRight(3)
+res33: Array[Int] = Array(1, 8, 6)
+
+scala> // takeRight gives you the last 3 elements
+
 
 
  
