@@ -898,6 +898,14 @@ scala> // when it's passed by name it's not evaluated until it's needed.
 
 scala> // when it's passed by value it's evaluated over and over again every time it is used.
 
+scala> var i = 0
+i: Int = 0
+
+scala> Array.fill(10)({i += 1; i})
+res15: Array[Int] = Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+scala> // the power of the Array.fill method is that whatever you pass in the second argument list is evaluated however many times you do this (the code happens 10 times -> the i value goes from 0 to 10)
+
 
  
 
