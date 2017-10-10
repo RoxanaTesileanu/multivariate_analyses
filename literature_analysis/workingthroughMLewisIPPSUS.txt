@@ -1378,6 +1378,15 @@ nums: Array[Int] = Array(1, 2, 3, 4, 5)
 
 An iterator is much like a collection, except that as you go through the values they are consumed. The advantage is that large collections don't consume that much memory.  
 
+scala> nums.combinations(3)
+res0: Iterator[Array[Int]] = non-empty iterator
+
+scala> //an iterator of arrays
+
+scala> //you don't want to create all those combinations at once and fill the memory of the computer
+
+scala> //we can go through them one at the time and throw them away  when we are done. 
+
 
 
  
