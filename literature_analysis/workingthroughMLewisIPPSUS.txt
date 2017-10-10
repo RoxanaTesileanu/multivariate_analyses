@@ -1264,6 +1264,11 @@ res102: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
 
 scala> // find the index where some predicate is satisfied
 
+scala> a.indexWhere( _ == 8)
+res103: Int = 5
+
+scala> //does the same thing as indexOf!
+
 
 
 
