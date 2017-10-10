@@ -1651,6 +1651,12 @@ scala>
 
 scala> // different useful methods like permutations, combinations. 
 
+scala> 
+
+scala> "1 2 3 4 5".split(" ").map(_.toInt)
+res28: Array[Int] = Array(1, 2, 3, 4, 5)
+
+scala> 
 
  
 
