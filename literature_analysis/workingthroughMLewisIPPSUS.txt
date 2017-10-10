@@ -1222,6 +1222,16 @@ res84: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
 scala> a.dropWhile(_ >1)
 res85: Array[Int] = Array(1, 8, 6)
 
+scala> a.exists(_ %7 ==0)
+res86: Boolean = false
+
+scala> a.exists(_ %4 ==0)
+res87: Boolean = true
+
+scala> 
+
+scala> //flatmap
+
 
 
  
