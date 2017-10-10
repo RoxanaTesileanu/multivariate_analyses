@@ -1238,6 +1238,23 @@ arr3: Array[Array[Int]] = Array(Array(1, 2, 3, 4), Array(5, 6, 7, 8))
 scala> arr3.flatMap(i=> i)
 res90: Array[Int] = Array(1, 2, 3, 4, 5, 6, 7, 8)
 
+scala> a.forall(_< 7)
+res98: Boolean = false
+
+scala> a.forall(_< 70)
+res99: Boolean = true
+
+scala> a.foreach(println)
+5
+2
+9
+3
+1
+8
+6
+
+scala> //foreach more for sife effects
+
 
 
 
