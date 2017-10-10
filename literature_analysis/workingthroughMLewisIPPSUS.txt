@@ -1364,6 +1364,17 @@ scala> // reduceLeft takes a function with two arguments!
 
 scala> // foldLeft takes two lists of parameters: acc and function with two param.
 
+scala> 
+
+scala> // Combinatorial/Iterator Methods
+
+scala> 
+
+scala> var i = 0
+i: Int = 0
+
+scala> val nums = Array.fill(5)({i+=1;i})
+nums: Array[Int] = Array(1, 2, 3, 4, 5)
 
 
 
