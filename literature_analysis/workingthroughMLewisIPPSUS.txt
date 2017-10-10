@@ -997,6 +997,11 @@ res33: Array[Int] = Array(1, 8, 6)
 
 scala> // takeRight gives you the last 3 elements
 
+scala> 
+
+scala> // Methods that do Boolean tests and searching inside collections
+
+scala> 
 
 
  
