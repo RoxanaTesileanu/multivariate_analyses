@@ -1644,6 +1644,12 @@ scala> nums.tails.foreach( a => println( a.mkString(",")))
 
 scala> // returns all possible tails after moving across the collection
 
+scala> nums.tails.toList
+res27: List[Array[Int]] = List(Array(1, 2, 3, 4, 5), Array(2, 3, 4, 5), Array(3, 4, 5), Array(4, 5), Array(5), Array())
+
+scala> 
+
+scala> // different useful methods like permutations, combinations. 
 
 
  
