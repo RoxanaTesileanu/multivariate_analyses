@@ -1659,6 +1659,18 @@ res28: Array[Int] = Array(1, 2, 3, 4, 5)
 scala> 
 
  
+scala> // collections give us the ability to store and manipulate large amounts of data.
+
+
+Playing with data:
+- create arrays with Array.fill(34009)(readline) SUPER TIP!!!
+- then filter the arrays on different variables (like year or gender or name).
+- then map through the elements of those new subsets and extract information with counting the occurences and finding max or min values, etc.. 
+
+
+_____________________ new REPL ________________________________
+
+https://www.youtube.com/watch?v=YJ1n53wK3T0&list=PLLMXbkbDbVt9MIJ9DV4ps-_trOzWtphYO&t=2
 
 
 
