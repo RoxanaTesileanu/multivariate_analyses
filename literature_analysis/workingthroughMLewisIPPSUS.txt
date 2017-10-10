@@ -1031,6 +1031,22 @@ scala> a.startsWith((Array(5,2,9))
      | )
 res42: Boolean = true
 
+scala> a.indexOf(9)
+res43: Int = 2
+
+scala> a.indexOf(99)
+res44: Int = -1
+
+scala> //returns a -1 when the element is not found.
+
+scala> a.lastIndexOf(1)
+res45: Int = 4
+
+scala> a.indexOf(1,5)
+res46: Int = -1
+
+scala> // finding ones starting with index 5
+
 
  
 
