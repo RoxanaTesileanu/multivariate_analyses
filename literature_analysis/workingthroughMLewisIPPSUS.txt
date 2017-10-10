@@ -752,7 +752,80 @@ res33: Array[Int] = Array(99, 99, 99, 99, 99)
 _____________________ new REPL session _________________________________
 
 
-https://www.youtube.com/watch?v=5PlT3AumYgg&list=PLLMXbkbDbVt9MIJ9DV4ps-_trOzWtphYO&t=267
+Array functions 2
+Combine the elements of an array (reduce)
+
+scala> def operateOnArray( arr: Array[Int], i: Int, f: (Int, Int) => Int) : Int = {
+     | if (i<arr.length -1) {
+     | f( arr(i), operateOnArray(arr, i+1, f))
+     | } else {
+     | arr(i)
+     | }
+     | }
+operateOnArray: (arr: Array[Int], i: Int, f: (Int, Int) => Int)Int
+
+scala> val nums = Array(1,2,3,4,5,6)
+nums: Array[Int] = Array(1, 2, 3, 4, 5, 6)
+
+scala> operateOnArray(nums, 0, _+_)
+res0: Int = 21
+
+scala> // we used recursion and the index to move across the array. 
+
+scala> operateOnArray(nums, 0, _*_)
+res1: Int = 720
+
+scala> 
+
+scala> // Lists 
+
+scala> //lists are immutable!!
+
+scala> List(5,3,8,2)
+res2: List[Int] = List(5, 3, 8, 2)
+
+scala> //lists allow you to very efficiently add elements in front of them.
+
+scala> val lst = List(6,8,3,5)
+lst: List[Int] = List(6, 8, 3, 5)
+
+scala> // cons operator prepends elements in front of the list:
+
+scala> 1 :: lst
+res3: List[Int] = List(1, 6, 8, 3, 5)
+
+scala> // read as "one cons list"
+
+scala> // our old list is still there, this created a new list
+
+scala> // the list with no elements: Nil!
+
+scala> Nil
+res4: scala.collection.immutable.Nil.type = List()
+
+scala> 1::2::3::4::Nil
+res5: List[Int] = List(1, 2, 3, 4)
+
+scala> // this is one way to create lists
+
+scala> lst
+res6: List[Int] = List(6, 8, 3, 5)
+
+scala> lst(2)
+res7: Int = 3
+
+scala> // lists are immutable so we cannot update the values of elements
+
+scala> lst(2) =99
+<console>:13: error: value update is not a member of List[Int]
+       lst(2) =99
+       ^
+
+scala> 
+
+
+
+
 
 
 
