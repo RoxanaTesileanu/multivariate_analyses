@@ -887,6 +887,9 @@ zeros: Array[Int] = Array(0, 0, 0, 0, 0)
 scala> val ones = Array.fill(7)(1)
 ones: Array[Int] = Array(1, 1, 1, 1, 1, 1, 1)
 
+scala> val randomArr = Array.fill(10)(Math.random)
+randomArr: Array[Double] = Array(0.3840458302727937, 0.18531876116607027, 0.40188798438581586, 0.8813083321922234, 0.8483406976447233, 0.23323373087375598, 0.769075009059168, 0.7098601334456789, 0.7922765871511024, 0.6774729303710884)
+
 
  
 
