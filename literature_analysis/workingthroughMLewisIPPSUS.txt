@@ -915,6 +915,8 @@ scala> // The tabulate Method
 
 scala> // the second argument that is used is not a passed by value argument but actually a function.
 
+scala> // you can apply the function based upon the index within the array.
+
 
 
  
