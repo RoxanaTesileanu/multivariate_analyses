@@ -1047,6 +1047,262 @@ res46: Int = -1
 
 scala> // finding ones starting with index 5
 
+ 
+scala> 
+
+scala> // Multiset difference:
+
+scala> a
+res47: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
+
+scala> a.diff(Array(2,9,6,8))
+res48: Array[Int] = Array(5, 3, 1)
+
+scala> // finds the elements present in a and not present in the other collection.
+
+scala> a.diff(Array(2,7,6,8))
+res49: Array[Int] = Array(5, 9, 3, 1)
+
+scala> a.distinct
+res50: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
+
+scala> // gives back a collection with no duplicates in it.
+
+scala> Array(1,1,1,6,5,5,7,7,72,3,1).distinct
+res51: Array[Int] = Array(1, 6, 5, 7, 72, 3)
+
+scala> println(a)
+[I@5572d111
+
+scala> a.mkString
+res53: String = 5293186
+
+scala> a.mkString(",")
+res54: String = 5,2,9,3,1,8,6
+
+scala> a.mkString("(",",", ")"))
+<console>:1: error: ';' expected but ')' found.
+a.mkString("(",",", ")"))
+                        ^
+
+scala> a.mkString("(",",", ")")
+res55: String = (5,2,9,3,1,8,6)
+
+scala> a
+res56: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
+
+scala> // take some subset from an array and replace it with something else
+
+scala> a.patch(2,Nil, 3)
+res57: Array[Int] = Array(5, 2, 8, 6)
+
+scala> // removing with Nil
+
+scala> a.patch(2,Array(77,88,99), 3)
+res58: Array[Int] = Array(5, 2, 77, 88, 99, 8, 6)
+
+scala> // patch(location, what you put in that place, how many things you want to replace)
+
+scala> a.reverse
+res59: Array[Int] = Array(6, 8, 1, 3, 9, 2, 5)
+
+scala> a.toList
+res60: List[Int] = List(5, 2, 9, 3, 1, 8, 6)
+
+scala> res60.toArray
+res61: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
+
+scala> // zip 
+
+scala> val lst2 = List("one", "two", "three", "four")
+lst2: List[String] = List(one, two, three, four)
+
+scala> a.zip(lst2)
+res62: Array[(Int, String)] = Array((5,one), (2,two), (9,three), (3,four))
+
+scala> // WHEN ONE COLLECTION ENDS, THEN THE zip METHOD ENDS!
+
+scala> // zip pairs together the two collections in form of tuples.
+
+scala> lst2.zip(a)
+res63: List[(String, Int)] = List((one,5), (two,2), (three,9), (four,3))
+
+scala> // it takes over the type of the first argument!!!
+
+scala> a.zipWithIndex
+res64: Array[(Int, Int)] = Array((5,0), (2,1), (9,2), (3,3), (1,4), (8,5), (6,6))
+
+scala> lst2.zipWithIndex
+res65: List[(String, Int)] = List((one,0), (two,1), (three,2), (four,3))
+
+scala> a.min
+res66: Int = 1
+
+scala> lst2.min
+res67: String = four
+
+scala> a.max
+res68: Int = 9
+
+scala> a.sum
+res69: Int = 34
+
+scala> lst.sum
+res70: Int = 22
+
+scala> lst2.sum
+<console>:19: error: could not find implicit value for parameter num: Numeric[String]
+       lst2.sum
+            ^
+
+scala> a.product
+res72: Int = 12960
+
+scala> // min, max, sum , product for NUMERIC VALUES!!
+
+scala> a.sum/a.length
+res73: Int = 4
+
+scala> a.sum/a.length.toDoub
+<console>:19: error: value toDoub is not a member of Int
+       a.sum/a.length.toDoub
+                      ^
+
+scala> a.sum/a.length.toDouble
+res75: Double = 4.857142857142857
+
+scala> 
+
+scala> // HIGHER-ORDER METHODS (map and filter)
+
+scala>
+scala> // Multiset difference:
+
+scala> a
+res47: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
+
+scala> a.diff(Array(2,9,6,8))
+res48: Array[Int] = Array(5, 3, 1)
+
+scala> // finds the elements present in a and not present in the other collection.
+
+scala> a.diff(Array(2,7,6,8))
+res49: Array[Int] = Array(5, 9, 3, 1)
+
+scala> a.distinct
+res50: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
+
+scala> // gives back a collection with no duplicates in it.
+
+scala> Array(1,1,1,6,5,5,7,7,72,3,1).distinct
+res51: Array[Int] = Array(1, 6, 5, 7, 72, 3)
+
+scala> println(a)
+[I@5572d111
+
+scala> a.mkString
+res53: String = 5293186
+
+scala> a.mkString(",")
+res54: String = 5,2,9,3,1,8,6
+
+scala> a.mkString("(",",", ")"))
+<console>:1: error: ';' expected but ')' found.
+a.mkString("(",",", ")"))
+                        ^
+
+scala> a.mkString("(",",", ")")
+res55: String = (5,2,9,3,1,8,6)
+
+scala> a
+res56: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
+
+scala> // take some subset from an array and replace it with something else
+
+scala> a.patch(2,Nil, 3)
+res57: Array[Int] = Array(5, 2, 8, 6)
+
+scala> // removing with Nil
+
+scala> a.patch(2,Array(77,88,99), 3)
+res58: Array[Int] = Array(5, 2, 77, 88, 99, 8, 6)
+
+scala> // patch(location, what you put in that place, how many things you want to replace)
+
+scala> a.reverse
+res59: Array[Int] = Array(6, 8, 1, 3, 9, 2, 5)
+
+scala> a.toList
+res60: List[Int] = List(5, 2, 9, 3, 1, 8, 6)
+
+scala> res60.toArray
+res61: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
+
+scala> // zip 
+
+scala> val lst2 = List("one", "two", "three", "four")
+lst2: List[String] = List(one, two, three, four)
+
+scala> a.zip(lst2)
+res62: Array[(Int, String)] = Array((5,one), (2,two), (9,three), (3,four))
+
+scala> // WHEN ONE COLLECTION ENDS, THEN THE zip METHOD ENDS!
+
+scala> // zip pairs together the two collections in form of tuples.
+
+scala> lst2.zip(a)
+res63: List[(String, Int)] = List((one,5), (two,2), (three,9), (four,3))
+
+scala> // it takes over the type of the first argument!!!
+
+scala> a.zipWithIndex
+res64: Array[(Int, Int)] = Array((5,0), (2,1), (9,2), (3,3), (1,4), (8,5), (6,6))
+
+scala> lst2.zipWithIndex
+res65: List[(String, Int)] = List((one,0), (two,1), (three,2), (four,3))
+
+scala> a.min
+res66: Int = 1
+
+scala> lst2.min
+res67: String = four
+
+scala> a.max
+res68: Int = 9
+
+scala> a.sum
+res69: Int = 34
+
+scala> lst.sum
+res70: Int = 22
+
+scala> lst2.sum
+<console>:19: error: could not find implicit value for parameter num: Numeric[String]
+       lst2.sum
+            ^
+
+scala> a.product
+res72: Int = 12960
+
+scala> // min, max, sum , product for NUMERIC VALUES!!
+
+scala> a.sum/a.length
+res73: Int = 4
+
+scala> a.sum/a.length.toDoub
+<console>:19: error: value toDoub is not a member of Int
+       a.sum/a.length.toDoub
+                      ^
+
+scala> a.sum/a.length.toDouble
+res75: Double = 4.857142857142857
+
+scala> 
+
+scala> // HIGHER-ORDER METHODS (map and filter)
+
+scala> 
+
 
  
 
