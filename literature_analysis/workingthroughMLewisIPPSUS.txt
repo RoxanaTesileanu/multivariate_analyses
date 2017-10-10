@@ -821,7 +821,50 @@ scala> lst(2) =99
        lst(2) =99
        ^
 
-scala> 
+scala> // exercise: function which builds up a list:
+
+scala> import io.StdIn._
+import io.StdIn._
+
+scala> // lists work very well when you don't know how many elements the list will have:
+
+scala> def inputList (n: Int) : List[Int] = {
+     | if (n<1) Nil
+     | else readInt :: inputList(n-1)
+     | }
+inputList: (n: Int)List[Int]
+
+scala> val list2 = inputList(4)
+list2: List[Int] = List(2, 4, 7, 6)
+
+scala> // THE ARRAY IS BEST WHEN YOU DO KNOW HOW MANY THINGS YOU HAVE AND IT ALLOWS YOU TO MUTATE THEM.
+
+scala> // LISTS WORK VERY WELL IF YOU DON'T KNOW HOW MANY INPUTS YOU HAVE (e.g. functions which work with quit).
+
+scala> // Methods that we can call on Lists
+
+scala> lst
+res9: List[Int] = List(6, 8, 3, 5)
+
+scala> lst.head
+res10: Int = 6
+
+scala> lst.tail
+res11: List[Int] = List(8, 3, 5)
+
+scala> def operateOnList (lst: List[Int], base: Int, f: (Int, Int) => Int) : Int = {
+     | if (lst == Nil) base 
+     | else f(lst.head, operateOnList(lst.tail, base, f))
+     | }
+operateOnList: (lst: List[Int], base: Int, f: (Int, Int) => Int)Int
+
+scala> operateOnList(lst, 0, _ + _)
+res12: Int = 22
+
+
+ 
+
+
 
 
 
