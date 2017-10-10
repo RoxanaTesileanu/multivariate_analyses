@@ -1316,6 +1316,52 @@ res111: Int = 34
 scala> a
 res112: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
 
+scala> a.reduceRight((a,b) => {println(a+","+b); a+b})
+8,6
+1,14
+3,15
+9,18
+2,27
+5,29
+res113: Int = 34
+
+scala> a.reduceLeft((a,b) => {println(a+","+b); a-b})
+5,2
+3,9
+-6,3
+-9,1
+-10,8
+-18,6
+res114: Int = -24
+
+scala> a.reduceRight((a,b) => {println(a+","+b); a-b})
+8,6
+1,2
+3,-1
+9,4
+2,5
+5,-3
+res115: Int = 8
+
+scala> // depending on the operation we do, the reduceRight and reduceLeft might deliver different results.
+
+scala> 
+
+scala> // fold -> for more flexibility regarding types used
+
+scala> a.foldLeft(0)(_ + _) //tekes two arguments: 1st is the accumulator and the 2nd is the function used in folding
+res116: Int = 34
+
+scala> a.foldLeft("")(_+_)
+res117: String = 5293186
+
+scala> //concatencates values to string.
+
+scala> a.foldLeft("")(_+_+",")
+res118: String = 5,2,9,3,1,8,6,
+
+scala> 
+
 
 
 
