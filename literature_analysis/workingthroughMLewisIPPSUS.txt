@@ -941,6 +941,24 @@ res23: Array[Int] = Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 scala> Array.tabulate(10)(i => 7)
 res24: Array[Int] = Array(7, 7, 7, 7, 7, 7, 7, 7, 7, 7)
 
+scala> 
+
+scala> // Collection Methods
+
+scala> 
+
+scala> // slicing
+
+scala> // drop -> drops off that many elements given in the argument:
+
+scala> val a = Array(5,2,9,3,1,8,6)
+a: Array[Int] = Array(5, 2, 9, 3, 1, 8, 6)
+
+scala> a.drop(2)
+res25: Array[Int] = Array(9, 3, 1, 8, 6)
+
+scala> // Drop drops elements from left!
+
 
 
  
