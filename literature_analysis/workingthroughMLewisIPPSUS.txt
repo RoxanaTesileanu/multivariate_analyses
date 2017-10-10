@@ -876,6 +876,17 @@ scala> // you can use head and tail to go through the recursion.
 
 scala> // and pull a list apart.
 
+scala> 
+
+scala> Array.fill(10)(5)
+res14: Array[Int] = Array(5, 5, 5, 5, 5, 5, 5, 5, 5, 5)
+
+scala> val zeros = Array.fill(5)(0)
+zeros: Array[Int] = Array(0, 0, 0, 0, 0)
+
+scala> val ones = Array.fill(7)(1)
+ones: Array[Int] = Array(1, 1, 1, 1, 1, 1, 1)
+
 
  
 
