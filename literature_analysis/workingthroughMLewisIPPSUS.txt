@@ -1713,6 +1713,36 @@ res5: Int = 0
 
 scala> // getOrElse sets the default value for false cases.
 
+scala> // You can safely use getOrElse for many cases to get the value for Some or get some default value for None. 
+
+scala> // You can also use map and flatmap (which are defined also for Option)
+
+scala> lst.find(_ > 6).map(_*2)
+res6: Option[Int] = None
+
+scala> lst.find(_ > 3).map(_*2)
+res7: Option[Int] = Some(8)
+
+scala> // map functions like in the normal case for arrays and lists if there is a Some, or returns a None for the case of a missing value (i.e. None).
+
+scala> // You can also use match:
+
+scala> lst.find(_ >3) match {
+     | case Some(n) => n*5
+     | case None => 0
+     | }
+res8: Int = 20
+
+scala> // You can also work with if:
+
+scala> val result = lst.find(_>3)
+result: Option[Int] = Some(4)
+
+scala> if(result.nonEmpty) result.get*5 else 0
+res9: Int = 20
+
+
+
     
 
 
