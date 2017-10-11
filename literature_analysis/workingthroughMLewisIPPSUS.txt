@@ -1853,6 +1853,37 @@ Currying
 - having a function that returns a function (the idea is that you can partially apply these functions)
 - example: def add(x: Int) : Int => Int = y => x+y
 
+scala> def add (x: Int): Int => Int = y => x+y
+add: (x: Int)Int => Int
+
+scala> add(5)
+res0: Int => Int = <function1>
+
+scala> add(5)(7)
+res1: Int = 12
+
+scala> def add2(x:Int)(y:Int) : Int = x+y
+add2: (x: Int)(y: Int)Int
+
+scala> add2(5)(7)
+res2: Int = 12
+
+scala> add2(5)
+<console>:13: error: missing argument list for method add2
+Unapplied methods are only converted to functions when a function type is expected.
+You can make this conversion explicit by writing `add2 _` or `add2(_)(_)` instead of `add2`.
+       add2(5)
+           ^
+
+scala> add2(5)_
+res4: Int => Int = <function1>
+
+scala> res4(7)
+res5: Int = 12
+
+
+
+
     
 
 
