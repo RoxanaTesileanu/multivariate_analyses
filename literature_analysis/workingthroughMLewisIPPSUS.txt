@@ -1828,6 +1828,13 @@ average: (n: Double*)Double
 scala> average(1,2,3)
 res23: Double = 2.0
 
+scala> val nums = List(94.0, 95, 97, 99)
+nums: List[Double] = List(94.0, 95.0, 97.0, 99.0)
+
+scala> average(nums:_*)
+res24: Double = 96.25
+
+scala> 
 
 
 
