@@ -1836,6 +1836,13 @@ res24: Double = 96.25
 
 scala> 
 
+scala> // Mutability and Aliasing
+
+scala> 
+
+scala> // mutable types can also imply aliasing.
+
+scala> 
 
 
     
