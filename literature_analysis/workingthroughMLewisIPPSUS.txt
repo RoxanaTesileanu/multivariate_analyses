@@ -1844,6 +1844,14 @@ scala> // mutable types can also imply aliasing.
 
 scala> 
 
+_____________________ new REPL session _____________________________
+
+
+Currying
+
+- several argument lists
+- having a function that returns a function (the idea is that you can partially apply these functions)
+- example: def add(x: Int) : Int => Int = y => x+y
 
     
 
