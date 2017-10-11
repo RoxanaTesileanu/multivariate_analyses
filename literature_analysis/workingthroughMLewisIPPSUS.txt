@@ -1803,6 +1803,20 @@ res20: List[java.io.Serializable] = List(hi, List(2, 3))
 scala> List("hi",2,3)
 res21: List[Any] = List(hi, 2, 3)
 
+scala> // Null is a subtype of everything under AnyRef
+
+scala> // we try to avoid it! 
+
+scala> // type Nothing. Under everything
+
+scala> // Nothing has no value. You cannot make anything of type Nothing.
+
+scala> List()
+res22: List[Nothing] = List()
+
+scala> // we can build it up with everything that's above it!!!
+
+
 
 
     
