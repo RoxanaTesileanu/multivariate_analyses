@@ -1741,6 +1741,19 @@ result: Option[Int] = Some(4)
 scala> if(result.nonEmpty) result.get*5 else 0
 res9: Int = 20
 
+scala> // Parametric functions
+
+scala> def ident[A](o:A):A = o
+ident: [A](o: A)A
+
+scala> ident(1)
+res10: Int = 1
+
+scala> ident(1.0)
+res11: Double = 1.0
+
+scala> // type abstraction
+
 
 
     
