@@ -1955,8 +1955,11 @@ scala> fact(5)
 res17: Int = 120
 
 - syntax errors
-- runtime errors
-- 
+- runtime errors: e.g. NumberFormatException, ArrayIndexOutOfBoundsException, the infinite recursion 
+(they show where it crashes, not what went wrong)
+- the logic error: no error messages, only that we know the result is not right. 
+(use print statements across the code, to check if the logic is right)
+
 
 
 
