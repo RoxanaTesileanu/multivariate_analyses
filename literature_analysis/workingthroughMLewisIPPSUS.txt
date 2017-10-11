@@ -1781,6 +1781,28 @@ ourFold: [A, B](lst: List[A], base: B)(f: (A, B) => B)B
 scala> ourFold(List(1,2,3,4,5), 0)(_ + _)
 res17: Int = 15
 
+scala> 
+
+scala> // Subtyping
+
+scala> 
+
+scala> // one type can be a subtype of another. You can use the subtype in any place where a supertype is needed. 
+
+scala> List(5, true)
+res18: List[AnyVal] = List(5, true)
+
+scala> // scala chooses a type that is above both!
+
+scala> List("hi", Some(5))
+res19: List[java.io.Serializable] = List(hi, Some(5))
+
+scala> List("hi", List(2,3))
+res20: List[java.io.Serializable] = List(hi, List(2, 3))
+
+scala> List("hi",2,3)
+res21: List[Any] = List(hi, 2, 3)
+
 
 
     
