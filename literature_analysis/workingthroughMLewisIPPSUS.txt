@@ -2031,6 +2031,20 @@ res8: List[Int] = List(6, 7, 8, 9)
 
 
 
+The do-while Loop
+
+do {
+
+body
+
+} while (cond)
+
+
+The for Loops
+
+for (i <- 0 to 9) println(i)
+
+
  
 
  
