@@ -1917,9 +1917,16 @@ scala> // i is a by name param that gives back an Int, and every time that we us
 
 scala> // when we have it in the body function, all stuff before i is evaluated firstly, then the code associated with tne param is evaluated.
 
-scala> // you can use currying just to use a by name parameter that gets evaluated each time the param is used. 
+scala> // you can use currying just to use a by name parameter within curly braaces (so, within a code block) that gets evaluated each time the param is used. 
 
 scala> // when you use a by name parameter, you can pass an argument within a code block for the function using it, and depending what in that code happens it evaluates the parameter each time it is used. 
+
+scala> 
+
+scala> // USE Array.fill(r,c)(i) to create a matrix with r rows and c columns, filled with i:
+
+scala> Array.fill(3,5)(0)
+res9: Array[Array[Int]] = Array(Array(0, 0, 0, 0, 0), Array(0, 0, 0, 0, 0), Array(0, 0, 0, 0, 0))
 
 
 
