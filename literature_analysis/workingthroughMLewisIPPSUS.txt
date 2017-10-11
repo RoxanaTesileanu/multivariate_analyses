@@ -1763,6 +1763,15 @@ res12: (Int, Double) = (1,2.2)
 scala> makeTuple(0.1, 1.4)
 res13: (Double, Double) = (0.1,1.4)
 
+scala> def threeList[A] (a1:A, a2:A, a3:A) : List[A] = List(a1,a2,a3)
+threeList: [A](a1: A, a2: A, a3: A)List[A]
+
+scala> threeList(1,2,3)
+res14: List[Int] = List(1, 2, 3)
+
+scala> threeList(1.0,2.0,3.0)
+res15: List[Double] = List(1.0, 2.0, 3.0)
+
 
 
     
