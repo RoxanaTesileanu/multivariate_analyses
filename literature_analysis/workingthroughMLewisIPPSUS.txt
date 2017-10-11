@@ -1988,7 +1988,20 @@ scala> while (i<10) {
 8
 9
 
-scala> 
+scala> def readInts : List[Int] = {
+     | var input = readLine
+     | var lst = List[Int]()
+     | while (input != "quit") {
+     | lst = input.toInt :: lst
+     | }
+     | lst
+     | }
+readInts: List[Int]
+
+-> CAUSES AN INFINITE LOOP ->  java.lang.StackOverflowError
+
+
+ 
 
  
 
