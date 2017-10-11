@@ -1705,6 +1705,14 @@ scala> // you can get the value or you have a default for the case when you have
 
 scala> // for this there is the getOrELse method.
 
+scala> lst.find(_ > 3).getOrElse(0)
+res4: Int = 4
+
+scala> lst.find(_ > 6).getOrElse(0)
+res5: Int = 0
+
+scala> // getOrElse sets the default value for false cases.
+
     
 
 
