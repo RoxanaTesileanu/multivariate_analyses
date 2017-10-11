@@ -1668,15 +1668,44 @@ Playing with data:
 - then map through the elements of those new subsets and extract information with counting the occurences and finding max or min values, etc.. 
 
 
-_____________________ new REPL ________________________________
+_____________________ new REPL session ________________________________
 
-https://www.youtube.com/watch?v=YJ1n53wK3T0&list=PLLMXbkbDbVt9MIJ9DV4ps-_trOzWtphYO&t=2
+The Option Type
 
+- represents something that may or may not have a value
+- it's used broadly so that the type system can help you find errors. If something doesn't have a value instead of causing an error, you are forced to deal with it.
 
+Using the find method (for lists and arrays and passes a predicate) to give an example of Option use:
 
+scala> val lst = List(1,2,3,4,5)
+lst: List[Int] = List(1, 2, 3, 4, 5)
 
+scala> lst.find(_ >6)
+res0: Option[Int] = None
 
+scala> // the Option type can either be None or Some.
 
+scala> lst.find(_ >3)
+res1: Option[Int] = Some(4)
+
+scala> lst.find(_ >3).get
+res2: Int = 4
+
+scala> // use get to access the value
+
+scala> lst.find(_>6).get
+java.util.NoSuchElementException: None.get
+  at scala.None$.get(Option.scala:347)
+  at scala.None$.get(Option.scala:345)
+  ... 42 elided
+
+scala> // in the case of None, get throws an error!!!
+
+scala> // you can get the value or you have a default for the case when you have such an error.
+
+scala> // for this there is the getOrELse method.
+
+    
 
 
 
