@@ -1915,6 +1915,9 @@ incrByName: (i: => Int)Int
 
 scala> // i is a by name param that gives back an Int, and every time that we use i it's supposed to be evaluated.
 
+scala> // when we have it in the body function, all stuff before i is evaluated firstly, then the code associated with tne param is evaluated.
+
+
 
 
 
