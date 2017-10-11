@@ -1881,6 +1881,30 @@ res4: Int => Int = <function1>
 scala> res4(7)
 res5: Int = 12
 
+scala> def courseAverage (tests: Int*)(assgns: Int*)(quizzes: Int*) = {
+     | 0.4*tests.sum/tests.length + 0.4*assgns.sum/assgns.length + 0.2*quizzes.sum/quizzes.length
+     | }
+courseAverage: (tests: Int*)(assgns: Int*)(quizzes: Int*)Double
+
+scala> courseAverage(90, 80)(100, 96)(50, 32)
+res6: Double = 81.4
+
+scala> add2{5}{6}
+res7: Int = 11
+
+scala> add2{
+     | println("hi")
+     | 5
+     | }{
+     | println("there")
+     | 6
+     | }
+hi
+there
+res8: Int = 11
+
+scala> 
+
 
 
 
