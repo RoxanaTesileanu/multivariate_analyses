@@ -10,19 +10,23 @@ for the Scala part:
 - work through Mark Lewis Introduction to the Art of Programming Using Scala
 http://www.programmingusingscala.net/home/chapters
 
+November 2017:
+
 for the statistical part: 
 - work through Carroll and Green 1997 
+
+December 2017:
 
 for the graphical part:
 
 - try to trace the code in SwiftVis2 
 
-November 2017:
+January 2017:
 
 combine the parts
 - implementing MANOVA in Scala
 
-December 2017:
+February 2017:
 
 - testing the algorithm 
 
