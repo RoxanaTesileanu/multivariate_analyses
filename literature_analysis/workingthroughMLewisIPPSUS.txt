@@ -1954,7 +1954,9 @@ fact: (n: Int)Int
 scala> fact(5)
 res17: Int = 120
 
-
+- syntax errors
+- runtime errors
+- 
 
 
 
