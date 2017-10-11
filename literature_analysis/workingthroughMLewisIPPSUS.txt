@@ -2026,6 +2026,9 @@ java.lang.NumberFormatException: For input string: "6 6 6 6 quit"
 scala> readInts
 res4: List[Int] = List(6789)
 
+scala> readInts
+res8: List[Int] = List(6, 7, 8, 9)
+
 
 
  
