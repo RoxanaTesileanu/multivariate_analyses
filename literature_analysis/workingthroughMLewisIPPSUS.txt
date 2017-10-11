@@ -1772,6 +1772,15 @@ res14: List[Int] = List(1, 2, 3)
 scala> threeList(1.0,2.0,3.0)
 res15: List[Double] = List(1.0, 2.0, 3.0)
 
+scala> def ourFold [A, B] (lst:List[A], base:B) (f:(A,B)=> B) :B =lst match {
+     | case Nil => base
+     | case h::t => f(h, ourFold(t, base)(f))
+     | }
+ourFold: [A, B](lst: List[A], base: B)(f: (A, B) => B)B
+
+scala> ourFold(List(1,2,3,4,5), 0)(_ + _)
+res17: Int = 15
+
 
 
     
