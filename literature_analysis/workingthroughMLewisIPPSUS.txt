@@ -1816,6 +1816,18 @@ res22: List[Nothing] = List()
 
 scala> // we can build it up with everything that's above it!!!
 
+scala> 
+
+scala> // Variable no. of arguments! (varargs)
+
+scala> 
+
+scala> def average (n:Double*) : Double = if (n.length>0) n.sum/n.length else 0
+average: (n: Double*)Double
+
+scala> average(1,2,3)
+res23: Double = 2.0
+
 
 
 
