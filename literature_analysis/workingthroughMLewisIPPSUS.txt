@@ -2260,7 +2260,7 @@ res41: scala.collection.immutable.IndexedSeq[Int] = Vector(1, 4, 9, 16, 25, 36, 
  
 For loop: foreach, map, filter, flatmap (for multiple generators to get a single collection). The for loop for any type of collection (also for own types), to get the same syntactic benefits from the for loop. 
 
-You can use 
+You can use a for loop on some other types too, like Options or Futures.   
  
 
 
