@@ -2464,7 +2464,7 @@ scala> source.hasNext
 scala>source.next 
 It returns a character, the 4 from the file. 
 
-If you consume all the chars from the file, you then have an empty iterator. 
+If you consume all the chars from the file, you then have an empty iterator! 
 scala> source
 res14: scala.io.BufferedSource = empty iterator
 
