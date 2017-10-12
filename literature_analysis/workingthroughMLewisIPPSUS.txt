@@ -2358,7 +2358,10 @@ Testing:
 
 -  decision and condition coverage: every decision for every condition (true and false covered?)
 
-- 
+- loop coverage
+
+- path coverage: we would want to have one test for every possible option in  acode. 
+
 
 
 
