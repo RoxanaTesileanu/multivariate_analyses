@@ -2102,6 +2102,31 @@ scala> // using steps
 
 scala>
  
+scala> // yield
+
+scala> 
+
+scala> for (i <- 1 to 10) yield i
+res13: scala.collection.immutable.IndexedSeq[Int] = Vector(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+scala> for (i <- 1 to 10) yield i*i
+res14: scala.collection.immutable.IndexedSeq[Int] = Vector(1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+
+scala> def evalPolyYield (coeffs: Array[Double], x:Double) : Double = {
+     | (for (i<- coeffs.indices) yield {
+     | coeffs(i)*math.pow(x, coeffs.length -1 -i) 
+     | }).sum
+     | }
+evalPolyYield: (coeffs: Array[Double], x: Double)Double
+
+scala> evalPolyYield(Array(3,2,-5), 1))
+<console>:1: error: ';' expected but ')' found.
+evalPolyYield(Array(3,2,-5), 1))
+                               ^
+
+scala> evalPolyYield(Array(3,2,-5), 1)
+res15: Double = 0.0
+
 
 
 
