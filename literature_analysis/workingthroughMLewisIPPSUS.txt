@@ -2386,6 +2386,8 @@ Standard Scala collections are strict (i.e. every time we call such a method we 
 
 -> we can get the same answer in a more efficient way by using views.
 
+BY CALLING VIEW ON A COLLECTION RETURNS A NON-STRICT WRAPPER AROUND THE ORIGINAL COLLECTION, THEN MAP GIVES BACK A VIEW NOT AN ENTIRE COLLECTION. AND THEN WHEN WE CALL FILTER WE GET ANOTHER VIEW AND NOT UNTIL  
+
  
 
 
