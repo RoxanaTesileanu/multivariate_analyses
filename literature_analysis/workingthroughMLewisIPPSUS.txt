@@ -2344,6 +2344,8 @@ DISTRIBUTE THE WORK ACROSS MULTIPLE CORES.
 If you have something that requires an intensive processing (for slow tasks).
 DON'T USE A var IN PARRALEL TASKS OR IN MUTABLE TYPES LIKE ARRAYS (if you have assignments in arrays) !!!!!
 
+PARALLEL -> USE IMMUTABLE TYPES!!!
+
 
 
 
