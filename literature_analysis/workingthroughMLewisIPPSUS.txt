@@ -2475,7 +2475,32 @@ scala> source.close
 New example:
 
 val source2 = source.reset // it uses the same file but the file was previously altered, so it contains other numbers.
+
 Go through the file with source2.next until it is consumed. 
+
+Close the source with close. 
+
+New example:
+
+val source = Source.fromFile("fiveNums.txt")
+IF YOU WANT TO READ WHOLE LINES: getLines
+
+val lines = source.getLines
+You get an Iterator of Strings.
+
+lines.next to check it.
+
+source.close
+
+New script example:
+
+import scala.io.Source
+
+val source = Source.fromFile("fiveNums.txt")
+val lines = source.getLines
+
+
+source.close
 
 
  
