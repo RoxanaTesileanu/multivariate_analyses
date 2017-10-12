@@ -2497,8 +2497,11 @@ New script example:
 import scala.io.Source
 
 val source = Source.fromFile("fiveNums.txt")
-val lines = source.getLines
+val lines = source.getLines  // returns a bunch of Strings
 
+val nums = lines.filter(_.nonEmpty).map(_.toInt) // filter out the empty lines 							   before transf. them to Ints
+
+println(nums.sum)
 
 source.close
 
