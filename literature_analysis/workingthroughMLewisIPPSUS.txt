@@ -2342,7 +2342,7 @@ scala> //  methods on ParRange like map, filter, foreach and flatmap but they wi
 
 DISTRIBUTE THE WORK ACROSS MULTIPLE CORES.
 If you have something that requires an intensive processing.
-DON'T USE A var IN PARRALEL TASKS!
+DON'T USE A var IN PARRALEL TASKS OR IN MUTABLE TYPES LIKE ARRAYS!
 
 
 
