@@ -2404,7 +2404,7 @@ res54: Double = 3.1603968826934032
 
 __________________________ new REPL session __________________________
  
-Files and I/O Redirection
+Files and I/O Redirection:
 
 1) Read input for a script's function from file:
 
@@ -2432,7 +2432,15 @@ Not a solution when user input is needed!
 
 
 When we would like to interact with the files directly.
- 
+The purpose of files is to store information in between runs. 
+
+
+
+Packages and Import Statements:
+
+- the reason of deprecation warning messages!!!!
+
+  
 
 
 
