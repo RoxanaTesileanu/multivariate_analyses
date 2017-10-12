@@ -2239,6 +2239,9 @@ scala> val inRange = for((x,y) <- grid; mag = math.sqrt(x*x +y*y); if mag > 0.5 
 inRange: scala.collection.immutable.IndexedSeq[(Double, Double, Double)] = Vector((-0.9,-0.40000000000000013,0.9848857801796106), (-0.9,-0.30000000000000016,0.9
 ........
 
+
+FOREACH:
+
 scala> (1 to 10).foreach( i => println(i) )
 1
 2
@@ -2255,7 +2258,10 @@ scala> (1 to 10).map(i => i*i)
 res41: scala.collection.immutable.IndexedSeq[Int] = Vector(1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
 
  
+For loop: foreach, map, filter, flatmap (for multiple generators to get a single collection). The for loop for any type of collection (also for own types), to get the same syntactic benefits from the for loop. 
 
+You can use 
+ 
 
 
 
