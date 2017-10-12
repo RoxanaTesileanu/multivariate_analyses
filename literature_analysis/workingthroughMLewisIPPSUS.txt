@@ -2440,6 +2440,15 @@ Packages and Import Statements:
 
 - the reason of deprecation warning messages!!!!
 
+- imports can have a scope:
+
+	scala> {
+import scala.io.Source
+	}
+
+
+-> you can do imports in a reduced scope if needed.
+
   
 
 
