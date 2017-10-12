@@ -2428,8 +2428,11 @@ $ scala redirect.scala < fiveNums.txt > average.txt
 
 It sends the output to the average.txt instead of the screen.
 
+Not a solution when user input is needed!
 
 
+When we would like to interact with the files directly.
+ 
 
 
 
