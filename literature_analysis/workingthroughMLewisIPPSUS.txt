@@ -2280,6 +2280,7 @@ Parallel for Loops:
 Multiple cores of a machine. It can do multiple things at one time.
 You should be doing multiple tasks at a time in order to fully utilize the power of your hardware.
 
+- multithreading
  
 
 
