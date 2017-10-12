@@ -2401,8 +2401,13 @@ res53: scala.collection.SeqView[Double,Array[Double]] = SeqViewMF(...)
 scala> nums.view.map(i=> i*i).filter(_<0.25).sum
 res54: Double = 3.1603968826934032
 
- 
 
+__________________________ new REPL session __________________________
+ 
+Files and I/O Redirection
+
+
+https://www.youtube.com/watch?v=XOb0EKxL6j4&list=PLLMXbkbDbVt9MIJ9DV4ps-_trOzWtphYO&t=4
  
 
 
