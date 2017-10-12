@@ -2338,7 +2338,8 @@ groupBy            reverseMap                   zip
 hasDefiniteSize    sameElements                 zipAll          
 hashCode           scan                         zipWithIndex    
 
-scala> // all the methods on ParRange happen in parallel! 
+scala> //  methods on ParRange like map, filter, foreach and flatmap but they will happen in parallel istead of sequentially! 
+
 
 
 
