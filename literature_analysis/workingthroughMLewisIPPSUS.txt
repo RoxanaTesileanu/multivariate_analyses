@@ -2468,7 +2468,17 @@ If you consume all the chars from the file, you then have an empty iterator!
 scala> source
 res14: scala.io.BufferedSource = empty iterator
 
+REMEMBER TO CLOSE FILES!
 
+scala> source.close
+
+New example:
+
+val source2 = source.reset // it uses the same file but the file was previously altered, so it contains other numbers.
+Go through the file with source2.next until it is consumed. 
+
+
+ 
 
 Redirect the output.
 
