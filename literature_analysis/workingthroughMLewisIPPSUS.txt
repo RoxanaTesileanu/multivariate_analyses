@@ -2348,10 +2348,17 @@ PARALLEL -> USE IMMUTABLE TYPES!!!
 
 
 
+Testing:
 
+- use inputs that you previously know the answer: test extreme value inputs (with 0s, division by 0, cases with empty elements, more items than you firstly think of).
 
+- test functional coverage: if we have functions, we have a test that runs every function, 
 
- 
+- statement coverage: is every statement executed?
+
+-  decision and condition coverage: every decision for every condition (true and false covered?)
+
+- 
 
 
 
