@@ -2341,8 +2341,10 @@ hashCode           scan                         zipWithIndex
 scala> //  methods on ParRange like map, filter, foreach and flatmap but they will happen in parallel istead of sequentially! 
 
 DISTRIBUTE THE WORK ACROSS MULTIPLE CORES.
-If you have something that requires an intensive processing.
-DON'T USE A var IN PARRALEL TASKS OR IN MUTABLE TYPES LIKE ARRAYS!
+If you have something that requires an intensive processing (for slow tasks).
+DON'T USE A var IN PARRALEL TASKS OR IN MUTABLE TYPES LIKE ARRAYS (if you have assignments in arrays) !!!!!
+
+
 
 
 
