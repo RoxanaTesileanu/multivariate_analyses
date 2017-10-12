@@ -2202,5 +2202,11 @@ scala> for ((x,y) <- grid) println(x+" "+y)
 -1.0 -0.7000000000000001
 ........
 
+scala> tuples
+res30: List[(Int, Int)] = List((1,2), (3,4), (1,7), (6,5), (0,3), (1,9))
+
+scala> for ((1,n2) <- tuples) yield n2
+res32: List[Int] = List(2, 7, 9)
+
 
 
