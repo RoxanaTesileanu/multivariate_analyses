@@ -2127,6 +2127,12 @@ evalPolyYield(Array(3,2,-5), 1))
 scala> evalPolyYield(Array(3,2,-5), 1)
 res15: Double = 0.0
 
+scala> // this evalPoly version has no vars -> no mutations 
+
+scala> // our for is producing values and we are using those values that for produces
+
+scala> 
+
 
 
 
