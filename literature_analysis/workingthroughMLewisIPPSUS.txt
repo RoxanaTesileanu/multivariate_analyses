@@ -2141,6 +2141,13 @@ scala> for (i <- 1 to 10 ; if i%2==0) yield (i*i)
 res17: scala.collection.immutable.IndexedSeq[Int] = Vector(4, 16, 36, 64, 100)
 
 
+scala> for {
+     | i <- 1 to 10
+     | if i%2==0
+     | } yield i*i
+res18: scala.collection.immutable.IndexedSeq[Int] = Vector(4, 16, 36, 64, 100)
+
+
 
 
 
