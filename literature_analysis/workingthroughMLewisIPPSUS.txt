@@ -2505,10 +2505,15 @@ println(nums.sum)
 
 source.close
 
+If you don't filter empty lines out, you get a 'NumberFormatException: For input string: ""'!
 
- 
 
-Redirect the output.
+!!! NOTE !!! 
+BECAUSE WE DEAL WITH AN ITERATOR, AFTER GETTING THE SUM IT IS CONSUMED. IF I WANT TO USE IT MULTIPLE TIMES I HAVE TO TRANSFORM IT TO AN ARRAY:
+-> val nums = lines.filter(_.nonEmpty).map(_.toInt).toArray
+
+
+
 
 
 
