@@ -2451,6 +2451,23 @@ import scala.io.Source
 
   
 
+Reading File with io.Source:
+
+import scala.io.Source
+
+val source = Source.fromFile("fiveNums.txt")
+
+You get a BufferedSource, a non-empty iterator. 
+(useful for large files).
+
+scala> source.hasNext
+scala>source.next 
+It returns a character, the 4 from the file. 
+
+If you consume all the chars from the file, you then have an empty iterator. 
+scala> source
+res14: scala.io.BufferedSource = empty iterator
+
 
 
 Redirect the output.
