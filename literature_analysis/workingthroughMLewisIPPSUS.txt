@@ -2406,8 +2406,28 @@ __________________________ new REPL session __________________________
  
 Files and I/O Redirection
 
+Read input for a script's function from file:
 
-https://www.youtube.com/watch?v=XOb0EKxL6j4&list=PLLMXbkbDbVt9MIJ9DV4ps-_trOzWtphYO&t=4
+$ scala redirect.scala < fiveNums.txt
+
+to use the 5 numbers for the script:
+
+import io.StdIn._
+
+val nums = Array.fil(5)(readInt)
+println(nums.sum.toDouble/nums.length)
+
+
+The readInt takes the input of the .txt file instead of the keyboard input. 
+
+
+
+
+
+Redirect the output.
+
+
+
  
 
 
