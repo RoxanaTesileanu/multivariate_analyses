@@ -2360,7 +2360,9 @@ Testing:
 
 - loop coverage
 
-- path coverage: we would want to have one test for every possible option in  acode. 
+- path coverage: we would want to have one test for every possible option in  a code. SOMETIMES IMPOSSIBLE!
+
+
 
 
 
