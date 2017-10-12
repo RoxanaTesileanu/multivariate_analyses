@@ -2283,6 +2283,64 @@ You should be doing multiple tasks at a time in order to fully utilize the power
 - multithreading (more complex)
 - par method (for loops become parallel with the par method of collections)
  
+scala> (1 to 10).par
+res43: scala.collection.parallel.immutable.ParRange = ParRange(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+scala> 
+
+scala> // Parallel for Loops
+
+scala> 
+
+scala> (1 to 10).par
+res43: scala.collection.parallel.immutable.ParRange = ParRange(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+scala> res43.
+++                 head                         scanLeft        
++:                 headOption                   scanRight       
+/:                 indexOf                      segmentLength   
+:+                 indexWhere                   seq             
+:\                 init                         size            
+BuilderOps         intersect                    slice           
+ParRangeIterator   isDefinedAt                  span            
+SSCTask            isEmpty                      splitAt         
+SignallingOps      isStrictSplitterCollection   splitter        
+TaskOps            isTraversableAgain           startsWith      
+aggregate          iterator                     stringPrefix    
+apply              last                         sum             
+canEqual           lastIndexOf                  tail            
+collect            lastIndexWhere               take            
+companion          lastOption                   takeWhile       
+copyToArray        length                       tasksupport     
+corresponds        map                          tasksupport_=   
+count              max                          to              
+debugBuffer        maxBy                        toArray         
+diff               min                          toBuffer        
+distinct           minBy                        toIndexedSeq    
+drop               mkString                     toIterable      
+dropWhile          nonEmpty                     toIterator      
+endsWith           padTo                        toList          
+equals             par                          toMap           
+exists             partition                    toSeq           
+filter             patch                        toSet           
+filterNot          prefixLength                 toStream        
+find               product                      toString        
+flatMap            range                        toTraversable   
+flatten            reduce                       toVector        
+fold               reduceLeft                   transpose       
+foldLeft           reduceLeftOption             union           
+foldRight          reduceOption                 unzip           
+forall             reduceRight                  unzip3          
+foreach            reduceRightOption            updated         
+genericBuilder     repr                         view            
+genericCombiner    reverse                      withFilter      
+groupBy            reverseMap                   zip             
+hasDefiniteSize    sameElements                 zipAll          
+hashCode           scan                         zipWithIndex    
+
+scala> // all the methods on ParRange happen in parallel! 
+
+
 
  
 
