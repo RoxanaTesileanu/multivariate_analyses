@@ -2208,5 +2208,34 @@ res30: List[(Int, Int)] = List((1,2), (3,4), (1,7), (6,5), (0,3), (1,9))
 scala> for ((1,n2) <- tuples) yield n2
 res32: List[Int] = List(2, 7, 9)
 
+scala> // only matches stuff that has a 1 as the first element 
+
+scala> val h::t = tuples
+h: (Int, Int) = (1,2)
+t: List[(Int, Int)] = List((3,4), (1,7), (6,5), (0,3), (1,9))
+
+scala> val List(t1, t2, t3, t4, t5, t6) = tuples
+t1: (Int, Int) = (1,2)
+t2: (Int, Int) = (3,4)
+t3: (Int, Int) = (1,7)
+t4: (Int, Int) = (6,5)
+t5: (Int, Int) = (0,3)
+t6: (Int, Int) = (1,9)
+
+scala> "1,2,3".split(",")
+res35: Array[String] = Array(1, 2, 3)
+
+scala> "1,2,3".split(",").map(_.toInt)
+res36: Array[Int] = Array(1, 2, 3)
+
+scala> val Array(a,b,c) = "1,2,3".split(",").map(_.toInt)
+a: Int = 1
+b: Int = 2
+c: Int = 3
+
+scala> // a very convenient way to get values out of a string.
+
+scala> 
+
 
 
