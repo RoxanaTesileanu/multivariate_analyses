@@ -2406,7 +2406,7 @@ __________________________ new REPL session __________________________
  
 Files and I/O Redirection
 
-Read input for a script's function from file:
+1) Read input for a script's function from file:
 
 $ scala redirect.scala < fiveNums.txt
 
@@ -2419,6 +2419,15 @@ println(nums.sum.toDouble/nums.length)
 
 
 The readInt takes the input of the .txt file instead of the keyboard input. 
+
+Also useful for putting in the test cases while testing.
+
+2) Write output from a script to a file:
+
+$ scala redirect.scala < fiveNums.txt > average.txt
+
+It sends the output to the average.txt instead of the screen.
+
 
 
 
