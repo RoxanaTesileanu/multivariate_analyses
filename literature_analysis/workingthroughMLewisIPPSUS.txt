@@ -2386,7 +2386,22 @@ Standard Scala collections are strict (i.e. every time we call such a method we 
 
 -> we can get the same answer in a more efficient way by using views.
 
-BY CALLING VIEW ON A COLLECTION RETURNS A NON-STRICT WRAPPER AROUND THE ORIGINAL COLLECTION, THEN MAP GIVES BACK A VIEW NOT AN ENTIRE COLLECTION. AND THEN WHEN WE CALL FILTER WE GET ANOTHER VIEW AND NOT UNTIL  
+BY CALLING VIEW ON A COLLECTION RETURNS A NON-STRICT WRAPPER AROUND THE ORIGINAL COLLECTION, THEN MAP GIVES BACK A VIEW NOT AN ENTIRE COLLECTION. AND THEN WHEN WE CALL FILTER WE GET ANOTHER VIEW AND IT'S NOT UNTIL WE CALL SUM THAT IT DOES THE CALCULATION. 
+
+It makes the code run faster. 
+
+
+
+scala> nums.view.map(i=> i*i)
+res52: scala.collection.SeqView[Double,Array[Double]] = SeqViewM(...)
+
+scala> nums.view.map(i=> i*i).filter(_<0.25)
+res53: scala.collection.SeqView[Double,Array[Double]] = SeqViewMF(...)
+
+scala> nums.view.map(i=> i*i).filter(_<0.25).sum
+res54: Double = 3.1603968826934032
+
+ 
 
  
 
