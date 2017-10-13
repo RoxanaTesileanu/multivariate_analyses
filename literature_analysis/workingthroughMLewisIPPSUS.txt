@@ -2588,4 +2588,30 @@ try {
 
 ___________
 
+Web sources:
+
+- reading from web sources
+
+scala> import scala.io.Source
+import scala.io.Source
+
+scala> val source = Source.fromURL("http://www.google.com")
+source: scala.io.BufferedSource = non-empty iterator
+
+scala> println(source.mkString)
+java.nio.charset.MalformedInputException: Input length = 1
+  at java.nio.charset.CoderResult.throwException(CoderResult.java:281)
+  at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:339)
+  at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+  at java.io.InputStreamReader.read(InputStreamReader.java:184)
+  at java.io.BufferedReader.read1(BufferedReader.java:210)
+  at java.io.BufferedReader.read(BufferedReader.java:286)
+  at java.io.FilterReader.read(FilterReader.java:74)
+  at java.io.PushbackReader.read(PushbackReader.java:128)
+  at java.io.BufferedReader.read1(BufferedReader.java:210)
+  at java.io.BufferedReader.read(BufferedReader.java:286)
+  at java.io.Reader.read(Reader.java:140)
+  at scala.io.BufferedSource.mkString(BufferedSource.scala:96)
+  ... 42 elided
+
 
