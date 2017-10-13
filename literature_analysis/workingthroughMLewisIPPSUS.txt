@@ -2561,15 +2561,29 @@ _____________
 
 - so put another try/catch to deal with that
 
-- finally keyword: something that is going to happen no matter what, before the code leaves.
+- finally keyword: something that is going to happen no matter what, before the code leaves. The reason why we need the finally is that we need to close the source.
+
+Script example:
+
+import scala.io.Source
+import java.io._
+
+try {
+	val source = Source.fromFile("fiveNums.txt")
+	try {
+		val lines = source.getLines
+		val nums = lines.filter(_.nonEmpty).map(_.toInt).toArray
+		println(nums.sum)
+	} catch {
+		case ex: NumberFormatException => println( "The file contained a non-number." )
+	} finally {
+		source.close
+	}
+	} catch {
+		case ex: FileNotFoundException => println( "The file does not exist." )
+}
 
 
-
-
-
-
-
- 
-
+___________
 
 
