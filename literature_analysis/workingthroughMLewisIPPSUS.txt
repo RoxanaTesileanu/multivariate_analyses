@@ -2554,6 +2554,18 @@ scala> try {
 That file doesn't exist.
 
 
+NOTE: the code related to source is put inside the try block (because of the scope). 
+_____________
+
+- make the code robust to type errors (if types in files are not the one expected in the code)
+
+- so put another try/catch to deal with that
+
+- finally keyword: something that is going to happen no matter what, before the code leaves.
+
+
+
+
 
 
 
