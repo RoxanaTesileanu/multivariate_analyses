@@ -2650,6 +2650,11 @@ scala> source.close
 
 You can call getLines if you want to process one line at the time, and because they are iterators you can call methods like map and filter and do all the processing as with data from files. 
 
+___________
+
    
+Writing to File:
+
+
  
 
