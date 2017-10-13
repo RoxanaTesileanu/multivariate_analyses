@@ -2634,5 +2634,22 @@ scala> // ok it is empty after println.
 
 scala> source.close
 
+scala> val source = Source.fromURL("http://www.google.com",  "iso-8859-1")
+source: scala.io.BufferedSource = non-empty iterator
+
+scala> val lines = source.getLines.toString
+lines: String = non-empty iterator
+
+scala> lines(1)
+res7: Char = o
+
+scala> lines(0)
+res8: Char = n
+
+scala> source.close
+
+You can call getLines if you want to process one line at the time, and because they are iterators you can call methods like map and filter and do all the processing as with data from files. 
+
+   
  
 
