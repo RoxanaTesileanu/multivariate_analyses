@@ -2519,7 +2519,40 @@ BECAUSE WE DEAL WITH AN ITERATOR, AFTER GETTING THE SUM IT IS CONSUMED. IF I WAN
 
 Files and Exceptions:
 
- 
+- files have their own exceptions
+
+scala> import scala.io.Source
+import scala.io.Source
+
+scala> val source = Source.fromFile("aaa.txt")
+java.io.FileNotFoundException: aaa.txt (No such file or directory)
+  at java.io.FileInputStream.open0(Native Method)
+  at java.io.FileInputStream.open(FileInputStream.java:195)
+  at java.io.FileInputStream.<init>(FileInputStream.java:138)
+  at scala.io.Source$.fromFile(Source.scala:91)
+  at scala.io.Source$.fromFile(Source.scala:76)
+  at scala.io.Source$.fromFile(Source.scala:54)
+  ... 42 elided
+
+  
+scala> try {
+     | val source = Source.fromFile("aaa.txt")
+     | println(source.mkString) // turn the entire file into a string
+     | } catch {
+     | case ex:FileNotFoundException => println( "That file doesn't exist" )
+     | }
+<console>:17: error: not found: type FileNotFoundException
+       case ex:FileNotFoundException => println( "That file doesn't exist" )
+               ^
+
+scala> try {
+     | val source = Source.fromFile("aaa.txt")
+     | println(source.mkString) // turn the entire file into a string
+     | } catch {
+     | case ex:java.io.FileNotFoundException =>  println( "That file doesn't exist.")
+     | }
+That file doesn't exist.
+
 
 
 
