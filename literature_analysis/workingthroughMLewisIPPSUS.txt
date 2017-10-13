@@ -2648,7 +2648,85 @@ res8: Char = n
 
 scala> source.close
 
-You can call getLines if you want to process one line at the time, and because they are iterators you can call methods like map and filter and do all the processing as with data from files. 
+scala> lines.
+*                     groupBy               scanLeft        
++                     grouped               scanRight       
+++                    hasDefiniteSize       segmentLength   
+++:                   hashCode              self            
++:                    head                  seq             
+/:                    headOption            size            
+:+                    indexOf               slice           
+:\                    indexOfSlice          sliding         
+<                     indexWhere            sortBy          
+<=                    indices               sortWith        
+>                     init                  sorted          
+>=                    inits                 span            
+addString             intern                split           
+aggregate             intersect             splitAt         
+andThen               isDefinedAt           startsWith      
+apply                 isEmpty               stringPrefix    
+applyOrElse           isTraversableAgain    stripLineEnd    
+canEqual              iterator              stripMargin     
+capitalize            last                  stripPrefix     
+charAt                lastIndexOf           stripSuffix     
+chars                 lastIndexOfSlice      subSequence     
+codePointAt           lastIndexWhere        substring       
+codePointBefore       lastOption            sum             
+codePointCount        length                tail            
+codePoints            lengthCompare         tails           
+collect               lift                  take            
+collectFirst          lines                 takeRight       
+combinations          linesIterator         takeWhile       
+companion             linesWithSeparators   to              
+compare               map                   toArray         
+compareTo             matches               toBoolean       
+compareToIgnoreCase   max                   toBuffer        
+compose               maxBy                 toByte          
+concat                min                   toCharArray     
+contains              minBy                 toDouble        
+containsSlice         mkString              toFloat         
+contentEquals         nonEmpty              toIndexedSeq    
+copyToArray           offsetByCodePoints    toInt           
+copyToBuffer          orElse                toIterable      
+corresponds           padTo                 toIterator      
+count                 par                   toList          
+diff                  partition             toLong          
+distinct              patch                 toLowerCase     
+drop                  permutations          toMap           
+dropRight             prefixLength          toSeq           
+dropWhile             product               toSet           
+endsWith              r                     toShort         
+equals                reduce                toStream        
+equalsIgnoreCase      reduceLeft            toString        
+exists                reduceLeftOption      toTraversable   
+filter                reduceOption          toUpperCase     
+filterNot             reduceRight           toVector        
+find                  reduceRightOption     transpose       
+flatMap               regionMatches         trim            
+flatten               replace               union           
+fold                  replaceAll            unzip           
+foldLeft              replaceAllLiterally   unzip3          
+foldRight             replaceFirst          updated         
+forall                repr                  view            
+foreach               reverse               withFilter      
+format                reverseIterator       zip             
+formatLocal           reverseMap            zipAll          
+genericBuilder        runWith               zipWithIndex    
+getBytes              sameElements                          
+getChars              scan                                  
+
+
+!!! You can call getLines if you want to process one line at the time, and because they are iterators you can call methods like map and filter and do all the processing as with data from files !!! 
+
+
+scala> val source = Source.fromURL("http://www.google.com",  "iso-8859-1")
+source: scala.io.BufferedSource = non-empty iterator
+
+scala> val data = source.getLines.toArray
+data: Array[String] = Array(<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="ro"><head><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>Google</title><script>(function(){window.google={kEI:'ooHgWbqQB8PbwQKd1qaIAw',kEXPI:'1353382,1354276,1354403,1354915,1355218,1355325,1355800,1355820,1355892,3700253,3700440,3700476,4029815,4031109,4041302,4043492,4045841,4048347,4072775,4076999,4078430,4081039,4081164,4092182,4095910,4097153,4097469,4097922,4097929,4098733,4098740,4098752,4100140,4102238,4103209,4103475,4103861,4104258,4104414,4105241,4109316,4109490,4110656,4112163,4113217,4116244,4116724,4116731,4116926,4116935,4117328,4117539,4117980,41181...
+scala> data(0)
+res16: String = <!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="ro"><head><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>Google</title><script>(function(){window.google={kEI:'ooHgWbqQB8PbwQKd1qaIAw',kEXPI:'1353382,1354276,1354403,1354915,1355218,1355325,1355800,1355820,1355892,3700253,3700440,3700476,4029815,4031109,4041302,4043492,4045841,4048347,4072775,4076999,4078430,4081039,4081164,4092182,4095910,4097153,4097469,4097922,4097929,4098733,4098740,4098752,4100140,4102238,4103209,4103475,4103861,4104258,4104414,4105241,4109316,4109490,4110656,4112163,4113217,4116244,4116724,4116731,4116926,4116935,4117328,4117539,4117980,4118102,4118226,4...
+
 
 ___________
 
