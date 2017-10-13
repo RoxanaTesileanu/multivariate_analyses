@@ -2563,6 +2563,8 @@ _____________
 
 - finally keyword: something that is going to happen no matter what, before the code leaves. The reason why we need the finally is that we need to close the source.
 
+- why you need to put finally down there for closing the source: if you have an exception not handled in the try/catch blocks this part of the code will exit without closing the source, BUT USING FINALLY CLOSES THE SOURCE WHETHER OR NOT THERE IS SUCH AN EXCEPTION. 
+
 Script example:
 
 import scala.io.Source
