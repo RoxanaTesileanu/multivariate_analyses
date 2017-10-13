@@ -2741,6 +2741,9 @@ res27: Int = 230
 scala> data.length
 res29: Int = 5
 
+
+scala> source.close
+
 ___________
 
    
