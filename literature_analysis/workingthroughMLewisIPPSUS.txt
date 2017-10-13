@@ -2738,6 +2738,9 @@ splited2: Array[String] = Array(<!doctype html><html itemscope="" itemtype="http
 scala> splited2.length
 res27: Int = 230
 
+scala> data.length
+res29: Int = 5
+
 ___________
 
    
