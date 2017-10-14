@@ -21,22 +21,22 @@ December 2017:
 for the gradient k-improvement part:
 - work through Andrew Trask "Grokking Deep Learning"
 
-January 2017:
+January 2018:
 
 for the graphical part:
 
 - try to trace the code in SwiftVis2 
 
-February 2017:
+February 2018:
 
 combine the parts
 - implementing the MANOVA-KNN pipeline in Scala
 
-March 2017:
+March 2018:
 
 - testing the algorithm 
 
-April 2017:
+April 2018:
 
 -publish results
 
