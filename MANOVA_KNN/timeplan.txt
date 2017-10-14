@@ -15,19 +15,29 @@ November 2017:
 for the statistical part: 
 - work through Carroll and Green 1997 
 
+
 December 2017:
+
+for the gradient k-improvement part:
+- work through Andrew Trask "Grokking Deep Learning"
+
+January 2017:
 
 for the graphical part:
 
 - try to trace the code in SwiftVis2 
 
-January 2017:
-
-combine the parts
-- implementing MANOVA in Scala
-
 February 2017:
 
+combine the parts
+- implementing the MANOVA-KNN pipeline in Scala
+
+March 2017:
+
 - testing the algorithm 
+
+April 2017:
+
+-publish results
 
 
