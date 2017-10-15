@@ -28,4 +28,8 @@ Paper structure:
 
 - present the components of the pipeline: MANOVA and the improved KNN classifier, describing the optimization by means of the gradient k-improvement of the neighborhood size and direction.
 
-- 
+3. Potential use cases
+
+- delineate potential use cases 
+
+4. 
