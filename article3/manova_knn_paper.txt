@@ -21,6 +21,11 @@ Paper structure:
 1. Introduction: 
 - short description of the diffuse double-layer model of cation adsorption around clay particles in soils. Cation adsorption takes place at the negatively charged surface of clay particles, and the concentration of cations decreases as the distance from the clay particle grows ans we reach the soil solution.
 
+- explain why the MANOVA-KNN pipeline represents an appropriate classification algorithm for objects entangled in diffusion processes in general. 
+
+
+2. How the MANOVA-KNN pipeline works
+
+- present the components of the pipeline: MANOVA and the improved KNN classifier, describing the optimization by means of the gradient k-improvement of the neighborhood size and direction.
+
 - 
-
-
