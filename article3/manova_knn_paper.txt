@@ -16,3 +16,11 @@ The nature-inspired pipeline (inspired from diffusion processes in soils) will c
 The KNN algorithm will be adaptive by means of a gradient k-improvement optimization of the neighborhood size and direction. 
 
 
+Paper structure:
+
+1. Introduction: 
+- short description of the diffuse double-layer model of cation adsorption around clay particles in soils. Cation adsorption takes place at the negatively charged surface of clay particles, and the concentration of cations decreases as the distance from the clay particle grows ans we reach the soil solution.
+
+- 
+
+
