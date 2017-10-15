@@ -40,4 +40,6 @@ Paper structure:
 5. Conclusions
 
 - why is the MANOVA-KNN pipeline useful?
-- 
+- depict further research based on the combination between variation analysis and machine learning algorithms: introduce the idea of variation decision trees. 
+
+
