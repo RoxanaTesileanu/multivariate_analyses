@@ -34,4 +34,7 @@ Paper structure:
 
 4. Example application using simulated data 
 
-- 
+- simulate data (use the approach of Hastie and Tibshirani 1997)
+- test the algorithm
+
+5. 
