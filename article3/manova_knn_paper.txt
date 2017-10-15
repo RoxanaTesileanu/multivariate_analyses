@@ -37,4 +37,7 @@ Paper structure:
 - simulate data (use the approach of Hastie and Tibshirani 1997)
 - implement the algorithm using previously simulated data
 
-5. 
+5. Conclusions
+
+- why is the MANOVA-KNN pipeline useful?
+- 
