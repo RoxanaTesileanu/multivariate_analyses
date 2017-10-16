@@ -2905,6 +2905,20 @@ scala> mag(p1)
 res2: Double = 4.58257569495584
 
 
+scala> // but no distinction betw. points and colors in this way!
+
+
+Creating Case Classes
+
+
+scala> import io.StdIn._
+import io.StdIn._
+
+scala> case class Point3D(x: Double, y: Double, z: Double)
+defined class Point3D
+
+scala> case class Student(name: String, tests:List[Int], assns:List[Int], quizzes: List[Int])
+defined class Student
 
 
 
