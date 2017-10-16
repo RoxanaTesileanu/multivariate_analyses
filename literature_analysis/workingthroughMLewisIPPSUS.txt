@@ -2828,6 +2828,13 @@ scala> pw.println("Goes after original contents.")
 
 scala> pw.close
 
+_______________
+
+Formatted Output
+
+- create formatted output
+- for printing to the terminal or printing to a file
+
 
 
 
