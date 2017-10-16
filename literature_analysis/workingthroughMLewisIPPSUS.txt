@@ -2812,6 +2812,20 @@ scala> pw.close
 
 scala> // you have to close the file. 
 
+scala> // NOTE: IF THE FILE ALREADY EXISTS pw WILL OVERWRITE IT!!! 
+
+scala> // if you want to append: use java.io.FileWriter
+
+scala> import java.io.FileWriter
+import java.io.FileWriter
+
+scala> val pw = new PrintWriter(new FileWriter("file.txt", true)) // true ->append
+pw: java.io.PrintWriter = java.io.PrintWriter@541eeebd
+
+scala> pw.println("Goes after original contents.")
+
+scala> pw.close
+
 
 
 
