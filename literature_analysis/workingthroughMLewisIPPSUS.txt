@@ -2865,6 +2865,19 @@ A string 42000000000.00
 scala> printf("A string %5.2e\n" ,4.2e10) // e switches to scientific notation
 A string 4.20e+10
 
+______
+
+File Example
+
+- args is an Array of the arguments that were passed in. 
+
+
+______
+
+Case Classes
+
+
+
 
 
 
