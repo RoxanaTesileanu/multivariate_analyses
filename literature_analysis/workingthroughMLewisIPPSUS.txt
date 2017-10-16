@@ -2745,12 +2745,31 @@ res29: Int = 5
 scala> source.close
 
 
-
-scala> def countSplittedArray (a : Array[String], startIndex: Int,  base: Int) : Int = {  
-     | val splitted = a.map(i => i.split(",")).toArray
-     | if (startIndex == (a.length - 1)) base
-     | else base + (countSplittedArray(splitted(startIndex+1),startIndex + 1, base))}
+scala> def countSplittedArray( a: Array[String], startIndex:Int, base: Int) :Int = {
+     | val splitted = a.map(i=> i.split(","))
+     | if (startIndex == 0) base
+     | else base + countSplittedArray( splitted(startIndex -1), startIndex-1, splitted(startIndex-1).length)
+     | }
 countSplittedArray: (a: Array[String], startIndex: Int, base: Int)Int
+
+scala> val arr = Array( "there you go", "this is weird")
+arr: Array[String] = Array(there you go, this is weird)
+
+scala> arr.length
+res45: Int = 2
+
+scala> val splitted = arr.map( i => i.split(","))
+splitted: Array[Array[String]] = Array(Array(there you go), Array(this is weird))
+
+scala> splitted(0).length
+res46: Int = 1
+
+scala> splitted(1).length
+res47: Int = 1
+
+scala> countSplittedArray(arr, arr.length, 0)
+res51: Int = 2
+
 
 
 ___________
