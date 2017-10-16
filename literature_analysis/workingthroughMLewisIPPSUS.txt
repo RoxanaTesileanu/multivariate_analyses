@@ -2876,8 +2876,11 @@ ______
 
 Case Classes
 
+- give us the ability to group features together and are the first way which allows to define your own types. 
 
+- you can create your own types, add functionality to these types
 
+- 
 
 
 
