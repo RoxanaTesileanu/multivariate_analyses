@@ -2798,6 +2798,17 @@ ___________
    
 Writing to File:
 
+- to write we use java.io.PrintWriter
+
+scala> import java.io.PrintWriter
+import java.io.PrintWriter
+
+scala> val pw = new PrintWriter("file.txt")
+pw: java.io.PrintWriter = java.io.PrintWriter@1850688b
+
+
+
+
 
  
 
