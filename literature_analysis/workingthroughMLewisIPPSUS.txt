@@ -2770,6 +2770,27 @@ res47: Int = 1
 scala> countSplittedArray(arr, arr.length, 0)
 res51: Int = 2
 
+:reset
+
+scala> val arr = Array(1,1,1,0,1,1,0,0,1,1,0,1,1,1,0,1,1,0,1,0,0)
+arr: Array[Int] = Array(1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0)
+
+scala> arr.count(_ == 0)
+res0: Int = 8
+
+scala> arr.count(_ == 1)
+res1: Int = 13
+
+scala> def countOnes (a: Array[Int], index: Int, acc:Int) : Int = {
+     | if (index == 0) acc
+     | else countOnes(a, index -1, {if (a(index-1) == 0) acc else acc+1})
+     | }
+countOnes: (a: Array[Int], index: Int, acc: Int)Int
+
+scala> countOnes(arr, arr.length, 0)
+res17: Int = 13
+
+
 
 
 ___________
