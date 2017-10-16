@@ -2880,7 +2880,30 @@ Case Classes
 
 - you can create your own types, add functionality to these types
 
-- 
+- example: use tuples to group things together that are of different types.
+
+scala> val (name, age, abi) = ("roxi", 19, 2.4)
+name: String = roxi
+age: Int = 19
+abi: Double = 2.4
+
+scala> // all tuples with the same types in them are considered equivalent
+
+scala> type Point = (Double, Double, Double)
+defined type alias Point
+
+scala> type Color = (Double, Double, Double)
+defined type alias Color
+
+scala> def mag(p:Point) :Double = math.sqrt(p._1*p._1 + p._2*p._2 + p._3*p._3)
+mag: (p: Point)Double
+
+scala> val p1 = (1.0, 2.0, 4.0)
+p1: (Double, Double, Double) = (1.0,2.0,4.0)
+
+scala> mag(p1)
+res2: Double = 4.58257569495584
+
 
 
 
