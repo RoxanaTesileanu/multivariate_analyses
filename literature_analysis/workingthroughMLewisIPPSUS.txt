@@ -2842,11 +2842,30 @@ printf("A string \n")
 A string
 
 
-printf("A string %d\n", 42)
+printf("A string %d\n", 42) //the % sign indicates a variable comes in there, you need to have a second argument for the variable
 A string 42
 
 printf("A string %5d\n", 42)
 A string     42
+
+printf("A string %f\n", 4.2) // %f for floating point
+A string 4.2000000
+
+
+printf("A string %5f\n, 4.2) // %5f we want 5 digits after the 4.2
+A string 4.200000
+
+
+printf("A string %5.2f\n", 4.2) // %5.2f for 2 digits after the decimal point, but takes 5 characters when we print it
+A string  4.20
+
+scala> printf("A string %5.2f\n", 4.2e10)
+A string 42000000000.00
+
+scala> printf("A string %5.2e\n" ,4.2e10) // e switches to scientific notation
+A string 4.20e+10
+
+
 
 
 
