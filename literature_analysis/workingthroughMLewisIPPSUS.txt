@@ -2806,6 +2806,12 @@ import java.io.PrintWriter
 scala> val pw = new PrintWriter("file.txt")
 pw: java.io.PrintWriter = java.io.PrintWriter@1850688b
 
+scala> Array(1,2,3,4,5).foreach(i=> pw.println(i))
+
+scala> pw.close
+
+scala> // you have to close the file. 
+
 
 
 
