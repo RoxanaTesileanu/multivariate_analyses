@@ -2819,8 +2819,10 @@ scala> // if you want to append: use java.io.FileWriter
 scala> import java.io.FileWriter
 import java.io.FileWriter
 
-scala> val pw = new PrintWriter(new FileWriter("file.txt", true)) // true ->append
+scala> val pw = new PrintWriter(new FileWriter("file.txt", true)) 
 pw: java.io.PrintWriter = java.io.PrintWriter@541eeebd
+
+// true ->appends, false -> erases
 
 scala> pw.println("Goes after original contents.")
 
