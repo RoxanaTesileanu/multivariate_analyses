@@ -2835,6 +2835,24 @@ Formatted Output
 - create formatted output
 - for printing to the terminal or printing to a file
 
+printf("A string")
+A string
+
+printf("A string \n")
+A string
+
+
+printf("A string %d\n", 42)
+A string 42
+
+printf("A string %5d\n", 42)
+A string     42
+
+
+
+
+
+
 
 
 
