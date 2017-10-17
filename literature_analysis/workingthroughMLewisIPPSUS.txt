@@ -3041,10 +3041,16 @@ scala> // make a new point:
 scala> Point3D(1+p.x, p.y, p.z)
 res6: Point3D = Point3D(2.0,2.0,3.0)
 
-scala> p.copy(x = p.x +1)
+scala> p.copy(x = p.x +1)	// TO THE COPY METH. YOU PASS ONLY NAMED PARAMS.
 res7: Point3D = Point3D(2.0,2.0,3.0)
 
-scala> // WITH THE COPY METHOD IF I DON'T SPECIFY THE PARAMETERS THEY GET THE DEFAULT VALUES!!!
+scala> // WITH THE COPY METHOD IF I DON'T SPECIFY THE PARAMETERS THEY GET THE DEFAULT VALUES!!! 
+
+!!!! SPECIFY ONLY THE THINGS I WANT TO CHANGE IN THE COPY METHOD !!!!
+!!! THE REST OF THE STUFF WILL TAKE THE DEFAULT VALUES !!!
+
+
+
 
  
 
