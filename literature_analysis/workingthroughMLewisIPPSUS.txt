@@ -3188,7 +3188,9 @@ res5: scala.runtime.Tuple3Zipped[Int,List[Int],String,Array[String],Double,Array
 scala> (c1, c2, c3).zipped.map((c1, c2, c3) => (c2*c1, c3))
 res8: List[(String, Double)] = List((a,1.5), (bb,2.0), (ccc,3.5))
 
+! THE NEW COLLECTION OF TUPLES WAS NOT CREATED, WHAT'S INSIDE OF THE ZIPPED IS LOGIC THAT WE CAN GO THROUGH WITH MAP AND YOU CAN USE THE SYNTAX OF PASSING TWO OR THREE VALUES, DEPENDING ON HOW MANY COLLECTIONS YOU'VE ZIPPED TO MAP !
 
+ 
 
 
  
