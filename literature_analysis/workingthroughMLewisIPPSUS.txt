@@ -2932,6 +2932,9 @@ res1: Student = Student(Roxi,List(90, 80),List(100, 95),List(96, 84, 72))
 
 Using Case Classes
 
+scala> res0.x	// getting values of the fields
+res2: Double = 1.0
+
 
 
 
