@@ -2920,6 +2920,21 @@ defined class Point3D
 scala> case class Student(name: String, tests:List[Int], assns:List[Int], quizzes: List[Int])
 defined class Student
 
+scala> Point3D(1.0,2.0,3.0)
+res0: Point3D = Point3D(1.0,2.0,3.0)
+
+scala> Student("Roxi", List(90, 80), List(100, 95), List(96, 84, 72)
+     | )
+res1: Student = Student(Roxi,List(90, 80),List(100, 95),List(96, 84, 72))
+
+// making individual instances of classes (instantiating them)
+
+
+Using Case Classes
+
+
+
+
 
 
 
