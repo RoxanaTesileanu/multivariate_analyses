@@ -2951,6 +2951,15 @@ scala> def distance(p1:Point3D, p2:Point3D):Double = {
      | }
 distance: (p1: Point3D, p2: Point3D)Double
 
+scala> distance(Point3D(5,2,1), Point3D(7,1,7))
+res5: Double = 6.4031242374328485
+
+scala> res1
+res6: Student = Student(Roxi,List(90, 80),List(100, 95),List(96, 84, 72))
+
+scala> classAverage(res6)
+res7: Double = 91.15
+
 
 
 
