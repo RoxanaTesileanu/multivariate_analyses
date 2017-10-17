@@ -3213,6 +3213,8 @@ scala> app.main(Array(" "))
 
 ________
 
+Adding a Scene and a Node:
+
 Now, after adding a STAGE, you must add a SCENE, in order to add stuff to our STAGE. And then we can add the elements that we want, which are called NODES, into our SCENE.
   
 STAGE -> SCENE -> NODES
@@ -3251,5 +3253,12 @@ app: scalafx.application.JFXApp = $anon$2@3019bc3a
 
 app.main(Array(" "))
 ________
+
+
+Location and Multiple Nodes:
+
+
+
+
 
 
