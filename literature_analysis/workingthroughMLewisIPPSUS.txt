@@ -3164,6 +3164,20 @@ res0: List[(Int, String)] = List((1,a), (2,b), (3,c))
 scala> c1.zip(c2).map(t => t._2 * t._1)
 res2: List[String] = List(a, bb, ccc)
 
+scala> // if c1 and c2 are large this is not efficient; zip builds a completely new collection -> overhead in zipping two collections.
+
+scala> // the map works on a tuple and the sytax is a bit more difficult
+
+scala> // convenient to avoid the overhead and the tuple syntax -> zipped type
+
+scala> (c1, c2).zipped
+res3: scala.runtime.Tuple2Zipped[Int,List[Int],String,Array[String]] = scala.runtime.Tuple2Zipped@a2c07ac6
+
+scala> (c1,c2).zipped.map((cnt, str) => str*cnt)
+res4: List[String] = List(a, bb, ccc)
+
+scala> // just pass to map the two arguments! 
+
  
 
 
