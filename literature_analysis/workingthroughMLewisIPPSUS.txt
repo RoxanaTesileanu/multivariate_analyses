@@ -3218,6 +3218,26 @@ Now, after adding a STAGE, you must add a SCENE, in order to add stuff to our ST
 STAGE -> SCENE -> NODES
 
 
+import scalafx.application.JFXApp
+import scalafx.scene.Scene
+import scalafx.scene.control._
+
+
+val app = new JFXApp {
+	stage = new JFXApp.PrimaryStage {
+		title = "First GUI"
+		scene = new Scene(400, 300) {
+			val button = new Button("Click Me!")	
+			
+			content = button	
+		}
+	}
+}		
 
  
+app.main(args)
+
+
+________
+
 
