@@ -3178,7 +3178,16 @@ res4: List[String] = List(a, bb, ccc)
 
 scala> // just pass to map the two arguments! 
 
+scala> val c3 = Array(1.5, 2.0, 3.5)
+c3: Array[Double] = Array(1.5, 2.0, 3.5)
+
+scala> (c1, c2, c3).zipped
+res5: scala.runtime.Tuple3Zipped[Int,List[Int],String,Array[String],Double,Array[Double]] = scala.runtime.Tuple3Zipped@a9d00a38
+
  
+scala> (c1, c2, c3).zipped.map((c1, c2, c3) => (c2*c1, c3))
+res8: List[(String, Double)] = List((a,1.5), (bb,2.0), (ccc,3.5))
+
 
 
 
