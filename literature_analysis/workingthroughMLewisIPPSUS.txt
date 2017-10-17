@@ -3018,7 +3018,35 @@ res5: Double = 36.0
 
 The copy Method in Case Classes
 
+- because of the immutability in case classes -> we cannot assign to members (fields) of a case class
+- what if we want to change something? -> all case classes have a copy method.
 
+scala> stu.
+assns      equals     productArity      productPrefix   toString   
+canEqual   hashCode   productElement    quizzes                    
+copy       name       productIterator   tests                      
+
+scala> case class Point3D(x: Double, y: Double, z: Double)
+defined class Point3D
+
+scala> val p = Point3D(1,2,3)
+p: Point3D = Point3D(1.0,2.0,3.0)
+
+scala> p.
+canEqual   equals     productArity     productIterator   toString   y   
+copy       hashCode   productElement   productPrefix     x          z   
+
+scala> // make a new point:
+
+scala> Point3D(1+p.x, p.y, p.z)
+res6: Point3D = Point3D(2.0,2.0,3.0)
+
+scala> p.copy(x = p.x +1)
+res7: Point3D = Point3D(2.0,2.0,3.0)
+
+scala> // WITH THE COPY METHOD IF I DON'T SPECIFY THE PARAMETERS THEY GET THE DEFAULT VALUES!!!
+
+ 
 
 
 
