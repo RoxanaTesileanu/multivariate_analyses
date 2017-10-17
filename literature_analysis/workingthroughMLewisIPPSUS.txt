@@ -2981,7 +2981,33 @@ scala> stu.name = "John"
            ^
 _____
 
+Named and Default Arguments
 
+scala> def evalQuad(a: Double, b: Double, c: Double, x: Double) : Double = {
+     | a*x*x + b*x + c
+     | }
+evalQuad: (a: Double, b: Double, c: Double, x: Double)Double
+
+scala> evalQuad(1, 0, 0, 2)
+res1: Double = 4.0
+
+I can also NAME my arguments.  
+
+
+scala> evalQuad( x=2, a=1, b=0, c=0)
+res2: Double = 4.0
+
+!!! NOTE: WE CAN PROVIDE DEFAULT VALUES FOR ARGUMENTS !!!
+
+SPECIFY DEFAULT VALUES IN THE FUNCTION PARAMETERS:
+
+scala> def evalQuad(a:Double = 0, b:Double = 1, c:Double =0, x:Double) : Double ={
+     | a*x*x + b*x + c 
+     | }
+evalQuad: (a: Double, b: Double, c: Double, x: Double)Double
+
+scala> evalQuad(x=4)
+res4: Double = 4.0
 
 
 
