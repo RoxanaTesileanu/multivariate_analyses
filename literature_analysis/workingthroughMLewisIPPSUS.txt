@@ -2932,8 +2932,24 @@ res1: Student = Student(Roxi,List(90, 80),List(100, 95),List(96, 84, 72))
 
 Using Case Classes
 
-scala> res0.x	// getting values of the fields
+scala> res0.x	// getting values out of a clase class using the fields that we want to pull out
 res2: Double = 1.0
+
+scala> res0.y
+res3: Double = 2.0
+
+scala> res0.z
+res4: Double = 3.0
+
+Write some simple functions that take the class:
+
+scala> def distance(p1:Point3D, p2:Point3D):Double = {
+     | val dx = p1.x - p2.x
+     | val dy = p1.y - p2.y
+     | val dz = p1.z - p2.z
+     | math.sqrt(dx*dx + dy*dy + dz*dz)
+     | }
+distance: (p1: Point3D, p2: Point3D)Double
 
 
 
