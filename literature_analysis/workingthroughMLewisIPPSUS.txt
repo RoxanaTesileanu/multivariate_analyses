@@ -3279,7 +3279,8 @@ val app = new JFXApp {
 			val listView = new ListView(List("AWT", "Swing", "JavaFX", "ScalaFX"))
 			listView.layoutX = 100
 			listView.layoutY = 150
-
+			listView.prefHeight = 150
+			
 			content = List(button, comboBox, listView)
 			}
 		}
@@ -3292,6 +3293,10 @@ app.main(args)
 _________________
 
 
+Events and Handlers
+
+
+https://www.youtube.com/watch?v=e1y20sHXYqw&index=118&list=PLLMXbkbDbVt9MIJ9DV4ps-_trOzWtphYO
 
 
 
