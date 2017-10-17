@@ -3049,7 +3049,17 @@ scala> // WITH THE COPY METHOD IF I DON'T SPECIFY THE PARAMETERS THEY GET THE DE
 !!!! SPECIFY ONLY THE THINGS I WANT TO CHANGE IN THE COPY METHOD !!!!
 !!! THE REST OF THE STUFF WILL TAKE THE DEFAULT VALUES !!!
 
+	
+scala> val stu2 = Student ("Me", Nil, Nil, Nil)
+stu2: Student = Student(Me,List(),List(),List())
 
+scala> stu2.copy(tests = 99::stu.tests)
+res8: Student = Student(Me,List(99, 90, 80),List(),List())
+
+scala> stu
+res9: Student = Student(Roxi,List(90, 80),List(100, 95),List(96, 84, 72))
+
+scala> 
 
 
  
