@@ -3152,7 +3152,19 @@ ____________
 The Zipped Type
 
 
+scala> val c1 = List(1,2,3)
+c1: List[Int] = List(1, 2, 3)
 
+scala> val c2 = "a b c".split(" ")
+c2: Array[String] = Array(a, b, c)
+
+scala> c1.zip(c2)
+res0: List[(Int, String)] = List((1,a), (2,b), (3,c))
+
+scala> c1.zip(c2).map(t => t._2 * t._1)
+res2: List[String] = List(a, bb, ccc)
+
+ 
 
 
 
