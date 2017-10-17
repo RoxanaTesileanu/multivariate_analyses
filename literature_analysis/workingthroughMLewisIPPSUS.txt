@@ -3237,7 +3237,19 @@ val app = new JFXApp {
  
 app.main(args)
 
+OR IN REPL:
 
+scala> val app = new JFXApp {
+     | stage = new JFXApp.PrimaryStage {
+     | title = "GUI with Button"
+     | scene = new Scene (400, 300) {
+     | val button = new Button ("Click Me!")
+     | content = button }
+     | }
+     | }
+app: scalafx.application.JFXApp = $anon$2@3019bc3a
+
+app.main(Array(" "))
 ________
 
 
