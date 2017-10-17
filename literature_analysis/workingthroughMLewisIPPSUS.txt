@@ -3009,7 +3009,14 @@ evalQuad: (a: Double, b: Double, c: Double, x: Double)Double
 scala> evalQuad(x=4)
 res4: Double = 4.0
 
+scala> // even if you have default values you can specify different values for the default parameters:
 
+scala> evalQuad(x=4, a=2) // uses default values for b and c and the named params for x and a
+res5: Double = 36.0
+
+
+
+The copy Method in Case Classes
 
 
 
