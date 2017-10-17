@@ -3059,7 +3059,14 @@ res8: Student = Student(Me,List(99, 90, 80),List(),List())
 scala> stu
 res9: Student = Student(Roxi,List(90, 80),List(100, 95),List(96, 84, 72))
 
-scala> 
+scala> stu2.copy( assns = 89::stu2.assns )
+res10: Student = Student(Me,List(),List(89),List())
+
+
+SO THE COPY METHOD IS VERY HELPFUL AS IT GIVES AS THE WAY TO CREATE MODIFIED VERSIONS OF IMMUTABLE CASE CLASSES. 
+
+
+ 
 
 
  
