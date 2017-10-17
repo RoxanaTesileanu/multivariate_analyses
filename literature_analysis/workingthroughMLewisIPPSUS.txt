@@ -3211,7 +3211,9 @@ scala> app.main(Array(" "))
 // you can safely close the GUI with its close button!!!!
 
 
+________
 
+Now, after adding a STAGE, you must add a SCENE, in order to add stuff to our window. 
 
 
  
