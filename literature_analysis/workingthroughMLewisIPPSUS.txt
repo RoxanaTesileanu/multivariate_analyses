@@ -2960,7 +2960,26 @@ res6: Student = Student(Roxi,List(90, 80),List(100, 95),List(96, 84, 72))
 scala> classAverage(res6)
 res7: Double = 91.15
 
+______
 
+
+!!! NOTE: THE VALUES IN THE CASE CLASSES INSTANCES ARE VALS !!!
+IF I WANT TO CHANGE THE NAME OF THE STUDENT I CAN'T BECAUSE IT IS REASSIGNMENT TO VAL !!!
+
+!!! BY DEFAULT CASE CLASSES ARE IMMUTABLE AS LONG AS THE THINGS IN THEM ARE IMMUTABLE !!! LISTS ARE IMMUTABLE; IF YOU USE ARRAYS I AM ABLE TO MUTATE THE VALUES INSIDE OF THE ARRAYS BUT NOT THE LENGTH OF THE ARRAYS!!! 
+
+scala> val stu = Student("Roxi", List(90, 80), List(100, 95), List(96, 84, 72))
+stu: Student = Student(Roxi,List(90, 80),List(100, 95),List(96, 84, 72))
+
+scala> stu.name 
+res0: String = Roxi
+
+scala> stu.name = "John"
+<console>:12: error: reassignment to val
+       stu.name = "John"
+     
+           ^
+_____
 
 
 
