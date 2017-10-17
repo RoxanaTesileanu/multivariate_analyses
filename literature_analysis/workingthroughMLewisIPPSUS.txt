@@ -3196,6 +3196,20 @@ __________ new REPL session _________________
 Graphical User Interfaces
 GUIs
 
+scala> import scalafx.application.JFXApp
+import scalafx.application.JFXApp
+
+scala> val app = new JFXApp{
+     | stage = new JFXApp.PrimaryStage {   // represents a window
+     | title = "First GUI"
+     | }
+     | }
+app: scalafx.application.JFXApp = $anon$2@68aaf604
+
+scala> app.main(Array(" "))
+
+// you can safely close the GUI with its close button!!!!
+
 
 
 
