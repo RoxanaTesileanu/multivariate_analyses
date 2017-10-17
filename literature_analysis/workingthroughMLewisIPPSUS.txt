@@ -3126,6 +3126,33 @@ ___________
 
 Mututable case classes
 
+By default case classes are immutable assuming their contents are immutable.
+All variables that you put in them are by default immutable.
+
+You might want to make vals mutable. 
+
+Example:
+case class Point3D2 (var x: Double, var y: Double, var z: Double)
+
+scala> case class Point3D2 (var x: Double, var y: Double, var z: Double)
+defined class Point3D2
+
+scala> val pMut = Point3D2(1,2,3)
+pMut: Point3D2 = Point3D2(1.0,2.0,3.0)
+
+scala> pMut.x = 0.99
+pMut.x: Double = 0.99
+
+scala> pMut
+res51: Point3D2 = Point3D2(0.99,2.0,3.0)
+
+____________
+
+
+The Zipped Type
+
+
+
 
 
 
