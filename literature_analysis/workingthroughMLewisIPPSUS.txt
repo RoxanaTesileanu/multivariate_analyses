@@ -3118,6 +3118,8 @@ bigXs: Array[Point3D] = Array(Point3D(0.9315241287287708,0.07718714222090839,0.1
 scala> bigXs.length
 res47: Int = 14
 
+!!! You can use the members in filter methods of case classes too !!!
+
 
 
 
