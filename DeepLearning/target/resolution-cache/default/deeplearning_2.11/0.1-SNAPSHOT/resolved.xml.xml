@@ -4,7 +4,7 @@
 		module="deeplearning_2.11"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20171018111130"
+		publication="20171018133257"
 	>
 		<description>
 		DeepLearning
@@ -47,5 +47,6 @@
 		<dependency org="org.geotools" name="gt-shapefile" rev="16.1" conf="compile->default(compile)"/>
 		<dependency org="org.locationtech.geotrellis" name="geotrellis-geotools_2.11" rev="1.1.0" conf="compile->default(compile)"/>
 		<dependency org="org.locationtech.geotrellis" name="geotrellis-shapefile_2.11" rev="1.1.0" conf="compile->default(compile)"/>
+		<dependency org="org.locationtech.geotrellis" name="geotrellis-vectortile_2.11" rev="1.1.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

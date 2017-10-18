@@ -27,8 +27,8 @@ libraryDependencies ++= Seq(
 
 "org.locationtech.geotrellis" % "geotrellis-geotools_2.11" % "1.1.0",
 
-"org.locationtech.geotrellis" % "geotrellis-shapefile_2.11" % "1.1.0"
-
+"org.locationtech.geotrellis" % "geotrellis-shapefile_2.11" % "1.1.0",
+"org.locationtech.geotrellis" % "geotrellis-vectortile_2.11" % "1.1.0"
 
 
 //"org.gdal" % "gdal" % "2.2.1",
