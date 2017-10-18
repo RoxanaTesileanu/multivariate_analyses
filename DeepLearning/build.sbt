@@ -5,18 +5,46 @@ fork in run := true
 libraryDependencies ++= Seq(
 "org.scalafx" %% "scalafx" % "8.0.92-R10",
  "org.scala-lang" % "scala-swing" % "2.10.2",
-"com.azavea.geotrellis" % "geotrellis-gdal_2.10" % "0.10.0-M1",
-//"org.gdal" % "gdal" % "2.2.1"
- "org.gdal" % "gdal" % "2.1.0" pomOnly(),
-//"com.azavea.geotrellis" % "geotrellis-vector_2.11" % "1.0.0-RC1"
 
+ "org.gdal" % "gdal" % "2.1.0" pomOnly(),
+
+"org.locationtech.geotrellis" %% "geotrellis-raster" % "1.0.0",
+"org.locationtech.geotrellis" % "geotrellis-vector_2.11" % "1.1.1",
+//"org.locationtech.geotrellis" % "geotrellis-geotools_2.11" % "1.1.1",
+//"org.locationtech.geotrellis" % "geotrellis-geotools_2.11" % "1.2.0-M1",
+
+
+"org.geotools" % "gt-main" % "16.1",
+"org.geotools" % "gt-epsg-hsql" % "16.1" % "test",
+//"org.geotools" % "gt-epsg-hsql" % "16.1",
+"org.geotools" % "gt-referencing" % "16.1",
+"org.geotools" % "gt-shapefile" % "16.1"
+
+
+
+//"org.locationtech.geotrellis" % "geotrellis-geotools_2.11" % "1.1.0",
+
+//"org.locationtech.geotrellis" % "geotrellis-shapefile_2.11" % "1.2.0-M1"
+
+
+
+//"org.gdal" % "gdal" % "2.2.1",
+//"com.azavea.geotrellis" % "geotrellis-gdal_2.10" % "0.10.0-M1",
+//"com.azavea.geotrellis" % "geotrellis-vector_2.11" % "1.0.0-RC1"
 //"com.azavea.geotrellis" % "geotrellis-geotools_2.10" % "0.10.0-M1",
-"com.azavea.geotrellis" % "geotrellis-vector_2.10" % "0.10.3",
+//"com.azavea.geotrellis" % "geotrellis-vector_2.10" % "0.10.3",
+
+//"org.geotools" % "gt-main" % "18.0",
+
 //"org.geotools" % "gt2-shapefile" % "2.4.5",
-"org.geotools" % "gt-shapefile" % "17.2"
+//"org.geotools" % "gt-shapefile" % "17.2"
 //"org.geotools" % "gt-shapefile" % "18.0"
 
 )
+
+resolvers += "osgeo" at "http://download.osgeo.org/webdav/geotools"
+resolvers += "boundless" at "http://repo.boundlessgeo.com/main"
+resolvers += "imageio" at "http://maven.geo-solutions.it"
 
 unmanagedJars in Compile += Attributed.blank(file("/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar"))
 
