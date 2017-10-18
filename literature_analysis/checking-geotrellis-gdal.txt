@@ -528,8 +528,25 @@ import geotrellis.shapefile._
 scala> geotrellis.shapefile.ShapeFileReader.readPo
 readPointFeatures   readPolygonFeatures
 
-scala> geotrellis.shapefile.ShapeFileReader.readPolygonFeatures("Intersection_lyr.shp")
-res3: Seq[geotrellis.vector.PolygonFeature[Map[String,Object]]] = List()
+scala> val data = geotrellis.shapefile.ShapeFileReader.readPolygonFeatures("Intersection_lyr.shp")
+data: Seq[geotrellis.vector.PolygonFeature[Map[String,Object]]] = List()
+
+
+scala> data.isEmpty
+res0: Boolean = true
+
+scala> val data = geotrellis.shapefile.ShapeFileReader.read
+readLineFeatures         readMultiPolygonFeatures   readSimpleFeatures   
+readMultiLineFeatures    readPointFeatures                               
+readMultiPointFeatures   readPolygonFeatures             
+
+scala> val data = geotrellis.shapefile.ShapeFileReader.readMultiPolygonFeatures("sal_alk_eu27_laea1052.shp")
+data: Seq[geotrellis.vector.MultiPolygonFeature[Map[String,Object]]] = List(Feature(MULTIPOLYGON (((2657385.0354120247 1773070.0255874854, 2658393.827223625 1772889.1923907045, 2659482.7452118737 1772860.5096098906, 2660261.716606862 1772917.1231232528, 2661046.548827775 1773359.2170842125, 2662294.5437105247 1773557.7511771242, 2663073.5152229457 1773614.3835211382, 2664239.0439158864 1773506.6038976149, 2665084.082117768 1772790.2543526408, 2666233.219201252 1771603.1700218634, 2667230.315917239 1770651.4722243033, 2667371.8282863675 1769722.2575114083, 2667354.268351508 1768565.8519031878, 2666560.067818907 1767506.9776889745, 2665842.4762677522 1766368.9763275224, 2664662.87697022 1765551.6220103314, 2663262.811323531 1765588.4358509623, 2662327.0928393053 1765458.802610367, 2661315...
+
+scala> scala> data.length
+res0: Int = 927
+
+
 
 
 
