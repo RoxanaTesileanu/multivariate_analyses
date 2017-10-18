@@ -7,8 +7,20 @@
 		revision="0.1-SNAPSHOT"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20171018110816"/>
+		date="20171018111130"/>
 	<dependencies>
+		<module organisation="org.locationtech.geotrellis" name="geotrellis-shapefile_2.11">
+			<revision name="1.1.0" status="release" pubdate="20170623020727" resolver="public" artresolver="public" homepage="http://geotrellis.github.io" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="90">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="2545" time="248" location="/home/roxana/.ivy2/cache/org.locationtech.geotrellis/geotrellis-shapefile_2.11/ivy-1.1.0.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/org.locationtech.geotrellis/geotrellis-shapefile_2.11/ivy-1.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/locationtech/geotrellis/geotrellis-shapefile_2.11/1.1.0/geotrellis-shapefile_2.11-1.1.0.pom"/>
+				<caller organisation="default" name="deeplearning_2.11" conf="compile-internal, compile, provided, optional" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="geotrellis-shapefile_2.11" type="jar" ext="jar" status="successful" details="" size="37910" time="293" location="/home/roxana/.ivy2/cache/org.locationtech.geotrellis/geotrellis-shapefile_2.11/jars/geotrellis-shapefile_2.11-1.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/locationtech/geotrellis/geotrellis-shapefile_2.11/1.1.0/geotrellis-shapefile_2.11-1.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.locationtech.geotrellis" name="geotrellis-geotools_2.11">
 			<revision name="1.1.0" status="release" pubdate="20170623020708" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://geotrellis.github.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="37">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
@@ -22,365 +34,365 @@
 			</revision>
 		</module>
 		<module organisation="org.geotools" name="gt-coverage">
-			<revision name="16.1" status="release" pubdate="20161219234416" resolver="osgeo" artresolver="osgeo" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+			<revision name="16.1" status="release" pubdate="20161219234416" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="9530" time="1227" location="/home/roxana/.ivy2/cache/org.geotools/gt-coverage/ivy-16.1.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/org.geotools/gt-coverage/ivy-16.1.xml.original" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-coverage/16.1/gt-coverage-16.1.pom"/>
+				<metadata-artifact status="no" details="" size="34954" time="0" location="/home/roxana/.ivy2/cache/org.geotools/gt-coverage/ivy-16.1.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-coverage/16.1/gt-coverage-16.1.pom"/>
 				<caller organisation="org.locationtech.geotrellis" name="geotrellis-geotools_2.11" conf="default, compile, runtime, master" rev="16.1" rev-constraint-default="16.1" rev-constraint-dynamic="16.1" callerrev="1.1.0"/>
 				<artifacts>
-					<artifact name="gt-coverage" type="jar" ext="jar" status="successful" details="" size="588971" time="5498" location="/home/roxana/.ivy2/cache/org.geotools/gt-coverage/jars/gt-coverage-16.1.jar">
+					<artifact name="gt-coverage" type="jar" ext="jar" status="no" details="" size="588971" time="0" location="/home/roxana/.ivy2/cache/org.geotools/gt-coverage/jars/gt-coverage-16.1.jar">
 						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-coverage/16.1/gt-coverage-16.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.vectorbin" name="jt-vectorbin">
-			<revision name="1.0.12" status="release" pubdate="20161117121858" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="86">
+			<revision name="1.0.12" status="release" pubdate="20161117121858" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="86">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1100" time="202" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.vectorbin/jt-vectorbin/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.vectorbin/jt-vectorbin/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/vectorbin/jt-vectorbin/1.0.12/jt-vectorbin-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6109" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.vectorbin/jt-vectorbin/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/vectorbin/jt-vectorbin/1.0.12/jt-vectorbin-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-vectorbin" type="jar" ext="jar" status="successful" details="" size="19105" time="188" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.vectorbin/jt-vectorbin/jars/jt-vectorbin-1.0.12.jar">
+					<artifact name="jt-vectorbin" type="jar" ext="jar" status="no" details="" size="19105" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.vectorbin/jt-vectorbin/jars/jt-vectorbin-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/vectorbin/jt-vectorbin/1.0.12/jt-vectorbin-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.rlookup" name="jt-rlookup">
-			<revision name="1.0.12" status="release" pubdate="20161117121857" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="85">
+			<revision name="1.0.12" status="release" pubdate="20161117121857" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="85">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1094" time="183" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.rlookup/jt-rlookup/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.rlookup/jt-rlookup/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/rlookup/jt-rlookup/1.0.12/jt-rlookup-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6103" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.rlookup/jt-rlookup/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/rlookup/jt-rlookup/1.0.12/jt-rlookup-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-rlookup" type="jar" ext="jar" status="successful" details="" size="18264" time="193" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.rlookup/jt-rlookup/jars/jt-rlookup-1.0.12.jar">
+					<artifact name="jt-rlookup" type="jar" ext="jar" status="no" details="" size="18264" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.rlookup/jt-rlookup/jars/jt-rlookup-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/rlookup/jt-rlookup/1.0.12/jt-rlookup-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.classifier" name="jt-classifier">
-			<revision name="1.0.12" status="release" pubdate="20161117121852" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="84">
+			<revision name="1.0.12" status="release" pubdate="20161117121852" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="84">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1271" time="184" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.classifier/jt-classifier/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.classifier/jt-classifier/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/classifier/jt-classifier/1.0.12/jt-classifier-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6276" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.classifier/jt-classifier/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/classifier/jt-classifier/1.0.12/jt-classifier-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-classifier" type="jar" ext="jar" status="successful" details="" size="18764" time="192" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.classifier/jt-classifier/jars/jt-classifier-1.0.12.jar">
+					<artifact name="jt-classifier" type="jar" ext="jar" status="no" details="" size="18764" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.classifier/jt-classifier/jars/jt-classifier-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/classifier/jt-classifier/1.0.12/jt-classifier-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.piecewise" name="jt-piecewise">
-			<revision name="1.0.12" status="release" pubdate="20161117121852" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="83">
+			<revision name="1.0.12" status="release" pubdate="20161117121852" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="83">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1852" time="189" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.piecewise/jt-piecewise/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.piecewise/jt-piecewise/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/piecewise/jt-piecewise/1.0.12/jt-piecewise-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6661" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.piecewise/jt-piecewise/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/piecewise/jt-piecewise/1.0.12/jt-piecewise-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<caller organisation="it.geosolutions.jaiext.classifier" name="jt-classifier" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
 				<artifacts>
-					<artifact name="jt-piecewise" type="jar" ext="jar" status="successful" details="" size="36734" time="234" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.piecewise/jt-piecewise/jars/jt-piecewise-1.0.12.jar">
+					<artifact name="jt-piecewise" type="jar" ext="jar" status="no" details="" size="36734" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.piecewise/jt-piecewise/jars/jt-piecewise-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/piecewise/jt-piecewise/1.0.12/jt-piecewise-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.imagefunction" name="jt-imagefunction">
-			<revision name="1.0.12" status="release" pubdate="20161117121857" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="82">
+			<revision name="1.0.12" status="release" pubdate="20161117121857" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="82">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1112" time="189" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.imagefunction/jt-imagefunction/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.imagefunction/jt-imagefunction/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/imagefunction/jt-imagefunction/1.0.12/jt-imagefunction-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6121" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.imagefunction/jt-imagefunction/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/imagefunction/jt-imagefunction/1.0.12/jt-imagefunction-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-imagefunction" type="jar" ext="jar" status="successful" details="" size="12697" time="184" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.imagefunction/jt-imagefunction/jars/jt-imagefunction-1.0.12.jar">
+					<artifact name="jt-imagefunction" type="jar" ext="jar" status="no" details="" size="12697" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.imagefunction/jt-imagefunction/jars/jt-imagefunction-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/imagefunction/jt-imagefunction/1.0.12/jt-imagefunction-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.colorindexer" name="jt-colorindexer">
-			<revision name="1.0.12" status="release" pubdate="20161117121856" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="81">
+			<revision name="1.0.12" status="release" pubdate="20161117121856" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="81">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1869" time="186" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.colorindexer/jt-colorindexer/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.colorindexer/jt-colorindexer/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/colorindexer/jt-colorindexer/1.0.12/jt-colorindexer-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6672" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.colorindexer/jt-colorindexer/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/colorindexer/jt-colorindexer/1.0.12/jt-colorindexer-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-colorindexer" type="jar" ext="jar" status="successful" details="" size="38624" time="316" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.colorindexer/jt-colorindexer/jars/jt-colorindexer-1.0.12.jar">
+					<artifact name="jt-colorindexer" type="jar" ext="jar" status="no" details="" size="38624" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.colorindexer/jt-colorindexer/jars/jt-colorindexer-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/colorindexer/jt-colorindexer/1.0.12/jt-colorindexer-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.orderdither" name="jt-orderdither">
-			<revision name="1.0.12" status="release" pubdate="20161117121855" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="80">
+			<revision name="1.0.12" status="release" pubdate="20161117121855" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="80">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1291" time="195" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.orderdither/jt-orderdither/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.orderdither/jt-orderdither/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/orderdither/jt-orderdither/1.0.12/jt-orderdither-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6248" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.orderdither/jt-orderdither/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/orderdither/jt-orderdither/1.0.12/jt-orderdither-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-orderdither" type="jar" ext="jar" status="successful" details="" size="25802" time="234" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.orderdither/jt-orderdither/jars/jt-orderdither-1.0.12.jar">
+					<artifact name="jt-orderdither" type="jar" ext="jar" status="no" details="" size="25802" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.orderdither/jt-orderdither/jars/jt-orderdither-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/orderdither/jt-orderdither/1.0.12/jt-orderdither-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.errordiffusion" name="jt-errordiffusion">
-			<revision name="1.0.12" status="release" pubdate="20161117121855" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="79">
+			<revision name="1.0.12" status="release" pubdate="20161117121855" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="79">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1456" time="178" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.errordiffusion/jt-errordiffusion/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.errordiffusion/jt-errordiffusion/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/errordiffusion/jt-errordiffusion/1.0.12/jt-errordiffusion-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6388" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.errordiffusion/jt-errordiffusion/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/errordiffusion/jt-errordiffusion/1.0.12/jt-errordiffusion-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-errordiffusion" type="jar" ext="jar" status="successful" details="" size="18400" time="188" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.errordiffusion/jt-errordiffusion/jars/jt-errordiffusion-1.0.12.jar">
+					<artifact name="jt-errordiffusion" type="jar" ext="jar" status="no" details="" size="18400" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.errordiffusion/jt-errordiffusion/jars/jt-errordiffusion-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/errordiffusion/jt-errordiffusion/1.0.12/jt-errordiffusion-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.colorconvert" name="jt-colorconvert">
-			<revision name="1.0.12" status="release" pubdate="20161117121854" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="78">
+			<revision name="1.0.12" status="release" pubdate="20161117121854" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="78">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1109" time="187" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.colorconvert/jt-colorconvert/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.colorconvert/jt-colorconvert/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/colorconvert/jt-colorconvert/1.0.12/jt-colorconvert-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6118" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.colorconvert/jt-colorconvert/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/colorconvert/jt-colorconvert/1.0.12/jt-colorconvert-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-colorconvert" type="jar" ext="jar" status="successful" details="" size="64509" time="273" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.colorconvert/jt-colorconvert/jars/jt-colorconvert-1.0.12.jar">
+					<artifact name="jt-colorconvert" type="jar" ext="jar" status="no" details="" size="64509" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.colorconvert/jt-colorconvert/jars/jt-colorconvert-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/colorconvert/jt-colorconvert/1.0.12/jt-colorconvert-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.format" name="jt-format">
-			<revision name="1.0.12" status="release" pubdate="20161117121854" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="77">
+			<revision name="1.0.12" status="release" pubdate="20161117121854" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="77">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1275" time="195" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.format/jt-format/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.format/jt-format/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/format/jt-format/1.0.12/jt-format-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6258" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.format/jt-format/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/format/jt-format/1.0.12/jt-format-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-format" type="jar" ext="jar" status="successful" details="" size="7112" time="183" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.format/jt-format/jars/jt-format-1.0.12.jar">
+					<artifact name="jt-format" type="jar" ext="jar" status="no" details="" size="7112" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.format/jt-format/jars/jt-format-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/format/jt-format/1.0.12/jt-format-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.binarize" name="jt-binarize">
-			<revision name="1.0.12" status="release" pubdate="20161117121850" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="76">
+			<revision name="1.0.12" status="release" pubdate="20161117121850" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="76">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1117" time="187" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.binarize/jt-binarize/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.binarize/jt-binarize/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/binarize/jt-binarize/1.0.12/jt-binarize-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6106" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.binarize/jt-binarize/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/binarize/jt-binarize/1.0.12/jt-binarize-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-binarize" type="jar" ext="jar" status="successful" details="" size="14198" time="186" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.binarize/jt-binarize/jars/jt-binarize-1.0.12.jar">
+					<artifact name="jt-binarize" type="jar" ext="jar" status="no" details="" size="14198" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.binarize/jt-binarize/jars/jt-binarize-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/binarize/jt-binarize/1.0.12/jt-binarize-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.zonal" name="jt-zonal">
-			<revision name="1.0.12" status="release" pubdate="20161117121845" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="75">
+			<revision name="1.0.12" status="release" pubdate="20161117121845" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="75">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1556" time="188" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.zonal/jt-zonal/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.zonal/jt-zonal/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/zonal/jt-zonal/1.0.12/jt-zonal-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6538" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.zonal/jt-zonal/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/zonal/jt-zonal/1.0.12/jt-zonal-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-zonal" type="jar" ext="jar" status="successful" details="" size="32814" time="230" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.zonal/jt-zonal/jars/jt-zonal-1.0.12.jar">
+					<artifact name="jt-zonal" type="jar" ext="jar" status="no" details="" size="32814" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.zonal/jt-zonal/jars/jt-zonal-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/zonal/jt-zonal/1.0.12/jt-zonal-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.warp" name="jt-warp">
-			<revision name="1.0.12" status="release" pubdate="20161117121843" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="74">
+			<revision name="1.0.12" status="release" pubdate="20161117121843" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="74">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1393" time="188" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.warp/jt-warp/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.warp/jt-warp/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/warp/jt-warp/1.0.12/jt-warp-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6385" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.warp/jt-warp/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/warp/jt-warp/1.0.12/jt-warp-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-warp" type="jar" ext="jar" status="successful" details="" size="65330" time="353" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.warp/jt-warp/jars/jt-warp-1.0.12.jar">
+					<artifact name="jt-warp" type="jar" ext="jar" status="no" details="" size="65330" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.warp/jt-warp/jars/jt-warp-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/warp/jt-warp/1.0.12/jt-warp-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.rescale" name="jt-rescale">
-			<revision name="1.0.12" status="release" pubdate="20161117121846" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="71">
+			<revision name="1.0.12" status="release" pubdate="20161117121846" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="71">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1235" time="196" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.rescale/jt-rescale/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.rescale/jt-rescale/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/rescale/jt-rescale/1.0.12/jt-rescale-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6267" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.rescale/jt-rescale/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/rescale/jt-rescale/1.0.12/jt-rescale-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-rescale" type="jar" ext="jar" status="successful" details="" size="19234" time="185" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.rescale/jt-rescale/jars/jt-rescale-1.0.12.jar">
+					<artifact name="jt-rescale" type="jar" ext="jar" status="no" details="" size="19234" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.rescale/jt-rescale/jars/jt-rescale-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/rescale/jt-rescale/1.0.12/jt-rescale-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.nullop" name="jt-nullop">
-			<revision name="1.0.12" status="release" pubdate="20161117121847" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="70">
+			<revision name="1.0.12" status="release" pubdate="20161117121847" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="70">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1069" time="189" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.nullop/jt-nullop/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.nullop/jt-nullop/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/nullop/jt-nullop/1.0.12/jt-nullop-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6100" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.nullop/jt-nullop/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/nullop/jt-nullop/1.0.12/jt-nullop-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-nullop" type="jar" ext="jar" status="successful" details="" size="7019" time="184" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.nullop/jt-nullop/jars/jt-nullop-1.0.12.jar">
+					<artifact name="jt-nullop" type="jar" ext="jar" status="no" details="" size="7019" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.nullop/jt-nullop/jars/jt-nullop-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/nullop/jt-nullop/1.0.12/jt-nullop-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.crop" name="jt-crop">
-			<revision name="1.0.12" status="release" pubdate="20161117121846" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
+			<revision name="1.0.12" status="release" pubdate="20161117121846" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1403" time="190" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.crop/jt-crop/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.crop/jt-crop/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/crop/jt-crop/1.0.12/jt-crop-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6385" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.crop/jt-crop/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/crop/jt-crop/1.0.12/jt-crop-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-crop" type="jar" ext="jar" status="successful" details="" size="9841" time="405" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.crop/jt-crop/jars/jt-crop-1.0.12.jar">
+					<artifact name="jt-crop" type="jar" ext="jar" status="no" details="" size="9841" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.crop/jt-crop/jars/jt-crop-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/crop/jt-crop/1.0.12/jt-crop-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.mosaic" name="jt-mosaic">
-			<revision name="1.0.12" status="release" pubdate="20161117121844" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="68">
+			<revision name="1.0.12" status="release" pubdate="20161117121844" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="68">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1292" time="189" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.mosaic/jt-mosaic/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.mosaic/jt-mosaic/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/mosaic/jt-mosaic/1.0.12/jt-mosaic-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6258" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.mosaic/jt-mosaic/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/mosaic/jt-mosaic/1.0.12/jt-mosaic-1.0.12.pom"/>
 				<caller organisation="it.geosolutions.jaiext.crop" name="jt-crop" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-mosaic" type="jar" ext="jar" status="successful" details="" size="31234" time="236" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.mosaic/jt-mosaic/jars/jt-mosaic-1.0.12.jar">
+					<artifact name="jt-mosaic" type="jar" ext="jar" status="no" details="" size="31234" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.mosaic/jt-mosaic/jars/jt-mosaic-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/mosaic/jt-mosaic/1.0.12/jt-mosaic-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.lookup" name="jt-lookup">
-			<revision name="1.0.12" status="release" pubdate="20161117121844" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="69">
+			<revision name="1.0.12" status="release" pubdate="20161117121844" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="69">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1232" time="190" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.lookup/jt-lookup/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.lookup/jt-lookup/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/lookup/jt-lookup/1.0.12/jt-lookup-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6264" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.lookup/jt-lookup/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/lookup/jt-lookup/1.0.12/jt-lookup-1.0.12.pom"/>
 				<caller organisation="it.geosolutions.jaiext.mosaic" name="jt-mosaic" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-lookup" type="jar" ext="jar" status="successful" details="" size="39686" time="270" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.lookup/jt-lookup/jars/jt-lookup-1.0.12.jar">
+					<artifact name="jt-lookup" type="jar" ext="jar" status="no" details="" size="39686" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.lookup/jt-lookup/jars/jt-lookup-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/lookup/jt-lookup/1.0.12/jt-lookup-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.buffer" name="jt-buffer">
-			<revision name="1.0.12" status="release" pubdate="20161117121849" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
+			<revision name="1.0.12" status="release" pubdate="20161117121849" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1434" time="185" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.buffer/jt-buffer/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.buffer/jt-buffer/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/buffer/jt-buffer/1.0.12/jt-buffer-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6370" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.buffer/jt-buffer/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/buffer/jt-buffer/1.0.12/jt-buffer-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-buffer" type="jar" ext="jar" status="successful" details="" size="18965" time="791" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.buffer/jt-buffer/jars/jt-buffer-1.0.12.jar">
+					<artifact name="jt-buffer" type="jar" ext="jar" status="no" details="" size="18965" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.buffer/jt-buffer/jars/jt-buffer-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/buffer/jt-buffer/1.0.12/jt-buffer-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.stats" name="jt-stats">
-			<revision name="1.0.12" status="release" pubdate="20161117121842" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="72">
+			<revision name="1.0.12" status="release" pubdate="20161117121842" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="72">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1372" time="188" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.stats/jt-stats/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.stats/jt-stats/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/stats/jt-stats/1.0.12/jt-stats-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6400" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.stats/jt-stats/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/stats/jt-stats/1.0.12/jt-stats-1.0.12.pom"/>
 				<caller organisation="it.geosolutions.jaiext.zonal" name="jt-zonal" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-stats" type="jar" ext="jar" status="successful" details="" size="34606" time="230" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.stats/jt-stats/jars/jt-stats-1.0.12.jar">
+					<artifact name="jt-stats" type="jar" ext="jar" status="no" details="" size="34606" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.stats/jt-stats/jars/jt-stats-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/stats/jt-stats/1.0.12/jt-stats-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.border" name="jt-border">
-			<revision name="1.0.12" status="release" pubdate="20161117121842" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="65">
+			<revision name="1.0.12" status="release" pubdate="20161117121842" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="65">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1064" time="187" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.border/jt-border/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.border/jt-border/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/border/jt-border/1.0.12/jt-border-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6100" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.border/jt-border/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/border/jt-border/1.0.12/jt-border-1.0.12.pom"/>
 				<caller organisation="it.geosolutions.jaiext.warp" name="jt-warp" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<caller organisation="it.geosolutions.jaiext.format" name="jt-format" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
 				<artifacts>
-					<artifact name="jt-border" type="jar" ext="jar" status="successful" details="" size="13681" time="434" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.border/jt-border/jars/jt-border-1.0.12.jar">
+					<artifact name="jt-border" type="jar" ext="jar" status="no" details="" size="13681" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.border/jt-border/jars/jt-border-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/border/jt-border/1.0.12/jt-border-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.bandcombine" name="jt-bandcombine">
-			<revision name="1.0.12" status="release" pubdate="20161117121851" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
+			<revision name="1.0.12" status="release" pubdate="20161117121851" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1126" time="238" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.bandcombine/jt-bandcombine/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.bandcombine/jt-bandcombine/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/bandcombine/jt-bandcombine/1.0.12/jt-bandcombine-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6115" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.bandcombine/jt-bandcombine/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/bandcombine/jt-bandcombine/1.0.12/jt-bandcombine-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-bandcombine" type="jar" ext="jar" status="successful" details="" size="16051" time="238" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.bandcombine/jt-bandcombine/jars/jt-bandcombine-1.0.12.jar">
+					<artifact name="jt-bandcombine" type="jar" ext="jar" status="no" details="" size="16051" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.bandcombine/jt-bandcombine/jars/jt-bandcombine-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/bandcombine/jt-bandcombine/1.0.12/jt-bandcombine-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.bandselect" name="jt-bandselect">
-			<revision name="1.0.12" status="release" pubdate="20161117121848" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
+			<revision name="1.0.12" status="release" pubdate="20161117121848" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1076" time="190" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.bandselect/jt-bandselect/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.bandselect/jt-bandselect/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/bandselect/jt-bandselect/1.0.12/jt-bandselect-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6112" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.bandselect/jt-bandselect/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/bandselect/jt-bandselect/1.0.12/jt-bandselect-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-bandselect" type="jar" ext="jar" status="successful" details="" size="8476" time="360" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.bandselect/jt-bandselect/jars/jt-bandselect-1.0.12.jar">
+					<artifact name="jt-bandselect" type="jar" ext="jar" status="no" details="" size="8476" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.bandselect/jt-bandselect/jars/jt-bandselect-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/bandselect/jt-bandselect/1.0.12/jt-bandselect-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.bandmerge" name="jt-bandmerge">
-			<revision name="1.0.12" status="release" pubdate="20161117121848" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
+			<revision name="1.0.12" status="release" pubdate="20161117121848" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1073" time="190" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.bandmerge/jt-bandmerge/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.bandmerge/jt-bandmerge/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/bandmerge/jt-bandmerge/1.0.12/jt-bandmerge-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6109" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.bandmerge/jt-bandmerge/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/bandmerge/jt-bandmerge/1.0.12/jt-bandmerge-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-bandmerge" type="jar" ext="jar" status="successful" details="" size="33911" time="828" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.bandmerge/jt-bandmerge/jars/jt-bandmerge-1.0.12.jar">
+					<artifact name="jt-bandmerge" type="jar" ext="jar" status="no" details="" size="33911" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.bandmerge/jt-bandmerge/jars/jt-bandmerge-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/bandmerge/jt-bandmerge/1.0.12/jt-bandmerge-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.algebra" name="jt-algebra">
-			<revision name="1.0.12" status="release" pubdate="20161117121849" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
+			<revision name="1.0.12" status="release" pubdate="20161117121849" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1067" time="183" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.algebra/jt-algebra/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.algebra/jt-algebra/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/algebra/jt-algebra/1.0.12/jt-algebra-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6103" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.algebra/jt-algebra/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/algebra/jt-algebra/1.0.12/jt-algebra-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-algebra" type="jar" ext="jar" status="successful" details="" size="51352" time="237" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.algebra/jt-algebra/jars/jt-algebra-1.0.12.jar">
+					<artifact name="jt-algebra" type="jar" ext="jar" status="no" details="" size="51352" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.algebra/jt-algebra/jars/jt-algebra-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/algebra/jt-algebra/1.0.12/jt-algebra-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.affine" name="jt-affine">
-			<revision name="1.0.12" status="release" pubdate="20161117121841" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
+			<revision name="1.0.12" status="release" pubdate="20161117121841" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1392" time="196" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.affine/jt-affine/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.affine/jt-affine/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/affine/jt-affine/1.0.12/jt-affine-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6420" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.affine/jt-affine/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/affine/jt-affine/1.0.12/jt-affine-1.0.12.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-affine" type="jar" ext="jar" status="successful" details="" size="117208" time="400" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.affine/jt-affine/jars/jt-affine-1.0.12.jar">
+					<artifact name="jt-affine" type="jar" ext="jar" status="no" details="" size="117208" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.affine/jt-affine/jars/jt-affine-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/affine/jt-affine/1.0.12/jt-affine-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.scale" name="jt-scale">
-			<revision name="1.0.12" status="release" pubdate="20161117121840" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="59">
+			<revision name="1.0.12" status="release" pubdate="20161117121840" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="59">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1397" time="194" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.scale/jt-scale/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.scale/jt-scale/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/scale/jt-scale/1.0.12/jt-scale-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6425" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.scale/jt-scale/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/scale/jt-scale/1.0.12/jt-scale-1.0.12.pom"/>
 				<caller organisation="it.geosolutions.jaiext.affine" name="jt-affine" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-scale" type="jar" ext="jar" status="successful" details="" size="89348" time="375" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.scale/jt-scale/jars/jt-scale-1.0.12.jar">
+					<artifact name="jt-scale" type="jar" ext="jar" status="no" details="" size="89348" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.scale/jt-scale/jars/jt-scale-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/scale/jt-scale/1.0.12/jt-scale-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.translate" name="jt-translate">
-			<revision name="1.0.12" status="release" pubdate="20161117121839" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="60">
+			<revision name="1.0.12" status="release" pubdate="20161117121839" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="60">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1073" time="182" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.translate/jt-translate/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.translate/jt-translate/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/translate/jt-translate/1.0.12/jt-translate-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6109" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.translate/jt-translate/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/translate/jt-translate/1.0.12/jt-translate-1.0.12.pom"/>
 				<caller organisation="it.geosolutions.jaiext.scale" name="jt-scale" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-translate" type="jar" ext="jar" status="successful" details="" size="9980" time="181" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.translate/jt-translate/jars/jt-translate-1.0.12.jar">
+					<artifact name="jt-translate" type="jar" ext="jar" status="no" details="" size="9980" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.translate/jt-translate/jars/jt-translate-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/translate/jt-translate/1.0.12/jt-translate-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.utilities" name="jt-utilities">
-			<revision name="1.0.12" status="release" pubdate="20161117121837" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
+			<revision name="1.0.12" status="release" pubdate="20161117121837" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1345" time="187" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.utilities/jt-utilities/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.utilities/jt-utilities/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/utilities/jt-utilities/1.0.12/jt-utilities-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="6236" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.utilities/jt-utilities/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/utilities/jt-utilities/1.0.12/jt-utilities-1.0.12.pom"/>
 				<caller organisation="it.geosolutions.jaiext.lookup" name="jt-lookup" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<caller organisation="it.geosolutions.jaiext.bandmerge" name="jt-bandmerge" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
@@ -411,28 +423,28 @@
 				<caller organisation="it.geosolutions.jaiext.warp" name="jt-warp" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
 				<caller organisation="it.geosolutions.jaiext.rlookup" name="jt-rlookup" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
 				<artifacts>
-					<artifact name="jt-utilities" type="jar" ext="jar" status="successful" details="" size="119245" time="429" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.utilities/jt-utilities/jars/jt-utilities-1.0.12.jar">
+					<artifact name="jt-utilities" type="jar" ext="jar" status="no" details="" size="119245" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.utilities/jt-utilities/jars/jt-utilities-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/utilities/jt-utilities/1.0.12/jt-utilities-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.google.guava" name="guava">
-			<revision name="17.0" status="release" pubdate="20140422234746" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="73">
+			<revision name="17.0" status="release" pubdate="20140422234746" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="73">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="5632" time="149" location="/home/roxana/.ivy2/cache/com.google.guava/guava/ivy-17.0.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/com.google.guava/guava/ivy-17.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/17.0/guava-17.0.pom"/>
+				<metadata-artifact status="no" details="" size="5617" time="0" location="/home/roxana/.ivy2/cache/com.google.guava/guava/ivy-17.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/17.0/guava-17.0.pom"/>
 				<caller organisation="it.geosolutions.jaiext.stats" name="jt-stats" conf="compile, runtime" rev="17.0" rev-constraint-default="17.0" rev-constraint-dynamic="17.0" callerrev="1.0.12"/>
 				<artifacts>
-					<artifact name="guava" type="bundle" ext="jar" status="successful" details="" size="2243036" time="814" location="/home/roxana/.ivy2/cache/com.google.guava/guava/bundles/guava-17.0.jar">
+					<artifact name="guava" type="bundle" ext="jar" status="no" details="" size="2243036" time="0" location="/home/roxana/.ivy2/cache/com.google.guava/guava/bundles/guava-17.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/17.0/guava-17.0.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.jaiext.iterators" name="jt-iterators">
-			<revision name="1.0.12" status="release" pubdate="20161117121836" resolver="imageio" artresolver="imageio" homepage="http://maven.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
+			<revision name="1.0.12" status="release" pubdate="20161117121836" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="675" time="188" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.iterators/jt-iterators/ivy-1.0.12.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.iterators/jt-iterators/ivy-1.0.12.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/iterators/jt-iterators/1.0.12/jt-iterators-1.0.12.pom"/>
+				<metadata-artifact status="no" details="" size="5724" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.iterators/jt-iterators/ivy-1.0.12.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/jaiext/iterators/jt-iterators/1.0.12/jt-iterators-1.0.12.pom"/>
 				<caller organisation="it.geosolutions.jaiext.zonal" name="jt-zonal" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
 				<caller organisation="it.geosolutions.jaiext.rescale" name="jt-rescale" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
 				<caller organisation="it.geosolutions.jaiext.affine" name="jt-affine" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
@@ -442,28 +454,28 @@
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="16.1"/>
 				<caller organisation="it.geosolutions.jaiext.stats" name="jt-stats" conf="compile, runtime" rev="1.0.12" rev-constraint-default="1.0.12" rev-constraint-dynamic="1.0.12" callerrev="1.0.12"/>
 				<artifacts>
-					<artifact name="jt-iterators" type="jar" ext="jar" status="successful" details="" size="24169" time="292" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.iterators/jt-iterators/jars/jt-iterators-1.0.12.jar">
+					<artifact name="jt-iterators" type="jar" ext="jar" status="no" details="" size="24169" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.jaiext.iterators/jt-iterators/jars/jt-iterators-1.0.12.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/jaiext/iterators/jt-iterators/1.0.12/jt-iterators-1.0.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.jaitools" name="jt-zonalstats">
-			<revision name="1.4.0" status="release" pubdate="20150826053959" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+			<revision name="1.4.0" status="release" pubdate="20150826053959" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
 				<license name="Simplified BSD" url="http://www.opensource.org/licenses/bsd-license.php"/>
-				<metadata-artifact status="successful" details="" size="877" time="150" location="/home/roxana/.ivy2/cache/org.jaitools/jt-zonalstats/ivy-1.4.0.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/org.jaitools/jt-zonalstats/ivy-1.4.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jaitools/jt-zonalstats/1.4.0/jt-zonalstats-1.4.0.pom"/>
+				<metadata-artifact status="no" details="" size="4368" time="0" location="/home/roxana/.ivy2/cache/org.jaitools/jt-zonalstats/ivy-1.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jaitools/jt-zonalstats/1.4.0/jt-zonalstats-1.4.0.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="jt-zonalstats" type="jar" ext="jar" status="successful" details="" size="19970" time="356" location="/home/roxana/.ivy2/cache/org.jaitools/jt-zonalstats/jars/jt-zonalstats-1.4.0.jar">
+					<artifact name="jt-zonalstats" type="jar" ext="jar" status="no" details="" size="19970" time="0" location="/home/roxana/.ivy2/cache/org.jaitools/jt-zonalstats/jars/jt-zonalstats-1.4.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jaitools/jt-zonalstats/1.4.0/jt-zonalstats-1.4.0.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.jaitools" name="jt-utils">
-			<revision name="1.4.0" status="release" pubdate="20150826053121" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
+			<revision name="1.4.0" status="release" pubdate="20150826053121" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
 				<license name="Simplified BSD" url="http://www.opensource.org/licenses/bsd-license.php"/>
-				<metadata-artifact status="successful" details="" size="807" time="151" location="/home/roxana/.ivy2/cache/org.jaitools/jt-utils/ivy-1.4.0.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/org.jaitools/jt-utils/ivy-1.4.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jaitools/jt-utils/1.4.0/jt-utils-1.4.0.pom"/>
+				<metadata-artifact status="no" details="" size="4211" time="0" location="/home/roxana/.ivy2/cache/org.jaitools/jt-utils/ivy-1.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jaitools/jt-utils/1.4.0/jt-utils-1.4.0.pom"/>
 				<caller organisation="it.geosolutions.jaiext.lookup" name="jt-lookup" conf="compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.0.12"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="16.1"/>
 				<caller organisation="it.geosolutions.jaiext.bandmerge" name="jt-bandmerge" conf="compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.0.12"/>
@@ -497,7 +509,7 @@
 				<caller organisation="it.geosolutions.jaiext.warp" name="jt-warp" conf="compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.0.12"/>
 				<caller organisation="it.geosolutions.jaiext.rlookup" name="jt-rlookup" conf="compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.0.12"/>
 				<artifacts>
-					<artifact name="jt-utils" type="jar" ext="jar" status="successful" details="" size="202267" time="246" location="/home/roxana/.ivy2/cache/org.jaitools/jt-utils/jars/jt-utils-1.4.0.jar">
+					<artifact name="jt-utils" type="jar" ext="jar" status="no" details="" size="202267" time="0" location="/home/roxana/.ivy2/cache/org.jaitools/jt-utils/jars/jt-utils-1.4.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jaitools/jt-utils/1.4.0/jt-utils-1.4.0.jar"/>
 					</artifact>
 				</artifacts>
@@ -539,58 +551,58 @@
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.imageio-ext" name="imageio-ext-tiff">
-			<revision name="1.1.17" status="release" pubdate="20161209110945" resolver="imageio" artresolver="imageio" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="49">
+			<revision name="1.1.17" status="release" pubdate="20161209110945" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="49">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1156" time="236" location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-tiff/ivy-1.1.17.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-tiff/ivy-1.1.17.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/imageio-ext/imageio-ext-tiff/1.1.17/imageio-ext-tiff-1.1.17.pom"/>
+				<metadata-artifact status="no" details="" size="6786" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-tiff/ivy-1.1.17.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/imageio-ext/imageio-ext-tiff/1.1.17/imageio-ext-tiff-1.1.17.pom"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.1.17" rev-constraint-default="1.1.17" rev-constraint-dynamic="1.1.17" callerrev="16.1"/>
 				<artifacts>
-					<artifact name="imageio-ext-tiff" type="jar" ext="jar" status="successful" details="" size="338883" time="973" location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-tiff/jars/imageio-ext-tiff-1.1.17.jar">
+					<artifact name="imageio-ext-tiff" type="jar" ext="jar" status="no" details="" size="338883" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-tiff/jars/imageio-ext-tiff-1.1.17.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/imageio-ext/imageio-ext-tiff/1.1.17/imageio-ext-tiff-1.1.17.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.imageio-ext" name="imageio-ext-geocore">
-			<revision name="1.1.17" status="release" pubdate="20161209110936" resolver="imageio" artresolver="imageio" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
+			<revision name="1.1.17" status="release" pubdate="20161209110936" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1386" time="185" location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-geocore/ivy-1.1.17.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-geocore/ivy-1.1.17.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/imageio-ext/imageio-ext-geocore/1.1.17/imageio-ext-geocore-1.1.17.pom"/>
+				<metadata-artifact status="no" details="" size="6648" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-geocore/ivy-1.1.17.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/imageio-ext/imageio-ext-geocore/1.1.17/imageio-ext-geocore-1.1.17.pom"/>
 				<caller organisation="it.geosolutions.imageio-ext" name="imageio-ext-tiff" conf="compile, runtime" rev="1.1.17" rev-constraint-default="1.1.17" rev-constraint-dynamic="1.1.17" callerrev="1.1.17"/>
 				<artifacts>
-					<artifact name="imageio-ext-geocore" type="jar" ext="jar" status="successful" details="" size="26739" time="232" location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-geocore/jars/imageio-ext-geocore-1.1.17.jar">
+					<artifact name="imageio-ext-geocore" type="jar" ext="jar" status="no" details="" size="26739" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-geocore/jars/imageio-ext-geocore-1.1.17.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/imageio-ext/imageio-ext-geocore/1.1.17/imageio-ext-geocore-1.1.17.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.imageio-ext" name="imageio-ext-streams">
-			<revision name="1.1.17" status="release" pubdate="20161209110935" resolver="imageio" artresolver="imageio" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
+			<revision name="1.1.17" status="release" pubdate="20161209110935" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="1284" time="195" location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-streams/ivy-1.1.17.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-streams/ivy-1.1.17.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/imageio-ext/imageio-ext-streams/1.1.17/imageio-ext-streams-1.1.17.pom"/>
+				<metadata-artifact status="no" details="" size="6482" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-streams/ivy-1.1.17.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/imageio-ext/imageio-ext-streams/1.1.17/imageio-ext-streams-1.1.17.pom"/>
 				<caller organisation="it.geosolutions.imageio-ext" name="imageio-ext-geocore" conf="compile, runtime" rev="1.1.17" rev-constraint-default="1.1.17" rev-constraint-dynamic="1.1.17" callerrev="1.1.17"/>
 				<artifacts>
-					<artifact name="imageio-ext-streams" type="jar" ext="jar" status="successful" details="" size="52335" time="279" location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-streams/jars/imageio-ext-streams-1.1.17.jar">
+					<artifact name="imageio-ext-streams" type="jar" ext="jar" status="no" details="" size="52335" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-streams/jars/imageio-ext-streams-1.1.17.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/imageio-ext/imageio-ext-streams/1.1.17/imageio-ext-streams-1.1.17.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="it.geosolutions.imageio-ext" name="imageio-ext-utilities">
-			<revision name="1.1.17" status="release" pubdate="20161209110933" resolver="imageio" artresolver="imageio" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+			<revision name="1.1.17" status="release" pubdate="20161209110933" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
-				<metadata-artifact status="successful" details="" size="628" time="194" location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-utilities/ivy-1.1.17.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-utilities/ivy-1.1.17.xml.original" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/imageio-ext/imageio-ext-utilities/1.1.17/imageio-ext-utilities-1.1.17.pom"/>
+				<metadata-artifact status="no" details="" size="6173" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-utilities/ivy-1.1.17.xml" searched="false" origin-is-local="false" origin-location="http://maven.geo-solutions.it/it/geosolutions/imageio-ext/imageio-ext-utilities/1.1.17/imageio-ext-utilities-1.1.17.pom"/>
 				<caller organisation="it.geosolutions.imageio-ext" name="imageio-ext-geocore" conf="compile, runtime" rev="1.1.17" rev-constraint-default="1.1.17" rev-constraint-dynamic="1.1.17" callerrev="1.1.17"/>
 				<caller organisation="it.geosolutions.imageio-ext" name="imageio-ext-tiff" conf="compile, runtime" rev="1.1.17" rev-constraint-default="1.1.17" rev-constraint-dynamic="1.1.17" callerrev="1.1.17"/>
 				<caller organisation="it.geosolutions.imageio-ext" name="imageio-ext-streams" conf="compile, runtime" rev="1.1.17" rev-constraint-default="1.1.17" rev-constraint-dynamic="1.1.17" callerrev="1.1.17"/>
 				<artifacts>
-					<artifact name="imageio-ext-utilities" type="jar" ext="jar" status="successful" details="" size="40759" time="233" location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-utilities/jars/imageio-ext-utilities-1.1.17.jar">
+					<artifact name="imageio-ext-utilities" type="jar" ext="jar" status="no" details="" size="40759" time="0" location="/home/roxana/.ivy2/cache/it.geosolutions.imageio-ext/imageio-ext-utilities/jars/imageio-ext-utilities-1.1.17.jar">
 						<origin-location is-local="false" location="http://maven.geo-solutions.it/it/geosolutions/imageio-ext/imageio-ext-utilities/1.1.17/imageio-ext-utilities-1.1.17.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="javax.media" name="jai_imageio">
-			<revision name="1.1" status="release" pubdate="20081214221514" resolver="osgeo" artresolver="osgeo" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
-				<metadata-artifact status="successful" details="" size="277" time="1230" location="/home/roxana/.ivy2/cache/javax.media/jai_imageio/ivy-1.1.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/javax.media/jai_imageio/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/javax/media/jai_imageio/1.1/jai_imageio-1.1.pom"/>
+			<revision name="1.1" status="release" pubdate="20081214221514" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+				<metadata-artifact status="no" details="" size="2318" time="0" location="/home/roxana/.ivy2/cache/javax.media/jai_imageio/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/javax/media/jai_imageio/1.1/jai_imageio-1.1.pom"/>
 				<caller organisation="it.geosolutions.jaiext.lookup" name="jt-lookup" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0.12"/>
 				<caller organisation="org.geotools" name="gt-coverage" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="16.1"/>
 				<caller organisation="it.geosolutions.imageio-ext" name="imageio-ext-tiff" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1.17"/>
@@ -627,7 +639,7 @@
 				<caller organisation="it.geosolutions.imageio-ext" name="imageio-ext-streams" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1.17"/>
 				<caller organisation="it.geosolutions.jaiext.rlookup" name="jt-rlookup" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0.12"/>
 				<artifacts>
-					<artifact name="jai_imageio" type="jar" ext="jar" status="successful" details="" size="1140632" time="4609" location="/home/roxana/.ivy2/cache/javax.media/jai_imageio/jars/jai_imageio-1.1.jar">
+					<artifact name="jai_imageio" type="jar" ext="jar" status="no" details="" size="1140632" time="0" location="/home/roxana/.ivy2/cache/javax.media/jai_imageio/jars/jai_imageio-1.1.jar">
 						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/javax/media/jai_imageio/1.1/jai_imageio-1.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -637,6 +649,7 @@
 			<revision name="1.1.0" status="release" pubdate="20170623020319" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://geotrellis.github.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="38">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="4310" time="0" location="/home/roxana/.ivy2/cache/org.locationtech.geotrellis/geotrellis-raster_2.11/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/locationtech/geotrellis/geotrellis-raster_2.11/1.1.0/geotrellis-raster_2.11-1.1.0.pom"/>
+				<caller organisation="org.locationtech.geotrellis" name="geotrellis-shapefile_2.11" conf="default, compile, runtime, master" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.1.0"/>
 				<caller organisation="default" name="deeplearning_2.11" conf="compile-internal, compile, provided, optional" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="0.1-SNAPSHOT"/>
 				<caller organisation="org.locationtech.geotrellis" name="geotrellis-geotools_2.11" conf="default, compile, runtime, master" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.1.0"/>
 				<artifacts>
@@ -826,9 +839,10 @@
 			</revision>
 		</module>
 		<module organisation="org.geotools" name="gt-shapefile">
-			<revision name="16.1" status="release" pubdate="20161219234400" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="35">
+			<revision name="16.1" status="release" pubdate="20161219234400" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="35">
 				<license name="Lesser General Public License (LGPL)" url="http://www.gnu.org/copyleft/lesser.txt"/>
 				<metadata-artifact status="no" details="" size="28805" time="0" location="/home/roxana/.ivy2/cache/org.geotools/gt-shapefile/ivy-16.1.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.pom"/>
+				<caller organisation="org.locationtech.geotrellis" name="geotrellis-shapefile_2.11" conf="default, compile, runtime, master" rev="16.1" rev-constraint-default="16.1" rev-constraint-dynamic="16.1" callerrev="1.1.0"/>
 				<caller organisation="default" name="deeplearning_2.11" conf="compile-internal, compile, provided, optional" rev="16.1" rev-constraint-default="16.1" rev-constraint-dynamic="16.1" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="gt-shapefile" type="jar" ext="jar" status="no" details="" size="219400" time="0" location="/home/roxana/.ivy2/cache/org.geotools/gt-shapefile/jars/gt-shapefile-16.1.jar">
@@ -1032,6 +1046,7 @@
 				<caller organisation="it.geosolutions.jaiext.colorindexer" name="jt-colorindexer" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.0.12"/>
 				<caller organisation="it.geosolutions.jaiext.binarize" name="jt-binarize" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.0.12"/>
 				<caller organisation="it.geosolutions.jaiext.nullop" name="jt-nullop" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.0.12"/>
+				<caller organisation="org.locationtech.geotrellis" name="geotrellis-shapefile_2.11" conf="default, compile, runtime, master" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.1.0"/>
 				<caller organisation="org.geotools" name="gt-data" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="16.1"/>
 				<caller organisation="it.geosolutions.jaiext.bandcombine" name="jt-bandcombine" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.0.12"/>
 				<caller organisation="it.geosolutions.jaiext.warp" name="jt-warp" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.0.12"/>
@@ -1047,8 +1062,8 @@
 			</revision>
 		</module>
 		<module organisation="javax.media" name="jai_codec">
-			<revision name="1.1.3" status="release" pubdate="20081214221458" resolver="osgeo" artresolver="osgeo" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
-				<metadata-artifact status="successful" details="" size="277" time="1226" location="/home/roxana/.ivy2/cache/javax.media/jai_codec/ivy-1.1.3.xml" searched="true" original-local-location="/home/roxana/.ivy2/cache/javax.media/jai_codec/ivy-1.1.3.xml.original" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/javax/media/jai_codec/1.1.3/jai_codec-1.1.3.pom"/>
+			<revision name="1.1.3" status="release" pubdate="20081214221458" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
+				<metadata-artifact status="no" details="" size="2316" time="0" location="/home/roxana/.ivy2/cache/javax.media/jai_codec/ivy-1.1.3.xml" searched="false" origin-is-local="false" origin-location="http://download.osgeo.org/webdav/geotools/javax/media/jai_codec/1.1.3/jai_codec-1.1.3.pom"/>
 				<caller organisation="it.geosolutions.jaiext.lookup" name="jt-lookup" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.0.12"/>
 				<caller organisation="it.geosolutions.imageio-ext" name="imageio-ext-tiff" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.1.17"/>
 				<caller organisation="it.geosolutions.jaiext.bandmerge" name="jt-bandmerge" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.0.12"/>
@@ -1084,7 +1099,7 @@
 				<caller organisation="it.geosolutions.imageio-ext" name="imageio-ext-streams" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.1.17"/>
 				<caller organisation="it.geosolutions.jaiext.rlookup" name="jt-rlookup" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.3" callerrev="1.0.12"/>
 				<artifacts>
-					<artifact name="jai_codec" type="jar" ext="jar" status="successful" details="" size="258160" time="2998" location="/home/roxana/.ivy2/cache/javax.media/jai_codec/jars/jai_codec-1.1.3.jar">
+					<artifact name="jai_codec" type="jar" ext="jar" status="no" details="" size="258160" time="0" location="/home/roxana/.ivy2/cache/javax.media/jai_codec/jars/jai_codec-1.1.3.jar">
 						<origin-location is-local="false" location="http://download.osgeo.org/webdav/geotools/javax/media/jai_codec/1.1.3/jai_codec-1.1.3.jar"/>
 					</artifact>
 				</artifacts>
@@ -1511,6 +1526,7 @@
 				<caller organisation="org.scala-lang" name="scala-swing" conf="default, compile, runtime, master" rev="2.11.10" rev-constraint-default="2.11.10" rev-constraint-dynamic="2.11.10" callerrev="2.10.2"/>
 				<caller organisation="org.locationtech.geotrellis" name="geotrellis-raster_2.11" conf="default, compile, runtime, master" rev="2.11.10" rev-constraint-default="2.11.10" rev-constraint-dynamic="2.11.10" callerrev="1.0.0"/>
 				<caller organisation="org.typelevel" name="macro-compat_2.11" conf="compile, runtime" rev="2.11.10" rev-constraint-default="2.11.10" rev-constraint-dynamic="2.11.10" callerrev="1.1.1"/>
+				<caller organisation="org.locationtech.geotrellis" name="geotrellis-shapefile_2.11" conf="default, compile, runtime, master" rev="2.11.10" rev-constraint-default="2.11.10" rev-constraint-dynamic="2.11.10" callerrev="1.1.0"/>
 				<caller organisation="default" name="deeplearning_2.11" conf="compile-internal, compile, provided, optional" rev="2.11.10" rev-constraint-default="2.11.10" rev-constraint-dynamic="2.11.10" callerrev="0.1-SNAPSHOT"/>
 				<caller organisation="com.typesafe.scala-logging" name="scala-logging_2.11" conf="compile, runtime" rev="2.11.10" rev-constraint-default="2.11.10" rev-constraint-dynamic="2.11.10" callerrev="3.5.0"/>
 				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.10" rev-constraint-default="2.11.10" rev-constraint-dynamic="2.11.10" callerrev="1.0.6"/>
