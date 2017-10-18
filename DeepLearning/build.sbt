@@ -10,7 +10,12 @@ libraryDependencies ++= Seq(
  "org.gdal" % "gdal" % "2.1.0" pomOnly(),
 //"com.azavea.geotrellis" % "geotrellis-vector_2.11" % "1.0.0-RC1"
 
-"com.azavea.geotrellis" % "geotrellis-vector_2.10" % "0.10.3"
+//"com.azavea.geotrellis" % "geotrellis-geotools_2.10" % "0.10.0-M1",
+"com.azavea.geotrellis" % "geotrellis-vector_2.10" % "0.10.3",
+//"org.geotools" % "gt2-shapefile" % "2.4.5",
+"org.geotools" % "gt-shapefile" % "17.2"
+//"org.geotools" % "gt-shapefile" % "18.0"
+
 )
 
 unmanagedJars in Compile += Attributed.blank(file("/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar"))

@@ -817,21 +817,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/com.azavea.geotrellis/geotrellis-vector_2.10/0.10.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-vector_2.10/0.10.3/geotrellis-vector_2.10-0.10.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-vector_2.10/0.10.3/geotrellis-vector_2.10-0.10.3.pom (0.10.3)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-vector_2.10/0.10.3/geotrellis-vector_2.10-0.10.3.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-vector_2.10/0.10.3/geotrellis-vector_2.10-0.10.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-vector_2.10/0.10.3/geotrellis-vector_2.10-0.10.3.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-vector_2.10/0.10.3/geotrellis-vector_2.10-0.10.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3!geotrellis-vector_2.10.pom(pom.original) (241ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/com.azavea.geotrellis/geotrellis-vector_2.10/0.10.3/jars/geotrellis-vector_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-vector_2.10/0.10.3/geotrellis-vector_2.10-0.10.3.jar[0m
-[0m[[0mdebug[0m] [0m	found com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3[0m
+[0m[[0mdebug[0m] [0m	found com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -859,21 +846,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving com.azavea.geotrellis#geotrellis-proj4_2.10;0.10.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.azavea.geotrellis#geotrellis-proj4_2.10;0.10.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving com.azavea.geotrellis#geotrellis-proj4_2.10;0.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.azavea.geotrellis#geotrellis-proj4_2.10;0.10.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/com.azavea.geotrellis/geotrellis-proj4_2.10/0.10.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.azavea.geotrellis#geotrellis-proj4_2.10;0.10.3[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-proj4_2.10/0.10.3/geotrellis-proj4_2.10-0.10.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.azavea.geotrellis#geotrellis-proj4_2.10;0.10.3[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-proj4_2.10/0.10.3/geotrellis-proj4_2.10-0.10.3.pom (0.10.3)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-proj4_2.10/0.10.3/geotrellis-proj4_2.10-0.10.3.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-proj4_2.10/0.10.3/geotrellis-proj4_2.10-0.10.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-proj4_2.10/0.10.3/geotrellis-proj4_2.10-0.10.3.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-proj4_2.10/0.10.3/geotrellis-proj4_2.10-0.10.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.azavea.geotrellis#geotrellis-proj4_2.10;0.10.3!geotrellis-proj4_2.10.pom(pom.original) (235ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/com.azavea.geotrellis/geotrellis-proj4_2.10/0.10.3/jars/geotrellis-proj4_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-proj4_2.10/0.10.3/geotrellis-proj4_2.10-0.10.3.jar[0m
-[0m[[0mdebug[0m] [0m	found com.azavea.geotrellis#geotrellis-proj4_2.10;0.10.3 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.azavea.geotrellis#geotrellis-proj4_2.10;0.10.3[0m
+[0m[[0mdebug[0m] [0m	found com.azavea.geotrellis#geotrellis-proj4_2.10;0.10.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3->com.azavea.geotrellis#geotrellis-proj4_2.10;0.10.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -951,21 +925,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving com.azavea.geotrellis#geotrellis-util_2.10;0.10.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.azavea.geotrellis#geotrellis-util_2.10;0.10.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving com.azavea.geotrellis#geotrellis-util_2.10;0.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.azavea.geotrellis#geotrellis-util_2.10;0.10.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/com.azavea.geotrellis/geotrellis-util_2.10/0.10.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.azavea.geotrellis#geotrellis-util_2.10;0.10.3[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-util_2.10/0.10.3/geotrellis-util_2.10-0.10.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.azavea.geotrellis#geotrellis-util_2.10;0.10.3[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-util_2.10/0.10.3/geotrellis-util_2.10-0.10.3.pom (0.10.3)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-util_2.10/0.10.3/geotrellis-util_2.10-0.10.3.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-util_2.10/0.10.3/geotrellis-util_2.10-0.10.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-util_2.10/0.10.3/geotrellis-util_2.10-0.10.3.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-util_2.10/0.10.3/geotrellis-util_2.10-0.10.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.azavea.geotrellis#geotrellis-util_2.10;0.10.3!geotrellis-util_2.10.pom(pom.original) (239ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/com.azavea.geotrellis/geotrellis-util_2.10/0.10.3/jars/geotrellis-util_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-util_2.10/0.10.3/geotrellis-util_2.10-0.10.3.jar[0m
-[0m[[0mdebug[0m] [0m	found com.azavea.geotrellis#geotrellis-util_2.10;0.10.3 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.azavea.geotrellis#geotrellis-util_2.10;0.10.3[0m
+[0m[[0mdebug[0m] [0m	found com.azavea.geotrellis#geotrellis-util_2.10;0.10.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3->com.azavea.geotrellis#geotrellis-util_2.10;0.10.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -1014,21 +975,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving io.spray#spray-json_2.10;1.3.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.spray#spray-json_2.10;1.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving io.spray#spray-json_2.10;1.3.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: io.spray#spray-json_2.10;1.3.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/io.spray/spray-json_2.10/1.3.2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for io.spray#spray-json_2.10;1.3.2[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.3.2/spray-json_2.10-1.3.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for io.spray#spray-json_2.10;1.3.2[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.3.2/spray-json_2.10-1.3.2.pom (1.3.2)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.3.2/spray-json_2.10-1.3.2.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.3.2/spray-json_2.10-1.3.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.3.2/spray-json_2.10-1.3.2.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.3.2/spray-json_2.10-1.3.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] io.spray#spray-json_2.10;1.3.2!spray-json_2.10.pom(pom.original) (153ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/io.spray/spray-json_2.10/1.3.2/bundles/spray-json_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.3.2/spray-json_2.10-1.3.2.jar[0m
-[0m[[0mdebug[0m] [0m	found io.spray#spray-json_2.10;1.3.2 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.spray#spray-json_2.10;1.3.2[0m
+[0m[[0mdebug[0m] [0m	found io.spray#spray-json_2.10;1.3.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3->io.spray#spray-json_2.10;1.3.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -1074,21 +1022,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0minfo[0m] [0mResolving org.spire-math#spire_2.10;0.11.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.spire-math#spire_2.10;0.11.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving org.spire-math#spire_2.10;0.11.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.spire-math#spire_2.10;0.11.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.spire-math/spire_2.10/0.11.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.spire-math#spire_2.10;0.11.0[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/spire-math/spire_2.10/0.11.0/spire_2.10-0.11.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.spire-math#spire_2.10;0.11.0[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/spire-math/spire_2.10/0.11.0/spire_2.10-0.11.0.pom (0.11.0)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/spire-math/spire_2.10/0.11.0/spire_2.10-0.11.0.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/spire-math/spire_2.10/0.11.0/spire_2.10-0.11.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/spire-math/spire_2.10/0.11.0/spire_2.10-0.11.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/spire-math/spire_2.10/0.11.0/spire_2.10-0.11.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.spire-math#spire_2.10;0.11.0!spire_2.10.pom(pom.original) (254ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.spire-math/spire_2.10/0.11.0/jars/spire_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/spire-math/spire_2.10/0.11.0/spire_2.10-0.11.0.jar[0m
-[0m[[0mdebug[0m] [0m	found org.spire-math#spire_2.10;0.11.0 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.spire-math#spire_2.10;0.11.0[0m
+[0m[[0mdebug[0m] [0m	found org.spire-math#spire_2.10;0.11.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.2 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.11.10 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3->org.spire-math#spire_2.10;0.11.0 [compile->compile(*)][0m
@@ -1131,21 +1066,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0minfo[0m] [0mResolving org.spire-math#spire-macros_2.10;0.11.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.spire-math#spire-macros_2.10;0.11.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving org.spire-math#spire-macros_2.10;0.11.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.spire-math#spire-macros_2.10;0.11.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.spire-math/spire-macros_2.10/0.11.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.spire-math#spire-macros_2.10;0.11.0[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/spire-math/spire-macros_2.10/0.11.0/spire-macros_2.10-0.11.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.spire-math#spire-macros_2.10;0.11.0[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/spire-math/spire-macros_2.10/0.11.0/spire-macros_2.10-0.11.0.pom (0.11.0)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/spire-math/spire-macros_2.10/0.11.0/spire-macros_2.10-0.11.0.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/spire-math/spire-macros_2.10/0.11.0/spire-macros_2.10-0.11.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/spire-math/spire-macros_2.10/0.11.0/spire-macros_2.10-0.11.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/spire-math/spire-macros_2.10/0.11.0/spire-macros_2.10-0.11.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.spire-math#spire-macros_2.10;0.11.0!spire-macros_2.10.pom(pom.original) (143ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.spire-math/spire-macros_2.10/0.11.0/jars/spire-macros_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/spire-math/spire-macros_2.10/0.11.0/spire-macros_2.10-0.11.0.jar[0m
-[0m[[0mdebug[0m] [0m	found org.spire-math#spire-macros_2.10;0.11.0 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.spire-math#spire-macros_2.10;0.11.0[0m
+[0m[[0mdebug[0m] [0m	found org.spire-math#spire-macros_2.10;0.11.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.2 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.11.10 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.spire-math#spire_2.10;0.11.0->org.spire-math#spire-macros_2.10;0.11.0 [compile->compile(*)][0m
@@ -1200,21 +1122,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0minfo[0m] [0mResolving org.typelevel#machinist_2.10;0.4.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.typelevel#machinist_2.10;0.4.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving org.typelevel#machinist_2.10;0.4.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.typelevel#machinist_2.10;0.4.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.typelevel/machinist_2.10/0.4.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.typelevel#machinist_2.10;0.4.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/typelevel/machinist_2.10/0.4.1/machinist_2.10-0.4.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.typelevel#machinist_2.10;0.4.1[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/typelevel/machinist_2.10/0.4.1/machinist_2.10-0.4.1.pom (0.4.1)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/typelevel/machinist_2.10/0.4.1/machinist_2.10-0.4.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/typelevel/machinist_2.10/0.4.1/machinist_2.10-0.4.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/typelevel/machinist_2.10/0.4.1/machinist_2.10-0.4.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/typelevel/machinist_2.10/0.4.1/machinist_2.10-0.4.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.typelevel#machinist_2.10;0.4.1!machinist_2.10.pom(pom.original) (151ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.typelevel/machinist_2.10/0.4.1/jars/machinist_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/typelevel/machinist_2.10/0.4.1/machinist_2.10-0.4.1.jar[0m
-[0m[[0mdebug[0m] [0m	found org.typelevel#machinist_2.10;0.4.1 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.typelevel#machinist_2.10;0.4.1[0m
+[0m[[0mdebug[0m] [0m	found org.typelevel#machinist_2.10;0.4.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -1385,6 +1294,58 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt2-shapefile;2.4.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving org.geotools#gt2-shapefile;2.4.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#gt2-shapefile;2.4.5 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving org.geotools#gt2-shapefile;2.4.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.geotools#gt2-shapefile;2.4.5 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt2-shapefile/2.4.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.geotools#gt2-shapefile;2.4.5[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt2-shapefile/2.4.5/gt2-shapefile-2.4.5.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt2-shapefile/2.4.5/gt2-shapefile-2.4.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for org.geotools#gt2-shapefile;2.4.5[0m
+[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt2-shapefile/2.4.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local-preloaded-ivy: no ivy file found for org.geotools#gt2-shapefile;2.4.5[0m
+[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt2-shapefile/2.4.5/gt2-shapefile-2.4.5.pom[0m
+[0m[[0mdebug[0m] [0m	local-preloaded: no ivy file found for org.geotools#gt2-shapefile;2.4.5[0m
+[0m[[33mwarn[0m] [0m	module not found: org.geotools#gt2-shapefile;2.4.5[0m
+[0m[[33mwarn[0m] [0m==== local: tried[0m
+[0m[[33mwarn[0m] [0m  /home/roxana/.ivy2/local/org.geotools/gt2-shapefile/2.4.5/ivys/ivy.xml[0m
+[0m[[33mwarn[0m] [0m==== public: tried[0m
+[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/org/geotools/gt2-shapefile/2.4.5/gt2-shapefile-2.4.5.pom[0m
+[0m[[33mwarn[0m] [0m==== local-preloaded-ivy: tried[0m
+[0m[[33mwarn[0m] [0m  /home/roxana/.sbt/preloaded/org.geotools/gt2-shapefile/2.4.5/ivys/ivy.xml[0m
+[0m[[33mwarn[0m] [0m==== local-preloaded: tried[0m
+[0m[[33mwarn[0m] [0m  file:////home/roxana/.sbt/preloaded/org/geotools/gt2-shapefile/2.4.5/gt2-shapefile-2.4.5.pom[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;18.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving org.geotools#gt-shapefile;18.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#gt-shapefile;18.0 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving org.geotools#gt-shapefile;18.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.geotools#gt-shapefile;18.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-shapefile/18.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.geotools#gt-shapefile;18.0[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-shapefile/18.0/gt-shapefile-18.0.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-shapefile/18.0/gt-shapefile-18.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for org.geotools#gt-shapefile;18.0[0m
+[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-shapefile/18.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local-preloaded-ivy: no ivy file found for org.geotools#gt-shapefile;18.0[0m
+[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-shapefile/18.0/gt-shapefile-18.0.pom[0m
+[0m[[0mdebug[0m] [0m	local-preloaded: no ivy file found for org.geotools#gt-shapefile;18.0[0m
+[0m[[33mwarn[0m] [0m	module not found: org.geotools#gt-shapefile;18.0[0m
+[0m[[33mwarn[0m] [0m==== local: tried[0m
+[0m[[33mwarn[0m] [0m  /home/roxana/.ivy2/local/org.geotools/gt-shapefile/18.0/ivys/ivy.xml[0m
+[0m[[33mwarn[0m] [0m==== public: tried[0m
+[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/org/geotools/gt-shapefile/18.0/gt-shapefile-18.0.pom[0m
+[0m[[33mwarn[0m] [0m==== local-preloaded-ivy: tried[0m
+[0m[[33mwarn[0m] [0m  /home/roxana/.sbt/preloaded/org.geotools/gt-shapefile/18.0/ivys/ivy.xml[0m
+[0m[[33mwarn[0m] [0m==== local-preloaded: tried[0m
+[0m[[33mwarn[0m] [0m  file:////home/roxana/.sbt/preloaded/org/geotools/gt-shapefile/18.0/gt-shapefile-18.0.pom[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [compile][0m
@@ -2512,6 +2473,20 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt2-shapefile;2.4.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;18.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [runtime][0m
@@ -3721,6 +3696,26 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt2-shapefile;2.4.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;18.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
@@ -5014,6 +5009,32 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt2-shapefile;2.4.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;18.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
@@ -6306,6 +6327,32 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt2-shapefile;2.4.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;18.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [test-internal][0m
@@ -7760,6 +7807,44 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt2-shapefile;2.4.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;18.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
@@ -7957,12 +8042,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-swing;2.10.2!scala-swing.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.azavea.geotrellis#geotrellis-gdal_2.10;0.10.0-M1!geotrellis-gdal_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.gdal#gdal;2.1.0!gdal.pom[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-vector_2.10/0.10.3/geotrellis-vector_2.10-0.10.3.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-vector_2.10/0.10.3/geotrellis-vector_2.10-0.10.3.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-vector_2.10/0.10.3/geotrellis-vector_2.10-0.10.3.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-vector_2.10/0.10.3/geotrellis-vector_2.10-0.10.3.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-vector_2.10/0.10.3/geotrellis-vector_2.10-0.10.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3!geotrellis-vector_2.10.jar (665ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.azavea.geotrellis#geotrellis-vector_2.10;0.10.3!geotrellis-vector_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.10!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.azavea.geotrellis#geotrellis-raster_2.10;0.10.0-M1!geotrellis-raster_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.scopt#scopt_2.10;3.2.0!scopt_2.10.jar[0m
@@ -7974,51 +8054,27 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.sf.opencsv#opencsv;2.3!opencsv.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalamacros#quasiquotes_2.10;2.0.1!quasiquotes_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalaz#scalaz-core_2.10;7.1.0!scalaz-core_2.10.jar(bundle)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-proj4_2.10/0.10.3/geotrellis-proj4_2.10-0.10.3.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-proj4_2.10/0.10.3/geotrellis-proj4_2.10-0.10.3.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-proj4_2.10/0.10.3/geotrellis-proj4_2.10-0.10.3.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-proj4_2.10/0.10.3/geotrellis-proj4_2.10-0.10.3.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-proj4_2.10/0.10.3/geotrellis-proj4_2.10-0.10.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.azavea.geotrellis#geotrellis-proj4_2.10;0.10.3!geotrellis-proj4_2.10.jar (572ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-util_2.10/0.10.3/geotrellis-util_2.10-0.10.3.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-util_2.10/0.10.3/geotrellis-util_2.10-0.10.3.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-util_2.10/0.10.3/geotrellis-util_2.10-0.10.3.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-util_2.10/0.10.3/geotrellis-util_2.10-0.10.3.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/azavea/geotrellis/geotrellis-util_2.10/0.10.3/geotrellis-util_2.10-0.10.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.azavea.geotrellis#geotrellis-util_2.10;0.10.3!geotrellis-util_2.10.jar (255ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.azavea.geotrellis#geotrellis-proj4_2.10;0.10.3!geotrellis-proj4_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.azavea.geotrellis#geotrellis-util_2.10;0.10.3!geotrellis-util_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.vividsolutions#jts-core;1.14.0!jts-core.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.3.2/spray-json_2.10-1.3.2.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.3.2/spray-json_2.10-1.3.2.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.3.2/spray-json_2.10-1.3.2.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.3.2/spray-json_2.10-1.3.2.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.3.2/spray-json_2.10-1.3.2.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.spray#spray-json_2.10;1.3.2!spray-json_2.10.jar(bundle) (189ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.spray#spray-json_2.10;1.3.2!spray-json_2.10.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-math3;3.6!commons-math3.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/spire-math/spire_2.10/0.11.0/spire_2.10-0.11.0.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/spire-math/spire_2.10/0.11.0/spire_2.10-0.11.0.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/spire-math/spire_2.10/0.11.0/spire_2.10-0.11.0.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/spire-math/spire_2.10/0.11.0/spire_2.10-0.11.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/spire-math/spire_2.10/0.11.0/spire_2.10-0.11.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.spire-math#spire_2.10;0.11.0!spire_2.10.jar (1390ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.spire-math#spire_2.10;0.11.0!spire_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.opencsv#opencsv;3.7!opencsv.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.3.2!commons-lang3.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/spire-math/spire-macros_2.10/0.11.0/spire-macros_2.10-0.11.0.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/spire-math/spire-macros_2.10/0.11.0/spire-macros_2.10-0.11.0.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/spire-math/spire-macros_2.10/0.11.0/spire-macros_2.10-0.11.0.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/spire-math/spire-macros_2.10/0.11.0/spire-macros_2.10-0.11.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/spire-math/spire-macros_2.10/0.11.0/spire-macros_2.10-0.11.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.spire-math#spire-macros_2.10;0.11.0!spire-macros_2.10.jar (243ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/typelevel/machinist_2.10/0.4.1/machinist_2.10-0.4.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/typelevel/machinist_2.10/0.4.1/machinist_2.10-0.4.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/typelevel/machinist_2.10/0.4.1/machinist_2.10-0.4.1.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/typelevel/machinist_2.10/0.4.1/machinist_2.10-0.4.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/typelevel/machinist_2.10/0.4.1/machinist_2.10-0.4.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.typelevel#machinist_2.10;0.4.1!machinist_2.10.jar (165ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.spire-math#spire-macros_2.10;0.11.0!spire-macros_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.typelevel#machinist_2.10;0.4.1!machinist_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.10!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.5!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.14.3!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 5648ms :: artifacts dl 3499ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1182ms :: artifacts dl 17ms[0m
+[0m[[33mwarn[0m] [0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[33mwarn[0m] [0m	::          UNRESOLVED DEPENDENCIES         ::[0m
+[0m[[33mwarn[0m] [0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[33mwarn[0m] [0m	:: org.geotools#gt2-shapefile;2.4.5: not found[0m
+[0m[[33mwarn[0m] [0m	:: org.geotools#gt-shapefile;18.0: not found[0m
+[0m[[33mwarn[0m] [0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT compile produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT runtime produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT test produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-test.xml[0m
@@ -8032,10 +8088,64 @@
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT docs produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT pom produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT scala-tool produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (5648ms resolve - 3499ms download)[0m
-[0m[[0minfo[0m] [0mDone updating.[0m
-[0m[[33mwarn[0m] [0mThere may be incompatibilities among your library dependencies.[0m
-[0m[[33mwarn[0m] [0mHere are some of the libraries that were evicted:[0m
-[0m[[33mwarn[0m] [0m	* com.azavea.geotrellis:geotrellis-vector_2.10:0.10.0-M1 -> 0.10.3[0m
-[0m[[33mwarn[0m] [0m	* org.gdal:gdal:1.10.1 -> 2.1.0[0m
-[0m[[33mwarn[0m] [0mRun 'evicted' to see detailed eviction warnings[0m
+[0m[[0mdebug[0m] [0m	resolve done (1182ms resolve - 17ms download)[0m
+[0m[[33mwarn[0m] [0m[0m
+[0m[[33mwarn[0m] [0m	Note: Unresolved dependencies path:[0m
+[0m[[33mwarn[0m] [0m		org.geotools:gt2-shapefile:2.4.5 (/home/roxana/Private/multivariate_analyses/DeepLearning/build.sbt#L5-20)[0m
+[0m[[33mwarn[0m] [0m		  +- default:deeplearning_2.11:0.1-SNAPSHOT[0m
+[0m[[33mwarn[0m] [0m		org.geotools:gt-shapefile:18.0 (/home/roxana/Private/multivariate_analyses/DeepLearning/build.sbt#L5-20)[0m
+[0m[[33mwarn[0m] [0m		  +- default:deeplearning_2.11:0.1-SNAPSHOT[0m
+sbt.ResolveException: unresolved dependency: org.geotools#gt2-shapefile;2.4.5: not found
+unresolved dependency: org.geotools#gt-shapefile;18.0: not found
+	at sbt.IvyActions$.sbt$IvyActions$$resolve(IvyActions.scala:313)
+	at sbt.IvyActions$$anonfun$updateEither$1.apply(IvyActions.scala:191)
+	at sbt.IvyActions$$anonfun$updateEither$1.apply(IvyActions.scala:168)
+	at sbt.IvySbt$Module$$anonfun$withModule$1.apply(Ivy.scala:156)
+	at sbt.IvySbt$Module$$anonfun$withModule$1.apply(Ivy.scala:156)
+	at sbt.IvySbt$$anonfun$withIvy$1.apply(Ivy.scala:133)
+	at sbt.IvySbt.sbt$IvySbt$$action$1(Ivy.scala:57)
+	at sbt.IvySbt$$anon$4.call(Ivy.scala:65)
+	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:93)
+	at xsbt.boot.Locks$GlobalLock.xsbt$boot$Locks$GlobalLock$$withChannelRetries$1(Locks.scala:78)
+	at xsbt.boot.Locks$GlobalLock$$anonfun$withFileLock$1.apply(Locks.scala:97)
+	at xsbt.boot.Using$.withResource(Using.scala:10)
+	at xsbt.boot.Using$.apply(Using.scala:9)
+	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:58)
+	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:48)
+	at xsbt.boot.Locks$.apply0(Locks.scala:31)
+	at xsbt.boot.Locks$.apply(Locks.scala:28)
+	at sbt.IvySbt.withDefaultLogger(Ivy.scala:65)
+	at sbt.IvySbt.withIvy(Ivy.scala:128)
+	at sbt.IvySbt.withIvy(Ivy.scala:125)
+	at sbt.IvySbt$Module.withModule(Ivy.scala:156)
+	at sbt.IvyActions$.updateEither(IvyActions.scala:168)
+	at sbt.Classpaths$$anonfun$sbt$Classpaths$$work$1$1.apply(Defaults.scala:1488)
+	at sbt.Classpaths$$anonfun$sbt$Classpaths$$work$1$1.apply(Defaults.scala:1484)
+	at sbt.Classpaths$$anonfun$doWork$1$1$$anonfun$121.apply(Defaults.scala:1519)
+	at sbt.Classpaths$$anonfun$doWork$1$1$$anonfun$121.apply(Defaults.scala:1517)
+	at sbt.Tracked$$anonfun$lastOutput$1.apply(Tracked.scala:37)
+	at sbt.Classpaths$$anonfun$doWork$1$1.apply(Defaults.scala:1522)
+	at sbt.Classpaths$$anonfun$doWork$1$1.apply(Defaults.scala:1516)
+	at sbt.Tracked$$anonfun$inputChanged$1.apply(Tracked.scala:60)
+	at sbt.Classpaths$.cachedUpdate(Defaults.scala:1539)
+	at sbt.Classpaths$$anonfun$updateTask$1.apply(Defaults.scala:1466)
+	at sbt.Classpaths$$anonfun$updateTask$1.apply(Defaults.scala:1418)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:237)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[0m[[31merror[0m] [0m(*:[31mupdate[0m) sbt.ResolveException: unresolved dependency: org.geotools#gt2-shapefile;2.4.5: not found[0m
+[0m[[31merror[0m] [0munresolved dependency: org.geotools#gt-shapefile;18.0: not found[0m
