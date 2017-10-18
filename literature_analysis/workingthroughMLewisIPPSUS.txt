@@ -3304,9 +3304,14 @@ import scalafx.Includes._
 import scalafx.event.ActionEvent
 
 button.onAction = (e: ActionEvent) => {
-	println ("Button clicked.")
+	val selected = listView.selectionModel.apply.getSelectedItems 
+	listView.items = listView.items.apply.diff(selected)	
 }
 
+
+comboBox.onAction = (e: ActionEvent) => {
+	listView.items.apply += comboBox.selectionModel.apply.getSelectedIdem
+}
 
 
 in REPL:
@@ -3361,6 +3366,48 @@ Button clicked
 scala> 
 
 _______
+
+Text Controls 
+
+- label, textfield, textarea, password field
+ 
+import scalafx.Includes._
+import scalafx.application.JFXApp
+import scalafx.scene.Scene
+import scalafx.scene.control.{Label, TextField, TextArea, PasswordField}
+
+
+val app = new JFXApp {
+	stage = new JFXApp.PrimaryStage {
+		title = "new fields"
+		scene = new Scene(400, 400) {
+			val label = new Label("my label")
+			label.layoutX = 20
+			label.layoutY = 20
+
+			val textField = new TextField
+			textField.layoutX = 20
+			textField.layoutY = 50
+
+			val textArea = new TextArea
+			textArea.layoutX = 20
+			textArea.layoutY = 80
+			textArea.prefHeight = 200
+
+			val passwordField = new PasswordField
+			passwordField.layoutX = 20
+			passwordField.layoutY = 230
+
+			content = List (label, textField, textArea, passwordField)
+			}
+	}
+}
+
+
+
+
+
+
 
 
 
