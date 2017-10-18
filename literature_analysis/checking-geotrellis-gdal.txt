@@ -1,0 +1,168 @@
+Checking the geotrellis-gdal package
+
+SBT Maven coordinates:
+"com.azavea.geotrellis" % "geotrellis-gdal_2.10" % "0.10.0-M1"
+ "org.gdal" % "gdal" % "2.1.0" pomOnly()
+
+
+REPL:
+
+
+scala> import geotrellis._
+import geotrellis._
+
+scala> geotrellis.
+gdal   macros   proj4   raster   vector
+
+scala> geotrellis.gdal.
+Gdal              GroundControlPoint   TypeCFloat64   TypeInt32     
+GdalDataType      RasterBand           TypeCInt16     TypeUInt16    
+GdalException     RasterColor          TypeCInt32     TypeUInt32    
+GdalInfo          RasterDataSet        TypeFloat32    TypeUnknown   
+GdalInfoOptions   TypeByte             TypeFloat64                  
+GdalReader        TypeCFloat32         TypeInt16                    
+
+scala> geotrellis.vector.
+AtLeastOneDimension                                 
+AtMostOneDimension                                  
+AtMostOneDimensionPolygonSymDifferenceResult        
+AtMostOneDimensionPolygonUnionResult                
+Circular                                            
+Dimensions                                          
+DumbMeasure                                         
+Exponential                                         
+Extent                                              
+ExtentRangeError                                    
+Feature                                             
+Gaussian                                            
+GeomFactory                                         
+Geometry                                            
+GeometryCollection                                  
+GeometryCollectionBuilder                           
+GeometryCollectionFeature                           
+GeometryCollectionResult                            
+GeometryResult                                      
+GeometryResultMethods                               
+Line                                                
+LineAtLeastOneDimensionDifferenceResult             
+LineFeature                                         
+LineMultiPolygonSymDifferenceResult                 
+LineMultiPolygonUnionResult                         
+LineOneDimensionUnionResult                         
+LineResult                                          
+Linear                                              
+Measure                                             
+ModelType                                           
+MultiGeometry                                       
+MultiLine                                           
+MultiLineFeature                                    
+MultiLineGeometryDifferenceResult                   
+MultiLineMultiLineDifferenceResult                  
+MultiLineMultiLineIntersectionResult                
+MultiLineMultiLineSymDifferenceResult               
+MultiLineMultiLineUnionResult                       
+MultiLineMultiPolygonSymDifferenceResult            
+MultiLineMultiPolygonUnionResult                    
+MultiLineResult                                     
+MultiPoint                                          
+MultiPointAtLeastOneDimensionIntersectionResult     
+MultiPointFeature                                   
+MultiPointGeometryDifferenceResult                  
+MultiPointMultiLineSymDifferenceResult              
+MultiPointMultiLineUnionResult                      
+MultiPointMultiPointDifferenceResult                
+MultiPointMultiPointIntersectionResult              
+MultiPointMultiPointSymDifferenceResult             
+MultiPointMultiPointUnionResult                     
+MultiPointMultiPolygonSymDifferenceResult           
+MultiPointMultiPolygonUnionResult                   
+MultiPointResult                                    
+MultiPolygon                                        
+MultiPolygonFeature                                 
+MultiPolygonMultiPolygonDifferenceResult            
+MultiPolygonMultiPolygonIntersectionResult          
+MultiPolygonMultiPolygonSymDifferenceResult         
+MultiPolygonResult                                  
+MultiPolygonXDifferenceResult                       
+NoResult                                            
+OneDimension                                        
+OneDimensionAtLeastOneDimensionIntersectionResult   
+OneDimensionBoundaryResult                          
+OneDimensionOneDimensionSymDifferenceResult         
+Point                                               
+PointFeature                                        
+PointGeometryDifferenceResult                       
+PointGeometryIntersectionResult                     
+PointMultiLineSymDifferenceResult                   
+PointMultiLineUnionResult                           
+PointMultiPolygonSymDifferenceResult                
+PointMultiPolygonUnionResult                        
+PointOrNoResult                                     
+PointPointSymDifferenceResult                       
+PointResult                                         
+PointZeroDimensionsUnionResult                      
+Polygon                                             
+PolygonAtMostOneDimensionDifferenceResult           
+PolygonBoundaryResult                               
+PolygonFeature                                      
+PolygonResult                                       
+ProjectedExtent                                     
+Relatable                                           
+Semivariogram                                       
+SeqLineExtensions                                   
+SeqMethods                                          
+SeqMultiLineExtensions                              
+SeqMultiPointExtensions                             
+SeqMultiPolygonExtensions                           
+SeqPointExtensions                                  
+SeqPolygonExtensions                                
+SpatialIndex                                        
+Spherical                                           
+TwoDimensions                                       
+TwoDimensionsTwoDimensionsDifferenceResult          
+TwoDimensionsTwoDimensionsIntersectionResult        
+TwoDimensionsTwoDimensionsSymDifferenceResult       
+TwoDimensionsTwoDimensionsUnionResult               
+ZeroDimensions                                      
+ZeroDimensionsLineSymDifferenceResult               
+ZeroDimensionsLineUnionResult                       
+ZeroDimensionsMultiPointSymDifferenceResult         
+affine                                              
+coordinateArrayToMultiPoint                         
+coordinateToPoint                                   
+featureToGeometry                                   
+geometryCollectionToSeqGeometry                     
+io                                                  
+multiLineToSeqLine                                  
+multiPointToSeqPoint                                
+multiPolygonToSeqPolygon                            
+op                                                  
+package                                             
+pointListToCoordinateArray                          
+reproject                                           
+seqGeometryToGeometryCollection                     
+seqLineToMultiLine                                  
+seqPointToMultiPoint                                
+seqPolygonToMultiPolygon                            
+tupleListToPointList                                
+tupleOfDoubleToPoint                                
+tupleOfIntToPoint                                   
+tupleSeqToMultiPoint                                
+
+scala> geotrellis.gdal.
+Gdal              GroundControlPoint   TypeCFloat64   TypeInt32     
+GdalDataType      RasterBand           TypeCInt16     TypeUInt16    
+GdalException     RasterColor          TypeCInt32     TypeUInt32    
+GdalInfo          RasterDataSet        TypeFloat32    TypeUnknown   
+GdalInfoOptions   TypeByte             TypeFloat64                  
+GdalReader        TypeCFloat32         TypeInt16                    
+
+scala> geotrellis.gdal.GdalReader.read
+
+def read(path: String,band: Int): (geotrellis.raster.Tile, geotrellis.raster.RasterExtent)
+
+scala> geotrellis.gdal.GdalReader.read
+
+def read(path: String,band: Int): (geotrellis.raster.Tile, geotrellis.raster.RasterExtent)
+
+
