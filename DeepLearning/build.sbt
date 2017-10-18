@@ -4,7 +4,10 @@ fork in run := true
 //scalaVersion := "2.10.1"
 libraryDependencies ++= Seq(
 "org.scalafx" %% "scalafx" % "8.0.92-R10",
- "org.scala-lang" % "scala-swing" % "2.10.2"
+ "org.scala-lang" % "scala-swing" % "2.10.2",
+"com.azavea.geotrellis" % "geotrellis-gdal_2.10" % "0.10.0-M1",
+//"org.gdal" % "gdal" % "2.2.1"
+ "org.gdal" % "gdal" % "2.1.0" pomOnly()
 
 )
 
