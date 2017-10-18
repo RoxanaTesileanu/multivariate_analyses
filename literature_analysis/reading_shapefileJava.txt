@@ -1,0 +1,74 @@
+https://gis.stackexchange.com/questions/69536/error-while-reading-shapefile-the-following-locker-still-has-a-lock
+
+
+import java.io.File;
+import org.geotools.data.FileDataStore;
+import org.geotools.data.FileDataStoreFinder;
+import org.geotools.data.shapefile.ShapefileDataStore;
+import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.data.simple.SimpleFeatureIterator;
+import org.geotools.data.simple.SimpleFeatureSource;
+import org.opengis.feature.simple.SimpleFeature;
+
+public class GeoOpen
+{
+
+    private static SimpleFeatureIterator simpleFeatureIterator;
+    private static String fileName = "/home/sunish/Temp/shape.shp";
+    static FileDataStore store ;
+
+    public  static boolean openShapeFile() throws Exception
+    {
+        File dataFile = new File(fileName);
+        dataFile.setReadOnly();
+        store = FileDataStoreFinder.getDataStore(dataFile);
+       // ShapefileDataStore store = new ShapefileDataStore(dataFile.toURL());
+
+        SimpleFeatureSource source = store.getFeatureSource();
+        SimpleFeatureCollection featureCollection = source.getFeatures();
+        simpleFeatureIterator = featureCollection.features();
+
+
+        return true;
+    }
+    public  static boolean iterate()
+    {
+        try{
+        while(simpleFeatureIterator.hasNext())
+        {
+
+            SimpleFeature f = simpleFeatureIterator.next();
+
+           System.out.println(""+f.getID());
+        }
+        }
+        catch(Exception ex){
+            ex.printStackTrace();
+        }
+        finally{
+            simpleFeatureIterator.close();
+            store.dispose();
+
+        }
+
+
+        return true;
+    }
+    public static void main(String[] args) {
+        try {
+            for(int i=0;i<5;i++){
+            System.out.println("reading "+ i);
+
+            GeoOpen.openShapeFile();
+            GeoOpen.iterate();
+
+            System.out.println("Stopped");
+            //Thread.sleep(1000);
+            }
+
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+}

@@ -1,10 +1,35 @@
-Checking the geotrellis-gdal package
+Checking the geotrellis package
 
 SBT Maven coordinates:
-"com.azavea.geotrellis" % "geotrellis-gdal_2.10" % "0.10.0-M1"
- "org.gdal" % "gdal" % "2.1.0" pomOnly()
 
 
+libraryDependencies ++= Seq(
+"org.gdal" % "gdal" % "2.1.0" pomOnly(),
+
+"org.locationtech.geotrellis" %% "geotrellis-raster" % "1.0.0",
+"org.locationtech.geotrellis" % "geotrellis-vector_2.11" % "1.1.1",
+
+
+"org.geotools" % "gt-main" % "16.1",
+"org.geotools" % "gt-epsg-hsql" % "16.1" % "test",
+
+"org.geotools" % "gt-referencing" % "16.1",
+"org.geotools" % "gt-shapefile" % "16.1",
+
+
+
+"org.locationtech.geotrellis" % "geotrellis-geotools_2.11" % "1.1.0",
+
+"org.locationtech.geotrellis" % "geotrellis-shapefile_2.11" % "1.1.0"
+)
+
+resolvers += "osgeo" at "http://download.osgeo.org/webdav/geotools"
+resolvers += "boundless" at "http://repo.boundlessgeo.com/main"
+resolvers += "imageio" at "http://maven.geo-solutions.it"
+
+
+_
+__________________________________
 REPL:
 
 
@@ -167,6 +192,18 @@ def read(path: String,band: Int): (geotrellis.raster.Tile, geotrellis.raster.Ras
 
 scala> geotrellis.ShapeFileReader.
 gdal   macros   proj4   raster   util   vector
+
+:reset
+____________________________________________
+
+scala> import geotrellis._
+import geotrellis._
+
+scala> import geotrellis.geotools._
+import geotrellis.geotools._
+
+scala> import geotrellis.shapefile._
+import geotrellis.shapefile._
 
 
 
