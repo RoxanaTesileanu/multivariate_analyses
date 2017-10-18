@@ -73,6 +73,9 @@ unmanagedJars in Compile += Attributed.blank(file("/usr/lib/jvm/java-8-openjdk-a
 
 
 /* References:
+
+https://stackoverflow.com/questions/43293718/sbt-cant-resolve-osgeo-jai-maven-dependencies
+
 Joshua Suereth, Matthew Farwell, 2016, sbt in Action - The Simple Scala Build Tool, Manning
 
 Jarek Sacha, Coding on the Staircase (https://codingonthestaircase.wordpress.com/2013/05/)
