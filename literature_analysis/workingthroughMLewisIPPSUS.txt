@@ -3388,15 +3388,20 @@ val app = new JFXApp {
 			val textField = new TextField
 			textField.layoutX = 20
 			textField.layoutY = 50
+			textField.promptText = "A field"
+			
 
 			val textArea = new TextArea
 			textArea.layoutX = 20
 			textArea.layoutY = 80
 			textArea.prefHeight = 200
+			textArea.prefWidth = 360
+			textArea.promptText = "An area"			
 
 			val passwordField = new PasswordField
 			passwordField.layoutX = 20
 			passwordField.layoutY = 230
+			passwordField.promptText = "your password"
 
 			content = List (label, textField, textArea, passwordField)
 			}
@@ -3404,8 +3409,68 @@ val app = new JFXApp {
 }
 
 
+____________________
 
 
+Text Control Interactions
+
+- responding to what is typed in in the text controls.
+
+
+import scalafx.Includes._
+import scalafx.application.JFXApp
+import scalafx.scene.Scene
+import scalafx.scene.control.{Label, TextField, TextArea, PasswordField}
+import scalafx.event.ActionEvent
+
+val app = new JFXApp {
+	stage = new JFXApp.PrimaryStage {
+		title = "new fields"
+		scene = new Scene(400, 400) {
+			val label = new Label("my label")
+			label.layoutX = 20
+			label.layoutY = 20
+
+			val textField = new TextField
+			textField.layoutX = 20
+			textField.layoutY = 50
+			textField.promptText = "A field"
+			
+
+			val textArea = new TextArea
+			textArea.layoutX = 20
+			textArea.layoutY = 80
+			textArea.prefHeight = 200
+			textArea.prefWidth = 360
+			textArea.promptText = "An area"			
+			textArea.text.onChange {			
+				label.text = "Area changed: " + textField.text.apply			
+				}
+
+			val passwordField = new PasswordField
+			passwordField.layoutX = 20
+			passwordField.layoutY = 230
+			passwordField.promptText = "your password"
+			passwordField.focussed.onChange {			
+				label.text = "Password focus changed."+passwordField.focused.apply
+				}			
+
+			content = List (label, textField, textArea, passwordField)
+
+
+			textField.onAction = (e: ActionEvent) => {
+				label.text = "Field action: "+ textField.text.apply
+				}
+
+			}
+	}
+}
+
+
+____________
+
+
+Button Controls
 
 
 
