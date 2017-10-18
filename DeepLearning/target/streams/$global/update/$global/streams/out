@@ -1417,125 +1417,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.geotools#gt-main;16.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#gt-main;16.1 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#gt-main;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.geotools#gt-main;16.1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-main/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.geotools#gt-main;16.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-main/16.1/gt-main-16.1.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-main/16.1/gt-main-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: no ivy file found for org.geotools#gt-main;16.1[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-main/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local-preloaded-ivy: no ivy file found for org.geotools#gt-main;16.1[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-main/16.1/gt-main-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	local-preloaded: no ivy file found for org.geotools#gt-main;16.1[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-main/16.1/gt-main-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: found md file for org.geotools#gt-main;16.1[0m
-[0m[[0mdebug[0m] [0m		=> http://download.osgeo.org/webdav/geotools/org/geotools/gt-main/16.1/gt-main-16.1.pom (16.1)[0m
-[0m[[0mdebug[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-main/16.1/gt-main-16.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-main/16.1/gt-main-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-main/16.1/gt-main-16.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/gt-main/16.1/gt-main-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.geotools#gt-main;16.1!gt-main.pom(pom.original) (1129ms)[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#library;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#library;16.1 {}[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#library;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.geotools#library;16.1 {}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/library/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.geotools#library;16.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/library/16.1/library-16.1.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/library/16.1/library-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: no ivy file found for org.geotools#library;16.1[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/library/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local-preloaded-ivy: no ivy file found for org.geotools#library;16.1[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/library/16.1/library-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	local-preloaded: no ivy file found for org.geotools#library;16.1[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/library/16.1/library-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: found md file for org.geotools#library;16.1[0m
-[0m[[0mdebug[0m] [0m		=> http://download.osgeo.org/webdav/geotools/org/geotools/library/16.1/library-16.1.pom (16.1)[0m
-[0m[[0mdebug[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/library/16.1/library-16.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/library/16.1/library-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/library/16.1/library-16.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/library/16.1/library-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.geotools#library;16.1!library.pom(pom.original) (1332ms)[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#modules;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#modules;16.1 {}[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#modules;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.geotools#modules;16.1 {}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/modules/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.geotools#modules;16.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/modules/16.1/modules-16.1.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/modules/16.1/modules-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: no ivy file found for org.geotools#modules;16.1[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/modules/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local-preloaded-ivy: no ivy file found for org.geotools#modules;16.1[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/modules/16.1/modules-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	local-preloaded: no ivy file found for org.geotools#modules;16.1[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/modules/16.1/modules-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: found md file for org.geotools#modules;16.1[0m
-[0m[[0mdebug[0m] [0m		=> http://download.osgeo.org/webdav/geotools/org/geotools/modules/16.1/modules-16.1.pom (16.1)[0m
-[0m[[0mdebug[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/modules/16.1/modules-16.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/modules/16.1/modules-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/modules/16.1/modules-16.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/modules/16.1/modules-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.geotools#modules;16.1!modules.pom(pom.original) (1078ms)[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#geotools;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#geotools;16.1 {}[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#geotools;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.geotools#geotools;16.1 {}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/geotools/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.geotools#geotools;16.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/geotools/16.1/geotools-16.1.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/geotools/16.1/geotools-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: no ivy file found for org.geotools#geotools;16.1[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/geotools/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local-preloaded-ivy: no ivy file found for org.geotools#geotools;16.1[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/geotools/16.1/geotools-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	local-preloaded: no ivy file found for org.geotools#geotools;16.1[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/geotools/16.1/geotools-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: found md file for org.geotools#geotools;16.1[0m
-[0m[[0mdebug[0m] [0m		=> http://download.osgeo.org/webdav/geotools/org/geotools/geotools/16.1/geotools-16.1.pom (16.1)[0m
-[0m[[0mdebug[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/geotools/16.1/geotools-16.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/geotools/16.1/geotools-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/geotools/16.1/geotools-16.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/geotools/16.1/geotools-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.geotools#geotools;16.1!geotools.pom(pom.original) (2272ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/geotools/16.1/jars/geotools.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/geotools/16.1/geotools-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/geotools/16.1/geotools-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/geotools/16.1/jars/geotools.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/geotools/16.1/geotools-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/geotools/16.1/geotools-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://download.osgeo.org/webdav/geotools/org/geotools/geotools/16.1/geotools-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.boundlessgeo.com/main/org/geotools/geotools/16.1/geotools-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://maven.geo-solutions.it/org/geotools/geotools/16.1/geotools-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://maven.geo-solutions.it/org/geotools/geotools/16.1/geotools-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/modules/16.1/jars/modules.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/modules/16.1/modules-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/modules/16.1/modules-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/modules/16.1/jars/modules.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/modules/16.1/modules-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/modules/16.1/modules-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://download.osgeo.org/webdav/geotools/org/geotools/modules/16.1/modules-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.boundlessgeo.com/main/org/geotools/modules/16.1/modules-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://maven.geo-solutions.it/org/geotools/modules/16.1/modules-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://maven.geo-solutions.it/org/geotools/modules/16.1/modules-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/library/16.1/jars/library.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/library/16.1/library-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/library/16.1/library-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/library/16.1/jars/library.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/library/16.1/library-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/library/16.1/library-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://download.osgeo.org/webdav/geotools/org/geotools/library/16.1/library-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.boundlessgeo.com/main/org/geotools/library/16.1/library-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://maven.geo-solutions.it/org/geotools/library/16.1/library-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://maven.geo-solutions.it/org/geotools/library/16.1/library-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-main/16.1/jars/gt-main.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-main/16.1/gt-main-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-main/16.1/gt-main-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-main/16.1/jars/gt-main.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-main/16.1/gt-main-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-main/16.1/gt-main-16.1.jar[0m
-[0m[[0mdebug[0m] [0m	found org.geotools#gt-main;16.1 in osgeo[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.geotools#gt-main;16.1[0m
+[0m[[0mdebug[0m] [0m	found org.geotools#gt-main;16.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-main;16.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-main;16.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-main;16.1->org.geotools#gt-api;16.1 [compile->master(compile)][0m
@@ -1544,35 +1427,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.geotools#gt-api;16.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#gt-api;16.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#gt-api;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.geotools#gt-api;16.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-api/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.geotools#gt-api;16.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-api/16.1/gt-api-16.1.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-api/16.1/gt-api-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: no ivy file found for org.geotools#gt-api;16.1[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-api/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local-preloaded-ivy: no ivy file found for org.geotools#gt-api;16.1[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-api/16.1/gt-api-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	local-preloaded: no ivy file found for org.geotools#gt-api;16.1[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-api/16.1/gt-api-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: found md file for org.geotools#gt-api;16.1[0m
-[0m[[0mdebug[0m] [0m		=> http://download.osgeo.org/webdav/geotools/org/geotools/gt-api/16.1/gt-api-16.1.pom (16.1)[0m
-[0m[[0mdebug[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-api/16.1/gt-api-16.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-api/16.1/gt-api-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-api/16.1/gt-api-16.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/gt-api/16.1/gt-api-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.geotools#gt-api;16.1!gt-api.pom(pom.original) (1641ms)[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#library;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#library;16.1 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.geotools#library;16.1[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-api/16.1/jars/gt-api.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-api/16.1/gt-api-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-api/16.1/gt-api-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-api/16.1/jars/gt-api.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-api/16.1/gt-api-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-api/16.1/gt-api-16.1.jar[0m
-[0m[[0mdebug[0m] [0m	found org.geotools#gt-api;16.1 in osgeo[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.geotools#gt-api;16.1[0m
+[0m[[0mdebug[0m] [0m	found org.geotools#gt-api;16.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-main;16.1->org.geotools#gt-api;16.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-api;16.1->com.vividsolutions#jts;1.13 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
@@ -1591,35 +1447,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.geotools#gt-referencing;16.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#gt-referencing;16.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#gt-referencing;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.geotools#gt-referencing;16.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-referencing/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.geotools#gt-referencing;16.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-referencing/16.1/gt-referencing-16.1.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-referencing/16.1/gt-referencing-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: no ivy file found for org.geotools#gt-referencing;16.1[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-referencing/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local-preloaded-ivy: no ivy file found for org.geotools#gt-referencing;16.1[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-referencing/16.1/gt-referencing-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	local-preloaded: no ivy file found for org.geotools#gt-referencing;16.1[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-referencing/16.1/gt-referencing-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: found md file for org.geotools#gt-referencing;16.1[0m
-[0m[[0mdebug[0m] [0m		=> http://download.osgeo.org/webdav/geotools/org/geotools/gt-referencing/16.1/gt-referencing-16.1.pom (16.1)[0m
-[0m[[0mdebug[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-referencing/16.1/gt-referencing-16.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-referencing/16.1/gt-referencing-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-referencing/16.1/gt-referencing-16.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/gt-referencing/16.1/gt-referencing-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.geotools#gt-referencing;16.1!gt-referencing.pom(pom.original) (1337ms)[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#library;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#library;16.1 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.geotools#library;16.1[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-referencing/16.1/jars/gt-referencing.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-referencing/16.1/gt-referencing-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-referencing/16.1/gt-referencing-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-referencing/16.1/jars/gt-referencing.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-referencing/16.1/gt-referencing-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-referencing/16.1/gt-referencing-16.1.jar[0m
-[0m[[0mdebug[0m] [0m	found org.geotools#gt-referencing;16.1 in osgeo[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.geotools#gt-referencing;16.1[0m
+[0m[[0mdebug[0m] [0m	found org.geotools#gt-referencing;16.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-api;16.1->org.geotools#gt-referencing;16.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-referencing;16.1->com.googlecode.efficient-java-matrix-library#core;0.26 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
@@ -1627,21 +1456,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving com.googlecode.efficient-java-matrix-library#core;0.26 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.googlecode.efficient-java-matrix-library#core;0.26 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving com.googlecode.efficient-java-matrix-library#core;0.26 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.googlecode.efficient-java-matrix-library#core;0.26 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/com.googlecode.efficient-java-matrix-library/core/0.26/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.googlecode.efficient-java-matrix-library#core;0.26[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.googlecode.efficient-java-matrix-library#core;0.26[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.pom (0.26)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.googlecode.efficient-java-matrix-library#core;0.26!core.pom(pom.original) (142ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/com.googlecode.efficient-java-matrix-library/core/0.26/jars/core.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.jar[0m
-[0m[[0mdebug[0m] [0m	found com.googlecode.efficient-java-matrix-library#core;0.26 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.googlecode.efficient-java-matrix-library#core;0.26[0m
+[0m[[0mdebug[0m] [0m	found com.googlecode.efficient-java-matrix-library#core;0.26 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-referencing;16.1->com.googlecode.efficient-java-matrix-library#core;0.26 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-referencing;16.1->commons-pool#commons-pool;1.5.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
@@ -1649,24 +1465,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving commons-pool#commons-pool;1.5.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-pool#commons-pool;1.5.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving commons-pool#commons-pool;1.5.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: commons-pool#commons-pool;1.5.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/commons-pool/commons-pool/1.5.4/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for commons-pool#commons-pool;1.5.4[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for commons-pool#commons-pool;1.5.4[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.pom (1.5.4)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] commons-pool#commons-pool;1.5.4!commons-pool.pom(pom.original) (150ms)[0m
-[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-parent;12 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.commons#commons-parent;12 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.commons#commons-parent;12[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/commons-pool/commons-pool/1.5.4/jars/commons-pool.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar[0m
-[0m[[0mdebug[0m] [0m	found commons-pool#commons-pool;1.5.4 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-pool#commons-pool;1.5.4[0m
+[0m[[0mdebug[0m] [0m	found commons-pool#commons-pool;1.5.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-referencing;16.1->commons-pool#commons-pool;1.5.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-referencing;16.1->org.geotools#gt-metadata;16.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
@@ -1674,35 +1474,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.geotools#gt-metadata;16.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#gt-metadata;16.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#gt-metadata;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.geotools#gt-metadata;16.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-metadata/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.geotools#gt-metadata;16.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-metadata/16.1/gt-metadata-16.1.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-metadata/16.1/gt-metadata-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: no ivy file found for org.geotools#gt-metadata;16.1[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-metadata/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local-preloaded-ivy: no ivy file found for org.geotools#gt-metadata;16.1[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-metadata/16.1/gt-metadata-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	local-preloaded: no ivy file found for org.geotools#gt-metadata;16.1[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-metadata/16.1/gt-metadata-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: found md file for org.geotools#gt-metadata;16.1[0m
-[0m[[0mdebug[0m] [0m		=> http://download.osgeo.org/webdav/geotools/org/geotools/gt-metadata/16.1/gt-metadata-16.1.pom (16.1)[0m
-[0m[[0mdebug[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-metadata/16.1/gt-metadata-16.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-metadata/16.1/gt-metadata-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-metadata/16.1/gt-metadata-16.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/gt-metadata/16.1/gt-metadata-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.geotools#gt-metadata;16.1!gt-metadata.pom(pom.original) (1147ms)[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#library;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#library;16.1 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.geotools#library;16.1[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-metadata/16.1/jars/gt-metadata.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-metadata/16.1/gt-metadata-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-metadata/16.1/gt-metadata-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-metadata/16.1/jars/gt-metadata.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-metadata/16.1/gt-metadata-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-metadata/16.1/gt-metadata-16.1.jar[0m
-[0m[[0mdebug[0m] [0m	found org.geotools#gt-metadata;16.1 in osgeo[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.geotools#gt-metadata;16.1[0m
+[0m[[0mdebug[0m] [0m	found org.geotools#gt-metadata;16.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-referencing;16.1->org.geotools#gt-metadata;16.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-metadata;16.1->org.geotools#gt-opengis;16.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
@@ -1710,35 +1483,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.geotools#gt-opengis;16.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#gt-opengis;16.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#gt-opengis;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.geotools#gt-opengis;16.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-opengis/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.geotools#gt-opengis;16.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-opengis/16.1/gt-opengis-16.1.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-opengis/16.1/gt-opengis-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: no ivy file found for org.geotools#gt-opengis;16.1[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-opengis/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local-preloaded-ivy: no ivy file found for org.geotools#gt-opengis;16.1[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-opengis/16.1/gt-opengis-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	local-preloaded: no ivy file found for org.geotools#gt-opengis;16.1[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-opengis/16.1/gt-opengis-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: found md file for org.geotools#gt-opengis;16.1[0m
-[0m[[0mdebug[0m] [0m		=> http://download.osgeo.org/webdav/geotools/org/geotools/gt-opengis/16.1/gt-opengis-16.1.pom (16.1)[0m
-[0m[[0mdebug[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-opengis/16.1/gt-opengis-16.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-opengis/16.1/gt-opengis-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-opengis/16.1/gt-opengis-16.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/gt-opengis/16.1/gt-opengis-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.geotools#gt-opengis;16.1!gt-opengis.pom(pom.original) (1180ms)[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#library;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#library;16.1 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.geotools#library;16.1[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-opengis/16.1/jars/gt-opengis.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-opengis/16.1/gt-opengis-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-opengis/16.1/gt-opengis-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-opengis/16.1/jars/gt-opengis.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-opengis/16.1/gt-opengis-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-opengis/16.1/gt-opengis-16.1.jar[0m
-[0m[[0mdebug[0m] [0m	found org.geotools#gt-opengis;16.1 in osgeo[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.geotools#gt-opengis;16.1[0m
+[0m[[0mdebug[0m] [0m	found org.geotools#gt-opengis;16.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-metadata;16.1->org.geotools#gt-opengis;16.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-opengis;16.1->net.java.dev.jsr-275#jsr-275;1.0-beta-2 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
@@ -1746,21 +1492,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving net.java.dev.jsr-275#jsr-275;1.0-beta-2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.java.dev.jsr-275#jsr-275;1.0-beta-2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving net.java.dev.jsr-275#jsr-275;1.0-beta-2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: net.java.dev.jsr-275#jsr-275;1.0-beta-2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/net.java.dev.jsr-275/jsr-275/1.0-beta-2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for net.java.dev.jsr-275#jsr-275;1.0-beta-2[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for net.java.dev.jsr-275#jsr-275;1.0-beta-2[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.pom (1.0-beta-2)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] net.java.dev.jsr-275#jsr-275;1.0-beta-2!jsr-275.pom(pom.original) (149ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/net.java.dev.jsr-275/jsr-275/1.0-beta-2/jars/jsr-275.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar[0m
-[0m[[0mdebug[0m] [0m	found net.java.dev.jsr-275#jsr-275;1.0-beta-2 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.java.dev.jsr-275#jsr-275;1.0-beta-2[0m
+[0m[[0mdebug[0m] [0m	found net.java.dev.jsr-275#jsr-275;1.0-beta-2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-opengis;16.1->net.java.dev.jsr-275#jsr-275;1.0-beta-2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-opengis;16.1->commons-pool#commons-pool;1.5.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-opengis;16.1->commons-pool#commons-pool;1.5.4 [compile->compile(*)][0m
@@ -1783,32 +1516,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving jgridshift#jgridshift;1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: jgridshift#jgridshift;1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving jgridshift#jgridshift;1.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: jgridshift#jgridshift;1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/jgridshift/jgridshift/1.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for jgridshift#jgridshift;1.0[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/jgridshift/jgridshift/1.0/jgridshift-1.0.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/jgridshift/jgridshift/1.0/jgridshift-1.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: no ivy file found for jgridshift#jgridshift;1.0[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/jgridshift/jgridshift/1.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local-preloaded-ivy: no ivy file found for jgridshift#jgridshift;1.0[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/jgridshift/jgridshift/1.0/jgridshift-1.0.pom[0m
-[0m[[0mdebug[0m] [0m	local-preloaded: no ivy file found for jgridshift#jgridshift;1.0[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/jgridshift/jgridshift/1.0/jgridshift-1.0.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: found md file for jgridshift#jgridshift;1.0[0m
-[0m[[0mdebug[0m] [0m		=> http://download.osgeo.org/webdav/geotools/jgridshift/jgridshift/1.0/jgridshift-1.0.pom (1.0)[0m
-[0m[[0mdebug[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/jgridshift/jgridshift/1.0/jgridshift-1.0.pom ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/jgridshift/jgridshift/1.0/jgridshift-1.0.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/jgridshift/jgridshift/1.0/jgridshift-1.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/jgridshift/jgridshift/1.0/jgridshift-1.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] jgridshift#jgridshift;1.0!jgridshift.pom(pom.original) (1226ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/jgridshift/jgridshift/1.0/jars/jgridshift.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/jgridshift/jgridshift/1.0/jgridshift-1.0.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/jgridshift/jgridshift/1.0/jgridshift-1.0.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/jgridshift/jgridshift/1.0/jars/jgridshift.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/jgridshift/jgridshift/1.0/jgridshift-1.0.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/jgridshift/jgridshift/1.0/jgridshift-1.0.jar[0m
-[0m[[0mdebug[0m] [0m	found jgridshift#jgridshift;1.0 in osgeo[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: jgridshift#jgridshift;1.0[0m
+[0m[[0mdebug[0m] [0m	found jgridshift#jgridshift;1.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-referencing;16.1->jgridshift#jgridshift;1.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-referencing;16.1->net.sf.geographiclib#GeographicLib-Java;1.44 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
@@ -1816,21 +1525,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving net.sf.geographiclib#GeographicLib-Java;1.44 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.sf.geographiclib#GeographicLib-Java;1.44 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving net.sf.geographiclib#GeographicLib-Java;1.44 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: net.sf.geographiclib#GeographicLib-Java;1.44 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/net.sf.geographiclib/GeographicLib-Java/1.44/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for net.sf.geographiclib#GeographicLib-Java;1.44[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for net.sf.geographiclib#GeographicLib-Java;1.44[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.pom (1.44)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] net.sf.geographiclib#GeographicLib-Java;1.44!GeographicLib-Java.pom(pom.original) (155ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/net.sf.geographiclib/GeographicLib-Java/1.44/jars/GeographicLib-Java.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.jar[0m
-[0m[[0mdebug[0m] [0m	found net.sf.geographiclib#GeographicLib-Java;1.44 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.sf.geographiclib#GeographicLib-Java;1.44[0m
+[0m[[0mdebug[0m] [0m	found net.sf.geographiclib#GeographicLib-Java;1.44 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-referencing;16.1->net.sf.geographiclib#GeographicLib-Java;1.44 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-referencing;16.1->javax.media#jai_core;1.1.3 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-referencing;16.1->javax.media#jai_core;1.1.3 [compile->compile(*)][0m
@@ -1878,21 +1574,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.jdom#jdom;1.1.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.jdom#jdom;1.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving org.jdom#jdom;1.1.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.jdom#jdom;1.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.jdom/jdom/1.1.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.jdom#jdom;1.1.3[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.jdom#jdom;1.1.3[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.pom (1.1.3)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.jdom#jdom;1.1.3!jdom.pom(pom.original) (137ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.jdom/jdom/1.1.3/jars/jdom.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.jar[0m
-[0m[[0mdebug[0m] [0m	found org.jdom#jdom;1.1.3 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.jdom#jdom;1.1.3[0m
+[0m[[0mdebug[0m] [0m	found org.jdom#jdom;1.1.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-main;16.1->org.jdom#jdom;1.1.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-main;16.1->org.jdom#jdom;1.1.3 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-main;16.1->org.jdom#jdom;1.1.3 [compile->compile][0m
@@ -1911,46 +1594,100 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.locationtech.geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/locationtech/geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/geotrellis-shapefile_2.11-1.2.0-M1.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/locationtech/geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/geotrellis-shapefile_2.11-1.2.0-M1.pom[0m
-[0m[[0mdebug[0m] [0m	public: no ivy file found for org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.locationtech.geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local-preloaded-ivy: no ivy file found for org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/locationtech/geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/geotrellis-shapefile_2.11-1.2.0-M1.pom[0m
-[0m[[0mdebug[0m] [0m	local-preloaded: no ivy file found for org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/locationtech/geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/geotrellis-shapefile_2.11-1.2.0-M1.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://download.osgeo.org/webdav/geotools/org/locationtech/geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/geotrellis-shapefile_2.11-1.2.0-M1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: no ivy file found for org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.boundlessgeo.com/main/org/locationtech/geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/geotrellis-shapefile_2.11-1.2.0-M1.pom[0m
-[0m[[0mdebug[0m] [0m	boundless: no ivy file found for org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1[0m
-[0m[[0mdebug[0m] [0m		tried http://maven.geo-solutions.it/org/locationtech/geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/geotrellis-shapefile_2.11-1.2.0-M1.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://maven.geo-solutions.it/org/locationtech/geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/geotrellis-shapefile_2.11-1.2.0-M1.pom[0m
-[0m[[0mdebug[0m] [0m	imageio: no ivy file found for org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1[0m
-[0m[[33mwarn[0m] [0m	module not found: org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1[0m
-[0m[[33mwarn[0m] [0m==== local: tried[0m
-[0m[[33mwarn[0m] [0m  /home/roxana/.ivy2/local/org.locationtech.geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/ivys/ivy.xml[0m
-[0m[[33mwarn[0m] [0m==== public: tried[0m
-[0m[[33mwarn[0m] [0m  https://repo1.maven.org/maven2/org/locationtech/geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/geotrellis-shapefile_2.11-1.2.0-M1.pom[0m
-[0m[[33mwarn[0m] [0m==== local-preloaded-ivy: tried[0m
-[0m[[33mwarn[0m] [0m  /home/roxana/.sbt/preloaded/org.locationtech.geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/ivys/ivy.xml[0m
-[0m[[33mwarn[0m] [0m==== local-preloaded: tried[0m
-[0m[[33mwarn[0m] [0m  file:////home/roxana/.sbt/preloaded/org/locationtech/geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/geotrellis-shapefile_2.11-1.2.0-M1.pom[0m
-[0m[[33mwarn[0m] [0m==== osgeo: tried[0m
-[0m[[33mwarn[0m] [0m  http://download.osgeo.org/webdav/geotools/org/locationtech/geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/geotrellis-shapefile_2.11-1.2.0-M1.pom[0m
-[0m[[33mwarn[0m] [0m==== boundless: tried[0m
-[0m[[33mwarn[0m] [0m  http://repo.boundlessgeo.com/main/org/locationtech/geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/geotrellis-shapefile_2.11-1.2.0-M1.pom[0m
-[0m[[33mwarn[0m] [0m==== imageio: tried[0m
-[0m[[33mwarn[0m] [0m  http://maven.geo-solutions.it/org/locationtech/geotrellis/geotrellis-shapefile_2.11/1.2.0-M1/geotrellis-shapefile_2.11-1.2.0-M1.pom[0m
+[0m[[0minfo[0m] [0mResolving org.geotools#gt-shapefile;16.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#gt-shapefile;16.1 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving org.geotools#gt-shapefile;16.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.geotools#gt-shapefile;16.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-shapefile/16.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.geotools#gt-shapefile;16.1[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for org.geotools#gt-shapefile;16.1[0m
+[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-shapefile/16.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local-preloaded-ivy: no ivy file found for org.geotools#gt-shapefile;16.1[0m
+[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.pom[0m
+[0m[[0mdebug[0m] [0m	local-preloaded: no ivy file found for org.geotools#gt-shapefile;16.1[0m
+[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.pom[0m
+[0m[[0mdebug[0m] [0m	osgeo: found md file for org.geotools#gt-shapefile;16.1[0m
+[0m[[0mdebug[0m] [0m		=> http://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.pom (16.1)[0m
+[0m[[0mdebug[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.pom ...[0m
+[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.pom[0m
+[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.geotools#gt-shapefile;16.1!gt-shapefile.pom(pom.original) (1130ms)[0m
+[0m[[0minfo[0m] [0mResolving org.geotools#plugin;16.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#plugin;16.1 {}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.geotools#plugin;16.1[0m
+[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-shapefile/16.1/jars/gt-shapefile.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-shapefile/16.1/jars/gt-shapefile.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.jar[0m
+[0m[[0mdebug[0m] [0m	found org.geotools#gt-shapefile;16.1 in osgeo[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving org.geotools#gt-data;16.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#gt-data;16.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0minfo[0m] [0mResolving org.geotools#gt-data;16.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.geotools#gt-data;16.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-data/16.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.geotools#gt-data;16.1[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-data/16.1/gt-data-16.1.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-data/16.1/gt-data-16.1.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for org.geotools#gt-data;16.1[0m
+[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-data/16.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local-preloaded-ivy: no ivy file found for org.geotools#gt-data;16.1[0m
+[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-data/16.1/gt-data-16.1.pom[0m
+[0m[[0mdebug[0m] [0m	local-preloaded: no ivy file found for org.geotools#gt-data;16.1[0m
+[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-data/16.1/gt-data-16.1.pom[0m
+[0m[[0mdebug[0m] [0m	osgeo: found md file for org.geotools#gt-data;16.1[0m
+[0m[[0mdebug[0m] [0m		=> http://download.osgeo.org/webdav/geotools/org/geotools/gt-data/16.1/gt-data-16.1.pom (16.1)[0m
+[0m[[0mdebug[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-data/16.1/gt-data-16.1.pom ...[0m
+[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-data/16.1/gt-data-16.1.pom[0m
+[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-data/16.1/gt-data-16.1.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/gt-data/16.1/gt-data-16.1.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.geotools#gt-data;16.1!gt-data.pom(pom.original) (1229ms)[0m
+[0m[[0minfo[0m] [0mResolving org.geotools#library;16.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#library;16.1 {}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.geotools#library;16.1[0m
+[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-data/16.1/jars/gt-data.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-data/16.1/gt-data-16.1.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-data/16.1/gt-data-16.1.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-data/16.1/jars/gt-data.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-data/16.1/gt-data-16.1.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-data/16.1/gt-data-16.1.jar[0m
+[0m[[0mdebug[0m] [0m	found org.geotools#gt-data;16.1 in osgeo[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [compile][0m
@@ -3249,13 +2986,42 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [runtime][0m
@@ -4690,7 +4456,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
@@ -4700,6 +4466,38 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-epsg-hsql;16.1 [test->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
@@ -4712,66 +4510,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.geotools#gt-epsg-hsql;16.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#gt-epsg-hsql;16.1 {test=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#gt-epsg-hsql;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.geotools#gt-epsg-hsql;16.1 {test=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-epsg-hsql/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.geotools#gt-epsg-hsql;16.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: no ivy file found for org.geotools#gt-epsg-hsql;16.1[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-epsg-hsql/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local-preloaded-ivy: no ivy file found for org.geotools#gt-epsg-hsql;16.1[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	local-preloaded: no ivy file found for org.geotools#gt-epsg-hsql;16.1[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: found md file for org.geotools#gt-epsg-hsql;16.1[0m
-[0m[[0mdebug[0m] [0m		=> http://download.osgeo.org/webdav/geotools/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.pom (16.1)[0m
-[0m[[0mdebug[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.geotools#gt-epsg-hsql;16.1!gt-epsg-hsql.pom(pom.original) (1243ms)[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#plugin;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#plugin;16.1 {}[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#plugin;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.geotools#plugin;16.1 {}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/plugin/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.geotools#plugin;16.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/plugin/16.1/plugin-16.1.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/plugin/16.1/plugin-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: no ivy file found for org.geotools#plugin;16.1[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/plugin/16.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local-preloaded-ivy: no ivy file found for org.geotools#plugin;16.1[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/plugin/16.1/plugin-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	local-preloaded: no ivy file found for org.geotools#plugin;16.1[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/plugin/16.1/plugin-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: found md file for org.geotools#plugin;16.1[0m
-[0m[[0mdebug[0m] [0m		=> http://download.osgeo.org/webdav/geotools/org/geotools/plugin/16.1/plugin-16.1.pom (16.1)[0m
-[0m[[0mdebug[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/plugin/16.1/plugin-16.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/plugin/16.1/plugin-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/plugin/16.1/plugin-16.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/plugin/16.1/plugin-16.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.geotools#plugin;16.1!plugin.pom(pom.original) (1183ms)[0m
-[0m[[0minfo[0m] [0mResolving org.geotools#modules;16.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.geotools#modules;16.1 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.geotools#modules;16.1[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/plugin/16.1/jars/plugin.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/plugin/16.1/plugin-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/plugin/16.1/plugin-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/plugin/16.1/jars/plugin.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/plugin/16.1/plugin-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/plugin/16.1/plugin-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://download.osgeo.org/webdav/geotools/org/geotools/plugin/16.1/plugin-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.boundlessgeo.com/main/org/geotools/plugin/16.1/plugin-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://maven.geo-solutions.it/org/geotools/plugin/16.1/plugin-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://maven.geo-solutions.it/org/geotools/plugin/16.1/plugin-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.geotools/gt-epsg-hsql/16.1/jars/gt-epsg-hsql.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/org.geotools/gt-epsg-hsql/16.1/jars/gt-epsg-hsql.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.jar[0m
-[0m[[0mdebug[0m] [0m	found org.geotools#gt-epsg-hsql;16.1 in osgeo[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.geotools#gt-epsg-hsql;16.1[0m
+[0m[[0mdebug[0m] [0m	found org.geotools#gt-epsg-hsql;16.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-epsg-hsql;16.1 [test->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-epsg-hsql;16.1 [test->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-epsg-hsql;16.1->org.geotools#gt-referencing;16.1 [compile->master(compile)][0m
@@ -4788,21 +4528,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.hsqldb#hsqldb;2.3.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.hsqldb#hsqldb;2.3.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving org.hsqldb#hsqldb;2.3.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.hsqldb#hsqldb;2.3.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.hsqldb/hsqldb/2.3.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.hsqldb#hsqldb;2.3.0[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/hsqldb/hsqldb/2.3.0/hsqldb-2.3.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.hsqldb#hsqldb;2.3.0[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/hsqldb/hsqldb/2.3.0/hsqldb-2.3.0.pom (2.3.0)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/hsqldb/hsqldb/2.3.0/hsqldb-2.3.0.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/hsqldb/hsqldb/2.3.0/hsqldb-2.3.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/hsqldb/hsqldb/2.3.0/hsqldb-2.3.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/hsqldb/hsqldb/2.3.0/hsqldb-2.3.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.hsqldb#hsqldb;2.3.0!hsqldb.pom(pom.original) (143ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/org.hsqldb/hsqldb/2.3.0/jars/hsqldb.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/hsqldb/hsqldb/2.3.0/hsqldb-2.3.0.jar[0m
-[0m[[0mdebug[0m] [0m	found org.hsqldb#hsqldb;2.3.0 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.hsqldb#hsqldb;2.3.0[0m
+[0m[[0mdebug[0m] [0m	found org.hsqldb#hsqldb;2.3.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-epsg-hsql;16.1->org.hsqldb#hsqldb;2.3.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-epsg-hsql;16.1->org.hsqldb#hsqldb;2.3.0 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-epsg-hsql;16.1->org.hsqldb#hsqldb;2.3.0 [compile->compile][0m
@@ -6387,7 +6114,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
@@ -6400,6 +6127,41 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
@@ -7971,7 +7733,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
@@ -7984,6 +7746,41 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [test-internal][0m
@@ -9825,7 +9622,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-referencing;16.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
@@ -9844,6 +9641,47 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.geotools#gt-data;16.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->org.geotools#gt-main;16.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-data;16.1->javax.media#jai_core;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->org.jdom#jdom;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.geotools#gt-shapefile;16.1->javax.media#jai_core;1.1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-shapefile;16.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.geotools#gt-epsg-hsql;16.1 [test->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
@@ -10088,18 +9926,14 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.gdal#gdal;2.1.0!gdal.pom[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.locationtech.geotrellis#geotrellis-raster_2.11;1.0.0!geotrellis-raster_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.locationtech.geotrellis#geotrellis-vector_2.11;1.1.1!geotrellis-vector_2.11.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-main/16.1/gt-main-16.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-main/16.1/gt-main-16.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-main/16.1/gt-main-16.1.jar[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-main/16.1/gt-main-16.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/gt-main/16.1/gt-main-16.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.geotools#gt-main;16.1!gt-main.jar (16031ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-referencing/16.1/gt-referencing-16.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-referencing/16.1/gt-referencing-16.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-referencing/16.1/gt-referencing-16.1.jar[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-referencing/16.1/gt-referencing-16.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/gt-referencing/16.1/gt-referencing-16.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.geotools#gt-referencing;16.1!gt-referencing.jar (4895ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.geotools#gt-main;16.1!gt-main.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.geotools#gt-referencing;16.1!gt-referencing.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.jar ...[0m
+[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.jar[0m
+[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/gt-shapefile/16.1/gt-shapefile-16.1.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.geotools#gt-shapefile;16.1!gt-shapefile.jar (3345ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.10!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.locationtech.geotrellis#geotrellis-util_2.11;1.0.0!geotrellis-util_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.locationtech.geotrellis#geotrellis-macros_2.11;1.0.0!geotrellis-macros_2.11.jar[0m
@@ -10125,93 +9959,29 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-collections#commons-collections;3.2.2!commons-collections.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.spire-math#spire-macros_2.11;0.13.0!spire-macros_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.typelevel#machinist_2.11;0.6.1!machinist_2.11.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-api/16.1/gt-api-16.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-api/16.1/gt-api-16.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-api/16.1/gt-api-16.1.jar[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-api/16.1/gt-api-16.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/gt-api/16.1/gt-api-16.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.geotools#gt-api;16.1!gt-api.jar (1506ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.geotools#gt-api;16.1!gt-api.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.vividsolutions#jts;1.13!jts.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/jdom/jdom/1.1.3/jdom-1.1.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.jdom#jdom;1.1.3!jdom.jar (356ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/javax.media/jai_core/1.1.3/jars/jai_core.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.sbt/preloaded/javax.media/jai_core/1.1.3/jars/jai_core.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:////home/roxana/.sbt/preloaded/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/javax/media/jai_core/1.1.3/jai_core-1.1.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] javax.media#jai_core;1.1.3!jai_core.jar (6995ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/core/0.26/core-0.26.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.googlecode.efficient-java-matrix-library#core;0.26!core.jar (400ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] commons-pool#commons-pool;1.5.4!commons-pool.jar (180ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-metadata/16.1/gt-metadata-16.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-metadata/16.1/gt-metadata-16.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-metadata/16.1/gt-metadata-16.1.jar[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-metadata/16.1/gt-metadata-16.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/gt-metadata/16.1/gt-metadata-16.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.geotools#gt-metadata;16.1!gt-metadata.jar (3202ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/jgridshift/jgridshift/1.0/jgridshift-1.0.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/jgridshift/jgridshift/1.0/jgridshift-1.0.jar ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/jgridshift/jgridshift/1.0/jgridshift-1.0.jar[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/jgridshift/jgridshift/1.0/jgridshift-1.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/jgridshift/jgridshift/1.0/jgridshift-1.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] jgridshift#jgridshift;1.0!jgridshift.jar (2485ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/net/sf/geographiclib/GeographicLib-Java/1.44/GeographicLib-Java-1.44.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] net.sf.geographiclib#GeographicLib-Java;1.44!GeographicLib-Java.jar (285ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-opengis/16.1/gt-opengis-16.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-opengis/16.1/gt-opengis-16.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-opengis/16.1/gt-opengis-16.1.jar[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-opengis/16.1/gt-opengis-16.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/gt-opengis/16.1/gt-opengis-16.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.geotools#gt-opengis;16.1!gt-opengis.jar (5193ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/net/java/dev/jsr-275/jsr-275/1.0-beta-2/jsr-275-1.0-beta-2.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] net.java.dev.jsr-275#jsr-275;1.0-beta-2!jsr-275.jar (340ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.jar[0m
-[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/gt-epsg-hsql/16.1/gt-epsg-hsql-16.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.geotools#gt-epsg-hsql;16.1!gt-epsg-hsql.jar (9626ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/hsqldb/hsqldb/2.3.0/hsqldb-2.3.0.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/hsqldb/hsqldb/2.3.0/hsqldb-2.3.0.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/hsqldb/hsqldb/2.3.0/hsqldb-2.3.0.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/hsqldb/hsqldb/2.3.0/hsqldb-2.3.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/hsqldb/hsqldb/2.3.0/hsqldb-2.3.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.hsqldb#hsqldb;2.3.0!hsqldb.jar (640ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jdom#jdom;1.1.3!jdom.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] javax.media#jai_core;1.1.3!jai_core.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.googlecode.efficient-java-matrix-library#core;0.26!core.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-pool#commons-pool;1.5.4!commons-pool.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.geotools#gt-metadata;16.1!gt-metadata.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] jgridshift#jgridshift;1.0!jgridshift.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.sf.geographiclib#GeographicLib-Java;1.44!GeographicLib-Java.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.geotools#gt-opengis;16.1!gt-opengis.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.java.dev.jsr-275#jsr-275;1.0-beta-2!jsr-275.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://download.osgeo.org/webdav/geotools/org/geotools/gt-data/16.1/gt-data-16.1.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-data/16.1/gt-data-16.1.jar ...[0m
+[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-data/16.1/gt-data-16.1.jar[0m
+[0m[[0mdebug[0m] [0m	osgeo: downloading http://download.osgeo.org/webdav/geotools/org/geotools/gt-data/16.1/gt-data-16.1.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://download.osgeo.org/webdav/geotools/org/geotools/gt-data/16.1/gt-data-16.1.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.geotools#gt-data;16.1!gt-data.jar (1568ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.geotools#gt-epsg-hsql;16.1!gt-epsg-hsql.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hsqldb#hsqldb;2.3.0!hsqldb.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.10!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.14.3!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 27429ms :: artifacts dl 52205ms[0m
-[0m[[33mwarn[0m] [0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
-[0m[[33mwarn[0m] [0m	::          UNRESOLVED DEPENDENCIES         ::[0m
-[0m[[33mwarn[0m] [0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
-[0m[[33mwarn[0m] [0m	:: org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1: not found[0m
-[0m[[33mwarn[0m] [0m	::::::::::::::::::::::::::::::::::::::::::::::[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 5066ms :: artifacts dl 4987ms[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT compile produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT runtime produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT test produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-test.xml[0m
@@ -10225,60 +9995,9 @@
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT docs produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT pom produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT scala-tool produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (27429ms resolve - 52205ms download)[0m
-[0m[[33mwarn[0m] [0m[0m
-[0m[[33mwarn[0m] [0m	Note: Unresolved dependencies path:[0m
-[0m[[33mwarn[0m] [0m		org.locationtech.geotrellis:geotrellis-shapefile_2.11:1.2.0-M1 (/home/roxana/Private/multivariate_analyses/DeepLearning/build.sbt#L5-43)[0m
-[0m[[33mwarn[0m] [0m		  +- default:deeplearning_2.11:0.1-SNAPSHOT[0m
-sbt.ResolveException: unresolved dependency: org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1: not found
-	at sbt.IvyActions$.sbt$IvyActions$$resolve(IvyActions.scala:313)
-	at sbt.IvyActions$$anonfun$updateEither$1.apply(IvyActions.scala:191)
-	at sbt.IvyActions$$anonfun$updateEither$1.apply(IvyActions.scala:168)
-	at sbt.IvySbt$Module$$anonfun$withModule$1.apply(Ivy.scala:156)
-	at sbt.IvySbt$Module$$anonfun$withModule$1.apply(Ivy.scala:156)
-	at sbt.IvySbt$$anonfun$withIvy$1.apply(Ivy.scala:133)
-	at sbt.IvySbt.sbt$IvySbt$$action$1(Ivy.scala:57)
-	at sbt.IvySbt$$anon$4.call(Ivy.scala:65)
-	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:93)
-	at xsbt.boot.Locks$GlobalLock.xsbt$boot$Locks$GlobalLock$$withChannelRetries$1(Locks.scala:78)
-	at xsbt.boot.Locks$GlobalLock$$anonfun$withFileLock$1.apply(Locks.scala:97)
-	at xsbt.boot.Using$.withResource(Using.scala:10)
-	at xsbt.boot.Using$.apply(Using.scala:9)
-	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:58)
-	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:48)
-	at xsbt.boot.Locks$.apply0(Locks.scala:31)
-	at xsbt.boot.Locks$.apply(Locks.scala:28)
-	at sbt.IvySbt.withDefaultLogger(Ivy.scala:65)
-	at sbt.IvySbt.withIvy(Ivy.scala:128)
-	at sbt.IvySbt.withIvy(Ivy.scala:125)
-	at sbt.IvySbt$Module.withModule(Ivy.scala:156)
-	at sbt.IvyActions$.updateEither(IvyActions.scala:168)
-	at sbt.Classpaths$$anonfun$sbt$Classpaths$$work$1$1.apply(Defaults.scala:1488)
-	at sbt.Classpaths$$anonfun$sbt$Classpaths$$work$1$1.apply(Defaults.scala:1484)
-	at sbt.Classpaths$$anonfun$doWork$1$1$$anonfun$121.apply(Defaults.scala:1519)
-	at sbt.Classpaths$$anonfun$doWork$1$1$$anonfun$121.apply(Defaults.scala:1517)
-	at sbt.Tracked$$anonfun$lastOutput$1.apply(Tracked.scala:37)
-	at sbt.Classpaths$$anonfun$doWork$1$1.apply(Defaults.scala:1522)
-	at sbt.Classpaths$$anonfun$doWork$1$1.apply(Defaults.scala:1516)
-	at sbt.Tracked$$anonfun$inputChanged$1.apply(Tracked.scala:60)
-	at sbt.Classpaths$.cachedUpdate(Defaults.scala:1539)
-	at sbt.Classpaths$$anonfun$updateTask$1.apply(Defaults.scala:1466)
-	at sbt.Classpaths$$anonfun$updateTask$1.apply(Defaults.scala:1418)
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
-	at sbt.std.Transform$$anon$4.work(System.scala:63)
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
-	at sbt.Execute.work(Execute.scala:237)
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-[0m[[31merror[0m] [0m(*:[31mupdate[0m) sbt.ResolveException: unresolved dependency: org.locationtech.geotrellis#geotrellis-shapefile_2.11;1.2.0-M1: not found[0m
+[0m[[0mdebug[0m] [0m	resolve done (5066ms resolve - 4987ms download)[0m
+[0m[[0minfo[0m] [0mDone updating.[0m
+[0m[[33mwarn[0m] [0mThere may be incompatibilities among your library dependencies.[0m
+[0m[[33mwarn[0m] [0mHere are some of the libraries that were evicted:[0m
+[0m[[33mwarn[0m] [0m	* org.locationtech.geotrellis:geotrellis-vector_2.11:1.0.0 -> 1.1.1[0m
+[0m[[33mwarn[0m] [0mRun 'evicted' to see detailed eviction warnings[0m
