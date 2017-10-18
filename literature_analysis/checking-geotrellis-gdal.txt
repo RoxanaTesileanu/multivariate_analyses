@@ -512,5 +512,24 @@ withSimpleFeatureMethods
 withSinglebandProjectedRasterToGridCoverage2DMethods   
 withSinglebandRasterToGridCoverage2DMethods            
 
+:reset
+________________________________
+
+scala> import geotrellis._
+import geotrellis._
+
+
+scala> import geotrellis.geotools._
+import geotrellis.geotools._
+
+scala> import geotrellis.shapefile._
+import geotrellis.shapefile._
+
+scala> geotrellis.shapefile.ShapeFileReader.readPo
+readPointFeatures   readPolygonFeatures
+
+scala> geotrellis.shapefile.ShapeFileReader.readPolygonFeatures("Intersection_lyr.shp")
+res3: Seq[geotrellis.vector.PolygonFeature[Map[String,Object]]] = List()
+
 
 
