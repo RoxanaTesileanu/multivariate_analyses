@@ -18,13 +18,13 @@ libraryDependencies ++= Seq(
 "org.geotools" % "gt-epsg-hsql" % "16.1" % "test",
 //"org.geotools" % "gt-epsg-hsql" % "16.1",
 "org.geotools" % "gt-referencing" % "16.1",
-"org.geotools" % "gt-shapefile" % "16.1"
+"org.geotools" % "gt-shapefile" % "16.1",
 
 
 
-//"org.locationtech.geotrellis" % "geotrellis-geotools_2.11" % "1.1.0",
+"org.locationtech.geotrellis" % "geotrellis-geotools_2.11" % "1.1.0",
 
-//"org.locationtech.geotrellis" % "geotrellis-shapefile_2.11" % "1.2.0-M1"
+"org.locationtech.geotrellis" % "geotrellis-shapefile_2.11" % "1.2.0-M1"
 
 
 
