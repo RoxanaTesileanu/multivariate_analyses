@@ -165,4 +165,9 @@ scala> geotrellis.gdal.GdalReader.read
 
 def read(path: String,band: Int): (geotrellis.raster.Tile, geotrellis.raster.RasterExtent)
 
+scala> geotrellis.ShapeFileReader.
+gdal   macros   proj4   raster   util   vector
+
+
+
 

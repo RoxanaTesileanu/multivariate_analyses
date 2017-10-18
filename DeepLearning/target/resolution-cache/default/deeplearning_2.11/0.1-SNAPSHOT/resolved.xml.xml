@@ -4,7 +4,7 @@
 		module="deeplearning_2.11"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20171018085636"
+		publication="20171018091034"
 	>
 		<description>
 		DeepLearning
@@ -40,5 +40,6 @@
 		<dependency org="org.gdal" name="gdal" rev="2.1.0" conf="compile->default(compile)">
 			<artifact name="gdal" type="pom" ext="pom" conf="pom"/>
 		</dependency>
+		<dependency org="com.azavea.geotrellis" name="geotrellis-vector_2.10" rev="0.10.3" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

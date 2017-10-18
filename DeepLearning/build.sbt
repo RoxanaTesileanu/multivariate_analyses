@@ -7,8 +7,10 @@ libraryDependencies ++= Seq(
  "org.scala-lang" % "scala-swing" % "2.10.2",
 "com.azavea.geotrellis" % "geotrellis-gdal_2.10" % "0.10.0-M1",
 //"org.gdal" % "gdal" % "2.2.1"
- "org.gdal" % "gdal" % "2.1.0" pomOnly()
+ "org.gdal" % "gdal" % "2.1.0" pomOnly(),
+//"com.azavea.geotrellis" % "geotrellis-vector_2.11" % "1.0.0-RC1"
 
+"com.azavea.geotrellis" % "geotrellis-vector_2.10" % "0.10.3"
 )
 
 unmanagedJars in Compile += Attributed.blank(file("/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar"))
