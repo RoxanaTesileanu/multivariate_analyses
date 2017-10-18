@@ -206,5 +206,311 @@ scala> import geotrellis.shapefile._
 import geotrellis.shapefile._
 
 
+scala> geotrellis.
+geotools   macros   proj4   raster   shapefile   util   vector
+
+scala> geotrellis.raster.
+ArrayMultibandTile                      UByteRawArrayTile                       
+ArrayTile                               UByteUserDefinedNoDataArrayTile         
+BitArrayTile                            UByteUserDefinedNoDataCellType          
+BitCellType                             UShortArrayTile                         
+BitCells                                UShortCellType                          
+BitConstantTile                         UShortCells                             
+ByteArrayFiller                         UShortConstantNoDataArrayTile           
+ByteArrayTile                           UShortConstantNoDataCellType            
+ByteCellType                            UShortConstantTile                      
+ByteCells                               UShortRawArrayTile                      
+ByteConstantNoDataArrayTile             UShortUserDefinedNoDataArrayTile        
+ByteConstantNoDataCellType              UShortUserDefinedNoDataCellType         
+ByteConstantTile                        UserDefinedByteNoDataConversions        
+ByteRawArrayTile                        UserDefinedDoubleNoDataConversions      
+ByteUserDefinedNoDataArrayTile          UserDefinedFloatNoDataConversions       
+ByteUserDefinedNoDataCellType           UserDefinedIntNoDataConversions         
+CellGrid                                UserDefinedNoData                       
+CellSet                                 UserDefinedNoDataEncoding               
+CellSize                                UserDefinedShortNoDataConversions       
+CellType                                WideDoubleNoData                        
+CellTypeEncoding                        WideIntNoData                           
+CompositeTile                           WidenedNoData                           
+Connectivity                            b2d                                     
+ConstantNoData                          b2f                                     
+ConstantTile                            b2i                                     
+CroppedTile                             b2s                                     
+DI                                      b2ub                                    
+DataType                                b2us                                    
+DelayedConversionMultibandTile          byteNODATA                              
+DelayedConversionMultibandTileMethods   costdistance                            
+DelayedConversionTile                   crop                                    
+DelayedConversionTileMethods            d2b                                     
+DoubleArrayFiller                       d2f                                     
+DoubleArrayTile                         d2i                                     
+DoubleCellType                          d2s                                     
+DoubleCells                             d2ub                                    
+DoubleConstantNoDataArrayTile           d2us                                    
+DoubleConstantNoDataCellType            density                                 
+DoubleConstantTile                      distance                                
+DoubleRawArrayTile                      doubleNODATA                            
+DoubleTileMapper                        equalization                            
+DoubleTileVisitor                       f2b                                     
+DoubleUserDefinedNoDataArrayTile        f2d                                     
+DoubleUserDefinedNoDataCellType         f2i                                     
+EightNeighbors                          f2s                                     
+FixedNoDataEncoding                     f2ub                                    
+FloatArrayFiller                        f2us                                    
+FloatArrayTile                          floatNODATA                             
+FloatCellType                           histogram                               
+FloatCells                              hydrology                               
+FloatConstantNoDataArrayTile            i2b                                     
+FloatConstantNoDataCellType             i2d                                     
+FloatConstantTile                       i2f                                     
+FloatRawArrayTile                       i2s                                     
+FloatUserDefinedNoDataArrayTile         i2ub                                    
+FloatUserDefinedNoDataCellType          i2us                                    
+FourNeighbors                           interpolation                           
+GeoAttrsError                           io                                      
+Grid                                    isData                                  
+GridBounds                              isNoData                                
+GridExtent                              mapalgebra                              
+HillshadeTuple                          mask                                    
+IntArrayFiller                          matching                                
+IntArrayTile                            merge                                   
+IntCellType                             package                                 
+IntCells                                prototype                               
+IntConstantNoDataArrayTile              rasterize                               
+IntConstantNoDataCellType               regiongroup                             
+IntConstantTile                         render                                  
+IntRawArrayTile                         reproject                               
+IntTileMapper                           resample                                
+IntTileVisitor                          s2b                                     
+IntUserDefinedNoDataArrayTile           s2d                                     
+IntUserDefinedNoDataCellType            s2f                                     
+IterableTile                            s2i                                     
+MacroGeotiffMultibandCombiners          s2ub                                    
+MacroMultibandCombiners                 s2us                                    
+MappableTile                            shortNODATA                             
+MultibandRaster                         sigmoidal                               
+MultibandTile                           split                                   
+MutableArrayTile                        stitch                                  
+NODATA                                  summary                                 
+NoDataHandling                          ub2b                                    
+NoNoData                                ub2d                                    
+PixelInterleaveBandArrayTile            ub2f                                    
+PixelIsArea                             ub2i                                    
+PixelIsPoint                            ub2s                                    
+PixelSampleType                         ub2us                                   
+ProjectedRaster                         ubyteNODATA                             
+Raster                                  us2b                                    
+RasterExtent                            us2d                                    
+RawArrayTile                            us2f                                    
+SegmentCombiner                         us2i                                    
+ShortArrayFiller                        us2s                                    
+ShortArrayTile                          us2ub                                   
+ShortCellType                           ushortNODATA                            
+ShortCells                              vectorize                               
+ShortConstantNoDataArrayTile            viewshed                                
+ShortConstantNoDataCellType             withDoubleKernelDensityMethods          
+ShortConstantTile                       withEuclideanDistanceTileArrayMethods   
+ShortRawArrayTile                       withEuclideanDistanceTileMethods        
+ShortUserDefinedNoDataArrayTile         withExtentCropMethods                   
+ShortUserDefinedNoDataCellType          withFeatureDoubleRasterizeMethods       
+SinglebandRaster                        withFeatureIntRasterizeMethods          
+SinglebandRasterAnyRefMethods           withGeometryRasterizeMethods            
+SpecifiedUserDefinedNoDataEncoding      withIntKernelDensityMethods             
+Tile                                    withInverseDistanceWeightedMethods      
+TileExtents                             withKrigingInterpolationMethods         
+TileFeature                             withMultibandRasterMethods              
+TileLayout                              withMultibandTileMethods                
+TileOrMultibandTile                     withProjectedRasterReprojectMethods     
+TileTupleExtensions                     withRasterExtentRasterizeMethods        
+TraversableTileExtensions               withRasterExtentSplitMethods            
+UByteArrayTile                          withRasterMaskMethods                   
+UByteCellType                           withRasterMergeMethods                  
+UByteCells                              withRasterSplitMethods                  
+UByteConstantNoDataArrayTile            withSinglebandRasterMethods             
+UByteConstantNoDataCellType             withTileMethods                         
+UByteConstantTile                       withTileSeqMethods                      
+
+scala> geotrellis.vector.
+AtLeastOneDimension                                 
+AtMostOneDimension                                  
+AtMostOneDimensionPolygonSymDifferenceResult        
+AtMostOneDimensionPolygonUnionResult                
+Dimensions                                          
+EuclideanMeasure                                    
+Extent                                              
+ExtentRangeError                                    
+Feature                                             
+GeomFactory                                         
+Geometry                                            
+GeometryCollection                                  
+GeometryCollectionBuilder                           
+GeometryCollectionFeature                           
+GeometryCollectionResult                            
+GeometryCollectionTransformations                   
+GeometryResult                                      
+GeometryResultMethods                               
+Line                                                
+LineAtLeastOneDimensionDifferenceResult             
+LineFeature                                         
+LineMultiPolygonSymDifferenceResult                 
+LineMultiPolygonUnionResult                         
+LineOneDimensionUnionResult                         
+LineResult                                          
+LineTransformations                                 
+Measure                                             
+MultiGeometry                                       
+MultiLine                                           
+MultiLineFeature                                    
+MultiLineGeometryDifferenceResult                   
+MultiLineMultiLineDifferenceResult                  
+MultiLineMultiLineIntersectionResult                
+MultiLineMultiLineSymDifferenceResult               
+MultiLineMultiLineUnionResult                       
+MultiLineMultiPolygonSymDifferenceResult            
+MultiLineMultiPolygonUnionResult                    
+MultiLineResult                                     
+MultiLineTransformations                            
+MultiPoint                                          
+MultiPointAtLeastOneDimensionIntersectionResult     
+MultiPointFeature                                   
+MultiPointGeometryDifferenceResult                  
+MultiPointMultiLineSymDifferenceResult              
+MultiPointMultiLineUnionResult                      
+MultiPointMultiPointDifferenceResult                
+MultiPointMultiPointIntersectionResult              
+MultiPointMultiPointSymDifferenceResult             
+MultiPointMultiPointUnionResult                     
+MultiPointMultiPolygonSymDifferenceResult           
+MultiPointMultiPolygonUnionResult                   
+MultiPointResult                                    
+MultiPointTransformations                           
+MultiPolygon                                        
+MultiPolygonFeature                                 
+MultiPolygonMultiPolygonDifferenceResult            
+MultiPolygonMultiPolygonIntersectionResult          
+MultiPolygonMultiPolygonSymDifferenceResult         
+MultiPolygonResult                                  
+MultiPolygonTransformations                         
+MultiPolygonXDifferenceResult                       
+NoResult                                            
+OneDimension                                        
+OneDimensionAtLeastOneDimensionIntersectionResult   
+OneDimensionBoundaryResult                          
+OneDimensionOneDimensionSymDifferenceResult         
+Point                                               
+PointFeature                                        
+PointGeometryDifferenceResult                       
+PointMultiLineSymDifferenceResult                   
+PointMultiLineUnionResult                           
+PointMultiPolygonSymDifferenceResult                
+PointMultiPolygonUnionResult                        
+PointOrNoResult                                     
+PointPointSymDifferenceResult                       
+PointResult                                         
+PointZeroDimensionsUnionResult                      
+Polygon                                             
+PolygonAtMostOneDimensionDifferenceResult           
+PolygonBoundaryResult                               
+PolygonFeature                                      
+PolygonOrNoResult                                   
+PolygonResult                                       
+PolygonTransformations                              
+ProjectedExtent                                     
+ReprojectExtent                                     
+ReprojectFeature                                    
+ReprojectGeometry                                   
+ReprojectGeometryCollection                         
+ReprojectGeometryCollectionFeature                  
+ReprojectLine                                       
+ReprojectLineFeature                                
+ReprojectMultiPoint                                 
+ReprojectMultiPointFeature                          
+ReprojectMutliLine                                  
+ReprojectMutliLineFeature                           
+ReprojectMutliPolygon                               
+ReprojectMutliPolygonFeature                        
+ReprojectPoint                                      
+ReprojectPointFeature                               
+ReprojectPolygon                                    
+ReprojectPolygonFeature                             
+ReprojectTuple                                      
+SeqLineExtensions                                   
+SeqMethods                                          
+SeqMultiLineExtensions                              
+SeqMultiPointExtensions                             
+SeqMultiPolygonExtensions                           
+SeqPointExtensions                                  
+SeqPolygonExtensions                                
+SpatialIndex                                        
+TwoDimensions                                       
+TwoDimensionsTwoDimensionsDifferenceResult          
+TwoDimensionsTwoDimensionsIntersectionResult        
+TwoDimensionsTwoDimensionsSeqUnionResult            
+TwoDimensionsTwoDimensionsSymDifferenceResult       
+TwoDimensionsTwoDimensionsUnionResult               
+ZeroDimensions                                      
+ZeroDimensionsLineSymDifferenceResult               
+ZeroDimensionsLineUnionResult                       
+ZeroDimensionsMultiPointSymDifferenceResult         
+affine                                              
+arrayLineToMultiLine                                
+arrayPointToMultiPoint                              
+arrayPolygonToMultiPolygon                          
+convexhull                                          
+coordinateArrayToMultiPoint                         
+coordinateToPoint                                   
+densify                                             
+dissolve                                            
+interpolation                                       
+io                                                  
+multiLineToSeqLine                                  
+multiPointToSeqPoint                                
+multiPolygonToSeqPolygon                            
+package                                             
+pointListToCoordinateArray                          
+prepared                                            
+reproject                                           
+seqGeometryToGeometryCollection                     
+seqLineToMultiLine                                  
+seqPointToMultiPoint                                
+seqPolygonToMultiPolygon                            
+simplify                                            
+summary                                             
+tupleListToPointList                                
+tupleOfDoubleToPoint                                
+tupleOfIntToPoint                                   
+tupleSeqToMultiPoint                                
+voronoi                                             
+withAnyGeometryMethods                              
+withDelaunayTriangulationArrayMethods               
+withDelaunayTriangulationMethods                    
+withPointMethod                                     
+withVoronoiDiagramArrayMethods                      
+withVoronoiDiagramMethods                           
+
+scala> geotrellis.geotools.
+FeatureToSimpleFeatureMethods                          
+GeometryToSimpleFeature                                
+GeometryToSimpleFeatureMethods                         
+GridCoverage2DConversionMethods                        
+GridCoverage2DConverters                               
+MultibandProjectedRasterToGridCoverage2DMethods        
+MultibandRasterToGridCoverage2DMethods                 
+SimpleFeatureToFeature                                 
+SimpleFeatureToFeatureMethods                          
+SimpleFeatureToGeometryMethods                         
+SinglebandProjectedRasterToGridCoverage2DMethods       
+SinglebandRasterToGridCoverage2DMethods                
+ToGridCoverage2DMethods                                
+package                                                
+withFeatureToSimpleFeatureMethods                      
+withGeometryToSimpleFeatureMethods                     
+withGridCoverage2DConversionMethods                    
+withMultibandProjectedRasterToGridCoverage2DMethods    
+withMultibandRasterToGridCoverage2DMethods             
+withSimpleFeatureMethods                               
+withSinglebandProjectedRasterToGridCoverage2DMethods   
+withSinglebandRasterToGridCoverage2DMethods            
+
 
 
