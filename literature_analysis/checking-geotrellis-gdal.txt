@@ -677,6 +677,12 @@ ConusAlbers        Proj4Transform   io            util
 EPSGCSVReader      Sinusoidal       mgrs          wkt       
 
 
+scala> proj4.CRS
+res51: geotrellis.proj4.CRS.type = geotrellis.proj4.CRS$@58d1113b
+
+scala> res51.
+fromEpsgCode   fromName   fromString   fromWKT   getEpsgCode
+
 
 ____________________________
 
