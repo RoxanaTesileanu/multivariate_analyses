@@ -3561,9 +3561,42 @@ tb1.onAction = (e: ActionEvent) => {
 	}
 
 rb1.selected.onChange {
-	labe.text = "rb1 selection changed" + rb1.selected.apply
+	label.text = "rb1 selection changed" + rb1.selected.apply
 }
 
 
+_________________
+
+List Selection Controls
 
 
+- combobox, listview, choicebox
+
+
+import scalafx.Includes._
+import scalafx.application.JFXApp
+import scalafx.scene.Scene
+import scalfx.scene.control.{Button, CheckBox, RadioButton, ToggleButton, ToggleGroup, Label}
+import scalafx.event.ActionEvent
+
+val app = new JFXApp {
+
+	stage = new JFXApp.PrimaryStage {
+		title = "Button Controls"
+		scene = new Scene (400, 600) {
+			val label = new Label("Feedback")
+			lable.layoutX = 20
+			lable.layoutY = 20
+			
+			val comboBox = new ComboBox (List("Combo 1", "Combo 2", "Combo 3"))
+			comboBox.layoutX = 20
+			comboBox.layoutY = 50
+			
+			val listView = new ListView (List.tabulate(20)(i => "Option"+ (i +1)))
+			listView
+			content = List(label, comboBox)
+			
+
+			}
+	}
+}
