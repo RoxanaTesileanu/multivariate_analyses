@@ -639,6 +639,12 @@ equalsNorm    getInteriorPoint       norm
 scala> unionOfTwo.jtsGeom.getArea
 res18: Double = 2.5866940569291127E8
 
+scala> unionOfTwo.jtsGeom.getGeometryType
+res20: String = MultiPolygon
+
+scala> unionOfTwo.jtsGeom.getNumGeometries
+res24: Int = 2
+
 
 ____________________________
 
