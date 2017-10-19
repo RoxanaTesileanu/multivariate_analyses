@@ -657,6 +657,8 @@ res29: Boolean = false
 scala> unionOfTwo.jtsGeom.getCentroid
 res36: com.vividsolutions.jts.geom.Point = POINT (2670898.5079665184 1768975.7917361727)
 
+scala> data.map(i => i.area).sum
+res40: Double = 2.2886073035293393E11
 
 
 
