@@ -3717,7 +3717,10 @@ val app = new JFXApp {
 			
 			table.columns ++= List(col1, col2, col3, col4)	
 			root = table // root vs. content; root one thing inside 
-		}
+			table.selectionModel.apply.selectedItem.onChange{
+				println("Selected "+ table.selectionModel.apply.getSelectedItems)				
+				}
+			}
 	}
 }
 
