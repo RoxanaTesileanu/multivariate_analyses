@@ -617,6 +617,28 @@ res14: Boolean = false
 scala> unionOfTwo.intersects(data(0))
 res15: Boolean = true
 
+scala> unionOfTwo.jtsGeom
+res17: com.vividsolutions.jts.geom.Geometry = MULTIPOLYGON (((2690436.045877196 1771818.085855743, 2690499.823788332 1770890.9274544248, 2690484.653923422 1769888.7064936028, 2689769.4432713613 1768904.7400164828, 2688969.447217674 1767460.2517512983, 2687629.6375751356 1766338.3520411358, 2686530.175436608 1765672.93588479, 2685659.391365594 1764693.0705903675, 2684169.8433968117 1763960.7425730627, 2683229.443665526 1763522.5750886197, 2681820.010000718 1762942.4308282095, 2680575.4831608874 1762974.9686874892, 2679408.740432067 1763005.4850345387, 2678086.433391056 1763040.0843890263, 2676841.910461778 1763072.6622328102, 2675367.547408084 1763342.6409713167, 2674671.0117159113 1763592.2562978389, 2674216.007402952 1764375.4052129288, 2674294.9587017884 1764450.4590502812, 2673689.06...
+scala> unionOfTwo.jtsGeom.
+apply         equalsTopo             getLength           normalize       
+buffer        geometryChanged        getNumGeometries    overlaps        
+clone         getArea                getNumPoints        relate          
+compareTo     getBoundary            getPrecisionModel   reverse         
+contains      getBoundaryDimension   getSRID             setSRID         
+convexHull    getCentroid            getUserData         setUserData     
+coveredBy     getCoordinate          hashCode            symDifference   
+covers        getCoordinates         intersection        toString        
+crosses       getDimension           intersects          toText          
+difference    getEnvelope            isEmpty             touches         
+disjoint      getEnvelopeInternal    isRectangle         union           
+distance      getFactory             isSimple            within          
+equals        getGeometryN           isValid                             
+equalsExact   getGeometryType        isWithinDistance                    
+equalsNorm    getInteriorPoint       norm                                
+
+scala> unionOfTwo.jtsGeom.getArea
+res18: Double = 2.5866940569291127E8
+
 
 ____________________________
 
