@@ -3707,7 +3707,7 @@ val app = new JFXApp {
 			Student ("Bob", 85, 91)
 			)
 			val table = new TableView(data)		
-			
+			root = table // root vs. content; root one thing inside 
 		}
 	}
 }
