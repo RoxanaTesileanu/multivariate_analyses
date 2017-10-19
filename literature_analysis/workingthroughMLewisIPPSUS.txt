@@ -3681,5 +3681,36 @@ color.onAction = (e:ActionEent) => {
 __________________________________
 
 
+Table View
 
+
+- this displays a table of data
+
+
+import scalafx.Includes._
+import scalafx.application.JFXApp
+import scalafx.scene.Scene
+import scalafx.scene.control.{Label}
+import scalafx.event.ActionEvent
+import scalafx.collections.ObservableBuffer
+
+case class Student (name:String, test1:Int, test2:Int) 
+
+val app = new JFXApp {
+	stage = new JFXApp.PrimaryStage {
+		title = "Table View"
+		scene = new Scene(600, 300) {
+			
+			val data = ObservableBuffer(
+			Student ("Jane", 99, 93),
+			Student ("John", 73, 88),
+			Student ("Bob", 85, 91)
+			)
+			val table = new TableView(data)		
+
+		}
+	}
+}
+
+app.main(args)
 
