@@ -3619,4 +3619,30 @@ comboBox.onAction = (e: ActionEvent) => {
 }
 
 
+listView.selectionModel.apply.selectedItems.onChange{
+	label.text = "List View =" + listView.selectionModel.apply.getSelectedItems
+}
 
+
+_______________
+
+Picker Controls
+
+- a date picker and a color picker
+
+
+import scalafx.Includes._
+import scalafx.application.JFXApp
+import scalafx.scene.Scene
+import scalafx.scene.control.{Label, DatePicker, ColorPicker}
+import scalafx.event.ActionEvent
+
+val app = new JFXApp {
+	stage = new JFXApp.PrimaryStage {
+		title = ""
+		scene = new Scene (600, 300)
+
+
+		}
+	}
+}
