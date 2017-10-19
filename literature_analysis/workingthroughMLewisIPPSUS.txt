@@ -3473,6 +3473,40 @@ ____________
 Button Controls
 
 
+- controls - click -> someth. happens
+
+
+import scalafx.Includes._
+import scalafx.application.JFXApp
+import scalafx.scene.Scene
+import scalfx.scene.control.{Button, CheckBox, RadioButton, ToggleButton, ToggleGroup, Label}
+import scalafx.event.ActionEvent
+
+val app = new JFXApp {
+
+	stage = new JFXApp.PrimaryStage {
+		title = "Button Controls"
+		scene = new Scene (400, 600) {
+			val label = new Label("Feedback")
+			lable.layoutX = 20
+			lable.layoutY = 20
+
+			val button = new Button("A Button")
+			button.layout = 20
+			button.layout = 50
+			
+			val cb1 = new CheckBox("Check 1")
+			
+						
+			content = List( lablel, button )	
+			
+	}
+
+
+}
+app.main(args)
+
+
 
 
 
