@@ -808,6 +808,66 @@ WerenskioldProjection
 WinkelTripelProjection                      
 
 
+scala> org.osgeo.proj4j.
+BasicCoordinateTransform      NotFoundException               datum    
+CRSFactory                    Proj4jException                 io       
+ConvergenceFailureException   ProjCoordinate                  parser   
+CoordinateReferenceSystem     ProjectionException             proj     
+CoordinateTransform           Registry                        units    
+CoordinateTransformFactory    UnknownAuthorityCodeException   util     
+InvalidValueException         UnsupportedParameterException            
+
+scala> org.osgeo.proj4j.CRSFactory
+   object CRSFactory
+
+scala> org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO
+   final val CS_GEO: org.osgeo.proj4j.CoordinateReferenceSystem
+
+scala> org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.
+createGeographic   getName              getParameters   isGeographic   
+getDatum           getParameterString   getProjection   toString       
+
+scala> org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum(data)
+<console>:33: error: too many arguments for method getDatum: ()org.osgeo.proj4j.datum.Datum
+       org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum(data)
+                                                                 ^
+
+scala> org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum
+res63: org.osgeo.proj4j.datum.Datum = null
+
+scala> org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum()
+res64: org.osgeo.proj4j.datum.Datum = null
+
+scala> org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum(data(0))
+<console>:33: error: too many arguments for method getDatum: ()org.osgeo.proj4j.datum.Datum
+       org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum(data(0))
+                                                                 ^
+
+scala> org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum((data(0)))
+<console>:33: error: too many arguments for method getDatum: ()org.osgeo.proj4j.datum.Datum
+       org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum((data(0)))
+                                                                 ^
+
+scala> org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum(res0)
+<console>:33: error: too many arguments for method getDatum: ()org.osgeo.proj4j.datum.Datum
+       org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum(res0)
+                                                                 ^
+
+scala> org.osgeo.proj4j.datum.getName(data)
+<console>:33: error: object getName is not a member of package org.osgeo.proj4j.datum
+       org.osgeo.proj4j.datum.getName(data)
+                              ^
+
+scala> org.osgeo.proj4j.datum.getName(data(0))
+<console>:33: error: object getName is not a member of package org.osgeo.proj4j.datum
+       org.osgeo.proj4j.datum.getName(data(0))
+                              ^
+
+scala> org.osgeo.proj4j.datum.getName(res0)
+<console>:33: error: object getName is not a member of package org.osgeo.proj4j.datum
+       org.osgeo.proj4j.datum.getName(res0)
+                              ^
+
 
 ____________________________
 
