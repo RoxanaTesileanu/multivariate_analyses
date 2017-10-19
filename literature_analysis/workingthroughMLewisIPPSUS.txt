@@ -3496,9 +3496,26 @@ val app = new JFXApp {
 			button.layout = 50
 			
 			val cb1 = new CheckBox("Check 1")
+			cb1.layoutX = 20
+			cb1.layooutY = 80
+			val cb2 = new CheckBox("Check 2")			
+			cb2.layoutX = 20
+			cb2.layoutY = 110			
 			
-						
-			content = List( lablel, button )	
+			val rb1 = new RadioButton("Radio 1")
+			rb1.layoutX = 20
+			rb1.layoutY = 140
+			val rb2 = new RadioButton( "Radio 2" )
+			rb2.layoutX = 20
+			rb2.layoutY = 170
+			val rb3 = new RadioButton ("Radio 3")
+			rb3.layoutX = 20
+			rb3.layoutY = 200 
+
+			val toggle1 = new ToggleGroup
+			toggle.toggles = List(rb1, rb2, rb3)
+
+			content = List( lablel, button, cb1, cb2, rb1, rb2, rb3 )	
 			
 	}
 
