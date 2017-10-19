@@ -561,12 +561,42 @@ import geotrellis.geotools._
 scala> import geotrellis.shapefile._
 import geotrellis.shapefile._
 
-
-scala> import geotrellis.vectortile
-   final package vectortile
-
 scala> import geotrellis.vectortile._
 import geotrellis.vectortile._
+
+scala> import geotrellis.vector.io.json._
+
+scala> val data =geotrellis.shapefile.ShapeFileReader.readMultiPolygonFeatures("sal_alk_eu27_laea1052.shp")
+data: Seq[geotrellis.vector.MultiPolygonFeature[Map[String,Object]]] = List(Feature(MULTIPOLYGON (((2657385.0354120247 1773070.0255874854, 2658393.827223625 1772889.1923907045, 2659482.7452118737 1772860.5096098906, 2660261.716606862 1772917.1231232528, 2661046.548827775 1773359.2170842125, 2662294.5437105247 1773557.7511771242, 2663073.5152229457 1773614.3835211382, 2664239.0439158864 1773506.6038976149, 2665084.082117768 1772790.2543526408, 2666233.219201252 1771603.1700218634, 2667230.315917239 1770651.4722243033, 2667371.8282863675 1769722.2575114083, 2667354.268351508 1768565.8519031878, 2666560.067818907 1767506.9776889745, 2665842.4762677522 1766368.9763275224, 2664662.87697022 1765551.6220103314, 2663262.811323531 1765588.4358509623, 2662327.0928393053 1765458.802610367, 2661315...
+scala> data(0)
+res0: geotrellis.vector.MultiPolygonFeature[Map[String,Object]] = Feature(MULTIPOLYGON (((2657385.0354120247 1773070.0255874854, 2658393.827223625 1772889.1923907045, 2659482.7452118737 1772860.5096098906, 2660261.716606862 1772917.1231232528, 2661046.548827775 1773359.2170842125, 2662294.5437105247 1773557.7511771242, 2663073.5152229457 1773614.3835211382, 2664239.0439158864 1773506.6038976149, 2665084.082117768 1772790.2543526408, 2666233.219201252 1771603.1700218634, 2667230.315917239 1770651.4722243033, 2667371.8282863675 1769722.2575114083, 2667354.268351508 1768565.8519031878, 2666560.067818907 1767506.9776889745, 2665842.4762677522 1766368.9763275224, 2664662.87697022 1765551.6220103314, 2663262.811323531 1765588.4358509623, 2662327.0928393053 1765458.802610367, 2661315.935800347...
+scala> data(0).to
+toSimpleFeature   toString   touches
+
+scala> data(0).
+&          coveredBy    hashCode        polygons           toString         
+-          covers       interiorPoint   productArity       touches          
+area       crosses      intersection    productElement     union            
+as         data         intersects      productIterator    vertexCount      
+boundary   difference   isValid         productPrefix      vertices         
+buffer     disjoint     jtsGeom         reproject          within           
+canEqual   distance     mapData         safeIntersection   withinDistance   
+centroid   envelope     mapGeom         self               |                
+contains   equals       normalized      symDifference                       
+copy       geom         overlaps        toSimpleFeature                     
+
+scala> data(0).area
+res1: Double = 1.191031552790577E8
+
+//getting the area of a multipolygon. 
+
+
+
+
+
+____________________________
+
+
 
 
 
