@@ -3595,6 +3595,7 @@ val app = new JFXApp {
 			val listView = new ListView (List.tabulate(20)(i => "Option"+ (i +1)))
 			listView.layoutX = 300
 			listView.layoutY = 20
+			listView.prefHeight = 260
 
 			content = List(label, comboBox, listView)
 			
@@ -3602,3 +3603,20 @@ val app = new JFXApp {
 			}
 	}
 }
+
+___________________
+
+
+List Selection Control Interactions
+
+
+- add interactivity to those list selection controls
+
+import scalafx.event.ActionEvent
+
+comboBox.onAction = (e: ActionEvent) => {
+	label.text = "Combo Selection =" + comboBox.value.apply
+}
+
+
+
