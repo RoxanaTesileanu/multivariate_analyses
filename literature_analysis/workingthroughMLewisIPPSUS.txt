@@ -3593,8 +3593,10 @@ val app = new JFXApp {
 			comboBox.layoutY = 50
 			
 			val listView = new ListView (List.tabulate(20)(i => "Option"+ (i +1)))
-			listView
-			content = List(label, comboBox)
+			listView.layoutX = 300
+			listView.layoutY = 20
+
+			content = List(label, comboBox, listView)
 			
 
 			}
