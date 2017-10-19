@@ -670,6 +670,12 @@ res42: Array[geotrellis.vector.Point] = Array(POINT (2657385.0354120247 1773070.
 scala> import geotrellis.proj4._
 import geotrellis.proj4._
 
+scala> proj4.
+CRS                LatLng           Transform     nad       
+CSVFileConstants   Memoize          WebMercator   package   
+ConusAlbers        Proj4Transform   io            util      
+EPSGCSVReader      Sinusoidal       mgrs          wkt       
+
 
 
 ____________________________
