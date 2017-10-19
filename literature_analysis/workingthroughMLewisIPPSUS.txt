@@ -3665,5 +3665,21 @@ val app = new JFXApp {
 ________________________________
 
 
+Picker Control Interactions
+
+
+date.onAction = (e: ActionEvent) => {
+label.text = "Date:" + date.value.apply
+}
+
+color.onAction = (e:ActionEent) => {
+	fill = color.value.apply
+}
+
+
+
+__________________________________
+
+
 
 
