@@ -684,6 +684,131 @@ scala> res51.
 fromEpsgCode   fromName   fromString   fromWKT   getEpsgCode
 
 
+scala> import org.osgeo.proj4j.datum
+import org.osgeo.proj4j.datum
+ 
+
+scala> org.osgeo.proj4j.datum.
+AxisOrder   Datum       GeocentricConverter   NTV1            
+CTABLEV2    Ellipsoid   Grid                  PrimeMeridian   
+
+scala> org.osgeo.proj4j.datum.Datum.
+CARTHAGE                 IRE65    OSEB36        TYPE_GRIDSHIFT   
+ELLIPSOID_E2_TOLERANCE   NAD27    POTSDAM       TYPE_UNKNOWN     
+GGRS87                   NAD83    TYPE_3PARAM   TYPE_WGS84       
+HERMANNSKOGEL            NZGD49   TYPE_7PARAM   WGS84            
+
+scala> org.osgeo.proj4j.
+BasicCoordinateTransform      NotFoundException               datum    
+CRSFactory                    Proj4jException                 io       
+ConvergenceFailureException   ProjCoordinate                  parser   
+CoordinateReferenceSystem     ProjectionException             proj     
+CoordinateTransform           Registry                        units    
+CoordinateTransformFactory    UnknownAuthorityCodeException   util     
+InvalidValueException         UnsupportedParameterException            
+
+scala> org.osgeo.proj4j.proj.
+AiryProjection                              
+AitoffProjection                            
+AlbersProjection                            
+AugustProjection                            
+AzimuthalProjection                         
+BipolarProjection                           
+BoggsProjection                             
+BonneProjection                             
+CassiniProjection                           
+CentralCylindricalProjection                
+CollignonProjection                         
+ConicProjection                             
+CrasterProjection                           
+CylindricalEqualAreaProjection              
+CylindricalProjection                       
+DenoyerProjection                           
+Eckert1Projection                           
+Eckert2Projection                           
+Eckert4Projection                           
+Eckert5Projection                           
+Eckert6Projection                           
+EqualAreaAzimuthalProjection                
+EqualAreaCylindricalProjection              
+EquidistantAzimuthalProjection              
+EquidistantConicProjection                  
+EulerProjection                             
+FaheyProjection                             
+FoucautProjection                           
+FoucautSinusoidalProjection                 
+GallProjection                              
+GaussProjection                             
+Ginsburg8Projection                         
+GnomonicAzimuthalProjection                 
+GoodeProjection                             
+HammerProjection                            
+HatanoProjection                            
+KavraiskyVProjection                        
+KrovakProjection                            
+LagrangeProjection                          
+LambertAzimuthalEqualAreaProjection         
+LambertConformalConicProjection             
+LambertEqualAreaConicProjection             
+LandsatProjection                           
+LarriveeProjection                          
+LaskowskiProjection                         
+LinearProjection                            
+LongLatProjection                           
+LoximuthalProjection                        
+McBrydeThomasFlatPolarParabolicProjection   
+McBrydeThomasFlatPolarQuarticProjection     
+McBrydeThomasFlatPolarSine1Projection       
+McBrydeThomasFlatPolarSine2Projection       
+MercatorProjection                          
+MillerProjection                            
+MolleweideProjection                        
+Murdoch1Projection                          
+Murdoch2Projection                          
+Murdoch3Projection                          
+NellHProjection                             
+NellProjection                              
+NewZealandMapGridProjection                 
+NicolosiProjection                          
+NullProjection                              
+ObliqueMercatorProjection                   
+ObliqueStereographicAlternativeProjection   
+OrthographicAzimuthalProjection             
+PerspectiveConicProjection                  
+PerspectiveProjection                       
+PlateCarreeProjection                       
+PolyconicProjection                         
+Projection                                  
+PseudoCylindricalProjection                 
+PutninsP2Projection                         
+PutninsP4Projection                         
+PutninsP5PProjection                        
+PutninsP5Projection                         
+QuarticAuthalicProjection                   
+RectangularPolyconicProjection              
+RobinsonProjection                          
+SimpleConicProjection                       
+SinusoidalProjection                        
+StereographicAzimuthalProjection            
+SwissObliqueMercatorProjection              
+TissotProjection                            
+TransverseCylindricalEqualArea              
+TransverseMercatorProjection                
+TranverseCentralCylindricalProjection       
+UrmaevFlatPolarSinusoidalProjection         
+VanDerGrintenProjection                     
+VitkovskyProjection                         
+Wagner1Projection                           
+Wagner2Projection                           
+Wagner3Projection                           
+Wagner4Projection                           
+Wagner5Projection                           
+Wagner7Projection                           
+WerenskioldProjection                       
+WinkelTripelProjection                      
+
+
+
 ____________________________
 
 
