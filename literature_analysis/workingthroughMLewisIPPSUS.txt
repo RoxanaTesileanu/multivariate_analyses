@@ -3693,7 +3693,7 @@ import scalafx.scene.Scene
 import scalafx.scene.control.{TableView, TableColumn} //instead of Label
 import scalafx.event.ActionEvent
 import scalafx.collections.ObservableBuffer
-import scalafx.beans.property.{StringProperty}
+import scalafx.beans.property.{StringProperty, ObjectProperty}
 
 case class Student (name:String, test1:Int, test2:Int) 
 
@@ -3710,7 +3710,9 @@ val app = new JFXApp {
 			val table = new TableView(data)		
 			val col1 = new TableColumn[Student, String] ("Name")
 			col1.cellValueFactory = cdf => StringProperty(cdf.value.name)
-			table.columns ++= List(col1)	
+			val col2 = new TableColumn [Student, Int] ("Test 1") 				col2.cellValueFactory = cdf => ObjectProperty (cdf.value.test1)
+	
+			table.columns ++= List(col1, col2)	
 			root = table // root vs. content; root one thing inside 
 		}
 	}
