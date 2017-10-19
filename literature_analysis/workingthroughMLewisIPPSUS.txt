@@ -3690,7 +3690,7 @@ Table View
 import scalafx.Includes._
 import scalafx.application.JFXApp
 import scalafx.scene.Scene
-import scalafx.scene.control.{Label}
+import scalafx.scene.control.{TableView} //instead of Label
 import scalafx.event.ActionEvent
 import scalafx.collections.ObservableBuffer
 
