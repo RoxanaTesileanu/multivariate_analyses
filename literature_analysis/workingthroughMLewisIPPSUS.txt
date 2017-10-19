@@ -3710,13 +3710,17 @@ val app = new JFXApp {
 			val table = new TableView(data)		
 			val col1 = new TableColumn[Student, String] ("Name")
 			col1.cellValueFactory = cdf => StringProperty(cdf.value.name)
-			table.columns	
+			table.columns ++= List(col1)	
 			root = table // root vs. content; root one thing inside 
 		}
 	}
 }
 
 app.main(args)
+
+
+!!! NOTE: THE cellValueFactory IS A FUNCTION THAT BUILDS CELLS OUT OF THE VALUES THAT ARE STORED IN THE ROWS !!!! 
+
 
 
 ___________________
