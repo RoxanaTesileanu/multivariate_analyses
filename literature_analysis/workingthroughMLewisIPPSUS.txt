@@ -3690,9 +3690,10 @@ Table View
 import scalafx.Includes._
 import scalafx.application.JFXApp
 import scalafx.scene.Scene
-import scalafx.scene.control.{TableView} //instead of Label
+import scalafx.scene.control.{TableView, TableColumn} //instead of Label
 import scalafx.event.ActionEvent
 import scalafx.collections.ObservableBuffer
+import scalafx.beans.property.{StringProperty}
 
 case class Student (name:String, test1:Int, test2:Int) 
 
@@ -3707,10 +3708,19 @@ val app = new JFXApp {
 			Student ("Bob", 85, 91)
 			)
 			val table = new TableView(data)		
+			val col1 = new TableColumn[Student, String] ("Name")
+			col1.cellValueFactory = cdf => StringProperty(cdf.value.name)
+			table.columns	
 			root = table // root vs. content; root one thing inside 
 		}
 	}
 }
 
 app.main(args)
+
+
+___________________
+
+
+
 
