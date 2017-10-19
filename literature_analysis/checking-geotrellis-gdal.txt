@@ -651,6 +651,12 @@ res26: com.vividsolutions.jts.geom.Geometry = MULTILINESTRING ((2690436.04587719
 scala> unionOfTwo.jtsGeom.getLength
 res28: Double = 92049.10524799928
 
+scala> unionOfTwo.jtsGeom.isRectangle
+res29: Boolean = false
+
+scala> unionOfTwo.jtsGeom.getCentroid
+res36: com.vividsolutions.jts.geom.Point = POINT (2670898.5079665184 1768975.7917361727)
+
 
 
 
