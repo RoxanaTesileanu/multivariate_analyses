@@ -610,6 +610,14 @@ res10: Boolean = true
 scala> unionOfTwo.envelope
 res13: geotrellis.vector.Extent = Extent(2650413.3628196027, 1762942.4308282095, 2690499.823788332, 1774693.9667308934)
 
+
+scala> unionOfTwo.intersects(data(3))
+res14: Boolean = false
+
+scala> unionOfTwo.intersects(data(0))
+res15: Boolean = true
+
+
 ____________________________
 
 
