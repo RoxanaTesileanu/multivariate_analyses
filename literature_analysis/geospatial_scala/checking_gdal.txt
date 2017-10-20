@@ -27,5 +27,7 @@ Dataset                RasterAttributeTable   XMLNodeType
 Driver                 RasterizeOptions       gdal                     
 GCP                    TermProgressCallback   gdalJNI                  
 
+cala> org.gdal.osr.
+CoordinateTransformation   SpatialReference   osr   osrConstants   osrJNI
 
 
