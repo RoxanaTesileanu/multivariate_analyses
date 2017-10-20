@@ -7,12 +7,16 @@ libraryDependencies ++= Seq(
  "org.scala-lang" % "scala-swing" % "2.10.2",
 
  "org.gdal" % "gdal" % "2.1.0" pomOnly(),
+//"org.locationtech.geogig" % "geogig-geotools" % "1.2.0-RC1",
 
 "org.locationtech.geotrellis" %% "geotrellis-raster" % "1.0.0",
 "org.locationtech.geotrellis" % "geotrellis-vector_2.11" % "1.1.1",
 
 //"org.locationtech.geotrellis" % "geotrellis-geotools_2.11" % "1.1.1",
 //"org.locationtech.geotrellis" % "geotrellis-geotools_2.11" % "1.2.0-M1",
+
+
+//"org.geotools" % "gt2-legacy" % "2.2-RC2",
 
 
 "org.geotools" % "gt-main" % "16.1",

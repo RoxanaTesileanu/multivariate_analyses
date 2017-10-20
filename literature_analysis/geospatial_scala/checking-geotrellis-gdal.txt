@@ -1,0 +1,1047 @@
+Checking the geotrellis package
+
+SBT Maven coordinates:
+
+
+libraryDependencies ++= Seq(
+"org.gdal" % "gdal" % "2.1.0" pomOnly(),
+
+"org.locationtech.geotrellis" %% "geotrellis-raster" % "1.0.0",
+"org.locationtech.geotrellis" % "geotrellis-vector_2.11" % "1.1.1",
+
+
+"org.geotools" % "gt-main" % "16.1",
+"org.geotools" % "gt-epsg-hsql" % "16.1" % "test",
+
+"org.geotools" % "gt-referencing" % "16.1",
+"org.geotools" % "gt-shapefile" % "16.1",
+
+
+
+"org.locationtech.geotrellis" % "geotrellis-geotools_2.11" % "1.1.0",
+
+"org.locationtech.geotrellis" % "geotrellis-shapefile_2.11" % "1.1.0"
+)
+
+resolvers += "osgeo" at "http://download.osgeo.org/webdav/geotools"
+resolvers += "boundless" at "http://repo.boundlessgeo.com/main"
+resolvers += "imageio" at "http://maven.geo-solutions.it"
+
+
+_
+__________________________________
+REPL:
+
+
+scala> import geotrellis._
+import geotrellis._
+
+scala> geotrellis.
+gdal   macros   proj4   raster   vector
+
+scala> geotrellis.gdal.
+Gdal              GroundControlPoint   TypeCFloat64   TypeInt32     
+GdalDataType      RasterBand           TypeCInt16     TypeUInt16    
+GdalException     RasterColor          TypeCInt32     TypeUInt32    
+GdalInfo          RasterDataSet        TypeFloat32    TypeUnknown   
+GdalInfoOptions   TypeByte             TypeFloat64                  
+GdalReader        TypeCFloat32         TypeInt16                    
+
+scala> geotrellis.vector.
+AtLeastOneDimension                                 
+AtMostOneDimension                                  
+AtMostOneDimensionPolygonSymDifferenceResult        
+AtMostOneDimensionPolygonUnionResult                
+Circular                                            
+Dimensions                                          
+DumbMeasure                                         
+Exponential                                         
+Extent                                              
+ExtentRangeError                                    
+Feature                                             
+Gaussian                                            
+GeomFactory                                         
+Geometry                                            
+GeometryCollection                                  
+GeometryCollectionBuilder                           
+GeometryCollectionFeature                           
+GeometryCollectionResult                            
+GeometryResult                                      
+GeometryResultMethods                               
+Line                                                
+LineAtLeastOneDimensionDifferenceResult             
+LineFeature                                         
+LineMultiPolygonSymDifferenceResult                 
+LineMultiPolygonUnionResult                         
+LineOneDimensionUnionResult                         
+LineResult                                          
+Linear                                              
+Measure                                             
+ModelType                                           
+MultiGeometry                                       
+MultiLine                                           
+MultiLineFeature                                    
+MultiLineGeometryDifferenceResult                   
+MultiLineMultiLineDifferenceResult                  
+MultiLineMultiLineIntersectionResult                
+MultiLineMultiLineSymDifferenceResult               
+MultiLineMultiLineUnionResult                       
+MultiLineMultiPolygonSymDifferenceResult            
+MultiLineMultiPolygonUnionResult                    
+MultiLineResult                                     
+MultiPoint                                          
+MultiPointAtLeastOneDimensionIntersectionResult     
+MultiPointFeature                                   
+MultiPointGeometryDifferenceResult                  
+MultiPointMultiLineSymDifferenceResult              
+MultiPointMultiLineUnionResult                      
+MultiPointMultiPointDifferenceResult                
+MultiPointMultiPointIntersectionResult              
+MultiPointMultiPointSymDifferenceResult             
+MultiPointMultiPointUnionResult                     
+MultiPointMultiPolygonSymDifferenceResult           
+MultiPointMultiPolygonUnionResult                   
+MultiPointResult                                    
+MultiPolygon                                        
+MultiPolygonFeature                                 
+MultiPolygonMultiPolygonDifferenceResult            
+MultiPolygonMultiPolygonIntersectionResult          
+MultiPolygonMultiPolygonSymDifferenceResult         
+MultiPolygonResult                                  
+MultiPolygonXDifferenceResult                       
+NoResult                                            
+OneDimension                                        
+OneDimensionAtLeastOneDimensionIntersectionResult   
+OneDimensionBoundaryResult                          
+OneDimensionOneDimensionSymDifferenceResult         
+Point                                               
+PointFeature                                        
+PointGeometryDifferenceResult                       
+PointGeometryIntersectionResult                     
+PointMultiLineSymDifferenceResult                   
+PointMultiLineUnionResult                           
+PointMultiPolygonSymDifferenceResult                
+PointMultiPolygonUnionResult                        
+PointOrNoResult                                     
+PointPointSymDifferenceResult                       
+PointResult                                         
+PointZeroDimensionsUnionResult                      
+Polygon                                             
+PolygonAtMostOneDimensionDifferenceResult           
+PolygonBoundaryResult                               
+PolygonFeature                                      
+PolygonResult                                       
+ProjectedExtent                                     
+Relatable                                           
+Semivariogram                                       
+SeqLineExtensions                                   
+SeqMethods                                          
+SeqMultiLineExtensions                              
+SeqMultiPointExtensions                             
+SeqMultiPolygonExtensions                           
+SeqPointExtensions                                  
+SeqPolygonExtensions                                
+SpatialIndex                                        
+Spherical                                           
+TwoDimensions                                       
+TwoDimensionsTwoDimensionsDifferenceResult          
+TwoDimensionsTwoDimensionsIntersectionResult        
+TwoDimensionsTwoDimensionsSymDifferenceResult       
+TwoDimensionsTwoDimensionsUnionResult               
+ZeroDimensions                                      
+ZeroDimensionsLineSymDifferenceResult               
+ZeroDimensionsLineUnionResult                       
+ZeroDimensionsMultiPointSymDifferenceResult         
+affine                                              
+coordinateArrayToMultiPoint                         
+coordinateToPoint                                   
+featureToGeometry                                   
+geometryCollectionToSeqGeometry                     
+io                                                  
+multiLineToSeqLine                                  
+multiPointToSeqPoint                                
+multiPolygonToSeqPolygon                            
+op                                                  
+package                                             
+pointListToCoordinateArray                          
+reproject                                           
+seqGeometryToGeometryCollection                     
+seqLineToMultiLine                                  
+seqPointToMultiPoint                                
+seqPolygonToMultiPolygon                            
+tupleListToPointList                                
+tupleOfDoubleToPoint                                
+tupleOfIntToPoint                                   
+tupleSeqToMultiPoint                                
+
+scala> geotrellis.gdal.
+Gdal              GroundControlPoint   TypeCFloat64   TypeInt32     
+GdalDataType      RasterBand           TypeCInt16     TypeUInt16    
+GdalException     RasterColor          TypeCInt32     TypeUInt32    
+GdalInfo          RasterDataSet        TypeFloat32    TypeUnknown   
+GdalInfoOptions   TypeByte             TypeFloat64                  
+GdalReader        TypeCFloat32         TypeInt16                    
+
+scala> geotrellis.gdal.GdalReader.read
+
+def read(path: String,band: Int): (geotrellis.raster.Tile, geotrellis.raster.RasterExtent)
+
+scala> geotrellis.gdal.GdalReader.read
+
+def read(path: String,band: Int): (geotrellis.raster.Tile, geotrellis.raster.RasterExtent)
+
+scala> geotrellis.ShapeFileReader.
+gdal   macros   proj4   raster   util   vector
+
+:reset
+____________________________________________
+
+scala> import geotrellis._
+import geotrellis._
+
+scala> import geotrellis.geotools._
+import geotrellis.geotools._
+
+scala> import geotrellis.shapefile._
+import geotrellis.shapefile._
+
+
+scala> geotrellis.
+geotools   macros   proj4   raster   shapefile   util   vector
+
+scala> geotrellis.raster.
+ArrayMultibandTile                      UByteRawArrayTile                       
+ArrayTile                               UByteUserDefinedNoDataArrayTile         
+BitArrayTile                            UByteUserDefinedNoDataCellType          
+BitCellType                             UShortArrayTile                         
+BitCells                                UShortCellType                          
+BitConstantTile                         UShortCells                             
+ByteArrayFiller                         UShortConstantNoDataArrayTile           
+ByteArrayTile                           UShortConstantNoDataCellType            
+ByteCellType                            UShortConstantTile                      
+ByteCells                               UShortRawArrayTile                      
+ByteConstantNoDataArrayTile             UShortUserDefinedNoDataArrayTile        
+ByteConstantNoDataCellType              UShortUserDefinedNoDataCellType         
+ByteConstantTile                        UserDefinedByteNoDataConversions        
+ByteRawArrayTile                        UserDefinedDoubleNoDataConversions      
+ByteUserDefinedNoDataArrayTile          UserDefinedFloatNoDataConversions       
+ByteUserDefinedNoDataCellType           UserDefinedIntNoDataConversions         
+CellGrid                                UserDefinedNoData                       
+CellSet                                 UserDefinedNoDataEncoding               
+CellSize                                UserDefinedShortNoDataConversions       
+CellType                                WideDoubleNoData                        
+CellTypeEncoding                        WideIntNoData                           
+CompositeTile                           WidenedNoData                           
+Connectivity                            b2d                                     
+ConstantNoData                          b2f                                     
+ConstantTile                            b2i                                     
+CroppedTile                             b2s                                     
+DI                                      b2ub                                    
+DataType                                b2us                                    
+DelayedConversionMultibandTile          byteNODATA                              
+DelayedConversionMultibandTileMethods   costdistance                            
+DelayedConversionTile                   crop                                    
+DelayedConversionTileMethods            d2b                                     
+DoubleArrayFiller                       d2f                                     
+DoubleArrayTile                         d2i                                     
+DoubleCellType                          d2s                                     
+DoubleCells                             d2ub                                    
+DoubleConstantNoDataArrayTile           d2us                                    
+DoubleConstantNoDataCellType            density                                 
+DoubleConstantTile                      distance                                
+DoubleRawArrayTile                      doubleNODATA                            
+DoubleTileMapper                        equalization                            
+DoubleTileVisitor                       f2b                                     
+DoubleUserDefinedNoDataArrayTile        f2d                                     
+DoubleUserDefinedNoDataCellType         f2i                                     
+EightNeighbors                          f2s                                     
+FixedNoDataEncoding                     f2ub                                    
+FloatArrayFiller                        f2us                                    
+FloatArrayTile                          floatNODATA                             
+FloatCellType                           histogram                               
+FloatCells                              hydrology                               
+FloatConstantNoDataArrayTile            i2b                                     
+FloatConstantNoDataCellType             i2d                                     
+FloatConstantTile                       i2f                                     
+FloatRawArrayTile                       i2s                                     
+FloatUserDefinedNoDataArrayTile         i2ub                                    
+FloatUserDefinedNoDataCellType          i2us                                    
+FourNeighbors                           interpolation                           
+GeoAttrsError                           io                                      
+Grid                                    isData                                  
+GridBounds                              isNoData                                
+GridExtent                              mapalgebra                              
+HillshadeTuple                          mask                                    
+IntArrayFiller                          matching                                
+IntArrayTile                            merge                                   
+IntCellType                             package                                 
+IntCells                                prototype                               
+IntConstantNoDataArrayTile              rasterize                               
+IntConstantNoDataCellType               regiongroup                             
+IntConstantTile                         render                                  
+IntRawArrayTile                         reproject                               
+IntTileMapper                           resample                                
+IntTileVisitor                          s2b                                     
+IntUserDefinedNoDataArrayTile           s2d                                     
+IntUserDefinedNoDataCellType            s2f                                     
+IterableTile                            s2i                                     
+MacroGeotiffMultibandCombiners          s2ub                                    
+MacroMultibandCombiners                 s2us                                    
+MappableTile                            shortNODATA                             
+MultibandRaster                         sigmoidal                               
+MultibandTile                           split                                   
+MutableArrayTile                        stitch                                  
+NODATA                                  summary                                 
+NoDataHandling                          ub2b                                    
+NoNoData                                ub2d                                    
+PixelInterleaveBandArrayTile            ub2f                                    
+PixelIsArea                             ub2i                                    
+PixelIsPoint                            ub2s                                    
+PixelSampleType                         ub2us                                   
+ProjectedRaster                         ubyteNODATA                             
+Raster                                  us2b                                    
+RasterExtent                            us2d                                    
+RawArrayTile                            us2f                                    
+SegmentCombiner                         us2i                                    
+ShortArrayFiller                        us2s                                    
+ShortArrayTile                          us2ub                                   
+ShortCellType                           ushortNODATA                            
+ShortCells                              vectorize                               
+ShortConstantNoDataArrayTile            viewshed                                
+ShortConstantNoDataCellType             withDoubleKernelDensityMethods          
+ShortConstantTile                       withEuclideanDistanceTileArrayMethods   
+ShortRawArrayTile                       withEuclideanDistanceTileMethods        
+ShortUserDefinedNoDataArrayTile         withExtentCropMethods                   
+ShortUserDefinedNoDataCellType          withFeatureDoubleRasterizeMethods       
+SinglebandRaster                        withFeatureIntRasterizeMethods          
+SinglebandRasterAnyRefMethods           withGeometryRasterizeMethods            
+SpecifiedUserDefinedNoDataEncoding      withIntKernelDensityMethods             
+Tile                                    withInverseDistanceWeightedMethods      
+TileExtents                             withKrigingInterpolationMethods         
+TileFeature                             withMultibandRasterMethods              
+TileLayout                              withMultibandTileMethods                
+TileOrMultibandTile                     withProjectedRasterReprojectMethods     
+TileTupleExtensions                     withRasterExtentRasterizeMethods        
+TraversableTileExtensions               withRasterExtentSplitMethods            
+UByteArrayTile                          withRasterMaskMethods                   
+UByteCellType                           withRasterMergeMethods                  
+UByteCells                              withRasterSplitMethods                  
+UByteConstantNoDataArrayTile            withSinglebandRasterMethods             
+UByteConstantNoDataCellType             withTileMethods                         
+UByteConstantTile                       withTileSeqMethods                      
+
+scala> geotrellis.vector.
+AtLeastOneDimension                                 
+AtMostOneDimension                                  
+AtMostOneDimensionPolygonSymDifferenceResult        
+AtMostOneDimensionPolygonUnionResult                
+Dimensions                                          
+EuclideanMeasure                                    
+Extent                                              
+ExtentRangeError                                    
+Feature                                             
+GeomFactory                                         
+Geometry                                            
+GeometryCollection                                  
+GeometryCollectionBuilder                           
+GeometryCollectionFeature                           
+GeometryCollectionResult                            
+GeometryCollectionTransformations                   
+GeometryResult                                      
+GeometryResultMethods                               
+Line                                                
+LineAtLeastOneDimensionDifferenceResult             
+LineFeature                                         
+LineMultiPolygonSymDifferenceResult                 
+LineMultiPolygonUnionResult                         
+LineOneDimensionUnionResult                         
+LineResult                                          
+LineTransformations                                 
+Measure                                             
+MultiGeometry                                       
+MultiLine                                           
+MultiLineFeature                                    
+MultiLineGeometryDifferenceResult                   
+MultiLineMultiLineDifferenceResult                  
+MultiLineMultiLineIntersectionResult                
+MultiLineMultiLineSymDifferenceResult               
+MultiLineMultiLineUnionResult                       
+MultiLineMultiPolygonSymDifferenceResult            
+MultiLineMultiPolygonUnionResult                    
+MultiLineResult                                     
+MultiLineTransformations                            
+MultiPoint                                          
+MultiPointAtLeastOneDimensionIntersectionResult     
+MultiPointFeature                                   
+MultiPointGeometryDifferenceResult                  
+MultiPointMultiLineSymDifferenceResult              
+MultiPointMultiLineUnionResult                      
+MultiPointMultiPointDifferenceResult                
+MultiPointMultiPointIntersectionResult              
+MultiPointMultiPointSymDifferenceResult             
+MultiPointMultiPointUnionResult                     
+MultiPointMultiPolygonSymDifferenceResult           
+MultiPointMultiPolygonUnionResult                   
+MultiPointResult                                    
+MultiPointTransformations                           
+MultiPolygon                                        
+MultiPolygonFeature                                 
+MultiPolygonMultiPolygonDifferenceResult            
+MultiPolygonMultiPolygonIntersectionResult          
+MultiPolygonMultiPolygonSymDifferenceResult         
+MultiPolygonResult                                  
+MultiPolygonTransformations                         
+MultiPolygonXDifferenceResult                       
+NoResult                                            
+OneDimension                                        
+OneDimensionAtLeastOneDimensionIntersectionResult   
+OneDimensionBoundaryResult                          
+OneDimensionOneDimensionSymDifferenceResult         
+Point                                               
+PointFeature                                        
+PointGeometryDifferenceResult                       
+PointMultiLineSymDifferenceResult                   
+PointMultiLineUnionResult                           
+PointMultiPolygonSymDifferenceResult                
+PointMultiPolygonUnionResult                        
+PointOrNoResult                                     
+PointPointSymDifferenceResult                       
+PointResult                                         
+PointZeroDimensionsUnionResult                      
+Polygon                                             
+PolygonAtMostOneDimensionDifferenceResult           
+PolygonBoundaryResult                               
+PolygonFeature                                      
+PolygonOrNoResult                                   
+PolygonResult                                       
+PolygonTransformations                              
+ProjectedExtent                                     
+ReprojectExtent                                     
+ReprojectFeature                                    
+ReprojectGeometry                                   
+ReprojectGeometryCollection                         
+ReprojectGeometryCollectionFeature                  
+ReprojectLine                                       
+ReprojectLineFeature                                
+ReprojectMultiPoint                                 
+ReprojectMultiPointFeature                          
+ReprojectMutliLine                                  
+ReprojectMutliLineFeature                           
+ReprojectMutliPolygon                               
+ReprojectMutliPolygonFeature                        
+ReprojectPoint                                      
+ReprojectPointFeature                               
+ReprojectPolygon                                    
+ReprojectPolygonFeature                             
+ReprojectTuple                                      
+SeqLineExtensions                                   
+SeqMethods                                          
+SeqMultiLineExtensions                              
+SeqMultiPointExtensions                             
+SeqMultiPolygonExtensions                           
+SeqPointExtensions                                  
+SeqPolygonExtensions                                
+SpatialIndex                                        
+TwoDimensions                                       
+TwoDimensionsTwoDimensionsDifferenceResult          
+TwoDimensionsTwoDimensionsIntersectionResult        
+TwoDimensionsTwoDimensionsSeqUnionResult            
+TwoDimensionsTwoDimensionsSymDifferenceResult       
+TwoDimensionsTwoDimensionsUnionResult               
+ZeroDimensions                                      
+ZeroDimensionsLineSymDifferenceResult               
+ZeroDimensionsLineUnionResult                       
+ZeroDimensionsMultiPointSymDifferenceResult         
+affine                                              
+arrayLineToMultiLine                                
+arrayPointToMultiPoint                              
+arrayPolygonToMultiPolygon                          
+convexhull                                          
+coordinateArrayToMultiPoint                         
+coordinateToPoint                                   
+densify                                             
+dissolve                                            
+interpolation                                       
+io                                                  
+multiLineToSeqLine                                  
+multiPointToSeqPoint                                
+multiPolygonToSeqPolygon                            
+package                                             
+pointListToCoordinateArray                          
+prepared                                            
+reproject                                           
+seqGeometryToGeometryCollection                     
+seqLineToMultiLine                                  
+seqPointToMultiPoint                                
+seqPolygonToMultiPolygon                            
+simplify                                            
+summary                                             
+tupleListToPointList                                
+tupleOfDoubleToPoint                                
+tupleOfIntToPoint                                   
+tupleSeqToMultiPoint                                
+voronoi                                             
+withAnyGeometryMethods                              
+withDelaunayTriangulationArrayMethods               
+withDelaunayTriangulationMethods                    
+withPointMethod                                     
+withVoronoiDiagramArrayMethods                      
+withVoronoiDiagramMethods                           
+
+scala> geotrellis.geotools.
+FeatureToSimpleFeatureMethods                          
+GeometryToSimpleFeature                                
+GeometryToSimpleFeatureMethods                         
+GridCoverage2DConversionMethods                        
+GridCoverage2DConverters                               
+MultibandProjectedRasterToGridCoverage2DMethods        
+MultibandRasterToGridCoverage2DMethods                 
+SimpleFeatureToFeature                                 
+SimpleFeatureToFeatureMethods                          
+SimpleFeatureToGeometryMethods                         
+SinglebandProjectedRasterToGridCoverage2DMethods       
+SinglebandRasterToGridCoverage2DMethods                
+ToGridCoverage2DMethods                                
+package                                                
+withFeatureToSimpleFeatureMethods                      
+withGeometryToSimpleFeatureMethods                     
+withGridCoverage2DConversionMethods                    
+withMultibandProjectedRasterToGridCoverage2DMethods    
+withMultibandRasterToGridCoverage2DMethods             
+withSimpleFeatureMethods                               
+withSinglebandProjectedRasterToGridCoverage2DMethods   
+withSinglebandRasterToGridCoverage2DMethods            
+
+:reset
+________________________________
+
+scala> import geotrellis._
+import geotrellis._
+
+
+scala> import geotrellis.geotools._
+import geotrellis.geotools._
+
+scala> import geotrellis.shapefile._
+import geotrellis.shapefile._
+
+scala> geotrellis.shapefile.ShapeFileReader.readPo
+readPointFeatures   readPolygonFeatures
+
+scala> val data = geotrellis.shapefile.ShapeFileReader.readPolygonFeatures("Intersection_lyr.shp")
+data: Seq[geotrellis.vector.PolygonFeature[Map[String,Object]]] = List()
+
+
+scala> data.isEmpty
+res0: Boolean = true
+
+scala> val data = geotrellis.shapefile.ShapeFileReader.read
+readLineFeatures         readMultiPolygonFeatures   readSimpleFeatures   
+readMultiLineFeatures    readPointFeatures                               
+readMultiPointFeatures   readPolygonFeatures             
+
+scala> val data = geotrellis.shapefile.ShapeFileReader.readMultiPolygonFeatures("sal_alk_eu27_laea1052.shp")
+data: Seq[geotrellis.vector.MultiPolygonFeature[Map[String,Object]]] = List(Feature(MULTIPOLYGON (((2657385.0354120247 1773070.0255874854, 2658393.827223625 1772889.1923907045, 2659482.7452118737 1772860.5096098906, 2660261.716606862 1772917.1231232528, 2661046.548827775 1773359.2170842125, 2662294.5437105247 1773557.7511771242, 2663073.5152229457 1773614.3835211382, 2664239.0439158864 1773506.6038976149, 2665084.082117768 1772790.2543526408, 2666233.219201252 1771603.1700218634, 2667230.315917239 1770651.4722243033, 2667371.8282863675 1769722.2575114083, 2667354.268351508 1768565.8519031878, 2666560.067818907 1767506.9776889745, 2665842.4762677522 1766368.9763275224, 2664662.87697022 1765551.6220103314, 2663262.811323531 1765588.4358509623, 2662327.0928393053 1765458.802610367, 2661315...
+
+scala> scala> data.length
+res0: Int = 927
+
+scala> data(0)
+res1: geotrellis.vector.MultiPolygonFeature[Map[String,Object]] = Feature(MULTIPOLYGON (((2657385.0354120247 1773070.0255874854, 2658393.827223625 1772889.1923907045, 2659482.7452118737 1772860.5096098906, 2660261.716606862 1772917.1231232528, 2661046.548827775 1773359.2170842125, 2662294.5437105247 1773557.7511771242, 2663073.5152229457 1773614.3835211382, 2664239.0439158864 1773506.6038976149, 2665084.082117768 1772790.2543526408, 2666233.219201252 1771603.1700218634, 2667230.315917239 1770651.4722243033, 2667371.8282863675 1769722.2575114083, 2667354.268351508 1768565.8519031878, 2666560.067818907 1767506.9776889745, 2665842.4762677522 1766368.9763275224, 2664662.87697022 1765551.6220103314, 2663262.811323531 1765588.4358509623, 2662327.0928393053 1765458.802610367, 2661315.935800347...
+
+___________
+
+
+scala> import geotrellis._
+import geotrellis._
+
+scala> import geotrellis.geotools._
+import geotrellis.geotools._
+
+scala> import geotrellis.shapefile._
+import geotrellis.shapefile._
+
+scala> import geotrellis.vectortile._
+import geotrellis.vectortile._
+
+scala> import geotrellis.vector.io.json._
+
+scala> val data =geotrellis.shapefile.ShapeFileReader.readMultiPolygonFeatures("sal_alk_eu27_laea1052.shp")
+data: Seq[geotrellis.vector.MultiPolygonFeature[Map[String,Object]]] = List(Feature(MULTIPOLYGON (((2657385.0354120247 1773070.0255874854, 2658393.827223625 1772889.1923907045, 2659482.7452118737 1772860.5096098906, 2660261.716606862 1772917.1231232528, 2661046.548827775 1773359.2170842125, 2662294.5437105247 1773557.7511771242, 2663073.5152229457 1773614.3835211382, 2664239.0439158864 1773506.6038976149, 2665084.082117768 1772790.2543526408, 2666233.219201252 1771603.1700218634, 2667230.315917239 1770651.4722243033, 2667371.8282863675 1769722.2575114083, 2667354.268351508 1768565.8519031878, 2666560.067818907 1767506.9776889745, 2665842.4762677522 1766368.9763275224, 2664662.87697022 1765551.6220103314, 2663262.811323531 1765588.4358509623, 2662327.0928393053 1765458.802610367, 2661315...
+scala> data(0)
+res0: geotrellis.vector.MultiPolygonFeature[Map[String,Object]] = Feature(MULTIPOLYGON (((2657385.0354120247 1773070.0255874854, 2658393.827223625 1772889.1923907045, 2659482.7452118737 1772860.5096098906, 2660261.716606862 1772917.1231232528, 2661046.548827775 1773359.2170842125, 2662294.5437105247 1773557.7511771242, 2663073.5152229457 1773614.3835211382, 2664239.0439158864 1773506.6038976149, 2665084.082117768 1772790.2543526408, 2666233.219201252 1771603.1700218634, 2667230.315917239 1770651.4722243033, 2667371.8282863675 1769722.2575114083, 2667354.268351508 1768565.8519031878, 2666560.067818907 1767506.9776889745, 2665842.4762677522 1766368.9763275224, 2664662.87697022 1765551.6220103314, 2663262.811323531 1765588.4358509623, 2662327.0928393053 1765458.802610367, 2661315.935800347...
+scala> data(0).to
+toSimpleFeature   toString   touches
+
+scala> data(0).
+&          coveredBy    hashCode        polygons           toString         
+-          covers       interiorPoint   productArity       touches          
+area       crosses      intersection    productElement     union            
+as         data         intersects      productIterator    vertexCount      
+boundary   difference   isValid         productPrefix      vertices         
+buffer     disjoint     jtsGeom         reproject          within           
+canEqual   distance     mapData         safeIntersection   withinDistance   
+centroid   envelope     mapGeom         self               |                
+contains   equals       normalized      symDifference                       
+copy       geom         overlaps        toSimpleFeature                     
+
+scala> data(0).area
+res1: Double = 1.191031552790577E8
+
+//getting the area of a multipolygon. 
+
+
+scala> data(0).union(data(1))
+res3: geotrellis.vector.TwoDimensionsTwoDimensionsSeqUnionResult = MultiPolygonResult(MULTIPOLYGON (((2690436.045877196 1771818.085855743, 2690499.823788332 1770890.9274544248, 2690484.653923422 1769888.7064936028, 2689769.4432713613 1768904.7400164828, 2688969.447217674 1767460.2517512983, 2687629.6375751356 1766338.3520411358, 2686530.175436608 1765672.93588479, 2685659.391365594 1764693.0705903675, 2684169.8433968117 1763960.7425730627, 2683229.443665526 1763522.5750886197, 2681820.010000718 1762942.4308282095, 2680575.4831608874 1762974.9686874892, 2679408.740432067 1763005.4850345387, 2678086.433391056 1763040.0843890263, 2676841.910461778 1763072.6622328102, 2675367.547408084 1763342.6409713167, 2674671.0117159113 1763592.2562978389, 2674216.007402952 1764375.4052129288, 2674294.9...
+
+scala> val unionOfTwo = res3.toGeometry.get
+unionOfTwo: geotrellis.vector.Geometry = MULTIPOLYGON (((2690436.045877196 1771818.085855743, 2690499.823788332 1770890.9274544248, 2690484.653923422 1769888.7064936028, 2689769.4432713613 1768904.7400164828, 2688969.447217674 1767460.2517512983, 2687629.6375751356 1766338.3520411358, 2686530.175436608 1765672.93588479, 2685659.391365594 1764693.0705903675, 2684169.8433968117 1763960.7425730627, 2683229.443665526 1763522.5750886197, 2681820.010000718 1762942.4308282095, 2680575.4831608874 1762974.9686874892, 2679408.740432067 1763005.4850345387, 2678086.433391056 1763040.0843890263, 2676841.910461778 1763072.6622328102, 2675367.547408084 1763342.6409713167, 2674671.0117159113 1763592.2562978389, 2674216.007402952 1764375.4052129288, 2674294.9587017884 1764450.4590502812, 2673689.0696661...
+scala> unionOfTwo.
+&            disjoint   interiorPoint   prepare            toSimpleFeature   
+as           distance   intersection    reproject          toString          
+centroid     envelope   intersects      safeIntersection   withinDistance    
+convexHull   equals     isValid         self                                 
+densify      hashCode   jtsGeom         simplify                             
+
+scala> unionOfTwo.isValid
+res10: Boolean = true
+
+
+scala> unionOfTwo.envelope
+res13: geotrellis.vector.Extent = Extent(2650413.3628196027, 1762942.4308282095, 2690499.823788332, 1774693.9667308934)
+
+
+scala> unionOfTwo.intersects(data(3))
+res14: Boolean = false
+
+scala> unionOfTwo.intersects(data(0))
+res15: Boolean = true
+
+scala> unionOfTwo.jtsGeom
+res17: com.vividsolutions.jts.geom.Geometry = MULTIPOLYGON (((2690436.045877196 1771818.085855743, 2690499.823788332 1770890.9274544248, 2690484.653923422 1769888.7064936028, 2689769.4432713613 1768904.7400164828, 2688969.447217674 1767460.2517512983, 2687629.6375751356 1766338.3520411358, 2686530.175436608 1765672.93588479, 2685659.391365594 1764693.0705903675, 2684169.8433968117 1763960.7425730627, 2683229.443665526 1763522.5750886197, 2681820.010000718 1762942.4308282095, 2680575.4831608874 1762974.9686874892, 2679408.740432067 1763005.4850345387, 2678086.433391056 1763040.0843890263, 2676841.910461778 1763072.6622328102, 2675367.547408084 1763342.6409713167, 2674671.0117159113 1763592.2562978389, 2674216.007402952 1764375.4052129288, 2674294.9587017884 1764450.4590502812, 2673689.06...
+scala> unionOfTwo.jtsGeom.
+apply         equalsTopo             getLength           normalize       
+buffer        geometryChanged        getNumGeometries    overlaps        
+clone         getArea                getNumPoints        relate          
+compareTo     getBoundary            getPrecisionModel   reverse         
+contains      getBoundaryDimension   getSRID             setSRID         
+convexHull    getCentroid            getUserData         setUserData     
+coveredBy     getCoordinate          hashCode            symDifference   
+covers        getCoordinates         intersection        toString        
+crosses       getDimension           intersects          toText          
+difference    getEnvelope            isEmpty             touches         
+disjoint      getEnvelopeInternal    isRectangle         union           
+distance      getFactory             isSimple            within          
+equals        getGeometryN           isValid                             
+equalsExact   getGeometryType        isWithinDistance                    
+equalsNorm    getInteriorPoint       norm                                
+
+scala> unionOfTwo.jtsGeom.getArea
+res18: Double = 2.5866940569291127E8
+
+scala> unionOfTwo.jtsGeom.getGeometryType
+res20: String = MultiPolygon
+
+scala> unionOfTwo.jtsGeom.getNumGeometries
+res24: Int = 2
+
+scala> unionOfTwo.jtsGeom.getBoundary
+res26: com.vividsolutions.jts.geom.Geometry = MULTILINESTRING ((2690436.045877196 1771818.085855743, 2690499.823788332 1770890.9274544248, 2690484.653923422 1769888.7064936028, 2689769.4432713613 1768904.7400164828, 2688969.447217674 1767460.2517512983, 2687629.6375751356 1766338.3520411358, 2686530.175436608 1765672.93588479, 2685659.391365594 1764693.0705903675, 2684169.8433968117 1763960.7425730627, 2683229.443665526 1763522.5750886197, 2681820.010000718 1762942.4308282095, 2680575.4831608874 1762974.9686874892, 2679408.740432067 1763005.4850345387, 2678086.433391056 1763040.0843890263, 2676841.910461778 1763072.6622328102, 2675367.547408084 1763342.6409713167, 2674671.0117159113 1763592.2562978389, 2674216.007402952 1764375.4052129288, 2674294.9587017884 1764450.4590502812, 2673689....
+
+scala> unionOfTwo.jtsGeom.getLength
+res28: Double = 92049.10524799928
+
+scala> unionOfTwo.jtsGeom.isRectangle
+res29: Boolean = false
+
+scala> unionOfTwo.jtsGeom.getCentroid
+res36: com.vividsolutions.jts.geom.Point = POINT (2670898.5079665184 1768975.7917361727)
+
+scala> data.map(i => i.area).sum
+res40: Double = 2.2886073035293393E11
+
+scala> data(0).vertexCount
+res41: Int = 37
+
+scala> data(0).vertices
+res42: Array[geotrellis.vector.Point] = Array(POINT (2657385.0354120247 1773070.0255874854), POINT (2658393.827223625 1772889.1923907045), POINT (2659482.7452118737 1772860.5096098906), POINT (2660261.716606862 1772917.1231232528), POINT (2661046.548827775 1773359.2170842125), POINT (2662294.5437105247 1773557.7511771242), POINT (2663073.5152229457 1773614.3835211382), POINT (2664239.0439158864 1773506.6038976149), POINT (2665084.082117768 1772790.2543526408), POINT (2666233.219201252 1771603.1700218634), POINT (2667230.315917239 1770651.4722243033), POINT (2667371.8282863675 1769722.2575114083), POINT (2667354.268351508 1768565.8519031878), POINT (2666560.067818907 1767506.9776889745), POINT (2665842.4762677522 1766368.9763275224), POINT (2664662.87697022 1765551.6220103314), POINT (26...
+
+ 
+scala> import geotrellis.proj4._
+import geotrellis.proj4._
+
+scala> proj4.
+CRS                LatLng           Transform     nad       
+CSVFileConstants   Memoize          WebMercator   package   
+ConusAlbers        Proj4Transform   io            util      
+EPSGCSVReader      Sinusoidal       mgrs          wkt       
+
+
+scala> proj4.CRS
+res51: geotrellis.proj4.CRS.type = geotrellis.proj4.CRS$@58d1113b
+
+scala> res51.
+fromEpsgCode   fromName   fromString   fromWKT   getEpsgCode
+
+
+scala> import org.osgeo.proj4j.datum
+import org.osgeo.proj4j.datum
+ 
+
+scala> org.osgeo.proj4j.datum.
+AxisOrder   Datum       GeocentricConverter   NTV1            
+CTABLEV2    Ellipsoid   Grid                  PrimeMeridian   
+
+scala> org.osgeo.proj4j.datum.Datum.
+CARTHAGE                 IRE65    OSEB36        TYPE_GRIDSHIFT   
+ELLIPSOID_E2_TOLERANCE   NAD27    POTSDAM       TYPE_UNKNOWN     
+GGRS87                   NAD83    TYPE_3PARAM   TYPE_WGS84       
+HERMANNSKOGEL            NZGD49   TYPE_7PARAM   WGS84            
+
+scala> org.osgeo.proj4j.
+BasicCoordinateTransform      NotFoundException               datum    
+CRSFactory                    Proj4jException                 io       
+ConvergenceFailureException   ProjCoordinate                  parser   
+CoordinateReferenceSystem     ProjectionException             proj     
+CoordinateTransform           Registry                        units    
+CoordinateTransformFactory    UnknownAuthorityCodeException   util     
+InvalidValueException         UnsupportedParameterException            
+
+scala> org.osgeo.proj4j.proj.
+AiryProjection                              
+AitoffProjection                            
+AlbersProjection                            
+AugustProjection                            
+AzimuthalProjection                         
+BipolarProjection                           
+BoggsProjection                             
+BonneProjection                             
+CassiniProjection                           
+CentralCylindricalProjection                
+CollignonProjection                         
+ConicProjection                             
+CrasterProjection                           
+CylindricalEqualAreaProjection              
+CylindricalProjection                       
+DenoyerProjection                           
+Eckert1Projection                           
+Eckert2Projection                           
+Eckert4Projection                           
+Eckert5Projection                           
+Eckert6Projection                           
+EqualAreaAzimuthalProjection                
+EqualAreaCylindricalProjection              
+EquidistantAzimuthalProjection              
+EquidistantConicProjection                  
+EulerProjection                             
+FaheyProjection                             
+FoucautProjection                           
+FoucautSinusoidalProjection                 
+GallProjection                              
+GaussProjection                             
+Ginsburg8Projection                         
+GnomonicAzimuthalProjection                 
+GoodeProjection                             
+HammerProjection                            
+HatanoProjection                            
+KavraiskyVProjection                        
+KrovakProjection                            
+LagrangeProjection                          
+LambertAzimuthalEqualAreaProjection         
+LambertConformalConicProjection             
+LambertEqualAreaConicProjection             
+LandsatProjection                           
+LarriveeProjection                          
+LaskowskiProjection                         
+LinearProjection                            
+LongLatProjection                           
+LoximuthalProjection                        
+McBrydeThomasFlatPolarParabolicProjection   
+McBrydeThomasFlatPolarQuarticProjection     
+McBrydeThomasFlatPolarSine1Projection       
+McBrydeThomasFlatPolarSine2Projection       
+MercatorProjection                          
+MillerProjection                            
+MolleweideProjection                        
+Murdoch1Projection                          
+Murdoch2Projection                          
+Murdoch3Projection                          
+NellHProjection                             
+NellProjection                              
+NewZealandMapGridProjection                 
+NicolosiProjection                          
+NullProjection                              
+ObliqueMercatorProjection                   
+ObliqueStereographicAlternativeProjection   
+OrthographicAzimuthalProjection             
+PerspectiveConicProjection                  
+PerspectiveProjection                       
+PlateCarreeProjection                       
+PolyconicProjection                         
+Projection                                  
+PseudoCylindricalProjection                 
+PutninsP2Projection                         
+PutninsP4Projection                         
+PutninsP5PProjection                        
+PutninsP5Projection                         
+QuarticAuthalicProjection                   
+RectangularPolyconicProjection              
+RobinsonProjection                          
+SimpleConicProjection                       
+SinusoidalProjection                        
+StereographicAzimuthalProjection            
+SwissObliqueMercatorProjection              
+TissotProjection                            
+TransverseCylindricalEqualArea              
+TransverseMercatorProjection                
+TranverseCentralCylindricalProjection       
+UrmaevFlatPolarSinusoidalProjection         
+VanDerGrintenProjection                     
+VitkovskyProjection                         
+Wagner1Projection                           
+Wagner2Projection                           
+Wagner3Projection                           
+Wagner4Projection                           
+Wagner5Projection                           
+Wagner7Projection                           
+WerenskioldProjection                       
+WinkelTripelProjection                      
+
+
+scala> org.osgeo.proj4j.
+BasicCoordinateTransform      NotFoundException               datum    
+CRSFactory                    Proj4jException                 io       
+ConvergenceFailureException   ProjCoordinate                  parser   
+CoordinateReferenceSystem     ProjectionException             proj     
+CoordinateTransform           Registry                        units    
+CoordinateTransformFactory    UnknownAuthorityCodeException   util     
+InvalidValueException         UnsupportedParameterException            
+
+scala> org.osgeo.proj4j.CRSFactory
+   object CRSFactory
+
+scala> org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO
+   final val CS_GEO: org.osgeo.proj4j.CoordinateReferenceSystem
+
+scala> org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.
+createGeographic   getName              getParameters   isGeographic   
+getDatum           getParameterString   getProjection   toString       
+
+scala> org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum(data)
+<console>:33: error: too many arguments for method getDatum: ()org.osgeo.proj4j.datum.Datum
+       org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum(data)
+                                                                 ^
+
+scala> org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum
+res63: org.osgeo.proj4j.datum.Datum = null
+
+scala> org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum()
+res64: org.osgeo.proj4j.datum.Datum = null
+
+scala> org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum(data(0))
+<console>:33: error: too many arguments for method getDatum: ()org.osgeo.proj4j.datum.Datum
+       org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum(data(0))
+                                                                 ^
+
+scala> org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum((data(0)))
+<console>:33: error: too many arguments for method getDatum: ()org.osgeo.proj4j.datum.Datum
+       org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum((data(0)))
+                                                                 ^
+
+scala> org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum(res0)
+<console>:33: error: too many arguments for method getDatum: ()org.osgeo.proj4j.datum.Datum
+       org.osgeo.proj4j.CoordinateReferenceSystem.CS_GEO.getDatum(res0)
+                                                                 ^
+
+scala> org.osgeo.proj4j.datum.getName(data)
+<console>:33: error: object getName is not a member of package org.osgeo.proj4j.datum
+       org.osgeo.proj4j.datum.getName(data)
+                              ^
+
+scala> org.osgeo.proj4j.datum.getName(data(0))
+<console>:33: error: object getName is not a member of package org.osgeo.proj4j.datum
+       org.osgeo.proj4j.datum.getName(data(0))
+                              ^
+
+scala> org.osgeo.proj4j.datum.getName(res0)
+<console>:33: error: object getName is not a member of package org.osgeo.proj4j.datum
+       org.osgeo.proj4j.datum.getName(res0)
+                              ^
+
+
+____________________________
+
+
+CHECKING THE GEOTOOLS:
+
+
+scala> import org.geotools._
+import org.geotools._
+
+scala> org.geotools.
+console    feature    image     metadata    referencing   temporal   
+coverage   filter     io        nature      renderer      text       
+data       geometry   math      ows         resources     util       
+factory    gml        measure   parameter   styling       xml        
+
+scala> org.geotools.data.
+AbstractAttributeIO         DefaultQuery              FilteringFeatureWriter    
+AbstractDataStore           DefaultRepository         GmlObjectStore            
+AbstractDataStoreFactory    DefaultResourceInfo       InProcessLockingManager   
+AbstractDataStoreTest       DefaultServiceInfo        Join                      
+AbstractFeatureLocking      DefaultTransaction        JoiningAttributeReader    
+AbstractFeatureSource       DelegatingFeatureReader   JoiningAttributeWriter    
+AbstractFeatureStore        DelegatingFeatureWriter   LockingManager            
+AbstractFileDataStore       Diff                      MapInfoFileReader         
+AttributeReader             DiffFeatureReader         MaxFeatureReader          
+AttributeWriter             DiffFeatureWriter         Parameter                 
+Base64                      EmptyFeatureReader        PrjFileReader             
+BatchFeatureEvent           EmptyFeatureWriter        Query                     
+CachingFeatureSource        FIDFeatureReader          QueryCapabilities         
+CloseableIterator           FIDReader                 ReTypeFeatureReader       
+CollectionFeatureReader     FeatureEvent              Repository                
+DataAccess                  FeatureListener           ResourceInfo              
+DataAccessFactory           FeatureListenerManager    SchemaNotFoundException   
+DataAccessFinder            FeatureLock               ServiceInfo               
+DataSourceException         FeatureLockException      Transaction               
+DataStore                   FeatureLockFactory        TransactionStateDiff      
+DataStoreFactorySpi         FeatureLocking            WorldFileReader           
+DataStoreFinder             FeatureReader             WorldFileWriter           
+DataTestCase                FeatureSource             collection                
+DataUtilities               FeatureStore              crs                       
+DefaultCloseableIterator    FeatureWriter             directory                 
+DefaultFIDReader            FileDataStore             memory                    
+DefaultFeatureLock          FileDataStoreFactorySpi   ows                       
+DefaultFeatureLockFactory   FileDataStoreFinder       shapefile                 
+DefaultFeatureReader        FileGroupProvider         simple                    
+DefaultFeatureResults       FileResourceInfo          sort                      
+DefaultFileResourceInfo     FileServiceInfo           store                     
+DefaultFileServiceInfo      FilteringFeatureReader    view
+
+scala> org.geotools.data.crs.
+CRSAuthoritySpi                       ReprojectFeatureIterator   
+ForceCoordinateSystemFeatureReader    ReprojectFeatureReader     
+ForceCoordinateSystemFeatureResults   ReprojectFeatureResults    
+ForceCoordinateSystemIterator                                    
+
+scala> org.geotools.data.shapefile.
+ShapefileDataStore          ShapefileDumper          fid     shp   
+ShapefileDataStoreFactory   ShapefileSizeException   files         
+ShapefileDirectoryFactory   dbf                      index         
+
+scala> org.geotools.referencing.
+AbstractIdentifiedObject   GeodeticCalculator         cs          wkt   
+AbstractReferenceSystem    NamedIdentifier            datum             
+CRS                        ReferencingFactoryFinder   factory           
+Console                    crs                        operation         
+
+scala> org.geotools.referencing.crs.
+AbstractCRS          DefaultDerivedCRS       DefaultImageCRS       
+AbstractDerivedCRS   DefaultEngineeringCRS   DefaultProjectedCRS   
+AbstractSingleCRS    DefaultGeocentricCRS    DefaultTemporalCRS    
+DefaultCompoundCRS   DefaultGeographicCRS    DefaultVerticalCRS    
+
+scala> org.geotools.referencing.CRS.
+AxisOrder                       getEnvelope                getVerticalCRS     
+cleanupThreadLocals             getGeographicBoundingBox   lookupEpsgCode     
+decode                          getHorizontalCRS           lookupIdentifier   
+equalsIgnoreMetadata            getMapProjection           main               
+findMathTransform               getProjectedCRS            parseWKT           
+getAuthorityFactory             getSupportedAuthorities    reset              
+getAxisOrder                    getSupportedCodes          toSRS              
+getCoordinateOperationFactory   getTemporalCRS             transform          
+getEllipsoid                    getVersion                                    
+
+scala> org.geotools.referencing.factory.
+AbstractAuthorityFactory         HTTP_AuthorityFactory                         
+AbstractAuthorityMediator        HTTP_URI_AuthorityFactory                     
+AbstractCachedAuthorityFactory   IdentifiedObjectFinder                        
+AbstractEpsgMediator             IdentifiedObjectSet                           
+Abstract_URI_AuthorityFactory    ManyAuthoritiesFactory                        
+AllAuthoritiesFactory            OrderedAxisAuthorityFactory                   
+AuthorityFactoryAdapter          PropertyAuthorityFactory                      
+BackingStoreException            PropertyCoordinateOperationAuthorityFactory   
+BufferedAuthorityFactory         ReferencingFactory                            
+CachedAuthorityDecorator         ReferencingFactoryContainer                   
+CachedCRSAuthorityDecorator      ReferencingObjectFactory                      
+DatumAliases                     ThreadedAuthorityFactory                      
+DeferredAuthorityFactory         TransformedAuthorityFactory                   
+DirectAuthorityFactory           URN_AuthorityFactory                          
+FactoryDependencies              epsg                                          
+FactoryNotFoundException         gridshift                                     
+FallbackAuthorityFactory         wms                                           
+
+scala> org.geotools.feature.
+AbstractFeatureFactoryImpl   FeatureImplUtils               
+AssociationImpl              FeatureIndex                   
+AttributeBuilder             FeatureIterator                
+AttributeImpl                FeatureReaderIterator          
+AttributeTypeBuilder         FeatureTypes                   
+CollectionEvent              GeometryAttributeImpl          
+CollectionListener           IllegalAttributeException      
+ComplexAttributeImpl         LenientFeatureFactoryImpl      
+ComplexFeatureBuilder        NameImpl                       
+DecoratingFeature            PropertyImpl                   
+DefaultFeatureCollection     Schema                         
+DefaultFeatureCollections    SchemaException                
+FeatureBuilder               TypeBuilder                    
+FeatureCollection            ValidatingFeatureFactoryImpl   
+FeatureCollectionIteration   collection                     
+FeatureCollections           simple                         
+FeatureComparators           type                           
+FeatureFactory               visitor                        
+FeatureImpl  
+
+scala> org.geotools.feature.Schema.
+attribute   attributeCount   attributes   find   names   restriction   xpath
+
+scala> org.geotools.renderer.ScreenMap
+   object ScreenMap
+
+
+scala> org.geotools.referencing.AbstractReferenceSystem
+<console>:15: error: object org.geotools.referencing.AbstractReferenceSystem is not a value
+       org.geotools.referencing.AbstractReferenceSystem
+                                ^
+
+______________________________
+
+!!!! USEFUL TIP FOR VISUALIZING MAPS:  org.geotools.swing.JMapFrame !!!
+
+Reference:
+http://docs.geotools.org/latest/tutorials/geometry/geometrycrs.html
+
+
+
+ private void displayShapefile() throws Exception {
+        sourceFile = JFileDataStoreChooser.showOpenFile("shp", null);
+        if (sourceFile == null) {
+            return;
+        }
+        FileDataStore store = FileDataStoreFinder.getDataStore(sourceFile);
+        featureSource = store.getFeatureSource();
+
+        // Create a map context and add our shapefile to it
+        map = new DefaultMapContext();
+        map.addLayer(featureSource, null);
+
+        // Create a JMapFrame with custom toolbar buttons
+        JMapFrame mapFrame = new JMapFrame(map);
+        mapFrame.enableToolBar(true);
+        mapFrame.enableStatusBar(true);
+
+        JToolBar toolbar = mapFrame.getToolBar();
+        toolbar.addSeparator();
+        toolbar.add(new JButton(new ValidateGeometryAction()));
+        toolbar.add(new JButton(new ExportShapefileAction()));
+
+        // Display the map frame. When it is closed the application will exit
+        mapFrame.setSize(800, 600);
+        mapFrame.setVisible(true);
+    }
+
+
+_______________________________________________________
+
+
+

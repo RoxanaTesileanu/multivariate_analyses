@@ -4,7 +4,7 @@
 		module="deeplearning_2.11"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20171018133257"
+		publication="20171020130603"
 	>
 		<description>
 		DeepLearning
@@ -41,6 +41,7 @@
 		</dependency>
 		<dependency org="org.locationtech.geotrellis" name="geotrellis-raster_2.11" rev="1.0.0" conf="compile->default(compile)"/>
 		<dependency org="org.locationtech.geotrellis" name="geotrellis-vector_2.11" rev="1.1.1" conf="compile->default(compile)"/>
+		<dependency org="org.geotools" name="gt2-legacy" rev="2.2-RC2" conf="compile->default(compile)"/>
 		<dependency org="org.geotools" name="gt-main" rev="16.1" conf="compile->default(compile)"/>
 		<dependency org="org.geotools" name="gt-epsg-hsql" rev="16.1" conf="test->default(compile)"/>
 		<dependency org="org.geotools" name="gt-referencing" rev="16.1" conf="compile->default(compile)"/>
