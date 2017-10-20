@@ -6,7 +6,7 @@ libraryDependencies ++= Seq(
 "org.scalafx" %% "scalafx" % "8.0.92-R10",
  "org.scala-lang" % "scala-swing" % "2.10.2",
 
- "org.gdal" % "gdal" % "2.1.0" pomOnly(),
+// "org.gdal" % "gdal" % "2.2.1" ,
 //"org.locationtech.geogig" % "geogig-geotools" % "1.2.0-RC1",
 
 "org.locationtech.geotrellis" %% "geotrellis-raster" % "1.0.0",
@@ -16,6 +16,7 @@ libraryDependencies ++= Seq(
 //"org.locationtech.geotrellis" % "geotrellis-geotools_2.11" % "1.2.0-M1",
 
 
+//"org.geotools" % "gt-legacy" % "2.6.6",
 //"org.geotools" % "gt2-legacy" % "2.2-RC2",
 
 

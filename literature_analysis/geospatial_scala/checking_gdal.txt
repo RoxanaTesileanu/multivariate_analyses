@@ -1,0 +1,31 @@
+Checking GDAL in Scala
+
+- I've placed the gdal-2.21.jar in the lib directory of the DeepLearning Scala project and hope to get the functionality of the GDAL, OGR and OSR libraries in Scala. 
+
+_________________________________
+
+
+scala> import org.gdal._
+import org.gdal._
+
+scala> org.gdal.
+gdal   gdalconst   gnm   ogr   osr
+
+scala> org.gdal.ogr.
+DataSource    FieldDefn       ProgressCallback       ogrConstants   
+Driver        GeomFieldDefn   StyleTable             ogrJNI         
+Feature       Geometry        TermProgressCallback                  
+FeatureDefn   Layer           ogr          
+
+scala> org.gdal.gdal.
+AsyncReader            GridOptions            Transformer              
+Band                   InfoOptions            TranslateOptions         
+BuildVRTOptions        MajorObject            VectorTranslateOptions   
+ColorTable             NearblackOptions       WarpOptions              
+DEMProcessingOptions   ProgressCallback       XMLNode                  
+Dataset                RasterAttributeTable   XMLNodeType              
+Driver                 RasterizeOptions       gdal                     
+GCP                    TermProgressCallback   gdalJNI                  
+
+
+
