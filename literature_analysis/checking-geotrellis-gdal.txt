@@ -872,6 +872,50 @@ scala> org.osgeo.proj4j.datum.getName(res0)
 ____________________________
 
 
+CHECKING THE GEOTOOLS:
 
+
+scala> import org.geotools._
+import org.geotools._
+
+scala> org.geotools.
+console    feature    image     metadata    referencing   temporal   
+coverage   filter     io        nature      renderer      text       
+data       geometry   math      ows         resources     util       
+factory    gml        measure   parameter   styling       xml        
+
+scala> org.geotools.data.
+AbstractAttributeIO         DefaultQuery              FilteringFeatureWriter    
+AbstractDataStore           DefaultRepository         GmlObjectStore            
+AbstractDataStoreFactory    DefaultResourceInfo       InProcessLockingManager   
+AbstractDataStoreTest       DefaultServiceInfo        Join                      
+AbstractFeatureLocking      DefaultTransaction        JoiningAttributeReader    
+AbstractFeatureSource       DelegatingFeatureReader   JoiningAttributeWriter    
+AbstractFeatureStore        DelegatingFeatureWriter   LockingManager            
+AbstractFileDataStore       Diff                      MapInfoFileReader         
+AttributeReader             DiffFeatureReader         MaxFeatureReader          
+AttributeWriter             DiffFeatureWriter         Parameter                 
+Base64                      EmptyFeatureReader        PrjFileReader             
+BatchFeatureEvent           EmptyFeatureWriter        Query                     
+CachingFeatureSource        FIDFeatureReader          QueryCapabilities         
+CloseableIterator           FIDReader                 ReTypeFeatureReader       
+CollectionFeatureReader     FeatureEvent              Repository                
+DataAccess                  FeatureListener           ResourceInfo              
+DataAccessFactory           FeatureListenerManager    SchemaNotFoundException   
+DataAccessFinder            FeatureLock               ServiceInfo               
+DataSourceException         FeatureLockException      Transaction               
+DataStore                   FeatureLockFactory        TransactionStateDiff      
+DataStoreFactorySpi         FeatureLocking            WorldFileReader           
+DataStoreFinder             FeatureReader             WorldFileWriter           
+DataTestCase                FeatureSource             collection                
+DataUtilities               FeatureStore              crs                       
+DefaultCloseableIterator    FeatureWriter             directory                 
+DefaultFIDReader            FileDataStore             memory                    
+DefaultFeatureLock          FileDataStoreFactorySpi   ows                       
+DefaultFeatureLockFactory   FileDataStoreFinder       shapefile                 
+DefaultFeatureReader        FileGroupProvider         simple                    
+DefaultFeatureResults       FileResourceInfo          sort                      
+DefaultFileResourceInfo     FileServiceInfo           store                     
+DefaultFileServiceInfo      FilteringFeatureRead
 
 
