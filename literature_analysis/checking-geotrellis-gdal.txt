@@ -916,6 +916,40 @@ DefaultFeatureLockFactory   FileDataStoreFinder       shapefile
 DefaultFeatureReader        FileGroupProvider         simple                    
 DefaultFeatureResults       FileResourceInfo          sort                      
 DefaultFileResourceInfo     FileServiceInfo           store                     
-DefaultFileServiceInfo      FilteringFeatureRead
+DefaultFileServiceInfo      FilteringFeatureReader    view
+
+scala> org.geotools.data.crs.
+CRSAuthoritySpi                       ReprojectFeatureIterator   
+ForceCoordinateSystemFeatureReader    ReprojectFeatureReader     
+ForceCoordinateSystemFeatureResults   ReprojectFeatureResults    
+ForceCoordinateSystemIterator                                    
+
+scala> org.geotools.data.shapefile.
+ShapefileDataStore          ShapefileDumper          fid     shp   
+ShapefileDataStoreFactory   ShapefileSizeException   files         
+ShapefileDirectoryFactory   dbf                      index         
+
+scala> org.geotools.referencing.
+AbstractIdentifiedObject   GeodeticCalculator         cs          wkt   
+AbstractReferenceSystem    NamedIdentifier            datum             
+CRS                        ReferencingFactoryFinder   factory           
+Console                    crs                        operation         
+
+scala> org.geotools.referencing.crs.
+AbstractCRS          DefaultDerivedCRS       DefaultImageCRS       
+AbstractDerivedCRS   DefaultEngineeringCRS   DefaultProjectedCRS   
+AbstractSingleCRS    DefaultGeocentricCRS    DefaultTemporalCRS    
+DefaultCompoundCRS   DefaultGeographicCRS    DefaultVerticalCRS    
+
+scala> org.geotools.referencing.CRS.
+AxisOrder                       getEnvelope                getVerticalCRS     
+cleanupThreadLocals             getGeographicBoundingBox   lookupEpsgCode     
+decode                          getHorizontalCRS           lookupIdentifier   
+equalsIgnoreMetadata            getMapProjection           main               
+findMathTransform               getProjectedCRS            parseWKT           
+getAuthorityFactory             getSupportedAuthorities    reset              
+getAxisOrder                    getSupportedCodes          toSRS              
+getCoordinateOperationFactory   getTemporalCRS             transform          
+getEllipsoid                    getVersion                                    
 
 
