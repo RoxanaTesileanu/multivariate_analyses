@@ -952,4 +952,56 @@ getAxisOrder                    getSupportedCodes          toSRS
 getCoordinateOperationFactory   getTemporalCRS             transform          
 getEllipsoid                    getVersion                                    
 
+scala> org.geotools.referencing.factory.
+AbstractAuthorityFactory         HTTP_AuthorityFactory                         
+AbstractAuthorityMediator        HTTP_URI_AuthorityFactory                     
+AbstractCachedAuthorityFactory   IdentifiedObjectFinder                        
+AbstractEpsgMediator             IdentifiedObjectSet                           
+Abstract_URI_AuthorityFactory    ManyAuthoritiesFactory                        
+AllAuthoritiesFactory            OrderedAxisAuthorityFactory                   
+AuthorityFactoryAdapter          PropertyAuthorityFactory                      
+BackingStoreException            PropertyCoordinateOperationAuthorityFactory   
+BufferedAuthorityFactory         ReferencingFactory                            
+CachedAuthorityDecorator         ReferencingFactoryContainer                   
+CachedCRSAuthorityDecorator      ReferencingObjectFactory                      
+DatumAliases                     ThreadedAuthorityFactory                      
+DeferredAuthorityFactory         TransformedAuthorityFactory                   
+DirectAuthorityFactory           URN_AuthorityFactory                          
+FactoryDependencies              epsg                                          
+FactoryNotFoundException         gridshift                                     
+FallbackAuthorityFactory         wms                                           
+
+scala> org.geotools.feature.
+AbstractFeatureFactoryImpl   FeatureImplUtils               
+AssociationImpl              FeatureIndex                   
+AttributeBuilder             FeatureIterator                
+AttributeImpl                FeatureReaderIterator          
+AttributeTypeBuilder         FeatureTypes                   
+CollectionEvent              GeometryAttributeImpl          
+CollectionListener           IllegalAttributeException      
+ComplexAttributeImpl         LenientFeatureFactoryImpl      
+ComplexFeatureBuilder        NameImpl                       
+DecoratingFeature            PropertyImpl                   
+DefaultFeatureCollection     Schema                         
+DefaultFeatureCollections    SchemaException                
+FeatureBuilder               TypeBuilder                    
+FeatureCollection            ValidatingFeatureFactoryImpl   
+FeatureCollectionIteration   collection                     
+FeatureCollections           simple                         
+FeatureComparators           type                           
+FeatureFactory               visitor                        
+FeatureImpl  
+
+scala> org.geotools.feature.Schema.
+attribute   attributeCount   attributes   find   names   restriction   xpath
+
+scala> org.geotools.renderer.ScreenMap
+   object ScreenMap
+
+
+scala> org.geotools.referencing.AbstractReferenceSystem
+<console>:15: error: object org.geotools.referencing.AbstractReferenceSystem is not a value
+       org.geotools.referencing.AbstractReferenceSystem
+                                ^
+
 
