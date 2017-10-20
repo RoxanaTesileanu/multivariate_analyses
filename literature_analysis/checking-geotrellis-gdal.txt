@@ -1004,4 +1004,44 @@ scala> org.geotools.referencing.AbstractReferenceSystem
        org.geotools.referencing.AbstractReferenceSystem
                                 ^
 
+______________________________
+
+!!!! USEFUL TIP FOR VISUALIZING MAPS:  org.geotools.swing.JMapFrame !!!
+
+Reference:
+http://docs.geotools.org/latest/tutorials/geometry/geometrycrs.html
+
+
+
+ private void displayShapefile() throws Exception {
+        sourceFile = JFileDataStoreChooser.showOpenFile("shp", null);
+        if (sourceFile == null) {
+            return;
+        }
+        FileDataStore store = FileDataStoreFinder.getDataStore(sourceFile);
+        featureSource = store.getFeatureSource();
+
+        // Create a map context and add our shapefile to it
+        map = new DefaultMapContext();
+        map.addLayer(featureSource, null);
+
+        // Create a JMapFrame with custom toolbar buttons
+        JMapFrame mapFrame = new JMapFrame(map);
+        mapFrame.enableToolBar(true);
+        mapFrame.enableStatusBar(true);
+
+        JToolBar toolbar = mapFrame.getToolBar();
+        toolbar.addSeparator();
+        toolbar.add(new JButton(new ValidateGeometryAction()));
+        toolbar.add(new JButton(new ExportShapefileAction()));
+
+        // Display the map frame. When it is closed the application will exit
+        mapFrame.setSize(800, 600);
+        mapFrame.setVisible(true);
+    }
+
+
+_______________________________________________________
+
+
 
