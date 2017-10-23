@@ -1,28 +1,4 @@
 console
-consoel
-console
-consoel
-console
-reload
-console
-reload
-consol
-console
-reloaf
-reload
-console
-reload
-console
-reload
-console
-reload
-console
-reload
-console
-reload
-console
-reload
-console
 reload
 console
 reload
@@ -495,6 +471,30 @@ console
 reload
 console
 exit
+console
+reload
+console
+about
+help
+settings
+javaHome
+javaHome := "/usr/lib/jvm/java-8-openjdk-amd64/"
+javaHome := /usr/lib/jvm/java-8-openjdk-amd64/
+target
+unmanagedResourceDirectories
+unmanagedBase
+javaHome := /usr/lib/jvm/java-8-openjdk-amd64/
+javaHome := "/usr/lib/jvm/java-8-openjdk-amd64/"
+javaHome.value := "/usr/lib/jvm/java-8-openjdk-amd64/"
+exit
+console
+reload
+console
+reload
+console
+reload
+console
+reload
 console
 reload
 console

@@ -4,7 +4,7 @@
 		module="deeplearning_2.11"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20171023122346"
+		publication="20171023134716"
 	>
 		<description>
 		DeepLearning
@@ -42,6 +42,8 @@
 		<dependency org="org.geotools" name="gt-epsg-hsql" rev="16.1" conf="test->default(compile)"/>
 		<dependency org="org.geotools" name="gt-referencing" rev="16.1" conf="compile->default(compile)"/>
 		<dependency org="org.geotools" name="gt-shapefile" rev="16.1" conf="compile->default(compile)"/>
+		<dependency org="org.geotools" name="gt-ogr-jni" rev="16.0" conf="compile->default(compile)"/>
+		<dependency org="org.geotools" name="gt-ogr-core" rev="16.0" conf="compile->default(compile)"/>
 		<dependency org="org.locationtech.geotrellis" name="geotrellis-geotools_2.11" rev="1.1.0" conf="compile->default(compile)"/>
 		<dependency org="org.locationtech.geotrellis" name="geotrellis-shapefile_2.11" rev="1.1.0" conf="compile->default(compile)"/>
 		<dependency org="org.locationtech.geotrellis" name="geotrellis-vectortile_2.11" rev="1.1.0" conf="compile->default(compile)"/>

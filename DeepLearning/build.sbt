@@ -1,6 +1,9 @@
 name := "DeepLearning"
 scalaVersion := "2.11.10"
 fork in run := true
+
+
+
 //scalaVersion := "2.10.1"
 libraryDependencies ++= Seq(
 "org.scalafx" %% "scalafx" % "8.0.92-R10",
@@ -28,13 +31,15 @@ libraryDependencies ++= Seq(
 "org.geotools" % "gt-referencing" % "16.1",
 "org.geotools" % "gt-shapefile" % "16.1",
 
-
+"org.geotools" % "gt-ogr-jni" % "16.0",
+"org.geotools" % "gt-ogr-core" % "16.0",
 
 "org.locationtech.geotrellis" % "geotrellis-geotools_2.11" % "1.1.0",
 
 "org.locationtech.geotrellis" % "geotrellis-shapefile_2.11" % "1.1.0",
 "org.locationtech.geotrellis" % "geotrellis-vectortile_2.11" % "1.1.0"
 
+//"net.java.dev.jna" % "jna-platform" % "4.1.0"
 
 //"org.gdal" % "gdal" % "2.2.1",
 //"com.azavea.geotrellis" % "geotrellis-gdal_2.10" % "0.10.0-M1",
@@ -55,6 +60,8 @@ resolvers += "boundless" at "http://repo.boundlessgeo.com/main"
 resolvers += "imageio" at "http://maven.geo-solutions.it"
 
 unmanagedJars in Compile += Attributed.blank(file("/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar"))
+
+unmanagedJars in Compile += Attributed.blank(file("/lib/gdal-2.2.1.jar"))
 
 
 

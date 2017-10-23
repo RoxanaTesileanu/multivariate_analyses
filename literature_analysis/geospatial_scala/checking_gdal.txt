@@ -114,5 +114,6 @@ java.lang.UnsatisfiedLinkError: org.gdal.ogr.ogrJNI.GetDriverByName(Ljava/lang/S
   ... 42 elided
 
 I will get the code of Rob Emanuele (https://github.com/geotrellis/gdal-scala/blob/master/gdal/src/main/scala/org/gdal/scala/Gdal.scala) to get around that exception. 
-
+I still have to use the function though. 
+I will set the Java options for sbt.
 
