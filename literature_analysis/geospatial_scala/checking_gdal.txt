@@ -211,7 +211,11 @@ GetFieldDefnRef         SetFieldInteger64             hashCode
 GetFieldIndex           SetFieldIntegerList                                  
 
 
-____________________________________________
+cala> res1.delete()
+
+DON'T FORGET TO CLOSE THE DATA SOURCE WITH ds.delete()!!!
+
+___________________________________________
 
 
 
