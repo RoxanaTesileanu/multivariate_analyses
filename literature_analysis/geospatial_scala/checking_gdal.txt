@@ -57,4 +57,12 @@ Blocks of adjacent pixels can be used to calculate useful information like the s
 Vector and raster data can also be used together.  
    
 
+GEOPROCESSING IS A GENERAL TERM FOR MANIPULATING SPATIAL DATA (WHETHER RASTER OR VECTOR DATA). 
 
+Simple vector geoprocessing: overlay and proximity analyses.
+Simple raster geoprocessing: resizing pixels, performing calculations based on multiple datasets, moving windows analyses.
+
+Using a programming language allows you to customize your analysis instead of being limited to what the software user interface allows. Also, it allows you to process many datasets at once. 
+
+Free and open source software is not only free with regard to price but allows for customization. You don't give up quality by using open source tools. In fact several of these packages are also used by proprietary software. 
+  
