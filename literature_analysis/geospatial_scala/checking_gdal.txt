@@ -79,4 +79,6 @@ Vector data is more than geometries however. Each one of these features also has
  VECTOR DATA ALWAYS LOOKS SMOOTH, NO MATTER THE SCALE (CONTRARY TO RASTER DATA). 
 Only the type of geometry used to represent the features of interest may vary depending on scale (e.g. point for a city for low resolution, and polygon for high-resolution -> the higher the resolution the more detail can be shown). 
 
-One common type of vector data analysis is to measure relationships between features, typically by overlapping them on one another to determine their spatial relationship. Another aspect of spatial relationships is the distance between two features. You can use GPS-collared wildlife and see the direction of travel, what travel distances they covered and how they interact with man-made features such as roads.  
+One common type of vector data analysis is to measure relationships between features, typically by overlapping them on one another to determine their spatial relationship. Another aspect of spatial relationships is the distance between two features. You can use GPS-collared wildlife and see the direction of travel, what travel distances they covered and how they interact with man-made features such as roads. 
+
+As with other types of data, you have multiple ways to store vector data.   
