@@ -69,5 +69,7 @@ Free and open source software is not only free with regard to price but allows f
 
 B) Background on geoprocessing: Reading and writing vector data (from C.Garrard, 2015)
 
+The types of data, where the features of interest are all distinct objects, are called vector datasets.
+For manipulating vector datasets we will use the OGR library (to read, writem and edit these types for later use).
 
-  
+VECTOR DATA ARE DATA IN WHICH THE FEATURES OF INTEREST ARE REPRESENTED AS DISCRETE GEOMETRIES (POINTS, LINES, AND POLYGONS). Such features have distinct boundaries, but countinuous data such as elevetion don't. For example, polygons showing subalpine zones for a region would be a good proxy for an elevation range, but you lose much of the detailed elevation data within those polygons. Vector data candidates are for example roads, power lines, rivers, lakes, landownerships,counties and countries, cities, restaurants, mountain peaks, etc.. 
