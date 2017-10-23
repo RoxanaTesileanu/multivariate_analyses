@@ -37,7 +37,7 @@ CoordinateTransformation   SpatialReference   osr   osrConstants   osrJNI
 
 __________________________________________
 
-Background on geoprocessing: Introduction (from C.Garrard, 2015)
+A) Background on geoprocessing: Introduction (from C.Garrard, 2015)
 
 1) Types of spatial data
 
@@ -65,4 +65,9 @@ Simple raster geoprocessing: resizing pixels, performing calculations based on m
 Using a programming language allows you to customize your analysis instead of being limited to what the software user interface allows. Also, it allows you to process many datasets at once. 
 
 Free and open source software is not only free with regard to price but allows for customization. You don't give up quality by using open source tools. In fact several of these packages are also used by proprietary software. 
+
+
+B) Background on geoprocessing: Reading and writing vector data (from C.Garrard, 2015)
+
+
   
