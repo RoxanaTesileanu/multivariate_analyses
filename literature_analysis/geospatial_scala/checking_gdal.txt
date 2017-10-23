@@ -2,7 +2,11 @@ Checking GDAL in Scala
 
 - I've placed the gdal-2.21.jar in the lib directory of the DeepLearning Scala project and hope to get the functionality of the GDAL, OGR and OSR libraries in Scala. 
 
+
+- The main aim is to check if I can make the code from Chris Garrard (Geoprocessing with Python, 2015) work in Scala too.
+
 _________________________________
+
 
 
 scala> import org.gdal._
