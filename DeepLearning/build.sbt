@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
 "org.scalafx" %% "scalafx" % "8.0.92-R10",
  "org.scala-lang" % "scala-swing" % "2.10.2",
 
-//"org.gdal" % "gdal" % "2.2.1" ,
+"org.gdal" % "gdal" % "1.11.2" ,
 //"org.locationtech.geogig" % "geogig-geotools" % "1.2.0-RC1",
 
 "org.locationtech.geotrellis" %% "geotrellis-raster" % "1.0.0",
@@ -31,8 +31,10 @@ libraryDependencies ++= Seq(
 "org.geotools" % "gt-referencing" % "16.1",
 "org.geotools" % "gt-shapefile" % "16.1",
 
-"org.geotools" % "gt-ogr-jni" % "16.0",
-"org.geotools" % "gt-ogr-core" % "16.0",
+//"org.apache.tomcat" % "tomcat-jni" % "9.0.1",
+
+//"org.geotools" % "gt-ogr-jni" % "16.0",
+//"org.geotools" % "gt-ogr-core" % "16.0",
 
 "org.locationtech.geotrellis" % "geotrellis-geotools_2.11" % "1.1.0",
 

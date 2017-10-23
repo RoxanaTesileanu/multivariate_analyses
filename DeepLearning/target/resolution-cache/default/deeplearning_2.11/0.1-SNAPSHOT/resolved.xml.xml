@@ -4,7 +4,7 @@
 		module="deeplearning_2.11"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20171023134716"
+		publication="20171023141124"
 	>
 		<description>
 		DeepLearning
@@ -36,14 +36,13 @@
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.10" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.scalafx" name="scalafx_2.11" rev="8.0.92-R10" conf="compile->default(compile)"/>
 		<dependency org="org.scala-lang" name="scala-swing" rev="2.10.2" conf="compile->default(compile)"/>
+		<dependency org="org.gdal" name="gdal" rev="1.11.2" conf="compile->default(compile)"/>
 		<dependency org="org.locationtech.geotrellis" name="geotrellis-raster_2.11" rev="1.0.0" conf="compile->default(compile)"/>
 		<dependency org="org.locationtech.geotrellis" name="geotrellis-vector_2.11" rev="1.1.1" conf="compile->default(compile)"/>
 		<dependency org="org.geotools" name="gt-main" rev="16.1" conf="compile->default(compile)"/>
 		<dependency org="org.geotools" name="gt-epsg-hsql" rev="16.1" conf="test->default(compile)"/>
 		<dependency org="org.geotools" name="gt-referencing" rev="16.1" conf="compile->default(compile)"/>
 		<dependency org="org.geotools" name="gt-shapefile" rev="16.1" conf="compile->default(compile)"/>
-		<dependency org="org.geotools" name="gt-ogr-jni" rev="16.0" conf="compile->default(compile)"/>
-		<dependency org="org.geotools" name="gt-ogr-core" rev="16.0" conf="compile->default(compile)"/>
 		<dependency org="org.locationtech.geotrellis" name="geotrellis-geotools_2.11" rev="1.1.0" conf="compile->default(compile)"/>
 		<dependency org="org.locationtech.geotrellis" name="geotrellis-shapefile_2.11" rev="1.1.0" conf="compile->default(compile)"/>
 		<dependency org="org.locationtech.geotrellis" name="geotrellis-vectortile_2.11" rev="1.1.0" conf="compile->default(compile)"/>
