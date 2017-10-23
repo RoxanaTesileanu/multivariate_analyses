@@ -97,4 +97,8 @@ Spatial vector data is stored in a DATA SOURCE object (the shapefile, GeoJSON fi
 
 Each layer contains a collection of FEATURES, that holds the geometries and their attributes. ONE DATASET -> ONE LAYER -> GEOMETRIES AND ATTRIBUTES OF THE FEATURES. 	
 
+The first step to accessing any vector data is to open the data source. For this you need to have an appropriate DRIVER that tells OGR how to work with your data format. EACH VECTOR FORMAT HAS ITS OWN DRIVER. YOU USE THAT DRIVER TO READ AND WRITE A PARTICULAR FORMAT. 
+
+ 
+
   
