@@ -93,4 +93,8 @@ The GDAL library was originally written in C and C++ and has bindings for severa
 
 THE OGR CLASS STRUCTURE:
 
-Spatial vector data is stored in a DATA SOURCE object (the shapefile, GeoJSON file, SpatiaLite, or PostGIS database, a.o.). This data source object can have one or more LAYERS, one for each dataset contained in the data source. Many vector formats, such as shapefiles can only contain one dataset, but others like SpatiLite can contain multiple datasets.  
+Spatial vector data is stored in a DATA SOURCE object (the shapefile, GeoJSON file, SpatiaLite, or PostGIS database, a.o.). This data source object can have one or more LAYERS, one for each dataset contained in the data source. Many vector formats, such as shapefiles can only contain one dataset, but others like SpatiLite can contain multiple datasets. ONE DATASET -> ONE LAYER. 
+
+Each layer contains a collection of FEATURES, that holds the geometries and their attributes. ONE DATASET -> ONE LAYER -> GEOMETRIES AND ATTRIBUTES OF THE FEATURES. 	
+
+  
