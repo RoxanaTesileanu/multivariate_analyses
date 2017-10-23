@@ -181,6 +181,12 @@ GetLayerDefn        SetFeature
 scala> lyr.GetName
 res3: String = example
 
+cala> lyr.GetFeatureCount
+res4: Long = 927
+
+scala> lyr.GetSpatialRef
+res5: org.gdal.osr.SpatialReference = null
+
 
 ____________________________________________
 
