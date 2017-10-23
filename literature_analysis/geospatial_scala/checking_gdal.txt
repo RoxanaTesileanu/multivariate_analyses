@@ -128,6 +128,8 @@ res1: Long = 0
 
 scala> val ds = ogr.Open("sal_alk_eu27_laea1052.shp", 1)
 ds: org.gdal.ogr.DataSource = null
+________________________________________________
+
 
 THE WORKING CODE FOR A NON-EMPTY DATASOURCE IS:
 
@@ -151,6 +153,34 @@ GetLayerByName      RollbackTransaction     hashCode
 
 scala> res1.GetLayerCount
 res2: Int = 1
+
+scala> val lyr = res1.GetLayer(0)
+lyr: org.gdal.ogr.Layer = org.gdal.ogr.Layer@305ca330
+
+cala> lyr.
+AlterFieldDefn      GetMetadataDomainList   SetIgnoredFields       
+Clip                GetMetadataItem         SetMetadata            
+CommitTransaction   GetMetadata_Dict        SetMetadataItem        
+CreateFeature       GetMetadata_List        SetNextByIndex         
+CreateField         GetName                 SetSpatialFilter       
+CreateGeomField     GetNextFeature          SetSpatialFilterRect   
+DeleteFeature       GetRefCount             SetStyleTable          
+DeleteField         GetSpatialFilter        StartTransaction       
+Erase               GetSpatialRef           SymDifference          
+FindFieldIndex      GetStyleTable           SyncToDisk             
+GetDescription      Identity                TestCapability         
+GetExtent           Intersection            Union                  
+GetFIDColumn        ReorderField            Update                 
+GetFeature          ReorderFields           addReference           
+GetFeatureCount     ResetReading            delete                 
+GetFeaturesRead     RollbackTransaction     equals                 
+GetGeomType         SetAttributeFilter      hashCode               
+GetGeometryColumn   SetDescription                                 
+GetLayerDefn        SetFeature                                     
+
+scala> lyr.GetName
+res3: String = example
+
 
 ____________________________________________
 
