@@ -52,7 +52,9 @@ The features on a map are items of interest like e.g. roads, country boundaries,
 Spatial overlay analyses are easy using vactor data.
 
 Raster data is well suited to any continuous data (e.g. aerial photos, satellite imagery). A grid of values can capture local variation more easily (e.g. temperature, rainfall, elevation - in Digital Elevation Models DEMs, vegetation mapping). 
-Blocks of adjacent pixels can be used to calculate useful information like the slope from DEMs, which can be further used to estimate the runoff. 
+Blocks of adjacent pixels can be used to calculate useful information like the slope from DEMs, which can be further used to estimate the runoff. This type of information gaining is done using windows (sets of pixels, for which we find the variable we want for the central pixel). You move a window around a raster so each pixel is in the center of its own window. 
+
+Vector and raster data can also be used together.  
    
 
 
