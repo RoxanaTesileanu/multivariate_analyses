@@ -187,6 +187,29 @@ res4: Long = 927
 scala> lyr.GetSpatialRef
 res5: org.gdal.osr.SpatialReference = null
 
+cala> val feat0 = lyr.GetFeature(0)
+feat0: org.gdal.ogr.Feature = org.gdal.ogr.Feature@3164b9a0
+
+scala> feat0.
+Clone                   GetFieldType                  SetFieldNull           
+DumpReadable            GetGeomFieldCount             SetFieldStringList     
+Equal                   GetGeomFieldDefnRef           SetFrom                
+FillUnsetWithDefault    GetGeomFieldIndex             SetFromWithMap         
+GetDefnRef              GetGeomFieldRef               SetGeomField           
+GetFID                  GetGeometryRef                SetGeomFieldDirectly   
+GetFieldAsBinary        GetNativeData                 SetGeometry            
+GetFieldAsDateTime      GetNativeMediaType            SetGeometryDirectly    
+GetFieldAsDouble        GetStyleString                SetNativeData          
+GetFieldAsDoubleList    IsFieldNull                   SetNativeMediaType     
+GetFieldAsInteger       IsFieldSet                    SetStyleString         
+GetFieldAsInteger64     IsFieldSetAndNotNull          UnsetField             
+GetFieldAsIntegerList   SetFID                        Validate               
+GetFieldAsString        SetField                      clone                  
+GetFieldAsStringList    SetFieldBinaryFromHexString   delete                 
+GetFieldCount           SetFieldDoubleList            equals                 
+GetFieldDefnRef         SetFieldInteger64             hashCode               
+GetFieldIndex           SetFieldIntegerList                                  
+
 
 ____________________________________________
 
