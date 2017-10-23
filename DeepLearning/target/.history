@@ -12,12 +12,6 @@ reload
 console
 reload
 console
-reload
-console
-reload
-console
-reload
-console
 reloaf
 reload
 console
@@ -495,6 +489,12 @@ exit
 reload
 console
 reload
+console
+exit
+console
+exit
+console
+exit
 console
 exit
 console
