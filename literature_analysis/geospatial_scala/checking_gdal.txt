@@ -107,4 +107,12 @@ ogr.getDriverByName("geojson")
 org.getDriverByName("ESRI shapefile")
 
 
-  
+When implementing the Java method in Scala I get an exception:
+scala>  val driver = org.gdal.ogr.ogrJNI.GetDriverByName("ESRI Shapefile")
+java.lang.UnsatisfiedLinkError: org.gdal.ogr.ogrJNI.GetDriverByName(Ljava/lang/String;)J
+  at org.gdal.ogr.ogrJNI.GetDriverByName(Native Method)
+  ... 42 elided
+
+I will get the code of Rob Emanuele (https://github.com/geotrellis/gdal-scala/blob/master/gdal/src/main/scala/org/gdal/scala/Gdal.scala) to get around that exception. 
+
+
