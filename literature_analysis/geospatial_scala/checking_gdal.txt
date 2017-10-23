@@ -91,4 +91,6 @@ Vector data sets can also be stored in relational databases. The two most popula
 The OGR Simple Features Library is part of the Geospatial Data Abstraction Library (GDAL), an extremely popular open source library for reading and writing spatial data. The OGR part of GDAL is the one that provides the ability to read and write many different vector data formats. OGR also allows you to create and manipulate geometries; edit attribute values; filter vector data based on attribute values or spatial location; and it offers data analysis capabilities. 
 The GDAL library was originally written in C and C++ and has bindings for several other languages. 
 
+THE OGR CLASS STRUCTURE:
 
+Spatial vector data is stored in a DATA SOURCE object (the shapefile, GeoJSON file, SpatiaLite, or PostGIS database, a.o.). This data source object can have one or more LAYERS, one for each dataset contained in the data source. Many vector formats, such as shapefiles can only contain one dataset, but others like SpatiLite can contain multiple datasets.  
