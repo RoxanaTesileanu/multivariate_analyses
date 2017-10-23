@@ -126,5 +126,34 @@ res0: Long = 0
 scala> org.gdal.ogr.ogrJNI.GetDriverByName("GeoJSON")
 res1: Long = 0
 
+scala> val ds = ogr.Open("sal_alk_eu27_laea1052.shp", 1)
+ds: org.gdal.ogr.DataSource = null
+
+THE WORKING CODE FOR A NON-EMPTY DATASOURCE IS:
+
+scala> org.gdal.ogr.ogr.RegisterAll()
+
+scala> org.gdal.ogr.ogr.Open("example.shp")
+res1: org.gdal.ogr.DataSource = org.gdal.ogr.DataSource@305c6b70
+
+scala> res1.
+CommitTransaction   GetLayerCount           SetDescription     
+CopyLayer           GetMetadataDomainList   SetMetadata        
+CreateLayer         GetMetadataItem         SetMetadataItem    
+DeleteLayer         GetMetadata_Dict        SetStyleTable      
+ExecuteSQL          GetMetadata_List        StartTransaction   
+FlushCache          GetName                 SyncToDisk         
+GetDescription      GetRefCount             TestCapability     
+GetDriver           GetStyleTable           delete             
+GetLayer            GetSummaryRefCount      equals             
+GetLayerByIndex     ReleaseResultSet        getName            
+GetLayerByName      RollbackTransaction     hashCode           
+
+scala> res1.GetLayerCount
+res2: Int = 1
+
+____________________________________________
+
+
 
 
