@@ -35,3 +35,16 @@ cala> org.gdal.osr.
 CoordinateTransformation   SpatialReference   osr   osrConstants   osrJNI
 
 
+__________________________________________
+
+Background on geoprocessing: Introduction (from C.Garrard, 2015)
+
+1) Types of spatial data
+
+- vector data 
+- raster data
+
+Vector data is made up of points, lines and polygons.
+Raster data is a two- or three-dimensional array of data values.
+
+The features on a map are items of interest like e.g. roads, country boundaries, weather stations, etc..  Features have attributes attached to them such as name and recorded variables.   
