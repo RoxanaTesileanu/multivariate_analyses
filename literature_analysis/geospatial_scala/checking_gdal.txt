@@ -104,7 +104,7 @@ IMPLEMENTING the ogr.getDriverByName(string) function:
 
 examples: 
 ogr.getDriverByName("geojson")
-org.getDriverByName("shapefile")
+org.getDriverByName("ESRI shapefile")
 
 
   

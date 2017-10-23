@@ -489,3 +489,6 @@ reload
 console
 exit
 console
+exit
+import org.gdal._
+console
