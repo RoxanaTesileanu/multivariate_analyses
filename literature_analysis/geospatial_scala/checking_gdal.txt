@@ -80,4 +80,15 @@ Vector data is more than geometries however. Each one of these features also has
 Only the type of geometry used to represent the features of interest may vary depending on scale (e.g. point for a city for low resolution, and polygon for high-resolution -> the higher the resolution the more detail can be shown). 
 
 One common type of vector data analysis is to measure relationships between features, typically by overlapping them on one another to determine their spatial relationship. Another aspect of spatial relationships is the distance between two features. You can use GPS-collared wildlife and see the direction of travel, what travel distances they covered and how they interact with man-made features such as roads. Shapefiles are a popular format for sotring vector data. A shapefile isn't made of a single file however. This format requires a minimum of three binary files, each of which serves a different purpose:
-- geometry information is stored in .shp and .shx files, and attribute values are stored in a .dbf file.  
+- geometry information is stored in .shp and .shx files, and attribute values are stored in a .dbf file. You need to make sure that they are all kept in the same folder! 
+
+Another widely used format, esp. for web-mapping applications is GeoJSON. These are plain text files that you can open up and look at in any text editor. Unlike a shapefile, a GeoJSON dataset consists of one file that stores all required information. 
+
+Vector data sets can also be stored in relational databases. The two most popular spatial extensions for database systems are PostGIS (extension on top of PostgreSQL) and SpatialLite (works with SQLite databases). Another popular database format is the Esri file geodatabase. 
+
+1) Introduction OGR
+
+The OGR Simple Features Library is part of the Geospatial Data Abstraction Library (GDAL), an extremely popular open source library for reading and writing spatial data. The OGR part of GDAL is the one that provides the ability to read and write many different vector data formats. OGR also allows you to create and manipulate geometries; edit attribute values; filter vector data based on attribute values or spatial location; and it offers data analysis capabilities. 
+The GDAL library was originally written in C and C++ and has bindings for several other languages. 
+
+
