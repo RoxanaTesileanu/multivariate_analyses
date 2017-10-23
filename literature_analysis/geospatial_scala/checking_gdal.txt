@@ -116,11 +116,11 @@ java.lang.UnsatisfiedLinkError: org.gdal.ogr.ogrJNI.GetDriverByName(Ljava/lang/S
 I will get the code of Rob Emanuele (https://github.com/geotrellis/gdal-scala/blob/master/gdal/src/main/scala/org/gdal/scala/Gdal.scala) to get around that exception. 
 I still have to use the function though. 
 I will set the Java options for sbt.
-One fact is certain, I have to install the Java bindings for GDAl, which is done with "$sudo apt-get install libgdal-java" (necessary packages: proj4, gdal-bin, libgdal-dev, libgdal-doc). 
+One fact is certain, I have to install the Java bindings for GDAl, which is done with "$sudo apt-get install libgdal-java" (necessary packages: proj4, gdal-bin, libgdal-dev, libgdal-doc) (see https://packages.ubuntu.com/source/trusty/gdal). 
 
 AND THE RESULT OF ALL THIS IS: 
 
-cala> org.gdal.ogr.ogrJNI.GetDriverByName("ESRI Shapefile")
+scala> org.gdal.ogr.ogrJNI.GetDriverByName("ESRI Shapefile")
 res0: Long = 0
 
 
