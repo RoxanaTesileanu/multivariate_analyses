@@ -1,4 +1,5 @@
 Checking GDAL in Scala
+Author: Roxana Tesileanu, INCDS, roxana.te@web.de
 
 - I've placed the gdal-2.21.jar in the lib directory of the DeepLearning Scala project and hope to get the functionality of the GDAL, OGR and OSR libraries in Scala. 
 
