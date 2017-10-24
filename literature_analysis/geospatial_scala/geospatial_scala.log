@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  24 OCT 2017 12:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  24 OCT 2017 12:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -337,49 +337,49 @@ LaTeX Info: Redefining \nameref on input line 21.
 \openout4 = `geospatial_scala.toc'.
 
 
-Overfull \hbox (2.18597pt too wide) in paragraph at lines 33--51
+Overfull \hbox (2.18597pt too wide) in paragraph at lines 33--53
 \OT1/cmr/m/n/10 to your sys-tem ([]https://launchpad.net/ ubun-tugis/+archive/u
 buntu/ppa[]). This
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--51
+Underfull \hbox (badness 10000) in paragraph at lines 33--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--51
+Underfull \hbox (badness 10000) in paragraph at lines 33--53
 
  []
 
 
-Overfull \hbox (1.30641pt too wide) in paragraph at lines 33--51
+Overfull \hbox (1.30641pt too wide) in paragraph at lines 33--53
 \OT1/cmr/m/n/10 afavi.com/installing-gdalogr-on-ubuntu.html[], []https://packag
 es.ubuntu.com/sou 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--51
+Underfull \hbox (badness 10000) in paragraph at lines 33--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--51
+Underfull \hbox (badness 10000) in paragraph at lines 33--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--51
+Underfull \hbox (badness 10000) in paragraph at lines 33--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--51
+Underfull \hbox (badness 10000) in paragraph at lines 33--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--51
+Underfull \hbox (badness 10000) in paragraph at lines 33--53
 
  []
 
@@ -400,7 +400,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 83.
 Here is how much of TeX's memory you used:
  5948 strings out of 493029
  86211 string characters out of 6136234
- 179505 words of memory out of 5000000
+ 180505 words of memory out of 5000000
  9412 multiletter control sequences out of 15000+600000
  9369 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -411,7 +411,7 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on geospatial_scala.pdf (3 pages, 91031 bytes).
+Output written on geospatial_scala.pdf (3 pages, 91016 bytes).
 PDF statistics:
  125 PDF objects out of 1000 (max. 8388607)
  112 compressed objects within 2 object streams
