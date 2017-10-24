@@ -32,13 +32,19 @@ Using a programming language for geospatial analysis allows you to customize you
 In order to use GDAL in Scala, you need to install GDAL and its Java bindings on your machine.  
 For installation details you can look at the GDAL homepage http://www.gdal.org/, download GDAL and follow the instructions for building from source, which might not be an easy task, depending on your operating system. 
 Thanks to the efforts of the UbuntuGIS team (https://wiki.ubuntu.com/UbuntuGIS), on Ubuntu, the installation process of GDAL and its bindings is done rapidly. Firstly, you need to add the ubuntugis PPA, which offers the official stable UbuntuGIS packages, to your system (https://launchpad.net/~ubuntugis/+archive/ubuntu/ppa). This is done with the commands: \\
+\\
 sudo add-apt-repository ppa:ubuntugis/ppa \\
 sudo apt-get update.\\
+\\
 Next, you install GDAL on your machine with the commands (http://www.sarasafavi.com/installing-gdalogr-on-ubuntu.html , https://packages.ubuntu.com/source/trusty/gdal):\\
+\\
 sudo apt-get install libproj-dev, gdal-bin, libgdal-dev, libgdal-doc \\
 sudo apt-get update.\\
+\\
 Finally, you add the Java bindings to your GDAL package:\\
+\\
 sudo apt-get install libgdal-java.    \\
+\\
 
 
   
