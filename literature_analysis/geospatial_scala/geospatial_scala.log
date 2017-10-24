@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  24 OCT 2017 13:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  24 OCT 2017 13:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -369,9 +369,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--53
  []
 
 
-Overfull \hbox (106.0971pt too wide) in paragraph at lines 33--53
+Overfull \hbox (109.98601pt too wide) in paragraph at lines 33--53
 \OT1/cmr/m/n/10 Finally, you add the Java bind-ings to your GDAL pack-age ([]ht
-tps://launchpad.net/ubuntu/+source/proj[]: 
+tps://launchpad.net/ubuntu/+source/proj[]): 
  []
 
 
