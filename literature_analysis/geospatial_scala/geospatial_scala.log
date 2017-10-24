@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  24 OCT 2017 15:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  24 OCT 2017 15:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -399,12 +399,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--66
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--73
+Underfull \hbox (badness 10000) in paragraph at lines 69--74
 
  []
 
@@ -434,7 +429,7 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti10.pfb>
-Output written on geospatial_scala.pdf (4 pages, 101219 bytes).
+Output written on geospatial_scala.pdf (4 pages, 101481 bytes).
 PDF statistics:
  139 PDF objects out of 1000 (max. 8388607)
  124 compressed objects within 2 object streams
