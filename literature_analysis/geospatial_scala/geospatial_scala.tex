@@ -73,7 +73,9 @@ In order to perform such vector-based analyses, we need to be able to read, edit
 At this point it is noted that the Scala code relating to using the GDAL functionality introduced in this document has its origins in the Python code written by Chris Garrard in her book "Geoprocessing with Python" (2016). The main reason for the transition towards using Scala for geospatial analysis is the use of Scala's functional nature, for the further processing of geodata by using higher-order functions. \\
 \\
 There are many different types of vector data formats. Among the most widely used ones are: the ESRI shapefile, the GeoJSON file, or the SpatiaLite or PostGIS databases. 
-The ESRI shapefile requires a minimum of three binary files. 
+The ESRI shapefile format requires a minimum of three binary files, each of which serves a different purpose: geometry information is stored in .shp and .shx files, and attribute values are stored in a .dbf file. You need to make sure they are all grouped in the same folder, because they work together \cite{garrard_geoprocessing_2016}. The GeoJSON format is used mainly for web-mapping applications and is a plain text file which can be easily examined. The GeoJSON format consists of a single file. Vector data can also be stored in relational databases with spatial extensions. The widely used spatial extensions are SpatiaLite (for SQLite databases) and PostGIS (for PostgreSQL). 
+
+      
 
 \subsection {Overlay analyses}
 
