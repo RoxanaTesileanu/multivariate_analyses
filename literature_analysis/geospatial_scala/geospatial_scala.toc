@@ -1,6 +1,12 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
 \contentsline {section}{\numberline {2}Geoprocessing using GDAL}{1}{section.2}
-\contentsline {subsection}{\numberline {2.1}Types of spatial data}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Reading vector data}{2}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Overlay analyses}{2}{subsection.2.3}
-\contentsline {section}{\numberline {3}Geostatistics using Geotrellis}{2}{section.3}
+\contentsline {subsection}{\numberline {2.1}Types of spatial data}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Reading vector data}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Overlay analyses}{3}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Proximity analyses}{3}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Writing vector data}{3}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Reading raster data}{3}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Pixels resizing}{3}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Moving window analyses}{3}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}Map algebra}{3}{subsection.2.9}
+\contentsline {section}{\numberline {3}Geostatistics using Geotrellis}{3}{section.3}
