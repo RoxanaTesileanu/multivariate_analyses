@@ -1,7 +1,7 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
 \contentsline {section}{\numberline {2}Geoprocessing using GDAL}{1}{section.2}
 \contentsline {subsection}{\numberline {2.1}Types of spatial data}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Reading vector data}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}Reading vector data}{3}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Overlay analyses}{4}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Proximity analyses}{4}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Writing vector data}{4}{subsection.2.5}
