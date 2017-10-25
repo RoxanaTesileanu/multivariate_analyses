@@ -84,27 +84,27 @@ In order to make the configured OGR drivers available we call the RegisterAll() 
 \paragraph{ Code snippet 1: accessing a shapefile using OGR in Scala}
 
 You can find a shapefile on the internet at one of the sources indicated under \href{http://gisgeography.com/best-free-gis-data-sources-raster-vector/}{http://gisgeography.com/best-free-gis-data-sources-raster-vector/} and try the following snippet with your shapefile: \\
-
+\\
 org.gdal.ogr.ogr.RegisterAll() \\
-
-val dataSource = org.gdal.ogr.ogr.Open("example.shp") \\
+\\
+val dataSource = org.gdal.ogr.ogr.Open("example.shp")\\  
 dataSource: org.gdal.org.DataSource = org.gdal.ogr.DataSource@305c6b70 \\
-
-val lyr = dataSource.GetLayer(0) \\
-lyr: org.gdal.ogr.Layer = org.gdal.ogr.Layer@305ca330 \\
-
-lyr.GetLayerCount \\
+\\
+dataSource.GetLayerCount \\
 res1: Int = 1 \\
-
+\\
+val lyr = dataSource.GetLayer(0) \\
+lyr: org.gdal.ogr.Layer = org.gdal.ogr.Layer@305ca330 \\ yr.GetName \\
+\\
 lyr.GetName \\
 res2: String = example \\
-
+\\
 lyr.GetFeatureCount \\
 res3: Long = 927 \\
-
+\\
 val feat0 = lyr.GetFeature(0) \\
 feat0 : org.gdal.ogr.Feature = org.gdal.ogr.Feature@3164b9a0\\
-
+\\
 dataSource.delete() \\
 
 \paragraph {Code snippet 1 explanation}

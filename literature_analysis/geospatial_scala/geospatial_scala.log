@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  25 OCT 2017 11:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  25 OCT 2017 11:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -419,57 +419,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--84
  []
 
 [3]
-Overfull \hbox (6.63951pt too wide) in paragraph at lines 86--87
+Overfull \hbox (6.63951pt too wide) in paragraph at lines 86--109
 []\OT1/cmr/m/n/10 http://gisgeography.com/best-free-gis-data-sources-raster-vec
 tor/[] and try the fol-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 86--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 86--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
+Underfull \hbox (badness 10000) in paragraph at lines 86--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--95
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 96--98
+Underfull \hbox (badness 10000) in paragraph at lines 86--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 86--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
+Underfull \hbox (badness 10000) in paragraph at lines 86--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--107
+Underfull \hbox (badness 10000) in paragraph at lines 86--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 86--109
 
  []
 
-(./geospatial_scala.bbl [5])
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--109
+
+ []
+
+[4] (./geospatial_scala.bbl [5])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
  [6]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
@@ -495,7 +495,7 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti10.pfb>
-Output written on geospatial_scala.pdf (6 pages, 108832 bytes).
+Output written on geospatial_scala.pdf (6 pages, 108809 bytes).
 PDF statistics:
  168 PDF objects out of 1000 (max. 8388607)
  151 compressed objects within 2 object streams
