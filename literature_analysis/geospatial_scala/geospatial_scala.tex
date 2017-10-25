@@ -114,6 +114,7 @@ Then, we create a variable called dataSource in which we store the DataSource ob
 We check how many layers (i.e. datasets) are available in the DataSource object by calling GetLayerCount on it. 
 Further, we retrieve the first layer (which has the index 0), with GetLayer(0), obtaining a variable called lyr in which we store it. 
 You can check its name or the number of features it contains, with GetName or GetFeatureCount. You can see the available functions on the lyr with the help of autocompletion. Autocompletion works for example by typing lyr. followed by a <TAB>. This lists all the methods available for that object. 
+We continue, by retrieving the first feature (which has the index 0) of the layer called lyr with GetFeature(0). You can check with autocompletion the methods availableon it.  
 At the end of the code snippet we close the data source.       
 
 \subsection {Georeferencing data}      
