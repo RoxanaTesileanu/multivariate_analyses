@@ -605,7 +605,7 @@ EPSG:3857
 
 https://en.wikipedia.org/wiki/Web_Mercator
 
-_________
+WGS 84 / Pseudo-Mercator -- Spherical Mercator, Google Maps, OpenStreetMap, Bing, ArcGIS, ESRI
 
-
+www.epsg.io
 
