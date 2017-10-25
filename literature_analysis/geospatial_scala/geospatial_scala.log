@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  25 OCT 2017 09:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  25 OCT 2017 09:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,36 +405,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--66
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--80
+Underfull \hbox (badness 10000) in paragraph at lines 69--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--80
+Underfull \hbox (badness 10000) in paragraph at lines 69--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--80
+Underfull \hbox (badness 10000) in paragraph at lines 69--81
 
  []
 
 
-Overfull \hbox (45.36441pt too wide) in paragraph at lines 69--80
+Overfull \hbox (45.36441pt too wide) in paragraph at lines 69--81
 \OT1/cmr/m/n/10 data. The OGR Java Ap-pli-ca-tion Pro-gram-ming In-ter-face (AP
 I) [[]1[]] ([]http://gdal.org/java/[])
  []
 
 [3] (./geospatial_scala.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
  [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
  (./geospatial_scala.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `geospatial_scala.out' has not changed.
 (rerunfilecheck)             Checksum: 3EDE4DD4C6078813C16D7434E03C9B7A;845.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
  5974 strings out of 493029
