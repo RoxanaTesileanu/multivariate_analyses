@@ -81,8 +81,8 @@ The OGR package of GDAL contains the classes used for geoprocessing vector data.
 \\
 The first step in accessing any vector data is to open the data source. For this you need to use a driver specific to the data format. Each vector data format has its own driver, which is used to read and write a particular format \cite{garrard_geoprocessing_2016}.\\
 In order to make the configured OGR drivers available we call the RegisterAll() function at the beginning of the analysis. The RegisterAll() function is placed in the package OGR of the GDAL library, in the class ogr, so we need to call it using org.gdal.ogr.ogr.RegisterAll() (or, we can also import the class to save typing, but it remains unclear where the function resides inside GDAL).                     
-\paragraph{ Code snippet 1: accessing a shapefile using OGR in Scala}
-
+\paragraph{ Code snippet 1: accessing a shapefile using OGR in Scala} 
+\\
 You can find a shapefile on the internet at one of the sources indicated under \href{http://gisgeography.com/best-free-gis-data-sources-raster-vector/}{http://gisgeography.com/best-free-gis-data-sources-raster-vector/} and try the following snippet with your shapefile: \\
 \\
 org.gdal.ogr.ogr.RegisterAll() \\
@@ -94,7 +94,7 @@ dataSource.GetLayerCount \\
 res1: Int = 1 \\
 \\
 val lyr = dataSource.GetLayer(0) \\
-lyr: org.gdal.ogr.Layer = org.gdal.ogr.Layer@305ca330 \\ yr.GetName \\
+lyr: org.gdal.ogr.Layer = org.gdal.ogr.Layer@305ca330 \\ 
 \\
 lyr.GetName \\
 res2: String = example \\
