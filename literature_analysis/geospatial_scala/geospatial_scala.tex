@@ -76,7 +76,7 @@ There are many different types of vector data formats. Among the most widely use
 The ESRI shapefile format requires a minimum of three binary files, each of which serves a different purpose: geometry information is stored in .shp and .shx files, and attribute values are stored in a .dbf file. You need to make sure they are all grouped in the same folder, because they work together \cite{garrard_geoprocessing_2016}. The GeoJSON format is used mainly for web-mapping applications and is a plain text file which can be easily examined. The GeoJSON format consists of a single file. Vector data can also be stored in relational databases with spatial extensions. The most widely used spatial extensions are SpatiaLite (for SQLite databases) and PostGIS (for PostgreSQL). 
 You can check other vector data formats supported by GDAL at \href{http://www.gdal.org/ogr_formats.html}{http://www.gdal.org/ogr\underline{\space}formats.html}. \\ 
 \\
- 
+The OGR package of GDAL contains the classes used for geoprocessing vector data. The OGR Java API (http://gdal.org/java/) lists them:  
 
 
 \subsection {Georeferencing data}      
