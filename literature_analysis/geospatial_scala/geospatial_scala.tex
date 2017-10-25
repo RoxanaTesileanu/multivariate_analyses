@@ -83,29 +83,29 @@ The first step in accessing any vector data is to open the data source. For this
 In order to make the configured OGR drivers available we call the RegisterAll() function at the beginning of the analysis. The RegisterAll() function is placed in the package OGR of the GDAL library, in the class ogr, so we need to call it using org.gdal.ogr.ogr.RegisterAll() (or, we can also import the class to save typing, but it remains unclear where the function resides inside GDAL).                     
 \paragraph{ Code snippet 1: accessing a shapefile using OGR in Scala}
 
-You can find a shapefile on the internet at one of the sources indicated under \href{http://gisgeography.com/best-free-gis-data-sources-raster-vector/}{http://gisgeography.com/best-free-gis-data-sources-raster-vector/} and try the following snippet with your shapefile:
+You can find a shapefile on the internet at one of the sources indicated under \href{http://gisgeography.com/best-free-gis-data-sources-raster-vector/}{http://gisgeography.com/best-free-gis-data-sources-raster-vector/} and try the following snippet with your shapefile: \\
 
-  
 org.gdal.ogr.ogr.RegisterAll() \\
-val dataSource = org.gdal.ogr.ogr.Open("example.shp")
+
+val dataSource = org.gdal.ogr.ogr.Open("example.shp") \\
 dataSource: org.gdal.org.DataSource = org.gdal.ogr.DataSource@305c6b70 \\
 
-val lyr = dataSource.GetLayer(0)
+val lyr = dataSource.GetLayer(0) \\
 lyr: org.gdal.ogr.Layer = org.gdal.ogr.Layer@305ca330 \\
 
-lyr.GetLayerCount
-res1: Int = 1
+lyr.GetLayerCount \\
+res1: Int = 1 \\
 
-lyr.GetName
+lyr.GetName \\
 res2: String = example \\
 
-lyr.GetFeatureCount
+lyr.GetFeatureCount \\
 res3: Long = 927 \\
 
-val feat0 = lyr.GetFeature(0)
-feat0 : org.gdal.ogr.Feature = org.gdal.ogr.Feature@3164b9a0
+val feat0 = lyr.GetFeature(0) \\
+feat0 : org.gdal.ogr.Feature = org.gdal.ogr.Feature@3164b9a0\\
 
-dataSource.delete()
+dataSource.delete() \\
 
 \paragraph {Code snippet 1 explanation}
 
