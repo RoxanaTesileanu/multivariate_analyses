@@ -4,7 +4,7 @@
 \contentsline {subsection}{\numberline {2.2}Reading vector data}{3}{subsection.2.2}
 \contentsline {paragraph}{ Code snippet 1: accessing a shapefile using OGR in Scala}{4}{section*.2}
 \contentsline {paragraph}{Code snippet 1 explanation}{5}{section*.3}
-\contentsline {subsection}{\numberline {2.3}Georeferencing data}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}Georeferencing data}{5}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Overlay analyses}{6}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Proximity analyses}{6}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}Writing vector data}{6}{subsection.2.6}

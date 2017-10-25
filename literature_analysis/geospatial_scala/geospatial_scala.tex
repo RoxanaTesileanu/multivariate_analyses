@@ -114,10 +114,20 @@ Then, we create a variable called dataSource in which we store the DataSource ob
 We check how many layers (i.e. datasets) are available in the DataSource object by calling GetLayerCount on it. 
 Further, we retrieve the first layer (which has the index 0), with GetLayer(0), obtaining a variable called lyr in which we store it. 
 You can check its name or the number of features it contains, with GetName or GetFeatureCount. You can see the available functions on the lyr with the help of autocompletion. Autocompletion works for example by typing lyr. followed by a $<$TAB$>$. This lists all the methods available for that object. 
-We continue, by retrieving the first feature (which has the index 0) of the layer called lyr with GetFeature(0). You can check with autocompletion the methods availableon it.  
-At the end of the code snippet we close the data source.       
+We continue, by retrieving the first feature (which has the index 0) of the layer called lyr with GetFeature(0). You can check with autocompletion the methods available on it.  
+At the end of the code snippet we close the data source.      
+\\
+\\
+Geodata would actually be "normal" data without georeferencing. In the next subsection, we learn how to deal with spatial reference systems of already georeferenced features, and how to construct our own geometries and features and how to georeference them. 
+
+   
 
 \subsection {Georeferencing data}      
+
+- spatial reference systems\\
+- investigate georeferenced data\\
+- construct new geometries and features\\
+- georeference new features\\
 
 \subsection {Overlay analyses}
 
