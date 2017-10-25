@@ -597,4 +597,10 @@ val building = ogr.Geometry(ogr.wkbPolygon)
 building.AddGeometry(ring)
 building.CloseRings()
 building.IsValid
+____________
+
+NOTE: Google uses WGS 84 Web Mercator as its coordinate system !!!!!
+
+_________
+
 
