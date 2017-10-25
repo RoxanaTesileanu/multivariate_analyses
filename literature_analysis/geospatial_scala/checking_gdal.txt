@@ -493,5 +493,10 @@ PROJCS["ETRS89 / ETRS-LAEA",
     AXIS["...
 scala> 
 
+_________________________________-
+
+Now I will give it a try with Pulkovo 1942(58)/Stereo 70, ESPG 3844, http://spatialreference.org/ref/epsg/3844/.
+Non-military large and medium scale topographic map for Romania.
+
 
 
