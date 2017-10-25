@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  25 OCT 2017 10:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  25 OCT 2017 10:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -353,15 +353,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--53
  []
 
 
-Overfull \hbox (25.01347pt too wide) in paragraph at lines 33--53
+Overfull \hbox (0.4301pt too wide) in paragraph at lines 33--53
 \OT1/cmr/m/n/10 Next, you in-stall GDAL on your ma-chine with the com-mands [[]
-4[]] [[]2[]] ([]http://www.saras 
- []
-
-
-Overfull \hbox (1.30641pt too wide) in paragraph at lines 33--53
-\OT1/cmr/m/n/10 afavi.com/installing-gdalogr-on-ubuntu.html[], []https://packag
-es.ubuntu.com/sou 
+4[]] [[]2[]] ([]http://www 
  []
 
 
@@ -420,12 +414,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--83
  []
 
 
-Overfull \hbox (45.36441pt too wide) in paragraph at lines 69--83
-\OT1/cmr/m/n/10 data. The OGR Java Ap-pli-ca-tion Pro-gram-ming In-ter-face (AP
-I) [[]1[]] ([]http://gdal.org/java/[])
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 69--83
 
  []
@@ -456,10 +444,10 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti10.pfb>
-Output written on geospatial_scala.pdf (5 pages, 105210 bytes).
+Output written on geospatial_scala.pdf (5 pages, 105287 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
+ 161 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
  26 named destinations out of 1000 (max. 500000)
  105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
