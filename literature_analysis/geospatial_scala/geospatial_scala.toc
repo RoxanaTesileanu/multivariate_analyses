@@ -4,12 +4,12 @@
 \contentsline {subsection}{\numberline {2.2}Reading vector data}{3}{subsection.2.2}
 \contentsline {paragraph}{ Code snippet 1: accessing a shapefile using OGR in Scala}{4}{section*.2}
 \contentsline {paragraph}{Code snippet 1 explanation}{5}{section*.3}
-\contentsline {subsection}{\numberline {2.3}Georeferencing data}{5}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Overlay analyses}{5}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Proximity analyses}{5}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Writing vector data}{5}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Reading raster data}{5}{subsection.2.7}
-\contentsline {subsection}{\numberline {2.8}Pixels resizing}{5}{subsection.2.8}
-\contentsline {subsection}{\numberline {2.9}Moving window analyses}{5}{subsection.2.9}
-\contentsline {subsection}{\numberline {2.10}Map algebra}{5}{subsection.2.10}
-\contentsline {section}{\numberline {3}Geostatistics using Geotrellis}{5}{section.3}
+\contentsline {subsection}{\numberline {2.3}Georeferencing data}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Overlay analyses}{6}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Proximity analyses}{6}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Writing vector data}{6}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Reading raster data}{6}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Pixels resizing}{6}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}Moving window analyses}{6}{subsection.2.9}
+\contentsline {subsection}{\numberline {2.10}Map algebra}{6}{subsection.2.10}
+\contentsline {section}{\numberline {3}Geostatistics using Geotrellis}{6}{section.3}
