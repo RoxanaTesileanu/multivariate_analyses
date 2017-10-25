@@ -577,4 +577,8 @@ PROJCS["Pulkovo 1942(58) / Stereo70",
     PARAMETER["scale_factor",0.99975],
   PAR...
 
+_______________________________________-
+
+I will construct a Polygon. I look up the points on the Internet:
+45.650988, 25.581612
 
