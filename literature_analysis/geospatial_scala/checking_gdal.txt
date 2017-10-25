@@ -384,6 +384,37 @@ PROJCS["ETRS89 / LAEA Europe",
         AUTHORITY["EPSG","9001"]],
     AUTHORITY["EPSG","30...
 
+scala> val newSR2 = new org.gdal.osr.SpatialReference()
+newSR2: org.gdal.osr.SpatialReference =
+
+scala> newSR2.ImportFromURL("http://spatialreference.org/ref/epsg/3035/proj4/")
+<console>:13: error: value ImportFromURL is not a member of org.gdal.osr.SpatialReference
+       newSR2.ImportFromURL("http://spatialreference.org/ref/epsg/3035/proj4/")
+              ^
+
+scala> newSR2.ImportFrom
+ImportFromEPSG    ImportFromESRI         ImportFromPCI     ImportFromUrl   
+ImportFromEPSGA   ImportFromMICoordSys   ImportFromProj4   ImportFromWkt   
+ImportFromERM     ImportFromOzi          ImportFromUSGS    ImportFromXML   
+
+scala> newSR2.ImportFromProj4("+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defs ")
+res6: Int = 0
+
+scala> newSR2
+res7: org.gdal.osr.SpatialReference =
+PROJCS["unnamed",
+    GEOGCS["GRS 1980(IUGG, 1980)",
+        DATUM["unknown",
+            SPHEROID["GRS80",6378137,298.257222101]],
+        PRIMEM["Greenwich",0],
+        UNIT["degree",0.0174532925199433]],
+    PROJECTION["Lambert_Azimuthal_Equal_Area"],
+    PARAMETER["latitude_of_center",52],
+    PARAMETER["longitude_of_center",10],
+    PARAMETER["false_easting",4321000],
+    PARAMETER["false_northing",3210000],
+    UNIT["Meter",1]]
+
 
 
 
