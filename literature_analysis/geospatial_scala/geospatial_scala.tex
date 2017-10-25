@@ -145,6 +145,18 @@ You can search for spatial reference systems on the spatialreference.org website
 
 OGR provides ways of storing and converting the information regarding the spatial reference system (SRS) used for vector data in its package called OGR Spatial Reference (OSR).   
 \\
+You can find out the SRS used by a georeferenced layer, by calling the GetSpatialRef function on it. If the layer is not georeferenced it return null. 
+
+ lyr.GetSpatialRef
+res10: org.gdal.osr.SpatialReference =
+GEOGCS["GCS_WGS_1984",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_84",6378137,298.257223563]],
+    PRIMEM["Greenwich",0],
+    UNIT["Degree",0.017453292519943295],
+    AUTHORITY["EPSG","4326"]]
+
+
 
 \subsection {Overlay analyses}
 
