@@ -93,10 +93,21 @@ dataSource: org.gdal.org.DataSource = org.gdal.ogr.DataSource@305c6b70 \\
 val lyr = dataSource.GetLayer(0)
 lyr: org.gdal.ogr.Layer = org.gdal.ogr.Layer@305ca330 \\
 
-lyr.GetName
-res3: String = example \\
+lyr.GetLayerCount
+res1: Int = 1
 
-lyr.
+lyr.GetName
+res2: String = example \\
+
+lyr.GetFeatureCount
+res3: Long = 927 \\
+
+val feat0 = lyr.GetFeature(0)
+feat0 : org.gdal.ogr.Feature = org.gdal.ogr.Feature@3164b9a0
+
+dataSource.delete()
+
+
 
 \subsection {Georeferencing data}      
 
