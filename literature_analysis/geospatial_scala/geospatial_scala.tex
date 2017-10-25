@@ -110,8 +110,9 @@ dataSource.delete() \\
 \paragraph {Code snippet 1 explanation}
 \\
 In order to access the vector geodata, we make the OGR drivers available with RegisterAll(). 
-Then, we create a variable called dataSource in which we store the DataSource object. We obtain it by openning the shapefile (or any other OGR file format) with Open(). 
-We check how many layers (i.e. datasets) are available by calling GetLayerCount on the DataSource object.     
+Then, we create a variable called dataSource in which we store the DataSource object. We obtain it by opening the shapefile (or any other OGR file format) with Open(). 
+We check how many layers (i.e. datasets) are available in the DataSource object by calling GetLayerCount on it. 
+     
 
 \subsection {Georeferencing data}      
 
