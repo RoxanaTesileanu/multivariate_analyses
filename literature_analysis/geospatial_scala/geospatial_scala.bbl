@@ -1,9 +1,19 @@
 \begin{thebibliography}{1}
 
+\bibitem{noauthor_gdal_nodate}
+{GDAL} {Java} {API}.
+
+\bibitem{noauthor_ubuntugis_nodate}
+{UbuntuGIS}.
+
 \bibitem{garrard_geoprocessing_2016}
 Chris Garrard.
 \newblock {\em Geoprocessing with {Python}}.
 \newblock Manning Publications Co., Shelter Island, 2016.
+
+\bibitem{safavi_installing_2015}
+Sara Safavi.
+\newblock Installing {GDAL}/{OGR} on {Ubuntu}, 2015.
 
 \bibitem{tesileanu_using_2017}
 Roxana Tesileanu.

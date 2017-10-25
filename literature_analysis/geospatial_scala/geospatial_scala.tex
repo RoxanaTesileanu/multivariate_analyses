@@ -38,7 +38,7 @@ Thanks to the efforts of the UbuntuGIS team (\href{https://wiki.ubuntu.com/Ubunt
 sudo add-apt-repository ppa:ubuntugis/ppa \\
 sudo apt-get update.\\
 \\
-Next, you install GDAL on your machine with the commands (\href{http://www.sarasafavi.com/installing-gdalogr-on-ubuntu.html}{http://www.saras\\ afavi.com/installing-gdalogr-on-ubuntu.html}, \href{https://packages.ubuntu.com/source/trusty/gdal}{https://packages.ubuntu.com/sou\\ rce/trusty/gdal}):\\
+Next, you install GDAL on your machine with the commands \cite{safavi_installing_2015} \cite{noauthor_ubuntugis_nodate} (\href{http://www.sarasafavi.com/installing-gdalogr-on-ubuntu.html}{http://www.saras\\ afavi.com/installing-gdalogr-on-ubuntu.html}, \href{https://packages.ubuntu.com/source/trusty/gdal}{https://packages.ubuntu.com/sou\\ rce/trusty/gdal}):\\
 \\
 sudo apt-get install libproj-dev, gdal-bin, libgdal-dev, libgdal-doc \\
 sudo apt-get update.\\
@@ -76,7 +76,8 @@ There are many different types of vector data formats. Among the most widely use
 The ESRI shapefile format requires a minimum of three binary files, each of which serves a different purpose: geometry information is stored in .shp and .shx files, and attribute values are stored in a .dbf file. You need to make sure they are all grouped in the same folder, because they work together \cite{garrard_geoprocessing_2016}. The GeoJSON format is used mainly for web-mapping applications and is a plain text file which can be easily examined. The GeoJSON format consists of a single file. Vector data can also be stored in relational databases with spatial extensions. The most widely used spatial extensions are SpatiaLite (for SQLite databases) and PostGIS (for PostgreSQL). 
 You can check other vector data formats supported by GDAL at \href{http://www.gdal.org/ogr_formats.html}{http://www.gdal.org/ogr\underline{\space}formats.html}. \\ 
 \\
-The OGR package of GDAL contains the classes used for geoprocessing vector data. The OGR Java Application Programming Interface (API) (\href{http://gdal.org/java/}{http://gdal.org/java/}) lists them all. Among them there are the classes: Driver, DataSource, Layer, Geometry and Feature. In order to handle vector geodatawith OGR,       
+The OGR package of GDAL contains the classes used for geoprocessing vector data. The OGR Java Application Programming Interface (API) \cite{noauthor_gdal_nodate} (\href{http://gdal.org/java/}{http://gdal.org/java/}) lists them all.
+ Among them there are the classes: Driver, DataSource, Layer, Geometry and Feature. In order to handle vector geodatawith OGR,        
 
 
 \subsection {Georeferencing data}      
