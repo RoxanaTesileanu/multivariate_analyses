@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  25 OCT 2017 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  25 OCT 2017 16:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -498,12 +498,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--122
 
  []
 
-[5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 150--158
+[5]
+! Undefined control sequence.
+<recently read> \tab 
+                     
+l.153 \tab
+          [2cm]DATUM["WGS\underline{\space}1984",\\
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--158
 
  []
 
-(./geospatial_scala.bbl)
+[6] (./geospatial_scala.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 184.
  [7]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 184.
@@ -515,10 +522,10 @@ Package rerunfilecheck Info: File `geospatial_scala.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 184.
  ) 
 Here is how much of TeX's memory you used:
- 5981 strings out of 493029
- 86774 string characters out of 6136234
+ 5982 strings out of 493029
+ 86777 string characters out of 6136234
  181638 words of memory out of 5000000
- 9431 multiletter control sequences out of 15000+600000
+ 9432 multiletter control sequences out of 15000+600000
  9369 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,6n,28p,897b,344s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -530,7 +537,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmti10.pfb>
-Output written on geospatial_scala.pdf (7 pages, 121837 bytes).
+Output written on geospatial_scala.pdf (7 pages, 121830 bytes).
 PDF statistics:
  189 PDF objects out of 1000 (max. 8388607)
  170 compressed objects within 2 object streams
