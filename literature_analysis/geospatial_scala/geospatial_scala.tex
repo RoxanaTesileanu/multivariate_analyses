@@ -77,7 +77,7 @@ The ESRI shapefile format requires a minimum of three binary files, each of whic
 You can check other vector data formats supported by GDAL at \href{http://www.gdal.org/ogr_formats.html}{http://www.gdal.org/ogr\underline{\space}formats.html}. \\ 
 \\
 The OGR package of GDAL contains the classes used for geoprocessing vector data. The OGR Java Application Programming Interface (API) \cite{noauthor_gdal_nodate} (\href{http://gdal.org/java/}{http://gdal.org/java/}) lists them all.
- Among them there are the classes: Driver, DataSource, Layer, Geometry and Feature. In order to handle vector geodata with OGR, we need to understand how the geospatial information is organized in OGR.          
+ Among them there are the classes: Driver, DataSource, Layer, Geometry and Feature. In order to handle vector geodata with OGR, we need to understand how the geospatial information is organized in OGR. The spatial vector data is stored in a data source (for example a shapefile, a GeoJSON file, or a SpatiaLite or PostGIS database). This data source object can have one or more layers, one for each dataset contained in the data source. Many vector formats, such as shapefiles can only contain one dataset, thus have one layer, but others like SpatiaLite can contain multiple datasets, thus have multiple layers.                
 
 
 \subsection {Georeferencing data}      
