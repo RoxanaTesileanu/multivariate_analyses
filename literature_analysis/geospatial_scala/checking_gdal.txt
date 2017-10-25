@@ -581,4 +581,20 @@ _______________________________________-
 
 I will construct a Polygon. I look up the points on the Internet:
 45.650988, 25.581612
+45.651026, 25.582142
+45.650854, 25.581635
+45.650801, 25.582182
+
+myBuilding
+
+val ring = org.Geometry(ogr.wkbLinearRing)
+ring.AddPoint(45.650988, 25.581612)
+ring.AddPoint(45.651026, 25.582142)
+ring.AddPoint(45.650854, 25.581635)
+ring.AddPoint(45.650801, 25.582182)
+
+val building = ogr.Geometry(ogr.wkbPolygon)
+building.AddGeometry(ring)
+building.CloseRings()
+building.IsValid
 
