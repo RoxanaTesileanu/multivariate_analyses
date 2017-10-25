@@ -128,8 +128,13 @@ Geodata would actually be "normal" data without georeferencing. In the next subs
 - investigate georeferenced data\\
 - construct new geometries and features\\
 - georeference new features\\
-
-In order to be able to locate some coordinates on a map, you need to know what spatial reference system is used for the coordinates and what spatial reference system uses the map. If they are not the same, you need to perform transformations from one spatial reference system to another. Georeferencing the data means adding the information regarding the spatial reference system used when defining the features.    
+In order to be able to locate some coordinates on a map, you need to know what spatial reference system is used for the coordinates and what spatial reference system uses the map. If they are not the same, you need to perform transformations from one spatial reference system to another. Georeferencing the data means adding the information regarding the spatial reference system used when defining the features.\\
+A spatial reference system is made of three components \cite{garrard_geoprocessing_2016}: \begin{itemize}
+\item a coordinate system,
+\item a datum and,
+\item a projection.
+\end{itemize}
+  
 
 \subsection {Overlay analyses}
 
