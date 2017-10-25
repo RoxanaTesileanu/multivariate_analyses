@@ -232,9 +232,12 @@ GEOGCS["GCS_WGS_1984",
 
 __________________________________________
 
-Creating SpatialReference objects:
+Creating SpatialReference objects: I will use the ETRS-LAEASRS as it is the single CRS for all Europe and is used for statistical mapping at all scales and other purposes where true area representation is required.
 
-cala> org.gdal.ogr.ogr.RegisterAll()
+http://spatialreference.org/ref/epsg/3035/
+
+
+scala> org.gdal.ogr.ogr.RegisterAll()
 
 scala> val ds = org.gdal.ogr.ogr.Open("sal_alk_eu27_laea1052.shp")
 ds: org.gdal.ogr.DataSource = org.gdal.ogr.DataSource@68b12470
