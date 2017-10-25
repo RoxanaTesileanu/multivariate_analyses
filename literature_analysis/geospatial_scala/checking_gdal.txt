@@ -601,6 +601,11 @@ ____________
 
 NOTE: Google uses WGS 84 Web Mercator as its coordinate system !!!!!
 
+EPSG:3857
+
+https://en.wikipedia.org/wiki/Web_Mercator
+
 _________
+
 
 
