@@ -113,7 +113,7 @@ In order to access the vector geodata, we make the OGR drivers available with Re
 Then, we create a variable called dataSource in which we store the DataSource object. We obtain it by opening the shapefile (or any other OGR file format) with Open(). 
 We check how many layers (i.e. datasets) are available in the DataSource object by calling GetLayerCount on it. 
 Further, we retrieve the first layer (which has the index 0), with GetLayer(0), obtaining a variable called lyr in which we store it. 
-      
+You can check its name or the number of features it contains, with GetName or GetFeatureCount. You can see the available functions on the lyr with the help of autocompletion. Autocompletion works for example by typing lyr. <TAB>. This lists all the methods available for that object.      
 
 \subsection {Georeferencing data}      
 
