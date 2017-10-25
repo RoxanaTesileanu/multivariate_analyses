@@ -230,5 +230,160 @@ GEOGCS["GCS_WGS_1984",
     AUTHORITY["EPSG","4326"]]
 
 
+__________________________________________
+
+Creating SpatialReference objects:
+
+cala> org.gdal.ogr.ogr.RegisterAll()
+
+scala> val ds = org.gdal.ogr.ogr.Open("sal_alk_eu27_laea1052.shp")
+ds: org.gdal.ogr.DataSource = org.gdal.ogr.DataSource@68b12470
+
+scala> val lyr = ds.GetLayer(0)
+lyr: org.gdal.ogr.Layer = org.gdal.ogr.Layer@68b12de0
+
+scala> lyr.GetSpatialRef
+res1: org.gdal.osr.SpatialReference =
+PROJCS["ETRS_1989_LAEA",
+    GEOGCS["GCS_ETRS_1989",
+        DATUM["European_Terrestrial_Reference_System_1989",
+            SPHEROID["GRS_1980",6378137.0,298.257222101]],
+        PRIMEM["Greenwich",0.0],
+        UNIT["Degree",0.0174532925199433]],
+    PROJECTION["Lambert_Azimuthal_Equal_Area"],
+    PARAMETER["False_Easting",4321000.0],
+    PARAMETER["False_Northing",3210000.0],
+    PARAMETER["longitude_of_center",10.0],
+    PARAMETER["latitude_of_center",52.0],
+    UNIT["Meter",1.0]]
+
+scala> val newSR = org.gdal.osr.SpatialReference
+<console>:11: error: object org.gdal.osr.SpatialReference is not a value
+       val newSR = org.gdal.osr.SpatialReference
+                                ^
+
+scala> val newSR = org.gdal.osr.SpatialReference()
+<console>:11: error: object org.gdal.osr.SpatialReference is not a value
+       val newSR = org.gdal.osr.SpatialReference()
+                                ^
+
+scala> val newSR = org.gdal.osr.SpatialReference.getCPtr
+   def getCPtr(x$1: org.gdal.osr.SpatialReference): Long
+
+scala> val newSR = org.gdal.osr.
+CoordinateTransformation   SpatialReference   osr   osrConstants   osrJNI
+
+scala> val newSR = org.gdal.osr.SpatialReference
+   object SpatialReference
+
+scala> val newSR = org.gdal.osr.SpatialReference
+<console>:11: error: object org.gdal.osr.SpatialReference is not a value
+       val newSR = org.gdal.osr.SpatialReference
+                                ^
+
+scala> val newSR = org.gdal.osr.SpatialReference()
+<console>:11: error: object org.gdal.osr.SpatialReference is not a value
+       val newSR = org.gdal.osr.SpatialReference()
+                                ^
+
+scala> val newSR = new org.gdal.osr.SpatialReference()
+newSR: org.gdal.osr.SpatialReference =
+
+scala> newSR.
+AutoIdentifyEPSG              SetCS                               
+Clone                         SetCompoundCS                       
+CloneGeogCS                   SetEC                               
+CopyGeogCSFrom                SetEckertIV                         
+EPSGTreatsAsLatLong           SetEckertVI                         
+EPSGTreatsAsNorthingEasting   SetEquirectangular                  
+ExportToMICoordSys            SetEquirectangular2                 
+ExportToPCI                   SetFromUserInput                    
+ExportToPrettyWkt             SetGEOS                             
+ExportToProj4                 SetGH                               
+ExportToUSGS                  SetGS                               
+ExportToWkt                   SetGaussSchreiberTMercator          
+ExportToXML                   SetGeocCS                           
+Fixup                         SetGeogCS                           
+FixupOrdering                 SetGnomonic                         
+GetAngularUnits               SetHOM                              
+GetAngularUnitsName           SetHOM2PNO                          
+GetAttrValue                  SetIGH                              
+GetAuthorityCode              SetKrovak                           
+GetAuthorityName              SetLAEA                             
+GetAxisName                   SetLCC                              
+GetAxisOrientation            SetLCC1SP                           
+GetInvFlattening              SetLCCB                             
+GetLinearUnits                SetLinearUnits                      
+GetLinearUnitsName            SetLinearUnitsAndUpdateParameters   
+GetNormProjParm               SetLocalCS                          
+GetProjParm                   SetMC                               
+GetSemiMajor                  SetMercator                         
+GetSemiMinor                  SetMollweide                        
+GetTOWGS84                    SetNZMG                             
+GetTargetLinearUnits          SetNormProjParm                     
+GetUTMZone                    SetOS                               
+ImportFromEPSG                SetOrthographic                     
+ImportFromEPSGA               SetPS                               
+ImportFromERM                 SetPolyconic                        
+ImportFromESRI                SetProjCS                           
+ImportFromMICoordSys          SetProjParm                         
+ImportFromOzi                 SetProjection                       
+ImportFromPCI                 SetRobinson                         
+ImportFromProj4               SetSOC                              
+ImportFromUSGS                SetSinusoidal                       
+ImportFromUrl                 SetStatePlane                       
+ImportFromWkt                 SetStereographic                    
+ImportFromXML                 SetTM                               
+IsCompound                    SetTMG                              
+IsGeocentric                  SetTMSO                             
+IsGeographic                  SetTMVariant                        
+IsLocal                       SetTOWGS84                          
+IsProjected                   SetTargetLinearUnits                
+IsSame                        SetUTM                              
+IsSameGeogCS                  SetVDG                              
+IsSameVertCS                  SetVertCS                           
+IsVertical                    SetWellKnownGeogCS                  
+MorphFromESRI                 StripCTParms                        
+MorphToESRI                   Validate                            
+SetACEA                       __str__                             
+SetAE                         clone                               
+SetAngularUnits               delete                              
+SetAttrValue                  equals                              
+SetAuthority                  hashCode                            
+SetBonne                      toString                            
+SetCEA            
+
+cala> newSR.ImportFrom
+ImportFromEPSG    ImportFromESRI         ImportFromPCI     ImportFromUrl   
+ImportFromEPSGA   ImportFromMICoordSys   ImportFromProj4   ImportFromWkt   
+ImportFromERM     ImportFromOzi          ImportFromUSGS    ImportFromXML   
+
+scala> newSR.ImportFromEPSG(3035)
+res2: Int = 0
+
+scala> newSR
+res3: org.gdal.osr.SpatialReference =
+PROJCS["ETRS89 / LAEA Europe",
+    GEOGCS["ETRS89",
+        DATUM["European_Terrestrial_Reference_System_1989",
+            SPHEROID["GRS 1980",6378137,298.257222101,
+                AUTHORITY["EPSG","7019"]],
+            TOWGS84[0,0,0,0,0,0,0],
+            AUTHORITY["EPSG","6258"]],
+        PRIMEM["Greenwich",0,
+            AUTHORITY["EPSG","8901"]],
+        UNIT["degree",0.0174532925199433,
+            AUTHORITY["EPSG","9122"]],
+        AUTHORITY["EPSG","4258"]],
+    PROJECTION["Lambert_Azimuthal_Equal_Area"],
+    PARAMETER["latitude_of_center",52],
+    PARAMETER["longitude_of_center",10],
+    PARAMETER["false_easting",4321000],
+    PARAMETER["false_northing",3210000],
+    UNIT["metre",1,
+        AUTHORITY["EPSG","9001"]],
+    AUTHORITY["EPSG","30...
+
+
 
 
