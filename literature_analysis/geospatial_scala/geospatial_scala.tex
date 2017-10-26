@@ -212,6 +212,28 @@ PROJCS["ETRS89 / LAEA Europe",\\
 \hspace*{4mm} AUTHORITY["EPSG","9001"]],\\
 \hspace*{2mm} AUTHORITY["EPSG","30...\\
 \\
+val newSR2 = new ogr.gdal.osr.SpatialReference() \\
+newSR2: org.gdal.osr.SpatialReference = \\
+\\
+newSR2.ImportFromProj4("+proj=laea +lat\underline{\space}0=52 +lon\underline{\space}0=10 +x\underline{\space}0=4321000 +y\underline{\space}0=3210000 +ellps=GRS80 +units=m +no\underline{\space}defs ") \\
+res3: Int = 0 \\
+\\
+newSR2 \\
+res4: org.gdal.osr.SpatialReference= \\
+PROJCS["unnamed", \\
+\hspace*{2mm} GEOGCS["GRS 1980(IUGG, 1980)", \\
+\hspace*{4mm} DATUM["unknown", \\
+\hspace*{6mm} SPHEROID["GRS80",6378137,298.257222101],\\
+\hspace*{6mm} TOWGS84[0,0,0,0,0,0,0]], \\
+\hspace*(4mm} PRIMEM["Greenwich",0], \\
+\hspace*{4mm} UNIT["degree",0.0174532925199433]],\\
+\hspace*{2mm} PROJECTION["Lambert\underline{\space}Azimuthal\underline{\space}Equal\underline{\space}Area"],\\
+\hspace*{2mm} PARAMETER["latitude\underline{\space}of\underline{\space}center",52],\\
+\hspace*{2mm} PARAMETER["longitude\underline{\space}of\underline{\space}center",10],\\
+\hspace*{2mm} PARAMETER["false\underline{\space}easting",4321000],\\
+\hspace*{2mm} PARAMETER["false\underline{\space}northing",3210000],\\
+\hspace*{2mm} UNIT["Meter",1]]\\
+\\
 
 
 
