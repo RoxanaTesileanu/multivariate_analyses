@@ -139,7 +139,7 @@ A set of coordinates is represented as set of two pieces of information: the lat
 \\
  Projections convert the coordinates of a point on the globe to the coordinates of a point on a two-dimensional plane. In doing so, it creates distortions. The type of distortion depends on how the conversion is done. If you would like to preserve local shapes, you should use conformal projections, like for example Universal Transverse Mercator (UTM) \cite{garrard_geoprocessing_2016}. To keep the amount of area the same, you should use equal-area projections, like for example the Lambert equal-area or Gall-Peters projections. Thus, sometimes using geographic coordinates (lat/lon), is not appropriate, depending on the aims of your analysis, and you need to choose a projection instead. Also, note that projections are not tied to specific datums, so knowing the projection of your data is not enough. You also have to know the datum used.           
 \\
-You can search for spatial reference systems on the spatialreference.org website under \href{http://spatialreference.org/}{http://spatialreference.org/}.
+You can search for spatial reference systems on the epsg.io website under \href{http://epsg.io/}{http://epsg.io/}. The SRSs for Romania for example can be found under the link: \href{http://epsg.io/?q=Romania}{http://epsg.io/?q=Romania}.
 
 \subsubsection{Spatial reference systems in OGR}
 
@@ -175,6 +175,7 @@ PROJCS["ETRS\underline{\space}1989\underline{\space}LAEA", \\
 \\
 The first spatial reference from above is not a projected SRS, because it has a GEOCS entry only, without a PROJCS one. But, we can still see that the datum used is WGS1984, the spheroid used is WGS84, the unit used for the set of coordinates is degree and the authority giving the ID code is EPSG (short for European Petroleum Survey Group).  
 The second spatial reference from above is a projected one. 
+ 
 
 \subsection {Overlay analyses}
 
