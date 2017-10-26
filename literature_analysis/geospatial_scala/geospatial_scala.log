@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  26 OCT 2017 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  26 OCT 2017 14:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -544,9 +544,21 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.184 I
-       n this code I will use the ETRS1989/LAEA and the Pulkovo1942(58)/ Ste...
+       n this code I will use the ETRS1989/LAEA, the Pulkovo1942(58)/ Stereo...
 
 ? 
+
+Overfull \hbox (31.26923pt too wide) in paragraph at lines 184--368
+\T1/cmr/m/n/10 where true area rep-re-sen-ta-tion is re-quired ([]http://spatia
+lreference.org/ref/epsg/3035/[]),
+ []
+
+
+Overfull \hbox (30.32501pt too wide) in paragraph at lines 184--368
+\T1/cmr/m/n/10 graphic map-ping and en-gi-neer-ing sur-veys ([]http://spatialre
+ference.org/ref/epsg/3844/[]),
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 184--368
 
@@ -656,7 +668,7 @@ Here is how much of TeX's memory you used:
  9618 multiletter control sequences out of 15000+600000
  13580 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,6n,28p,897b,432s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,6n,28p,897b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/
@@ -665,10 +677,10 @@ public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx
 /texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/p
 ublic/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1
 728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on geospatial_scala.pdf (13 pages, 168722 bytes).
+Output written on geospatial_scala.pdf (13 pages, 168924 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
+ 233 PDF objects out of 1000 (max. 8388607)
+ 206 compressed objects within 3 object streams
  39 named destinations out of 1000 (max. 500000)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
