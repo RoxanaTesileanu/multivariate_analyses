@@ -7,11 +7,11 @@
 \contentsline {subsection}{\numberline {2.3}Georeferencing data}{5}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Spatial reference systems in OGR}{7}{subsubsection.2.3.1}
 \contentsline {paragraph}{Code snippet 2: creating a SpatialReference object using OGR in Scala}{8}{section*.4}
-\contentsline {subsection}{\numberline {2.4}Overlay analyses}{8}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Proximity analyses}{8}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Writing vector data}{8}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Reading raster data}{8}{subsection.2.7}
-\contentsline {subsection}{\numberline {2.8}Pixels resizing}{8}{subsection.2.8}
-\contentsline {subsection}{\numberline {2.9}Moving window analyses}{8}{subsection.2.9}
-\contentsline {subsection}{\numberline {2.10}Map algebra}{8}{subsection.2.10}
-\contentsline {section}{\numberline {3}Geostatistics using Geotrellis}{8}{section.3}
+\contentsline {subsection}{\numberline {2.4}Overlay analyses}{9}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Proximity analyses}{9}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Writing vector data}{9}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Reading raster data}{9}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Pixels resizing}{9}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}Moving window analyses}{9}{subsection.2.9}
+\contentsline {subsection}{\numberline {2.10}Map algebra}{9}{subsection.2.10}
+\contentsline {section}{\numberline {3}Geostatistics using Geotrellis}{9}{section.3}
