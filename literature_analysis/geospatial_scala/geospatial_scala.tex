@@ -346,25 +346,33 @@ res16: Int = 0\\
 roSR2\\
 res17: org.gdal.osr.SpatialReference =\\
 PROJCS["Pulkovo 1942(58) / Stereo70",\\
-\hspace{2mm} GEOGCS["Pulkovo 1942(58)",\\
-\hspace{4mm} DATUM["Pulkovo 1942(58)",\\
-            SPHEROID["Krassowsky 1940",6378245.0,298.3,\\
-                AUTHORITY["EPSG","7024"]],\\
-            TOWGS84[33.4,-146.6,-76.3,-0.359,-0.053,0.844,-0.17326243724756094],\\
-            AUTHORITY["EPSG","6179"]],\\
-        PRIMEM["Greenwich",0.0,\\
-            AUTHORITY["EPSG","8901"]],\\
-        UNIT["degree",0.017453292519943295],\\
-        AXIS["Geodetic latitude",NORTH],\\
-        AXIS["Geodetic longitude",EAST],\\
-        AUTHORITY["EPSG","4179"]],\\
-    PROJECTION["Oblique Stereographic",\\
-        AUTHORITY["EPSG","9809"]],\\
-    PARAMETER["central\underline{\space}meridian",25.0],\\
-    PARAMETER["latitude\underline{\space}of\underline{\space}origin",46.0],\\
-    PARAMETER["scale\underline{\space}factor",0.99975],\\
-  PAR...\\
+\hspace*{2mm} GEOGCS["Pulkovo 1942(58)",\\
+\hspace*{4mm} DATUM["Pulkovo 1942(58)",\\
+\hspace*{6mm} SPHEROID["Krassowsky 1940",6378245.0,298.3,\\
+\hspace*{8mm} AUTHORITY["EPSG","7024"]],\\
+\hspace*{6mm} TOWGS84[33.4,-146.6,-76.3,-0.359,-0.053,0.844,-0.17326243724756094],\\
+\hspace*{6mm} AUTHORITY["EPSG","6179"]],\\
+\hspace*{4mm} PRIMEM["Greenwich",0.0,\\
+\hspace*{6mm} AUTHORITY["EPSG","8901"]],\\
+\hspace*{4mm} UNIT["degree",0.017453292519943295],\\
+\hspace*{4mm} AXIS["Geodetic latitude",NORTH],\\
+\hspace*{4mm} AXIS["Geodetic longitude",EAST],\\
+\hspace*{4mm} AUTHORITY["EPSG","4179"]],\\
+\hspace*{2mm} PROJECTION["Oblique Stereographic",\\
+\hspace*{4mm} AUTHORITY["EPSG","9809"]],\\
+\hspace*{2mm} PARAMETER["central\underline{\space}meridian",25.0],\\
+\hspace*{2mm} PARAMETER["latitude\underline{\space}of\underline{\space}origin",46.0],\\
+\hspace*{2mm} PARAMETER["scale\underline{\space}factor",0.99975],\\
+\hspace*{4mm} PAR...\\
 \\
+val googleSR = new org.gdal.osr.SpatialReference()\\
+googleSR: org.gdal.osr.SpatialReference = \\
+\\
+googleSR.ImportFromWkt(3857) \\
+res18: Int = 0 \\
+\\
+googleSR \\
+res19: org.gdal.osr.SpatialReference = \\
 
 \subsection {Overlay analyses}
 
