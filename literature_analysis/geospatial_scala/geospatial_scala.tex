@@ -399,8 +399,8 @@ PROJCS["WGS 84 / Pseudo-Mercator",\\
 \\
 \paragraph{Code snippet 2: explanation}
 In code snippet 2 we've created new empty SpatialReference objects, in which we've imported information on the used SRS using more sources: the EPSG code, the PROJ4 string, and the WKT string. There are also more ways if importing. You can inspect them with autocompletion on an empty SpatialReference object. 
-
-
+\\
+\\
 In this section we've seen it is important to know the SRS used for your gedata.You can also create a SRS from scratch using an empty SpatialReference object. The important fact is to know if your data come from the GPS that this system uses WGS84 unprojected (EPSG code 4326). If you use Google Earth (EPSG code 4326) and try to map them on Google Maps (EPSG code 3857) you don't have the same SRS. You need to be able to make transformations between different SRSs. We will do this in the following sections.  
 
 \subsection {Overlay analyses}
