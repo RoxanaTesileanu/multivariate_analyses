@@ -181,7 +181,7 @@ The function GetSpatialRef called on a layer returns a SpatialReference object. 
  
 \paragraph {Code snippet 2: creating a SpatialReference object using OGR in Scala}
 \\
-In this code I will use the ETRS1989/LAEA, the Pulkovo1942(58)/ Stereo70 and the WGS84/Pseudo-Mercator SRSs. The first one is the SRS for all Europe and it is used for statistical mapping at all scales and other purposes where true area representation is required (\href{http://spatialreference.org/ref/epsg/3035/}{http://spatialreference.org/ref/epsg/3035/}), the second SRS is for Romania and is used in large and medium scale topographic mapping and engineering surveys (\href{http://spatialreference.org/ref/epsg/3844/}{http://spatialreference.org/ref/epsg/3844/}), and the third is used for rendering maps in GoogleMaps, OpenStreetMap or Bing(\href{http://epsg.io/3857}{http://epsg.io/3857}).  
+In this code I will use the ETRS1989/LAEA, the Pulkovo1942(58)/ Stereo70 and the WGS84/Pseudo-Mercator SRS. The first one is the SRS for all Europe and it is used for statistical mapping at all scales and other purposes where true area representation is required (\href{http://spatialreference.org/ref/epsg/3035/}{http://spatialreference.org/ref/epsg/3035/}), the second SRS is for Romania and is used in large and medium scale topographic mapping and engineering surveys (\href{http://spatialreference.org/ref/epsg/3844/}{http://spatialreference.org/ref/epsg/3844/}), and the third is used for rendering maps in GoogleMaps, OpenStreetMap, Bing a.o. (\href{http://epsg.io/3857}{http://epsg.io/3857}).  
 \\
 val newSR = new org.gdal.osr.SpatialReference()\\
 newSR: org.gdal.osr.SpatialReference = \\
@@ -346,8 +346,8 @@ res16: Int = 0\\
 roSR2\\
 res17: org.gdal.osr.SpatialReference =\\
 PROJCS["Pulkovo 1942(58) / Stereo70",\\
-    GEOGCS["Pulkovo 1942(58)",\\
-        DATUM["Pulkovo 1942(58)",\\
+\hspace{2mm} GEOGCS["Pulkovo 1942(58)",\\
+\hspace{4mm} DATUM["Pulkovo 1942(58)",\\
             SPHEROID["Krassowsky 1940",6378245.0,298.3,\\
                 AUTHORITY["EPSG","7024"]],\\
             TOWGS84[33.4,-146.6,-76.3,-0.359,-0.053,0.844,-0.17326243724756094],\\
