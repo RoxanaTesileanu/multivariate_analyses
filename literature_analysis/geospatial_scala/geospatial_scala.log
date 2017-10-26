@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  26 OCT 2017 10:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  26 OCT 2017 10:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -537,19 +537,12 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.184 I
-       n this code I will use the ETRS1989/LAEA and the Pulkovo1942(58)/Ster...
+       n this code I will use the ETRS1989/LAEA and the Pulkovo1942(58)/ Ste...
 
 ? 
 
-Overfull \hbox (30.03995pt too wide) in paragraph at lines 184--185
-\OT1/cmr/bx/n/10 Scala[] \OT1/cmr/m/n/10 In this code I will use the ETRS1989/L
-AEA and the Pulkovo1942(58)/Stereo70
- []
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
 
-
-Overfull \hbox (132.44545pt too wide) in paragraph at lines 184--185
-\OT1/cmr/m/n/10 and medium scale to-po-graphic map-ping and en-gi-neer-ing surv
-erys ([]http://spatialreference.org/ref/epsg/3844/[]). 
  []
 
 (./geospatial_scala.bbl
@@ -585,7 +578,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmti10.pfb>
-Output written on geospatial_scala.pdf (9 pages, 126048 bytes).
+Output written on geospatial_scala.pdf (9 pages, 126044 bytes).
 PDF statistics:
  206 PDF objects out of 1000 (max. 8388607)
  185 compressed objects within 2 object streams
