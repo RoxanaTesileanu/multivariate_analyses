@@ -181,7 +181,7 @@ The function GetSpatialRef called on a layer returns a SpatialReference object. 
  
 \paragraph {Code snippet 2: creating a SpatialReference object using OGR in Scala}
 \\
-In this code I will use the ETRS1989/LAEA and the Pulkovo1942(58)/ Stereo70 SRSs. The first one is the SRS for all Europe and it is used for statistical mapping at all scales and other purposes where true area representation is required (\href{http://spatialreference.org/ref/epsg/3035/}{http://spatialreference.org/ref/epsg/3035/}), the later is used in large and medium scale topographic mapping and engineering surveys (\href{http://spatialreference.org/ref/epsg/3844/}{http://spatialreference.org/ref/epsg/3844/}).  
+In this code I will use the ETRS1989/LAEA and the Pulkovo1942(58)/ Stereo70 SRSs. The first one is the SRS for all Europe and it is used for statistical mapping at all scales and other purposes where true area representation is required (\href{http://spatialreference.org/ref/epsg/3035/}{http://spatialreference.org/ref/epsg/3035/}), the later SRS is for Romania and is used in large and medium scale topographic mapping and engineering surveys (\href{http://spatialreference.org/ref/epsg/3844/}{http://spatialreference.org/ref/epsg/3844/}).  
 \\
 val newSR = new org.gdal.osr.SpatialReference()\\
 newSR: org.gdal.osr.SpatialReference = \\
