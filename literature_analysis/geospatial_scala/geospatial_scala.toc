@@ -6,6 +6,7 @@
 \contentsline {paragraph}{Code snippet 1: explanation}{5}{section*.3}
 \contentsline {subsection}{\numberline {2.3}Georeferencing data}{5}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Spatial reference systems in OGR}{7}{subsubsection.2.3.1}
+\contentsline {paragraph}{Code snippet 2: creating a SpatialReference object using OGR in Scala}{8}{section*.4}
 \contentsline {subsection}{\numberline {2.4}Overlay analyses}{8}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Proximity analyses}{8}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}Writing vector data}{8}{subsection.2.6}
