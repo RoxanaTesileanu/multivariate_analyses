@@ -21,5 +21,9 @@ BY DESCRIBING THE VARIATION AT DIFFERENT SPATIAL RESOLUTIONS WE CAN OFTEN GAIN I
 An additional issue in geospatial analysis is that AT SOME SCALE THE VALUES OF PROPERTIES ARE AUTOCORRELATED.
 Places close to one another tend to have similar values, whereas ones that are farther apart differ more on average. We have to QUANTIFY THE SPATIAL AUTOCORRELATION AT THE SCALE OF INTEREST! 
 
+Reasons for geostatistics: description, explanation and control.
 
+Description:
+- classical surveys: data are summarized by means, medians, modes, variances, skewness, cummulative frequency distribution and histograms, box-plots. 
+- geostatistical surveys: similarly + SPATIAL CORRELATION
     
