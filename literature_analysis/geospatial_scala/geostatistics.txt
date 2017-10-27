@@ -9,7 +9,7 @@ Date: October 2017
 -> the best we can do is to estimate, or predict, in a spatial sense.
 -> this is the reason we use geostatistics; it allows us to deal with properties that vary in ways that are far from systematic and at all spatial scales. 
 
-GEOSTATISTICS CAN NEVER PROVIDE COMPLETE INFORMATION, BUT, GIVEN THE DATA, IT CAN ENABLE YOU TO ESTIMATE THE PROBABILITIES THAT THE ESTIMATED DATA ARE WITHIN SOME SPECIFIED THRESHOLDS. 
+GEOSTATISTICS CAN NEVER PROVIDE COMPLETE INFORMATION, BUT, GIVEN THE DATA, IT CAN ENABLE YOU TO ESTIMATE THE PROBABILITIES THAT THE TRUE DATA ARE WITHIN SOME SPECIFIED THRESHOLDS. 
 
 
  
