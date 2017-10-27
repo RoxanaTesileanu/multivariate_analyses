@@ -657,4 +657,10 @@ corner.AddPoint(45.654599, 25.577560)
 patchCorners.AddGeometry(corner)
 corner.AddPoint(45.653862, 25.577713)
 patchCorners.AddGeometry(corner)
+corner.AddPoint(45.653530, 25.577458)
+patchCorners.AddGeometry(corner)
+corner.AddPoint(45.653208, 25.576524)
+patchCorners.AddGeometry(corner)
+I will probably have to use vars for this. 
+
 
