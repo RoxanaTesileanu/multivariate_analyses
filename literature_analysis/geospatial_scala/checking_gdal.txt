@@ -692,8 +692,9 @@ Polygons are made of rings. Rings are made up of a series of vertices connected 
 
 I've written above the code for a polygon called building. 
 I will sketch the code for a habitat patch now.  
-var ring=ogr.Geometry(ogr.wkbPolygon)
+var ring=ogr.Geometry(ogr.wkbLinearRing)
 I have to check if adding a MultiPoint works. 
 If so: 
 ring.AddGeometry(patchCorners)
+val habitatPatch = ogr.Geometry(ogr.wkbPolygon)
 
