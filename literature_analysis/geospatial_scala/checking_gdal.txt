@@ -665,4 +665,19 @@ I will probably have to use vars for this.
 
 Def. of VERTEX: A vertex is a point where two line segments of a geometry meet.Vertices hold the coordinates of the ends of each line segment. 
 
- 
+Creating lines:
+
+Lines are a sequence of vertices connected by straight line segments. 
+
+var road1 = ogr.Geometry(ogr.wkbLineString)
+road1.AddPoint(45.654919, 25.579059)
+road1.AddPoint(45.653869, 25.578466)
+road1.AddPoint(45.652947, 25.578791)
+road1.AddPoint(45.652585, 25.578785)
+road1.AddPoint(45.652553, 25.579220)
+road1.AddPoint(45.651732, 25.580851)
+
+var road2 = ogr.Geometry(ogr.wkbLineString)
+road2.AddPoint(45.654859, 25.576184)
+road2.AddPoint(45.653828, 25.576524)
+
