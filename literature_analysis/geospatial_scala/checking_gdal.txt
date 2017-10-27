@@ -681,3 +681,12 @@ var road2 = ogr.Geometry(ogr.wkbLineString)
 road2.AddPoint(45.654859, 25.576184)
 road2.AddPoint(45.653828, 25.576524)
 
+Creating multilines (multiple lines as one geometry):
+var roads = ogr.Geometry(ogr.wkbMultiLineString)
+roads.addGeometry(road1)
+roads.addGeometry(road2)
+
+Creating polygons:
+Polygons have an area!
+
+
