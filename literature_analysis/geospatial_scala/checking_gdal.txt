@@ -721,6 +721,10 @@ Now I will create layers with the geometries I've got.
 A new layer needs: a name, a spatial reference system, a geometry type. 
 You can have point layer, line layer, polygon layer and their multiple-geometry version. You can't have two types in one layer. 
 
+val habitatPatchesLyr = ds.CreateLayer("habitat_patches", googleMapsSR, ogr.wkbMultiPolygon)
+
+For this I need to create a data source object. 
+
 
 
 
