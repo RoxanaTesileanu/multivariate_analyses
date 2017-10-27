@@ -645,5 +645,16 @@ cornerSW = 45.653208, 25.576524
 val firstPoint = ogr.Geometry(ogr.wkbPoint)
 firstPoint.AddPoint( 45.654542, 25.576068)
 
+Creating MultiPoints (multiple points as one geometry):
 
+val patchCorners = ogr.Geometry(ogr.wkbMultiPoint)
+val corner = ogr.Geometry(ogr.wkbPoint)
+corner.AddPoint( 45.654542, 25.576068)
+patchCorners.AddGeometry(corner)
+corner.AddPoint(45.654689, 25.577259)
+patchCorners.AddGeometry(corner)
+corner.AddPoint(45.654599, 25.577560)
+patchCorners.AddGeometry(corner)
+corner.AddPoint(45.653862, 25.577713)
+patchCorners.AddGeometry(corner)
 
