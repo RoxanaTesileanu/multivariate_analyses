@@ -14,4 +14,8 @@ __________________________________________
 
 Generalizing:  
 The environment extends more or less continuously in two dimensions. It varies from place to place beeing marked by complex interrelated processes (panarchy of processes at fast to slow paces and from small to large scales). 
-Obvious properties can be analysed from aerial photos or satellite imagery, others like soil properties cannot. For the later ones we rely on measurements and analysis of samples.    
+Obvious properties can be analysed from aerial photos or satellite imagery, others like soil properties cannot. For the later ones we rely on measurements and analysis of samples.
+
+BY DESCRIBING THE VARIATION AT DIFFERENT SPATIAL RESOLUTIONS WE CAN OFTEN GAIN INSIGHT INTO THE PROCESSES AND FACTORS THAT CAUSE OR CONTROL IT, AND SO PREDICT IN A SPATIAL SENSE AND MANAGE RESOURCES.
+
+    
