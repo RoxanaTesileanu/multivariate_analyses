@@ -29,5 +29,12 @@ Description:
 This is represented by the EXPERIMENTAL OR SAMPLE VARIOGRAM. 
 In a variogram the variance is estimated at increasing intervals of distance and several directions. Alternatively, it may be the corresponding set of spatial covariances or autocorrelation coefficients. 
 In addition, we should plot the sampling points on a map ("posting"). This will show the extent to which the sample fills the region of interest, any clustering, and any obvious mistakes in recording the positions such as reversed coordinates. 
-  
+
+Interpretation:
+- we draw the variogram, we fit the model. 
+- we interpret them. Show how the properties change with distance (variograms for different directions). 
+- interpret in a spatial sense.   
+
+Control:
+- the idea of controlling a process is often central in time-series analyses (also plagued by autocorrelation - temporal autocorrelation this time). 
     
