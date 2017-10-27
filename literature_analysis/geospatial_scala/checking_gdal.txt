@@ -731,7 +731,9 @@ val ds = driver.CreateDataSource("habitat_paches") // the CreateDataSource() fun
 !!! You can delete a file with the driver.DeleteDataSource("filename")!!!
 Now that I have a data source I can create the habitatPatchesLyr.
 
-
+For the moment the layer is empty. I haven't stored anything in it.
+Each layer can contain one or more features. Each feature has a geometry and a variable number of attribute fields.
+  
 __________________________________________________________________
 
 
