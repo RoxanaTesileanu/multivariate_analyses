@@ -18,4 +18,8 @@ Obvious properties can be analysed from aerial photos or satellite imagery, othe
 
 BY DESCRIBING THE VARIATION AT DIFFERENT SPATIAL RESOLUTIONS WE CAN OFTEN GAIN INSIGHT INTO THE PROCESSES AND FACTORS THAT CAUSE OR CONTROL IT, AND SO PREDICT IN A SPATIAL SENSE AND MANAGE RESOURCES.
 
-An additional issue in geospatial analysis is that AT SOME SCALE THE VALUES OF PROPERTIES ARE AUTOCORRELATED.    
+An additional issue in geospatial analysis is that AT SOME SCALE THE VALUES OF PROPERTIES ARE AUTOCORRELATED.
+Places close to one another tend to have similar values, whereas ones that are farther apart differ more on average. We have to QUANTIFY THE SPATIAL AUTOCORRELATION AT THE SCALE OF INTEREST! 
+
+
+    
