@@ -738,11 +738,20 @@ In order to store my geometries I have to firstly add them to a feature and set 
 
 Create Fields and Field Definitions:
 habitatPatchesLyr.CreateField(ogr.FieldDefn("ID", ogr.OFTInteger))
+After the creation of all fields for a layer you obtain a LAYER DEFINITION. You have to get that layer definition and use it to create features:
+val usedDefn = habitatPathchesLyr.GetLayerDefn()
+val feat = ogr.Feature(usedDefn)
+This feature called feat is a dummy feature, that you add the geometry and attributes to and insert into the layer:
+
 I have to add it to the features of a layer with:
 feat.SetField("ID",n) where n is n+=1. 
-(I will do a recursive function for that).
+(I will do a recursive function for that to set the field for all features).
 
-Creating features:
+I have to create features first:
+
+habitatPatchesLyr.CreateFeature(feat) // for each feature
+
+
 
 __________________________________________________________________
 
