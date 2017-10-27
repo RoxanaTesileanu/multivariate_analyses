@@ -37,5 +37,9 @@ Interpretation:
 
 Control:
 - the idea of controlling a process is often central in time-series analyses (also plagued by autocorrelation - temporal autocorrelation this time). 
-- the results of the analysis are used to change the process itself (classic control) or decisions (where you cannot control the process as soil properties cannot be altered, they are given). 
+- the results of the analysis are used to change the process itself (classic control) or decisions (where you cannot control the process as soil properties cannot be altered, they are given).
+
+History of geostatistics:
+- roots in mining, petroleum extraction, agronomy and forestry. 
+ 
     
