@@ -688,5 +688,12 @@ roads.addGeometry(road2)
 
 Creating polygons:
 Polygons have an area!
+Polygons are made of rings. Rings are made up of a series of vertices connected by straight line segments. The first and the last vertices of a ring are the same -> they create a closed ring. 
 
+I've written above the code for a polygon called building. 
+I will sketch the code for a habitat patch now.  
+var ring=ogr.Geometry(ogr.wkbPolygon)
+I have to check if adding a MultiPoint works. 
+If so: 
+ring.AddGeometry(patchCorners)
 
