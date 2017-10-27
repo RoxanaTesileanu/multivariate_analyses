@@ -27,5 +27,7 @@ Description:
 - classical surveys: data are summarized by means, medians, modes, variances, skewness, cummulative frequency distribution and histograms, box-plots. 
 - geostatistical surveys: similarly + SPATIAL CORRELATION
 This is represented by the EXPERIMENTAL OR SAMPLE VARIOGRAM. 
-In a variogram the variance is estimated at increasing intervals of distance and several directions. 
+In a variogram the variance is estimated at increasing intervals of distance and several directions. Alternatively, it may be the corresponding set of spatial covariances or autocorrelation coefficients. 
+In addition, we should plot the sampling points on a map ("posting"). This will show the extent to which the sample fills the region of interest, any clustering, and any obvious mistakes in recording the positions such as reversed coordinates. 
+  
     
