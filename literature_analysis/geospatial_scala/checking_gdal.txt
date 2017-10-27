@@ -751,7 +751,6 @@ You insert the feature into the layer:
 habitatPatchesLyr.CreateFeature(feat) // for each feature
 
 
-
 __________________________________________________________________
 
 
