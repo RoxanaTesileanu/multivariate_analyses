@@ -663,4 +663,6 @@ corner.AddPoint(45.653208, 25.576524)
 patchCorners.AddGeometry(corner)
 I will probably have to use vars for this. 
 
+Def. of VERTEX: A vertex is a point where two line segments of a geometry meet.Vertices hold the coordinates of the ends of each line segment. 
 
+ 
