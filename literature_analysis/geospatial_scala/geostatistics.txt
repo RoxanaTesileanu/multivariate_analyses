@@ -5,6 +5,8 @@ Author: Roxana Tesileanu, roxana.te@web.de
 Affiliation: INCDS, BV
 Date: October 2017
 
+Chapter 1: INTRODUCTION
+
 - the environment is continuous, but in general we can afford to measure properties at only a finite number of places
 -> the best we can do is to estimate, or predict, in a spatial sense.
 -> this is the reason we use geostatistics; it allows us to deal with properties that vary in ways that are far from systematic and at all spatial scales. 
@@ -41,5 +43,12 @@ Control:
 
 History of geostatistics:
 - roots in mining, petroleum extraction, agronomy and forestry. 
+Nowadays we find it in many fields from petroleun engineering, hydrogeology, meteorology, soil science, agriculture, pollution, fisheries to environmental protection. 
+
+_______________________________________________
+
+Chapter 2: BASIC STATISTICS
+
+
  
     
