@@ -700,3 +700,15 @@ val habitatPatch = ogr.Geometry(ogr.wkbPolygon)
 habitatPatch.AddGeometry(ring)
 habitatPatch.CloseRings()
 
+NOTE: SHAPEFILES SPECIFY THE OUTER RING MUST BE CLOCKWISE! 
+
+Creating multipolygons: multiple polygons as one geometry
+
+Let's assume my building is another habitat patch. I will create a variable patches which holds the two geometries. 
+
+var habitatPatches = ogr.Geometry(ogr.wkbMultiPolygon)
+habitatPatches.AddGeometry(building)
+habitatPatches.AddGeometry(habitatPatch)
+habitatPatches.CloseRings()
+
+
