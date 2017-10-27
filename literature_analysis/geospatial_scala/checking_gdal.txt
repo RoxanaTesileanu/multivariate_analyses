@@ -697,4 +697,5 @@ I have to check if adding a MultiPoint works.
 If so: 
 ring.AddGeometry(patchCorners)
 val habitatPatch = ogr.Geometry(ogr.wkbPolygon)
+habitatPatch.AddGeometry(ring)
 
