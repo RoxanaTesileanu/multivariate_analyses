@@ -717,6 +717,16 @@ SUMMARY:
 - all polygon geometries are made up of one or more rings (donut polygons have an outer and an inner ring).
 ________________________________________________________
 
+Now I will create layers with the geometries I've got.
+A new layer needs: a name, a spatial reference system, a geometry type. 
+You can have point layer, line layer, polygon layer and their multiple-geometry version. You can't have two types in one layer. 
+
+
+
+
+
+
+
 I will see how good the code fits in REPL:
 
 __________new REPL session _______________________
