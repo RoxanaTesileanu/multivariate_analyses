@@ -727,8 +727,12 @@ For this I need to create a data source object.
 This is done by calling a driver and creating a data source. 
 
 val driver = ogr.GetDriverByName("ESRI Shapefile")
+val ds = driver.CreateDataSource("habitat_paches") // the CreateDataSource() function takes as parameter the file name.
+!!! You can delete a file with the driver.DeleteDataSource("filename")!!!
+Now that I have a data source I can create the habitatPatchesLyr.
 
 
+__________________________________________________________________
 
 
 
