@@ -724,6 +724,9 @@ You can have point layer, line layer, polygon layer and their multiple-geometry 
 val habitatPatchesLyr = ds.CreateLayer("habitat_patches", googleMapsSR, ogr.wkbMultiPolygon)
 
 For this I need to create a data source object. 
+This is done by calling a driver and creating a data source. 
+
+val driver = ogr.GetDriverByName("ESRI Shapefile")
 
 
 
