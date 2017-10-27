@@ -736,6 +736,12 @@ Each layer can contain one or more features. Each feature has a geometry and a v
 
 In order to store my geometries I have to firstly add them to a feature and set the field schema. 
 
+Create Field Definition:
+habitatPatchesLyr.CreateField(ogr.FieldDefn("ID", ogr.OFTInteger)
+I have to add it to the features of a layer with:
+feat.SetField("ID",n) where n is n+=1. 
+(I will do a recursive function for that).
+
 __________________________________________________________________
 
 
