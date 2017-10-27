@@ -742,13 +742,12 @@ After the creation of all fields for a layer you obtain a LAYER DEFINITION. You 
 val usedDefn = habitatPathchesLyr.GetLayerDefn()
 val feat = ogr.Feature(usedDefn)
 This feature called feat is a dummy feature, that you add the geometry and attributes to and insert into the layer:
-
-I have to add it to the features of a layer with:
+feat.SetGeometry("wkbPolygon") //for each feature
+I have to set the fields with:
 feat.SetField("ID",n) where n is n+=1. 
 (I will do a recursive function for that to set the field for all features).
 
-I have to create features first:
-
+You insert the feature into the layer:
 habitatPatchesLyr.CreateFeature(feat) // for each feature
 
 
