@@ -9,13 +9,13 @@
 \contentsline {paragraph}{Code snippet 2: creating a SpatialReference object using OGR in Scala}{8}{section*.4}
 \contentsline {paragraph}{Code snippet 2: explanation}{13}{section*.5}
 \contentsline {subsubsection}{\numberline {2.3.2}Creating OGR geometries and vector layers}{13}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Assigning a SRS to data}{13}{subsubsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.4}Reprojecting OGR geometries and vector layers}{13}{subsubsection.2.3.4}
-\contentsline {subsection}{\numberline {2.4}Overlay analyses}{13}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Proximity analyses}{13}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Writing vector data}{13}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Reading raster data}{13}{subsection.2.7}
-\contentsline {subsection}{\numberline {2.8}Pixels resizing}{13}{subsection.2.8}
-\contentsline {subsection}{\numberline {2.9}Moving window analyses}{13}{subsection.2.9}
-\contentsline {subsection}{\numberline {2.10}Map algebra}{13}{subsection.2.10}
-\contentsline {section}{\numberline {3}Geostatistics using Geotrellis}{13}{section.3}
+\contentsline {subsubsection}{\numberline {2.3.3}Assigning a SRS to data}{14}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Reprojecting OGR geometries and vector layers}{14}{subsubsection.2.3.4}
+\contentsline {subsection}{\numberline {2.4}Overlay analyses}{14}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Proximity analyses}{14}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Writing vector data}{14}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Reading raster data}{14}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Pixels resizing}{14}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}Moving window analyses}{14}{subsection.2.9}
+\contentsline {subsection}{\numberline {2.10}Map algebra}{14}{subsection.2.10}
+\contentsline {section}{\numberline {3}Geostatistics using Geotrellis}{14}{section.3}
