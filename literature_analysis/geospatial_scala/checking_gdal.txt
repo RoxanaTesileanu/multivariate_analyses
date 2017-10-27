@@ -631,4 +631,19 @@ WKT """PROJCS["WGS 84 / Pseudo-Mercator",
     EXTENSION["PROJ4","+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs"],
     AUTHORITY["EPSG","3857"]]
 """
+_________________________________________________________
+
+Creating Points:
+
+cornerNW = 45.654542, 25.576068
+cornerNE1 = 45.654689, 25.577259
+cornerNE2 = 45.654599, 25.577560
+cornerSE1 = 45.653862, 25.577713
+cornerSE2 = 45.653530, 25.577458
+cornerSW = 45.653208, 25.576524
+
+val firstPoint = ogr.Geometry(ogr.wkbPoint)
+firstPoint.AddPoint( 45.654542, 25.576068)
+
+
 
