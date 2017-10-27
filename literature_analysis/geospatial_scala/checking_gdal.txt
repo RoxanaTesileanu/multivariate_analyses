@@ -733,7 +733,9 @@ Now that I have a data source I can create the habitatPatchesLyr.
 
 For the moment the layer is empty. I haven't stored anything in it.
 Each layer can contain one or more features. Each feature has a geometry and a variable number of attribute fields.
-  
+
+In order to store my geometries I have to firstly add them to a feature and set the field schema. 
+
 __________________________________________________________________
 
 
