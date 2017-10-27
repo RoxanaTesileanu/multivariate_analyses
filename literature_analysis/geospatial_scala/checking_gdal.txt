@@ -715,5 +715,11 @@ SUMMARY:
 - a geometry consists of a collection of vertices
 - multigeometries consist of multiple geometries combined into one
 - all polygon geometries are made up of one or more rings (donut polygons have an outer and an inner ring).
+________________________________________________________
+
+I will see how good the code fits in REPL:
+
+__________new REPL session _______________________
+
  
 
