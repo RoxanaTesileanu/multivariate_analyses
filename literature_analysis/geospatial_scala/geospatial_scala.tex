@@ -406,7 +406,10 @@ In this section we've seen it is important to know the SRS used for your geodata
 
 \subsubsection {Creating OGR geometries and vector layers}
 
-In this section I will use points looked up on Google Maps (so, using WGS84/Pseudo-Mercator) to create OGR geometries like Points, Lines or Polygons. Then I will create a vector layer to store these geometries. 
+In this section I will use points looked up on Google Maps (so, using WGS84/Pseudo-Mercator) to create OGR geometries like Points, Lines or Polygons and their multi-versions. Then I will create a new empty vector layer by means of a driver which will create the data source in which the empty vector layer will be stored. Then I will create the attribute fields for the empty layer, which will be stored in the layer definition. Finally, I will create the features which will contain the previously created geometries and the attribute fields.
+
+ features which will contain the already created geometries and attribute fields.  
+
 
 
 
