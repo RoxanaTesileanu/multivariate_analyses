@@ -29,5 +29,5 @@ val pointsGPSTrack = dataGPSTrack.map(i => (i(0).toDouble, i(1).toDouble))
 val pointsStArea = dataStArea.map(i => (i(0).toDouble, i(1).toDouble))
 }
 
-// I don't have yet the pointsHP3 and the polygons habitatPatch2 and stArea don't have a closed ring. I need new points for them. 
+
 

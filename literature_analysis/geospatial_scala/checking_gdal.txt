@@ -1215,4 +1215,45 @@ res49: Boolean = true
 
 OK, I'VE CREATED LINES AND A POLYGON!
 
+scala> val habitatPatch2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
+habitatPatch2: org.gdal.ogr.Geometry = org.gdal.ogr.Geometry@803f30
+
+scala> val habitatRing2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+habitatRing2: org.gdal.ogr.Geometry = org.gdal.ogr.Geometry@7d53c0
+
+scala> for (p<- pointsHP2) habitatRing2.AddPoint(p._1, p._2)
+
+scala> habitatRing2.GetPointCount
+res53: Int = 32
+
+scala> habitatPatch2.AddGeometry(habitatRing2)
+res54: Int = 0
+
+scala> habitatPatch2.isValid
+<console>:20: error: value isValid is not a member of org.gdal.ogr.Geometry
+       habitatPatch2.isValid
+                     ^
+
+scala> habitatPatch2.IsValid
+ERROR 1: IllegalArgumentException: Points of LinearRing do not form a closed linestring
+res56: Boolean = false
+
+scala> val stArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
+stArea: org.gdal.ogr.Geometry = org.gdal.ogr.Geometry@7dac50
+
+scala> val ringStArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+ringStArea: org.gdal.ogr.Geometry = org.gdal.ogr.Geometry@7e3d70
+
+scala> for (p <- pointsStArea) ringStArea.AddPoint(p._1, p._2)
+
+scala> stArea.AddGeometry(ringStArea)
+res59: Int = 0
+
+scala> stArea.IsValid
+ERROR 1: IllegalArgumentException: Points of LinearRing do not form a closed linestring
+res60: Boolean = false
+
+
+IT LOOKS LIKE i'VE FORGOTTEN TO CALL CloseRing() on the polygon!
+
 
