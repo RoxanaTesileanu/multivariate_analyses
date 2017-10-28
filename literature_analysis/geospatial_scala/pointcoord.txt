@@ -1,3 +1,7 @@
+/* The following point coordinates were taken from Google Maps. They provide thegeodata for the geometries and vector layer created for educational purposes by me for my tutorial "Geospatial Analysis with Scala". 
+@author: Roxana Tesileanu
+*/ 
+
 //points for Tampa Hill, BV, entered clockwise
 45.631118, 25.583995
 45.632863, 25.586184
@@ -106,13 +110,7 @@
 45.606375, 25.590345
 
 //imaginary GPS-track
- 
-
-
-
-
-
-
+45.
 
 
 
