@@ -1,0 +1,85 @@
+import scala.io._
+val source = Source.fromFile("pointcoord.txt")
+val data = source.getLines.toArray
+source.close
+val source = Source.fromFile("pointcoord2.txt")
+val data = source.getLines.toArray
+val lines = source.getLines
+val pointcoord = lines.map(i=> i.toArray)
+val data = source.getLines.map(_.split("\n")).toArray
+source.close
+val source = Source.fromFile("pointcoord2.txt")
+source.getLines.map(_.split("\n")).toArray
+source.close
+val source = Source.fromFile("pointcoord2.txt")
+val data = source.getLines.map(_.split("\n")).toArray
+source.close
+val pointsHP1 = data.take(29)
+val data2 = data.drop(29)
+val pointsR1 = data2.take(19)
+val data3 = data2.drop(19)
+val pointsR2 = data3.take(10); val data4 = data3.drop(10)
+val pointsR3 = data4.take(8); val data5 = data4.drop(8)
+val pointsHP2 = data5.take(33)
+val data6 = data5.drop(33)
+val pointsGPST = data6.take(9)
+val data7 = data6.drop(9)
+val pointsHP3 = data7.take(13)
+val data8 = data7.drop(13)
+val pointsStArea = data8.take(7)
+pointsHP1.count(_)
+pointsHP1.length
+pointsHP1.drop(3).length
+val source = Source.fromFile("pointcoord2.txt")
+val data = source.getLines.map(_.split("\n")).toArray
+data.length
+source.close
+30+20+10+9+33+9+13+7
+30+20+10+9+33+9+13+7
+val source = Source.fromFile("pointcoord.csv")
+val data = source.getLines.map(_.split("\n")).toArray
+data.length
+source.close
+data
+data(0)
+res16.splitAt(1)
+val data2 = data.map(for(i<- _) yield(i))
+data2(0)
+data
+val source = Source.fromFile("pointcoord.csv")
+val source = Source.fromFile("pointcoord.csv")
+val data = source.getLines.map(_.split(",").toArray
+)
+val data2 = data.map( for (i<-_) yield (i))
+source.close
+val source = Source.fromFile("pointcoord.csv")
+val data = source.getLines.map(_.split(",")).toArray
+data(0)
+res22(0)
+val dataHP1 = data.filter(_(2) == "1")
+dataHP1.length
+val dataRoad1 = data.filter(_(2) == "2")
+val dataRoad2 = data.filter(_(2) == "3")
+dataRoad1.length
+dataRoad2.length
+val dataRoad3 = data.filter(_(2) == "4")
+dataRoad3.length
+val dataHP2 = data.filter(_(2) == "5")
+dataHP2.length
+val dataGPSTrack = data.filter(_(2) == "6")
+dataGPSTrack.length
+val dataHP3 = data.filter(_(2) == "7")
+dataHP3.length
+val dataStArea =  data.filter(_(2) == "8")
+dataStArea.length
+val pointsHP1 = dataHP1.map(i => (i(0), i(1)))
+val pointsHP1 = dataHP1.map(i => (i(0).toDouble, i(1).toDouble))
+pointsHP1.length
+val pointsRoad1 = dataRoad1.map(i => (i(0).toDouble, i(1).toDouble))
+val pointsRoad2 = dataRoad2.map(i => (i(0).toDouble, i(1).toDouble))
+val pointsRoad3 = dataRoad3.map(i => (i(0).toDouble, i(1).toDouble))
+val pointsHP2 = dataHP2.map((i => (i(0).toDouble, i(1).toDouble))
+)
+val pointsHP2 = dataHP2.map(i => (i(0).toDouble, i(1).toDouble))
+val pointsGPSTrack = dataGPSTrack.map(i => (i(0).toDouble, i(1).toDouble))
+val pointsStArea = dataStArea.map(i => (i(0).toDouble, i(1).toDouble))
