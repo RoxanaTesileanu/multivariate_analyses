@@ -1,3 +1,4 @@
+//points for Tampa Hill, BV, entered clockwise
 45.631118, 25.583995
 45.632863, 25.586184
 45.633955, 25.586698
