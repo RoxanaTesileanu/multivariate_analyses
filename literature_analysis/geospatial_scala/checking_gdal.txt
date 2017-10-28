@@ -1150,4 +1150,69 @@ scala> road2.GetPointCount
 res40: Int = 9
 
 
+scala> val road3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)
+road3: org.gdal.ogr.Geometry = org.gdal.ogr.Geometry@806060
+
+scala> for (p <- pointsRoad3) road3.AddPoint(p._1, p._2)
+
+scala> road3.GetPointCount
+res42: Int = 8
+
+scala> val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
+habitatPatch1: org.gdal.ogr.Geometry = org.gdal.ogr.Geometry@7fd4a0
+
+scala> val habitatRing = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+habitatRing: org.gdal.ogr.Geometry = org.gdal.ogr.Geometry@7fd220
+
+scala> for (p<- pointsHP1) habitatRing.AddPoint(p._1, p._2)
+
+scala> habitatRing.GetPoint
+GetPoint   GetPointCount   GetPointZM   GetPoint_2D   GetPoints
+
+scala> habitatRing.GetPointCount
+res46: Int = 29
+
+scala> habitatPatch1.AddGeometry(habitatRing)
+res47: Int = 0
+
+scala> habitatPatch1.
+AddGeometry              ExportToWkt              IsRing                     
+AddGeometryDirectly      FlattenTo2D              IsSimple                   
+AddPoint                 GetArea                  IsValid                    
+AddPointM                GetBoundary              Length                     
+AddPointZM               GetCoordinateDimension   Overlaps                   
+AddPoint_2D              GetCurveGeometry         PointOnSurface             
+Area                     GetDimension             Segmentize                 
+AssignSpatialReference   GetEnvelope              Set3D                      
+Boundary                 GetEnvelope3D            SetCoordinateDimension     
+Buffer                   GetGeometryCount         SetMeasured                
+Centroid                 GetGeometryName          SetPoint                   
+Clone                    GetGeometryRef           SetPointM                  
+CloseRings               GetGeometryType          SetPointZM                 
+Contains                 GetLinearGeometry        SetPoint_2D                
+ConvexHull               GetM                     Simplify                   
+CoordinateDimension      GetPoint                 SimplifyPreserveTopology   
+Crosses                  GetPointCount            SymDifference              
+DelaunayTriangulation    GetPointZM               SymmetricDifference        
+Difference               GetPoint_2D              Touches                    
+Disjoint                 GetPoints                Transform                  
+Distance                 GetSpatialReference      TransformTo                
+Distance3D               GetX                     Union                      
+Empty                    GetY                     UnionCascaded              
+Equal                    GetZ                     Value                      
+Equals                   HasCurveGeometry         Within                     
+ExportToGML              Intersect                WkbSize                    
+ExportToIsoWkb           Intersection             clone                      
+ExportToIsoWkt           Intersects               delete                     
+ExportToJson             Is3D                     equals                     
+ExportToKML              IsEmpty                  hashCode                   
+ExportToWkb              IsMeasured                                          
+
+scala> habitatPatch1.CloseRings()
+
+scala> habitatPatch1.IsValid
+res49: Boolean = true
+
+OK, I'VE CREATED LINES AND A POLYGON!
+
 
