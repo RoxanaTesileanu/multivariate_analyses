@@ -934,5 +934,73 @@ import ReadPointCoordFromFile._
 scala> pointsRoad1
 res0: Array[(Double, Double)] = Array((45.612195,25.588475), (45.614445,25.590527), (45.620019,25.59437), (45.62319,25.594629), (45.625304,25.595018), (45.626392,25.595363), (45.62689,25.595169), (45.627222,25.595623), (45.628853,25.597199), (45.628929,25.597285), (45.629729,25.599574), (45.629442,25.600114), (45.630016,25.60128), (45.63059,25.603785), (45.631979,25.60629), (45.633806,25.609572), (45.637007,25.611947), (45.63678,25.614906), (45.636146,25.618339))
 
+scala> val currentPosition = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPoint)
+currentPosition: org.gdal.ogr.Geometry = org.gdal.ogr.Geometry@6d5640
+
+scala> currentPosition.AddPoint(pointsRoad1(0)._1, pointsRoad1(0)._2)
+
+scala> currentPosition
+res6: org.gdal.ogr.Geometry = org.gdal.ogr.Geometry@6d5640
+
+scala> currentPosition.
+AddGeometry              ExportToWkt              IsRing                     
+AddGeometryDirectly      FlattenTo2D              IsSimple                   
+AddPoint                 GetArea                  IsValid                    
+AddPointM                GetBoundary              Length                     
+AddPointZM               GetCoordinateDimension   Overlaps                   
+AddPoint_2D              GetCurveGeometry         PointOnSurface             
+Area                     GetDimension             Segmentize                 
+AssignSpatialReference   GetEnvelope              Set3D                      
+Boundary                 GetEnvelope3D            SetCoordinateDimension     
+Buffer                   GetGeometryCount         SetMeasured                
+Centroid                 GetGeometryName          SetPoint                   
+Clone                    GetGeometryRef           SetPointM                  
+CloseRings               GetGeometryType          SetPointZM                 
+Contains                 GetLinearGeometry        SetPoint_2D                
+ConvexHull               GetM                     Simplify                   
+CoordinateDimension      GetPoint                 SimplifyPreserveTopology   
+Crosses                  GetPointCount            SymDifference              
+DelaunayTriangulation    GetPointZM               SymmetricDifference        
+Difference               GetPoint_2D              Touches                    
+Disjoint                 GetPoints                Transform                  
+Distance                 GetSpatialReference      TransformTo                
+Distance3D               GetX                     Union                      
+Empty                    GetY                     UnionCascaded              
+Equal                    GetZ                     Value                      
+Equals                   HasCurveGeometry         Within                     
+ExportToGML              Intersect                WkbSize                    
+ExportToIsoWkb           Intersection             clone                      
+ExportToIsoWkt           Intersects               delete                     
+ExportToJson             Is3D                     equals                     
+ExportToKML              IsEmpty                  hashCode                   
+ExportToWkb              IsMeasured                                          
+
+scala> currentPosition.GetX
+res7: Double = 45.612195
+
+scala> currentPosition.GetY
+res8: Double = 25.588475
+
+scala> val multiPointsHP1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiPoint)
+multiPointsHP1: org.gdal.ogr.Geometry = org.gdal.ogr.Geometry@72b4f0
+
+scala> val pointHP1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPoint)
+pointHP1: org.gdal.ogr.Geometry = org.gdal.ogr.Geometry@720d40
+
+scala> pointHP1.AddPoint(pointsHP1(0)._1, pointsHP1(0)._2)
+
+scala> multiPointsHP1.AddGeometry(pointHP1)
+res11: Int = 0
+
+scala> multiPointsHP1.co
+             CoordinateDimension      GetPointCount            
+Contains     GetCoordinateDimension   SetCoordinateDimension   
+ConvexHull   GetGeometryCount         hashCode                 
+
+scala> multiPointsHP1.GetGeometry
+GetGeometryCount   GetGeometryName   GetGeometryRef   GetGeometryType
+
+scala> multiPointsHP1.GetGeometryCount
+res12: Int = 1
 
 
