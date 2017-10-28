@@ -1068,4 +1068,86 @@ GetGeometryCount         GetPointZM
 scala> multiPointsHP1.GetGeometryCount
 res30: Int = 30
 
+OK, SO I'VE CREATED A POINT, THEN A MULTIPOINT GEMOMETRY!
+
+
+scala> pointsRoad1
+res31: Array[(Double, Double)] = Array((45.612195,25.588475), (45.614445,25.590527), (45.620019,25.59437), (45.62319,25.594629), (45.625304,25.595018), (45.626392,25.595363), (45.62689,25.595169), (45.627222,25.595623), (45.628853,25.597199), (45.628929,25.597285), (45.629729,25.599574), (45.629442,25.600114), (45.630016,25.60128), (45.63059,25.603785), (45.631979,25.60629), (45.633806,25.609572), (45.637007,25.611947), (45.63678,25.614906), (45.636146,25.618339))
+
+scala> val road1 = new org.gdal.ogr.Geometry(org.gdal.ogrConstants.wkbLineString)
+<console>:18: error: object ogrConstants is not a member of package org.gdal
+       val road1 = new org.gdal.ogr.Geometry(org.gdal.ogrConstants.wkbLineString)
+                                                      ^
+
+scala> val road1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)
+road1: org.gdal.ogr.Geometry = org.gdal.ogr.Geometry@7f6350
+
+scala> for (p <- pointsRoad1) road1.AddPoint(p)
+<console>:20: error: overloaded method value AddPoint with alternatives:
+  (x$1: Double,x$2: Double)Unit <and>
+  (x$1: Double,x$2: Double,x$3: Double)Unit
+ cannot be applied to ((Double, Double))
+       for (p <- pointsRoad1) road1.AddPoint(p)
+                                    ^
+
+scala> for (p <- pointsRoad1) road1.AddPoint(p._1, p._2)
+
+scala> road1.
+AddGeometry              ExportToWkt              IsRing                     
+AddGeometryDirectly      FlattenTo2D              IsSimple                   
+AddPoint                 GetArea                  IsValid                    
+AddPointM                GetBoundary              Length                     
+AddPointZM               GetCoordinateDimension   Overlaps                   
+AddPoint_2D              GetCurveGeometry         PointOnSurface             
+Area                     GetDimension             Segmentize                 
+AssignSpatialReference   GetEnvelope              Set3D                      
+Boundary                 GetEnvelope3D            SetCoordinateDimension     
+Buffer                   GetGeometryCount         SetMeasured                
+Centroid                 GetGeometryName          SetPoint                   
+Clone                    GetGeometryRef           SetPointM                  
+CloseRings               GetGeometryType          SetPointZM                 
+Contains                 GetLinearGeometry        SetPoint_2D                
+ConvexHull               GetM                     Simplify                   
+CoordinateDimension      GetPoint                 SimplifyPreserveTopology   
+Crosses                  GetPointCount            SymDifference              
+DelaunayTriangulation    GetPointZM               SymmetricDifference        
+Difference               GetPoint_2D              Touches                    
+Disjoint                 GetPoints                Transform                  
+Distance                 GetSpatialReference      TransformTo                
+Distance3D               GetX                     Union                      
+Empty                    GetY                     UnionCascaded              
+Equal                    GetZ                     Value                      
+Equals                   HasCurveGeometry         Within                     
+ExportToGML              Intersect                WkbSize                    
+ExportToIsoWkb           Intersection             clone                      
+ExportToIsoWkt           Intersects               delete                     
+ExportToJson             Is3D                     equals                     
+ExportToKML              IsEmpty                  hashCode                   
+ExportToWkb              IsMeasured                                          
+
+scala> road1.GetGeometryCount
+res34: Int = 0
+
+scala> road1.AddPoint(pointsRoad1(0)._1, pointsRoad1(0)._2)
+
+scala> road1.GetGeometryCount
+res36: Int = 0
+
+scala> road1.IsEmpty
+res37: Boolean = false
+
+scala> road1.GetPointCount
+res38: Int = 20
+
+I'VE CREATED A LINE!
+
+scala> val road2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)
+road2: org.gdal.ogr.Geometry = org.gdal.ogr.Geometry@803220
+
+scala> for (p <- pointsRoad2) road2.AddPoint(p._1, p._2)
+
+scala> road2.GetPointCount
+res40: Int = 9
+
+
 
