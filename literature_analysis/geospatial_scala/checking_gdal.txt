@@ -1046,3 +1046,26 @@ res27: Double = 25.598735
 
 I'VE MANAGED TO ADD THE POINTS TO THE GEOMS with "for (z <- zippedGeomsPointsHP1)  ( (z._1).AddPoint((z._2)._1, (z._2)._2))"
 
+scala> for (z <- zippedGeomsPointsHP1) multiPointsHP1.AddGeometry(z)
+<console>:21: error: type mismatch;
+ found   : (org.gdal.ogr.Geometry, (Double, Double))
+ required: org.gdal.ogr.Geometry
+       for (z <- zippedGeomsPointsHP1) multiPointsHP1.AddGeometry(z)
+                                                                  ^
+
+scala> for (z <- zippedGeomsPointsHP1) multiPointsHP1.AddGeometry(z._1)
+
+scala> multiPointsHP1.Get
+GetArea                  GetGeometryName     GetPoint_2D           
+GetBoundary              GetGeometryRef      GetPoints             
+GetCoordinateDimension   GetGeometryType     GetSpatialReference   
+GetCurveGeometry         GetLinearGeometry   GetX                  
+GetDimension             GetM                GetY                  
+GetEnvelope              GetPoint            GetZ                  
+GetEnvelope3D            GetPointCount                             
+GetGeometryCount         GetPointZM                                
+
+scala> multiPointsHP1.GetGeometryCount
+res30: Int = 30
+
+
