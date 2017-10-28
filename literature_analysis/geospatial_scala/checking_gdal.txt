@@ -817,5 +817,15 @@ NOT A GOOD IDEA TO PUT THE POINTS IN A TXT FILE.
 I'LL PUT THEM IN A CSV AND ADD A COLUMN WITH THE ITEM ID, SO THAT I CAN FILTER THEM UPON IT.
 
 --------------------------
+scala> val source = Source.fromFile("pointcoord.csv")
+source: scala.io.BufferedSource = non-empty iterator
+
+scala> val data = source.getLines.map(_.split(",")).toArray
+data: Array[Array[String]] = Array(Array(45.631118, 25.583995, 1), Array(45.632863, 25.586184, 1), Array(45.633955, 25.586698, 1), Array(45.634345, 25.587706, 1), Array(45.63637, 25.589595, 1), Array(45.63673, 25.589423, 1), Array(45.639431, 25.593006, 1), Array(45.64245, 25.598735, 1), Array(45.642083, 25.603038, 1), Array(45.640676, 25.607061, 1), Array(45.639738, 25.607404, 1), Array(45.638925, 25.607131, 1), Array(45.636318, 25.604551, 1), Array(45.634559, 25.602963, 1), Array(45.633002, 25.602048, 1), Array(45.630514, 25.59786, 1), Array(45.630139, 25.596379, 1), Array(45.629801, 25.596057, 1), Array(45.629043, 25.596454, 1), Array(45.627693, 25.595639, 1), Array(45.627115, 25.594705, 1), Array(45.62638, 25.59506, 1), Array(45.625577, 25.594877, 1), Array(45.62622, 25.592055, 1), A...
+scala> data(0)
+res22: Array[String] = Array(45.631118, 25.583995, 1)
+
+scala> res22(0)
+res23: String = 45.631118
 
 
