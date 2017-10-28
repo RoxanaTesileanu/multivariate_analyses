@@ -1004,3 +1004,25 @@ scala> multiPointsHP1.GetGeometryCount
 res12: Int = 1
 
 
+scala> val geomsForMP = for (p<- pointsHP1) yield new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPoint)
+geomsForMP: Array[org.gdal.ogr.Geometry] = Array(org.gdal.ogr.Geometry@71f6d0, org.gdal.ogr.Geometry@7160b0, org.gdal.ogr.Geometry@710c10, org.gdal.ogr.Geometry@710c50, org.gdal.ogr.Geometry@724ec0, org.gdal.ogr.Geometry@724f00, org.gdal.ogr.Geometry@724f40, org.gdal.ogr.Geometry@724840, org.gdal.ogr.Geometry@724880, org.gdal.ogr.Geometry@7248c0, org.gdal.ogr.Geometry@724900, org.gdal.ogr.Geometry@724940, org.gdal.ogr.Geometry@724980, org.gdal.ogr.Geometry@7249c0, org.gdal.ogr.Geometry@724a00, org.gdal.ogr.Geometry@724a40, org.gdal.ogr.Geometry@724a80, org.gdal.ogr.Geometry@724ac0, org.gdal.ogr.Geometry@724b00, org.gdal.ogr.Geometry@724b40, org.gdal.ogr.Geometry@724b80, org.gdal.ogr.Geometry@724bc0, org.gdal.ogr.Geometry@724c00, org.gdal.ogr.Geometry@724c40, org.gdal.ogr.Geometry@724c80...
+scala> val pointsForMP = geomsForMP.foreach(_.AddPoint(pointsHP(_)._1, pointsHP(_)._2))
+
+scala> pointsHP1
+res13: Array[(Double, Double)] = Array((45.631118,25.583995), (45.632863,25.586184), (45.633955,25.586698), (45.634345,25.587706), (45.63637,25.589595), (45.63673,25.589423), (45.639431,25.593006), (45.64245,25.598735), (45.642083,25.603038), (45.640676,25.607061), (45.639738,25.607404), (45.638925,25.607131), (45.636318,25.604551), (45.634559,25.602963), (45.633002,25.602048), (45.630514,25.59786), (45.630139,25.596379), (45.629801,25.596057), (45.629043,25.596454), (45.627693,25.595639), (45.627115,25.594705), (45.62638,25.59506), (45.625577,25.594877), (45.62622,25.592055), (45.626215,25.589502), (45.627325,25.589545), (45.628361,25.589137), (45.629576,25.587421), (45.631077,25.58388))
+
+scala> val zippedGeomsPointsHP1 = geomsForMP.zip(pointsHP1)
+zippedGeomsPointsHP1: Array[(org.gdal.ogr.Geometry, (Double, Double))] = Array((org.gdal.ogr.Geometry@71f6d0,(45.631118,25.583995)), (org.gdal.ogr.Geometry@7160b0,(45.632863,25.586184)), (org.gdal.ogr.Geometry@710c10,(45.633955,25.586698)), (org.gdal.ogr.Geometry@710c50,(45.634345,25.587706)), (org.gdal.ogr.Geometry@724ec0,(45.63637,25.589595)), (org.gdal.ogr.Geometry@724f00,(45.63673,25.589423)), (org.gdal.ogr.Geometry@724f40,(45.639431,25.593006)), (org.gdal.ogr.Geometry@724840,(45.64245,25.598735)), (org.gdal.ogr.Geometry@724880,(45.642083,25.603038)), (org.gdal.ogr.Geometry@7248c0,(45.640676,25.607061)), (org.gdal.ogr.Geometry@724900,(45.639738,25.607404)), (org.gdal.ogr.Geometry@724940,(45.638925,25.607131)), (org.gdal.ogr.Geometry@724980,(45.636318,25.604551)), (org.gdal.ogr.Geome...
+
+scala> zippedGeomsPointsHP1(0)
+res17: (org.gdal.ogr.Geometry, (Double, Double)) = (org.gdal.ogr.Geometry@71f6d0,(45.631118,25.583995))
+
+scala> (res17._1).AddPoint((res17._2)._1, (res17._2)._2)
+
+scala> (res17._1).GetX
+res19: Double = 45.631118
+
+scala> val pointsForMP = for (z <- zippedGeomsPointsHP1) yield ( (z._1).AddPoint((z._2)._1, (z._2)._2))
+pointsForMP: Array[Unit] = Array((), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), ())
+
+
