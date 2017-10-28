@@ -1044,5 +1044,5 @@ res26: Double = 45.64245
 scala> (zippedGeomsPointsHP1(7)._1).GetY
 res27: Double = 25.598735
 
-I'VE MANAGED TO ADD THE POINTS TO THE GEOMS! 
+I'VE MANAGED TO ADD THE POINTS TO THE GEOMS with "for (z <- zippedGeomsPointsHP1)  ( (z._1).AddPoint((z._2)._1, (z._2)._2))"
 
