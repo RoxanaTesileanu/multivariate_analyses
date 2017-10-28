@@ -782,11 +782,33 @@ data: Array[Array[String]] = Array(Array(45.631118, 25.583995), Array(45.632863,
 scala> source.close
 
 NOTE: each inner array represents a set of point coordinates. The first one is the longitude (east/west) and the second one is the latitude (N/S).
-The first 29 points are for the first polygon: habitatPatch1 (dealul Tampa).
-The following 19 points are for the first road: road1 (zona Racadau).
+The first 30 points are for the first polygon: habitatPatch1 (dealul Tampa).
+The following 20 points are for the first road: road1 (zona Racadau).
 The following 10 points are for the second road: road2 (zona Carpatilor).
-The following 8 points are for the third road: road3 (zona Noua).
+The following 9 points are for the third road: road3 (zona Noua).
 The following 33 points are for the second polygon: habitatPatch2 (padurea Noua).
 The following 9 lines are for the imaginary GPS-track: gpsTrack (for our imaginary friend).
 The following 13 lines are for the third polygon: habitatPatch3 (towards Postavaru Peak).
-The following 7 lines are for the fourth polygon: the study area.  
+The following 7 lines are for the fourth polygon: the study area. 
+
+scala> val pointsHP1 = data.take(29)
+pointsHP1: Array[Array[String]] = Array(Array(45.631118, 25.583995), Array(45.632863, 25.586184), Array(45.633955, 25.586698), Array(45.634345, 25.587706), Array(45.636370, 25.589595), Array(45.636730, 25.589423), Array(45.639431, 25.593006), Array(45.642450, 25.598735), Array(45.642083, 25.603038), Array(45.640676, 25.607061), Array(45.639738, 25.607404), Array(45.638925, 25.607131), Array(45.636318, 25.604551), Array(45.634559, 25.602963), Array(45.633002, 25.602048), Array(45.630514, 25.597860), Array(45.630139, 25.596379), Array(45.629801, 25.596057), Array(45.629043, 25.596454), Array(45.627693, 25.595639), Array(45.627115, 25.594705), Array(45.626380, 25.595060), Array(45.625577, 25.594877), Array(45.626220, 25.592055), Array(45.626215, 25.589502), Array(45.627325, 25.589545), Arr...
+
+cala> val data2 = data.drop(29)
+data2: Array[Array[String]] = Array(Array(45.612195, 25.588475), Array(45.614445, 25.590527), Array(45.620019, 25.594370), Array(45.623190, 25.594629), Array(45.625304, 25.595018), Array(45.626392, 25.595363), Array(45.626890, 25.595169), Array(45.627222, 25.595623), Array(45.628853, 25.597199), Array(45.628929, 25.597285), Array(45.629729, 25.599574), Array(45.629442, 25.600114), Array(45.630016, 25.601280), Array(45.630590, 25.603785), Array(45.631979, 25.606290), Array(45.633806, 25.609572), Array(45.637007, 25.611947), Array(45.636780, 25.614906), Array(45.636146, 25.618339), Array(45.636539, 25.618857), Array(45.633428, 25.620369), Array(45.632975, 25.619160), Array(45.631299, 25.620088), Array(45.631888, 25.623327), Array(45.630529, 25.624105), Array(45.629789, 25.622442), Array(4...
+
+-----------------------------------------------
+
+scala> val source = Source.fromFile("pointcoord2.txt")
+source: scala.io.BufferedSource = non-empty iterator
+
+scala> val data = source.getLines.map(_.split("\n")).toArray
+data: Array[Array[String]] = Array(Array(45.631118, 25.583995), Array(45.632863, 25.586184), Array(45.633955, 25.586698), Array(45.634345, 25.587706), Array(45.636370, 25.589595), Array(45.636730, 25.589423), Array(45.639431, 25.593006), Array(45.642450, 25.598735), Array(45.642083, 25.603038), Array(45.640676, 25.607061), Array(45.639738, 25.607404), Array(45.638925, 25.607131), Array(45.636318, 25.604551), Array(45.634559, 25.602963), Array(45.633002, 25.602048), Array(45.630514, 25.597860), Array(45.630139, 25.596379), Array(45.629801, 25.596057), Array(45.629043, 25.596454), Array(45.627693, 25.595639), Array(45.627115, 25.594705), Array(45.626380, 25.595060), Array(45.625577, 25.594877), Array(45.626220, 25.592055), Array(45.626215, 25.589502), Array(45.627325, 25.589545), Array(45...
+scala> data.length
+length   lengthCompare
+
+scala> data.length
+res9: Int = 123
+
+scala> source.close
+
