@@ -1025,4 +1025,17 @@ res19: Double = 45.631118
 scala> val pointsForMP = for (z <- zippedGeomsPointsHP1) yield ( (z._1).AddPoint((z._2)._1, (z._2)._2))
 pointsForMP: Array[Unit] = Array((), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), (), ())
 
+scala> for (z <- zippedGeomsPointsHP1)  ( (z._1).AddPoint((z._2)._1, (z._2)._2))
+
+scala> zippedGeomsHP1(2)
+<console>:19: error: not found: value zippedGeomsHP1
+       zippedGeomsHP1(2)
+       ^
+
+scala> zippedGeomsPointsHP1(2)
+res24: (org.gdal.ogr.Geometry, (Double, Double)) = (org.gdal.ogr.Geometry@710c10,(45.633955,25.586698))
+
+scala> (zippedGeomsPointsHP1(2)._1).GetX
+res25: Double = 45.633955
+
 
