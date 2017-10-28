@@ -1038,4 +1038,11 @@ res24: (org.gdal.ogr.Geometry, (Double, Double)) = (org.gdal.ogr.Geometry@710c10
 scala> (zippedGeomsPointsHP1(2)._1).GetX
 res25: Double = 45.633955
 
+scala> (zippedGeomsPointsHP1(7)._1).GetX
+res26: Double = 45.64245
+
+scala> (zippedGeomsPointsHP1(7)._1).GetY
+res27: Double = 25.598735
+
+I'VE MANAGED TO ADD THE POINTS TO THE GEOMS! 
 
