@@ -1,0 +1,78 @@
+:load readPointCoord.scala
+import ReadPointCoordFromFile._
+pointsRoad1
+pointsRoad1
+val currentPosition = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPoint)
+currentPosition.AddPoint(pointsRoad1(0)._1, pointsRoad1(0)._2)
+currentPosition
+currentPosition.GetX
+currentPosition.GetY
+val multiPointsHP1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiPoint)
+pointsHP1
+val pointHP1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPoint)
+pointHP1.AddPoint(pointsHP1(0)._1, pointsHP1(0)._2)
+multiPointsHP1.AddGeometry(pointHP1)
+multiPointsHP1.GetGeometryCount
+val geomsForMP = for (p<- pointsHP1) yield new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPoint)
+pointsHP1
+val zippedGeomsPointsHP1 = geomsForMP.zip(pointsHP1)
+val pointsForMP = zippedGeomsPointsHP1.map{ case(a,b) => a.AddPoint(b._1, b._2)}
+pointsForMP(0)
+zippedGeomsPointsHP1
+val pointsForMP = zippedGeomsPointsHP1.map( z => (z._1).AddPoint((z._2)._1, (z._2)._2))
+val pointsForMP = for (z <- zippedGeomsPointsHP1) yield ( (z._1).AddPoint((z._2)._1, (z._2)._2))
+zippedGeomsPointsHP1(0)
+(res17._1).AddPoint((res17._2)._1, (res17._2)._2)
+(res17._1).GetX
+val pointsForMP = for (z <- zippedGeomsPointsHP1) yield ( (z._1).AddPoint((z._2)._1, (z._2)._2))
+val pointsForMP = zippedGeomsPointsHP1.map{i =>  (i._1).AddPoint((i._2)._1, (i._2)._2)}
+val pointsForMP = zippedGeomsPointsHP1.foreach(i => (i._1).AddPoint((i._2)._1, (i._2)._2))
+val pointsForMP = zippedGeomsPointsHP1.foreach(i => (i._1).AddPoint((i._2)._1, (i._2)._2))
+val pointsForMP = for (z <- zippedGeomsPointsHP1) yield ( (z._1).AddPoint((z._2)._1, (z._2)._2))
+for (z <- zippedGeomsPointsHP1) yield ( (z._1).AddPoint((z._2)._1, (z._2)._2))
+for (z <- zippedGeomsPointsHP1)  ( (z._1).AddPoint((z._2)._1, (z._2)._2))
+zippedGeomsPointsHP1(2)
+(zippedGeomsPointsHP1(2)._1).GetX
+(zippedGeomsPointsHP1(7)._1).GetX
+(zippedGeomsPointsHP1(7)._1).GetY
+for (z <- zippedGeomsPointsHP1) multiPointsHP1.AddGeometry(z._1)
+multiPointsHP1.GetGeometryCount
+pointsRoad1
+val road1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)
+for (p <- pointsRoad1) road1.AddPoint(p._1, p._2)
+road1.GetGeometryCount
+road1.AddPoint(pointsRoad1(0)._1, pointsRoad1(0)._2)
+road1.GetGeometryCount
+road1.IsEmpty
+road1.GetPointCount
+val road2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)
+for (p <- pointsRoad2) road2.AddPoint(p._1, p._2)
+road2.GetPointCount
+val road3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)
+for (p <- pointsRoad3) road3.AddPoint(p._1, p._2)
+road3.GetPointCount
+val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
+val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+val ringPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
+val habitatRing = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+for (p<- pointsHP1) habitatRing.AddPoint(p._1, p._2)
+habitatRing.GetPointCount
+habitatPatch1.AddGeometry(habitatRing)
+habitatPatch1.CloseRings()
+habitatPatch1.IsValid
+habitatPatch1.GetArea
+habitatPatch1.GetSpatialReference
+val habitatPatch2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
+val habitatRing2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+for (p<- pointsHP2) habitatRing2.AddPoint(p._1, p._2)
+habitatRing2.GetPointCount
+habitatPatch2.AddGeometry(habitatRing2)
+habitatPatch2.IsValid
+val habitatPatch3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
+val  habitatRing3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+val stArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
+val ringStArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+for (p <- pointsStArea) ringStArea.AddPoint(p._1, p._2)
+stArea.AddGeometry(ringStArea)
+stArea.IsValid
