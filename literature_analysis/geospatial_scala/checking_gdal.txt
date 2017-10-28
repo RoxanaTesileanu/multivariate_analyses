@@ -755,11 +755,30 @@ __________________________________________________________________
 
 
 
+I've prepared some point coordinates in the pointcoord.txt file.  
 
-
-I will see how good the code fits in REPL:
+I will see how good the sketched code on creation of geometries, features and layers fits in REPL:
 
 __________new REPL session _______________________
 
  
+cala> import scala.io._
+import scala.io._
+
+scala> val source = Source.fromFile("pointcoord.txt")
+source: scala.io.BufferedSource = non-empty iterator
+
+scala> val data = source.getLines.toArray
+data: Array[String] = Array("/* The following point coordinates were taken from Google Maps. They provide thegeodata for the geometries and vector layer created for educational purposes by me for my tutorial "Geospatial Analysis with Scala". ", @author: Roxana Tesileanu, "*/ ", "", //points for Tampa Hill, BV, entered clockwise, 45.631118, 25.583995, 45.632863, 25.586184, 45.633955, 25.586698, 45.634345, 25.587706, 45.636370, 25.589595, 45.636730, 25.589423, 45.639431, 25.593006, 45.642450, 25.598735, 45.642083, 25.603038, 45.640676, 25.607061, 45.639738, 25.607404, 45.638925, 25.607131, 45.636318, 25.604551, 45.634559, 25.602963, 45.633002, 25.602048, 45.630514, 25.597860, 45.630139, 25.596379, 45.629801, 25.596057, 45.629043, 25.596454, 45.627693, 25.595639, 45.627115, 25.594705, 45.6...
+scala> 
+
+cala> source.close
+
+scala> val source = Source.fromFile("pointcoord2.txt")
+source: scala.io.BufferedSource = non-empty iterator
+
+scala> val data = source.getLines.map(_.split("\n")).toArray
+data: Array[Array[String]] = Array(Array(45.631118, 25.583995), Array(45.632863, 25.586184), Array(45.633955, 25.586698), Array(45.634345, 25.587706), Array(45.636370, 25.589595), Array(45.636730, 25.589423), Array(45.639431, 25.593006), Array(45.642450, 25.598735), Array(45.642083, 25.603038), Array(45.640676, 25.607061), Array(45.639738, 25.607404), Array(45.638925, 25.607131), Array(45.636318, 25.604551), Array(45.634559, 25.602963), Array(45.633002, 25.602048), Array(45.630514, 25.597860), Array(45.630139, 25.596379), Array(45.629801, 25.596057), Array(45.629043, 25.596454), Array(45.627693, 25.595639), Array(45.627115, 25.594705), Array(45.626380, 25.595060), Array(45.625577, 25.594877), Array(45.626220, 25.592055), Array(45.626215, 25.589502), Array(45.627325, 25.589545), Array(45...
+scala> source.close
+
 
