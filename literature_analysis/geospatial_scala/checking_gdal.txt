@@ -1311,4 +1311,9 @@ scala> val lyr = ds.CreateLayer("RoadsAndGPSTracks", googleMapSR, wkbLineString)
 scala> val lyr = ds.CreateLayer("RoadsAndGPSTracks", googleMapSR, org.gdal.ogr.ogrConstants.wkbMultiLineString)
 lyr: org.gdal.ogr.Layer = org.gdal.ogr.Layer@28bfead0
 
+scala> val fd1 = new org.gdal.ogr.FieldDefn("Type", OFTString)
+<console>:20: error: not found: value OFTString
+       val fd1 = new org.gdal.ogr.FieldDefn("Type", OFTString)
+                                                    ^
+
 
