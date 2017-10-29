@@ -547,7 +547,7 @@ In the above code we've created several OGR geometries:
 \item  a series of polygons called habitatPatch1, habitatPatch2, habitatPatch3, stArea, and
 \item  a multipolygon called multiPolygonEx.
 \end{itemize}
-
+In general we can create an OGR geometry by creating a new empty geometry which will be populated with points by calling the AddPoint() function on them. The multi-geometry versions can be created by adding geometries to an empty multi-geometry by calling AddGeometry() on it. The polygons require a ring of points. In the above examples we only have one ring for each polygon. We could also create two rings (an inner and an outer ring) in order to create polygons with holes. For more details see \cite{garrard_geoprocessing_2016}.  
 
 Next, we will return to vector layers. In the following code snippet we will create a vector layer called Roads,using the multiline geometry created in code snippet 4.
  For georeferencing we will use the WGS84 / Pseudo-Mercator SRS for which we've already created an instance in code snippet 2 called googleMapSR. 
