@@ -7,7 +7,6 @@ currentPosition.AddPoint(pointsRoad1(0)._1, pointsRoad1(0)._2)
 currentPosition.GetX
 currentPosition.GetY
 val multiPointHP1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiPoint)
-val multiPointPoint = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPoint)
 val geomsForMP = for (p<- pointsHP1) yield new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPoint)
 val zippedGeomsPointsHP1 = geomsForMP.zip(pointsHP1)
 for (z <- zippedGeomsPointsHP1)  ( (z._1).AddPoint((z._2)._1, (z._2)._2))

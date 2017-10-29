@@ -486,8 +486,10 @@ currentPosition\\
 currentPosition.GetX\\
 currentPosition.GetY\\
 val multiPointHP1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiPoint)\\
-val multiPointPoint = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wbkPoint) \\
-for (p <- pointsHP1) { multiPointHP1.AddGeometry(multiPointPoint.AddPoint(p.\underline{\space}1, p.\underline{\space}2) } \\
+val geomsForMP = for (p<- pointsHP1) yield new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPoint)\\
+val zippedGeomsPointsHP1 = geomsForMP.zip(pointsHP1)\\
+for (z <- zippedGeomsPointsHP1)  ( (z.\underline{\space}1).AddPoint((z.\underline{\space}2).\underline{\space}1, (z.\underline{\space}2).\underline{\space}2))\\
+for (z <- zippedGeomsPointsHP1) multiPointHP1.AddGeometry(z.\underline{\space}1)\\
 pointsRoad1\\
 val road1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)\\
 for (p <- pointsRoad1) road1.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
