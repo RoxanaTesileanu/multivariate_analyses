@@ -1429,3 +1429,13 @@ scala> feat4.SetField("ID", 4)
 scala> res5.CreateFeature(feat4)
 res29: Int = 0
 
+scala> res5.Get
+GetDescription    GetFeaturesRead         GetMetadataItem    GetRefCount        
+GetExtent         GetGeomType             GetMetadata_Dict   GetSpatialFilter   
+GetFIDColumn      GetGeometryColumn       GetMetadata_List   GetSpatialRef      
+GetFeature        GetLayerDefn            GetName            GetStyleTable      
+GetFeatureCount   GetMetadataDomainList   GetNextFeature                        
+
+scala> res5.GetFeatureCount
+res30: Long = 4
+
