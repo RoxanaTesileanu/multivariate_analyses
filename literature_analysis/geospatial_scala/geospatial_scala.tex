@@ -537,7 +537,7 @@ stArea.CloseRings()\\
 stArea.IsValid\\
 val multiPolygonEx = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiPolygon) \\
 val multiPolyPolys = Array(habitatPatch1, habitatPatch2, habitatPatch3, stArea) \\
-
+for (poly <- multiPolyPolys) 
 \\
 \\
 \paragraph{ Code snippet 4: Explanation}
