@@ -28,23 +28,19 @@ val feat2 = new org.gdal.ogr.Feature(usedDfn)
 feat2.SetGeometry(road2)
 feat2.SetField("Type", "road")
 feat2.SetField("ID", 2)
-res5.CreateFeature(feat2)
+newLyr.CreateFeature(feat2)
 val feat3 = new org.gdal.ogr.Feature(usedDfn)
 feat3.SetGeometry(road3)
 feat3.SetField("Type", "road")
 feat3.SetField("ID", 3)
-res5.CreateFeature(feat3)
+newLyr.CreateFeature(feat3)
 val feat4 = new org.gdal.ogr.Feature(usedDfn)
 feat4.SetGeometry(gpsTrack1)
 feat4.SetField("Type", "gpstrack")
 feat4.SetField("ID", 4)
-res5.CreateFeature(feat4)
-res5.GetFeatureCount
+newLyr.CreateFeature(feat4)
+newLyr.GetFeatureCount
 ds.FlushCache
-
-
-
-
 
 }
 
