@@ -427,11 +427,12 @@ You should now create a .csv file (from converting either an EXCEL or a LIBRE OF
 \item the seventh group of points (ID 7) is for a polygon which will be the representation of a third habitat patch (habitatPatch3) toward Postavaru Peak in Poiana Brasov,
 \item the eigth group of points (ID 8) is for the fourth polygon which will be the representation for our study area. 
 \end {itemize}
-Of course, these features are created for educational purposes. I haven't included as many points as necessary for a detailed representation of the items. If you include more point coordinates, and, thus, more features (additional roads, more GPS-tracks, more habitat patches, etc.) then the results should be useful for further research purposes. The aim of this tutorial is to show how you can construct your features from point coordinates and how to perform spatial analyses on them whatever number of features you consider appropriate for your own purposes.      
-
+Of course, these features are created for educational purposes. I haven't included as many points as necessary for a detailed representation of the items. Also, if you include more features (additional roads, more GPS-tracks, more habitat patches, etc.) then the results should be useful for further research purposes. The aim of this tutorial is to show how you can construct your features from point coordinates and how to perform spatial analyses on them whatever number of features you consider appropriate for your own purposes and whatever number of point coordinates you use for their representation.      
+\\
+\\
 After this general presentation of the data we're going to use, we can continue and read the points into Scala (parse them):
 \\
-
+\\
 import scala.io.\underline{\space} \\
 val source = Source.fromFile("pointcoord.csv")\\
 val data = source.getLines.map(\underline{\space}.split(",")).toArray\\
@@ -460,8 +461,9 @@ val pointsHP2 = dataHP2.map(i => (i(0).toDouble, i(1).toDouble))\\
 val pointsHP3 = dataHP3.mao(i => (i(0).toDouble, i(1).toDouble)) \\
 val pointsGPSTrack = dataGPSTrack.map(i => (i(0).toDouble, i(1).toDouble))\\
 val pointsStArea = dataStArea.map(i => (i(0).toDouble, i(1).toDouble))\\
-
-
+\\
+\\
+paragraph{ Code snippet 3: explanation}
   
  
 
