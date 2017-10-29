@@ -25,6 +25,7 @@ val pointsRoad1 = dataRoad1.map(i => (i(0).toDouble, i(1).toDouble))
 val pointsRoad2 = dataRoad2.map(i => (i(0).toDouble, i(1).toDouble))
 val pointsRoad3 = dataRoad3.map(i => (i(0).toDouble, i(1).toDouble))
 val pointsHP2 = dataHP2.map(i => (i(0).toDouble, i(1).toDouble))
+val pointsHP3 = dataHP3.mao(i => (i(0).toDouble, i(1).toDouble)) 
 val pointsGPSTrack = dataGPSTrack.map(i => (i(0).toDouble, i(1).toDouble))
 val pointsStArea = dataStArea.map(i => (i(0).toDouble, i(1).toDouble))
 }
