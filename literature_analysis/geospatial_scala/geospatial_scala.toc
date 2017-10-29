@@ -13,7 +13,7 @@
 \contentsline {paragraph}{ Code snippet 3: Explanation}{15}{section*.7}
 \contentsline {paragraph}{Code snippet 4: Creating points and multipoints, lines and multilines, and, polygons and multiploygons}{15}{section*.8}
 \contentsline {paragraph}{ Code snippet 4: Explanation}{17}{section*.9}
-\contentsline {paragraph}{Code snippet 5: Creating a georeferenced vector layer}{17}{section*.10}
+\contentsline {paragraph}{Code snippet 5: Creating a georeferenced vector layer}{18}{section*.10}
 \contentsline {paragraph}{Code snippet 5: Explanation}{18}{section*.11}
 \contentsline {subsubsection}{\numberline {2.3.3}Reprojecting OGR geometries and vector layers}{18}{subsubsection.2.3.3}
 \contentsline {subsection}{\numberline {2.4}Overlay analyses}{18}{subsection.2.4}
