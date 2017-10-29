@@ -24,5 +24,10 @@ val habitatRing1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinear
 for (p<- pointsHP1) habitatRing.AddPoint(p._1, p._2)
 habitatPatch1.AddGeometry(habitatRing1)
 habitatPatch1.CloseRings()
+val habitatPatch2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
+val habitatRing2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+for (p<- pointsHP2) habitatRing2.AddPoint(p._1, p._2)
+habitatPatch2.AddGeometry(habitatRing2)
+habitatPatch2.CloseRings()
 
 
