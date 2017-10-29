@@ -431,25 +431,25 @@ Of course, these features are created for educational purposes. I haven't includ
 
 After this general presentation of the data we're going to use, we can continue and read the points into Scala (parse them):
 \\
-\\
+
 import scala.io.\underline{\space} \\
 val source = Source.fromFile("pointcoord.csv")\\
-val data = source.getLines.map(_.split(",")).toArray\\
-val dataHP1 = data.filter(_(2) == "1")\\
+val data = source.getLines.map(\underline{\space}.split(",")).toArray\\
+val dataHP1 = data.filter(\underline{\space}(2) == "1")\\
 dataHP1.length\\
-val dataRoad1 = data.filter(_(2) == "2")\\
+val dataRoad1 = data.filter(\underline{\space}(2) == "2")\\
 dataRoad1.length\\
-val dataRoad2 = data.filter(_(2) == "3")\\
+val dataRoad2 = data.filter(\underline{\space}(2) == "3")\\
 dataRoad2.length\\
-val dataRoad3 = data.filter(_(2) == "4")\\
+val dataRoad3 = data.filter(\underline{\space}(2) == "4")\\
 dataRoad3.length\\
-val dataHP2 = data.filter(_(2) == "5")\\
+val dataHP2 = data.filter(\underline{\space}(2) == "5")\\
 dataHP2.length\\
-val dataGPSTrack = data.filter(_(2) == "6")\\
+val dataGPSTrack = data.filter(\underline{\space}(2) == "6")\\
 dataGPSTrack.length\\
-val dataHP3 = data.filter(_(2) == "7")\\
+val dataHP3 = data.filter(\underline{\space}(2) == "7")\\
 dataHP3.length\\
-val dataStArea =  data.filter(_(2) == "8")\\
+val dataStArea =  data.filter(\underline{\space}(2) == "8")\\
 dataStArea.length\\
 val pointsHP1 = dataHP1.map(i => (i(0).toDouble, i(1).toDouble))\\
 pointsHP1.length\\
