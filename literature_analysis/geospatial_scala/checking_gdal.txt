@@ -1413,4 +1413,19 @@ scala> feat3.SetField("ID", 3)
 scala> res5.CreateFeature(feat3)
 res25: Int = 0
 
+scala> val feat4 = new org.gdal.ogr.Feature(usedDfn)
+feat4: org.gdal.ogr.Feature = org.gdal.ogr.Feature@308955f0
+
+scala> feat4.SetGeom
+SetGeomField   SetGeomFieldDirectly   SetGeometry   SetGeometryDirectly
+
+scala> feat4.SetGeometry(gpsTrack1)
+res26: Int = 0
+
+scala> feat4.SetField("Type", "gpstrack")
+
+scala> feat4.SetField("ID", 4)
+
+scala> res5.CreateFeature(feat4)
+res29: Int = 0
 
