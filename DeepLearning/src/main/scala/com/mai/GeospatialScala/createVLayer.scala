@@ -12,6 +12,8 @@ val ds = driver.CreateDataSource("rdgps")
 val googleMapSR = new org.gdal.osr.SpatialReference()
 googleMapSR.ImportFromEPSG(3857)
 val lyr = ds.CreateLayer("RoadsAndGPSTracks", googleMapSR, org.gdal.ogr.ogrConstants.wkbMultiLineString)
+val fd1 = new org.gdal.ogr.FieldDefn("Type", org.gdal.ogr.ogrConstants.OFTString)
+val fd2 = new org.gdal.ogr.FieldDefn("ID", org.gdal.ogr.ogrConstants.OFTInteger)
 
 
 
