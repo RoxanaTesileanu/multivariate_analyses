@@ -1363,4 +1363,28 @@ usedDfn: org.gdal.ogr.FeatureDefn = org.gdal.ogr.FeatureDefn@301122a0
 scala> val feat1 = new org.gdal.ogr.Feature(usedDfn)
 feat1: org.gdal.ogr.Feature = org.gdal.ogr.Feature@30119b30
 
+scala> import CreateGeoms._
+import CreateGeoms._
+
+scala> feat1.SetGeometry(road1)
+res13: Int = 0
+
+scala> feat1.SetF
+SetFID                        SetFieldInteger64     SetFrom          
+SetField                      SetFieldIntegerList   SetFromWithMap   
+SetFieldBinaryFromHexString   SetFieldNull                           
+SetFieldDoubleList            SetFieldStringList                     
+
+scala> feat1.SetField("Type", "road")
+
+scala> fead1.SetField("ID", 1)
+<console>:21: error: not found: value fead1
+       fead1.SetField("ID", 1)
+       ^
+
+scala> feat1.SetField("ID", 1)
+
+scala> res5.CreateFeature(feat1)
+res17: Int = 0
+
 
