@@ -1256,4 +1256,5 @@ res60: Boolean = false
 
 IT LOOKS LIKE i'VE FORGOTTEN TO CALL CloseRing() on the polygon!
 
+----------------------------------------------------------
 

@@ -1,3 +1,4 @@
+package com.mai.GeospatialScala
 import scala.io._
 object ReadPointCoordFromFile{
 
