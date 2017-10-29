@@ -19,7 +19,6 @@ newLyr.CreateField(fd1)
 newLyr.CreateField(fd2)
 val usedDfn = newLyr.GetLayerDefn()
 val feat1 = new org.gdal.ogr.Feature(usedDfn)
-import CreateGeoms._
 feat1.SetGeometry(road1)
 feat1.SetField("Type", "road")
 feat1.SetField("ID", 1)
