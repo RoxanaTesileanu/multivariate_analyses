@@ -1281,4 +1281,34 @@ habitatPatch2     multiLineEx     ringStArea       zippedGeomsPointsHP1
 scala> org.gdal.ogr.ogr.GetDriverByName("ESRI Shapefile")
 res3: org.gdal.ogr.Driver = org.gdal.ogr.Driver@28c4c640
 
+scala> val driver = org.gdal.ogr.ogr.GetDriverByName("ESRI Shapefile")
+driver: org.gdal.ogr.Driver = org.gdal.ogr.Driver@28c4c640
+
+scala> val ds = driver.CreateDataSource("rdgps")
+ds: org.gdal.ogr.DataSource = org.gdal.ogr.DataSource@2804e0c0
+
+scala> val googleMapSR = new org.gdal.osr.SpatialReference()
+googleMapSR: org.gdal.osr.SpatialReference =
+
+scala> googleMapSR.ImportFromEPSG(3857)
+res4: Int = 0
+
+scala> val lyr = ds.CreateLayer("RoadsAndGPSTracks", googleMapSR, wkbMultiLineString)
+<console>:22: error: not found: value wkbMultiLineString
+       val lyr = ds.CreateLayer("RoadsAndGPSTracks", googleMapSR, wkbMultiLineString)
+                                                                  ^
+
+scala> val lyr = ds.CreateLayer("RoadsAndGPSTracks", googleMapSR, wkbMultilineString)
+<console>:22: error: not found: value wkbMultilineString
+       val lyr = ds.CreateLayer("RoadsAndGPSTracks", googleMapSR, wkbMultilineString)
+                                                                  ^
+
+scala> val lyr = ds.CreateLayer("RoadsAndGPSTracks", googleMapSR, wkbLineString) 
+<console>:22: error: not found: value wkbLineString
+       val lyr = ds.CreateLayer("RoadsAndGPSTracks", googleMapSR, wkbLineString)
+                                                                  ^
+
+scala> val lyr = ds.CreateLayer("RoadsAndGPSTracks", googleMapSR, org.gdal.ogr.ogrConstants.wkbMultiLineString)
+lyr: org.gdal.ogr.Layer = org.gdal.ogr.Layer@28bfead0
+
 
