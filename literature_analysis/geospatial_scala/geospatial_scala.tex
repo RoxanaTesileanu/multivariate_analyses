@@ -536,7 +536,7 @@ stArea.AddGeometry(ringStArea)\\
 stArea.CloseRings()\\
 stArea.IsValid\\
 val multiPolygonEx = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiPolygon) \\
-val multiP
+val multiPolyPolys = Array(
 \\
 \\
 \paragraph{ Code snippet 4: Explanation}
@@ -547,7 +547,7 @@ In the above code we've created several OGR geometries:
 \item a series of lines called road1, road2, road3, and gpsTrack1, 
 \item a multiline called multiLineEx,
 \item  a series of polygons called habitatPatch1, habitatPatch2, habitatPatch3, stArea, and
-\item  a multipolygon called patches.
+\item  a multipolygon called multiPolygonEx.
 \end{itemize}
 
 
