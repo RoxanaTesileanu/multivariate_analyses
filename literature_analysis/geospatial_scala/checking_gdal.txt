@@ -1410,4 +1410,7 @@ scala> feat3.SetField("Type", "road")
 
 scala> feat3.SetField("ID", 3)
 
+scala> res5.CreateFeature(feat3)
+res25: Int = 0
+
 
