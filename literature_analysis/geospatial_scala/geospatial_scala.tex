@@ -406,8 +406,8 @@ In this section we've seen it is important to know the SRS used for your geodata
 
 \subsubsection {Creating OGR geometries and vector layers}
 
-In this section I will use points looked up on Google Maps (so, using WGS84 / Pseudo-Mercator) to create OGR geometries like Points, Lines or Polygons and their multi-versions. 
-Then I will create a new empty vector layer by means of a driver which will create the data source in which the empty vector layer will be stored. 
+In this section I will use points looked up on Google Maps (so, using WGS84 / Pseudo-Mercator) and stored in a .csv file to create OGR geometries like Points, Lines or Polygons and their multi-versions. 
+Then I will create a new empty georeferenced vector layer by means of a driver which will create the data source in which the empty vector layer will be stored. 
 Then I will create the attribute fields for the empty layer, which will be stored in the layer definition.
  Then, I will create the features which will contain the previously created geometries and their attribute fields.
 Finally, I will insert the features into the new layer. 
@@ -472,11 +472,6 @@ Because the data is provided as Array[String] we must convert the groups of data
 \\
 \\
 
-
-
-
-
-\subsubsection {Assigning a SRS to data}
 
 \subsubsection {Reprojecting OGR geometries and vector layers} 
 
