@@ -29,5 +29,17 @@ val habitatRing2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinear
 for (p<- pointsHP2) habitatRing2.AddPoint(p._1, p._2)
 habitatPatch2.AddGeometry(habitatRing2)
 habitatPatch2.CloseRings()
-
+val habitatPatch3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
+val habitatRing3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+for (p<- pointsHP3) habitatRing3.AddPoint(p._1, p._2)
+habitatPatch3.AddGeometry(habitatRing3)
+habitatPatch3.CloseRings()
+val stArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
+val ringStArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+for (p <- pointsStArea) ringStArea.AddPoint(p._1, p._2)
+stArea.AddGeometry(ringStArea)
+stArea.CloseRings()
+val multiPolygonEx = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiPolygon)
+val multiPolyPolys = Array(habitatPatch1, habitatPatch2, habitatPatch3, stArea)
+for (poly <- multiPolyPolys) multiPolygonEx.AddGeometry(poly)
 
