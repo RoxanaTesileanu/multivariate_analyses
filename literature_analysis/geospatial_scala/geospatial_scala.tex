@@ -522,7 +522,12 @@ for (p<- pointsHP3) habitatRing3.AddPoint(p._1, p._2)
 habitatRing3.GetPointCount
 habitatPatch3.AddGeometry(habitatRing3)
 habitatPatch3.CloseRings()
-
+val stArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
+val ringStArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+for (p <- pointsStArea) ringStArea.AddPoint(p._1, p._2)
+stArea.AddGeometry(ringStArea)
+stArea.CloseRings()
+stArea.IsValid
 
 \subsubsection {Reprojecting OGR geometries and vector layers} 
 
