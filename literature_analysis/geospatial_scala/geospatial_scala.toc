@@ -11,6 +11,7 @@
 \contentsline {subsubsection}{\numberline {2.3.2}Creating OGR geometries and vector layers}{13}{subsubsection.2.3.2}
 \contentsline {paragraph}{Code snippet 3: Reading point coordinates from a .csv file}{13}{section*.6}
 \contentsline {paragraph}{ Code snippet 3: explanation}{15}{section*.7}
+\contentsline {paragraph}{Code snippet 4: Creating points and multipoints, lines and multilines, and, polygons and multiploygons}{15}{section*.8}
 \contentsline {subsubsection}{\numberline {2.3.3}Reprojecting OGR geometries and vector layers}{16}{subsubsection.2.3.3}
 \contentsline {subsection}{\numberline {2.4}Overlay analyses}{16}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Proximity analyses}{16}{subsection.2.5}
