@@ -14,13 +14,13 @@
 \contentsline {paragraph}{Code snippet 4: Creating points and multipoints, lines and multilines, and, polygons and multiploygons}{15}{section*.8}
 \contentsline {paragraph}{ Code snippet 4: Explanation}{17}{section*.9}
 \contentsline {paragraph}{Code snippet 5: Creating a georeferenced vector layer}{18}{section*.10}
-\contentsline {paragraph}{Code snippet 5: Explanation}{18}{section*.11}
-\contentsline {subsubsection}{\numberline {2.3.3}Reprojecting OGR geometries and vector layers}{19}{subsubsection.2.3.3}
-\contentsline {subsection}{\numberline {2.4}Overlay analyses}{19}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Proximity analyses}{19}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Writing vector data}{19}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Reading raster data}{19}{subsection.2.7}
-\contentsline {subsection}{\numberline {2.8}Pixels resizing}{19}{subsection.2.8}
-\contentsline {subsection}{\numberline {2.9}Moving window analyses}{19}{subsection.2.9}
-\contentsline {subsection}{\numberline {2.10}Map algebra}{19}{subsection.2.10}
-\contentsline {section}{\numberline {3}Geostatistics using Geotrellis}{19}{section.3}
+\contentsline {paragraph}{Code snippet 5: Explanation}{19}{section*.11}
+\contentsline {subsubsection}{\numberline {2.3.3}Reprojecting OGR geometries and vector layers}{20}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}Overlay analyses}{20}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Proximity analyses}{20}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Writing vector data}{20}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Reading raster data}{20}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Pixels resizing}{20}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}Moving window analyses}{20}{subsection.2.9}
+\contentsline {subsection}{\numberline {2.10}Map algebra}{20}{subsection.2.10}
+\contentsline {section}{\numberline {3}Geostatistics using Geotrellis}{20}{section.3}
