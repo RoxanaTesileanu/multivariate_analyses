@@ -486,7 +486,30 @@ currentPosition\\
 currentPosition.GetX\\
 currentPosition.GetY\\
 val multiPointsHP1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiPoint)\\
-
+pointsRoad1
+val road1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)
+for (p <- pointsRoad1) road1.AddPoint(p._1, p._2)
+road1.GetGeometryCount
+road1.AddPoint(pointsRoad1(0)._1, pointsRoad1(0)._2)
+road1.GetGeometryCount
+road1.IsEmpty
+road1.GetPointCount
+val road2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)
+for (p <- pointsRoad2) road2.AddPoint(p._1, p._2)
+road2.GetPointCount
+val road3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)
+for (p <- pointsRoad3) road3.AddPoint(p._1, p._2)
+road3.GetPointCount
+val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
+val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+val ringPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
+val habitatRing = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+for (p<- pointsHP1) habitatRing.AddPoint(p._1, p._2)
+habitatRing.GetPointCount
+habitatPatch1.AddGeometry(habitatRing)
+habitatPatch1.CloseRings()
+habitatPatch1.IsValid
 
  
   
