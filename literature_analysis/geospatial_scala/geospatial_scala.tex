@@ -477,9 +477,16 @@ In this code snippet I will use the values of the point groups (i.e. pointsRoad1
  In order to use the the point groups, I've stored the code from snippet 3 in an object called ReadPointCoordFromFile found in the readPointCoord.scala file available at the link \href{https://github.com/RoxanaTesileanu/multivariate_analyses/blob/master/DeepLearning/readPointCoord.scala}{https://github.com/RoxanaTesileanu/\\multivariate\underline{\space}analyses/blob/master/DeepLearning/readPointCoord.scala}. You should download the .scala file and store it in the Scala project's directory, to make it available in REPL. Reload your project in SBT, restart the console to get to the Scala REPL and try out the following code lines:
 \\
 \\
-:load readPointCoord.scala
-import ReadPointCoordFromFile.\underline{\space}
-pointsRoad1
+:load readPointCoord.scala\\
+import ReadPointCoordFromFile.\underline{\space}\\
+pointsRoad1\\
+val currentPosition = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPoint)\\
+currentPosition.AddPoint(pointsRoad1(0).\underline{\space}1, pointsRoad1(0).\underline\{\space}2)\\
+currentPosition\\
+currentPosition.GetX\\
+currentPosition.GetY\\
+val multiPointsHP1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiPoint)\\
+
 
  
   
