@@ -14,8 +14,10 @@ googleMapSR.ImportFromEPSG(3857)
 val lyr = ds.CreateLayer("RoadsAndGPSTracks", googleMapSR, org.gdal.ogr.ogrConstants.wkbMultiLineString)
 val fd1 = new org.gdal.ogr.FieldDefn("Type", org.gdal.ogr.ogrConstants.OFTString)
 val fd2 = new org.gdal.ogr.FieldDefn("ID", org.gdal.ogr.ogrConstants.OFTInteger)
-
-
+val newLyr = ds.GetLayer(0)
+newLyr.CreateField(fd1)
+newLyr.CreateField(fd2)
+val usedDfn = newLyr.GetLayerDefn()
 
 
 
