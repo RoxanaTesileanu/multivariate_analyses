@@ -18,7 +18,29 @@ val newLyr = ds.GetLayer(0)
 newLyr.CreateField(fd1)
 newLyr.CreateField(fd2)
 val usedDfn = newLyr.GetLayerDefn()
-
+val feat1 = new org.gdal.ogr.Feature(usedDfn)
+import CreateGeoms._
+feat1.SetGeometry(road1)
+feat1.SetField("Type", "road")
+feat1.SetField("ID", 1)
+newLyr.CreateFeature(feat1)
+val feat2 = new org.gdal.ogr.Feature(usedDfn)
+feat2.SetGeometry(road2)
+feat2.SetField("Type", "road")
+feat2.SetField("ID", 2)
+res5.CreateFeature(feat2)
+val feat3 = new org.gdal.ogr.Feature(usedDfn)
+feat3.SetGeometry(road3)
+feat3.SetField("Type", "road")
+feat3.SetField("ID", 3)
+res5.CreateFeature(feat3)
+val feat4 = new org.gdal.ogr.Feature(usedDfn)
+feat4.SetGeometry(gpsTrack1)
+feat4.SetField("Type", "gpstrack")
+feat4.SetField("ID", 4)
+res5.CreateFeature(feat4)
+res5.GetFeatureCount
+ds.FlushCache
 
 
 
