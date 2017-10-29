@@ -1338,5 +1338,29 @@ fd1: org.gdal.ogr.FieldDefn = org.gdal.ogr.FieldDefn@307c4bb0
 scala> val fd2 = new org.gdal.ogr.FieldDefn("ID", org.gdal.ogr.ogrConstants.OFTInteger)
 fd2: org.gdal.ogr.FieldDefn = org.gdal.ogr.FieldDefn@307c5380
 
+scala> ds.GetLayer(0)
+res5: org.gdal.ogr.Layer = org.gdal.ogr.Layer@3010c1e0
+
+scala> res5.CreateField(fd1)
+res6: Int = 0
+
+scala> res5.CreateField(fd2)
+res7: Int = 0
+
+scala> res5.Get
+GetDescription    GetFeaturesRead         GetMetadataItem    GetRefCount        
+GetExtent         GetGeomType             GetMetadata_Dict   GetSpatialFilter   
+GetFIDColumn      GetGeometryColumn       GetMetadata_List   GetSpatialRef      
+GetFeature        GetLayerDefn            GetName            GetStyleTable      
+GetFeatureCount   GetMetadataDomainList   GetNextFeature                        
+
+scala> res5.GetLayerDefn
+res8: org.gdal.ogr.FeatureDefn = org.gdal.ogr.FeatureDefn@301122a0
+
+scala> val usedDfn = res5.GetLayerDefn()
+usedDfn: org.gdal.ogr.FeatureDefn = org.gdal.ogr.FeatureDefn@301122a0
+
+scala> val feat1 = new org.gdal.ogr.Feature(usedDfn)
+feat1: org.gdal.ogr.Feature = org.gdal.ogr.Feature@30119b30
 
 
