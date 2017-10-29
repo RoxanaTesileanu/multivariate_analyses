@@ -502,6 +502,8 @@ road2.GetPointCount\\
 val road3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)\\
 for (p <- pointsRoad3) road3.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
 road3.GetPointCount\\
+val gpsTrack1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString) \\
+for (p<- pointsGPSTrack) gpsTrack1.AddPoint((p.\underline{\space}1, p.\underline{\space}2)\\
 val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)\\
 val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)\\
 val ringPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)\\
@@ -537,7 +539,7 @@ In the above code we've created several OGR geometries:
 \begin {itemize} 
 \item a point called currentPosition,
 \item  a multipoint called multiPointHP1, 
-\item a series of lines called road1, road2, road3, 
+\item a series of lines called road1, road2, road3, and gpsTrack1, 
 \item a multiline called roads,
 \item  a series of polygons called habitatPatch1, habitatPatch2, habitatPatch3, stArea, and
 \item  a multipolygon called patches.
