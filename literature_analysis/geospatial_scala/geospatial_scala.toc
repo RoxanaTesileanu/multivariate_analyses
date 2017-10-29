@@ -10,13 +10,14 @@
 \contentsline {paragraph}{Code snippet 2: explanation}{13}{section*.5}
 \contentsline {subsubsection}{\numberline {2.3.2}Creating OGR geometries and vector layers}{13}{subsubsection.2.3.2}
 \contentsline {paragraph}{Code snippet 3: Reading point coordinates from a .csv file}{13}{section*.6}
-\contentsline {subsubsection}{\numberline {2.3.3}Assigning a SRS to data}{15}{subsubsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.4}Reprojecting OGR geometries and vector layers}{15}{subsubsection.2.3.4}
-\contentsline {subsection}{\numberline {2.4}Overlay analyses}{15}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Proximity analyses}{15}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Writing vector data}{15}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Reading raster data}{15}{subsection.2.7}
-\contentsline {subsection}{\numberline {2.8}Pixels resizing}{15}{subsection.2.8}
-\contentsline {subsection}{\numberline {2.9}Moving window analyses}{15}{subsection.2.9}
-\contentsline {subsection}{\numberline {2.10}Map algebra}{15}{subsection.2.10}
-\contentsline {section}{\numberline {3}Geostatistics using Geotrellis}{15}{section.3}
+\contentsline {paragraph}{ Code snippet 3: explanation}{15}{section*.7}
+\contentsline {subsubsection}{\numberline {2.3.3}Assigning a SRS to data}{16}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Reprojecting OGR geometries and vector layers}{16}{subsubsection.2.3.4}
+\contentsline {subsection}{\numberline {2.4}Overlay analyses}{16}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Proximity analyses}{16}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Writing vector data}{16}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Reading raster data}{16}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Pixels resizing}{16}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}Moving window analyses}{16}{subsection.2.9}
+\contentsline {subsection}{\numberline {2.10}Map algebra}{16}{subsection.2.10}
+\contentsline {section}{\numberline {3}Geostatistics using Geotrellis}{16}{section.3}
