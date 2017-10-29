@@ -510,8 +510,11 @@ habitatRing.GetPointCount
 habitatPatch1.AddGeometry(habitatRing)
 habitatPatch1.CloseRings()
 habitatPatch1.IsValid
-
- 
+\tch2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
+val habitatRing2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
+for (p<- pointsHP2) habitatRing2.AddPoint(p._1, p._2)
+habitatRing2.GetPointCount
+habitatPatch2.AddGeometry(habitatRing2)
   
 
 
