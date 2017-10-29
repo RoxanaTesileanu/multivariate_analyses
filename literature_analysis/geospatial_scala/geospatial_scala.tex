@@ -504,6 +504,9 @@ for (p <- pointsRoad3) road3.AddPoint(p.\underline{\space}1, p.\underline{\space
 road3.GetPointCount\\
 val gpsTrack1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString) \\
 for (p<- pointsGPSTrack) gpsTrack1.AddPoint((p.\underline{\space}1, p.\underline{\space}2)\\
+val multiLineLines = Array(road1, road2, road3, gpsTrack1)\\
+val multiLineEx = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiLineString) \\
+
 val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)\\
 val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)\\
 val ringPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)\\
