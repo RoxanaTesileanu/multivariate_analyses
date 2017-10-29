@@ -485,7 +485,9 @@ currentPosition.AddPoint(pointsRoad1(0).\underline{\space}1, pointsRoad1(0).\und
 currentPosition\\
 currentPosition.GetX\\
 currentPosition.GetY\\
-val multiPointsHP1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiPoint)\\
+val multiPointHP1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiPoint)\\
+val multiPointPoint = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wbkPoint) \\
+for (p <- pointsHP1) { multiPointHP1.AddGeometry(multiPointPoint.AddPoint(p._1, p._2) } \\
 pointsRoad1\\
 val road1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)\\
 for (p <- pointsRoad1) road1.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
