@@ -107,7 +107,7 @@ feat0 : org.gdal.ogr.Feature = org.gdal.ogr.Feature@3164b9a0\\
 \\
 dataSource.delete() \\
 
-\paragraph {Code snippet 1: explanation}
+\paragraph {Code snippet 1: Explanation}
 \\
 In order to access the vector geodata, we make the OGR drivers available with RegisterAll(). 
 Then, we create a variable called dataSource in which we store the DataSource object. We obtain it by opening the shapefile (or any other OGR file format) with Open(). 
@@ -397,7 +397,7 @@ PROJCS["WGS 84 / Pseudo-Mercator",\\
 \hspace*{2mm} AXIS["Y",NORTH],\\
 \hspace*{2mm} EXTENSION["PROJ4","+proj=merc +a=6378137 +b=6378137 +lat\underline{\space}ts=0.0 +lon\underline{\space}0=0.0 +x\underline{\space}0=0.0 +y...\\
 \\
-\paragraph{Code snippet 2: explanation}
+\paragraph{Code snippet 2: Explanation}
 In code snippet 2 we've created new empty SpatialReference objects, in which we've imported information on the used SRS using more sources: the EPSG code, the PROJ4 string, and the WKT string. There are also more ways of importing. You can inspect them with autocompletion on an empty SpatialReference object. 
 \\
 \\
@@ -463,7 +463,7 @@ val pointsGPSTrack = dataGPSTrack.map(i => (i(0).toDouble, i(1).toDouble))\\
 val pointsStArea = dataStArea.map(i => (i(0).toDouble, i(1).toDouble))\\
 \\
 \\
-\paragraph{ Code snippet 3: explanation}
+\paragraph{ Code snippet 3: Explanation}
 We read files in Scala with scala.io.Source. Because of that we import scala.io.\underline{\space} at the beginning of the parsing code. We then creat a value called source to store the data source into. Then, we create a value called data in which we access the lines of the .csv file. Each row of the .csv is a line. Because the .csv file is comma delimited, we split each line at "," and then we transform each line to an Array of strings. 
 For each group of points we create a value in which we store them (i.e. dataHP1, dataRoad1). This is done by means of applying a filter on the whole data, to get only the points with the ID number we want. 
 We then check the lenght of each group of data calling length on it (which shows how many Arrays (i.e. point coordinates) it contains.       
