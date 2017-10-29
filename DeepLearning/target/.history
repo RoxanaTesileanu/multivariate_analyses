@@ -1,7 +1,5 @@
 reload
 console
-reload
-console
 cosole
 console
 reload
@@ -481,6 +479,8 @@ console
 reload
 console
 exit
+console
+reload
 console
 reload
 console
