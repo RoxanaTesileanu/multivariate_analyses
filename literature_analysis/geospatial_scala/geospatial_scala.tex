@@ -567,7 +567,7 @@ You can download the directory and place it into the src/main/scala directory of
 import ReadPointCoordFromFile.\underline{\space} \\
 import CreateGeoms.\underline{\space}\\
 org.gdal.ogr.ogr.RegisterAll() \\
-val driver = org.gdal.ogr.ogrJNI.GetDriverByName("ESRI Shapefile")\\
+val driver = org.gdal.ogr.ogr.GetDriverByName("ESRI Shapefile")\\
 val ds = driver.CreateDataSource("rdgps")\\
 val googleMapSR = new org.gdal.osr.SpatialReference()\\
 googleMapSR.ImportFromEPSG(3857)\\
