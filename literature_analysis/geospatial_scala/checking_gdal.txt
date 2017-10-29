@@ -1387,4 +1387,27 @@ scala> feat1.SetField("ID", 1)
 scala> res5.CreateFeature(feat1)
 res17: Int = 0
 
+scala> val feat2 = new org.gdal.ogr.Feature(usedDfn)
+feat2: org.gdal.ogr.Feature = org.gdal.ogr.Feature@30886470
+
+scala> feat2.SetGeometry(road2)
+res18: Int = 0
+
+scala> feat2.SetField("Type", "road")
+
+scala> feat2.SetField("ID", 2)
+
+scala> res5.CreateFeature(feat2)
+res21: Int = 0
+
+scala> val feat3 = new org.gdal.ogr.Feature(usedDfn)
+feat3: org.gdal.ogr.Feature = org.gdal.ogr.Feature@30892c40
+
+scala> feat3.SetGeometry(road3)
+res22: Int = 0
+
+scala> feat3.SetField("Type", "road")
+
+scala> feat3.SetField("ID", 3)
+
 
