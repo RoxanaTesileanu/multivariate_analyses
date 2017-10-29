@@ -1439,3 +1439,31 @@ GetFeatureCount   GetMetadataDomainList   GetNextFeature
 scala> res5.GetFeatureCount
 res30: Long = 4
 
+
+scala> ds.
+CommitTransaction   GetLayerCount           SetDescription     
+CopyLayer           GetMetadataDomainList   SetMetadata        
+CreateLayer         GetMetadataItem         SetMetadataItem    
+DeleteLayer         GetMetadata_Dict        SetStyleTable      
+ExecuteSQL          GetMetadata_List        StartTransaction   
+FlushCache          GetName                 SyncToDisk         
+GetDescription      GetRefCount             TestCapability     
+GetDriver           GetStyleTable           delete             
+GetLayer            GetSummaryRefCount      equals             
+GetLayerByIndex     ReleaseResultSet        getName            
+GetLayerByName      RollbackTransaction     hashCode           
+
+scala> ds.FlushCache
+
+scala> ds.GetLayer(0)
+res32: org.gdal.ogr.Layer = org.gdal.ogr.Layer@3010c1e0
+
+scala> res32.GetFeature
+GetFeature   GetFeatureCount   GetFeaturesRead
+
+scala> res32.GetFeatureCount
+res33: Long = 4
+
+OK! THAT'S IT, I'VE MADE FEATURES WHICH I'VE INSERTED INTO THE LAYER AND MODIFIED THE DATA SOURCE!!! NOW I HAVE A USEFUL LAYER WITH 3 ROADS AND 1 GPSTRACK. 
+_________________________________________________________________________________
+
