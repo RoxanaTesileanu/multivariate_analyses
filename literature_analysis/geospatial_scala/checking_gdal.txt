@@ -1258,3 +1258,27 @@ IT LOOKS LIKE i'VE FORGOTTEN TO CALL CloseRing() on the polygon!
 
 ----------------------------------------------------------
 
+
+scala> import com.mai.GeospatialScala._
+import com.mai.GeospatialScala._
+
+scala> import Re
+ReadPointCoordFromFile   Readable   ReflectiveOperationException   Responder
+
+scala> import ReadPointCoordFromFile._
+import ReadPointCoordFromFile._
+
+scala> import CreateGeoms._
+import CreateGeoms._
+
+scala> CreateGeoms.
+currentPosition   habitatPatch3   multiLineLines   road1                  
+geomsForMP        habitatRing1    multiPointHP1    road2                  
+gpsTrack1         habitatRing2    multiPolyPolys   road3                  
+habitatPatch1     habitatRing3    multiPolygonEx   stArea                 
+habitatPatch2     multiLineEx     ringStArea       zippedGeomsPointsHP1   
+
+scala> org.gdal.ogr.ogr.GetDriverByName("ESRI Shapefile")
+res3: org.gdal.ogr.Driver = org.gdal.ogr.Driver@28c4c640
+
+
