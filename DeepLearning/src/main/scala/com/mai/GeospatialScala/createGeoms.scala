@@ -1,5 +1,7 @@
 package com.mai.GeospatialScala
 import ReadPointCoordFromFile._
+
+object CreateGeoms {
 val currentPosition = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPoint)
 currentPosition.AddPoint(pointsRoad1(0)._1, pointsRoad1(0)._2)
 currentPosition.GetX
@@ -42,4 +44,5 @@ stArea.CloseRings()
 val multiPolygonEx = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiPolygon)
 val multiPolyPolys = Array(habitatPatch1, habitatPatch2, habitatPatch3, stArea)
 for (poly <- multiPolyPolys) multiPolygonEx.AddGeometry(poly)
+}
 
