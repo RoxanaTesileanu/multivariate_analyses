@@ -486,48 +486,61 @@ currentPosition\\
 currentPosition.GetX\\
 currentPosition.GetY\\
 val multiPointsHP1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiPoint)\\
-pointsRoad1
-val road1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)
-for (p <- pointsRoad1) road1.AddPoint(p._1, p._2)
-road1.GetGeometryCount
-road1.AddPoint(pointsRoad1(0)._1, pointsRoad1(0)._2)
-road1.GetGeometryCount
-road1.IsEmpty
-road1.GetPointCount
-val road2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)
-for (p <- pointsRoad2) road2.AddPoint(p._1, p._2)
-road2.GetPointCount
-val road3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)
-for (p <- pointsRoad3) road3.AddPoint(p._1, p._2)
-road3.GetPointCount
-val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
-val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
-val ringPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
-val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
-val habitatRing = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
-for (p<- pointsHP1) habitatRing.AddPoint(p._1, p._2)
-habitatRing.GetPointCount
-habitatPatch1.AddGeometry(habitatRing)
-habitatPatch1.CloseRings()
-habitatPatch1.IsValid
-val habitatPatch2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
-val habitatRing2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
-for (p<- pointsHP2) habitatRing2.AddPoint(p._1, p._2)
-habitatRing2.GetPointCount
-habitatPatch2.AddGeometry(habitatRing2)
-habitatPatch2.CloseRings()
-val habitatPatch3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
-val habitatRing3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
-for (p<- pointsHP3) habitatRing3.AddPoint(p._1, p._2)
-habitatRing3.GetPointCount
-habitatPatch3.AddGeometry(habitatRing3)
-habitatPatch3.CloseRings()
-val stArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)
-val ringStArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)
-for (p <- pointsStArea) ringStArea.AddPoint(p._1, p._2)
-stArea.AddGeometry(ringStArea)
-stArea.CloseRings()
-stArea.IsValid
+pointsRoad1\\
+val road1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)\\
+for (p <- pointsRoad1) road1.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
+road1.GetGeometryCount\\
+road1.AddPoint(pointsRoad1(0).\underline{\space}1, pointsRoad1(0).\underline{\space}2)\\
+road1.GetGeometryCount\\
+road1.IsEmpty\\
+road1.GetPointCount\\
+val road2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)\\
+for (p <- pointsRoad2) road2.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
+road2.GetPointCount\\
+val road3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)\\
+for (p <- pointsRoad3) road3.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
+road3.GetPointCount\\
+val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)\\
+val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)\\
+val ringPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)\\
+val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)\\
+val habitatRing = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)\\
+for (p<- pointsHP1) habitatRing.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
+habitatRing.GetPointCount\\
+habitatPatch1.AddGeometry(habitatRing)\\
+habitatPatch1.CloseRings()\\
+habitatPatch1.IsValid\\
+val habitatPatch2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)\\
+val habitatRing2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)\\
+for (p<- pointsHP2) habitatRing2.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
+habitatRing2.GetPointCount\\
+habitatPatch2.AddGeometry(habitatRing2)\\
+habitatPatch2.CloseRings()\\
+val habitatPatch3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)\\
+val habitatRing3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)\\
+for (p<- pointsHP3) habitatRing3.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
+habitatRing3.GetPointCount\\
+habitatPatch3.AddGeometry(habitatRing3)\\
+habitatPatch3.CloseRings()\\
+val stArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)\\
+val ringStArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)\\
+for (p <- pointsStArea) ringStArea.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
+stArea.AddGeometry(ringStArea)\\
+stArea.CloseRings()\\
+stArea.IsValid\\
+\\
+\\
+\paragraph{ Code snippet 4: Explanation}
+In the above code we've created several OGR geometries: 
+\begin {itemize} 
+\item a point called currentPosition,
+\item  a multipoint called multiPointsHP1, 
+\item a series of lines called road1, road2, road3, 
+\item a multiline called roads,
+\item  a series of polygons called habitatPatch1, habitatPatch2, habitatPatch3, stArea, and
+\item  a multipolygon called patches.
+\end{itemize}
+
 
 \subsubsection {Reprojecting OGR geometries and vector layers} 
 
