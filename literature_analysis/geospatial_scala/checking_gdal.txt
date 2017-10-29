@@ -1315,5 +1315,28 @@ scala> val fd1 = new org.gdal.ogr.FieldDefn("Type", OFTString)
 <console>:20: error: not found: value OFTString
        val fd1 = new org.gdal.ogr.FieldDefn("Type", OFTString)
                                                     ^
+---------------- new REPL session ____________________________
+
+scala> val myConst = org.gdal.ogr.ogrConstants.OFTString
+myConst: Int = 4
+
+scala> import com.mai.GeospatialScala._
+import com.mai.GeospatialScala._
+
+scala> Create
+CreateGeoms   CreateVLayer
+
+scala> Create
+CreateGeoms   CreateVLayer
+
+scala> import CreateVLayer._
+import CreateVLayer._
+
+scala> val fd1 = new org.gdal.ogr.FieldDefn("Type", myConst)
+fd1: org.gdal.ogr.FieldDefn = org.gdal.ogr.FieldDefn@307c4bb0
+
+scala> val fd2 = new org.gdal.ogr.FieldDefn("ID", org.gdal.ogr.ogrConstants.OFTInteger)
+fd2: org.gdal.ogr.FieldDefn = org.gdal.ogr.FieldDefn@307c5380
+
 
 
