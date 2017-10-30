@@ -90,7 +90,7 @@ Soil classification: use the classes to stratify the region of interest!
 
 IN GENERAL USE CERTAIN ATTRIBUTES TO STRATIFY A REGION OF INTEREST! (this is how I've got the idea for @bear population size estimation, I've used the bear density as a criterion) 
 
-
+- you obtain REGIONAL MEANS
 
 
 
