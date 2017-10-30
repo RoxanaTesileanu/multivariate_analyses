@@ -80,6 +80,6 @@ Estimates of error by balanced differences are computed as follows:
 
 d_m = 1/2 z_1 - z_2 + z_3 - z_4 + ... + 1/2 z_m
 
-We then move the window along the transect in steps and compute d_m at each new position (moving window analysis). The halves of z_1 and z_m are because you start each new window at the last z of the precedent window. But, I guess we can perform it by using the middle value of the current window as starting point for the next window. 
+We then move the window along the transect in steps and compute d_m at each new position (moving window analysis). The halves of z_1 and z_m are because you start each new window at the last z of the precedent window. But, I guess we can perform it by using the middle value of the current window as starting point for the next window. Anyway, for the above eq. the variance for the transect mean is the sum s^2(balanced differences) = (1/(J(m-2+0.5)))*sum(d^2) (p. 34). J is the number of steps of the window, and (m-2+0.5) is the sum of squares of the coefficients in the eq. on d_m.    
  
     
