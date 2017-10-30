@@ -68,5 +68,6 @@ Spatial aspects:
 - check how the variables behave at least in the directions of the axes of the coordinate system 
 -> express spatial variation 
 - use stratified sampling and see how the within-stratum variance is compared to the total variance.IF THERE IS SPATIAL DEPENDENCE -> WITHIN-STRATUM VARIANCE IS LESS THAN THAT OF A SIMPLE RANDOM SAMPLE FOR THE SAME EFFORT! (see more on p. 33). 
+- use systematic sampling - for a more even cover use two-dimensional grids.
 
     
