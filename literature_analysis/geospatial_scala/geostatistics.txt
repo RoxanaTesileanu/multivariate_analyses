@@ -74,7 +74,8 @@ The problem is that we eliminate randomization, once we chose a starting point. 
 @bear pop. size estimation: find out shapes of the density stata, then randomly peak hunting units within strata. At the end multiply each stratum mean by a weight (the prop. of area from the total area) and see what you get for a mean computed based on these stratum means. 
 
 Alternatives: Yate's method of balanced differences.
-Estimates of error 
+Estimates of error by balanced differences are computed as follows:
+
 
  
     
