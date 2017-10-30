@@ -70,7 +70,11 @@ Spatial aspects:
 - use stratified sampling and see how the within-stratum variance is compared to the total variance.IF THERE IS SPATIAL DEPENDENCE -> WITHIN-STRATUM VARIANCE IS LESS THAN THAT OF A SIMPLE RANDOM SAMPLE FOR THE SAME EFFORT! (see more on p. 33). 
 - use systematic sampling - for a more even cover use two-dimensional grids.
 The problem is that we eliminate randomization, once we chose a starting point. So, the whole discussion on variance and standard error using tables falls out of discussion. An approximation may be obtained by dividing the region into strata and computing the pooled within-stratum variance as if sampling were random within the strata. The result will almost certainly be an overestimate (thus, conservative).
-Alternatives: Yate's method of balanced differences. 
+
+@bear pop. size estimation: find out shapes of the density stata, then randomly peak hunting units within strata. At the end multiply each stratum mean by a weight (the prop. of area from the total area) and see what you get for a mean computed based on these stratum means. 
+
+Alternatives: Yate's method of balanced differences.
+Estimates of error 
 
  
     
