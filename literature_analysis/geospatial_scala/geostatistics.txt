@@ -102,7 +102,8 @@ Chapter 3: PREDICTION AND INTERPOLATION
 - spatial interpolation: measurements on the environment constitute a sample from a continuum that cannot be recorded everywhere. But we would like to have values also in the area in the intervening space: predict in a spatial sense. We also want a map of the spatial distribution of the variables => GEOSTATISTICAL PREDICTION CALLED KRIGING.
 
 !!! NEARLY ALL THE METHODS OF PREDICTION, INCLUDING THE SIMPLER FORMS OF KRIGING, CAN BE SEEN AS WEIGHTED AVERAGES OF DATA !!!
-      
+
+-> such weighted averages look like Andrew's neural networks.      
 
  
   
