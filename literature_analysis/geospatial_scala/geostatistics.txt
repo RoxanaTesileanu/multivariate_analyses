@@ -76,6 +76,10 @@ The problem is that we eliminate randomization, once we chose a starting point. 
 Alternatives: Yate's method of balanced differences.
 Estimates of error by balanced differences are computed as follows:
 - consider sampling on a transect (i.e. systematic sampling in one direction).  
+- the transect is viewed through a small window containing, say, m sampling points with values z_1, z_2, ....., z_m. Then, we compute for the window the differences:
+
+d_m = 1/2 z_1 - z_2 + z_3 - z_4 + ... + 1/2 z_m
+
 
  
     
