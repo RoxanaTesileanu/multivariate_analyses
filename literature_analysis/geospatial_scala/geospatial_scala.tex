@@ -836,7 +836,7 @@ package com.mai.GeospatialScala\\
 import ReadPointCoordFromFile.\underline{\space}\\
 \\
 \\
-object CreateGeoms {\\
+object CreateGeoms \{ \\
 val currentPosition = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPoint)\\
 currentPosition.AddPoint(pointsRoad1(0).\underline{\space}1, pointsRoad1(0).\underline{\space}2)\\
 currentPosition.GetX\\
@@ -881,7 +881,7 @@ stArea.CloseRings()\\
 val multiPolygonEx = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiPolygon)\\
 val multiPolyPolys = Array(habitatPatch1, habitatPatch2, habitatPatch3, stArea)\\
 for (poly <- multiPolyPolys) multiPolygonEx.AddGeometry(poly)\\
-}\\
+\}
 \\
 \\
 \section {Scala source file: createVLayer.scala}
@@ -891,7 +891,7 @@ import ReadPointCoordFromFile.\underline{\space}\\
 import CreateGeoms.\underline{\space}\\
 \\
 \\
-object CreateVLayer {\\
+object CreateVLayer \{ \\
 \\
 \\
 org.gdal.ogr.ogr.RegisterAll()\\
@@ -929,7 +929,7 @@ newLyr.CreateFeature(feat4)\\
 newLyr.GetFeatureCount\\
 ds.FlushCache\\
 
-}\\
+\}\\
 \\
 \\
 \end {document}
