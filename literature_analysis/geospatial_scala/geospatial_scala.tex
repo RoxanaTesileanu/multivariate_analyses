@@ -606,7 +606,10 @@ ds.FlushCache \\
 \paragraph {Code snippet 5: Explanation}
 In the above code snippet, we've created an empty georeferenced layer called lyr. Next, we've created the field templates for two fields (type and ID), and inserted them into the layer stored by the data source. 
 Afterwards, we've created the four features of to be inserted in the layer, namely: feat1, feat2, feat3, feat4 in which we've stored the line geometries previously created (road1, road2, road3, road4, gpsTrack1). 
-For each feature we've set not only the geometry used but also the field attributes, and inserted them into the extracted layer. We've written the changes to disk with FlushCache() called on the data source. For more details see \cite{garrard_geoprocessing_2016}.
+For each feature we've set not only the geometry used but also the field attributes, and inserted them into the extracted layer.
+ We've written the changes to disk with FlushCache() called on the data source.
+You can see now that a new subdirectory appeared in your Scala porject's directory called rdgps which contains the shapefile (a .dbf file, a .prj file, a .shp file and a .shx file).
+ For more details see \cite{garrard_geoprocessing_2016}.
 \\
 \\  
 
