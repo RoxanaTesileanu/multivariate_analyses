@@ -86,6 +86,10 @@ For a two-dimensional grid the window is squared. You carefully assign the coeff
 THIS KIND OF WINDOWS IN ONE AND TWO DIMENSIONS FILTER OUT THE LONG-RANGE FLUCTUATION, JUST AS STRATIFICATION. (because it acts like a local variance so to speak).
 Garrard's moving window analyses really help a lot!
 
+Soil classification: use the classes to stratify the region of interest!
+
+IN GENERAL USE CERTAIN ATTRIBUTES TO STRATIFY A REGION OF INTEREST! (this is how I've got the idea for @bear population size estimation, I've used the bear density as a criterion) 
+
 
 
 
