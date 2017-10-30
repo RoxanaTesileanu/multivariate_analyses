@@ -104,7 +104,7 @@ Chapter 3: PREDICTION AND INTERPOLATION
 !!! NEARLY ALL THE METHODS OF PREDICTION, INCLUDING THE SIMPLER FORMS OF KRIGING, CAN BE SEEN AS WEIGHTED AVERAGES OF DATA !!!
 
 -> such weighted averages look like Andrew's neural networks.
-an estimated value at a target point x_0 is: the sum of all values measured weighted by  gamma(?).         
+an estimated value at a target point x_0 is: the sum of all values measured weighted by lambda.         
 
  
   
