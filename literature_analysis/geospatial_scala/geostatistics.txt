@@ -113,6 +113,10 @@ lambda_i= 1 if x_i included in Vi (its tile) OR ELSE lambda_i = 0.
 - Triangulation: 
 determines the value lambda_1 from the apices of the triangle formed by {x_11, x_12}, {x_21, x_22} and {x_31, x_32}  and those of the target point {x_01, x_02} by linear interpolation. It applies the same procedure to lambda_2 and lambda_3.
 
+@alternative: if you have a target point P1 for which you want to estimate the value for a variable you can use the 3 nearest neighbors P2, P3, and P4 (the 3 neighbors which have the smallest distance to the target point, e.g. the distance between P1 and P2 is given by d= sqrt( (x_2 - x_1)^2 + (y_2 - y_1)^2), i.e. Pythagora. 
+
+
+
 - Natural neighbor interpolation:
     
 
