@@ -93,6 +93,8 @@ IN GENERAL USE CERTAIN ATTRIBUTES TO STRATIFY A REGION OF INTEREST! (this is how
 - you obtain REGIONAL MEAN: if the classification is good, then the poolen within-stratum variance of the region is smaller than the total variance. Classification should improve the precision or efficiency in estimating the regional mean.
 - the mean mu is estimated as sum(w_k*z_meank). the w_k = (area of stratum k)/ (total area). z_meank is the estimated mean for kth stratum.  
 - the estimated variance is: see p. 35.
+
+THE AVERAGE WITHIN-CLASS VARIANCE CAN BE ESTIMATED FROM DATA BY ANOVA. IT CAN ALSO SERVE FOR PREDICTION. see next ch.
       
 
 
