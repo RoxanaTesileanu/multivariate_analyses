@@ -14,3 +14,8 @@
 \BOOKMARK [2][-]{subsection.2.9}{Moving window analyses}{section.2}% 14
 \BOOKMARK [2][-]{subsection.2.10}{Map algebra}{section.2}% 15
 \BOOKMARK [1][-]{section.3}{Geostatistics using Geotrellis}{}% 16
+\BOOKMARK [1][-]{section*.14}{Appendices}{}% 17
+\BOOKMARK [1][-]{Appendix.a.A}{Appendix Point coordinates for code snippet 3}{}% 18
+\BOOKMARK [1][-]{Appendix.a.B}{Appendix Scala source file: readPointCoord.scala}{}% 19
+\BOOKMARK [1][-]{Appendix.a.C}{Appendix Scala source file: createGeoms.scala}{}% 20
+\BOOKMARK [1][-]{Appendix.a.D}{Appendix Scala source file: createVLayer.scala}{}% 21

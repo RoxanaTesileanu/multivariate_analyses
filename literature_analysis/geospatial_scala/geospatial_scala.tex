@@ -797,7 +797,7 @@ The following point coordinates were looked up on Google Maps (WGS84 / Pseudo-Me
 \section {Scala source file: readPointCoord.scala}
 package com.mai.GeospatialScala\\
 import scala.io.\underline{\space}\\
-object ReadPointCoordFromFile{\\
+object ReadPointCoordFromFile \{ 
 \\
 \\
 val source = Source.fromFile("pointcoord.csv")\\
@@ -827,7 +827,7 @@ val pointsHP2 = dataHP2.map(i => (i(0).toDouble, i(1).toDouble))\\
 val pointsHP3 = dataHP3.map(i => (i(0).toDouble, i(1).toDouble)) \\
 val pointsGPSTrack = dataGPSTrack.map(i => (i(0).toDouble, i(1).toDouble))\\
 val pointsStArea = dataStArea.map(i => (i(0).toDouble, i(1).toDouble))\\
-}\\
+\}
 \\
 \\
 
