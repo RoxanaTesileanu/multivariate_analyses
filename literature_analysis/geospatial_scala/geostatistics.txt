@@ -61,7 +61,7 @@ On the notation:
 -x = {x1, x2} is a vector of the two spatial coordiantes
 - Z(x) , bold x, means a random variable Z at place x,
 - z(x) is the actual value of Z at place x.
-- Greek letters for variable notation and their ^ ("hat" versions) for their estimates.
+- Greek letters for parameter notation and their ^ ("hat" versions) for their estimates.
   
    
  
