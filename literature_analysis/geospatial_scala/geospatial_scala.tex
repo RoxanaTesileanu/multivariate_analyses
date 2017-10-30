@@ -796,27 +796,27 @@ The following point coordinates were looked up on Google Maps (WGS84 / Pseudo-Me
 
 \section {Scala source file: readPointCoord.scala}
 package com.mai.GeospatialScala\\
-import scala.io._\\
+import scala.io.\underline{\space}\\
 object ReadPointCoordFromFile{\\
 \\
 \\
 val source = Source.fromFile("pointcoord.csv")\\
-val data = source.getLines.map(_.split(",")).toArray\\
-val dataHP1 = data.filter(_(2) == "1")\\
+val data = source.getLines.map(\underline{\space}.split(",")).toArray\\
+val dataHP1 = data.filter(\underline{\space}(2) == "1")\\
 dataHP1.length\\
-val dataRoad1 = data.filter(_(2) == "2")\\
-val dataRoad2 = data.filter(_(2) == "3")\\
+val dataRoad1 = data.filter(\underline{\space}(2) == "2")\\
+val dataRoad2 = data.filter(\underline{\space}(2) == "3")\\
 dataRoad1.length\\
 dataRoad2.length\\
-val dataRoad3 = data.filter(_(2) == "4")\\
+val dataRoad3 = data.filter(\underline{\space}(2) == "4")\\
 dataRoad3.length\\
-val dataHP2 = data.filter(_(2) == "5")\\
+val dataHP2 = data.filter(\underline{\space}(2) == "5")\\
 dataHP2.length\\
-val dataGPSTrack = data.filter(_(2) == "6")\\
+val dataGPSTrack = data.filter(\underline{\space}(2) == "6")\\
 dataGPSTrack.length\\
-val dataHP3 = data.filter(_(2) == "7")\\
+val dataHP3 = data.filter(\underline{\space}(2) == "7")\\
 dataHP3.length\\
-val dataStArea =  data.filter(_(2) == "8")\\
+val dataStArea =  data.filter(\underline{\space}(2) == "8")\\
 dataStArea.length\\
 val pointsHP1 = dataHP1.map(i => (i(0).toDouble, i(1).toDouble))\\
 pointsHP1.length\\
@@ -833,49 +833,49 @@ val pointsStArea = dataStArea.map(i => (i(0).toDouble, i(1).toDouble))\\
 
 \section {Scala source file: createGeoms.scala}
 package com.mai.GeospatialScala\\
-import ReadPointCoordFromFile._\\
+import ReadPointCoordFromFile.\underline{\space}\\
 \\
 \\
 object CreateGeoms {\\
 val currentPosition = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPoint)\\
-currentPosition.AddPoint(pointsRoad1(0)._1, pointsRoad1(0)._2)\\
+currentPosition.AddPoint(pointsRoad1(0).\underline{\space}1, pointsRoad1(0).\underline{\space}2)\\
 currentPosition.GetX\\
 currentPosition.GetY\\
 val multiPointHP1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiPoint)\\
 val geomsForMP = for (p<- pointsHP1) yield new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPoint)\\
 val zippedGeomsPointsHP1 = geomsForMP.zip(pointsHP1)\\
-for (z <- zippedGeomsPointsHP1)  ( (z._1).AddPoint((z._2)._1, (z._2)._2))\\
-for (z <- zippedGeomsPointsHP1) multiPointHP1.AddGeometry(z._1)\\
+for (z <- zippedGeomsPointsHP1)  ( (z.\underline{\space}1).AddPoint((z.\underline{\space}2).\underline{\space}1, (z.\underline{\space}2).\underline{\space}2))\\
+for (z <- zippedGeomsPointsHP1) multiPointHP1.AddGeometry(z.\underline{\space}1)\\
 val road1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)\\
-for (p <- pointsRoad1) road1.AddPoint(p._1, p._2)\\
-road1.AddPoint(pointsRoad1(0)._1, pointsRoad1(0)._2)\\
+for (p <- pointsRoad1) road1.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
+road1.AddPoint(pointsRoad1(0).\underline{\space}1, pointsRoad1(0).\underline{\space}2)\\
 val road2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)\\
-for (p <- pointsRoad2) road2.AddPoint(p._1, p._2)\\
+for (p <- pointsRoad2) road2.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
 val road3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)\\
-for (p <- pointsRoad3) road3.AddPoint(p._1, p._2)\\
+for (p <- pointsRoad3) road3.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
 val gpsTrack1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLineString)\\
-for (p<- pointsGPSTrack) gpsTrack1.AddPoint(p._1, p._2)\\
+for (p<- pointsGPSTrack) gpsTrack1.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
 val multiLineLines = Array(road1, road2, road3, gpsTrack1)\\
 val multiLineEx = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiLineString)\\
 for (l <- multiLineLines) multiLineEx.AddGeometry(l)\\
 val habitatPatch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)\\
 val habitatRing1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)\\
-for (p<- pointsHP1) habitatRing1.AddPoint(p._1, p._2)\\
+for (p<- pointsHP1) habitatRing1.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
 habitatPatch1.AddGeometry(habitatRing1)\\
 habitatPatch1.CloseRings()\\
 val habitatPatch2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)\\
 val habitatRing2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)\\
-for (p<- pointsHP2) habitatRing2.AddPoint(p._1, p._2)\\
+for (p<- pointsHP2) habitatRing2.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
 habitatPatch2.AddGeometry(habitatRing2)\\
 habitatPatch2.CloseRings()\\
 val habitatPatch3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)\\
 val habitatRing3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)\\
-for (p<- pointsHP3) habitatRing3.AddPoint(p._1, p._2)\\
+for (p<- pointsHP3) habitatRing3.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
 habitatPatch3.AddGeometry(habitatRing3)\\
 habitatPatch3.CloseRings()\\
 val stArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbPolygon)\\
 val ringStArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbLinearRing)\\
-for (p <- pointsStArea) ringStArea.AddPoint(p._1, p._2)\\
+for (p <- pointsStArea) ringStArea.AddPoint(p.\underline{\space}1, p.\underline{\space}2)\\
 stArea.AddGeometry(ringStArea)\\
 stArea.CloseRings()\\
 val multiPolygonEx = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.wkbMultiPolygon)\\
@@ -887,8 +887,8 @@ for (poly <- multiPolyPolys) multiPolygonEx.AddGeometry(poly)\\
 \section {Scala source file: createVLayer.scala}
 package com.mai.GeospatialScala\\
 
-import ReadPointCoordFromFile._\\
-import CreateGeoms._\\
+import ReadPointCoordFromFile.\underline{\space}\\
+import CreateGeoms.\underline{\space}\\
 \\
 \\
 object CreateVLayer {\\
