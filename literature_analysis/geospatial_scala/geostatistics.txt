@@ -49,6 +49,19 @@ _______________________________________________
 
 Chapter 2: BASIC STATISTICS
 
+- basic quantitative methods for obtaining and summarizing information on the environment: the choice of variables and how to sample the environment.
 
+- how these records can be used for estimation, prediction and mapping.
+- in general  numerical variables and categorical variables (called "indicators" in geostat.)
+
+ANOTHER FEATURE OF ENVIRONMENTAL DATA IS THAT THEY HAVE SPATIAL AND TEMPORAL COMPONENTS AS WELL AS RECORDED VALUES !
+-> we distinguish MEASUREMENT, LOCATION and TIME. 
+
+On the notation:
+-x = {x1, x2} is a vector of the two spatial coordiantes
+- Z(x) , bold x, means a random variable Z at place x,
+- z(x) is the actual value of Z at place x.
+ 
+   
  
     
