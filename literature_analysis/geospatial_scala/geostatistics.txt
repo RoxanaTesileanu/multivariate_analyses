@@ -71,11 +71,11 @@ Spatial aspects:
 - use systematic sampling - for a more even cover use two-dimensional grids.
 The problem is that we eliminate randomization, once we chose a starting point. So, the whole discussion on variance and standard error using tables falls out of discussion. An approximation may be obtained by dividing the region into strata and computing the pooled within-stratum variance as if sampling were random within the strata. The result will almost certainly be an overestimate (thus, conservative).
 
-@bear pop. size estimation: find out shapes of the density stata, then randomly peak hunting units within strata. At the end multiply each stratum mean by a weight (the prop. of area from the total area) and see what you get for a mean computed based on these stratum means. 
+@bear pop. size estimation: find out shapes of the density stata, then randomly peak hunting units within strata. At the end multiply each stratum mean by a weight (the prop. of area from the total area) and see what you get for a mean computed based on these stratum means. You should actually use sampling units of equal sizes not hunting units. so,.. 
 
 Alternatives: Yate's method of balanced differences.
 Estimates of error by balanced differences are computed as follows:
-- consider sampling on a transect (i.e. systematic sampling)
+- consider sampling on a transect (i.e. systematic sampling in one direction).  
 
  
     
