@@ -84,6 +84,9 @@ We then move the window along the transect in steps and compute d_m at each new 
 
 For a two-dimensional grid the window is squared. You carefully assign the coeff. of each cell and apply the s^2(balanced differences) eq. 
 THIS KIND OF WINDOWS IN ONE AND TWO DIMENSIONS FILTER OUT THE LONG-RANGE FLUCTUATION, JUST AS STRATIFICATION. (because it acts like a local variance so to speak).
+Garrard's moving window analyses really help a lot!
+
+
 
  
   
