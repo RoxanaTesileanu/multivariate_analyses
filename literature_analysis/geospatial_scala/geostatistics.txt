@@ -64,5 +64,7 @@ On the notation:
 - Greek letters for parameter notation and their ^ ("hat" versions) for their estimates.
   
    
- 
+Spatial aspects: 
+- check how the variables behave at least in the directions of the axes of the coordinate system 
+-> express spatial variation 
     
