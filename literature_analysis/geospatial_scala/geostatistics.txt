@@ -110,7 +110,8 @@ How are these weights assigned?
 - Thiessen polygons (Voronoi polygons, Dirichlet tessellation): 
 lambda_i= 1 if x_i included in Vi (its tile) OR ELSE lambda_i = 0.
 
--  
+- Triangulation: 
+determines the value lambda_1 from the apices of the triangle formed by {x_11, x_12}, {x_21, x_22} and {x_31, x_32} by linear interpolation.   
 
 
  
