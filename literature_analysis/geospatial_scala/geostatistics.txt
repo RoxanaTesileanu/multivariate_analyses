@@ -75,7 +75,7 @@ The problem is that we eliminate randomization, once we chose a starting point. 
 
 Alternatives: Yate's method of balanced differences.
 Estimates of error by balanced differences are computed as follows:
-
+- consider sampling on a transect (i.e. systematic sampling)
 
  
     
