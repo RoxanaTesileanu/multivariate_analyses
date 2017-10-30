@@ -106,6 +106,9 @@ Chapter 3: PREDICTION AND INTERPOLATION
 -> such weighted averages look like Andrew's neural networks.
 an estimated value at a target point x_0 is: the sum of all values measured weighted by lambda (each value has its own weight): z(x_0) = sum(lambda_i*z(x_i)).
           
+How are these weights assigned?
+- Thiessen polygons (Voronoi polygons, Dirichlet tessellation):
+
 
  
   
