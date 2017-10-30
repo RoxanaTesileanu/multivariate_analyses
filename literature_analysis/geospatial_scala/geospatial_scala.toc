@@ -15,7 +15,7 @@
 \contentsline {paragraph}{ Code snippet 4: Explanation}{17}{section*.9}
 \contentsline {paragraph}{Code snippet 5: Creating a georeferenced vector layer}{18}{section*.10}
 \contentsline {paragraph}{Code snippet 5: Explanation}{19}{section*.11}
-\contentsline {subsubsection}{\numberline {2.3.3}Reprojecting OGR geometries and vector layers}{20}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3}Reprojecting OGR geometries and vector layers}{19}{subsubsection.2.3.3}
 \contentsline {subsection}{\numberline {2.4}Overlay analyses}{20}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Proximity analyses}{20}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}Writing vector data}{20}{subsection.2.6}
