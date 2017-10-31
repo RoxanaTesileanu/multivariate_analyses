@@ -171,7 +171,7 @@ SHORT DIGRESSION FROM B. D. RIPLEY ("Spatial Statistics" 1981)
 - clustering vs. inhibiting factors
 - patterns can also exhibit preferred directions (anisotropy) vs. isotropy
 - data should be subdivided in sufficiently small units before invoking homogeneity or isotropy.
-- a stoichastic process is stationary if its distribution is unchanged the origin of the index set is translated.     
+- a stoichastic process is stationary under translation if its distribution is unchanged the origin of the index set is translated.     
      
  
 
