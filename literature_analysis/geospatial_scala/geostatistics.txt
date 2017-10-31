@@ -185,7 +185,7 @@ Ch. 3 : Bivariate Description
 
 Ch.4 : Spatial Description
 
-        
+One of the things that distinguishes earth science data sets from most others is that the data belong to some location in space.         
 
  
   
