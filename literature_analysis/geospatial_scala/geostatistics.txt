@@ -189,6 +189,8 @@ One of the things that distinguishes earth science data sets from most others is
 - none of the univariate and bivariate tools from ch 2 and ch 3 capture spatial characteristics of the data set (location of extreme values, overall trend, degree of continuity).
 - look at spatial characteristics and incorpotate them into the variables descriptions!
 
+Data postings: 
+A map on which each data location is plotted along with its corresponding data value. A data posting gives clues how the data were collected. Blank areas on the map may have been inaccessible, heavily sampled areas indicate some initial interest. 
           
 
  
