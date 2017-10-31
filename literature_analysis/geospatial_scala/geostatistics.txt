@@ -191,8 +191,10 @@ One of the things that distinguishes earth science data sets from most others is
 
 Data postings: 
 A map on which each data location is plotted along with its corresponding data value. A data posting gives clues how the data were collected. Blank areas on the map may have been inaccessible, heavily sampled areas indicate some initial interest. 
-          
 
+Contour Maps:
+The overall trends in the data values can be revealed by a contour map. Contouring by hand is an excellent way to become fami1iar with a data set.           
+- it is performed with an interpolation algorithm 
  
   
     
