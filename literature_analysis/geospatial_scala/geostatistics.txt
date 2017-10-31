@@ -122,6 +122,9 @@ If we add these distances to a total, we can find out the weight each neighbor r
 
 - Natural neighbor interpolation:
     
+---------------------------------------------------------------
+
+"Applied Geostatistics" Edward H. Isaaks, R. Mohan Srivastava
 
 
  
