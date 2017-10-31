@@ -416,7 +416,7 @@ Finally, I will insert the features into the new layer.
 
 Suppose you have looked up your point coordinates on Google Maps or Google Earth and know what features you will have and what geometries you should use for your project. 
 You should now create a .csv file (from converting either an EXCEL or a LIBRE OFFICE CALC file with "Save As" and choosing .csv format), in which you have three columns: the first one is the longitute (E/W), the second one is the latitude (N/S), and the third one represents the ID number of your feaures (from 1 to the last feature).
- I've created such a file for this code snippet. You can inspect it at \href{https://github.com/RoxanaTesileanu/multivariate_analyses/blob/master/DeepLearning/pointcoord.csv}{https://github.com/RoxanaTesileanu/multivariate\underline{\space}analyses/blob\\/master/DeepLearning/pointcoord.csv}. Now, according to the point coordinates in the pointcoord.csv file, we're going to create 8 features for our project:
+ I've created such a file with point coordinates from Google Maps \cite{noauthor_google_nodate}which we will use for this code snippet. You can inspect it at \href{https://github.com/RoxanaTesileanu/multivariate_analyses/blob/master/DeepLearning/pointcoord.csv}{https://github.com/RoxanaTesileanu/multivariate\underline{\space}analyses/blob\\/master/DeepLearning/pointcoord.csv}. Now, according to the point coordinates in the pointcoord.csv file, we're going to create 8 features for our project:
 \begin{itemize} 
 \item the first group of points (ID 1) is for the first polygon which will be the representation of the first habitat patch (habitatPatch1) and is the Tampa Hill in Brasov,
 \item the second group of points (ID 2) is for the first road which will be the representation of a road in Racadau Area in Brasov,
@@ -430,7 +430,7 @@ You should now create a .csv file (from converting either an EXCEL or a LIBRE OF
 Of course, these features are created for educational purposes. I haven't included as many points as necessary for a detailed representation of the items. Also, if you include more features (additional roads, more GPS-tracks, more habitat patches, etc.) then the results should be useful for further research purposes. The aim of this tutorial is to show how you can construct your features from point coordinates and how to perform spatial analyses on them whatever number of features you consider appropriate for your own purposes and whatever number of point coordinates you use for their representation.      
 \\
 \\
-After this general presentation of the data we're going to use, we can continue and read the points into Scala (parse them):
+After this general presentation of the data we're going to use, we can continue and read the points into Scala \cite{epfl_scala_2017} (parse them):
 \\
 \\
 import scala.io.\underline{\space} \\

@@ -48,6 +48,17 @@ R.~Tesileanu, ``Using {Linux} as a development platform for {Scala} projects,''
 ``{GDAL} {Java} {API}.'' [Online]. Available: \url{http://gdal.org/java/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{noauthor_google_nodate}
+\BIBentryALTinterwordspacing
+``Google {Maps}.'' [Online]. Available: \url{https://maps.google.com/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{epfl_scala_2017}
+\BIBentryALTinterwordspacing
+EPFL, ``Scala {Standard} {Library} 2.12.0,'' 2017. [Online]. Available:
+  \url{http://www.scala-lang.org/api/2.12.0/scala/index.html}
+\BIBentrySTDinterwordspacing
+
 \bibitem{swartz_learning_2015}
 J.~Swartz, \emph{Learning {Scala}}.\hskip 1em plus 0.5em minus 0.4em\relax
   Sebastopol: O'Reilly, 2015.
