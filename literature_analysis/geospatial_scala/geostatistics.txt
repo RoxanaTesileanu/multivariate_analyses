@@ -132,6 +132,10 @@ If we add these distances to a total, we can find out the weight each neighbor r
 		- basic statistical concepts: univariate description, bivariate description (ch 2, and ch 3 in Isaaks and Srivastava).
 
 
+Ch.1 Introduction 
+
+The hallmark of a good geostatistical study is customization of the approach to the problem at hand (also Garrard 2016). 
+
 
  
 
