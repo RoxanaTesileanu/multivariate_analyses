@@ -136,6 +136,8 @@ Ch.1 Introduction
 
 The hallmark of a good geostatistical study is customization of the approach to the problem at hand (also Garrard 2016). 
 
+The methods discussed are generally applicable to any data set in which the values are spatially continuous.
+
 
  
 
