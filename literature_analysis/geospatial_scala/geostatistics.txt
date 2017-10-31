@@ -170,7 +170,8 @@ SHORT DIGRESSION FROM B. D. RIPLEY ("Spatial Statistics" 1981)
 - patterns can be heterogeneous vs. homogeneous
 - clustering vs. inhibiting factors
 - patterns can also exhibit preferred directions (anisotropy) vs. isotropy
-- data should be subdivided in sufficiently small units before invoking homogeneity or isotropy.     
+- data should be subdivided in sufficiently small units before invoking homogeneity or isotropy.
+- a stoichastic process is stationary if its distribution is the origin of the index set is translated.     
      
  
 
