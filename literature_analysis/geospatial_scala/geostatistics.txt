@@ -126,6 +126,11 @@ If we add these distances to a total, we can find out the weight each neighbor r
 
 "Applied Geostatistics" Edward H. Isaaks, R. Mohan Srivastava
 
+- ideas for an applied mathematics tutorial needed in environmental sciences:
+		- basic calculus: derivatives and integrals
+		- linear algebra: vectors and matrices
+
+ 
 
  
   
