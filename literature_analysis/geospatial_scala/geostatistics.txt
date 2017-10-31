@@ -166,7 +166,11 @@ ch. 2 - Univariate description
 - very good references at the end of the chapter. and a good refresher of univariate summary statistics. 
 
 SHORT DIGRESSION FROM B. D. RIPLEY ("Spatial Statistics" 1981)
--  
+- no replication in spatial statistics
+- patterns can be heterogeneous vs. homogeneous
+- clustering vs. inhibiting factors
+- patterns can also exhibit preferred directions (anisotropy) vs. isotropy
+    
      
  
 
