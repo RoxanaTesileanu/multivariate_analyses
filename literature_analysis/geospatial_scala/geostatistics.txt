@@ -155,7 +155,14 @@ Using the 470 samples in the sample data set
 - estimation of a distribution of block averages
 - the assessment of the uncertainty of our various estimates
 
-    
+Questions: 
+- Do we want an estimate over a large area or estimates for specific local areas?
+- Are we interested in some average value or in the complete distribution of values?
+- Do we want to refer to some area of the same size as our sample data? Or to a different sized area?
+
+ch. 2 - Univariate description
+
+     
  
 
  
