@@ -165,6 +165,8 @@ ch. 2 - Univariate description
 - it is assumed the material is already familiar to the reader.
 - very good references at the end of the chapter. and a good refresher of univariate summary statistics. 
 
+SHORT DIGRESSION FROM B. D. RIPLEY ("Spatial Statistics" 1981)
+-  
      
  
 
