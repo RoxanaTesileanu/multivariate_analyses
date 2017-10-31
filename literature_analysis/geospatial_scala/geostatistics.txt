@@ -140,7 +140,8 @@ The methods discussed are generally applicable to any data set in which the valu
 
 The used example data set uses the continuous variables: V and U (e.g. thickness of a geologic horizon or the conc. of some pollutant, rainfall measurememnts, or diameters of trees) . The discrete variable T can be a classification (binary one) (e.g. two different colors, two different species, two different rock types, presence or absence of somehting).
 
-The example data set consists of V, U and T measurements at each of 78,000 points on a 1x1 m^2 grid.   
+The example data set consists of V, U and T measurements at each of 78,000 points on a 1x1 m^2 grid. From this dataset a subset of 470 sample points has been chosen to represent the typical data set. 
+   
  
 
  
