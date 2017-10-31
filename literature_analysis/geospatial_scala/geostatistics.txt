@@ -173,7 +173,11 @@ SHORT DIGRESSION FROM B. D. RIPLEY ("Spatial Statistics" 1981)
 - data should be subdivided in sufficiently small units before invoking homogeneity or isotropy.
 - a stoichastic process is stationary under translation if its distribution is unchanged the origin of the index set is translated.     
 (in this case we can consider processes that are stationaty under rotations about the origin - isotropic processes). Homogeneous and isotropic processes are stationary under rigid motions.       
-- covariances and spectra: covariance C and correlation R between Z(s) and Z(t) for two points in T are defined by:  
+- covariances and spectra: covariance C and correlation R between Z(s) and Z(t) for two points in T are defined by: 
+	C(s,t) = E[{Z(s) - E(Z(s))} {Z(t) - E(Z(t))}]
+	R(s,t) = C(s,t) / sqrt{C(s,s)C(t,t)}
+HOMOGENEITY IMPLIES THAT C AND R DEPEND ONLY ON d(s,t) WITH ISOTROPY!
+  
 
  
   
