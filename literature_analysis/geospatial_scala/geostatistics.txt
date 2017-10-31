@@ -162,6 +162,8 @@ Questions:
 
 ch. 2 - Univariate description
 
+- it is assumed the material is already familiar to the reader.
+
      
  
 
