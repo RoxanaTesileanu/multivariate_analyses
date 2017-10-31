@@ -25,15 +25,22 @@
 C.~Garrard, \emph{Geoprocessing with {Python}}.\hskip 1em plus 0.5em minus
   0.4em\relax Shelter Island: Manning Publications Co., 2016.
 
+\bibitem{osgeo_gdal_nodate}
+\BIBentryALTinterwordspacing
+OSGeo, ``{GDAL} {Java} {API}.'' [Online]. Available:
+  \url{http://gdal.org/java/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{safavi_installing_2015}
 \BIBentryALTinterwordspacing
 S.~Safavi, ``Installing {GDAL}/{OGR} on {Ubuntu},'' 2015. [Online]. Available:
   \url{http://www.sarasafavi.com}
 \BIBentrySTDinterwordspacing
 
-\bibitem{noauthor_ubuntugis_nodate}
+\bibitem{canonical_ubuntugis_nodate}
 \BIBentryALTinterwordspacing
-``{UbuntuGIS}.'' [Online]. Available: \url{https://wiki.ubuntu.com/UbuntuGIS}
+Canonical, ``{UbuntuGIS}.'' [Online]. Available:
+  \url{https://wiki.ubuntu.com/UbuntuGIS}
 \BIBentrySTDinterwordspacing
 
 \bibitem{tesileanu_using_2017}
@@ -41,11 +48,6 @@ S.~Safavi, ``Installing {GDAL}/{OGR} on {Ubuntu},'' 2015. [Online]. Available:
 R.~Tesileanu, ``Using {Linux} as a development platform for {Scala} projects,''
   2017. [Online]. Available:
   \url{https://www.researchgate.net/publication/319260791_Using_Linux_as_a_development_platform_for_Scala_projects}
-\BIBentrySTDinterwordspacing
-
-\bibitem{noauthor_gdal_nodate}
-\BIBentryALTinterwordspacing
-``{GDAL} {Java} {API}.'' [Online]. Available: \url{http://gdal.org/java/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{google_google_2017}
