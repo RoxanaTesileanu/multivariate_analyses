@@ -196,5 +196,5 @@ Contour Maps:
 The overall trends in the data values can be revealed by a contour map. Contouring by hand is an excellent way to become fami1iar with a data set.           
 - it is performed with an interpolation algorithm 
  
-  
+The closeness of the contour lines in the southeastern corner indicates a steep gradient and draws our attention to the fact that the highest data value (145 ppm) is very close to the lowest data value (0 ppm)  
     
