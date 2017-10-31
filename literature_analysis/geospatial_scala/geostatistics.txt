@@ -151,7 +151,11 @@ Using the 470 samples in the sample data set
 - use of the available sampling to check the performance of an estimation methodology
 - use of sample values of one variable to improve the estimation of another variable
 - estimation of a distribution of values over a large area
--    
+- estimation of a distribution of values ober small areas
+- estimation of a distribution of block averages
+- the assessment of the uncertainty of our various estimates
+
+    
  
 
  
