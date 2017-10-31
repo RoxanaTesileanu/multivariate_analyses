@@ -141,7 +141,17 @@ The methods discussed are generally applicable to any data set in which the valu
 The used example data set uses the continuous variables: V and U (e.g. thickness of a geologic horizon or the conc. of some pollutant, rainfall measurememnts, or diameters of trees) . The discrete variable T can be a classification (binary one) (e.g. two different colors, two different species, two different rock types, presence or absence of somehting).
 
 The example data set consists of V, U and T measurements at each of 78,000 points on a 1x1 m^2 grid. From this dataset a subset of 470 sample points has been chosen to represent the typical data set. 
-   
+
+Goals of the example case studies:
+Using the 470 samples in the sample data set
+- description of the important features of the data
+- estiamtion of an average value over a large area
+- estimation of an unknown value at a particular location
+- estimation of an average value over small areas
+- use of the available sampling to check the performance of an estimation methodology
+- use of sample values of one variable to improve the estimation of another variable
+- estimation of a distribution of values over a large area
+-    
  
 
  
