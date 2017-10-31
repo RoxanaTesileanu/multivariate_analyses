@@ -177,7 +177,7 @@ SHORT DIGRESSION FROM B. D. RIPLEY ("Spatial Statistics" 1981)
 	C(s,t) = E[{Z(s) - E(Z(s))} {Z(t) - E(Z(t))}]
 	R(s,t) = C(s,t) / sqrt{C(s,s)C(t,t)}
 HOMOGENEITY IMPLIES THAT C AND R DEPEND ONLY ON d(s,t) WITH ISOTROPY!
-IN GENERAL THE DISTRIBUTION OF A STOCHASTIC PROCESS IS NOT COMPLETELY DETERMINED BY THE MEAN m(s) = E[Z(s)] and covariance C(s,t)!!! This is the case for an important class of processes, the GAUSSIAN PROCESSES defined by the property that all finite collections {Z(t1), ..., Z(t_n)} are joint Normal. It is important to know which covariance functions can occur, for given m and C so that we can construct a Gaussian process via the Daniell-Kolmogorov theorem with that mean and variance.      
+IN GENERAL THE DISTRIBUTION OF A STOCHASTIC PROCESS IS NOT COMPLETELY DETERMINED BY THE MEAN m(s) = E[Z(s)] and covariance C(s,t)!!! This is the case for an important class of processes, the GAUSSIAN PROCESSES defined by the property that all finite collections {Z(t1), ..., Z(t_n)} are joint Normal. It is important to know which covariance functions can occur, for given m and C so that we can construct a Gaussian process via the Daniell-Kolmogorov theorem with that mean and variance. Good to know there are other types of stochastic processes not just the Gaussian: Poisson, Gibbs, Markow processes.       
 
  
   
