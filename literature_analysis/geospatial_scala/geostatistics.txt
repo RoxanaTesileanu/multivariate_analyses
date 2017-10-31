@@ -138,7 +138,7 @@ The hallmark of a good geostatistical study is customization of the approach to 
 
 The methods discussed are generally applicable to any data set in which the values are spatially continuous.
 
-The used example data set uses the continuous variables: V and U (e.g. thickness of a geologic horizon or the conc. of some pollutant, rainfall measurememnts, or diameters of trees) .
+The used example data set uses the continuous variables: V and U (e.g. thickness of a geologic horizon or the conc. of some pollutant, rainfall measurememnts, or diameters of trees) . The discrete variable T can be a classification (binary one) (e.g. two different colors, two different species, two different rock types, presence or absence of somehting).  
  
 
  
