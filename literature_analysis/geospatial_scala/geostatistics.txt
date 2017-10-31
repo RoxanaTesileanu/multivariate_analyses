@@ -129,6 +129,9 @@ If we add these distances to a total, we can find out the weight each neighbor r
 - ideas for an applied mathematics tutorial needed in environmental sciences:
 		- basic calculus: derivatives and integrals
 		- linear algebra: vectors and matrices
+		- basic statistical concepts: univariate description, bivariate description (ch 2, and ch 3 in Isaaks and Srivastava).
+
+
 
  
 
