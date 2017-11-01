@@ -12,3 +12,4 @@ For me the most important moment in this introductive phase was when I've realiz
 We compute covariances for such pairs, not for the whole sample as in classical statistics. We don't have weigts for entire variables, we have weight for individual points carring those values of the variables studied. 
 It is I believe very important the moment when you understand this. Spatial models treat individual points in ways similar to treating individual variables in classical statistics. 
 But we must be aware these are individual points we are talking about, and we very much use distance measures for objects (like the Euclidean distance) like in the multivariate object-based classical statistics.
+That being said I think I can use the same matrix calculations as in classical object-based multivariate analyses.
