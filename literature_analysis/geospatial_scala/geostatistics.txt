@@ -294,7 +294,9 @@ The unidirectional flow of time sometimes forces one to distinguish between spat
 Description, Indication and Estimation: as disciplines mature, their statistical analyses advance through the 3 stages of development:
 - description -> goal: summarize data (perhaps suggest models)
 - indication -> goad: estimates of model parameters are obtained from the data, but no measures of precision are available
-- estimation -> goal : enough distribution theory is at hand to allow approximate inference on the model parameters.
+- estimation -> goal : enough distribution theory is at hand to allow approximate inference on the model parameters. The bias and variance of an estimator can be estimates. Statistics for spatial analysis is still a young discipline, showing sings of maturity.
+
+ 
 
       
               
