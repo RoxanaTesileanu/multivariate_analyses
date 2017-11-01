@@ -359,7 +359,9 @@ Consider the ordinary kriging model is:
 
 Z(s) = mu + epsilon(s)
 
-- this is more or less the distribution of z(s_i) values based on the constant mean mu and the random error with spatial dependence.  
+- this is more or less the distribution of z(s_i) values based on the constant mean mu (i.e. no trend included) and the random error with spatial dependence.   
+
+- the random process is assumed intrinsically stationary. 
 
 
   
