@@ -367,7 +367,8 @@ Z(s) = mu + epsilon(s)
  z-hat(s_0) = sum(lambda_i * z(s_i)), 
 or in other words, the sum of the weighted neighboring values.
 - lambda_i is an unknown weight for the measured value z(s_i) at the ith location s_i
--  
+- in ordinary kriging the weight lambda_i depends on the semivariogram, the distance to the prediction location and the spatial relationships among the measured values around the prediction location.
+  
 
   
 
