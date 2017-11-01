@@ -371,6 +371,8 @@ or in other words, the sum of the weighted neighboring values.
 
 OK, back to Cressie. 
 
+Suppose an unknown obs. Z(n+1) is to be predicted from data Z equiv. (Z(1),...,Z(n)), where it is assumed Z(1),..., Z(n), Z(n+1) are jointly Gaussian, identically distrib. with unknown mean mu adn known variance sigma_0^2, and are independent. 
+This is the independent case where we try to minimize the error (in form of residuals) and where we assume the p_0(Z; n+1) = Z-mean. 
   
 
   
