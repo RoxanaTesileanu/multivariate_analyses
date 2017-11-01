@@ -117,7 +117,7 @@ determines the value lambda_1 from the apices of the triangle formed by {x_11, x
  The nearest neighbors are represented by the 3 neighbors which have the smallest distance to the target point, where the distance between P1 and P2 is given by d= sqrt( (x_2 - x_1)^2 + (y_2 - y_1)^2), i.e. Pythagora or the magnitude from M. Lewis videos, and the same for P1 and P3, and P1 and P4. 
 If we add these distances to a total, we can find out the weight each neighbor receives in estimating the value for P1 by subtracting the result of dividing each distance to the total distance from 1, i.e. (1-(d_P1P2/d_total)).
  Also the local variance can give us a measure of how sure we are about the prediction. I have to test this idea on a DEM to see if I have a grid of elevation values and compute the nearest neighbors how well does it fit to the data.   
-
+THIS IS THE BASIS FOR THE INVERSE DISTANCE WEIGHTING (IDW) (Johnston et al. 2003).
 
 
 - Natural neighbor interpolation:
