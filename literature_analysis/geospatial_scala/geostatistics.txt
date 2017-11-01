@@ -321,6 +321,15 @@ Consider two locations: Z(i) and Z(j). These two observations come from a popula
 Because of the autocorrelation the covariance between two locations is:
 
 cov( Z(i), Z(j) ) = sigma^2_0 * rho^(|i-j|)
+where i,j = 1,....,n
+0<rho<1
+
+=> the covariance between two points is the variance of the pop. multiplied by the correlation coeff. at a power depending of how many indices far apart the two points are located.
+(I am not yet sure I got it right, though....)
+
+Such a correlation function like the one above results from a first-order autoregressive process:
+
+Z(i) = rho*Z(i-1) + epsilon(i), 
   
          
   
