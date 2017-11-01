@@ -210,5 +210,6 @@ Found an newer reference by Tomislav Hengl "A Practical Guide to Geostatistical 
 
 "Statistics for Spatial Data" Noel A.C. Cressie (1993)
 
+- this really seams to be the ultimative book.
 
     
