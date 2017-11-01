@@ -338,7 +338,8 @@ He expresses the usual formula of variance of the mean using the cov( Z(i), Z(j)
 
 var(Z_mean) = sum(sigma^2_0 * rho^(|i-j|)) / n^2.
 
-=> the variance of the mean is the sum of products between the pop. variance and the correlation coeff. for each pair of successive points, over n*n.       
+=> the variance of the mean is the sum of products between the pop. variance and the correlation coeff. for each pair of successive points, over n*n. NOTE: n*n not simply n! 
+      
          
   
 
