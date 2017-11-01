@@ -288,7 +288,7 @@ Cressie defines also the multivariate time-series process separate from the spat
 The unidirectional flow of time sometimes forces one to distinguish between spatial and time processes in R 1-dim.
 
 !!! A TIME-SPACE PROCESS IS DENOTED AS:
-{Z(s,t) : where s belongs to D(t), t belongs to T}.
+{Z(s,t) : where s belongs to D(t), t belongs to T}, where each of Z, D and T is possibly random. 
 
 
 
