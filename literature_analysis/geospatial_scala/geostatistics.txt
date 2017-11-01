@@ -256,4 +256,9 @@ Scope of the Crassie 1993: data analysis and statistical modeling of spatial dat
 
 Also the distance between two known locations is the Euclidean distance, i.e. d=sqrt(sum((s_i - u_i)^2)), if the two points s and u are expressed as vectors. (which is the magnitude from M. Lewis videos).
 
-Also clustering (which regions are considered close on a map according to some metric?) is considered through multidimensional scaling (important spatial contiguities - unmittelbare Nachbarschaft, might be violated) .       
+Also clustering (which regions are considered close on a map according to some metric?) is considered through multidimensional scaling (important spatial contiguities - unmittelbare Nachbarschaft, might be violated) . 
+
+SPATIAL ANALYSIS:
+- GEOSTATISTICS -> DEALS WITH SPATIAL PROCESSES INDEXED OVER CONTINUOUS SPACE
+- SPATIAL MODELS ON LATTICES ->
+- SPATIAL POINT PATTERN ANALYSIS ->          
