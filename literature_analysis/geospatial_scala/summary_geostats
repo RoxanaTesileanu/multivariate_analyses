@@ -6,4 +6,7 @@ Affiliation: INCDS
 After reading through introductive chapters of several books, I can now state that geostatistics is a departure from classical statistics not just because of the sentence that "it takes spatial autocorrelation of observations into account when predicting values for new points".
 It is more than that in it. Mabye the most important fact is that geospatial analysis does't treat variables as we are used to in classical stats but uses individual observations (i.e. individual points) and investigates the relationships between them from a spatial perspective.
 It is not just adding space as a variable in the vector of recorded variables of each individual observation/point. The highlight of individual points is actually like in object-based classical multivariate statistics.  
-It is treating space as an autocorrelated variable across a series of individual points, and letting all the other variables be "classical". . 
+It is treating space as an autocorrelated variable across a series of individual points, and letting all the other variables be "classical". 
+
+For me the most important moment in this introductive phase was when I've realized that we don't talk about classical samples of observations, where we concentrate on variables, but instead in geostatistics we concentrate in pairs of observations (i.e. of points).
+We compute covariances for such pairs, not for the whole sample as in classical statistics. 
