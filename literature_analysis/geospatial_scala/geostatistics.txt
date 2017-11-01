@@ -312,6 +312,12 @@ LATTICE DATA:
 
 POINT PATTERNS:
 - point patterns arise when the important variale to be analysed is the location of "events". 
+- is the pattern exhibiting complete spatial randomness, clustering or regularity?
+- example tree BHD: the BHD variable is usually called a mark variable, and the whole process is then called a marked spatial point process.
+
+Why geospatial analyses:
+- instead of independent data, suppose the data are positively correlated with a correlation that decreases as the separation between data increases. 
+  
          
   
 
