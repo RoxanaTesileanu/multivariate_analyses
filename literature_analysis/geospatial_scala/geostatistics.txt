@@ -278,8 +278,10 @@ Usually D is assumed to be a fixed (i.e. non-random) of R d-dim. But we assume D
 From this perspective:
 - ch. 2 to 5 : present geostatistical data => D IS A FIXED SUBSET OF R d-dim THAT CONTAINS A d-dim. RECTANGLE OF POSITIVE VOLUME; Z(s) IS A RANDOM VECTOR AT LOCATION s belonging to D.
 - ch. 6 to 7 : present lattice data => D IS FIXED (REGULAR OR IRREGULAR) COLLECTION OF COUNTABLY MANY POINTS OF R d-dim; Z(s) IS A RANDOM VECTOR AT LOCATION s belonging to D.
-- ch. 8 : presents point patterns => 
--   
+- ch. 8 : presents point patterns => D IS A POINT PROCESS IN R d-dim; Z(s) IS A RANDOM VECTOR AT LOCATION s belonging to D. In its most general form this generates a marked spatial point process.
+- ch 9 : presents objects => D IS A POINT PROCESS IN R d-dim; Z(S) is a random set. This yields processes such a Boolean model and a related cell-growth process.
+
+   
 
       
               
