@@ -291,6 +291,9 @@ The unidirectional flow of time sometimes forces one to distinguish between spat
 {Z(s,t) : where s belongs to D(t), t belongs to T}, where each of Z, D and T is possibly random. 
 
 
-
+Description, Indication and Estimation: as disciplines mature, their statistical analyses advance through the 3 stages of development:
+- description -> goal: summarize data (perhaps suggest models)
+- indication -> goad: estimates of model parameters are obtained from the data, but no measures of precision are available
+-
       
               
