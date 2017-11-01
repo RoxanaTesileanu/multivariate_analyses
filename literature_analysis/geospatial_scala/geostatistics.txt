@@ -298,7 +298,7 @@ Description, Indication and Estimation: as disciplines mature, their statistical
 
 Section 1.2 Introductory examples
 
- 
+As described earlier, spatial data can be thought of as resulting from observations on the stochastic process {Z(s): s belongs to D}, where D is possibly a random set in R d-dim.  
 
       
               
