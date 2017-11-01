@@ -214,4 +214,9 @@ Found an newer reference by Tomislav Hengl "A Practical Guide to Geostatistical 
 
 Consider an initial probability distribution p' equiv. to (p_1, ...., p_k).
 This probability distribution evolves into a subsequent probability distribution p'A, where A is a kxk matrix of nonnegative elements each of whose rows sums to 1. A=(a_ij).Then a_ij can be interpreted as the conditional probability that the subsequent state of nature is j given that the initial state of nature was i. A is called a transition matrix (P. Dawkins). WHEN STATES OF NATURE EVOLVE THROUGH REPEATED APPLICATION OF A STOCHASTIC MECHANISM DESCRIBED BY THE MATRIX A, THE RESULT IS CALLED A MARKOV CHAIN. Variation increases through the chain. So, we cannot get around it, we have to consider it.
-         
+
+Independent-and-Identically Distributed - Data model (IID data) 
+- assumes observations on a phenomenon are taken uder identical conditions and that each observation is taken independently of any other. 
+- more often, configuration changes => not the same conditions => not quite IDD data sampled.
+
+        
