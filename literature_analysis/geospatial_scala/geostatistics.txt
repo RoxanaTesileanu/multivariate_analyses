@@ -346,6 +346,10 @@ Cressie explains is by dividing the n by this quantity from the covariance betwe
 
 Example: if n=10, rho=0.26 then n'=6.2.
 (6 independent obs. achieve approx. the same precision as 10 correlated obs.)
+
+!!!!  AUTOCORRELATION HAS AN EFFECT ON INFERENCES EVEN IN LARGE SAMPLES !!!!
+
+
            
          
   
