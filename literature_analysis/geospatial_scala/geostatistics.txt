@@ -306,7 +306,8 @@ GEOSTATISTICAL DATA:
 - very popular in soil science
 
 LATTICE DATA:
-- a lattice of locations evokes the idea of regularly spaced points in R d-dim, linked to NEIGHBORS, SECOND-NEAREST NEIGHBORS, and so on. VERY USEFUL FOR MY KNNENDEAVOR.   
+- a lattice of locations evokes the idea of regularly spaced points in R d-dim, linked to NEIGHBORS, SECOND-NEAREST NEIGHBORS, and so on. VERY USEFUL FOR MY KNNENDEAVOR.
+- regular lattices and irregular lattices, whose relative displacements do not follow a predictable pattern. Satellite imagery prodides sources of lattice data for vegetation mapping. Each species has its own reflectance, and is remotely sensed. Thus the data is received as a regular lattice in R 2-dim, as the curvature is not taken into account.         
   
 
       
