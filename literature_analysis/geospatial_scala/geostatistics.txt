@@ -254,4 +254,6 @@ TYPICAL EXAMPLE: DATA FROM A MONITORING NETWORK.
 Scope of the Crassie 1993: data analysis and statistical modeling of spatial data. THE BASIC COMPONENTS ARE SPATIAL LOCATIONS {s_1, ...., s_n} AND DATA {Z(s_1), ...., Z(s_n)}, OBSERVED AT THOSE LOCATIONS. Usually the data are assumed random and sometimes the locations are assumed random. GIS TOOLS FACILITATE THE INTEGRATION OF SPATIAL, NONSPATIAL, QUALITATIVE AND QUANTITATIVE DATA INTO A DATA BASE THAT CAN BE MANAGED UNDER ONE SYSTEM ENVIRONMENT.  
 
 
-Also the distance between two known locations is the Euclidean distance, i.e. d=sqrt(sum((s_i - u_i)^2)), if the two points s and u are expressed as vectors. (which is the magnitude from M. Lewis videos).   
+Also the distance between two known locations is the Euclidean distance, i.e. d=sqrt(sum((s_i - u_i)^2)), if the two points s and u are expressed as vectors. (which is the magnitude from M. Lewis videos).
+
+Also clustering (which regions are considered close on a map according to some metric?) is considered through multidimensional scaling (important spatial contiguities - unmittelbare Nachbarschaft, might be violated) .       
