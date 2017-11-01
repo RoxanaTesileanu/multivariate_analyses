@@ -9,4 +9,6 @@ It is not just adding space as a variable in the vector of recorded variables of
 It is treating space as an autocorrelated variable across a series of individual points, and letting all the other variables be "classical". 
 
 For me the most important moment in this introductive phase was when I've realized that we don't talk about classical samples of observations, where we concentrate on variables, but instead in geostatistics we concentrate in pairs of observations (i.e. of points).
-We compute covariances for such pairs, not for the whole sample as in classical statistics. 
+We compute covariances for such pairs, not for the whole sample as in classical statistics. We don't have weigts for entire variables, we have weight for individual points carring those values of the variables studied. 
+It is I believe very important the moment when you understand this. Spatial models treat individual points in ways similar to treating individual variables in classical statistics. 
+But we must be aware these are individual points we are talking about, and we very much use distance measures for objects (like the Euclidean distance) like in the multivariate object-based classical statistics.
