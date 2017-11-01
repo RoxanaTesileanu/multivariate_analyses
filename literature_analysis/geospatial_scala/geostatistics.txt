@@ -345,7 +345,7 @@ var(Z_mean) = sum(sigma^2_0 * rho^(|i-j|)) / n^2.
 Cressie explains is by dividing the n by this quantity from the covariance between pairs. And the derived new n, called n', can be interpreted as the EQUIVQLENT NUMBER OF INDEPENDENT OBSERVATIONS.
 
 Example: if n=10, rho=0.26 then n'=6.2.
-
+(6 independent obs. achieve approx. the same precision as 10 correlated obs.)
            
          
   
