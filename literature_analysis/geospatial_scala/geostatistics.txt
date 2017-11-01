@@ -274,5 +274,5 @@ The General Spatial Model:
 - the stochastic model for spatial data is used to summarize extand data or to predict unobserved data.
 Let s belonging to R of dimension d, be a generic data location in d-dimensional Euclidean space and suppose that the potential datum Z(s) at spatial location s is a random quantity. Now let s vary over the index set D included in R d dimensional so as to generate the multivariate random field (or random process):
  {Z(s) : s, where s is included in D}. A realisation of it is denoted by {z(s): s, where s is included in D}. 
-Usually D is assumed to be a fixed (i.e. non-random) 
+Usually D is assumed to be a fixed (i.e. non-random) subset of R d-dim.  
               
