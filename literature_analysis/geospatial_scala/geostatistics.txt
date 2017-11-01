@@ -298,7 +298,16 @@ Description, Indication and Estimation: as disciplines mature, their statistical
 
 Section 1.2 Introductory examples
 
-As described earlier, spatial data can be thought of as resulting from observations on the stochastic process {Z(s): s belongs to D}, where D is possibly a random set in R d-dim.  
+As described earlier, spatial data can be thought of as resulting from observations on the stochastic process {Z(s): s belongs to D}, where D is possibly a random set in R d-dim.
+
+GEOSTATISTICAL DATA:
+- recognizes spatial variability at both large scale and small scale, i.e. it models both SPATIAL TREND AND SPATIAL CORRELATION.
+- predict a variable at a new location from observed samples at other locations -> called KRIGING.
+- very popular in soil science
+
+LATTICE DATA:
+
+  
 
       
               
