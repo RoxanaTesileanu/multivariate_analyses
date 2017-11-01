@@ -363,6 +363,10 @@ Z(s) = mu + epsilon(s)
 
 - the random process is assumed intrinsically stationary. 
 
+- the predicted value is:
+ z-hat(s_0) = sum(lambda_i * z(s_i)), 
+or in other words, the sum of the weighted neighboring values.
+ 
 
   
 
