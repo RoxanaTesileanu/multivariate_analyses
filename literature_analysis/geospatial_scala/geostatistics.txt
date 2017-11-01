@@ -220,4 +220,13 @@ Independent-and-Identically Distributed - Data model (IID data)
 - more often, configuration changes => not the same conditions => not quite IDD data sampled.
 
 Inhomogeneous - Data model
-- inhomogeneous data is accounted for in models by a NON-CONSTANT MEAN ASSUMPTION. So, the large-scale variations are somehow taken into account. But, there are also often reasons to suspect inhomogeneous small-scale variations.          
+- inhomogeneous data is accounted for in models by a NON-CONSTANT MEAN ASSUMPTION. So, the large-scale variations are somehow taken into account. But, there are also often reasons to suspect inhomogeneous small-scale variations. 
+- the means might be constant but the variances differ between two experiments (phenomenon called heteroskedascity).
+=> RELAXATION OF THE IDENTICAL-DISTRIBUTION ASSUMPTION.
+
+RELAXATION OF THE INDEPENDENCE ASSUMPTION SI A FURTHER WAY TO GENERALIZE STATISTICAL MODELS => dependent-data model
+
+Dependent - data model
+- two classes of models: involve interclass-correlation structures and serial-correlation structures.
+
+          
