@@ -198,4 +198,10 @@ The overall trends in the data values can be revealed by a contour map. Contouri
 The closeness of the contour lines indicates a steep gradient and draws our attention to the fact that the highest data value (145 ppm) is very close to the lowest data value (0 ppm).
 
 Symbol Maps:
+
+
+----------------------------------------------
+Found an newer reference by Tomislav Hengl "A Practical Guide to Geostatistical Mapping" 2009.
+
+
     
