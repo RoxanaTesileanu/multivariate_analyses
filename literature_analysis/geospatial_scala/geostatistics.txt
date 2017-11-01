@@ -219,4 +219,5 @@ Independent-and-Identically Distributed - Data model (IID data)
 - assumes observations on a phenomenon are taken uder identical conditions and that each observation is taken independently of any other. 
 - more often, configuration changes => not the same conditions => not quite IDD data sampled.
 
-        
+Inhomogeneous - Data model
+- inhomogeneous data is accounted for in models by a NON-CONSTANT MEAN ASSUMPTION. So, the large-scale variations are somehow taken into account. But, there are also often reasons to suspect inhomogeneous small-scale variations.          
