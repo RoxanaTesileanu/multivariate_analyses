@@ -349,6 +349,7 @@ Example: if n=10, rho=0.26 then n'=6.2.
 
 !!!!  AUTOCORRELATION HAS AN EFFECT ON INFERENCES EVEN IN LARGE SAMPLES !!!!
 
+!!!! CONSIDER INFERENCES USIGN n' !!!!
 
            
          
