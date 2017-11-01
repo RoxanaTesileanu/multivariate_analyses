@@ -373,7 +373,11 @@ OK, back to Cressie.
 
 Suppose an unknown obs. Z(n+1) is to be predicted from data Z equiv. (Z(1),...,Z(n)), where it is assumed Z(1),..., Z(n), Z(n+1) are jointly Gaussian, identically distrib. with unknown mean mu adn known variance sigma_0^2, and are independent. 
 This is the independent case where we try to minimize the error (in form of residuals) and where we assume the p_0(Z; n+1) = Z-mean. 
-  
+So, you try to minimize: ms_o = sigma_0^2 * {1+(1/n) }.
+
+WHEN THE INDEPENDENCE ASSUMPTION IS REPLACED WITH spatial autocorrelated values THE UNBIASED PREDICTOR, p_rho(Z; n+1), THAT MINIMIZES THE MEAN-SQUARED PREDICTION ERROR IS:
+
+   
 
   
 
