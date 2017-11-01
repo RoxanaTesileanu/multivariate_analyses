@@ -317,7 +317,10 @@ POINT PATTERNS:
 
 Why geospatial analyses:
 - instead of independent data, suppose the data are positively correlated with a correlation that decreases as the separation between data increases. 
-Consider two locations: Z(i) and Z(j). These two observations come from a sample with mean mu and known variance sigma^2_0. 
+Consider two locations: Z(i) and Z(j). These two observations come from a population with unknown mean  and known variance sigma^2_0. 
+Because of the autocorrelation the covariance between two locations is:
+
+cov( Z(i), Z(j) ) = sigma^2_0 * rho^(|i-j|)
   
          
   
