@@ -331,7 +331,7 @@ Such a correlation function like the one above results from a first-order autore
 
 Z(i) = rho*Z(i-1) + epsilon(i), i>= 1, and epsilon(i) is part of the iid sequence of Gaussian random variables with 0 mean and variance sigma^2_0(1-rho^2) and is independent of Z(i-1). 
 
-=> the value of a variable at index i is the value at index (i-1) multiplyied by the correlation coeff., plus the random error ?! Or not that random error. Yes the random error. This random error has a variance dependent of the correlation coeff. The random error variance decreases if rho is greater?! I hope I have it right. 
+=> the value of a variable at index i is the value at index (i-1) multiplyied by the correlation coeff., plus the random error ?! Or not that random error. Yes the random error with spatial dependence. This random error has a variance dependent of the correlation coeff. The random error variance decreases if rho is greater?! I hope I have it right. 
 
 Ok, but Cressie uses something else.         
 He expresses the usual formula of variance of the mean using the cov( Z(i), Z(j) ). So:
@@ -351,9 +351,14 @@ Example: if n=10, rho=0.26 then n'=6.2.
 
 !!!! CONSIDER INFERENCES USIGN n' !!!!
 
+
 Prediction:
+From ch. 3 "Using ArcGIS Geostatistical Analyst"
            
-         
+Consider the ordinary krigin model is:
+
+Z(s) = mu + epsilon(s)
+
   
 
       
