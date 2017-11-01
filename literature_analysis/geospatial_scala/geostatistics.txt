@@ -355,9 +355,12 @@ Example: if n=10, rho=0.26 then n'=6.2.
 Prediction:
 From ch. 3 "Using ArcGIS Geostatistical Analyst"
            
-Consider the ordinary krigin model is:
+Consider the ordinary kriging model is:
 
 Z(s) = mu + epsilon(s)
+
+- this is more or less the distribution of z(s_i) values based on the constant mean mu and the random error with spatial dependence.  
+
 
   
 
