@@ -204,6 +204,11 @@ Symbol Maps:
 Found an newer reference by Tomislav Hengl "A Practical Guide to Geostatistical Mapping" 2009.
 - a lot of stuff in R but also a good theoretical introduction
 
-- a very interesting reference: Cressie 1993. 
+- a very interesting reference: Cressie 1993.
+
+---------------------------------------------- 
+
+"Statistics for Spatial Data" Noel A.C. Cressie (1993)
+
 
     
