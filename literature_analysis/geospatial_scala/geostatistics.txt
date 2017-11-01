@@ -202,6 +202,8 @@ Symbol Maps:
 
 ----------------------------------------------
 Found an newer reference by Tomislav Hengl "A Practical Guide to Geostatistical Mapping" 2009.
+- a lot of stuff in R but also a good theoretical introduction
 
+ 
 
     
