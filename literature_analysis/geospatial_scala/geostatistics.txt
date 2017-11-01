@@ -330,7 +330,8 @@ where i,j = 1,....,n
 Such a correlation function like the one above results from a first-order autoregressive process:
 
 Z(i) = rho*Z(i-1) + epsilon(i), i>= 1, and epsilon(i) is part of the iid sequence of Gaussian random variables with 0 mean and variance sigma^2_0(1-rho^2) and is independent of Z(i-1). 
-  
+
+=> the value of a variable at index i is the value at index (i-1) multiplyied by the correlation coeff., plus the random error ?!    
   
          
   
