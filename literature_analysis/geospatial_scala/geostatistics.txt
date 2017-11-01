@@ -296,6 +296,8 @@ Description, Indication and Estimation: as disciplines mature, their statistical
 - indication -> goad: estimates of model parameters are obtained from the data, but no measures of precision are available
 - estimation -> goal : enough distribution theory is at hand to allow approximate inference on the model parameters. The bias and variance of an estimator can be estimates. Statistics for spatial analysis is still a young discipline, showing sings of maturity. => so not that much on the bias part yet.
 
+Section 1.2 Introductory examples
+
  
 
       
