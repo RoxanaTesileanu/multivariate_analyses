@@ -376,9 +376,9 @@ This is the independent case where we try to minimize the error (in form of resi
 So, you try to minimize: ms_o = sigma_0^2 * {1+(1/n) }.
 
 WHEN THE INDEPENDENCE ASSUMPTION IS REPLACED WITH spatial autocorrelated values THE UNBIASED PREDICTOR, p_rho(Z; n+1), THAT MINIMIZES THE MEAN-SQUARED PREDICTION ERROR IS:
-
-   
-
+ 
+eq. 1.3.10.
+p. 16 
   
 
       
