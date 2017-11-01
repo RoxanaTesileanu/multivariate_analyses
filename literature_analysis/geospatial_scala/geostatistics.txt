@@ -334,7 +334,7 @@ Z(i) = rho*Z(i-1) + epsilon(i), i>= 1, and epsilon(i) is part of the iid sequenc
 => the value of a variable at index i is the value at index (i-1) multiplyied by the correlation coeff., plus the random error ?! Or not that random error. Yes the random error. This random error has a variance dependent of the correlation coeff. The random error variance decreases if rho is greater?! I hope I have it right. 
 
 Ok, but Cressie uses something else.         
-  
+He expresses the usual formula of variance of the mean using the cov( Z(i), Z(j) ).   
          
   
 
