@@ -270,4 +270,5 @@ Note: Randomization does not neutralize the spatial correlation at spatial scale
 In many disciplines it is not always possible to randomize, block and replicate data. Resource management, environmental monitoring and medical imaging are spatial in nature. 
 
 The General Spatial Model:
-- data might be continuous or discrete, there might be spatial aggregations or observations at points in space, their spatial location may be regular or irregular, and those locations may be from a spatial continuum or a discrete set.           
+- data might be continuous or discrete, there might be spatial aggregations or observations at points in space, their spatial location may be regular or irregular, and those locations may be from a spatial continuum or a discrete set. 
+- the stochastic model for spatial data is used to summarize extand data or to predict unobserved data.           
