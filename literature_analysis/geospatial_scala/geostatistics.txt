@@ -281,7 +281,7 @@ From this perspective:
 - ch. 8 : presents point patterns => D IS A POINT PROCESS IN R d-dim; Z(s) IS A RANDOM VECTOR AT LOCATION s belonging to D. In its most general form this generates a marked spatial point process.
 - ch 9 : presents objects => D IS A POINT PROCESS IN R d-dim; Z(S) is a random set. This yields processes such a Boolean model and a related cell-growth process.
 
-THE FLEXIBILITY OF THE SPATIAL MODEL USED IS APPARENT NOW. The fact that D is a subset of R d-dim allows to be called a spatial process.     
+THE FLEXIBILITY OF THE SPATIAL MODEL USED IS APPARENT NOW. The fact that D is a subset of R d-dim allows to be called a spatial process. THE IID MULTIVARIATE MODEL IS A 0-DIMENSIONAL SPATIAL PROCESS, BECAUSE ANY SPATIAL INDEX IS UNIMPORTANT.        
 
       
               
