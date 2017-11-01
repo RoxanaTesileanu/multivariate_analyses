@@ -329,7 +329,7 @@ where i,j = 1,....,n
 
 Such a correlation function like the one above results from a first-order autoregressive process:
 
-Z(i) = rho*Z(i-1) + epsilon(i), 
+Z(i) = rho*Z(i-1) + epsilon(i), i>= 1, and epsilon(i) is part of the iid sequence of Gaussian random variables with 0 mean and  
   
          
   
