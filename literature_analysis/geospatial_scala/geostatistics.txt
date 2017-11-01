@@ -277,7 +277,9 @@ Let s belonging to R of dimension d, be a generic data location in d-dimensional
 Usually D is assumed to be a fixed (i.e. non-random) of R d-dim. But we assume D as a random set. A random set is a measurable mapping from a probability space onto a measure space of subsets of R d-dim (details in section 9.3). Less formarly speaking, we assume that D as well as Z may vary from realization to realization, giving another source of randomness to the problem. This structure allows to talk about problems with continuous spatial index, problems with lattice index, and spatial point patterns and more under the same process model (the index set D is random instead of fixed).
 From this perspective:
 - ch. 2 to 5 : present geostatistical data => D IS A FIXED SUBSET OF R d-dim THAT CONTAINS A d-dim. RECTANGLE OF POSITIVE VOLUME; Z(s) IS A RANDOM VECTOR AT LOCATION s belonging to D.
-- ch. 6 to 7 : present lattice data => D IS FIXED (REGULAR OR IRREGULAR) COLLECTION OF COUNTABLY MANY POINTS OF R d-dim  
+- ch. 6 to 7 : present lattice data => D IS FIXED (REGULAR OR IRREGULAR) COLLECTION OF COUNTABLY MANY POINTS OF R d-dim; Z(s) IS A RANDOM VECTOR AT LOCATION s belonging to D.
+- ch. 8 : presents point patterns => 
+-   
 
       
               
