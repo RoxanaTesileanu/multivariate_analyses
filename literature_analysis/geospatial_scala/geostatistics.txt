@@ -273,4 +273,4 @@ The General Spatial Model:
 - data might be continuous or discrete, there might be spatial aggregations or observations at points in space, their spatial location may be regular or irregular, and those locations may be from a spatial continuum or a discrete set. 
 - the stochastic model for spatial data is used to summarize extand data or to predict unobserved data.
 Let s belonging to R of dimension d, be a generic data location in d-dimensional Euclidean space and suppose that the potential datum Z(s) at spatial location s is a random quantity. Now let s vary over the index set D included in R d dimensional so as to generate the multivariate random field (or random process):
-             
+ {Z(s) : s, where s is included in D}. A realisation of it is denoted by {z(s): s, where s is included in D}.              
