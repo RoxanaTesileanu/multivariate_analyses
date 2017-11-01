@@ -213,4 +213,4 @@ Found an newer reference by Tomislav Hengl "A Practical Guide to Geostatistical 
 - this really seams to be the ultimative book.
 
 Consider an initial probability distribution p' equiv. to (p_1, ...., p_k).
-This probability distribution evolves into a subsequent probability distribution p'A, where A is a kxk matrix of nonnegative elements each     
+This probability distribution evolves into a subsequent probability distribution p'A, where A is a kxk matrix of nonnegative elements each of whose rows sums to 1. A=(a_ij).Then a_ij can be interpreted as the conditional probability that the subsequent state of nature is j given that the initial state of nature was i. A is called a transition matrix (P. Dawkins).        
