@@ -246,4 +246,9 @@ STATISTICS FOR SPATIAL AND TEMPORAL DATA WOULD PROVIDE DYNAMIC MODELS FOR THE PH
 
 TYPICAL EXAMPLE: DATA FROM A MONITORING NETWORK.
 -one must take account of temporal correlations as well as spatial correlations             
+- 26 rainfall recording stations in S. Australia.
+- data are the monthly rainfall amounts at 26 locations over 30 years. 
+- -> 1248 monthly observations, 26 spatial obs.
+- over time and space they form a collection of approx. 20,000 observations.
 
+ 
