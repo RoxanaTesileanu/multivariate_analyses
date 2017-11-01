@@ -212,4 +212,5 @@ Found an newer reference by Tomislav Hengl "A Practical Guide to Geostatistical 
 
 - this really seams to be the ultimative book.
 
-    
+Consider an initial probability distribution p' equiv. to (p_1, ...., p_k).
+This probability distribution evolves into a subsequent probability distribution p'A, where A is a kxk matrix of nonnegative elements each     
