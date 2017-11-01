@@ -273,7 +273,7 @@ The General Spatial Model:
 - data might be continuous or discrete, there might be spatial aggregations or observations at points in space, their spatial location may be regular or irregular, and those locations may be from a spatial continuum or a discrete set. 
 - the stochastic model for spatial data is used to summarize extand data or to predict unobserved data.
 Let s belonging to R of dimension d, be a generic data location in d-dimensional Euclidean space and suppose that the potential datum Z(s) at spatial location s is a random quantity. Now let s vary over the index set D included in R d dimensional so as to generate the multivariate random field (or random process):
- {Z(s) : s, where s is included in D}. A realisation of it is denoted by {z(s): s, where s is included in D}. 
+ {Z(s) : where s is included in D}. A realisation of it is denoted by {z(s): s, where s is included in D}. 
 Usually D is assumed to be a fixed (i.e. non-random) of R d-dim. But we assume D as a random set. A random set is a measurable mapping from a probability space onto a measure space of subsets of R d-dim (details in section 9.3). Less formarly speaking, we assume that D as well as Z may vary from realization to realization, giving another source of randomness to the problem. This structure allows to talk about problems with continuous spatial index, problems with lattice index, and spatial point patterns and more under the same process model (the index set D is random instead of fixed).
 From this perspective:
 - ch. 2 to 5 : present geostatistical data => D IS A FIXED SUBSET OF R d-dim THAT CONTAINS A d-dim. RECTANGLE OF POSITIVE VOLUME; Z(s) IS A RANDOM VECTOR AT LOCATION s belonging to D.
@@ -287,7 +287,10 @@ Cressie defines also the multivariate time-series process separate from the spat
 {Z(t): -infinity <t < +infinity}.
 The unidirectional flow of time sometimes forces one to distinguish between spatial and time processes in R 1-dim.
 
-            
+!!! A TIME-SPACE PROCESS IS DENOTED AS:
+{Z(s,t) : where s belongs to D(t), t belongs to T}.
+
+
 
       
               
