@@ -351,6 +351,7 @@ Example: if n=10, rho=0.26 then n'=6.2.
 
 !!!! CONSIDER INFERENCES USIGN n' !!!!
 
+Prediction:
            
          
   
