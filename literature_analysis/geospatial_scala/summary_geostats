@@ -17,3 +17,4 @@ That being said I think I can use the same matrix calculations as in classical o
 
 And of couse also classical variable-based multivariate analyses are possible too.
 The example from Quinn and Keough at the multiple regression chapter, where the study of Paruelo and Lauenroth is presented in which they've modeled the relative abundance of C3 plants against longitute and latitude.
+If the spatial analysis includes a random error with spatial dependence, then why not include in the model the x and y coordinates as two separate variables and make the random error spatial independent?
