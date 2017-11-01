@@ -233,5 +233,5 @@ In spatial analysis dependence is present in all directions and becomes weaker a
 Purely temporal models, or time series models, are usually based on indetically distributed observations that are dependent and occur at equally spaced time points. The unidirectional flow of time underlies the construction of these models. 
 
 Different fields (among them forestry, or any discipline that works with data collected from different spatial locations) need to develop (not necessarily statistical) models that indicate when there is dependence between measurements at different locations. 
-  
+However the models need to be more flexible than their temporal counterparts, because it is not reasonable to assume that spatial locations of data occur reguraly.   
           
