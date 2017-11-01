@@ -338,8 +338,9 @@ He expresses the usual formula of variance of the mean using the cov( Z(i), Z(j)
 
 var(Z_mean) = sum(sigma^2_0 * rho^(|i-j|)) / n^2.
 
-=> the variance of the mean is the sum of products between the pop. variance and the correlation coeff. for each pair of successive points, over n*n. NOTE: n*n not simply n! 
-      
+=> the variance of the mean is the sum of products between the pop. variance and the correlation coeff. for each pair of successive points, over n*n. 
+=> this means that we have a lot more variance in the mean than in usual non-autoregressive models, because we multiply the denumerator by some quantity over 1 coming from the cov between pairs.
+=>        
          
   
 
