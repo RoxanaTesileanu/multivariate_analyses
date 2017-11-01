@@ -228,5 +228,7 @@ RELAXATION OF THE INDEPENDENCE ASSUMPTION SI A FURTHER WAY TO GENERALIZE STATIST
 
 Dependent - data model
 - two classes of models: involve interclass-correlation structures and serial-correlation structures.
+In spatial analysis dependence is present in all directions and becomes weaker as data locations become more dispersed. 
 
+Purely temporal models, or time series models, are usually based on indetically distributed observations that are dependent and occur at equally spaced time points. 
           
