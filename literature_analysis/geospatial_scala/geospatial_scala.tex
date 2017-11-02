@@ -634,7 +634,42 @@ Let's suppose we want to reproject our previously created layer from WGS84 / Pse
 
 
 \section {Spatial data analysis}
-\ section{Introduction into spatial data analysis}
+\section{Introduction into spatial data analysis}
+
+In its essence geostatistics adds georeferenced spatial information to the vector of recorded variables of each individual observation, which represents a spatial location.
+ It further adds into models the space dependent random error. 
+In this document I state that the classical multivariate techniques like multiple regression analysis and multidimensional scaling, can include this spatial perspective into modeling by treating the X and Y coordinates as "classical" variables, thus reducing the space dependent random error to the "classical" random error of multivariate statistics.    
+
+Geostatistics is a departure from classical statistics just because of the sentence that "it takes spatial autocorrelation of observations into account when predicting values for new points". It is not more than that to it.
+Maybe the most important fact is that geospatial analysis doesn't treat variables as we are used to in classical statistics but uses individual observations (i.e. individual points) and investigates the relationships between them from a spatial perspective \cite{cressie_statistics_1993}, \cite{webster_geostatistics_2007}, \cite{isaaks_applied_1989}, \cite{hengl_practical_2009}, \cite{johnston_using_2003}.
+ It is adding space as a variable in the vector of recorded variables of each individual observation/point. The highlight of individual points is actually like in object-based classical multivariate statistics. It is treating space as an autocorrelated variable across a series of individual points, and letting all the other variables be "classical". 
+\\
+\\
+For me the most important moment in this introductory phase was when I've realized that we don't talk about classical samples of observations, where we concentrate on variables, but instead in geostatistics we concentrate on pairs of observations (i.e. of points). 
+We compute covariances for such pairs, not for the whole sample as in classical statistics. We don't have weights for entire variables, we have weights for individual points caring those values of the variables studied. 
+It is I believe very important the moment when you understand this. Spatial models treat individual points in ways similar to treating individual variables in classical statistics. But we must be aware these are individual points we are talking about, and we very much use distance measures for objects (like the Euclidean distance) like in the multivariate object-based classical statistics.
+\\
+\\
+That being said I think I can use the same matrix calculations as in classical object-based multivariate analyses (where we use objects to predict values for variables), i.e. a n by n MATRIX OF DISSIMILARITIES BETWEEN OBJECTS by means of which we derive variables as LINEAR COMBINATIONS OF THE OBJECTS (Q-mode analyses) - see \cite{quinn_experimental_2002}.  
+And of course classical variable-based multivariate analyses are equally possible - see \cite{quinn_experimental_2002} and \cite{carroll_mathematical_1997}. 
+The example from Quinn and Keough (2002) at the multiple regression chapter, where the study of Paruelo and Lauenroth is presented in which they've modeled the relative abundance of C3 plants against longitude and latitude is an implementation of this perspective \cite{paruelo_relative_1996}.
+ If the spatial analysis includes a random error with spatial dependence, then why not include in the model the X and Y coordinates as two separate variables and make the random error spatial independent? Adding appropriate variables to a model is the approach used in multivariate statistics to reduce the unexplained variation \cite{quinn_experimental_2002} , \cite{carroll_mathematical_1997}.
+\\
+\\
+Maybe spatial analysis is just classical multivariate analysis (variable- or object-based, or combined); the important thing is to include X and Y variables in the model.
+\\
+\\
+This doesn't mean I give up the "spatial perspective". I will still use the X-Y coordinate plane to inspect how the residuals from fitted linear models are located. Eventually, delineate more than one target population. And reevaluate the sampling design based on these preliminary conclusions.
+\\
+\\
+I will also use the classification of Cressie (1993) \cite{cressie_statistics_1993} which delineates three types of geospatial analyses:
+\begin{itemize}
+\item on continuous surfaces (raster) (using variable-based multivariate techniques)
+\item on discrete spatial features based on multiple points (lines, polygons) (using variable- and object-based multivatiate techniques)
+\item on discrete spatial features based on individual points (points) (using object-based multivariate techniques).
+\end{itemize}
+
+
 \section* {Note}
 This document is "under construction". The current version is available on my GitHub profile under the multivariate\underline{\space}analyses project repository: \href{https://github.com/RoxanaTesileanu/multivariate_analyses/blob/master/literature_analysis/geospatial_scala/geospatial_scala.pdf}{https://githu\\b.com/RoxanaTesileanu/multivariate\underline{\space}analyses/blob/master/literature\underline{\space}analysis/\\geospatial\underline{\space}scala/geospatial\underline{\space}scala.pdf}.
 %\section* {References}
