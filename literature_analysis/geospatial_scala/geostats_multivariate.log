@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  2 NOV 2017 11:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  2 NOV 2017 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -346,8 +346,8 @@ LaTeX Info: Redefining \nameref on input line 21.
 
 
 
-LaTeX Warning: Citation `paruelo_abundance_1996' on page 1 undefined on input l
-ine 47.
+LaTeX Warning: Citation `paruelo_relative_1996' on page 1 undefined on input li
+ne 47.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--58
@@ -407,7 +407,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
  ) 
 Here is how much of TeX's memory you used:
  6157 strings out of 493029
- 88224 string characters out of 6136234
+ 88223 string characters out of 6136234
  181093 words of memory out of 5000000
  9614 multiletter control sequences out of 15000+600000
  12804 words of font info for 35 fonts, out of 8000000 for 9000
