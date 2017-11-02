@@ -20,4 +20,5 @@ The example from Quinn and Keough at the multiple regression chapter, where the 
 If the spatial analysis includes a random error with spatial dependence, then why not include in the model the X and Y coordinates as two separate variables and make the random error spatial independent?
 Maybe spatial analysis is just classical multivariate analysis (variable- or object-based, or combined); the important thing is to include X and Y in the model. 
 
-This doesn't mean I give up the "spatial perspective". 
+This doesn't mean I give up the "spatial perspective".
+I will still use the X-Y coordinate plane to inspect how the residuals from fitted linear models are located. 
