@@ -29,4 +29,4 @@
 \contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{23}{Appendix.a.A}
 \contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{26}{Appendix.a.B}
 \contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{27}{Appendix.a.C}
-\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{28}{Appendix.a.D}
+\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{29}{Appendix.a.D}
