@@ -11,46 +11,50 @@ Database file #1: MyLibrary.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--edition ordinal word "Second Edition" may be too high (or improper) for conversion in webster_geostatistics_2007
+Warning--missing publisher in hengl_practical_2009
+Warning--edition ordinal word "Revised" may be too high (or improper) for conversion in carroll_mathematical_1997
 
 Done.
-You've used 9 entries,
+You've used 17 entries,
             4087 wiz_defined-function locations,
-            863 strings with 8240 characters,
-and the built_in function-call counts, 3247 in all, are:
-= -- 224
-> -- 41
-< -- 0
-+ -- 20
-- -- 10
-* -- 124
-:= -- 599
-add.period$ -- 18
-call.type$ -- 9
-change.case$ -- 6
-chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 263
-empty$ -- 356
-format.name$ -- 11
-if$ -- 708
+            906 strings with 9301 characters,
+and the built_in function-call counts, 6987 in all, are:
+= -- 498
+> -- 125
+< -- 16
++ -- 60
+- -- 26
+* -- 280
+:= -- 1159
+add.period$ -- 33
+call.type$ -- 17
+change.case$ -- 12
+chr.to.int$ -- 42
+cite$ -- 20
+duplicate$ -- 551
+empty$ -- 751
+format.name$ -- 33
+if$ -- 1596
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 58
-newline$ -- 62
-num.names$ -- 9
-pop$ -- 190
+int.to.str$ -- 17
+missing$ -- 110
+newline$ -- 86
+num.names$ -- 17
+pop$ -- 352
 preamble$ -- 1
 purify$ -- 0
-quote$ -- 2
-skip$ -- 245
+quote$ -- 6
+skip$ -- 558
 stack$ -- 0
-substring$ -- 6
-swap$ -- 134
-text.length$ -- 0
+substring$ -- 82
+swap$ -- 313
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 9
-warning$ -- 0
-while$ -- 9
-width$ -- 10
-write$ -- 100
+type$ -- 17
+warning$ -- 3
+while$ -- 21
+width$ -- 19
+write$ -- 159
+(There were 3 warnings)

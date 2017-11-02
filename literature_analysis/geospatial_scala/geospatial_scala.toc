@@ -24,8 +24,9 @@
 \contentsline {subsection}{\numberline {2.9}Moving window analyses}{20}{subsection.2.9}
 \contentsline {subsection}{\numberline {2.10}Map algebra}{20}{subsection.2.10}
 \contentsline {section}{\numberline {3}Spatial data analysis}{20}{section.3}
-\contentsline {section}{Appendices}{21}{section*.14}
-\contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{21}{Appendix.a.A}
-\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{24}{Appendix.a.B}
-\contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{25}{Appendix.a.C}
-\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{26}{Appendix.a.D}
+\contentsline {section}{\numberline {4}Introduction into spatial data analysis}{20}{section.4}
+\contentsline {section}{Appendices}{23}{section*.14}
+\contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{23}{Appendix.a.A}
+\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{26}{Appendix.a.B}
+\contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{27}{Appendix.a.C}
+\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{28}{Appendix.a.D}
