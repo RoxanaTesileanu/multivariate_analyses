@@ -24,7 +24,7 @@
 \contentsline {subsection}{\numberline {2.9}Moving window analyses}{20}{subsection.2.9}
 \contentsline {subsection}{\numberline {2.10}Map algebra}{20}{subsection.2.10}
 \contentsline {section}{\numberline {3}Spatial data analysis}{20}{section.3}
-\contentsline {section}{\numberline {4}Introduction into spatial data analysis}{20}{section.4}
+\contentsline {subsection}{\numberline {3.1}Introduction into spatial data analysis}{20}{subsection.3.1}
 \contentsline {section}{Appendices}{23}{section*.14}
 \contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{23}{Appendix.a.A}
 \contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{26}{Appendix.a.B}

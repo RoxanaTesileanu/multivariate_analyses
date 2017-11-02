@@ -14,7 +14,7 @@
 \BOOKMARK [2][-]{subsection.2.9}{Moving window analyses}{section.2}% 14
 \BOOKMARK [2][-]{subsection.2.10}{Map algebra}{section.2}% 15
 \BOOKMARK [1][-]{section.3}{Spatial data analysis}{}% 16
-\BOOKMARK [1][-]{section.4}{Introduction into spatial data analysis}{}% 17
+\BOOKMARK [2][-]{subsection.3.1}{Introduction into spatial data analysis}{section.3}% 17
 \BOOKMARK [1][-]{section*.14}{Appendices}{}% 18
 \BOOKMARK [1][-]{Appendix.a.A}{Appendix Point coordinates for code snippet 3}{}% 19
 \BOOKMARK [1][-]{Appendix.a.B}{Appendix Scala source file: readPointCoord.scala}{}% 20
