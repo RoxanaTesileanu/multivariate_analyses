@@ -23,7 +23,7 @@
 \contentsline {subsection}{\numberline {2.8}Pixels resizing}{20}{subsection.2.8}
 \contentsline {subsection}{\numberline {2.9}Moving window analyses}{20}{subsection.2.9}
 \contentsline {subsection}{\numberline {2.10}Map algebra}{20}{subsection.2.10}
-\contentsline {section}{\numberline {3}Geostatistics using Geotrellis}{20}{section.3}
+\contentsline {section}{\numberline {3}Spatial data analysis}{20}{section.3}
 \contentsline {section}{Appendices}{21}{section*.14}
 \contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{21}{Appendix.a.A}
 \contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{24}{Appendix.a.B}
