@@ -8,6 +8,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: MyLibrary.bib
+Warning--I didn't find a database entry for "paruelo_abundance_1996"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -18,7 +19,7 @@ Warning--edition ordinal word "Revised" may be too high (or improper) for conver
 Done.
 You've used 7 entries,
             4087 wiz_defined-function locations,
-            858 strings with 8184 characters,
+            859 strings with 8206 characters,
 and the built_in function-call counts, 2895 in all, are:
 = -- 191
 > -- 65
@@ -57,4 +58,4 @@ warning$ -- 3
 while$ -- 7
 width$ -- 8
 write$ -- 71
-(There were 3 warnings)
+(There were 4 warnings)

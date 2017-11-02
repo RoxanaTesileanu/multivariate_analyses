@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  2 NOV 2017 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  2 NOV 2017 11:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -345,6 +345,11 @@ LaTeX Info: Redefining \nameref on input line 21.
 \openout4 = `geostats_multivariate.toc'.
 
 
+
+LaTeX Warning: Citation `paruelo_abundance_1996' on page 1 undefined on input l
+ine 47.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 35--58
 
  []
@@ -394,13 +399,17 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
 Package rerunfilecheck Info: File `geostats_multivariate.out' has not changed.
 (rerunfilecheck)             Checksum: 029D6318CE6D2218ED3ECA40D670D770;90.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
  ) 
 Here is how much of TeX's memory you used:
- 6156 strings out of 493029
- 88200 string characters out of 6136234
+ 6157 strings out of 493029
+ 88224 string characters out of 6136234
  181093 words of memory out of 5000000
- 9613 multiletter control sequences out of 15000+600000
+ 9614 multiletter control sequences out of 15000+600000
  12804 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,6n,28p,553b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -411,7 +420,7 @@ r/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr
 /share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/t
 ype1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super
 /sfti1000.pfb>
-Output written on geostats_multivariate.pdf (3 pages, 113983 bytes).
+Output written on geostats_multivariate.pdf (3 pages, 114255 bytes).
 PDF statistics:
  88 PDF objects out of 1000 (max. 8388607)
  75 compressed objects within 1 object stream
