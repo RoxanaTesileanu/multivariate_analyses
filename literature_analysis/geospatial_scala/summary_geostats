@@ -21,4 +21,4 @@ If the spatial analysis includes a random error with spatial dependence, then wh
 Maybe spatial analysis is just classical multivariate analysis (variable- or object-based, or combined); the important thing is to include X and Y in the model. 
 
 This doesn't mean I give up the "spatial perspective".
-I will still use the X-Y coordinate plane to inspect how the residuals from fitted linear models are located. 
+I will still use the X-Y coordinate plane to inspect how the residuals from fitted linear models are located. Eventually, delineate more than one tartget population
