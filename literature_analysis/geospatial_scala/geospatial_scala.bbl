@@ -56,6 +56,11 @@ R.~Tesileanu, ``Using {Linux} as a development platform for {Scala} projects,''
   \url{https://www.researchgate.net/publication/319260791_Using_Linux_as_a_development_platform_for_Scala_projects}
 \BIBentrySTDinterwordspacing
 
+\bibitem{suereth_sbt_2016}
+J.~Suereth and M.~Farwell, \emph{{SBT} in action: the simple {Scala} {Build}
+  {Tool}}.\hskip 1em plus 0.5em minus 0.4em\relax Shelter Island: Manning
+  Publications Co., 2016.
+
 \bibitem{google_google_2017}
 \BIBentryALTinterwordspacing
 Google, ``Google {Maps}.'' [Online]. Available: \url{https://maps.google.com/}
