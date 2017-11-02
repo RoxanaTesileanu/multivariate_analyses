@@ -24,7 +24,7 @@ This doesn't mean I give up the "spatial perspective".
 I will still use the X-Y coordinate plane to inspect how the residuals from fitted linear models are located. Eventually, delineate more than one tartget populations.
 And reevaluate the sampling design based on these preliminary conclusions.
 
-I will still keep the classification of Crassie (1993) which delineates three types of geospatial analyses:
+I will still keep the classification of Cressie (1993) which delineates three types of geospatial analyses:
 - on continuous surfaces (raster)
 - on discrete spatial features (lines, polygons)
 - on discrete spatial features (points).
