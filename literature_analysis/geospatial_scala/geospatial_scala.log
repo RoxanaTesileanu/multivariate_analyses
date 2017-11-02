@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  2 NOV 2017 13:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  2 NOV 2017 13:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -912,6 +912,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 678--2
 
  []
 
+
+Overfull \hbox (29.21417pt too wide) in paragraph at lines 678--2
+\T1/cmr/m/n/10 The source .tex file of the present doc-u-ment is also avail-abl
+e in the multivariate$[]$analyses
+ []
+
 [21]
 Underfull \hbox (badness 1028) in paragraph at lines 48--52
 []\T1/cmr/m/n/10 R. Tesileanu, ``Us-ing Linux as a de-vel-op-ment plat-
@@ -1270,7 +1276,7 @@ fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf
 /fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/
 cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pf
 b>
-Output written on geospatial_scala.pdf (29 pages, 211233 bytes).
+Output written on geospatial_scala.pdf (29 pages, 211243 bytes).
 PDF statistics:
  409 PDF objects out of 1000 (max. 8388607)
  365 compressed objects within 4 object streams
