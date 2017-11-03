@@ -3,7 +3,7 @@
 \BOOKMARK [2][-]{subsection.1.2}{Overview of the software development process of Scala projects}{section.1}% 3
 \BOOKMARK [3][-]{subsubsection.1.2.1}{Using VIM as an editor for Scala code}{subsection.1.2}% 4
 \BOOKMARK [3][-]{subsubsection.1.2.2}{Using SBT to create and manage Scala projects}{subsection.1.2}% 5
-\BOOKMARK [3][-]{subsubsection.1.2.3}{Managing dependencies}{subsection.1.2}% 6
+\BOOKMARK [3][-]{subsubsection.1.2.3}{Managing dependencies with SBT}{subsection.1.2}% 6
 \BOOKMARK [1][-]{section.2}{Geoprocessing vector and raster data}{}% 7
 \BOOKMARK [2][-]{subsection.2.1}{Types of spatial data}{section.2}% 8
 \BOOKMARK [2][-]{subsection.2.2}{Reading vector data}{section.2}% 9

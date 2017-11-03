@@ -6,7 +6,7 @@
 \contentsline {paragraph}{Installing SBT}{7}{section*.2}
 \contentsline {paragraph}{Creating a Scala projet}{8}{section*.3}
 \contentsline {paragraph}{Some basic SBT tasks}{10}{section*.4}
-\contentsline {subsubsection}{\numberline {1.2.3}Managing dependencies}{10}{subsubsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.3}Managing dependencies with SBT}{10}{subsubsection.1.2.3}
 \contentsline {paragraph}{Using external Scala libraries}{11}{section*.5}
 \contentsline {paragraph}{Using internal Scala libraries}{12}{section*.6}
 \contentsline {paragraph}{Using a forked JVM}{13}{section*.7}
