@@ -288,40 +288,70 @@ For a detailed introduction in SBT you should check the SBT documentation at \hr
 
 \subsubsubsection {Managing dependencies}
 
-Depending on the field in which a software developer is active, it is often necessary to use field-specific third-party Scala libraries which offer additional functionality. For data analysis, for example, the best known libraries are Spark (http://spark.apache.org/) which is a general engine for large-scale data processing (see Karau et al. 2015 for an introduction in Spark), ScalaNLP (http://www.scalanlp.org/) which is a suite of Machine Learning and numerical computinng libraries, or Figaro (https://www.cra.com/work/case-studies/figaro) which is a probabilistic programming language for probabilistic modeling based on Scala (see Pfeffer 2016 for an introduction in Figaro). 
-
-For GUI programming, the best known libraries are Scala.swing (http://www.scala-lang.org/api/2.9.1/scala/swing/package.html) which is actually a Scala package but needs to be added to the dependencies list in order to be imported and used in Scala projects, and ScalaFX (http://www.scalafx.org/) which is based on Scala and sits on top of JavaFX (see Lewis 2015 for an introduction in GUI programming using Scala).   
-
-For many software developers, the main reason of using SBT is that it offers an easy management of dependencies from repositories. Also the packaging and integration of libraries in form of .jar files into the project is possible. Internal libraries in form of .jar files are called unmanaged dependencies and you should place them into the project's lib directory, which should be created inside the project's directory if you intend to use libraries in form of .jar files for a Scala project. External libraries are found on repositories and are called managed dependencies, as they are configured in the build definition and downloaded automatically from repositories (SBT Documentation 2017).  
+Depending on the field in which a software developer is active, it is often necessary to use field-specific third-party Scala libraries which offer additional functionality.
+ For data analysis, for example, the best known libraries are Spark (\href{http://spark.apache.org/}{http://spark.apache.org/}) which is a general engine for large-scale data processing (see \cite{karau_learning_2015} for an introduction in Spark), ScalaNLP (\href{http://www.scalanlp.org/}{http://www.scalanlp.org/}) which is a suite of Machine Learning and numerical computinng libraries, or Figaro (\href{https://www.cra.com/work/case-studies/figaro}{https://www.cra.com/work/case-studies/figaro}) which is a probabilistic programming language for probabilistic modeling based on Scala (see \cite{pfeffer_practical_2016} for an introduction in Figaro). 
+\\
+\\
+For GUI programming, the best known libraries are Scala.swing (\href{http://www.scala-lang.org/api/2.9.1/scala/swing/package.html}{http://www.scala-lang.org/api/2.9.1/scala/swing/package.html}) which is actually a Scala package but needs to be added to the dependencies list in order to be imported and used in Scala projects, and ScalaFX (http://www.scalafx.org/) which is based on Scala and sits on top of JavaFX \cite{lewis_introduction_2017} (see \cite{lewis_introduction_2017} for a general introduction in Scala and GUI programming using Scala).   
+\\
+\\
+For many software developers, the main reason of using SBT is because it offers an easy management of dependencies from repositories.
+ Also the packaging and integration of libraries in form of .jar files into the project is possible.
+ Internal libraries in form of .jar files are called unmanaged dependencies and you should place them into the project's lib directory, which should be created inside the project's directory if you intend to use libraries in form of .jar files for a Scala project.
+ External libraries are found on repositories and are called managed dependencies, as they are configured in the build definition and downloaded automatically from repositories \cite{noauthor_sbt_2017}.  
 
 \paragraph {Using external Scala libraries}
 
-The first step towards integrating the functionality of these external libraries into our Scala code is to find out their repository coordinates for SBT use. One way to find out this piece of information is to search for them in the Maven Repository (https://mvnrepository.com/). The next step is to add the Maven dependency of the external library to the Scala project (Karau et al. 2015). This is done by including an additional setting called "libraryDependencies" in the project's buid.sbt file. This setting can take the form of a Sequence for including more than one external library dependency and in general looks like the following:
-
-libraryDependencies ++= Seq(
-  groupID %% artifactID % revision,
-  groupID %% artifactID % revision
-)
-
+The first step towards integrating the functionality of these external libraries into our Scala code is to find out their repository coordinates for SBT use.
+ One way to find out this piece of information is to search for them in the Maven Repository (\href{https://mvnrepository.com/}{https://mvnrepository.com/}). 
+The next step is to add the Maven dependency of the external library to the Scala project \cite{karau_learning_2015}. 
+This is done by including an additional setting called "libraryDependencies" in the project's buid.sbt file.
+ This setting can take the form of a Sequence for including more than one external library dependency and in general looks like the following:
+\\
+\\
+libraryDependencies ++= Seq( \\
+\tab  groupID \%\% artifactID \% revision,\\
+\tab  groupID \%\% artifactID \% revision\\
+)\\
+\\
+\\
 where the exact library coordinates are found in the Maven Repository.
-
-Figure 1 presents the contents of the build.sbt file of a Scala project called Scala_Playground (created in section 3.2) which includes the managed dependencies for enabling the use of Spark's MLlib (Spark's library for Machine Learning) and of scalaFX (library for GUI programming) and, the unmanaged dependecy for enabling the use of javaFX package needed for GUI programming using scalaFX.          
-
+\\
+\\
+Figure 1 presents the contents of the build.sbt file of a Scala project called Scala\underline{\space}Playground (created in section 3.2) which includes the managed dependencies for enabling the use of Spark's MLlib (Spark's library for Machine Learning) and of scalaFX (library for GUI programming) and, the unmanaged dependecy for enabling the use of javaFX package needed for GUI programming using scalaFX.          
+\\
+\\
 Fig. 1: The contents of the build.sbt file of a Scala project with three external dependencies and one internal dependency (if more than one .jar file is needed, then they should be placed in the project's lib directory instead of specifying them in the build.sbt file).   
-
+\\
+\\
 paragraph{Using internal Scala libraries}
 
-Sometimes it is necessary to use internal libraries in form of .jar files. Jar files are automatically created from compiled source files by setting the variable "exportJars" of the build.sbt file to true (exportJars := true). The process of .jar creation is called packaging. The newly created .jar file is placed in the project's target/scala-2.11 directory. If you want to make use of an internal library in form of a .jar file in your Scala code, it has to be added to classpath so that it becomes available during compilation, testing, running, and when using Scala REPL (SBT Documentation 2017). This can be achieved by overriding the settings variable called "unmanaged Jars" and indicating the path to the .jar file you want to use:
-
+Sometimes it is necessary to use internal libraries in form of .jar files.
+ Jar files are automatically created from compiled source files by setting the variable "exportJars" of the build.sbt file to true (exportJars := true).
+ The process of .jar creation is called packaging.
+ The newly created .jar file is placed in the project's target/scala-2.11 directory.
+ If you want to make use of an internal library in form of a .jar file in your Scala code, it has to be added to classpath so that it becomes available during compilation, testing, running, and when using Scala REPL (\cite{noauthor_sbt_2017}). 
+This can be achieved by overriding the settings variable called "unmanaged Jars" and indicating the path to the .jar file you want to use:
+\\
+\\
 unmanagedJars in Compile := Attributed.blank(file("mypath/*.jar")). 
-
+\\
+\\
 The above setting is equivalent to the use of "-cp" when starting the Scala interpreter from outside SBT ("\$ scala - cp mypath/*.jar ").      
-
-If more than one .jar file is used, then you should create a new directory called lib inside the Scala project's directory in which you can place the necessary jars. The lib directory will serve as common location and will make the jars available to the compiler and interpreter, all the jars added to it being placed on the project classpath (SBT Documentation 2017). 
+\\
+\\
+If more than one .jar file is used, then you should create a new directory called lib inside the Scala project's directory in which you can place the necessary jars. 
+The lib directory will serve as common location and will make the jars available to the compiler and interpreter, all the jars added to it being placed on the project classpath (\cite{noauthor_sbt_2017}). 
 
 \paragraph {Using a forked JVM}
 
-Running applications with the run task or using the REPL in SBT with the console task disposes the code to use the same JVM instance as SBT (SBT Documentation 2017). There are some situations though, when running user code in the same JVM as SBT causes problems, and demand that the code is run in a different instance of JVM. In SBT this is called forking the JVM (Suereth and Farwell 2016). You can enable forking by setting the variable called "fork" in your build.sbt file to true ("fork := true"). The situations requiring JVM forking appear either when the user code employs System.exit (which shuts down the JVM), or when it starts multiple threads (some of which may not terminate until JVM terminates) like in the case of creating a GUI (SBT Documentation 2017). You can read more on forking in Suereth and Farwell (2016) and in the SBT documentation (http://www.scala-sbt.org/1.x/docs/Forking.html). The build.sbt file in fig. 1 enables forking in order to ensure the save close of GUIs created by user code.      
+Running applications with the run task or using the REPL in SBT with the console task disposes the code to use the same JVM instance as SBT (\cite{noauthor_sbt_2017}). 
+There are some situations though, when running user code in the same JVM as SBT causes problems, and demand that the code is run in a different instance of JVM.
+ In SBT this is called forking the JVM \cite{suereth_sbt_2016}.
+ You can enable forking by setting the variable called "fork" in your build.sbt file to true ("fork := true").
+ The situations requiring JVM forking appear either when the user code employs System.exit (which shuts down the JVM), or when it starts multiple threads (some of which may not terminate until JVM terminates) like in the case of creating a GUI \cite{noauthor_sbt_2017}.
+ You can read more on forking in Suereth and Farwell (2016) and in the SBT documentation (\href{http://www.scala-sbt.org/1.x/docs/Forking.html}{http://www.scala-sbt.org/1.x/docs/Forking.html}).
+ The build.sbt file in fig. 1 enables forking in order to ensure the save close of GUIs created by user code.      
 
 
 \section{Geoprocessing vector and raster data}
