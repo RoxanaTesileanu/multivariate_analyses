@@ -40,8 +40,8 @@ Maybe the most important fact is that geospatial analysis doesn't treat variable
  It is adding space as a variable in the vector of recorded variables of each individual observation/point. The highlight of individual points is actually like in object-based classical multivariate statistics. It is treating space as an autocorrelated variable across a series of individual points, and letting all the other variables be "classical". 
 \\
 \\
-For me the most important moment in this introductory phase was when I've realized that we don't talk about classical samples of observations, where we concentrate on variables, but instead in geostatistics we concentrate on pairs of observations (i.e. of points). 
-We compute covariances for such pairs, not for the whole sample as in classical statistics. We don't have weights for entire variables, we have weights for individual points caring those values of the variables studied. 
+For me the most important moment in this introductory phase was when I've realized that until now  in geostatistics we talked less about samples of observations, where we concentrate on variables, but instead in geostatistics we concentrated more on pairs of observations (i.e. of points). 
+We computed covariances for such pairs, not covarianced between variables as in classical statistics. We didn't have weights for entire variables, we had weights for individual points caring those values of the variables studied. 
 It is I believe very important the moment when you understand this. Spatial models treat individual points in ways similar to treating individual variables in classical statistics. But we must be aware these are individual points we are talking about, and we very much use distance measures for objects (like the Euclidean distance) like in the multivariate object-based classical statistics.
 \\
 \\
@@ -51,10 +51,10 @@ The example from Quinn and Keough (2002) at the multiple regression chapter, whe
  If the spatial analysis includes a random error with spatial dependence, then why not include in the model the X and Y coordinates as two separate variables and make the random error spatial independent? Adding appropriate variables to a model is the approach used in multivariate statistics to reduce the unexplained variation \cite{quinn_experimental_2002} , \cite{carroll_mathematical_1997}.
 \\
 \\
-Maybe spatial analysis is just classical multivariate analysis (variable- or object-based, or combined); the important thing is to include X and Y variables in the model.
+Maybe spatial analysis is just classical multivariate analysis (variable- or object-based, or combined); the important thing is to include X and Y variables in the model and to check for eventual local variations within the dataset.
 \\
 \\
-This doesn't mean I give up the "spatial perspective". I will still use the X-Y coordinate plane to inspect how the residuals from fitted linear models are located. Eventually, delineate more than one target population. And reevaluate the sampling design based on these preliminary conclusions.
+This doesn't mean I give up the "spatial perspective". I will still use the X-Y coordinate plane to inspect how the residuals from fitted linear models are located. Eventually, treat local variation by using optimization procedures or by delineating more than one target population. And reevaluate the sampling design based on these preliminary conclusions.
 \\
 \\
 I will also use the classification of Cressie (1993) \cite{cressie_statistics_1993} which delineates three types of geospatial analyses:
