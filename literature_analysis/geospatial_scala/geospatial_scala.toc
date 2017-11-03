@@ -1,5 +1,7 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}
-\contentsline {section}{\numberline {2}Geoprocessing using GDAL}{2}{section.2}
+\contentsline {subsection}{\numberline {1.1}Geoprocessing using GDAL}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Using SBT to manage your Scala project}{3}{subsection.1.2}
+\contentsline {section}{\numberline {2}Geoprocessing vector and raster data}{3}{section.2}
 \contentsline {subsection}{\numberline {2.1}Types of spatial data}{3}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Reading vector data}{4}{subsection.2.2}
 \contentsline {paragraph}{ Code snippet 1: accessing a shapefile using OGR in Scala}{5}{section*.2}
@@ -12,7 +14,7 @@
 \contentsline {paragraph}{Code snippet 3: Reading point coordinates from a .csv file}{14}{section*.6}
 \contentsline {paragraph}{ Code snippet 3: Explanation}{15}{section*.7}
 \contentsline {paragraph}{Code snippet 4: Creating points and multipoints, lines and multilines, and, polygons and multiploygons}{16}{section*.8}
-\contentsline {paragraph}{ Code snippet 4: Explanation}{17}{section*.9}
+\contentsline {paragraph}{ Code snippet 4: Explanation}{18}{section*.9}
 \contentsline {paragraph}{Code snippet 5: Creating a georeferenced vector layer}{18}{section*.10}
 \contentsline {paragraph}{Code snippet 5: Explanation}{19}{section*.11}
 \contentsline {subsubsection}{\numberline {2.3.3}Reprojecting OGR geometries and vector layers}{20}{subsubsection.2.3.3}
@@ -27,6 +29,6 @@
 \contentsline {subsection}{\numberline {3.1}Introduction into spatial data analysis}{20}{subsection.3.1}
 \contentsline {section}{Appendices}{23}{section*.14}
 \contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{23}{Appendix.a.A}
-\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{26}{Appendix.a.B}
+\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{27}{Appendix.a.B}
 \contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{27}{Appendix.a.C}
 \contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{29}{Appendix.a.D}
