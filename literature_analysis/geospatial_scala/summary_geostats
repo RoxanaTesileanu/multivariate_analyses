@@ -36,9 +36,9 @@ If the spatial analysis includes a random error with spatial dependence, then wh
 Maybe spatial analysis is just classical multivariate analysis (variable- or object-based, or combined); the important thing is to include X and Y in the model, and check for eventual local variations within the dataset. 
 
 This doesn't mean I give up the "spatial perspective".
-I will still use the X-Y coordinate plane to inspect how the residuals from fitted linear models are located. Eventually, delineate more than one tartget populations.
+I will still use the X-Y coordinate plane to inspect how the residuals from fitted linear models are located. Eventually, treat local variation by using optimization procedures or delineate more than one tartget populations.
 And reevaluate the sampling design based on these preliminary conclusions.
-
+--------------------------------------------------
 I will still keep the classification of Cressie (1993) which delineates three types of geospatial analyses:
 - on continuous surfaces (raster)
 - on discrete spatial features (lines, polygons)
