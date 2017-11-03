@@ -313,8 +313,8 @@ This is done by including an additional setting called "libraryDependencies" in 
 \\
 \\
 libraryDependencies ++= Seq( \\
-\tab  groupID \%\% artifactID \% revision,\\
-\tab  groupID \%\% artifactID \% revision\\
+groupID \%\% artifactID \% revision,\\
+groupID \%\% artifactID \% revision\\
 )\\
 \\
 \\
@@ -324,7 +324,10 @@ where the exact library coordinates are found in the Maven Repository.
 Figure 1 presents the contents of the build.sbt file of a Scala project called Scala\underline{\space}Playground (created in section 3.2) which includes the managed dependencies for enabling the use of Spark's MLlib (Spark's library for Machine Learning) and of scalaFX (library for GUI programming) and, the unmanaged dependecy for enabling the use of javaFX package needed for GUI programming using scalaFX.          
 \\
 \\
-Fig. 1: The contents of the build.sbt file of a Scala project with three external dependencies and one internal dependency (if more than one .jar file is needed, then they should be placed in the project's lib directory instead of specifying them in the build.sbt file).   
+\begin{figure} [H]
+\includegraphics[width=\linewidth] {fig1.gif}
+\caption{The contents of the build.sbt file of a Scala project with three external dependencies and one internal dependency (if more than one .jar file is needed, then they should be placed in the project's lib directory instead of specifying them in the build.sbt file).}
+\end{figure}   
 \\
 \\
 \paragraph{Using internal Scala libraries}
