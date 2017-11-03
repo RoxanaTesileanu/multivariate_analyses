@@ -8,6 +8,7 @@ It further adds into models the space dependent random error. In this document I
 
 Another basic principle of geostatistics is the recognition of local variation as opposed to the global variation of the entire dataset. 
 This principle can be incorporated into multivariate statistics by using combined approaches, i.e. approaches which deal with global variation as well as with local variation of a dataset.
+In this work I propose the MANOVA-KNN pipeline for reducing error as a combined approach dealing with both types of variation.
 ---------------
 After reading through introductive chapters of several books, I can now state that geostatistics is a departure from classical statistics not just because of the sentence that "it takes spatial autocorrelation of observations into account when predicting values for new points".
 It is more than that in it. Mabye the most important fact is that geospatial analysis does't treat variables as we are used to in classical stats but uses individual observations (i.e. individual points) and investigates the relationships between them from a spatial perspective.
