@@ -3,25 +3,29 @@
 \contentsline {subsection}{\numberline {1.2}Using SBT to manage your Scala project}{3}{subsection.1.2}
 \contentsline {subsubsection}{\numberline {1.2.1}Using VIM as an editor for Scala code}{4}{subsubsection.1.2.1}
 \contentsline {subsubsection}{\numberline {1.2.2}Using SBT to create and manage Scala projects}{7}{subsubsection.1.2.2}
-\contentsline {paragraph}{Some basic SBT tasks}{9}{section*.2}
-\contentsline {paragraph}{Using external Scala libraries}{10}{section*.3}
-\contentsline {paragraph}{Using a forked JVM}{11}{section*.4}
+\contentsline {paragraph}{Installing SBT}{7}{section*.2}
+\contentsline {paragraph}{Creating a Scala projet}{8}{section*.3}
+\contentsline {paragraph}{Some basic SBT tasks}{9}{section*.4}
+\contentsline {subsubsection}{\numberline {1.2.3}Managing dependencies}{10}{subsubsection.1.2.3}
+\contentsline {paragraph}{Using external Scala libraries}{10}{section*.5}
+\contentsline {paragraph}{Using internal Scala libraries}{11}{section*.6}
+\contentsline {paragraph}{Using a forked JVM}{12}{section*.7}
 \contentsline {section}{\numberline {2}Geoprocessing vector and raster data}{12}{section.2}
 \contentsline {subsection}{\numberline {2.1}Types of spatial data}{12}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Reading vector data}{12}{subsection.2.2}
-\contentsline {paragraph}{ Code snippet 1: accessing a shapefile using OGR in Scala}{14}{section*.5}
-\contentsline {paragraph}{Code snippet 1: Explanation}{14}{section*.6}
+\contentsline {subsection}{\numberline {2.2}Reading vector data}{13}{subsection.2.2}
+\contentsline {paragraph}{ Code snippet 1: accessing a shapefile using OGR in Scala}{14}{section*.8}
+\contentsline {paragraph}{Code snippet 1: Explanation}{15}{section*.9}
 \contentsline {subsection}{\numberline {2.3}Georeferencing data}{15}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Spatial reference systems in OGR}{16}{subsubsection.2.3.1}
-\contentsline {paragraph}{Code snippet 2: creating a SpatialReference object using OGR in Scala}{17}{section*.7}
-\contentsline {paragraph}{Code snippet 2: Explanation}{22}{section*.8}
-\contentsline {subsubsection}{\numberline {2.3.2}Creating OGR geometries and vector layers}{22}{subsubsection.2.3.2}
-\contentsline {paragraph}{Code snippet 3: Reading point coordinates from a .csv file}{22}{section*.9}
-\contentsline {paragraph}{ Code snippet 3: Explanation}{24}{section*.10}
-\contentsline {paragraph}{Code snippet 4: Creating points and multipoints, lines and multilines, and, polygons and multiploygons}{25}{section*.11}
-\contentsline {paragraph}{ Code snippet 4: Explanation}{26}{section*.12}
-\contentsline {paragraph}{Code snippet 5: Creating a georeferenced vector layer}{27}{section*.13}
-\contentsline {paragraph}{Code snippet 5: Explanation}{28}{section*.14}
+\contentsline {paragraph}{Code snippet 2: creating a SpatialReference object using OGR in Scala}{17}{section*.10}
+\contentsline {paragraph}{Code snippet 2: Explanation}{22}{section*.11}
+\contentsline {subsubsection}{\numberline {2.3.2}Creating OGR geometries and vector layers}{23}{subsubsection.2.3.2}
+\contentsline {paragraph}{Code snippet 3: Reading point coordinates from a .csv file}{23}{section*.12}
+\contentsline {paragraph}{ Code snippet 3: Explanation}{25}{section*.13}
+\contentsline {paragraph}{Code snippet 4: Creating points and multipoints, lines and multilines, and, polygons and multiploygons}{25}{section*.14}
+\contentsline {paragraph}{ Code snippet 4: Explanation}{27}{section*.15}
+\contentsline {paragraph}{Code snippet 5: Creating a georeferenced vector layer}{27}{section*.16}
+\contentsline {paragraph}{Code snippet 5: Explanation}{29}{section*.17}
 \contentsline {subsubsection}{\numberline {2.3.3}Reprojecting OGR geometries and vector layers}{29}{subsubsection.2.3.3}
 \contentsline {subsection}{\numberline {2.4}Overlay analyses}{29}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Proximity analyses}{29}{subsection.2.5}
@@ -32,8 +36,8 @@
 \contentsline {subsection}{\numberline {2.10}Map algebra}{29}{subsection.2.10}
 \contentsline {section}{\numberline {3}Spatial data analysis}{29}{section.3}
 \contentsline {subsection}{\numberline {3.1}Introduction into spatial data analysis}{29}{subsection.3.1}
-\contentsline {section}{Appendices}{32}{section*.17}
-\contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{32}{Appendix.a.A}
+\contentsline {section}{Appendices}{32}{section*.20}
+\contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{33}{Appendix.a.A}
 \contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{36}{Appendix.a.B}
-\contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{36}{Appendix.a.C}
+\contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{37}{Appendix.a.C}
 \contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{38}{Appendix.a.D}

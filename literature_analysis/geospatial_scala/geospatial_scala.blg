@@ -8,55 +8,54 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: MyLibrary.bib
-Warning--I didn't find a database entry for "shotts_linus_2009"
-Warning--I didn't find a database entry for "pfeffer_practical_2016"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty year in pfeffer_practical_2016
 Warning--edition ordinal word "Second Edition" may be too high (or improper) for conversion in webster_geostatistics_2007
 Warning--missing publisher in hengl_practical_2009
 Warning--edition ordinal word "Revised" may be too high (or improper) for conversion in carroll_mathematical_1997
 
 Done.
-You've used 21 entries,
+You've used 23 entries,
             4087 wiz_defined-function locations,
-            922 strings with 9739 characters,
-and the built_in function-call counts, 8507 in all, are:
-= -- 597
-> -- 161
+            927 strings with 9852 characters,
+and the built_in function-call counts, 9159 in all, are:
+= -- 641
+> -- 169
 < -- 16
-+ -- 77
-- -- 34
-* -- 337
-:= -- 1401
-add.period$ -- 41
-call.type$ -- 21
++ -- 81
+- -- 36
+* -- 355
+:= -- 1517
+add.period$ -- 45
+call.type$ -- 23
 change.case$ -- 13
 chr.to.int$ -- 42
-cite$ -- 24
-duplicate$ -- 675
-empty$ -- 935
-format.name$ -- 44
-if$ -- 1955
+cite$ -- 27
+duplicate$ -- 728
+empty$ -- 1023
+format.name$ -- 46
+if$ -- 2110
 int.to.chr$ -- 0
-int.to.str$ -- 21
-missing$ -- 136
-newline$ -- 100
-num.names$ -- 20
-pop$ -- 440
+int.to.str$ -- 23
+missing$ -- 145
+newline$ -- 106
+num.names$ -- 22
+pop$ -- 469
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 6
-skip$ -- 680
+skip$ -- 739
 stack$ -- 0
 substring$ -- 83
-swap$ -- 380
+swap$ -- 405
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 21
-warning$ -- 3
-while$ -- 24
-width$ -- 23
-write$ -- 189
-(There were 5 warnings)
+type$ -- 23
+warning$ -- 4
+while$ -- 26
+width$ -- 25
+write$ -- 203
+(There were 4 warnings)

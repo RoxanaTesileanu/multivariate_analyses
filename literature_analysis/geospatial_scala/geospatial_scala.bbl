@@ -65,6 +65,10 @@ J.~Suereth and M.~Farwell, \emph{{SBT} in action: the simple {Scala} {Build}
 R.~U. Rehman and C.~Paul, \emph{The {Linux} {Development} {Platform}}.\hskip
   1em plus 0.5em minus 0.4em\relax Pearson, 2003.
 
+\bibitem{shotts_linux_2009}
+W.~E.~J. Shotts, \emph{The {Linux} {Command} {Line}}.\hskip 1em plus 0.5em
+  minus 0.4em\relax LinuxCommand.org, 2009.
+
 \bibitem{swartz_learning_2015}
 J.~Swartz, \emph{Learning {Scala}}.\hskip 1em plus 0.5em minus 0.4em\relax
   Sebastopol: O'Reilly, 2015.
@@ -77,6 +81,10 @@ M.~C. Lewis and L.~L. Lacher, \emph{Introduction to {Programming} and {Problem}
 \bibitem{karau_learning_2015}
 H.~Karau, A.~Konwinski, P.~Wendell, and M.~Zaharia, \emph{Learning
   {Spark}}.\hskip 1em plus 0.5em minus 0.4em\relax Sebastopol: O'Reilly, 2015.
+
+\bibitem{pfeffer_practical_2016}
+A.~Pfeffer, \emph{Practical probabilistic programming}.\hskip 1em plus 0.5em
+  minus 0.4em\relax Shelter Island: Manning Publications Co.
 
 \bibitem{noauthor_sbt_2017}
 \BIBentryALTinterwordspacing

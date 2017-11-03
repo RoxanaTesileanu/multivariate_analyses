@@ -168,16 +168,16 @@ Finally for getting help in VIM you type ":help <ENTER>".
  To close the help window use ":q". 
 To find help on a specific command use ":help some\underline{\space}command", for example type ":help user-manual" to get to the user manual.
  For an interactive tutorial for VIM you can also use the "VIM Tutor" initially created by Pierce and Ware, which can be started in the command line with the command "\$ vimtutor <ENTER>". 
-A short introduction in VIM can be also found in Shotts (2009) \cite{shotts_linus_2009}, a lecture which gently introduces readers to the Linux command line in general. 
+A short introduction in VIM can be also found in Shotts (2009) \cite{shotts_linux_2009}, a lecture which gently introduces readers to the Linux command line in general. 
 
 \subsubsection {Using SBT to create and manage Scala projects}
 
 In this section the reader will find out how to install SBT and use it to create and manage Scala projects. 
 Furthermore, the issue of integrating external (managed) and internal (unmanaged) dependencies and of forking the Java Virtual Machine (JVM) will be discussed.
 
-\subsubsubsection {Installing SBT}
+\paragraph {Installing SBT}
 
-You can use the Scala REPL either directly from within the command-line, initiating a REPL sesssion with the command "\$ scala", or, by launching a SBT-session with the command "\$ sbt" and then from within SBT launch the Scala REPL using the command "\> console".
+You can use the Scala REPL either directly from within the command-line, initiating a REPL sesssion with the command "\$ scala", or, by launching a SBT-session with the command "\$ sbt" and then from within SBT launch the Scala REPL using the command "> console".
  On Ubuntu you can install the Scala language using the apt command ("\$ sudo apt install scala") with no additional commands.
  Check the package management tool you use to get the same result. You can open the Scala REPL and type in some expressions; to exit type ":q" (VIM is useful after all). 
 For guidance, check the book of Jason Swartz "Learning Scala" \cite{swartz_learning_2015} and the book of Mark Lewis "Introduction to Programming and Problem Solving Using Scala" \cite{lewis_introduction_2017}for a great introduction to the Scala language. 
@@ -187,25 +187,25 @@ Installing SBT requires a look at the SBT homepage (\href{http://www.scala-sbt.o
  At the time the present document is written the commands for Ubuntu  are:
 \\
 \\
-\$ echo "deb https://dl.bintray.com/sbt/debian /" \| sudo tee -a /etc/apt/sources.list.d/sbt.list
+\$ echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list\\
 \\
 \\
-\$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
+\$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823\\
 \\
 \\
-\$ sudo apt-get update
+\$ sudo apt-get update\\
 \\
 \\
-\$ sudo apt-get install sbt
+\$ sudo apt-get install sbt\\
 \\
 \\
 If you are using rpm distributions visit the SBT download page (href{http://www.scala-sbt.org/download.html}{http://www.scala-sbt.org/download.html}) and look for the appropriate installing commands. 
 \\
 \\
 Next, open a Scala REPL session in SBT using the commands introduced at the beginning of this section and type in some expressions.
- You exit the console with ":q" and the command "\> exit" gets you out of the SBT and back to the command-line.
+ You exit the console with ":q" and the command "> exit" gets you out of the SBT and back to the command-line.
 
-\subsubsubsection{Creating a Scala project}
+\paragraph{Creating a Scala projet}
 
 In this section we will create a Scala project called Scala\underline{\space}Playground in order to continue the playground series of Linux introductions started by William Shotts (2009) in his book "The Linux Command Line". 
 \\
@@ -286,7 +286,7 @@ The command "tasks" is also listed in the help output.
 \end{itemize}
 For a detailed introduction in SBT you should check the SBT documentation at \href{http://www.scala-sbt.org/documentation.html}{http://www.scala-sbt.org/documentation.html} and read the book of Joshua Suereth and Matthew Farwell (2016) "SBT in action: the Simple Scala Build Tool". 
 
-\subsubsubsection {Managing dependencies}
+\subsubsection {Managing dependencies}
 
 Depending on the field in which a software developer is active, it is often necessary to use field-specific third-party Scala libraries which offer additional functionality.
  For data analysis, for example, the best known libraries are Spark (\href{http://spark.apache.org/}{http://spark.apache.org/}) which is a general engine for large-scale data processing (see \cite{karau_learning_2015} for an introduction in Spark), ScalaNLP (\href{http://www.scalanlp.org/}{http://www.scalanlp.org/}) which is a suite of Machine Learning and numerical computinng libraries, or Figaro (\href{https://www.cra.com/work/case-studies/figaro}{https://www.cra.com/work/case-studies/figaro}) which is a probabilistic programming language for probabilistic modeling based on Scala (see \cite{pfeffer_practical_2016} for an introduction in Figaro). 
@@ -324,7 +324,7 @@ Figure 1 presents the contents of the build.sbt file of a Scala project called S
 Fig. 1: The contents of the build.sbt file of a Scala project with three external dependencies and one internal dependency (if more than one .jar file is needed, then they should be placed in the project's lib directory instead of specifying them in the build.sbt file).   
 \\
 \\
-paragraph{Using internal Scala libraries}
+\paragraph{Using internal Scala libraries}
 
 Sometimes it is necessary to use internal libraries in form of .jar files.
  Jar files are automatically created from compiled source files by setting the variable "exportJars" of the build.sbt file to true (exportJars := true).
