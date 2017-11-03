@@ -1,24 +1,26 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{Geoprocessing using GDAL}{section.1}% 2
 \BOOKMARK [2][-]{subsection.1.2}{Using SBT to manage your Scala project}{section.1}% 3
-\BOOKMARK [1][-]{section.2}{Geoprocessing vector and raster data}{}% 4
-\BOOKMARK [2][-]{subsection.2.1}{Types of spatial data}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.2}{Reading vector data}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.3}{Georeferencing data}{section.2}% 7
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Spatial reference systems in OGR}{subsection.2.3}% 8
-\BOOKMARK [3][-]{subsubsection.2.3.2}{Creating OGR geometries and vector layers}{subsection.2.3}% 9
-\BOOKMARK [3][-]{subsubsection.2.3.3}{Reprojecting OGR geometries and vector layers}{subsection.2.3}% 10
-\BOOKMARK [2][-]{subsection.2.4}{Overlay analyses}{section.2}% 11
-\BOOKMARK [2][-]{subsection.2.5}{Proximity analyses}{section.2}% 12
-\BOOKMARK [2][-]{subsection.2.6}{Writing vector data}{section.2}% 13
-\BOOKMARK [2][-]{subsection.2.7}{Reading raster data}{section.2}% 14
-\BOOKMARK [2][-]{subsection.2.8}{Pixels resizing}{section.2}% 15
-\BOOKMARK [2][-]{subsection.2.9}{Moving window analyses}{section.2}% 16
-\BOOKMARK [2][-]{subsection.2.10}{Map algebra}{section.2}% 17
-\BOOKMARK [1][-]{section.3}{Spatial data analysis}{}% 18
-\BOOKMARK [2][-]{subsection.3.1}{Introduction into spatial data analysis}{section.3}% 19
-\BOOKMARK [1][-]{section*.14}{Appendices}{}% 20
-\BOOKMARK [1][-]{Appendix.a.A}{Appendix Point coordinates for code snippet 3}{}% 21
-\BOOKMARK [1][-]{Appendix.a.B}{Appendix Scala source file: readPointCoord.scala}{}% 22
-\BOOKMARK [1][-]{Appendix.a.C}{Appendix Scala source file: createGeoms.scala}{}% 23
-\BOOKMARK [1][-]{Appendix.a.D}{Appendix Scala source file: createVLayer.scala}{}% 24
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Using VIM as an editor for Scala code}{subsection.1.2}% 4
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Using SBT to create and manage Scala projects}{subsection.1.2}% 5
+\BOOKMARK [1][-]{section.2}{Geoprocessing vector and raster data}{}% 6
+\BOOKMARK [2][-]{subsection.2.1}{Types of spatial data}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.2}{Reading vector data}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.3}{Georeferencing data}{section.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Spatial reference systems in OGR}{subsection.2.3}% 10
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Creating OGR geometries and vector layers}{subsection.2.3}% 11
+\BOOKMARK [3][-]{subsubsection.2.3.3}{Reprojecting OGR geometries and vector layers}{subsection.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.4}{Overlay analyses}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.5}{Proximity analyses}{section.2}% 14
+\BOOKMARK [2][-]{subsection.2.6}{Writing vector data}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.7}{Reading raster data}{section.2}% 16
+\BOOKMARK [2][-]{subsection.2.8}{Pixels resizing}{section.2}% 17
+\BOOKMARK [2][-]{subsection.2.9}{Moving window analyses}{section.2}% 18
+\BOOKMARK [2][-]{subsection.2.10}{Map algebra}{section.2}% 19
+\BOOKMARK [1][-]{section.3}{Spatial data analysis}{}% 20
+\BOOKMARK [2][-]{subsection.3.1}{Introduction into spatial data analysis}{section.3}% 21
+\BOOKMARK [1][-]{section*.17}{Appendices}{}% 22
+\BOOKMARK [1][-]{Appendix.a.A}{Appendix Point coordinates for code snippet 3}{}% 23
+\BOOKMARK [1][-]{Appendix.a.B}{Appendix Scala source file: readPointCoord.scala}{}% 24
+\BOOKMARK [1][-]{Appendix.a.C}{Appendix Scala source file: createGeoms.scala}{}% 25
+\BOOKMARK [1][-]{Appendix.a.D}{Appendix Scala source file: createVLayer.scala}{}% 26

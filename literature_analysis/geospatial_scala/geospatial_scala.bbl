@@ -61,10 +61,9 @@ J.~Suereth and M.~Farwell, \emph{{SBT} in action: the simple {Scala} {Build}
   {Tool}}.\hskip 1em plus 0.5em minus 0.4em\relax Shelter Island: Manning
   Publications Co., 2016.
 
-\bibitem{google_google_2017}
-\BIBentryALTinterwordspacing
-Google, ``Google {Maps}.'' [Online]. Available: \url{https://maps.google.com/}
-\BIBentrySTDinterwordspacing
+\bibitem{rehman_linux_2003}
+R.~U. Rehman and C.~Paul, \emph{The {Linux} {Development} {Platform}}.\hskip
+  1em plus 0.5em minus 0.4em\relax Pearson, 2003.
 
 \bibitem{swartz_learning_2015}
 J.~Swartz, \emph{Learning {Scala}}.\hskip 1em plus 0.5em minus 0.4em\relax
@@ -74,6 +73,21 @@ J.~Swartz, \emph{Learning {Scala}}.\hskip 1em plus 0.5em minus 0.4em\relax
 M.~C. Lewis and L.~L. Lacher, \emph{Introduction to {Programming} and {Problem}
   {Solving} {Using} {Scala}}.\hskip 1em plus 0.5em minus 0.4em\relax CRC Press,
   2017.
+
+\bibitem{karau_learning_2015}
+H.~Karau, A.~Konwinski, P.~Wendell, and M.~Zaharia, \emph{Learning
+  {Spark}}.\hskip 1em plus 0.5em minus 0.4em\relax Sebastopol: O'Reilly, 2015.
+
+\bibitem{noauthor_sbt_2017}
+\BIBentryALTinterwordspacing
+``{SBT} {Documentation},'' 2017. [Online]. Available:
+  \url{http://www.scala-sbt.org/documentation.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{google_google_2017}
+\BIBentryALTinterwordspacing
+Google, ``Google {Maps}.'' [Online]. Available: \url{https://maps.google.com/}
+\BIBentrySTDinterwordspacing
 
 \bibitem{cressie_statistics_1993}
 N.~A.~C. Cressie, \emph{Statistics for {Spatial} {Data}}.\hskip 1em plus 0.5em
