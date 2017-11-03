@@ -1,9 +1,9 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}
 \contentsline {subsection}{\numberline {1.1}Geoprocessing using GDAL}{2}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Overview of the software development process of Scala projects}{3}{subsection.1.2}
-\contentsline {subsubsection}{\numberline {1.2.1}Using VIM as an editor for Scala code}{4}{subsubsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.2}Using SBT to create and manage Scala projects}{7}{subsubsection.1.2.2}
-\contentsline {paragraph}{Installing SBT}{7}{section*.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Using VIM as an editor for Scala code}{5}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Using SBT to create and manage Scala projects}{8}{subsubsection.1.2.2}
+\contentsline {paragraph}{Installing SBT}{8}{section*.2}
 \contentsline {paragraph}{Creating a Scala projet}{8}{section*.3}
 \contentsline {paragraph}{Some basic SBT tasks}{10}{section*.4}
 \contentsline {subsubsection}{\numberline {1.2.3}Managing dependencies with SBT}{10}{subsubsection.1.2.3}
@@ -36,8 +36,17 @@
 \contentsline {subsection}{\numberline {2.10}Map algebra}{30}{subsection.2.10}
 \contentsline {section}{\numberline {3}Spatial data analysis}{30}{section.3}
 \contentsline {subsection}{\numberline {3.1}Introduction into spatial data analysis}{30}{subsection.3.1}
-\contentsline {section}{Appendices}{33}{section*.20}
+\contentsline {section}{\numberline {4}Computing statistical matrices for multivariate analyses}{32}{section.4}
+\contentsline {section}{\numberline {5}Variable-based multivariate analyses}{32}{section.5}
+\contentsline {subsection}{\numberline {5.1}Implementing the multiple regression analysis}{32}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Implementing MANOVA}{32}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Vizualizing residual maps}{32}{subsection.5.3}
+\contentsline {section}{\numberline {6}Object-based multivariate analyses}{32}{section.6}
+\contentsline {subsection}{\numberline {6.1} Implementing k-Nearest Neighbor}{32}{subsection.6.1}
+\contentsline {section}{\numberline {7}Combined approaches: the MANOVA-KNN pipeline}{32}{section.7}
+\contentsline {section}{\numberline {8}Conclusions}{32}{section.8}
+\contentsline {section}{Appendices}{34}{section*.20}
 \contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{34}{Appendix.a.A}
-\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{37}{Appendix.a.B}
+\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{38}{Appendix.a.B}
 \contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{38}{Appendix.a.C}
-\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{39}{Appendix.a.D}
+\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{40}{Appendix.a.D}
