@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  3 NOV 2017 13:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  3 NOV 2017 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -425,14 +425,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--65
 
  []
 
-[3]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
-
+ [3]
 Underfull \hbox (badness 10000) in paragraph at lines 73--91
 
  []
@@ -531,7 +530,7 @@ Overfull \hbox (1.98935pt too wide) in paragraph at lines 132--175
 p some$[]$command",
  []
 
-[6] [7]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 183--210
 
  []
@@ -610,7 +609,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--210
 
  []
 
-
+[7]
 Overfull \hbox (31.74133pt too wide) in paragraph at lines 213--270
  []\T1/cmr/bx/n/10 Creating a Scala pro-jet[] \T1/cmr/m/n/10 Now, we will cre-a
 te a Scala project called Scala$[]$Playground
@@ -721,7 +720,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 294--305
 
  []
 
-[10] <fig1.jpg, id=294, 819.06pt x 481.8pt>
+[10] <fig1.jpg, id=295, 819.06pt x 481.8pt>
 File: fig1.jpg Graphic file (type jpg)
  <use fig1.jpg>
 Package pdftex.def Info: fig1.jpg used on input line 328.
@@ -880,7 +879,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--422
 
  []
 
-[15]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -897,7 +895,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 425--435
 
  []
 
-[16]
+[15] [16]
 Underfull \hbox (badness 10000) in paragraph at lines 459--494
 
  []
@@ -1049,7 +1047,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 714--719
 
  []
 
-[23] [24]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 743--779
 
  []
@@ -1071,20 +1069,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 743--779
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 743--779
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 780--787
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 780--787
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 780--787
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 780--787
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 789--855
 
  []
@@ -1255,7 +1253,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 872--919
 
  []
 
-[28] [29]
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 920--928
 
  []
@@ -1265,7 +1263,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 920--928
 
  []
 
-
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 952--980
 
  []
@@ -1579,7 +1577,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1257--1258
 
  []
 
-[39]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1259--1300
 
  []
@@ -1622,6 +1620,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1259--1300
 
  []
 
+[39]
 
 ! LaTeX Error: \begin{appendices} on input line 1013 ended by \end{document}.
 
@@ -1648,14 +1647,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1301--1304
 
  []
 
-[40] [41]
+[40]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1304.
  (./geospatial_scala.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1304.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1304.
 
 Package rerunfilecheck Info: File `geospatial_scala.out' has not changed.
-(rerunfilecheck)             Checksum: 92BE55C66916ADF616967AF42CCC09E4;2783.
+(rerunfilecheck)             Checksum: EC7C830DDFBE9A54D26BD0655C8AC092;2805.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1304.
  )
 (\end occurred inside a group at level 1)
@@ -1663,13 +1662,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1304.
 ### semi simple group (level 1) entered at line 1013 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6378 strings out of 493029
- 91283 string characters out of 6136234
+ 6377 strings out of 493029
+ 91286 string characters out of 6136234
  194446 words of memory out of 5000000
  9723 multiletter control sequences out of 15000+600000
  13580 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,6n,31p,897b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,6n,31p,897b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
@@ -1679,10 +1678,10 @@ fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf
 /fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/
 cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pf
 b>
-Output written on geospatial_scala.pdf (41 pages, 300125 bytes).
+Output written on geospatial_scala.pdf (40 pages, 300121 bytes).
 PDF statistics:
- 596 PDF objects out of 1000 (max. 8388607)
- 537 compressed objects within 6 object streams
- 122 named destinations out of 1000 (max. 500000)
+ 592 PDF objects out of 1000 (max. 8388607)
+ 534 compressed objects within 6 object streams
+ 121 named destinations out of 1000 (max. 500000)
  294 words of extra memory for PDF output out of 10000 (max. 10000000)
 
