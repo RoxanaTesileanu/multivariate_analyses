@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  3 NOV 2017 09:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  3 NOV 2017 10:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -430,408 +430,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--88
 
  []
 
-[3]
-! Undefined control sequence.
-l.93 ...line and launch VIM by typing ‚Äú\$ vim \<
-                                                  ENTER\>‚Äù. The following ...
+[3] [4]
 
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.93 ...d launch VIM by typing ‚Äú\$ vim \<ENTER\>
-                                                  ‚Äù. The following instruc...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.94 \begin{itemize}
-                    
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.94 \begin{itemize}
-                    
-? 
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-
-Overfull \hbox (34.60136pt too wide) in paragraph at lines 91--94
-\T1/cmr/m/n/10 ENTER$ \OML/cmm/m/it/10 :Thefollowinginstructionswillmakethefirs
-tVIMsessioneasytopassthrough \OT1/cmr/m/n/10 :$ 
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
+! LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95 \item b
-            ecause VIM starts in command mode you can change to insert mode ...
-
+l.103 \\
+        
 ? 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
+! LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.96 \item t
-            o exit insert mode and return to command mode, press the \<ESC\>...
-
-? 
-! Undefined control sequence.
-l.96 ...e and return to command mode, press the \<
-                                                  ESC\> key;
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.96 ... return to command mode, press the \<ESC\>
-                                                   key;
-? 
-
-! LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 \item
-           to write the open file to the hard drive use the command ":w file...
+l.104 T
+       he following paragraphs will help you navigate through the VIM file, ...
 
 ? 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 \item t
-            o write the open file to the hard drive use the command ":w file...
-
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 \item t
-            o write the open file to the hard drive use the command ":w file...
-
-? 
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 \item t
-            o write the open file to the hard drive use the command ":w file...
-
-? 
-
-! LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.98 \item
-           to save the changes type ":" in command mode;
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.98 \item t
-            o save the changes type ":" in command mode;
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.98 \item t
-            o save the changes type ":" in command mode;
-? 
-
-Overfull \hbox (207.98657pt too wide) in paragraph at lines 96--98
-[]\T1/cmr/m/n/10 to exit in-sert mode and re-turn to com-mand mode, press the E
-SC$ \OML/cmm/m/it/10 key\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 towritetheopenfileto
-theharddriveusethecommand\OT1/cmr/m/n/10 " :
- []
-
-! Too many }'s.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.98 \item t
-            o save the changes type ":" in command mode;
-? 
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.98 \item t
-            o save the changes type ":" in command mode;
-? 
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.99 \item t
-            o exit VIM type ":wq" to quit and save changes, or ":q!" to disc...
-
-? 
-[4]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.100 \item p
-             ressing \<ESC\> will not just place you in command mode but als...
-
-? 
-! Undefined control sequence.
-l.100 \item pressing \<
-                       ESC\> will not just place you in command mode but als...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.100 \item pressing \<ESC\>
-                             will not just place you in command mode but als...
-
-? 
-
-! LaTeX Error: Command \end{document} invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101 \end{itemize}
-                   
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101 \end{itemize}
-                   
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101 \end{itemize}
-                   
-? 
-
-! LaTeX Error: \begin{document} ended by \end{itemize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101 \end{itemize}
-                   
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.101 \end{itemize}
-                   
-? 
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.101 \end{itemize}
-                   
-? 
-
-Overfull \hbox (213.461pt too wide) in paragraph at lines 100--122
-[]\T1/cmr/m/n/10 pressing ESC$ \OML/cmm/m/it/10 willnotjustplaceyouincommandmod
-ebutalsocancelanunwantedandpartiallycompletedcommandincommandmode:$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--122
+Underfull \hbox (badness 10000) in paragraph at lines 104--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--122
+Underfull \hbox (badness 10000) in paragraph at lines 104--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--122
+Underfull \hbox (badness 10000) in paragraph at lines 104--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--122
-
- []
-
-
-Overfull \hbox (16.85608pt too wide) in paragraph at lines 100--122
+Overfull \hbox (16.85608pt too wide) in paragraph at lines 104--122
 \T1/cmr/m/n/10 You can undo changes by us-ing the "u" key and redo changes the 
 us-ing "<CTRL>r". 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--122
+Underfull \hbox (badness 10000) in paragraph at lines 104--122
 
  []
 
-! Undefined control sequence.
-l.138 ...mple: while in command mode "s:caar/car\<
-                                                  ENTER\>" means substitute ...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.138 ...hile in command mode "s:caar/car\<ENTER\>
-                                                  " means substitute "caar" ...
-
-? 
-! Undefined control sequence.
-l.140 ... followed by the searched word and the \<
-                                                  ENTER\> key.
-? 
-! Undefined control sequence.
-l.152 ... in this way. Instead, you have to use \<
-                                                  SHIFT\>\<CTRL\>\<C\> to co...
-
-? 
-! Undefined control sequence.
-l.152 ...way. Instead, you have to use \<SHIFT\>\<
-                                                  CTRL\>\<C\> to copy from o...
-
-? 
-! Undefined control sequence.
-l.152 ...tead, you have to use \<SHIFT\>\<CTRL\>\<
-                                                  C\> to copy from one file ...
-
-? 
-! Undefined control sequence.
-l.152 ...<CTRL\>\<C\> to copy from one file and \<
-                                                  SHIFT\>\<CTRL\>\<V\> to pa...
-
-? 
-! Undefined control sequence.
-l.152 ...C\> to copy from one file and \<SHIFT\>\<
-                                                  CTRL\>\<V\> to paste into ...
-
-? 
-! Undefined control sequence.
-l.152 ...opy from one file and \<SHIFT\>\<CTRL\>\<
-                                                  V\> to paste into another ...
-
-? 
-! Undefined control sequence.
-l.152 ...>\<V\> to paste into another file. The \<
-                                                  SHIFT\>\<CTRL\>\<V\> comma...
-
-? 
-! Undefined control sequence.
-l.152 ... paste into another file. The \<SHIFT\>\<
-                                                  CTRL\>\<V\> command lets y...
-
-? 
-! Undefined control sequence.
-l.152 ...nto another file. The \<SHIFT\>\<CTRL\>\<
-                                                  V\> command lets you paste...
-
-? 
-! Undefined control sequence.
-l.164  For example the ":! ls \<
-                                ENTER\>" command will list the objects of th...
-
-? 
-! Undefined control sequence.
-l.167 ...or getting help in VIM you type ":help \<
-                                                  ENTER\>".
-? 
-! Undefined control sequence.
-l.170 ...and line with the command "\$ vimtutor \<
-                                                  ENTER\>".
-? 
-! You can't use `\spacefactor' in math mode.
-\cite@adjust ... \@tempa \@zero@skip \spacefactor 
-                                                  1001 \fi \ifnum \spacefact...
-l.171 ...in Shotts (2009) \cite{shotts_linus_2009}
-                                                  , a lecture which gently i...
-
-? 
-! Improper \spacefactor.
-\cite@adjust ...ctor 1001 \fi \ifnum \spacefactor 
-                                                  >\@m \ \else \hskip \@temp...
-l.171 ...in Shotts (2009) \cite{shotts_linus_2009}
-                                                  , a lecture which gently i...
-
-? 
-
-! LaTeX Error: Command \bfseries invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.171 ...in Shotts (2009) \cite{shotts_linus_2009}
-                                                  , a lecture which gently i...
-
-? 
 
 LaTeX Warning: Citation `shotts_linus_2009' on page 5 undefined on input line 1
 71.
 
-! You can't use `\spacefactor' in math mode.
-\@cite ...ivesfalse \citemid {#2}\fi \spacefactor 
-                                                  \@m }\citeright \@restore@...
-l.171 ...in Shotts (2009) \cite{shotts_linus_2009}
-                                                  , a lecture which gently i...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.172 
-      
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.172 
-      
-? 
-Missing character: There is no Ë in font cmex10!
 
 Underfull \hbox (badness 10000) in paragraph at lines 129--172
 
@@ -843,179 +493,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--172
  []
 
 
-Overfull \hbox (271.2848pt too wide) in paragraph at lines 129--172
-\T1/cmr/m/n/10 com-mand mode "s:caar/carENTER$ \OT1/cmr/m/n/10 "\OML/cmm/m/it/1
-0 meanssubstitute\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 caar\OT1/cmr/m/n/10 "\OML/cm
-m/m/it/10 with\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 car\OT1/cmr/m/n/10 "\OML/cmm/m/
-it/10 ; andreplacesthefirstoccurenceofthesearchedword\OT1/cmr/m/n/10 )\OML/cmm/
-m/it/10 :The\OT1/cmr/m/n/10 " :
+Underfull \hbox (badness 10000) in paragraph at lines 129--172
+
  []
 
 
-Overfull \hbox (16.82536pt too wide) in paragraph at lines 129--172
-\OT1/cmr/m/n/10 #\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 #\OML/cmm/m/it/10 s=big=sma
-ll=g\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 replaces\OT1/cmr/m/n/10 "\OML/cmm/m/it/10
- big\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 with\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 sma
-ll\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 withinarangeoflines\OT1/cmr/m/n/10 (" :
+Underfull \hbox (badness 10000) in paragraph at lines 129--172
+
  []
 
 
-Overfull \hbox (1100.43997pt too wide) in paragraph at lines 129--172
-\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 startsthecommand; \OT1/cmr/m/n/10 "#"\OML/cmm
-/m/it/10 standsforalinenumberand\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 g\OT1/cmr/m/n
-/10 "\OML/cmm/m/it/10 standsfor\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 global\OT1/cmr
-/m/n/10 ")\OML/cmm/m/it/10 :Tosearchtheentirefileuse\OT1/cmr/m/n/10 "\OML/cmm/m
-/it/10 =\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 followedbythesearchedwordandtheENTER 
-key:Youcangotothenextoccurrenceofthesearchedwordwiththe\OT1/cmr/m/n/10 "\OML/cm
-m/m/it/10 n\OT1/cmr/m/n/10 "(\OML/cmm/m/it/10 from\OT1/cmr/m/n/10 "\OML/cmm/m/i
-t/10 next\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 command:Tosearchandreplaceovertheen
-tirefile; i:e:globally; youcanusethecommand\OT1/cmr/m/n/10 " :
+Underfull \hbox (badness 10000) in paragraph at lines 129--172
+
  []
 
 
-Overfull \hbox (327.75412pt too wide) in paragraph at lines 129--172
-\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 s=you=YOU=g\OT1/cmr/m/n/10 "(" : "\OML/cmm/m/
-it/10 startsthecommand; \OT1/cmr/m/n/10 "%\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 "\O
-ML/cmm/m/it/10 findandsubstitute; \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 g\OT1/cmr/m
-/n/10 "\OML/cmm/m/it/10 globally\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :Thesearchcan
-alsobedonewithoptions:Forexampleentering\OT1/cmr/m/n/10 " :
+Underfull \hbox (badness 10000) in paragraph at lines 129--172
+
  []
 
 
-Overfull \hbox (77.3868pt too wide) in paragraph at lines 129--172
-\OML/cmm/m/it/10 setic\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 willallowfindingalsocom
-binationswithcapitals:Todisableignoringcaseenter\OT1/cmr/m/n/10 " :
+Underfull \hbox (badness 10000) in paragraph at lines 129--172
+
  []
 
 
-Overfull \hbox (131.78284pt too wide) in paragraph at lines 129--172
-\OML/cmm/m/it/10 setnoic\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 :Youcanalsoenablethe\
-OT1/cmr/m/n/10 "\OML/cmm/m/it/10 is\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 option\OT1
-/cmr/m/n/10 (\OML/cmm/m/it/10 withthe\OT1/cmr/m/n/10 " : \OML/cmm/m/it/10 setis
-\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 command\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; wh
-ichcanbedisabledwith\OT1/cmr/m/n/10 " :
+Overfull \hbox (1.98935pt too wide) in paragraph at lines 129--172
+\T1/cmr/m/n/10 win-dow use ":q". To find help on a spe-cific com-mand use ":hel
+p some$[]$command",
  []
 
-
-Overfull \hbox (449.24347pt too wide) in paragraph at lines 129--172
-\OML/cmm/m/it/10 Toeditmultiplefilesyoucanopenthemtogetherfromthebeginning\OT1/
-cmr/m/n/10 (\OML/cmm/m/it/10 forexample\OT1/cmr/m/n/10 "$\OML/cmm/m/it/10 vimfi
-le\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; file\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; f
-ile\OT1/cmr/m/n/10 3)\OML/cmm/m/it/10 oryouopenadditionalfilesafteryoustartedVI
-Mwiththecommand\OT1/cmr/m/n/10 " :
- []
-
-
-Overfull \hbox (246.35736pt too wide) in paragraph at lines 129--172
-\OML/cmm/m/it/10 eadditional[]file\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 :Thecommand
-\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 buffers\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 disp
-laysalistoffilesunderediting:Youcanswitchbetweenfileswiththecommand\OT1/cmr/m/n
-/10 " :
- []
-
-
-Overfull \hbox (50.66139pt too wide) in paragraph at lines 129--172
-\OML/cmm/m/it/10 buffer\OT1/cmr/m/n/10 1"\OML/cmm/m/it/10 forexampletogotothefi
-rstfilelistedbythe\OT1/cmr/m/n/10 " : \OML/cmm/m/it/10 buffers\OT1/cmr/m/n/10 "
-\OML/cmm/m/it/10 command; or\OT1/cmr/m/n/10 " :
- []
-
-
-Overfull \hbox (608.66411pt too wide) in paragraph at lines 129--172
-\OML/cmm/m/it/10 buffer\OT1/cmr/m/n/10 2"\OML/cmm/m/it/10 togotothesecondfileli
-stedbythe\OT1/cmr/m/n/10 " : \OML/cmm/m/it/10 buffers\OT1/cmr/m/n/10 "\OML/cmm/
-m/it/10 command:Tocopycontentfromonefiletoanotheryoucopywithyank; switchwithbuf
-ferandpaste:Thisworksonlyifthefileswereopenedtogetherorwiththe\OT1/cmr/m/n/10 "
- :
- []
-
-
-Overfull \hbox (1225.15292pt too wide) in paragraph at lines 129--172
-\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 command:OpeningdifferentVIM
-windowswillnotallowcopyingbetweenfilesinthisway:Instead; youhavetouseSHIFT CTRL
- C tocopyfromonefileandSHIFT CTRL V topasteintoanotherfile:TheSHIFT CTRL V comm
-andletsyoupastetextfromallkindofsources\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 fromdo
-cuments; websites; etc:\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :Toinsertanentirefilei
-ntoanotheryoucanusethe\OT1/cmr/m/n/10 " :
- []
-
-
-Overfull \hbox (94.07744pt too wide) in paragraph at lines 129--172
-\OML/cmm/m/it/10 rother[]file[]name[]to[]be[]inserted[]into[]the[]current\OT1/c
-mr/m/n/10 "\OML/cmm/m/it/10 command; where\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 r\O
-T1/cmr/m/n/10 "\OML/cmm/m/it/10 standsfor\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 retr
-ieving\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 :[] 
- []
-
-
-Overfull \hbox (609.42735pt too wide) in paragraph at lines 129--172
-\OML/cmm/m/it/10 Toselecttexttopasteyoucanalsousethevisualmodebytyping\OT1/cmr/
-m/n/10 "\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 incommandmodeandthe
-nmovethecursortotheendofyourselection:Theselectedtextwillbehighlighted:Thenpres
-s\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 toyankita
-ndthen\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 topa
-steit:[] 
- []
-
-
-Overfull \hbox (622.92809pt too wide) in paragraph at lines 129--172
-\OML/cmm/m/it/10 Ausefuldebuggingcommandisthematchingparenthesescommand:Youcanf
-indoutifthecorrespondingparenthesisorbracketismissingwith\OT1/cmr/m/n/10 "%"\OM
-L/cmm/m/it/10 bymovingthecursoronthefirstparenthesisorbracketandtyping\OT1/cmr/
-m/n/10 "%"\OML/cmm/m/it/10 :[] 
- []
-
-
-Overfull \hbox (100.02301pt too wide) in paragraph at lines 129--172
-\OML/cmm/m/it/10 Toexcuteandexternalcommand; i:e:acommandasifyouwereinthecomman
-dline; withthe\OT1/cmr/m/n/10 " :
- []
-
-
-Overfull \hbox (183.81935pt too wide) in paragraph at lines 129--172
-\OT1/cmr/m/n/10 !\OML/cmm/m/it/10 your[]command\OT1/cmr/m/n/10 "\OML/cmm/m/it/1
-0 command:Forexamplethe\OT1/cmr/m/n/10 " :!\OML/cmm/m/it/10 lsENTER \OT1/cmr/m/
-n/10 "\OML/cmm/m/it/10 commandwilllisttheobjectsoftheworkingdirectory:[] 
- []
-
-
-Overfull \hbox (78.96858pt too wide) in paragraph at lines 129--172
-\OML/cmm/m/it/10 FinallyforgettinghelpinVIMyoutype\OT1/cmr/m/n/10 " : \OML/cmm/
-m/it/10 helpENTER \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 :Toclosethehelpwindowuse\OT
-1/cmr/m/n/10 " :
- []
-
-
-Overfull \hbox (68.89641pt too wide) in paragraph at lines 129--172
-\OML/cmm/m/it/10 q\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 :Tofindhelponaspecificcomma
-nduse\OT1/cmr/m/n/10 " : \OML/cmm/m/it/10 helpsome[]command\OT1/cmr/m/n/10 "\OM
-L/cmm/m/it/10 ; forexampletype\OT1/cmr/m/n/10 " :
- []
-
-
-Overfull \hbox (937.24309pt too wide) in paragraph at lines 129--172
-\OML/cmm/m/it/10 helpuser \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 manual\OT1/cmr/
-m/n/10 "\OML/cmm/m/it/10 togettotheusermanual:ForaninteractivetutorialforVIMyou
-canalsousethe\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 VIMTutor\OT1/cmr/m/n/10 "\OML/cm
-m/m/it/10 initiallycreatedbyPierceandWare; whichcanbestartedinthecommandlinewit
-hthecommand\OT1/cmr/m/n/10 "$\OML/cmm/m/it/10 vimtutorENTER \OT1/cmr/m/n/10 "\O
-ML/cmm/m/it/10 :AshortintroductioninVIMcanbealsofoundinShotts\OT1/cmr/m/n/10 (2
-009)
- []
-
-
-Overfull \hbox (68.50102pt too wide) in paragraph at lines 129--172
-\OT1/cmr/m/n/10 1001[[]]\OML/cmm/m/it/10 ; alecturewhichgentlyintroducesreaders
-totheLinuxcommandlineingeneral:[]$ 
- []
-
-[5]
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.172 
-      
-? 
+[5] [6]
 ! Undefined control sequence.
 l.178 \subsubsubsection
                         {Installing SBT}
@@ -1071,12 +579,6 @@ l.183 ...ing Scala" \cite{lewis_introduction_2017}
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.207 
-      
-? 
-! Missing } inserted.
-<inserted text> 
-                }
 l.207 
       
 ? 
@@ -1150,269 +652,99 @@ ebeginningofthissectionandtypeinsomeexpressions:Youexittheconsolewith\OT1/cmr/m
 /n/10 " :
  []
 
-[6]
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.207 
-      
-? 
 ! Undefined control sequence.
 l.208 \subsubsubsection
                        {Creating a Scala project}
 ? 
-! Undefined control sequence.
-l.213 Open the terminal with \<
-                               CTRL-ALT-t\>.
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.213 Open the terminal with \<CTRL-ALT-t\>
-                                           .
-? 
-! Undefined control sequence.
-l.215 ...kdir Scala\underline{\space}Playground \<
-                                                  ENTER\>"). Check if the di...
-
-? 
-! Undefined control sequence.
-l.215 ...ory was created with the command "\$ls \<
-                                                  ENTER\>" which lists the c...
-
-? 
-! Undefined control sequence.
-l.216 ...$ cd Scala\underline{\space}Playground \<
-                                                  ENTER\>") and create a par...
-
-? 
-! Undefined control sequence.
-l.231 Go in the command mode with \<
-                                    ESC\> and save the changes and give the ...
-
-? 
-! You can't use `\spacefactor' in math mode.
-\cite@adjust ... \@tempa \@zero@skip \spacefactor 
-                                                  1001 \fi \ifnum \spacefact...
-l.247 ...BT's own language \cite{suereth_sbt_2016}
-                                                  .
-? 
-! Improper \spacefactor.
-\cite@adjust ...ctor 1001 \fi \ifnum \spacefactor 
-                                                  >\@m \ \else \hskip \@temp...
-l.247 ...BT's own language \cite{suereth_sbt_2016}
-                                                  .
-? 
-! You can't use `\spacefactor' in math mode.
-\@cite ...ivesfalse \citemid {#2}\fi \spacefactor 
-                                                  \@m }\citeright \@restore@...
-l.247 ...BT's own language \cite{suereth_sbt_2016}
-                                                  .
-? 
-! Undefined control sequence.
-l.248 Now, get into the command line mode with \<
-                                                 ESC\> and save the changes ...
-
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.267 
-      
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.267 
-      
-? 
-Missing character: There is no Ë in font cmex10!
 
 Underfull \hbox (badness 10000) in paragraph at lines 210--267
 
  []
 
 
-Overfull \hbox (2085.13672pt too wide) in paragraph at lines 210--267
-\T1/cmr/m/n/10 Open the ter-mi-nal with CTRL-ALT-t$ \OML/cmm/m/it/10 :Itstartsd
-irectlyinyourhomedirectory:Next; createadirectorycalledScala[]Playground\OT1/cm
-r/m/n/10 ("$\OML/cmm/m/it/10 mkdirScala[]PlaygroundENTER \OT1/cmr/m/n/10 ")\OML
-/cmm/m/it/10 :Checkifthedirectorywascreatedwiththecommand\OT1/cmr/m/n/10 "$\OML
-/cmm/m/it/10 lsENTER \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 whichliststhecontentsoft
-hedirectoryinwhichyouareplaced:Further; switchtotheScala[]Playgrounddirectory\O
-T1/cmr/m/n/10 ("$\OML/cmm/m/it/10 cdScala[]PlaygroundENTER \OT1/cmr/m/n/10 ")\O
-ML/cmm/m/it/10 andcreateapartoftheinnerstructureofthecurrentdirectorybyaddingan
-otherdirectorycalledsrcwithitssubdirectorymain; withitssubdirectoryscala:Thisis
-donewiththecommand\OT1/cmr/m/n/10 "$\OML/cmm/m/it/10 mkdir \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (8.57108pt too wide) in paragraph at lines 210--267
+\T1/cmr/m/n/10 tory. Next, cre-ate a di-rec-tory called Scala$[]$Playground ("$
+ mkdir Scala$[]$Playground
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--267
 
  []
 
 
-Overfull \hbox (307.1799pt too wide) in paragraph at lines 210--267
-\OML/cmm/m/it/10 psrc=main=scala\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 whichcreatest
-heentirechainofdirectories:Checkitwith\OT1/cmr/m/n/10 "$\OML/cmm/m/it/10 ls\OT1
-/cmr/m/n/10 "\OML/cmm/m/it/10 and\OT1/cmr/m/n/10 "$\OML/cmm/m/it/10 cd\OT1/cmr/
-m/n/10 "\OML/cmm/m/it/10 commands; returntotheScala[]Playgrounddirectorywith\OT
-1/cmr/m/n/10 "\OML/cmm/m/it/10 cd \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (1.9986pt too wide) in paragraph at lines 210--267
+\T1/cmr/m/n/10 The ls com-mand should print now for the Scala$[]$Playground two
+ con-tents: project
  []
 
 
-Overfull \hbox (299.42262pt too wide) in paragraph at lines 210--267
-\OML/cmm/m/it/10 Next; intheScala[]Playgrounddirectory; createaseconddirectoryc
-alledproject:ThelscommandshouldprintnowfortheScala[]Playgroundtwocontents \OT1/
-cmr/m/n/10 :
+Underfull \hbox (badness 10000) in paragraph at lines 210--267
+
  []
 
 
-Overfull \hbox (844.64441pt too wide) in paragraph at lines 210--267
-\OML/cmm/m/it/10 ThefinalstepincreatingtheScalaprojectistocreatetwofiles \OT1/c
-mr/m/n/10 : \OML/cmm/m/it/10 onedirectlyintheScala[]Playgrounddirectorycalledbu
-ild:sbtandthesecondintheScala[]Playground=projectdirectorycalledbuild:propertie
-s:OpenVIMwhenyouareintheScala[]playground=projectdirectoryandtypein \OT1/cmr/m/
-n/10 :
+Underfull \hbox (badness 10000) in paragraph at lines 210--267
+
  []
 
 
-Overfull \hbox (9.20062pt too wide) in paragraph at lines 210--267
-\OML/cmm/m/it/10 GointhecommandmodewithESC andsavethechangesandgivetheopenfilea
-name \OT1/cmr/m/n/10 :
+Underfull \hbox (badness 10000) in paragraph at lines 210--267
+
  []
 
 
-Overfull \hbox (116.41342pt too wide) in paragraph at lines 210--267
-\OML/cmm/m/it/10 Next; whenyouareintheScala[]PlaygrounddirectoryopenVIMandeditt
-hebasicsettingsoftheScalaproject \OT1/cmr/m/n/10 :
+Underfull \hbox (badness 10000) in paragraph at lines 210--267
+
  []
 
 
-Overfull \hbox (479.99335pt too wide) in paragraph at lines 210--267
-\OML/cmm/m/it/10 projectname; Scalaversionused; andthedependenciesyouneed:Forth
-emomentwewillignoredependenciesandcreatethebasicScalaproject:Typeinthefileopene
-dinVIMthefollowingtwolines \OT1/cmr/m/n/10 :
+Underfull \hbox (badness 10000) in paragraph at lines 210--267
+
  []
 
 
-Overfull \hbox (408.44644pt too wide) in paragraph at lines 210--267
-\OML/cmm/m/it/10 TheabovetwolinesarenotinScala; theyareinSBT[]sownlanguage\OT1/
-cmr/m/n/10 1001[[]]\OML/cmm/m/it/10 :Now; getintothecommandlinemodewithESC ands
-avethechangesandgivethefilethenamebuild:sbt\OT1/cmr/m/n/10 (" :
+Underfull \hbox (badness 10000) in paragraph at lines 210--267
+
  []
 
 
-Overfull \hbox (92.01392pt too wide) in paragraph at lines 210--267
-\OML/cmm/m/it/10 wbuild:sbt\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 :ExitVIMwith\OT1/
-cmr/m/n/10 " : \OML/cmm/m/it/10 q\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 :Youshouldno
-whavethreeobjectsintheScala[]Playgrounddirectory \OT1/cmr/m/n/10 :
+Underfull \hbox (badness 10000) in paragraph at lines 210--267
+
  []
 
 
-Overfull \hbox (1709.05833pt too wide) in paragraph at lines 210--267
-\OML/cmm/m/it/10 YoucannowlaunchSBTwhileyouareintheScala[]Playgrounddirectoryus
-ingthe\OT1/cmr/m/n/10 "$\OML/cmm/m/it/10 sbt\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 c
-ommand:YoucanseetheSBT[]soutputasitusestheinformationfromthetwoeditedfilesandcr
-eatesthedesiredScalaproject:WhentheoutputisfinishedyougettoseetheSBTprompt\OT1/
-cmr/m/n/10 " "\OML/cmm/m/it/10 :Theprojectwascreatedsuccessfully:Now; launchthe
-ScalaREPLwiththecommand\OT1/cmr/m/n/10 " \OML/cmm/m/it/10 console\OT1/cmr/m/n/1
-0 "\OML/cmm/m/it/10 :WhentheREPLisopenyougettoseetheScalaprompt\OT1/cmr/m/n/10 
-"\OML/cmm/m/it/10 scala \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 :Youcantypeinsomeexpr
-essionstoseeifitworks:Type\OT1/cmr/m/n/10 " :
+Underfull \hbox (badness 10000) in paragraph at lines 210--267
+
  []
 
 
-Overfull \hbox (22.42613pt too wide) in paragraph at lines 210--267
-\OML/cmm/m/it/10 YoucanseethattheScala[]Playgrounddirectoryhasgainedsomeadditio
-naldirectories \OT1/cmr/m/n/10 :
+Underfull \hbox (badness 10000) in paragraph at lines 210--267
+
  []
 
 
-Overfull \hbox (733.81993pt too wide) in paragraph at lines 210--267
-\OML/cmm/m/it/10 theScala[]Playground=targetdirectoryandtheScala[]Playground=pr
-oject=targetdirectory:ThesearecreatedbySBTwhenitcreatestheScalaproject; andserv
-easlocationsfortheoutputofSBTtasks\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 e:g:outputf
-ollowingcompilationsorpackagingactions\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :[] 
+Overfull \hbox (43.2663pt too wide) in paragraph at lines 210--267
+\T1/cmr/m/n/10 rec-to-ries: the Scala$[]$Playground/target di-rec-tory and the 
+Scala$[]$Playground/project/target
  []
 
 
-Overfull \hbox (20.22829pt too wide) in paragraph at lines 210--267
-\OML/cmm/m/it/10 Inthesrc=main=scaladirectoryyoushouldplaceyourScalacodesinform
-ofscalafiles:[]$ 
+Underfull \hbox (badness 10000) in paragraph at lines 210--267
+
  []
 
-[7]
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.267 
-      
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.270 Open SBT. When you see the SBT prompt "\>
-                                               " type in your first SBT comm...
+[7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 270--280
 
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.280 \begin{itemize}
-                     
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.280 \begin{itemize}
-                     
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.280 \begin{itemize}
-                     
-? 
-
-Overfull \hbox (108.37427pt too wide) in paragraph at lines 270--280
- []\T1/cmr/bx/n/10 Some ba-sic SBT tasks[] \T1/cmr/m/n/10 Open SBT. When you se
-e the SBT prompt "$ \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 typeinyourfirstSBTcommand
- \OT1/cmr/m/n/10 :
  []
 
-
-Overfull \hbox (2240.03406pt too wide) in paragraph at lines 270--280
-\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 help\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 :Thisge
-neratesanoutputwhichyoucanusetogetfurtherinformationaboutSBTandabouttheconfigur
-ationofyourproject\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 command\OT1/cmr/m/n/10 "\OM
-L/cmm/m/it/10 about\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; command\OT1/cmr/m/n/10 "
-\OML/cmm/m/it/10 settings\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 :Thecommand\OT1/cmr
-/m/n/10 "\OML/cmm/m/it/10 reload\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 reloadsthepro
-jectinthecurrentdirectory; whichisusefulafteryou[]vechangedtheprojectsettings\O
-T1/cmr/m/n/10 (\OML/cmm/m/it/10 forexampleafteraddingdependencies\OT1/cmr/m/n/1
-0 )\OML/cmm/m/it/10 orafteryou[]vechangedoraddedsourcefiles:Itdoesthesanitychec
-kasitcompilesthesourcefilesandoutputstheerrorsencounteredinthecompilationproces
-s; accompaniedbymessagesindicatingpossiblereasons:Itisveryoftenhelpfultotrytore
-adtheminordertodebugthecode:[] 
- []
-
-
-Overfull \hbox (364.01486pt too wide) in paragraph at lines 270--280
-\OML/cmm/m/it/10 Thecommand\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 tasks\OT1/cmr/m/n/
-10 "\OML/cmm/m/it/10 isalsolistedinthehelpoutput:TheSBTtasksshowmuchofthefuncti
-onsSBTcantakeover:Typein\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 tasks\OT1/cmr/m/n/10 
-"\OML/cmm/m/it/10 andcheckthedefaultlistofSBTtasks \OT1/cmr/m/n/10 :
- []
-
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.280 \begin{itemize}
-                     
-? 
 ! Undefined control sequence.
 l.289 \subsubsubsection
                         {Managing dependencies}
 ? 
 
-LaTeX Warning: Citation `pfeffer_practical_2016' on page 8 undefined on input l
+LaTeX Warning: Citation `pfeffer_practical_2016' on page 9 undefined on input l
 ine 292.
 
 
@@ -1437,7 +769,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 291--302
 
  []
 
-[8]
+[9]
 ! Undefined control sequence.
 <recently read> \tab 
                      
@@ -1480,22 +812,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--328
 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 329--345
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--345
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--345
-
- []
-
 [10]
+Underfull \hbox (badness 10000) in paragraph at lines 329--345
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--345
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--345
+
+ []
+
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 368--372
 
  []
@@ -1520,7 +852,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 375--390
 
  []
 
-[11]
+[12] [13]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1583,7 +915,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 392--415
 
  []
 
-[12]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1600,7 +931,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 418--428
 
  []
 
-[13] [14]
+[14] [15]
 Underfull \hbox (badness 10000) in paragraph at lines 452--487
 
  []
@@ -1630,7 +961,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 452--487
 
  []
 
-[15]
+[16]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1747,37 +1078,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 490--706
 
  []
 
-[16] [17] [18] [19] [20]
+[17] [18] [19] [20] [21]
 Underfull \hbox (badness 10000) in paragraph at lines 707--712
 
  []
 
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 736--772
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 736--772
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 736--772
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 736--772
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 736--772
-
- []
-
 [22]
+Underfull \hbox (badness 10000) in paragraph at lines 736--772
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 736--772
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 736--772
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 736--772
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 736--772
+
+ []
+
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 773--780
 
  []
@@ -1787,7 +1118,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 773--780
 
  []
 
-
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 782--848
 
  []
@@ -1910,12 +1241,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 782--848
 
  []
 
-[23] [24]
+[25] [26]
 Underfull \hbox (badness 10000) in paragraph at lines 858--863
 
  []
 
-[25]
+
 Underfull \hbox (badness 10000) in paragraph at lines 865--912
 
  []
@@ -1958,7 +1289,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 865--912
 
  []
 
-[26]
+[27]
 Underfull \hbox (badness 10000) in paragraph at lines 913--921
 
  []
@@ -1968,7 +1299,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 913--921
 
  []
 
-
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 945--973
 
  []
@@ -1998,7 +1329,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 945--973
 
  []
 
-[27] [28] (./geospatial_scala.bbl
+[29] [30] (./geospatial_scala.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 981--2
 
  []
@@ -2009,12 +1340,17 @@ Overfull \hbox (29.21417pt too wide) in paragraph at lines 981--2
 e in the multivariate$[]$analyses
  []
 
-[29]
-Underfull \hbox (badness 1286) in paragraph at lines 54--58
+
+Underfull \hbox (badness 1028) in paragraph at lines 54--58
+[]\T1/cmr/m/n/10 R. Tesileanu, ``Us-ing Linux as a de-vel-op-ment plat-
+ []
+
+
+Underfull \hbox (badness 2547) in paragraph at lines 54--58
 \T1/cmr/m/n/10 form for Scala projects,'' 2017. [On-line]. Avail-
  []
 
-[30])
+[31])
 Underfull \hbox (badness 10000) in paragraph at lines 991--1141
 
  []
@@ -2104,7 +1440,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 991--1141
 
  []
 
-[31] [32] [33]
+[32] [33] [34]
 Overfull \hbox (21.01993pt too wide) in paragraph at lines 1142--1142
 []\T1/cmr/bx/n/14.4 Scala source file: read-Point-Co-ord.scala 
  []
@@ -2124,7 +1460,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1143--1178
 
  []
 
-[34]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 1180--1232
 
  []
@@ -2252,7 +1588,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1180--1232
 
  []
 
-[35]
+[36]
 Overfull \hbox (2.52104pt too wide) in paragraph at lines 1232--1232
 []\T1/cmr/bx/n/14.4 Scala source file: cre-at-eVLayer.scala 
  []
@@ -2262,7 +1598,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1233--1234
 
  []
 
-[36]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 1235--1276
 
  []
@@ -2331,7 +1667,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1277--1280
 
  []
 
-[37] [38]
+[38] [39]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1280.
  (./geospatial_scala.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1280.
@@ -2350,28 +1686,26 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1280.
 ### semi simple group (level 1) entered at line 989 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6285 strings out of 493029
- 89951 string characters out of 6136234
+ 6286 strings out of 493029
+ 89958 string characters out of 6136234
  193641 words of memory out of 5000000
  9655 multiletter control sequences out of 15000+600000
  13580 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,6n,31p,897b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,6n,31p,897b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on geospatial_scala.pdf (38 pages, 282340 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on geospatial_scala.pdf (39 pages, 265722 bytes).
 PDF statistics:
- 528 PDF objects out of 1000 (max. 8388607)
- 471 compressed objects within 5 object streams
- 102 named destinations out of 1000 (max. 500000)
+ 523 PDF objects out of 1000 (max. 8388607)
+ 467 compressed objects within 5 object streams
+ 103 named destinations out of 1000 (max. 500000)
  209 words of extra memory for PDF output out of 10000 (max. 10000000)
 

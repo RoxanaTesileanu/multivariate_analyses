@@ -90,14 +90,14 @@ The following subsubsections will cover brief introductions in using the VIM edi
 
 VIM is an editor which can be used from within the Linux command line and can be adapted to support the editing of Scala code by installing the vim-scala package of Derek Wyatt found at \href{https://github.com/derekwyatt/vim-scala}{https://github.com/derekwyatt/vim-scala}. 
 Under Linux you can install VIM using the package tools at hand (like e.g. dpkg, apt-get, aptitude, rpm or yum) depending on the installed distribution.
- In Ubuntu the command for installing VIM is: “\$ sudo apt install vim”. Afterwards, you open the command line and launch VIM by typing “\$ vim \<ENTER\>”. The following instructions will make the first VIM session easy to pass through:
+ In Ubuntu the command for installing VIM is:  "\$ sudo apt install vim". Afterwards, you open the command line and launch VIM by typing "\$ vim <ENTER>". The following instructions will make the first VIM session easy to pass through:
 \begin{itemize}
 \item because VIM starts in command mode you can change to insert mode with the "i" key;
-\item to exit insert mode and return to command mode, press the \<ESC\> key;
+\item to exit insert mode and return to command mode, press the <ESC> key;
 \item to write the open file to the hard drive use the command ":w filename" (in command mode) or just ":w" if the file already has a name; 
 \item to save the changes type ":" in command mode;
 \item to exit VIM type ":wq" to quit and save changes, or ":q!" to discard changes (both in command mode);
-\item pressing \<ESC\> will not just place you in command mode but also cancel an unwanted and partially completed command in command mode.
+\item pressing <ESC> will not just place you in command mode but also cancel an unwanted and partially completed command in command mode.
 \end{itemize}
 \\
 \\
@@ -121,11 +121,11 @@ You can undo changes by using the "u" key and redo changes the using "<CTRL>r".
 Deleting text in command mode goes with (but not only) the following commands:
 \begin{itemize}
 \item the "x" key deleted the current character; "3x" will delete the current character and the next two characters
-\item the "dd" command deletes the current line; "6dd" will delete the current line and the next five lines
+\item the "dd" command deletes the current line; "6 d d" will delete the current line and the next five lines
 \item the "dG" command will deleted to the end of the file
 \item the "d\$" command will delete to the end of the line
 \item the "d0" command will delete to the beginning of the line.
-
+\end{itemize}
 The commands based on "d" nut just delete text but also copy it to a paste buffer, which can be later recalled with the "p" command to paste the contents of the buffer after the cursor or the "P" command to paste the contents of the buffer before the cursor.
 \\
 \\
@@ -135,9 +135,9 @@ To copy the current line you use "yy" ("6yy" means copy the current line and the
 \\
 Searching and replacing is done within the line and within the whole file. 
 Searching within the line is done with "f" from "find" (for example "fa" will move the cursor to the next occurence of "a"). 
-You can also use the substitute command for a line (for example: while in command mode "s:caar/car\<ENTER\>" means substitute "caar" with "car", and replaces the first occurence of the searched word). 
+You can also use the substitute command for a line (for example: while in command mode "s:caar/car<ENTER>" means substitute "caar" with "car", and replaces the first occurence of the searched word). 
 The ":\#,\#s/big/small/g" replaces "big" with "small" within a range of lines (":" starts the command, "\#" stands for a line number and "g" stands for "global"). 
-To search the entire file use "/" followed by the searched word and the \<ENTER\> key. 
+To search the entire file use "/" followed by the searched word and the <ENTER> key. 
 You can go to the next occurrence of the searched word with the "n" (from "next") command. 
 To search and replace over the entire file, i.e. globally, you can use the command ":\%s/you/YOU/g" (":" starts the command, "\%s" find and substitute, "g" globally). 
 The search can also be done with options. For example entering ":set ic" will allow finding also combinations with capitals. To disable ignoring case enter ":set noic".
@@ -149,7 +149,7 @@ To edit multiple files you can open them together from the beginning (for exampl
  You can switch between files with the command ": buffer 1" for example to go to the first file listed by the ":buffers" command, or ":buffer 2" to go to the second file listed by the ":buffers" command.
  To copy content from one file to another you copy with yank, switch with buffer and paste. 
 This works only if the files were opened together or with the ":e" command. 
-Opening different VIM windows will not allow copying between files in this way. Instead, you have to use \<SHIFT\>\<CTRL\>\<C\> to copy from one file and \<SHIFT\>\<CTRL\>\<V\> to paste into another file. The \<SHIFT\>\<CTRL\>\<V\> command lets you paste text from all kind of sources (from documents, web sites, etc.).
+Opening different VIM windows will not allow copying between files in this way. Instead, you have to use <SHIFT><CTRL><C> to copy from one file and <SHIFT><CTRL><V> to paste into another file. The <SHIFT><CTRL><V> command lets you paste text from all kind of sources (from documents, web sites, etc.).
  To insert an entire file into another you can use the ":r other\underline{\space}file\underline{\space}name\underline{\space}to\underline{\space}be\underline{\space}inserted\underline{\space}into\underline{\space}the\underline{\space}current" command, where "r" stands for "retrieving".
 \\ 
 \\
@@ -161,13 +161,13 @@ A useful debugging command is the matching parentheses command. You can find out
 \\
 \\
 To excute and external command, i.e. a command as if you were in the command line, with the ":! your\underline{\space}command" command.
- For example the ":! ls \<ENTER\>" command will list the objects of the working directory. 
+ For example the ":! ls <ENTER>" command will list the objects of the working directory. 
 \\
 \\
-Finally for getting help in VIM you type ":help \<ENTER\>".
+Finally for getting help in VIM you type ":help <ENTER>".
  To close the help window use ":q". 
 To find help on a specific command use ":help some\underline{\space}command", for example type ":help user-manual" to get to the user manual.
- For an interactive tutorial for VIM you can also use the "VIM Tutor" initially created by Pierce and Ware, which can be started in the command line with the command "\$ vimtutor \<ENTER\>". 
+ For an interactive tutorial for VIM you can also use the "VIM Tutor" initially created by Pierce and Ware, which can be started in the command line with the command "\$ vimtutor <ENTER>". 
 A short introduction in VIM can be also found in Shotts (2009) \cite{shotts_linus_2009}, a lecture which gently introduces readers to the Linux command line in general. 
 
 \subsubsection {Using SBT to create and manage Scala projects}
@@ -210,10 +210,10 @@ Next, open a Scala REPL session in SBT using the commands introduced at the begi
 In this section we will create a Scala project called Scala\underline{\space}Playground in order to continue the playground series of Linux introductions started by William Shotts (2009) in his book "The Linux Command Line". 
 \\
 \\
-Open the terminal with \<CTRL-ALT-t\>. 
+Open the terminal with <CTRL-ALT-t>. 
 It starts directly in your home directory.
- Next, create a directory called Scala\underline{\space}Playground ("\$ mkdir Scala\underline{\space}Playground \<ENTER\>"). Check if the directory was created with the command "\$ls \<ENTER\>" which lists the contents of the directory in which you are placed.
- Further, switch to the Scala\underline{\space}Playground directory ("\$ cd Scala\underline{\space}Playground \<ENTER\>") and create a part of the inner structure of the current directory by adding another directory called src with its subdirectory main, with its subdirectory scala.
+ Next, create a directory called Scala\underline{\space}Playground ("\$ mkdir Scala\underline{\space}Playground <ENTER>"). Check if the directory was created with the command "\$ls <ENTER>" which lists the contents of the directory in which you are placed.
+ Further, switch to the Scala\underline{\space}Playground directory ("\$ cd Scala\underline{\space}Playground <ENTER>") and create a part of the inner structure of the current directory by adding another directory called src with its subdirectory main, with its subdirectory scala.
  This is done with the command "\$ mkdir -p src/main/scala" which creates the entire chain of directories. Check it with "\$ls" and "\$cd" commands, return to the Scala\underline{\space}Playground directory with "cd - ". 
 \\
 \\
@@ -228,7 +228,7 @@ Open VIM when you are in the Scala\underline{\space}playground/project directory
 sbt.version = 0.13.15 
 \\
 \\
-Go in the command mode with \<ESC\> and save the changes and give the open file a name: ":w build.properties".
+Go in the command mode with <ESC> and save the changes and give the open file a name: ":w build.properties".
  Exit vim with ":q". 
 \\
 \\
@@ -240,21 +240,21 @@ For the moment we will ignore dependencies and create the basic Scala project.
  Type in the file opened in VIM the following two lines:
 \\
 \\
-name := "Scala_Playground"\\
+name := "Scala\underline{\space}Playground"\\
 scalaVersion := "2.11.10"
 \\
 \\
 The above two lines are not in Scala, they are in SBT's own language \cite{suereth_sbt_2016}.
-Now, get into the command line mode with \<ESC\> and save the changes and give the file the name build.sbt (":w build.sbt").
+Now, get into the command line mode with <ESC> and save the changes and give the file the name build.sbt (":w build.sbt").
  Exit VIM with ":q". 
  You should now have three objects in the Scala\underline{\space}Playground directory: the build.sbt file, the project directory and the src directory. 
 \\
 \\  
 You can now launch SBT while you are in the Scala\underline{\space}Playground directory using the "\$ sbt" command. 
 You can see the SBT's output as it uses the information from the two edited files and creates the desired Scala project.
- When the output is finished you get to see the SBT prompt "\>".
+ When the output is finished you get to see the SBT prompt ">".
  The project was created successfully.
- Now, launch the Scala REPL with the command "\> console". When the REPL is open you get to see the Scala prompt "scala\>". 
+ Now, launch the Scala REPL with the command "> console". When the REPL is open you get to see the Scala prompt "scala>". 
 You can type in some expressions to see if it works. 
 Type ":q" to get back to SBT and "exit" to get back to the command-line. 
 \\
@@ -267,7 +267,7 @@ In the src/main/scala directory you should place your Scala codes in form of sca
 
 \paragraph{Some basic SBT tasks}
 
-Open SBT. When you see the SBT prompt "\>" type in your first SBT command: "help". 
+Open SBT. When you see the SBT prompt ">" type in your first SBT command: "help". 
 This generates an output which you can use to get further information about SBT and about the configuration of your project (command "about", command "settings"). 
 The command "reload" reloads the project in the current directory, which is useful after you've changed the project settings (for example after adding dependencies) or after you've changed or added source files.
  It does the sanity check as it compiles the source files and outputs the errors encountered in the compilation process, accompanied by messages indicating possible reasons. 
