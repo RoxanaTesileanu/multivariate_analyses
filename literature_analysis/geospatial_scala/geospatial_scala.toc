@@ -7,7 +7,7 @@
 \contentsline {paragraph}{Creating a Scala projet}{8}{section*.3}
 \contentsline {paragraph}{Some basic SBT tasks}{9}{section*.4}
 \contentsline {subsubsection}{\numberline {1.2.3}Managing dependencies}{10}{subsubsection.1.2.3}
-\contentsline {paragraph}{Using external Scala libraries}{10}{section*.5}
+\contentsline {paragraph}{Using external Scala libraries}{11}{section*.5}
 \contentsline {paragraph}{Using internal Scala libraries}{11}{section*.6}
 \contentsline {paragraph}{Using a forked JVM}{12}{section*.7}
 \contentsline {section}{\numberline {2}Geoprocessing vector and raster data}{12}{section.2}
@@ -17,27 +17,27 @@
 \contentsline {paragraph}{Code snippet 1: Explanation}{15}{section*.9}
 \contentsline {subsection}{\numberline {2.3}Georeferencing data}{15}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Spatial reference systems in OGR}{16}{subsubsection.2.3.1}
-\contentsline {paragraph}{Code snippet 2: creating a SpatialReference object using OGR in Scala}{17}{section*.10}
-\contentsline {paragraph}{Code snippet 2: Explanation}{22}{section*.11}
+\contentsline {paragraph}{Code snippet 2: creating a SpatialReference object using OGR in Scala}{18}{section*.10}
+\contentsline {paragraph}{Code snippet 2: Explanation}{23}{section*.11}
 \contentsline {subsubsection}{\numberline {2.3.2}Creating OGR geometries and vector layers}{23}{subsubsection.2.3.2}
 \contentsline {paragraph}{Code snippet 3: Reading point coordinates from a .csv file}{23}{section*.12}
 \contentsline {paragraph}{ Code snippet 3: Explanation}{25}{section*.13}
 \contentsline {paragraph}{Code snippet 4: Creating points and multipoints, lines and multilines, and, polygons and multiploygons}{25}{section*.14}
 \contentsline {paragraph}{ Code snippet 4: Explanation}{27}{section*.15}
-\contentsline {paragraph}{Code snippet 5: Creating a georeferenced vector layer}{27}{section*.16}
+\contentsline {paragraph}{Code snippet 5: Creating a georeferenced vector layer}{28}{section*.16}
 \contentsline {paragraph}{Code snippet 5: Explanation}{29}{section*.17}
 \contentsline {subsubsection}{\numberline {2.3.3}Reprojecting OGR geometries and vector layers}{29}{subsubsection.2.3.3}
-\contentsline {subsection}{\numberline {2.4}Overlay analyses}{29}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Proximity analyses}{29}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Writing vector data}{29}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Reading raster data}{29}{subsection.2.7}
-\contentsline {subsection}{\numberline {2.8}Pixels resizing}{29}{subsection.2.8}
-\contentsline {subsection}{\numberline {2.9}Moving window analyses}{29}{subsection.2.9}
-\contentsline {subsection}{\numberline {2.10}Map algebra}{29}{subsection.2.10}
-\contentsline {section}{\numberline {3}Spatial data analysis}{29}{section.3}
-\contentsline {subsection}{\numberline {3.1}Introduction into spatial data analysis}{29}{subsection.3.1}
-\contentsline {section}{Appendices}{32}{section*.20}
+\contentsline {subsection}{\numberline {2.4}Overlay analyses}{30}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Proximity analyses}{30}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Writing vector data}{30}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Reading raster data}{30}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Pixels resizing}{30}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}Moving window analyses}{30}{subsection.2.9}
+\contentsline {subsection}{\numberline {2.10}Map algebra}{30}{subsection.2.10}
+\contentsline {section}{\numberline {3}Spatial data analysis}{30}{section.3}
+\contentsline {subsection}{\numberline {3.1}Introduction into spatial data analysis}{30}{subsection.3.1}
+\contentsline {section}{Appendices}{33}{section*.20}
 \contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{33}{Appendix.a.A}
-\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{36}{Appendix.a.B}
+\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{37}{Appendix.a.B}
 \contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{37}{Appendix.a.C}
-\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{38}{Appendix.a.D}
+\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{39}{Appendix.a.D}
