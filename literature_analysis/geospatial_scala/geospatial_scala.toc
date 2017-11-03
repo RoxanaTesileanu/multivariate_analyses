@@ -1,52 +1,52 @@
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
-\contentsline {subsection}{\numberline {1.1}Geoprocessing using GDAL}{2}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Overview of the software development process of Scala projects}{3}{subsection.1.2}
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Geoprocessing using GDAL}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Overview of the software development process of Scala projects}{4}{subsection.1.2}
 \contentsline {subsubsection}{\numberline {1.2.1}Using VIM as an editor for Scala code}{5}{subsubsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.2}Using SBT to create and manage Scala projects}{7}{subsubsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.2}Using SBT to create and manage Scala projects}{8}{subsubsection.1.2.2}
 \contentsline {paragraph}{Installing SBT}{8}{section*.2}
-\contentsline {paragraph}{Creating a Scala projet}{8}{section*.3}
+\contentsline {paragraph}{Creating a Scala projet}{9}{section*.3}
 \contentsline {paragraph}{Some basic SBT tasks}{10}{section*.4}
-\contentsline {subsubsection}{\numberline {1.2.3}Managing dependencies with SBT}{10}{subsubsection.1.2.3}
-\contentsline {paragraph}{Using external Scala libraries}{11}{section*.5}
-\contentsline {paragraph}{Using internal Scala libraries}{12}{section*.6}
-\contentsline {paragraph}{Using a forked JVM}{13}{section*.7}
-\contentsline {section}{\numberline {2}Geoprocessing vector and raster data}{13}{section.2}
-\contentsline {subsection}{\numberline {2.1}Types of spatial data}{13}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Reading vector data}{14}{subsection.2.2}
-\contentsline {paragraph}{ Code snippet 1: accessing a shapefile using OGR in Scala}{15}{section*.8}
-\contentsline {paragraph}{Code snippet 1: Explanation}{16}{section*.9}
-\contentsline {subsection}{\numberline {2.3}Georeferencing data}{16}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Spatial reference systems in OGR}{17}{subsubsection.2.3.1}
-\contentsline {paragraph}{Code snippet 2: creating a SpatialReference object using OGR in Scala}{18}{section*.10}
-\contentsline {paragraph}{Code snippet 2: Explanation}{23}{section*.11}
-\contentsline {subsubsection}{\numberline {2.3.2}Creating OGR geometries and vector layers}{24}{subsubsection.2.3.2}
-\contentsline {paragraph}{Code snippet 3: Reading point coordinates from a .csv file}{24}{section*.12}
-\contentsline {paragraph}{ Code snippet 3: Explanation}{26}{section*.13}
-\contentsline {paragraph}{Code snippet 4: Creating points and multipoints, lines and multilines, and, polygons and multiploygons}{26}{section*.14}
-\contentsline {paragraph}{ Code snippet 4: Explanation}{28}{section*.15}
-\contentsline {paragraph}{Code snippet 5: Creating a georeferenced vector layer}{28}{section*.16}
-\contentsline {paragraph}{Code snippet 5: Explanation}{30}{section*.17}
-\contentsline {subsubsection}{\numberline {2.3.3}Reprojecting OGR geometries and vector layers}{30}{subsubsection.2.3.3}
-\contentsline {subsection}{\numberline {2.4}Overlay analyses}{30}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Proximity analyses}{30}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Writing vector data}{30}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Reading raster data}{30}{subsection.2.7}
-\contentsline {subsection}{\numberline {2.8}Pixels resizing}{30}{subsection.2.8}
-\contentsline {subsection}{\numberline {2.9}Moving window analyses}{30}{subsection.2.9}
-\contentsline {subsection}{\numberline {2.10}Map algebra}{30}{subsection.2.10}
-\contentsline {section}{\numberline {3}Spatial data analysis}{30}{section.3}
-\contentsline {subsection}{\numberline {3.1}Introduction into spatial data analysis}{30}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Computing statistical matrices for multivariate analyses}{32}{subsection.3.2}
-\contentsline {section}{\numberline {4}Variable-based multivariate analyses}{32}{section.4}
-\contentsline {subsection}{\numberline {4.1}Implementing the multiple regression analysis}{32}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Implementing MANOVA}{32}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Vizualizing spatial residual maps}{32}{subsection.4.3}
-\contentsline {section}{\numberline {5}Object-based multivariate analyses}{32}{section.5}
-\contentsline {subsection}{\numberline {5.1} Implementing k-Nearest Neighbor}{32}{subsection.5.1}
-\contentsline {section}{\numberline {6}Combined approaches: the MANOVA-KNN pipeline}{32}{section.6}
-\contentsline {section}{\numberline {7}Conclusions}{32}{section.7}
-\contentsline {section}{Appendices}{34}{section*.20}
-\contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{34}{Appendix.a.A}
-\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{37}{Appendix.a.B}
-\contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{38}{Appendix.a.C}
-\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{39}{Appendix.a.D}
+\contentsline {subsubsection}{\numberline {1.2.3}Managing dependencies with SBT}{11}{subsubsection.1.2.3}
+\contentsline {paragraph}{Using external Scala libraries}{12}{section*.5}
+\contentsline {paragraph}{Using internal Scala libraries}{13}{section*.6}
+\contentsline {paragraph}{Using a forked JVM}{14}{section*.7}
+\contentsline {section}{\numberline {2}Geoprocessing vector and raster data}{14}{section.2}
+\contentsline {subsection}{\numberline {2.1}Types of spatial data}{14}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Reading vector data}{15}{subsection.2.2}
+\contentsline {paragraph}{ Code snippet 1: accessing a shapefile using OGR in Scala}{16}{section*.8}
+\contentsline {paragraph}{Code snippet 1: Explanation}{17}{section*.9}
+\contentsline {subsection}{\numberline {2.3}Georeferencing data}{17}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Spatial reference systems in OGR}{18}{subsubsection.2.3.1}
+\contentsline {paragraph}{Code snippet 2: creating a SpatialReference object using OGR in Scala}{19}{section*.10}
+\contentsline {paragraph}{Code snippet 2: Explanation}{24}{section*.11}
+\contentsline {subsubsection}{\numberline {2.3.2}Creating OGR geometries and vector layers}{25}{subsubsection.2.3.2}
+\contentsline {paragraph}{Code snippet 3: Reading point coordinates from a .csv file}{25}{section*.12}
+\contentsline {paragraph}{ Code snippet 3: Explanation}{27}{section*.13}
+\contentsline {paragraph}{Code snippet 4: Creating points and multipoints, lines and multilines, and, polygons and multiploygons}{27}{section*.14}
+\contentsline {paragraph}{ Code snippet 4: Explanation}{29}{section*.15}
+\contentsline {paragraph}{Code snippet 5: Creating a georeferenced vector layer}{29}{section*.16}
+\contentsline {paragraph}{Code snippet 5: Explanation}{31}{section*.17}
+\contentsline {subsubsection}{\numberline {2.3.3}Reprojecting OGR geometries and vector layers}{31}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}Overlay analyses}{31}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Proximity analyses}{31}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Writing vector data}{31}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Reading raster data}{31}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Pixels resizing}{31}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}Moving window analyses}{31}{subsection.2.9}
+\contentsline {subsection}{\numberline {2.10}Map algebra}{31}{subsection.2.10}
+\contentsline {section}{\numberline {3}Spatial data analysis}{31}{section.3}
+\contentsline {subsection}{\numberline {3.1}Introduction into spatial data analysis}{31}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Computing statistical matrices for multivariate analyses}{33}{subsection.3.2}
+\contentsline {section}{\numberline {4}Variable-based multivariate analyses}{33}{section.4}
+\contentsline {subsection}{\numberline {4.1}Implementing the multiple regression analysis}{33}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Implementing MANOVA}{33}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Vizualizing spatial residual maps}{33}{subsection.4.3}
+\contentsline {section}{\numberline {5}Object-based multivariate analyses}{33}{section.5}
+\contentsline {subsection}{\numberline {5.1} Implementing k-Nearest Neighbor}{33}{subsection.5.1}
+\contentsline {section}{\numberline {6}Combined approaches: the MANOVA-KNN pipeline}{33}{section.6}
+\contentsline {section}{\numberline {7}Conclusions}{33}{section.7}
+\contentsline {section}{Appendices}{35}{section*.20}
+\contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{35}{Appendix.a.A}
+\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{38}{Appendix.a.B}
+\contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{39}{Appendix.a.C}
+\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{40}{Appendix.a.D}
