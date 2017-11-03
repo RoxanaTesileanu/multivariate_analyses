@@ -1,11 +1,11 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}
 \contentsline {subsection}{\numberline {1.1}Geoprocessing using GDAL}{2}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Using SBT to manage your Scala project}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.2}Overview of the software development process of Scala projects}{3}{subsection.1.2}
 \contentsline {subsubsection}{\numberline {1.2.1}Using VIM as an editor for Scala code}{4}{subsubsection.1.2.1}
 \contentsline {subsubsection}{\numberline {1.2.2}Using SBT to create and manage Scala projects}{7}{subsubsection.1.2.2}
 \contentsline {paragraph}{Installing SBT}{7}{section*.2}
 \contentsline {paragraph}{Creating a Scala projet}{8}{section*.3}
-\contentsline {paragraph}{Some basic SBT tasks}{9}{section*.4}
+\contentsline {paragraph}{Some basic SBT tasks}{10}{section*.4}
 \contentsline {subsubsection}{\numberline {1.2.3}Managing dependencies}{10}{subsubsection.1.2.3}
 \contentsline {paragraph}{Using external Scala libraries}{11}{section*.5}
 \contentsline {paragraph}{Using internal Scala libraries}{12}{section*.6}
