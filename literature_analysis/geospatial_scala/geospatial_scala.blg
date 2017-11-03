@@ -11,7 +11,6 @@ Database file #1: MyLibrary.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty year in pfeffer_practical_2016
 Warning--edition ordinal word "Second Edition" may be too high (or improper) for conversion in webster_geostatistics_2007
 Warning--missing publisher in hengl_practical_2009
 Warning--edition ordinal word "Revised" may be too high (or improper) for conversion in carroll_mathematical_1997
@@ -20,42 +19,42 @@ Done.
 You've used 23 entries,
             4087 wiz_defined-function locations,
             927 strings with 9852 characters,
-and the built_in function-call counts, 9159 in all, are:
+and the built_in function-call counts, 9176 in all, are:
 = -- 641
 > -- 169
 < -- 16
 + -- 81
 - -- 36
-* -- 355
+* -- 356
 := -- 1517
 add.period$ -- 45
 call.type$ -- 23
 change.case$ -- 13
 chr.to.int$ -- 42
-cite$ -- 27
-duplicate$ -- 728
-empty$ -- 1023
+cite$ -- 26
+duplicate$ -- 730
+empty$ -- 1028
 format.name$ -- 46
-if$ -- 2110
+if$ -- 2116
 int.to.chr$ -- 0
 int.to.str$ -- 23
-missing$ -- 145
+missing$ -- 146
 newline$ -- 106
 num.names$ -- 22
-pop$ -- 469
+pop$ -- 472
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 6
-skip$ -- 739
+skip$ -- 738
 stack$ -- 0
 substring$ -- 83
-swap$ -- 405
+swap$ -- 407
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 23
-warning$ -- 4
+warning$ -- 3
 while$ -- 26
 width$ -- 25
 write$ -- 203
-(There were 4 warnings)
+(There were 3 warnings)
