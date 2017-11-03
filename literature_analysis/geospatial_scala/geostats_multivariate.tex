@@ -29,10 +29,13 @@ INCDS, Romania}
 In its essence geostatistics adds georeferenced spatial information to the vector of recorded variables of each individual observation, which represents a spatial location.
  It further adds into models the space dependent random error. 
 In this document I state that the classical multivariate techniques like multiple regression analysis or multidimensional scaling, can include this spatial perspective into modeling by treating the X and Y coordinates as "classical" variables like in variable-based multivariate statistics, or, by adding the X and Y differences between points to the Euclidean distance like in object-based multivariate techniques, thus reducing the space dependent random error to the "classical" random error of linear models.   
+Another basic principle of geostatistics is the recognition of local variation as opposed to the global variation of the entire dataset. 
+This principle can be incorporated into multivariate statistics by using combined approaches, i.e. approaches which deal with global variation as well as with local variation of a dataset.
+In this work I propose the MANOVA-KNN pipeline for reducing error as a combined approach dealing with both types of variation.
 
 \section {Introduction}
 
-After reading through introductory chapters of several geostatistics books, I can now state that geostatistics is a departure from classical statistics just because of the sentence that "it takes spatial autocorrelation of observations into account when predicting values for new points". It is not more than that to it.
+After reading through introductory chapters of several geostatistics books, I can now state that geostatistics is a departure from classical statistics just because of the sentence that "it takes spatial autocorrelation of observations into account when predicting values for new points". It is not more than that contributing to its differentiation from classical multivariate statistics.
 Maybe the most important fact is that geospatial analysis doesn't treat variables as we are used to in classical statistics but uses individual observations (i.e. individual points) and investigates the relationships between them from a spatial perspective \cite{cressie_statistics_1993}, \cite{webster_geostatistics_2007}, \cite{isaaks_applied_1989}, \cite{hengl_practical_2009}, \cite{johnston_using_2003}.
  It is adding space as a variable in the vector of recorded variables of each individual observation/point. The highlight of individual points is actually like in object-based classical multivariate statistics. It is treating space as an autocorrelated variable across a series of individual points, and letting all the other variables be "classical". 
 \\
