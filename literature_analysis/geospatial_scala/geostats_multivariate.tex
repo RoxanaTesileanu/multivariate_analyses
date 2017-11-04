@@ -73,7 +73,11 @@ $residual\underline{\space}from\underline{\space}Manova = \beta1 X + \beta2 Y + 
 \\
 \\
 From a simple slope analysis you can see how the residuals behave when X increases at a constant Y.
- The slope from this analysis is the angle of the k-neighborhood for the adaptive KNN classifier.
+ The slope from this analysis gives the angle of the k-neighborhood for the adaptive KNN classifier:
+\\
+\\
+$ tan(direction angle) = slope $
+This angle gives the axis along which the neighborhood will be set.
    
 \section{Dealing with local variation: adaptive KNN}
 From the spatial residual map I get the angle of the k-neighborhood for the adaptive KNN classifier. I still have to set the direction and the size of the neighborhood. For this I have to set boundaries along the X and Y axis. This means I have to delineate the zone of local variation, and set an extent of it. This information is also taken from the spatial residual map. Then from the left part of this spatial extent towards right I can chose the neighbors. For the size of the k-neighborhood I will use itterations.        
