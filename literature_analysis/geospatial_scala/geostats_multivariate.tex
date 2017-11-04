@@ -67,10 +67,13 @@ I will also use the classification of Cressie (1993) \cite{cressie_statistics_19
 \section{Dealing with global variation: MANOVA}
 \section{Vizualizing MANOVA residuals: spatial residual map}
 The spatial residual map is computed with the multiple regression technique. It explains the magnitude of residuals (i.e. how large they are) using the X and Y spatial coordinates in which the data are given.
-
-residual from Manova = \beta1 X + \beta2 Y + \beta0 + \varepsilon
-
-From a simple slope analysis you can see how the residuals behave when X increases at a constant Y. The slope from this analysis is the angle of the k-neighborhood for the adaptive KNN classifier.
+\\
+\\
+$residual\underline{\space}from\underline{\space}Manova = \beta1 X + \beta2 Y + \beta0 + \varepsilon$
+\\
+\\
+From a simple slope analysis you can see how the residuals behave when X increases at a constant Y.
+ The slope from this analysis is the angle of the k-neighborhood for the adaptive KNN classifier.
    
 \section{Dealing with local variation: adaptive KNN}
 From the spatial residual map I get the angle of the k-neighborhood for the adaptive KNN classifier. I still have to set the direction and the size of the neighborhood. For this I have to set boundaries along the X and Y axis. This means I have to delineate the zone of local variation, and set an extent of it. This information is also taken from the spatial residual map. Then from the left part of this spatial extent towards right I can chose the neighbors. For the size of the k-neighborhood I will use itterations.        
