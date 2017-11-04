@@ -36,17 +36,18 @@
 \contentsline {subsection}{\numberline {2.10}Map algebra}{29}{subsection.2.10}
 \contentsline {section}{\numberline {3}Spatial data analysis}{29}{section.3}
 \contentsline {subsection}{\numberline {3.1}Introduction into spatial data analysis}{29}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Computing statistical matrices for multivariate analyses}{31}{subsection.3.2}
-\contentsline {section}{\numberline {4}Variable-based multivariate analyses}{31}{section.4}
-\contentsline {subsection}{\numberline {4.1}Implementing the multiple regression analysis}{31}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Implementing MANOVA}{31}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Vizualizing spatial residual maps}{31}{subsection.4.3}
-\contentsline {section}{\numberline {5}Object-based multivariate analyses}{31}{section.5}
-\contentsline {subsection}{\numberline {5.1} Implementing k-Nearest Neighbor}{31}{subsection.5.1}
-\contentsline {section}{\numberline {6}Combined approaches: the MANOVA-KNN pipeline}{31}{section.6}
-\contentsline {section}{\numberline {7}Conclusions}{31}{section.7}
-\contentsline {section}{Appendices}{33}{section*.20}
-\contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{33}{Appendix.a.A}
-\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{36}{Appendix.a.B}
-\contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{37}{Appendix.a.C}
-\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{38}{Appendix.a.D}
+\contentsline {subsection}{\numberline {3.2}Computing statistical matrices for multivariate analyses}{32}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Implementing the gradient k-improvement optimization of the neighborhood size and direction}{32}{subsection.3.3}
+\contentsline {section}{\numberline {4}Variable-based multivariate analyses}{32}{section.4}
+\contentsline {subsection}{\numberline {4.1}Implementing the multiple regression analysis}{32}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Implementing MANOVA}{32}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Vizualizing spatial residual maps}{32}{subsection.4.3}
+\contentsline {section}{\numberline {5}Object-based multivariate analyses}{32}{section.5}
+\contentsline {subsection}{\numberline {5.1} Implementing the k-Nearest Neighbors classifier}{32}{subsection.5.1}
+\contentsline {section}{\numberline {6}Combined approaches: the MANOVA-KNN pipeline}{32}{section.6}
+\contentsline {section}{\numberline {7}Conclusions}{32}{section.7}
+\contentsline {section}{Appendices}{34}{section*.20}
+\contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{34}{Appendix.a.A}
+\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{37}{Appendix.a.B}
+\contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{38}{Appendix.a.C}
+\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{39}{Appendix.a.D}

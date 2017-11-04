@@ -97,6 +97,11 @@ A.~Pfeffer, \emph{Practical probabilistic programming}.\hskip 1em plus 0.5em
 Google, ``Google {Maps}.'' [Online]. Available: \url{https://maps.google.com/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{tesileanu_introduction_2017}
+R.~Tesileanu, ``Introduction to statistical computing in {Scala}: an
+  application of the k-{Nearest} {Neighbors} classifier,'' 2017, available at
+  \url{https://www.researchgate.net/publication/319260791_Using_Linux_as_a_development_platform_for_Scala_projects}.
+
 \bibitem{cressie_statistics_1993}
 N.~A.~C. Cressie, \emph{Statistics for {Spatial} {Data}}.\hskip 1em plus 0.5em
   minus 0.4em\relax Wiley, 1993.
