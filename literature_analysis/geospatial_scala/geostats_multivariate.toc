@@ -1,5 +1,4 @@
-\contentsline {section}{\numberline {1}Abstract}{1}{section.1}
-\contentsline {section}{\numberline {2}Introduction}{2}{section.2}
-\contentsline {section}{\numberline {3}Dealing with global variation: MANOVA}{3}{section.3}
-\contentsline {section}{\numberline {4}Vizualizing MANOVA residuals: spatial residual map}{3}{section.4}
-\contentsline {section}{\numberline {5}Dealing with local variation: adaptive KNN}{3}{section.5}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {2}Dealing with global variation: MANOVA}{3}{section.2}
+\contentsline {section}{\numberline {3}Vizualizing MANOVA residuals: spatial residual map}{3}{section.3}
+\contentsline {section}{\numberline {4}Dealing with local variation: adaptive KNN}{3}{section.4}
