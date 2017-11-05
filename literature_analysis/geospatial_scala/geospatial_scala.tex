@@ -1026,7 +1026,7 @@ This angle gives the axis along which the neighborhood will be set.
 
 The present subsection introduces the Scala functions used to run the kNN classification algorithm and then it delineates its role within a real-world classification pipeline for reducing error (from \cite{tesileanu_introduction_2017}).
 
-In order to access the functions for the kNN classification, the scalaML package needs to be imported into the current REPL session. The directory with the Scala source files can be downloaded at \href{https://github.com/RoxanaTesileanu/multivariate_analyses/tree/master/DeepLearning/src/main/scala/com/mai}{https://github.com/RoxanaTesileanu/multivariate\underline{\space}analyses/tree/master/DeepLearning/src/main/scala/com/mai}.
+In order to access the functions for the kNN classification, the scalaML package needs to be imported into the current REPL session. The directory with the Scala source files can be downloaded at \href{https://github.com/RoxanaTesileanu/multivariate_analyses/tree/master/DeepLearning/src/main/scala/com/mai}{https://github.com/RoxanaTesileanu/mu\\ltivariate\underline{\space}analyses/tree/master/DeepLearning/src/main/scala/com/mai}.
 \\
 \\
 The kNN classifier reads CSV and text files for classification tasks, uses basic vector operations for handling variables and objects, runs the kNN algorithm on the data and computes the error rate of the kNN classifier.
@@ -1034,27 +1034,27 @@ The kNN classifier reads CSV and text files for classification tasks, uses basic
 \paragraph {Basic vector operations}
 
 Because most statistical algorithms manipulate datasets which are actually collections of vectors, manipulating vectors is an essential task. The scalaML package offers this functionality, using the Scala main types while developing machine-learning algorithms. This makes the process of synchronizing types in further development stages easier.
- The vector operations are found in the BasicVectorOP.scala source file (see appendix x) and include: vector addition, vector subtraction, elementwise multiplication and dot product for any two vectors of type Array[Double], and matrix multiplication for any two matrices of type Array[Array[Double]], where each Array[Double] represents an observation (object), and all elements with the same index of inside arrays (i.e. all elements with the same index inside of all Array[Double] within the Array[Array[Double]]) represent a column (i.e. a variable) of the multivariate dataset \cite{dawkins_pauls_2005}, \cite{odersky_programming_2010}, \cite{swartz_learning_2015}, \cite{trask_grokking_2017}, \cite{noauthor_scala_2003}.
+ The vector operations are found in the BasicVectorOP.scala source file (see appendix x) and include: vector addition, vector subtraction, elementwise multiplication and dot product for any two vectors of type Array[Double], and matrix multiplication for any two matrices of type Array[Array[Double]], where each Array[Double] represents an observation (object), and all elements with the same index of inside arrays (i.e. all elements with the same index inside of all Array[Double] within the Array[Array[Double]]) represent a column (i.e. a variable) of the multivariate dataset \cite{dawkins_pauls_2005}, \cite{odersky_programming_2010}, \cite{swartz_learning_2015}, \cite{trask_grokking_2017}, \cite{epfl_scala_2017}.
 
 INSERT HERE THE EXAMPLES FROM THE KNN DOCUMENTATION!!!
 
 \paragraph {Reading files for classification tasks}
 
-The ReadFile.scala source file (appendix x) of the scalaML package contains the function used to read CSV and text files for classification tasks. It returns a tuple with the information needed for the kNN algorithm (a data matrix of type Vector[Array[Double]], the data labels in the form of a Vector[Int],  and the used classes in the form of a Range[Int]) \cite{harrington_machine_2012}, \cite{odersky_programming_2010}, \cite{swartz_learning_2015}, \cite{noauthor_scala_2003}.
+The ReadFile.scala source file (appendix x) of the scalaML package contains the function used to read CSV and text files for classification tasks. It returns a tuple with the information needed for the kNN algorithm (a data matrix of type Vector[Array[Double]], the data labels in the form of a Vector[Int],  and the used classes in the form of a Range[Int]) \cite{harrington_machine_2012}, \cite{odersky_programming_2010}, \cite{swartz_learning_2015}, \cite{epfl_scala_2017}.
  
 INSERT HERE THE EXAMPLES FROM THE KNN DOCUMENTATION!!!
 
 \paragraph {KNN classification function}
 
-The kNN classification function (see appendix x) implements in Scala the pseudocode of the kNN algorithm \cite{harrington_machine_2012}, \cite{odersky_programming_2010}, \cite{swartz_learning_2015}, \cite{noauthor_scala_2003}. 
+The kNN classification function (see appendix x) implements in Scala the pseudocode of the kNN algorithm \cite{harrington_machine_2012}, \cite{odersky_programming_2010}, \cite{swartz_learning_2015}, \cite{epfl_scala_2017}. 
 It starts by calculating the Euclidean distance between a new object (which is going to be classified by the algorithm) and every object of the dataset, it sorts the distances in increasing order, it then takes k objects with the lowest distances and finds the majority class among those k objects, returning it as the prediction for the class of the new object \cite{harrington_machine_2012}.
-The variables can also be scaled from 0 to 1 before using the kNN classifier, if a normalization is required. For this purpose a normalizing function can be used (see appendix D) \cite{quinn_experimental_2002}, \cite{harrington_machine_2012}, \cite{odersky_programming_2010}, \cite{noauthor_scala_2003}. 
+The variables can also be scaled from 0 to 1 before using the kNN classifier, if a normalization is required. For this purpose a normalizing function can be used (see appendix D) \cite{quinn_experimental_2002}, \cite{harrington_machine_2012}, \cite{odersky_programming_2010}, \cite{epfl_scala_2017}. 
 
 INSERT EXAMPLES FROM THE KNN DOCUMENTATION!!! 
 
 \paragraph{Testing framework}    
 
-In order to test the accuracy of the kNN classifier, an error rate can be computed using the testing function provided in the TestFrameWorkClassif.scala source file (see appendix x) \cite{harrington_machine_2012}, \cite{odersky_programming_2010}, \cite{noauthor_scala_2003}.
+In order to test the accuracy of the kNN classifier, an error rate can be computed using the testing function provided in the TestFrameWorkClassif.scala source file (see appendix x) \cite{harrington_machine_2012}, \cite{odersky_programming_2010}, \cite{epfl_scala_2017}.
  The error rate is given by the total number of errors (misclassified observations) divided by the total number of tested observations. 
 
 INSERT EXAMPLES FROM THE KNN DOCUMENTATION!!! 
@@ -1091,7 +1091,8 @@ The main idea of combining distance-based approaches with approaches based on th
 \section {Conclusions} 
 
 \section* {Note}
-This document is "under construction". Please download the current version from  my GitHub profile under the multivariate\underline{\space}analyses project repository: \href{https://github.com/RoxanaTesileanu/multivariate_analyses/blob/master/literature_analysis/geospatial_scala/geospatial_scala.pdf}{https://github.com/RoxanaTesileanu/multivariate\underline{\space}analyses/blob/master/\\literature\underline{\space}analysis/geospatial\underline{\space}scala/geospatial\underline{\space}scala.pdf}. 
+This document is "under construction". It contains older technical reports written by the author and also new sections aiming at creating a unifyied document which is easy to follow and util for a broad range of readers.  
+Please download the current version from  my GitHub profile under the multivariate\underline{\space}analyses project repository: \href{https://github.com/RoxanaTesileanu/multivariate_analyses/blob/master/literature_analysis/geospatial_scala/geospatial_scala.pdf}{https://github.com/RoxanaTesileanu/multivariate\underline{\space}analyses/blob/master/\\literature\underline{\space}analysis/geospatial\underline{\space}scala/geospatial\underline{\space}scala.pdf}. 
 \\
 \\
 The present document was edited using Latex \cite{claudio_latex-tutorial.com_nodate} (\href{https://www.latex-project.org/}{https://www.latex-project.org/}). The source .tex file of the present document is also available in the multivariate\underline{\space}analyses repository on my GitHub profile.  
