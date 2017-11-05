@@ -8,7 +8,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: MyLibrary.bib
-Warning--I didn't find a database entry for "noauthor_scala_2003"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -17,45 +16,45 @@ Warning--missing publisher in hengl_practical_2009
 Warning--edition ordinal word "Revised" may be too high (or improper) for conversion in carroll_mathematical_1997
 
 Done.
-You've used 30 entries,
+You've used 31 entries,
             4087 wiz_defined-function locations,
-            963 strings with 10862 characters,
-and the built_in function-call counts, 12331 in all, are:
-= -- 886
-> -- 221
+            965 strings with 11072 characters,
+and the built_in function-call counts, 12695 in all, are:
+= -- 915
+> -- 225
 < -- 29
-+ -- 107
-- -- 46
-* -- 481
-:= -- 2027
-add.period$ -- 59
-call.type$ -- 30
-change.case$ -- 19
++ -- 109
+- -- 47
+* -- 493
+:= -- 2096
+add.period$ -- 61
+call.type$ -- 31
+change.case$ -- 20
 chr.to.int$ -- 72
-cite$ -- 33
-duplicate$ -- 981
-empty$ -- 1355
-format.name$ -- 58
-if$ -- 2855
+cite$ -- 34
+duplicate$ -- 1011
+empty$ -- 1391
+format.name$ -- 59
+if$ -- 2935
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 193
-newline$ -- 129
-num.names$ -- 29
-pop$ -- 606
+int.to.str$ -- 31
+missing$ -- 200
+newline$ -- 134
+num.names$ -- 30
+pop$ -- 628
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 6
-skip$ -- 994
+skip$ -- 1023
 stack$ -- 0
-substring$ -- 149
-swap$ -- 563
+substring$ -- 150
+swap$ -- 579
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 30
+type$ -- 31
 warning$ -- 3
-while$ -- 37
-width$ -- 32
-write$ -- 260
-(There were 4 warnings)
+while$ -- 38
+width$ -- 33
+write$ -- 270
+(There were 3 warnings)

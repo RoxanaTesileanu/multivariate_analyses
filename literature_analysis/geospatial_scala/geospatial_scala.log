@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  5 NOV 2017 17:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  5 NOV 2017 18:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1392,7 +1392,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1096--2
 
 
 Overfull \hbox (17.57813pt too wide) in paragraph at lines 1096--2
-\T1/cmr/m/n/10 The present doc-u-ment was edited us-ing La-tex [[]30[]] ([]http
+\T1/cmr/m/n/10 The present doc-u-ment was edited us-ing La-tex [[]31[]] ([]http
 s://www.latex-project.org/[]).
  []
 
@@ -1413,13 +1413,31 @@ Underfull \hbox (badness 2547) in paragraph at lines 54--58
  []
 
 [35]
-Underfull \hbox (badness 10000) in paragraph at lines 101--105
+Underfull \hbox (badness 10000) in paragraph at lines 102--106
+[]$\T1/cmr/m/n/10 https : / / www . researchgate . net / publication / 32079875
+0 _ Geostatistics _
+ []
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 108--111
+[]\T1/cmr/m/n/10 ------, ``In-tro-duc-tion to sta-tis-ti-cal com-put-ing in Sca
+la: an im-ple-
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 108--111
+\T1/cmr/m/n/10 men-ta-tion of the k-Nearest Neigh-bors clas-si-fier,'' 2017, av
+ail-able at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--111
 []$\T1/cmr/m/n/10 https : / / www . researchgate . net / publication / 31950554
 8 _ Introduction _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--105
+Underfull \hbox (badness 10000) in paragraph at lines 108--111
 \T1/cmr/m/n/10 to _ Statistical _ Computing _ in _ Scala-[]an _ Implementation 
 _ of _ the _
  []
@@ -1761,13 +1779,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1396.
 ### semi simple group (level 1) entered at line 1105 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6404 strings out of 493029
- 91769 string characters out of 6136234
- 194719 words of memory out of 5000000
- 9733 multiletter control sequences out of 15000+600000
+ 6406 strings out of 493029
+ 91832 string characters out of 6136234
+ 194770 words of memory out of 5000000
+ 9734 multiletter control sequences out of 15000+600000
  13580 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,6n,31p,897b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,6n,31p,897b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
@@ -1777,10 +1795,10 @@ er/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></us
 r/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-supe
 r/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on geospatial_scala.pdf (45 pages, 328379 bytes).
+Output written on geospatial_scala.pdf (45 pages, 328957 bytes).
 PDF statistics:
- 678 PDF objects out of 1000 (max. 8388607)
- 613 compressed objects within 7 object streams
- 138 named destinations out of 1000 (max. 500000)
+ 683 PDF objects out of 1000 (max. 8388607)
+ 618 compressed objects within 7 object streams
+ 139 named destinations out of 1000 (max. 500000)
  318 words of extra memory for PDF output out of 10000 (max. 10000000)
 

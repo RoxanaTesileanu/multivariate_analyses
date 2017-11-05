@@ -97,10 +97,16 @@ A.~Pfeffer, \emph{Practical probabilistic programming}.\hskip 1em plus 0.5em
 Google, ``Google {Maps}.'' [Online]. Available: \url{https://maps.google.com/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{tesileanu_geostatistics_2017}
+\BIBentryALTinterwordspacing
+R.~Tesileanu, ``Geostatistics: classical multivariate statistics from a spatial
+  perspective?'' 2017. [Online]. Available:
+  \url{https://www.researchgate.net/publication/320798750_Geostatistics_classical_multivariate_statistics_from_a_spatial_perspective}
+\BIBentrySTDinterwordspacing
+
 \bibitem{tesileanu_introduction_2017}
-R.~Tesileanu, ``Introduction to statistical computing in {Scala}: an
-  implementation of the k-{Nearest} {Neighbors} classifier,'' 2017, available
-  at
+------, ``Introduction to statistical computing in {Scala}: an implementation
+  of the k-{Nearest} {Neighbors} classifier,'' 2017, available at
   \url{https://www.researchgate.net/publication/319505548_Introduction_to_Statistical_Computing_in_Scala-an_Implementation_of_the_K-Nearest_Neighbors_classifier}.
 
 \bibitem{cressie_statistics_1993}
