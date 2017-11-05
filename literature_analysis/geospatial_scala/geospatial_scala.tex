@@ -55,7 +55,8 @@ sudo apt-get install libgdal-java, libproj-java.    \\
 In order to import GDAL in Scala, you have to add its jar to the project's classpath. An easy way of managing dependencies of a Scala project is to use SBT (\href{http://www.scala-sbt.org/}{http://www.scala-sbt.org/}) \cite{tesileanu_using_2017} \cite{suereth_sbt_2016}. In this way you can take advantage of the most convenient way to place the gdal jar to the project's classpath, namely, to place a copy of it into the lib directory of the Scala project, now that the actual installation has already taken place.
 \\
 \\
-Section 1.2 offers an introduction in SBT and into the software development process of Scala projects in general, in order to get ready to start with Section 2 which will offer a background in geoprocessing: manipulating vector data (reading and writing files of different vector data formats, georeferencing data, performing overlay and proximity analyses) and continuing with manipulating raster data (reading and writing files of different raster data formats, resizing pixels, performing moving window analyses and map algebra). Then, in Section 3 the main approaches of spatial data analyses will be presented, based on variable- and object-based multivariate analyses.     
+Section 1.2 offers an introduction in SBT and into the software development process of Scala projects in general, in order to get ready to start with Section 2 which will offer a background in geoprocessing: manipulating vector data (reading and writing files of different vector data formats, georeferencing data, performing overlay and proximity analyses) and continuing with manipulating raster data (reading and writing files of different raster data formats, resizing pixels, performing moving window analyses and map algebra). 
+Then, in Sections 3, 4, 5 and 6 the main approaches of spatial data analyses will be presented, based on variable- and object-based multivariate analyses.     
 \\
 \\
 \subsection{Overview of the software development process of Scala projects}
@@ -990,23 +991,29 @@ I will also use the classification of Cressie (1993) \cite{cressie_statistics_19
 
 \subsection {Computing statistical matrices for multivariate analyses}
 
-\subsection {Implementing the gradient k-improvement optimization of the neighborhood size and direction}
 
 \section {Variable-based multivariate analyses}
 
-\subsection{Implementing the multiple regression analysis}
+\subsection{Predicting with Linear Multiple Regression (LMR) analysis}
 
-\subsection {Implementing MANOVA}
+\subsection {Examining group differences with Multivariate Analysis of Variance (MANOVA)}
 
 \subsection {Vizualizing spatial residual maps}
+
+\subsection {Classifying with Discriminant Function Analysis (DFA)}
 
 
 \section {Object-based multivariate analyses}
 
 \subsection{ Implementing the k-Nearest Neighbors classifier}
 
+
 \section {Combined approaches: the MANOVA-KNN pipeline}
+
+\subsection {Implementing the gradient k-improvement optimization of the neighborhood size and direction}
+
 \section {Conclusions} 
+
 \section* {Note}
 This document is "under construction". Please download the current version from  my GitHub profile under the multivariate\underline{\space}analyses project repository: \href{https://github.com/RoxanaTesileanu/multivariate_analyses/blob/master/literature_analysis/geospatial_scala/geospatial_scala.pdf}{https://github.com/RoxanaTesileanu/multivariate\underline{\space}analyses/blob/master/\\literature\underline{\space}analysis/geospatial\underline{\space}scala/geospatial\underline{\space}scala.pdf}. 
 \\
