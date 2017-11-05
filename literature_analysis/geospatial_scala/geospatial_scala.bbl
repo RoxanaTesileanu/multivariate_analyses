@@ -99,7 +99,8 @@ Google, ``Google {Maps}.'' [Online]. Available: \url{https://maps.google.com/}
 
 \bibitem{tesileanu_introduction_2017}
 R.~Tesileanu, ``Introduction to statistical computing in {Scala}: an
-  application of the k-{Nearest} {Neighbors} classifier,'' 2017, available at
+  implementation of the k-{Nearest} {Neighbors} classifier,'' 2017, available
+  at
   \url{https://www.researchgate.net/publication/319505548_Introduction_to_Statistical_Computing_in_Scala-an_Implementation_of_the_K-Nearest_Neighbors_classifier}.
 
 \bibitem{cressie_statistics_1993}
@@ -152,6 +153,11 @@ A.~Trask, \emph{Grokking deep learning}.\hskip 1em plus 0.5em minus 0.4em\relax
 \bibitem{harrington_machine_2012}
 P.~Harrington, \emph{Machine learning in action}.\hskip 1em plus 0.5em minus
   0.4em\relax Shelter Island: Manning Publications Co., 2012.
+
+\bibitem{hastie_discriminant_1996}
+T.~Hastie and R.~Tibshirani, ``Discriminant {Adaptive} {Nearest} {Neighbor}
+  {Classification} and {Regression},'' \emph{IEEE Trans. Pattern Anal. Match.
+  Intell.}, vol.~18, no.~6, pp. 607--616, 1996.
 
 \bibitem{claudio_latex-tutorial.com_nodate}
 \BIBentryALTinterwordspacing

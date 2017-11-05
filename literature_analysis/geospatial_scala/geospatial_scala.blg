@@ -1,11 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: geospatial_scala.aux
-Case mismatch error between cite keys Tesileanu_introduction_2017 and tesileanu_introduction_2017
----line 155 of file geospatial_scala.aux
- : \citation{Tesileanu_introduction_2017
- :                                      }
-I'm skipping whatever remains of this command
 The style file: IEEEtran.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -14,7 +9,6 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: MyLibrary.bib
 Warning--I didn't find a database entry for "noauthor_scala_2003"
-Warning--I didn't find a database entry for "hastie_discriminant_nodate"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -23,45 +17,45 @@ Warning--missing publisher in hengl_practical_2009
 Warning--edition ordinal word "Revised" may be too high (or improper) for conversion in carroll_mathematical_1997
 
 Done.
-You've used 29 entries,
+You've used 30 entries,
             4087 wiz_defined-function locations,
-            958 strings with 10696 characters,
-and the built_in function-call counts, 11427 in all, are:
-= -- 805
-> -- 204
-< -- 18
-+ -- 97
-- -- 44
-* -- 437
-:= -- 1892
-add.period$ -- 57
-call.type$ -- 29
-change.case$ -- 18
-chr.to.int$ -- 48
-cite$ -- 32
-duplicate$ -- 919
-empty$ -- 1293
-format.name$ -- 55
-if$ -- 2644
+            963 strings with 10862 characters,
+and the built_in function-call counts, 12331 in all, are:
+= -- 886
+> -- 221
+< -- 29
++ -- 107
+- -- 46
+* -- 481
+:= -- 2027
+add.period$ -- 59
+call.type$ -- 30
+change.case$ -- 19
+chr.to.int$ -- 72
+cite$ -- 33
+duplicate$ -- 981
+empty$ -- 1355
+format.name$ -- 58
+if$ -- 2855
 int.to.chr$ -- 0
-int.to.str$ -- 29
-missing$ -- 184
-newline$ -- 126
-num.names$ -- 28
-pop$ -- 591
+int.to.str$ -- 30
+missing$ -- 193
+newline$ -- 129
+num.names$ -- 29
+pop$ -- 606
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 6
-skip$ -- 922
+skip$ -- 994
 stack$ -- 0
-substring$ -- 92
-swap$ -- 505
-text.length$ -- 2
+substring$ -- 149
+swap$ -- 563
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 29
+type$ -- 30
 warning$ -- 3
-while$ -- 32
-width$ -- 31
-write$ -- 249
-(There was 1 error message)
+while$ -- 37
+width$ -- 32
+write$ -- 260
+(There were 4 warnings)
