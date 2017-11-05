@@ -1029,13 +1029,14 @@ The present subsection introduces the Scala functions used to run the kNN classi
 In order to access the functions for the kNN classification, the scalaML package needs to be imported into the current REPL session. The directory with the Scala source files can be downloaded at \href{https://github.com/RoxanaTesileanu/multivariate_analyses/tree/master/DeepLearning/src/main/scala/com/mai}{https://github.com/RoxanaTesileanu/multivariate\underline{\space}analyses/tree/master/DeepLearning/src/main/scala/com/mai}.
 \\
 \\
-
-
-
 The kNN classifier reads CSV and text files for classification tasks, uses basic vector operations for handling variables and objects, runs the kNN algorithm on the data and computes the error rate of the kNN classifier.
 
-   
- 
+\paragraph {Basic vector operations}
+
+Because most statistical algorithms manipulate datasets which are actually collections of vectors, manipulating vectors is an essential task. The scalaML package offers this functionality, using the Scala main types while developing machine-learning algorithms. This makes the process of synchronizing types in further development stages easier.
+ The vector operations are found in the BasicVectorOP.scala source file (see appendix A) and include: vector addition, vector subtraction, elementwise multiplication and dot product for any two vectors of type Array[Double], and matrix multiplication for any two matrices of type Array[Array[Double]], where each Array[Double] represents an observation (object), and all elements with the same index of inside arrays (i.e. all elements with the same index inside of all Array[Double] within the Array[Array[Double]]) represent a column (i.e. a variable) of the multivariate dataset \cite{dawkins_pauls_2005}, \cite{odersky_programming_2010}, \cite{swartz_learning_2015}, \cite{trask_grokking_2017}, \cite{noauthor_scala_2003}.
+
+INSERT HERE THE EXAMPLES FROM THE KNN DOCUMENTATION!!!
 
 \section {Combined approaches: the MANOVA-KNN pipeline}
 
