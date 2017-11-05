@@ -1030,6 +1030,11 @@ This angle gives the axis along which the neighborhood will be set.
 \subsection {Dealing with local variation: the adaptive KNN}
 
 From the spatial residual map I get the angle of the k-neighborhood for the adaptive KNN classifier. I still have to set the direction and the size of the neighborhood. For this I have to set boundaries along the X and Y axis. This means I have to delineate the zone of local variation, and set an extent of it. This information is also taken from the spatial residual map. Then from the left part of this spatial extent towards right I can chose the neighbors. For the size of the k-neighborhood I will use itterations.        
+\\
+\\
+The idea of adapting the use of machine-learning algorithms to real-world data requirements is not new. 
+Hastie and Tibshirani \cite{hastie_discriminant_nodate}, describe the Discriminant Adaptive Nearest Neighbor (DANN) procedure as a locally adaptive form of nearest neighbors classification using a modified linear discriminant analysis (LDA) procedure to estimate an effective metric for computing neighborhoods.
+The main idea of combining distance-based approaches with approaches based on the association between variables is driven by the fact that a multivariate dataset can be analysed in both ways \cite{quinn_experimental_2002}: calculating scores for the derived variables (components) for each object, and calculating dissimilarity measures (distances) for every possible pair of objects.\\
 
 \section {Conclusions} 
 
