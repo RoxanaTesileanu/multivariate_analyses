@@ -1025,7 +1025,8 @@ This angle gives the axis along which the neighborhood will be set.
 \subsection{ Implementing the k-Nearest Neighbors classifier}
 
 The present subsection introduces the Scala functions used to run the kNN classification algorithm and then it delineates its role within a real-world classification pipeline for reducing error (from \cite{tesileanu_introduction_2017}).
-
+\\
+\\
 In order to access the functions for the kNN classification, the scalaML package needs to be imported into the current REPL session. The directory with the Scala source files can be downloaded at \href{https://github.com/RoxanaTesileanu/multivariate_analyses/tree/master/DeepLearning/src/main/scala/com/mai}{https://github.com/RoxanaTesileanu/mu\\ltivariate\underline{\space}analyses/tree/master/DeepLearning/src/main/scala/com/mai}.
 \\
 \\
@@ -1065,8 +1066,9 @@ INSERT EXAMPLES FROM THE KNN DOCUMENTATION!!!
 
 The machine-learning workflow for classification tasks for high-dimensional datasets (i.e. more than three variables recorded for each object) generally consists of the following steps: data collection, reading the data in Scala, or other programming language used for statistical computation, analyzing the data using multivariate analyses like (MANOVA, PCA, cluster analysis, etc.), applying and testing the classification algorithm (kNN, Bayes classifier, etc.), deciding on and argumenting the choice of the most appropriate model. 
  Real-world workflows are itterative, requiring a dynamic configuration of the used algorithms and eventually the application of different algorithms to compare the results.
- Such workflows are called in machine-learning practice "learning pipelines" \cite{karau_learning_2015}.\\
-
+ Such workflows are called in machine-learning practice "learning pipelines" \cite{karau_learning_2015}.
+\\
+\\
 The present work proposes a combination of the MANOVA experimental design and analysis, with a further data classification step using the adaptive kNN classifier. 
 The background idea is that, if two or more groups differ in their group centroids, they are, globally speaking, suitable for classification tasks. If, not, then we probably miss the variables which make a difference, or, we don't really have two different populations, and further classifications are possible but miss their point.
 In the first case, we further investigate (add new variables or remove current variables), and if the MANOVA test indicates group differences, we are able to find a first decision boundary using the linear combination with the highest eigenvalue.
@@ -1092,7 +1094,7 @@ The main idea of combining distance-based approaches with approaches based on th
 
 \section* {Note}
 This document is "under construction". It contains older technical reports written by the author and also new sections aiming at creating a unifyied document which is easy to follow and util for a broad range of readers.  
-Please download the current version from  my GitHub profile under the multivariate\underline{\space}analyses project repository: \href{https://github.com/RoxanaTesileanu/multivariate_analyses/blob/master/literature_analysis/geospatial_scala/geospatial_scala.pdf}{https://github.com/RoxanaTesileanu/multivariate\underline{\space}analyses/blob/master/\\literature\underline{\space}analysis/geospatial\underline{\space}scala/geospatial\underline{\space}scala.pdf}. 
+Please download the current version from  my GitHub profile under the multivariate\underline{\space}analyses project repository: \href{https://github.com/RoxanaTesileanu/multivariate_analyses/blob/master/literature_analysis/geospatial_scala/geospatial_scala.pdf}{https://github.com/RoxanaTesileanu/multivariate\underline{\space}analyses/blob/m\\aster/literature\underline{\space}analysis/geospatial\underline{\space}scala/geospatial\underline{\space}scala.pdf}. 
 \\
 \\
 The present document was edited using Latex \cite{claudio_latex-tutorial.com_nodate} (\href{https://www.latex-project.org/}{https://www.latex-project.org/}). The source .tex file of the present document is also available in the multivariate\underline{\space}analyses repository on my GitHub profile.  
