@@ -22,14 +22,14 @@
 \BOOKMARK [2][-]{subsection.3.1}{Introduction into spatial data analysis}{section.3}% 22
 \BOOKMARK [2][-]{subsection.3.2}{Computing statistical matrices for multivariate analyses}{section.3}% 23
 \BOOKMARK [1][-]{section.4}{Variable-based multivariate analyses}{}% 24
-\BOOKMARK [2][-]{subsection.4.1}{Predicting with Linear Multiple Regression \(LMR\) analysis}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.1}{Predicting with Multiple Linear Regression \(MLR\) analysis}{section.4}% 25
 \BOOKMARK [2][-]{subsection.4.2}{Examining group differences with Multivariate Analysis of Variance \(MANOVA\)}{section.4}% 26
-\BOOKMARK [2][-]{subsection.4.3}{Vizualizing spatial residual maps}{section.4}% 27
+\BOOKMARK [2][-]{subsection.4.3}{Vizualizing MANOVA residuals: spatial residual map}{section.4}% 27
 \BOOKMARK [2][-]{subsection.4.4}{Classifying with Discriminant Function Analysis \(DFA\)}{section.4}% 28
 \BOOKMARK [1][-]{section.5}{Object-based multivariate analyses}{}% 29
 \BOOKMARK [2][-]{subsection.5.1}{ Implementing the k-Nearest Neighbors classifier}{section.5}% 30
 \BOOKMARK [1][-]{section.6}{Combined approaches: the MANOVA-KNN pipeline}{}% 31
-\BOOKMARK [2][-]{subsection.6.1}{Implementing the gradient k-improvement optimization of the neighborhood size and direction}{section.6}% 32
+\BOOKMARK [2][-]{subsection.6.1}{Dealing with local variation: the adaptive KNN}{section.6}% 32
 \BOOKMARK [1][-]{section.7}{Conclusions}{}% 33
 \BOOKMARK [1][-]{section*.20}{Appendices}{}% 34
 \BOOKMARK [1][-]{Appendix.a.A}{Appendix Point coordinates for code snippet 3}{}% 35
