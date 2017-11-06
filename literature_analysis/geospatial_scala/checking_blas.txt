@@ -1,4 +1,6 @@
 Checking BLAS library
 Author: Roxana Tesileanu, roxana.te@web.de
 Affiliation: INCDS BV
+Date: November 2017
+
 
