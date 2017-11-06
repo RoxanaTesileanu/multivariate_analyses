@@ -64,6 +64,12 @@ Further Documentation:
 User Guide Lapack:
 http://www.netlib.org/lapack/lug/
 
+LAPACK Users' Guide (Third Edition)
+UPDATED: 22 Aug 1999
+Anderson, Bai, Bischof, Blackford, Demmel, Dongarra, Du Croz, Greenbaum, Hammarling, McKenney, Soresen
+
+
+A)
 
 Naming Scheme (http://www.netlib.org/lapack/lug/node24.html): XYYZZZ
 1)X stands for:
@@ -76,4 +82,20 @@ Z - Complex*16 or Double Complex
 -the type of matrix
 DI - diagonal
 GG - general matrices
+SY - symmetric
+etc.
+
+3) ZZZ stands for:
+- the computation performed
+see section 2.4.
+E.g.:
+- linear equations
+- orthogonal factorizations and linear least squares problems: QR factorization, LQ factorization, etc, eigenproblems (eigenvalues, eigenvectors), singular value decomposition, etc. 
+
+Naming scheme examples:
+- xyySVX - all expert driver routines for systems of linear equations
+- SGEBRS - a single precision routine that performs a bidiagonal reduction (BRD) of a real general matrix
+
+B)
+
 
