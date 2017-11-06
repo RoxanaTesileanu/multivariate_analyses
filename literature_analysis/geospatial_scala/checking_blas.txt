@@ -79,4 +79,11 @@ LUDecomposition
 
 ___________________________________________
 
+To the build.sbt file of Scala_Playground directory add:
+
+libraryDependencies += "org.apache.commons" % "commons-math3" % "3.6.1"
+
+
+______________________________________
+
 
