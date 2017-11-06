@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  6 NOV 2017 08:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  6 NOV 2017 08:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1369,9 +1369,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 1088--1094
  []
 
 (./geospatial_scala.bbl
-Overfull \hbox (129.7174pt too wide) in paragraph at lines 1098--2
+Overfull \hbox (0.44342pt too wide) in paragraph at lines 1098--2
 \T1/cmr/m/n/10 multivariate$[]$analyses project repos-i-tory: []https://github.
-com/RoxanaTesileanu/multivariate$[]$analyses/blob/m 
+com/RoxanaTesileanu/ 
  []
 
 
@@ -1787,10 +1787,10 @@ r/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr
 /share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/t
 ype1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super
 /sfti1000.pfb>
-Output written on geospatial_scala.pdf (45 pages, 382855 bytes).
+Output written on geospatial_scala.pdf (45 pages, 382868 bytes).
 PDF statistics:
- 711 PDF objects out of 1000 (max. 8388607)
- 643 compressed objects within 7 object streams
+ 712 PDF objects out of 1000 (max. 8388607)
+ 644 compressed objects within 7 object streams
  143 named destinations out of 1000 (max. 500000)
  318 words of extra memory for PDF output out of 10000 (max. 10000000)
 
