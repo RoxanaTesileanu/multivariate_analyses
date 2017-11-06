@@ -85,6 +85,9 @@ libraryDependencies += "org.apache.commons" % "commons-math3" % "3.6.1"
 
 Its javadoc:
 https://commons.apache.org/proper/commons-math/javadocs/api-3.6.1/index.html
+
+And very important, its user guide:
+http://commons.apache.org/proper/commons-math/userguide/linear.html
 ______________________________________
 
 
