@@ -48,12 +48,12 @@
 \contentsline {paragraph}{Basic vector operations}{33}{section*.18}
 \contentsline {paragraph}{Reading files for classification tasks}{33}{section*.19}
 \contentsline {paragraph}{KNN classification function}{33}{section*.20}
-\contentsline {paragraph}{Testing framework}{33}{section*.21}
+\contentsline {paragraph}{Testing framework}{34}{section*.21}
 \contentsline {section}{\numberline {6}Combined approaches: the MANOVA-KNN pipeline}{34}{section.6}
 \contentsline {subsection}{\numberline {6.1}The learning pipeline for reducing error}{34}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Dealing with local variation: the adaptive KNN}{35}{subsection.6.2}
 \contentsline {section}{\numberline {7}Conclusions}{35}{section.7}
-\contentsline {section}{Appendices}{37}{section*.24}
+\contentsline {section}{Appendices}{38}{section*.24}
 \contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{38}{Appendix.a.A}
 \contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{41}{Appendix.a.B}
 \contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{42}{Appendix.a.C}
