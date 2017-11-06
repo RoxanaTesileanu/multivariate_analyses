@@ -140,3 +140,10 @@ solve LLS using complete orthogonal factorization SGELSY CGELSY DGELSY 	ZGELSY
 solve LLS using SVD 	SGELSS 	CGELSS 	DGELSS 	ZGELSS
 solve LLS using divide-and-conquer SVD 	SGELSD 	CGELSD 	DGELSD 	ZGELSD
 
+
+_____________________________________
+
+I only have the basic BLAS levels available.
+So, I've installed LAPACK:
+sudo apt-get install liblapack-dev liblapack-doc-man liblapack-doc liblapack-pic liblapack3 liblapack-test liblapacke liblapacke-dev
+
