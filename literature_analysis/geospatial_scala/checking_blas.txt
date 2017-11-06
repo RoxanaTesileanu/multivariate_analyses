@@ -129,7 +129,12 @@ C)
 Linear Least Squares (LLS) Problems
 The linear least squares problem is: 
 minimize the squared residuals
-min(b-Ax)^2,
+min(b-Ax)^2
 where A is an m-by-n matrix, b is a given m element vector and x is the n element solution vector.
 
+Driver routines for linear least squares problems: 
+solve LLS using QR or LQ factorization 	SGELS 	CGELS 	DGELS 	ZGELS
+solve LLS using complete orthogonal factorization SGELSY CGELSY DGELSY 	ZGELSY
+solve LLS using SVD 	SGELSS 	CGELSS 	DGELSS 	ZGELSS
+solve LLS using divide-and-conquer SVD 	SGELSD 	CGELSD 	DGELSD 	ZGELSD
 
