@@ -7,7 +7,7 @@
 		revision="0.1-SNAPSHOT"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20171106105229"/>
+		date="20171106105458"/>
 	<dependencies>
 		<module organisation="net.sourceforge.f2j" name="arpack_combined_all">
 			<revision name="0.1" status="release" pubdate="20130709072740" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://f2j.sourceforge.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
