@@ -126,7 +126,9 @@ ex: general matrix, simple driver -	SGESV 	CGESV 	DGESV 	ZGESV
 
 
 C)
-Linear Least Squares (LLS) Problems
+Linear Least Squares (LLS) Problems 
+(from http://www.netlib.org/lapack/lug/node27.html)
+
 The linear least squares problem is: 
 minimize the squared residuals
 min(b-Ax)^2
