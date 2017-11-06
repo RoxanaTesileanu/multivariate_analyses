@@ -109,4 +109,13 @@ For the buid.sbt file:
 libraryDependencies += "net.sourceforge.f2j" % "arpack_combined_all" % "0.1"
 
 
+______________________________________
+
+The javadoc of org.netlib.blas:
+
+http://icl.cs.utk.edu/projectsfiles/f2j/javadoc/index.html
+
+______________________________
+
+
 
