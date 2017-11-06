@@ -3,6 +3,12 @@ Author: Roxana Tesileanu, roxana.te@web.de
 Affiliation: INCDS BV
 
 
+Add to the build.sbt file the dependency for the org.apache.commons.math:
+libraryDependencies += "org.apache.commons" % "commons-math3" % "3.6.1".
+If you already have spark then it is already in there. 
+
+---------------------------------------------------
+
 scala> import org.apache.
 avro      curator   ivy    log4j   parquet   xbean       
 commons   hadoop    jute   oro     spark     zookeeper   

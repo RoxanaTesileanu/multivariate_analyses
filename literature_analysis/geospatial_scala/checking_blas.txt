@@ -90,4 +90,14 @@ And very important, its user guide:
 http://commons.apache.org/proper/commons-math/userguide/linear.html
 ______________________________________
 
+I could try to stick to prof. Wilkinson's hint and try out the following import:
+
+scala> import com.github.fommil.netlib.BLAS.{getInstance => blas}
+import com.github.fommil.netlib.BLAS.{getInstance=>blas}
+
+Reference:
+https://github.com/darrenjw/scala-glm/blob/master/src/main/scala/scalaglm/Glm.scala 
+
+------------------------------------------
+
 
