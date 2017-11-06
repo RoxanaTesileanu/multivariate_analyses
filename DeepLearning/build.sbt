@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
 
 
 // https://mvnrepository.com/artifact/net.sourceforge.f2j/arpack_combined_all
-//libraryDependencies += "net.sourceforge.f2j" % "arpack_combined_all" % "0.1"
+"net.sourceforge.f2j" % "arpack_combined_all" % "0.1",
 
 
 "org.gdal" % "gdal" % "1.11.2" ,
