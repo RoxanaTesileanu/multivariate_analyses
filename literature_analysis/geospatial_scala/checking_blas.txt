@@ -83,7 +83,8 @@ To the build.sbt file of Scala_Playground directory add:
 
 libraryDependencies += "org.apache.commons" % "commons-math3" % "3.6.1"
 
-
+Its javadoc:
+https://commons.apache.org/proper/commons-math/javadocs/api-3.6.1/index.html
 ______________________________________
 
 
