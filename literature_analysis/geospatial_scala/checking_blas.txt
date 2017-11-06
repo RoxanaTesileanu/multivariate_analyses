@@ -61,7 +61,8 @@ dger    dspmv    dsyr2k   dtrsm   sdot     srotg    sswap    stbsv
 
 ___________________________________________
 
-
+LAPACK - Linear Algebra Package
+http://www.netlib.org/lapack/
 
 Further Documentation:
 User Guide Lapack:
