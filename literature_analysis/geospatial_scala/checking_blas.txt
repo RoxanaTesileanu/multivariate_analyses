@@ -14,4 +14,12 @@ sudo apt-get install libatlas-base-dev libatlas-doc
 
 See the atlas package on Ubuntu at:
 https://launchpad.net/ubuntu/+source/atlas
+
+
+---------------------------
+
+Or I should use:
+https://commons.apache.org/
+Apache Commons
+- as indicated by Nicolas.
  
