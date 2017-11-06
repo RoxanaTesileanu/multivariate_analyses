@@ -1,0 +1,59 @@
+Checking Commons Math3
+Author: Roxana Tesileanu, roxana.te@web.de
+Affiliation: INCDS BV
+
+
+scala> import org.apache.
+avro      curator   ivy    log4j   parquet   xbean       
+commons   hadoop    jute   oro     spark     zookeeper   
+
+scala> import org.apache.commons.
+beanutils   collections     crypto       io      logging   net   
+cli         compress        digester     lang    math            
+codec       configuration   httpclient   lang3   math3           
+
+scala> import org.apache.commons.math3.
+Field              dfp            fraction   ode            special     
+FieldElement       distribution   genetics   optim          stat        
+RealFieldElement   exception      geometry   optimization   transform   
+analysis           filter         linear     primes         util        
+complex            fitting        ml         random                     
+
+scala> import org.apache.commons.math3.ml.
+clustering   distance   neuralnet
+
+scala> import org.apache.commons.math3.linear.
+AbstractFieldMatrix                   MatrixDimensionMismatchException       
+AbstractRealMatrix                    MatrixUtils                            
+AnyMatrix                             NonPositiveDefiniteMatrixException     
+Array2DRowFieldMatrix                 NonPositiveDefiniteOperatorException   
+Array2DRowRealMatrix                  NonSelfAdjointOperatorException        
+ArrayFieldVector                      NonSquareMatrixException               
+ArrayRealVector                       NonSquareOperatorException             
+BlockFieldMatrix                      NonSymmetricMatrixException            
+BlockRealMatrix                       OpenMapRealMatrix                      
+CholeskyDecomposition                 OpenMapRealVector                      
+ConjugateGradient                     PreconditionedIterativeLinearSolver    
+DecompositionSolver                   QRDecomposition                        
+DefaultFieldMatrixChangingVisitor     RRQRDecomposition                      
+DefaultFieldMatrixPreservingVisitor   RealLinearOperator                     
+DefaultIterativeLinearSolverEvent     RealMatrix                             
+DefaultRealMatrixChangingVisitor      RealMatrixChangingVisitor              
+DefaultRealMatrixPreservingVisitor    RealMatrixFormat                       
+DiagonalMatrix                        RealMatrixPreservingVisitor            
+EigenDecomposition                    RealVector                             
+FieldDecompositionSolver              RealVectorChangingVisitor              
+FieldLUDecomposition                  RealVectorFormat                       
+FieldMatrix                           RealVectorPreservingVisitor            
+FieldMatrixChangingVisitor            RectangularCholeskyDecomposition       
+FieldMatrixPreservingVisitor          SingularMatrixException                
+FieldVector                           SingularOperatorException              
+FieldVectorChangingVisitor            SingularValueDecomposition             
+FieldVectorPreservingVisitor          SparseFieldMatrix                      
+IllConditionedOperatorException       SparseFieldVector                      
+IterativeLinearSolver                 SparseRealMatrix                       
+IterativeLinearSolverEvent            SparseRealVector                       
+JacobiPreconditioner                  SymmLQ                                 
+LUDecomposition                                                              
+
+
