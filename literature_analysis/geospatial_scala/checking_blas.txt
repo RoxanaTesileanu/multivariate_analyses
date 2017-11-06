@@ -1,4 +1,4 @@
-Checking BLAS library
+Checking the BLAS and LAPACK libraries 
 Author: Roxana Tesileanu, roxana.te@web.de
 Affiliation: INCDS BV
 Date: November 2017
@@ -60,20 +60,6 @@ dger    dspmv    dsyr2k   dtrsm   sdot     srotg    sswap    stbsv
 
 
 ___________________________________________
-
-scala> import com.github.fommil.netlib.BLAS.{getInstance => lapack}
-import com.github.fommil.netlib.BLAS.{getInstance=>lapack}
-
-scala> lapack.
-dasum   dnrm2    dspr     dsyrk   dtrsv    sdsdot   srotm    ssymm    stpmv   
-daxpy   drot     dspr2    dtbmv   idamax   sgbmv    srotmg   ssymv    stpsv   
-dcopy   drotg    dswap    dtbsv   isamax   sgemm    ssbmv    ssyr     strmm   
-ddot    drotm    dsymm    dtpmv   lsame    sgemv    sscal    ssyr2    strmv   
-dgbmv   drotmg   dsymv    dtpsv   sasum    sger     sspmv    ssyr2k   strsm   
-dgemm   dsbmv    dsyr     dtrmm   saxpy    snrm2    sspr     ssyrk    strsv   
-dgemv   dscal    dsyr2    dtrmv   scopy    srot     sspr2    stbmv            
-dger    dspmv    dsyr2k   dtrsm   sdot     srotg    sswap    stbsv            
-
 
 
 
