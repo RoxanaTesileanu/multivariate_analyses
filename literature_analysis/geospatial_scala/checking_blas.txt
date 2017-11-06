@@ -252,6 +252,7 @@ dlaed5   dlasd1     dptsv    iparmq   slaed3   slascl     spteqr
 dlaed6   dlasd2     dptsvx   lsame    slaed4   slasd0     sptrfs            
 
 
+NOW I HAVE SGELS AND SGESV AVAILABLE!!!
 ----------------------------------
 
 
