@@ -3,4 +3,4 @@ Author: Roxana Tesileanu, roxana.te@web.de
 Affiliation: INCDS BV
 Date: November 2017
 
-
+As indicated on prf. Wilkinson's research blog, I will try to use BLAS for implementing multivariate techinques. 
