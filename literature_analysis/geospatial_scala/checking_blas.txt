@@ -98,4 +98,13 @@ Naming scheme examples:
 
 B)
 
+Linear Equations (http://www.netlib.org/lapack/lug/node26.html)
+
+Two types of driver routines are provided for solving systems of linear equations:
+- a simple driver (name ending -SV), which solves the system AX = B by factorizing A and overwriting B with the solution X;
+- an expert driver (name ending -SVX), which can also perform the additional functions (some of them optionally)
+
+Driver routines for linear equations: 
+ex: general simple driver 	SGESV 	CGESV 	DGESV 	ZGESV
+
 
