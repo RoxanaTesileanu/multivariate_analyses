@@ -263,4 +263,5 @@ extends java.lang.Object
 Following is the description from the original Fortran source.  For each array argument, the Java version will include an integer offset parameter, so the arguments may not match the description exactly. 
 
 
-
+CONCLUSIONS: 
+LAPACK NEEDS AS INPUT 2D ARRAYS FOR REPRESENTING MATRICES. Or, at least I suspect this is the case. 
