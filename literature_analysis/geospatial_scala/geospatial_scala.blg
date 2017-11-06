@@ -18,7 +18,7 @@ Warning--edition ordinal word "Revised" may be too high (or improper) for conver
 Done.
 You've used 32 entries,
             4087 wiz_defined-function locations,
-            969 strings with 11225 characters,
+            969 strings with 11210 characters,
 and the built_in function-call counts, 13140 in all, are:
 = -- 948
 > -- 238
