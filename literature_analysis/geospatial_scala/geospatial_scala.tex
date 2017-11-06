@@ -61,7 +61,7 @@ Then, in Sections 3, 4, 5 and 6 the main approaches of spatial data analyses wil
 \\
 \subsection{Overview of the software development process of Scala projects}
 
-This subsection offers an introduction into the software development process of Scala projects pointing to some of the available learning resources.
+This subsection offers an introduction into the software development process of Scala projects pointing to some of the available learning resources \footnote {Section 1.2 is taken from \cite{tesileanu_using_2017}}.
 \\
 \\
 In order to implement software development projects, one should consider which tools to choose for the different components of the development system, which according to Rehman and Paul (2003) \cite{rehman_linux_2003}are the following:
@@ -1002,7 +1002,7 @@ I will also use the classification of Cressie (1993) \cite{cressie_statistics_19
 
 \subsection {Vizualizing MANOVA residuals: spatial residual map}
 
-MANOVA residuals are plotted on the X-Y plane of the spatial coordinates in a spatial residual map indicating their magnitude (i.e. dimensions). On this plot areas of high clumped residuals are delineated.  
+MANOVA residuals are plotted on the X-Y plane of the spatial coordinates in a spatial residual map indicating their magnitude (i.e. dimensions). On this plot areas of high clumped residuals are delineated \footnote {Section 4.3 is taken from \cite{tesileanu_geostatistics_2017}}.  
 Within each of these areas of local variation, the MANOVA residuals are investigated with the multiple regression technique. This will explain the magnitude of residuals (i.e. how large they are) using the X and Y spatial coordinates in which the data are given.
 \\
 \\
@@ -1026,7 +1026,7 @@ This angle gives the axis along which the neighborhood will be set.
 
 \subsection{ Implementing the k-Nearest Neighbors classifier}
 
-The present subsection introduces the Scala functions used to run the kNN classification algorithm and then it delineates its role within a real-world classification pipeline for reducing error (from \cite{tesileanu_introduction_2017}).
+The present subsection introduces the Scala functions used to run the kNN classification algorithm and then it delineates its role within a real-world classification pipeline for reducing error \footnote {Section 5.1 is taken from \cite{tesileanu_introduction_2017}}.
 \\
 \\
 In order to access the functions for the kNN classification, the scalaML package needs to be imported into the current REPL session. The directory with the Scala source files can be downloaded at \href{https://github.com/RoxanaTesileanu/multivariate_analyses/tree/master/DeepLearning/src/main/scala/com/mai}{https://github.com/RoxanaTesileanu/mu\\ltivariate\underline{\space}analyses/tree/master/DeepLearning/src/main/scala/com/mai}.
@@ -1066,7 +1066,7 @@ INSERT EXAMPLES FROM THE KNN DOCUMENTATION!!!
 
 \subsection{The learning pipeline for reducing error}
 
-The machine-learning workflow for classification tasks for high-dimensional datasets (i.e. more than three variables recorded for each object) generally consists of the following steps: data collection, reading the data in Scala, or other programming language used for statistical computation, analyzing the data using multivariate analyses like (MANOVA, PCA, cluster analysis, etc.), applying and testing the classification algorithm (kNN, Bayes classifier, etc.), deciding on and argumenting the choice of the most appropriate model. 
+Section 6.1. is taken from \cite{tesileanu_geostatistics_2017}. The machine-learning workflow for classification tasks for high-dimensional datasets (i.e. more than three variables recorded for each object) generally consists of the following steps: data collection, reading the data in Scala, or other programming language used for statistical computation, analyzing the data using multivariate analyses like (MANOVA, PCA, cluster analysis, etc.), applying and testing the classification algorithm (kNN, Bayes classifier, etc.), deciding on and argumenting the choice of the most appropriate model. 
  Real-world workflows are itterative, requiring a dynamic configuration of the used algorithms and eventually the application of different algorithms to compare the results.
  Such workflows are called in machine-learning practice "learning pipelines" \cite{karau_learning_2015}.
 \\
@@ -1085,17 +1085,17 @@ For high residuals we choose a higher k number, and for low residuals we choose 
  
 \subsection {Dealing with local variation: the adaptive KNN}
 
-From the spatial residual map I get the angle of the k-neighborhood for the adaptive KNN classifier. I still have to set the direction and the size of the neighborhood. For this I have to set boundaries along the X and Y axis. This means I have to delineate the zone of local variation, and set an extent of it. This information is also taken from the spatial residual map. Then from the left part of this spatial extent towards right I can chose the neighbors. For the size of the k-neighborhood I will use itterations.        
+From the spatial residual map I get the angle of the k-neighborhood for the adaptive KNN classifier. I still have to set the direction and the size of the neighborhood. For this I have to set boundaries along the X and Y axis. This means I have to delineate the zone of local variation, and set an extent of it. This information is also taken from the spatial residual map. Then from the left part of this spatial extent towards right I can chose the neighbors. For the size of the k-neighborhood I will use itterations (from \cite{tesileanu_geostatistics_2017}).        
 \\
 \\
 The idea of adapting the use of machine-learning algorithms to real-world data requirements is not new. 
 Hastie and Tibshirani \cite{hastie_discriminant_1996}, describe the Discriminant Adaptive Nearest Neighbor (DANN) procedure as a locally adaptive form of nearest neighbors classification using a modified linear discriminant analysis (LDA) procedure to estimate an effective metric for computing neighborhoods \cite{tesileanu_introduction_2017}.
-The main idea of combining distance-based approaches with approaches based on the association between variables is driven by the fact that a multivariate dataset can be analysed in both ways \cite{quinn_experimental_2002}: calculating scores for the derived variables (components) for each object, and calculating dissimilarity measures (distances) for every possible pair of objects.\\
+The main idea of combining distance-based approaches with approaches based on the association between variables is driven by the fact that a multivariate dataset can be analysed in both ways \cite{quinn_experimental_2002}: calculating scores for the derived variables (components) for each object, and calculating dissimilarity measures (distances) for every possible pair of objects (from \cite{tesileanu_introduction_2017}).
 
 \section {Conclusions} 
 
 \section* {Note}
-This document is "under construction". It contains older technical reports written by the author and also new sections aiming at creating a unifyied document which is easy to follow and util for a broad range of readers.  
+This document is "under construction". It contains older technical reports written by the author (\cite{tesileanu_using_2017}, \cite{tesileanu_introduction_2017}, \cite{tesileanu_geospatial_2017}) and also new sections aiming at creating a unifyied document which is easy to follow and util for a broad range of readers.  
 Please download the current version from  my GitHub profile under the multivariate\underline{\space}analyses project repository: \href{https://github.com/RoxanaTesileanu/multivariate_analyses/blob/master/literature_analysis/geospatial_scala/geospatial_scala.pdf}{https://github.com/RoxanaTesileanu/multivariate\underline{\space}analyses/blob/m\\aster/literature\underline{\space}analysis/geospatial\underline{\space}scala/geospatial\underline{\space}scala.pdf}. 
 \\
 \\
