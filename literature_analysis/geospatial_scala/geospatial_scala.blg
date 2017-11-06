@@ -19,7 +19,7 @@ Warning--missing publisher in wilkinson_statistical_2017
 Done.
 You've used 36 entries,
             4087 wiz_defined-function locations,
-            984 strings with 11709 characters,
+            986 strings with 11734 characters,
 and the built_in function-call counts, 14878 in all, are:
 = -- 1063
 > -- 293
@@ -27,7 +27,7 @@ and the built_in function-call counts, 14878 in all, are:
 + -- 141
 - -- 63
 * -- 582
-:= -- 2435
+:= -- 2437
 add.period$ -- 70
 call.type$ -- 36
 change.case$ -- 25
@@ -36,7 +36,7 @@ cite$ -- 40
 duplicate$ -- 1187
 empty$ -- 1611
 format.name$ -- 77
-if$ -- 3436
+if$ -- 3434
 int.to.chr$ -- 0
 int.to.str$ -- 36
 missing$ -- 242

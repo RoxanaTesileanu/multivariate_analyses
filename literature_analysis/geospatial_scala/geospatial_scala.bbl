@@ -105,8 +105,9 @@ R.~Tesileanu, ``Geostatistics: classical multivariate statistics from a spatial
 \BIBentrySTDinterwordspacing
 
 \bibitem{tesileanu_introduction_2017}
-------, ``Introduction to statistical computing in {Scala}: an implementation
-  of the k-{Nearest} {Neighbors} classifier,'' 2017, available at
+{R. Tesileanu}, ``Introduction to statistical computing in {Scala}: an
+  implementation of the k-{Nearest} {Neighbors} classifier,'' 2017, available
+  at
   \url{https://www.researchgate.net/publication/319505548_Introduction_to_Statistical_Computing_in_Scala-an_Implementation_of_the_K-Nearest_Neighbors_classifier}.
 
 \bibitem{cressie_statistics_1993}
@@ -159,7 +160,7 @@ Canonical, ``{lapack package in Ubuntu}.'' [Online]. Available:
 
 \bibitem{canonical_askubuntu_nodate}
 \BIBentryALTinterwordspacing
-------, ``{Ask Ubuntu}.'' [Online]. Available: \url{https://askubuntu.com}
+{Canonical}, ``{Ask Ubuntu}.'' [Online]. Available: \url{https://askubuntu.com}
 \BIBentrySTDinterwordspacing
 
 \bibitem{wilkinson_statistical_2017}
