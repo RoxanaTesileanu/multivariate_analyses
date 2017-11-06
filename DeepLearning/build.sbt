@@ -9,6 +9,11 @@ libraryDependencies ++= Seq(
 "org.scalafx" %% "scalafx" % "8.0.92-R10",
  "org.scala-lang" % "scala-swing" % "2.10.2",
 
+
+// https://mvnrepository.com/artifact/net.sourceforge.f2j/arpack_combined_all
+//libraryDependencies += "net.sourceforge.f2j" % "arpack_combined_all" % "0.1"
+
+
 "org.gdal" % "gdal" % "1.11.2" ,
 //"org.locationtech.geogig" % "geogig-geotools" % "1.2.0-RC1",
 
