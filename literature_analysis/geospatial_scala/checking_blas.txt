@@ -60,5 +60,20 @@ dger    dspmv    dsyr2k   dtrsm   sdot     srotg    sswap    stbsv
 
 
 ___________________________________________
+Further Documentation:
+User Guide Lapack:
+http://www.netlib.org/lapack/lug/
 
+
+Naming Scheme (http://www.netlib.org/lapack/lug/node24.html): XYYZZZ
+1)X stands for:
+D - is for Double precision no.
+S - is for Real no.
+C - Complex
+Z - Complex*16 or Double Complex
+
+2) YY stands for:
+-the type of matrix
+DI - diagonal
+GG - general matrices
 
