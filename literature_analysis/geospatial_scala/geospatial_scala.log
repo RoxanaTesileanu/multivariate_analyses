@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  6 NOV 2017 08:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  6 NOV 2017 08:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -725,7 +725,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 297--308
 
  []
 
-[9] <fig1.jpg, id=317, 819.06pt x 481.8pt>
+[9] <fig1.jpg, id=323, 819.06pt x 481.8pt>
 File: fig1.jpg Graphic file (type jpg)
  <use fig1.jpg>
 Package pdftex.def Info: fig1.jpg used on input line 331.
@@ -1354,12 +1354,6 @@ Overfull \hbox (38.57399pt too wide) in paragraph at lines 1065--1065
  []
 
 
-Overfull \hbox (13.46802pt too wide) in paragraph at lines 1069--1085
-\T1/cmr/m/n/10 The machine-learning work-flow for clas-si-fi-ca-tion tasks for 
-high-dimensional datasets
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 1069--1085
 
  []
@@ -1375,14 +1369,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1088--1094
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1088--1094
-
- []
+LaTeX Warning: Citation `tesileanu_geospatial_2017' on page 34 undefined on inp
+ut line 1098.
 
 (./geospatial_scala.bbl
-Overfull \hbox (2.35962pt too wide) in paragraph at lines 1098--2
-\T1/cmr/m/n/10 repos-i-tory: []https://github.com/RoxanaTesileanu/multivariate$
-[]$analyses/blob/m 
+Overfull \hbox (129.7174pt too wide) in paragraph at lines 1098--2
+\T1/cmr/m/n/10 multivariate$[]$analyses project repos-i-tory: []https://github.
+com/RoxanaTesileanu/multivariate$[]$analyses/blob/m 
  []
 
 
@@ -1772,6 +1765,10 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1398.
 
 Package rerunfilecheck Info: File `geospatial_scala.out' has not changed.
 (rerunfilecheck)             Checksum: FE35101D040E18FC6E2C2018D2BC5631;3201.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1398.
  )
 (\end occurred inside a group at level 1)
@@ -1779,10 +1776,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1398.
 ### semi simple group (level 1) entered at line 1107 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6413 strings out of 493029
- 91903 string characters out of 6136234
+ 6417 strings out of 493029
+ 91963 string characters out of 6136234
  194770 words of memory out of 5000000
- 9737 multiletter control sequences out of 15000+600000
+ 9738 multiletter control sequences out of 15000+600000
  15878 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,8n,31p,897b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1798,10 +1795,10 @@ r/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr
 /share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/t
 ype1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super
 /sfti1000.pfb>
-Output written on geospatial_scala.pdf (45 pages, 366231 bytes).
+Output written on geospatial_scala.pdf (45 pages, 383109 bytes).
 PDF statistics:
- 697 PDF objects out of 1000 (max. 8388607)
- 629 compressed objects within 7 object streams
- 140 named destinations out of 1000 (max. 500000)
+ 710 PDF objects out of 1000 (max. 8388607)
+ 642 compressed objects within 7 object streams
+ 143 named destinations out of 1000 (max. 500000)
  318 words of extra memory for PDF output out of 10000 (max. 10000000)
 
