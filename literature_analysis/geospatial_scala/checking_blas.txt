@@ -146,4 +146,8 @@ _____________________________________
 I only have the basic BLAS levels available.
 So, I've installed LAPACK:
 sudo apt-get install liblapack-dev liblapack-doc-man liblapack-doc liblapack-pic liblapack3 liblapack-test liblapacke liblapacke-dev
+(from https://launchpad.net/ubuntu/+source/lapack/3.5.0-2ubuntu1)
+
+------------------------------------------
+
 
