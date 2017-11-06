@@ -64,6 +64,8 @@ ___________________________________________
 LAPACK - Linear Algebra Package
 http://www.netlib.org/lapack/
 
+LAPACK is written in Fortran 90 and provides routines for solving systems of simultaneous linear equations, least-squares solutions of linear systems of equations, eigenvalue problems, and singular value problems. The associated matrix factorizations (LU, Cholesky, QR, SVD, Schur, generalized Schur) are also provided, as are related computations such as reordering of the Schur factorizations and estimating condition numbers. Dense and banded matrices are handled, but not general sparse matrices. In all areas, similar functionality is provided for real and complex matrices, in both single and double precision (from http://www.netlib.org/lapack/#_presentation). LAPACK is a freely-available software package, and can be and has been included in commercial software packages. 
+
 Further Documentation:
 User Guide Lapack:
 http://www.netlib.org/lapack/lug/
