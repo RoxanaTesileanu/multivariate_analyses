@@ -1,0 +1,8 @@
+Using LAPACK
+Author: Roxana Tesileanu, roxana.te@web.de
+Date: November 2017
+Affiliation: INCDS BV
+
+
+
+
