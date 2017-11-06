@@ -103,3 +103,10 @@ F2J
 
 http://icl.cs.utk.edu/f2j/
 Our primary motivation is to provide numerical linear algebra software originally written in Fortran as Java class files. The numerical libraries will be distributed as class files produced by a Fortran-to-Java translator, f2j. The f2j translator is a formal compiler that translates programs written using a subset of Fortran77 into a form that may be executed on Java virtual machines(JVM). The first priority of f2j is to translate the BLAS and LAPACK numerical libraries from their Fortran77 reference source code to Java class files. We have also used f2j to produce a Java translation of the ARPACK library.
+
+For the buid.sbt file:
+// https://mvnrepository.com/artifact/net.sourceforge.f2j/arpack_combined_all
+libraryDependencies += "net.sourceforge.f2j" % "arpack_combined_all" % "0.1"
+
+
+
