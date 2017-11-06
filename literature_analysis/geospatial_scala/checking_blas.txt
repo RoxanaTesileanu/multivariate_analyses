@@ -253,5 +253,14 @@ extends java.lang.Object
 
 DGESV is a simplified interface to the JLAPACK routine dgesv.
 This interface converts Java-style 2D row-major arrays into the 1D column-major linearized arrays expected by the lower level JLAPACK routines.  Using this interface also allows you to omit offset and leading dimension arguments.  However, because of these conversions, these routines will be slower than the low
-level ones.  Following is the description from the original Fortran source. 
+level ones.   
+
+
+
+public class Dgesv
+extends java.lang.Object
+
+Following is the description from the original Fortran source.  For each array argument, the Java version will include an integer offset parameter, so the arguments may not match the description exactly. 
+
+
 
