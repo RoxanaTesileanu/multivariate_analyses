@@ -125,3 +125,11 @@ Driver routines for linear equations:
 ex: general matrix, simple driver -	SGESV 	CGESV 	DGESV 	ZGESV
 
 
+C)
+Linear Least Squares (LLS) Problems
+The linear least squares problem is: 
+minimize the squared residuals
+min(b-Ax)^2,
+where A is an m-by-n matrix, b is a given m element vector and x is the n element solution vector.
+
+
