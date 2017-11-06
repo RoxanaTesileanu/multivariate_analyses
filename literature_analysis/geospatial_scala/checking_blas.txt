@@ -22,4 +22,10 @@ Or I should use:
 https://commons.apache.org/
 Apache Commons
 - as indicated by Nicolas.
+
+On my DeepLearning Scala project it is already available for import into Scala. 
+Probably because I've icluded Geotrellis in my buid.sbt file. 
+
+____________________________
+
  
