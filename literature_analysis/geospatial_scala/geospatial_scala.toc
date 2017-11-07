@@ -27,16 +27,15 @@
 \contentsline {paragraph}{Code snippet 5: Creating a georeferenced vector layer}{27}{section*.16}
 \contentsline {paragraph}{Code snippet 5: Explanation}{29}{section*.17}
 \contentsline {subsubsection}{\numberline {2.3.3}Reprojecting OGR geometries and vector layers}{29}{subsubsection.2.3.3}
-\contentsline {subsection}{\numberline {2.4}Overlay analyses}{29}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Proximity analyses}{29}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Writing vector data}{29}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Reading raster data}{29}{subsection.2.7}
-\contentsline {subsection}{\numberline {2.8}Pixels resizing}{29}{subsection.2.8}
-\contentsline {subsection}{\numberline {2.9}Moving window analyses}{29}{subsection.2.9}
-\contentsline {subsection}{\numberline {2.10}Map algebra}{29}{subsection.2.10}
-\contentsline {section}{\numberline {3}Spatial data analysis}{29}{section.3}
-\contentsline {subsection}{\numberline {3.1}Introduction into spatial data analysis}{29}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Using LAPACK for building multivariate statistical models}{31}{subsection.3.2}
+\contentsline {subsection}{\numberline {2.4}Overlay and proximity analyses}{29}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Writing vector data}{30}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Reading raster data}{30}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Pixels resizing}{30}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Moving window analyses}{30}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}Map algebra}{30}{subsection.2.9}
+\contentsline {section}{\numberline {3}Spatial data analysis}{30}{section.3}
+\contentsline {subsection}{\numberline {3.1}Introduction into spatial data analysis}{30}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Using LAPACK for building multivariate statistical models}{32}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Computing statistical matrices for multivariate analyses}{32}{subsection.3.3}
 \contentsline {section}{\numberline {4}Variable-based multivariate analyses}{32}{section.4}
 \contentsline {subsection}{\numberline {4.1}Predicting with Multiple Linear Regression (MLR) analysis}{32}{subsection.4.1}
@@ -46,15 +45,15 @@
 \contentsline {section}{\numberline {5}Object-based multivariate analyses}{33}{section.5}
 \contentsline {subsection}{\numberline {5.1} Implementing the k-Nearest Neighbors classifier}{33}{subsection.5.1}
 \contentsline {paragraph}{Basic vector operations}{33}{section*.18}
-\contentsline {paragraph}{Reading files for classification tasks}{33}{section*.19}
-\contentsline {paragraph}{KNN classification function}{33}{section*.20}
+\contentsline {paragraph}{Reading files for classification tasks}{34}{section*.19}
+\contentsline {paragraph}{KNN classification function}{34}{section*.20}
 \contentsline {paragraph}{Testing framework}{34}{section*.21}
 \contentsline {section}{\numberline {6}Combined approaches: the MANOVA-KNN pipeline}{34}{section.6}
 \contentsline {subsection}{\numberline {6.1}The learning pipeline for reducing error}{34}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Dealing with local variation: the adaptive KNN}{35}{subsection.6.2}
-\contentsline {section}{\numberline {7}Conclusions}{35}{section.7}
+\contentsline {section}{\numberline {7}Conclusions}{36}{section.7}
 \contentsline {section}{Appendices}{38}{section*.24}
 \contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{38}{Appendix.a.A}
-\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{41}{Appendix.a.B}
-\contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{42}{Appendix.a.C}
-\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{43}{Appendix.a.D}
+\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{42}{Appendix.a.B}
+\contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{43}{Appendix.a.C}
+\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{44}{Appendix.a.D}
