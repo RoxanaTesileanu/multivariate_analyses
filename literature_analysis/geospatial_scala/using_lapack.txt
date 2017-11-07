@@ -15,5 +15,6 @@ __________________________________________
 
 My first research questions I need to deal with are:
 - how can I turn a Scala 2D Array into a Fortran matrix which I can decompose with LAPACK?
-- is the netlib core-1.1.2.jar  
+- is the netlib core-1.1.2.jar as easy to use in Scala as the GDAL.jar? 
+  
 
