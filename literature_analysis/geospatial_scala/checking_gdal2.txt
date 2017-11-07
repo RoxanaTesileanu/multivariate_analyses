@@ -1,4 +1,4 @@
-Checking GDAL in Scala 
+Checking GDAL in Scala - PART II 
 Author: Roxana Tesileanu, roxana.te@web.de
 Date: November 2017
 Affiliation: INCDS BV
