@@ -3,5 +3,7 @@ Author: Roxana Tesileanu, roxana.te@web.de
 Date: November 2017
 Affiliation: INCDS BV
 
-
+Check in Scala REPL:
+-reprojecting OGR vector layers
+-overlay analyses: create the HabitatPatches multipolygon layer, then overlay the RoadsAndGPS layer.
 
