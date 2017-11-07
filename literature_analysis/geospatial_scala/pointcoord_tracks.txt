@@ -4,7 +4,8 @@
 
 // Points for the GPS track of bear1: lon lat date(dd.mm.yy) time(h:m:s)
 
-
+45.624905, 25.616907, 07.08.17, 21:20:17
+ , 08.08.17, 02:20:17 
 
 
 
