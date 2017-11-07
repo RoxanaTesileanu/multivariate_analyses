@@ -161,13 +161,15 @@ J.~Paruelo and {Laeunroth, W.K.}, ``Relative abundance of plant functional
 
 \bibitem{icl_lapack_2017}
 \BIBentryALTinterwordspacing
-------, ``{LAPACK},'' 2017. [Online]. Available:
+{{Univ. of Tennessee} and {Berkeley Univ. of California} and {Denver Univ. of
+  Colorado}}, ``{LAPACK},'' 2017. [Online]. Available:
   \url{http://www.netlib.org/lapack/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{icl_blas_2017}
 \BIBentryALTinterwordspacing
-------, ``{BLAS},'' 2017. [Online]. Available:
+{Univ. of Tennessee}, {Berkeley Univ. of California}, and {Denver Univ. of
+  Colorado}, ``{BLAS},'' 2017. [Online]. Available:
   \url{http://www.netlib.org/blas/}
 \BIBentrySTDinterwordspacing
 
@@ -179,13 +181,13 @@ Canonical, ``{lapack package in Ubuntu}.'' [Online]. Available:
 
 \bibitem{canonical_atlas_nodate}
 \BIBentryALTinterwordspacing
-------, ``{atlas package in Ubuntu}.'' [Online]. Available:
+{Canonical}, ``{atlas package in Ubuntu}.'' [Online]. Available:
   \url{https://launchpad.net/ubuntu/+source/atlas}
 \BIBentrySTDinterwordspacing
 
 \bibitem{canonical_askubuntu_nodate}
 \BIBentryALTinterwordspacing
-{Canonical}, ``{Ask Ubuntu}.'' [Online]. Available: \url{https://askubuntu.com}
+Canonical, ``{Ask Ubuntu}.'' [Online]. Available: \url{https://askubuntu.com}
 \BIBentrySTDinterwordspacing
 
 \bibitem{mvn_repo_2017}
