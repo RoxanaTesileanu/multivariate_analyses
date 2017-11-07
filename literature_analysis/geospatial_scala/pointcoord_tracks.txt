@@ -1,0 +1,12 @@
+/* The following point coordinates were taken from Google Maps. They provide thegeodata for the geometries and vector layer created for educational purposes by me for my tutorial "Geospatial Analysis with Scala". 
+@author: Roxana Tesileanu
+*/ 
+
+// Points for the GPS track of bear1
+
+
+
+
+
+
+//Points for the GPS track of bear2
