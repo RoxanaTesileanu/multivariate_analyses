@@ -7,8 +7,7 @@ Check in Scala REPL:
 -reprojecting OGR vector layers
 -overlay analyses: 
 1) create the HabitatPatches multipolygon layer, then overlay the RoadsAndGPS layer -> distances between roads and GPS track(s) (maybe I create some more imaginary tracks).
-2) do an intersection of the EU and Romania borders and find the area of the polygons for RO of the salt-affected soils -> intersections 
-
+2) do an intersection of the EU and Romania borders and find the area of the polygons for RO of the salt-affected soils from the data set from the ESDAC-JRC (https://esdac.jrc.ec.europa.eu/content/saline-and-sodic-soils-european-union) -> intersections 
 
 ____________________________________________________-
 
