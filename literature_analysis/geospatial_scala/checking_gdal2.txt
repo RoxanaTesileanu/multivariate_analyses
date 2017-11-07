@@ -8,7 +8,7 @@ Check in Scala REPL:
 -proximity and overlay analyses: 
 1) from the RoadsAndGPSTracks layer -> distances between roads and GPS track(s) (maybe I create some more imaginary tracks), create buffers around the GPS track(s).
 
-2)create the HabitatPatches multipolygon layer, then lay it over the RoadsAndGPSTracks layer, see which habitat polygons are used (intersection) and how intensively (does a GPS track makes "circles" within a certain habitat patch?), 
+2)create the HabitatPatches multipolygon layer, then lay it over the RoadsAndGPSTracks layer, see which habitat polygons are used (intersection) and how intensively in space and time (does a GPS track makes "circles" within a certain habitat patch, and where does the animal spends most of its time (for nighttime and for daytime?), 
 
 3) do an intersection of the EU and Romania borders and find the area of the polygons for RO of the salt-affected soils from the data set from the ESDAC-JRC (https://esdac.jrc.ec.europa.eu/content/saline-and-sodic-soils-european-union) -> intersections 
 
