@@ -113,41 +113,17 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.scala-lang#scala-swing;2.10.2 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving net.sourceforge.f2j#arpack_combined_all;0.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.sourceforge.f2j#arpack_combined_all;0.1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.sourceforge.f2j#arpack_combined_all;0.1[0m
-[0m[[0mdebug[0m] [0m	found net.sourceforge.f2j#arpack_combined_all;0.1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving net.sourceforge.jplasma#core-lapack;0.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.sourceforge.jplasma#core-lapack;0.1 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving net.sourceforge.jplasma#core-lapack;0.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: net.sourceforge.jplasma#core-lapack;0.1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/net.sourceforge.jplasma/core-lapack/0.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for net.sourceforge.jplasma#core-lapack;0.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/net/sourceforge/jplasma/core-lapack/0.1/core-lapack-0.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for net.sourceforge.jplasma#core-lapack;0.1[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/net/sourceforge/jplasma/core-lapack/0.1/core-lapack-0.1.pom (0.1)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/net/sourceforge/jplasma/core-lapack/0.1/core-lapack-0.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/net/sourceforge/jplasma/core-lapack/0.1/core-lapack-0.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/net/sourceforge/jplasma/core-lapack/0.1/core-lapack-0.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/net/sourceforge/jplasma/core-lapack/0.1/core-lapack-0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] net.sourceforge.jplasma#core-lapack;0.1!core-lapack.pom(pom.original) (192ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/roxana/.ivy2/local/net.sourceforge.jplasma/core-lapack/0.1/jars/core-lapack.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/net/sourceforge/jplasma/core-lapack/0.1/core-lapack-0.1.jar[0m
-[0m[[0mdebug[0m] [0m	found net.sourceforge.jplasma#core-lapack;0.1 in public[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->master][0m
+[0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#core;1.1.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#core;1.1.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.fommil.netlib#core;1.1.2[0m
+[0m[[0mdebug[0m] [0m	found com.github.fommil.netlib#core;1.1.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [compile][0m
@@ -248,26 +224,16 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.scala-lang#scala-swing;2.10.2 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [runtime][0m
@@ -381,7 +347,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.scala-lang#scala-swing;2.10.2 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
@@ -391,22 +357,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
@@ -535,7 +488,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.scala-lang#scala-swing;2.10.2 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
@@ -548,25 +501,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
@@ -694,7 +631,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.scala-lang#scala-swing;2.10.2 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
@@ -707,25 +644,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [test-internal][0m
@@ -877,7 +798,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->org.scala-lang#scala-swing;2.10.2 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.11.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
@@ -896,31 +817,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.11.10 {scala-tool=[default, optional(default)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.11.10 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.11.10 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]} => dependency: org.scala-lang#scala-swing;2.10.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->net.sourceforge.jplasma#core-lapack;0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#deeplearning_2.11;0.1-SNAPSHOT->com.github.fommil.netlib#core;1.1.2 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#deeplearning_2.11;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
@@ -1116,19 +1015,13 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.11.10!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalafx#scalafx_2.11;8.0.92-R10!scalafx_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-swing;2.10.2!scala-swing.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.sourceforge.f2j#arpack_combined_all;0.1!arpack_combined_all.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/net/sourceforge/jplasma/core-lapack/0.1/core-lapack-0.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/net/sourceforge/jplasma/core-lapack/0.1/core-lapack-0.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/net/sourceforge/jplasma/core-lapack/0.1/core-lapack-0.1.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/net/sourceforge/jplasma/core-lapack/0.1/core-lapack-0.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/net/sourceforge/jplasma/core-lapack/0.1/core-lapack-0.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] net.sourceforge.jplasma#core-lapack;0.1!core-lapack.jar (199ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.fommil.netlib#core;1.1.2!core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.10!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.10!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.5!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.14.3!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1385ms :: artifacts dl 209ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 160ms :: artifacts dl 7ms[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT compile produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT runtime produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT test produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-test.xml[0m
@@ -1142,5 +1035,5 @@
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT docs produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT pom produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT scala-tool produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1385ms resolve - 209ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (160ms resolve - 7ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
