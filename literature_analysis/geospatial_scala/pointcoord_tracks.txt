@@ -2,11 +2,11 @@
 @author: Roxana Tesileanu
 */ 
 
-// Points for the GPS track of bear1
+// Points for the GPS track of bear1: lon lat date time
 
 
 
 
 
 
-//Points for the GPS track of bear2
+//Points for the GPS track of bear2: lon lat date time
