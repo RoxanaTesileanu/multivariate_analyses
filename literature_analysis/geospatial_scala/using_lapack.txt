@@ -11,4 +11,8 @@ From the Maven repository get the coordinates for the LAPACK package:
 
 Next, add the Maven coordinates to the build.sbt file of the Scala project.
 
+__________________________________________
+
+My first problem I need to solve is how I can turn a Scala 2D Array into a Fortran matrix which I can decompose with LAPACK?!
+
 
