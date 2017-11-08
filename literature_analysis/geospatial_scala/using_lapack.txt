@@ -31,4 +31,6 @@ val b = Array(6, -7, 10)
 import com.github.fommil.netlib.LAPACK.{getInstance => lapack}
 lapack.dgesv(....??.....)
 
+From the java api for DGESV (http://icl.cs.utk.edu/projectsfiles/f2j/javadoc/index.html):
 
+N - is an integer 
