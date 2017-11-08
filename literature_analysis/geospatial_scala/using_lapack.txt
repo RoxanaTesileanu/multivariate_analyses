@@ -39,7 +39,11 @@ N - is an integer, and denotes the number of linear equations (for my case from 
 NRHS - the no. of column of b (in my case 1)
 LDA - is the leading dimension of A (I guess it is the size, i.e. (3,3))
 
+LDB - an integer with the leading dimension of B (i.e. (3,1)) 
+
 Output:
 IPIV - the pivot indices that define the permutation P (I guess it represents the operations of row reduction necessary to get the L and U matrices...)
 
-B: the input/output -> input is the array with the response variable entries and the output is the array with the system solution  
+B - the input/output -> input is the array with the response variable entries and the output is the array with the system solution 
+
+   
