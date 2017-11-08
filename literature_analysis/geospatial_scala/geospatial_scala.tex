@@ -1022,7 +1022,9 @@ Afterwards, you can import it in Scala REPL using the command \cite{wilkinson_st
 import com.github.fommil.netlib.LAPACK.\{getInstance => lapack\}\\
 \\
 \\
-You can check the routines provided by LAPLACK using the TAB-autocompletion on the lapack instance. Among these, the driver routines for solving systems of linear equations for a general matrix (xGESV) or for linear least squares problems (xGELS for QR factorization, or xGELSS for SVD factorization) \cite{anderson_lapack_1999}. You could for example try out to solve the system of equations $Ax=b$, where A is a coefficient matrix, x is a vector (column matrix) of unknowns from the system of equations and b is a vector (column matrix) containing the entries of the response variable: 
+You can check the routines provided by LAPLACK using the TAB-autocompletion on the lapack instance. Among these, the driver routines for solving systems of linear equations for a general matrix (xGESV) or for linear least squares problems (xGELS for QR factorization, or xGELSS for SVD factorization) \cite{anderson_lapack_1999}. You could for example try out to solve the system of equations $Ax=b$, where A is a coefficient matrix (each row of A represents an observation, and each cell within an observation represents a recorded explanatory variable), x is a vector (column matrix) of unknowns from the system of equations and b is a vector (column matrix) containing the entries of the response variable:
+
+ 
 \subsection {Computing statistical matrices for multivariate analyses}
 
  
