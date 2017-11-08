@@ -250,6 +250,13 @@ Dlaed4   Dlasd0     Dptrfs   Ilaver   Slaed2   Slas2      Sptcon
 Dlaed5   Dlasd1     Dptsv    Iparmq   Slaed3   Slascl     Spteqr            
 Dlaed6   Dlasd2     Dptsvx   Lsame    Slaed4   Slasd0     Sptrfs            
 
+scala> import org.netlib.util.
+ArraySpec   EasyIn   MatConv   StrictUtil   Util       doubleW   intW   
+Dummy       Etime    Second    StringW      booleanW   floatW           
+
+scala> import org.netlib.util._
+import org.netlib.util._
+
 
 
 
