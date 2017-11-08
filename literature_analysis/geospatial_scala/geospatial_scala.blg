@@ -17,45 +17,45 @@ Warning--edition ordinal word "Revised" may be too high (or improper) for conver
 Warning--missing publisher in wilkinson_statistical_2017
 
 Done.
-You've used 41 entries,
+You've used 42 entries,
             4087 wiz_defined-function locations,
-            1004 strings with 12290 characters,
-and the built_in function-call counts, 16686 in all, are:
-= -- 1194
-> -- 322
+            1007 strings with 12381 characters,
+and the built_in function-call counts, 17131 in all, are:
+= -- 1227
+> -- 335
 < -- 31
-+ -- 155
-- -- 70
-* -- 648
-:= -- 2766
-add.period$ -- 80
-call.type$ -- 41
-change.case$ -- 30
++ -- 161
+- -- 73
+* -- 668
+:= -- 2842
+add.period$ -- 82
+call.type$ -- 42
+change.case$ -- 31
 chr.to.int$ -- 78
-cite$ -- 45
-duplicate$ -- 1339
-empty$ -- 1792
-format.name$ -- 85
-if$ -- 3827
+cite$ -- 46
+duplicate$ -- 1374
+empty$ -- 1832
+format.name$ -- 89
+if$ -- 3925
 int.to.chr$ -- 0
-int.to.str$ -- 41
-missing$ -- 279
-newline$ -- 180
-num.names$ -- 40
-pop$ -- 889
+int.to.str$ -- 42
+missing$ -- 288
+newline$ -- 185
+num.names$ -- 41
+pop$ -- 918
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 6
-skip$ -- 1322
+skip$ -- 1354
 stack$ -- 0
-substring$ -- 164
-swap$ -- 756
+substring$ -- 165
+swap$ -- 777
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 41
+type$ -- 42
 warning$ -- 4
-while$ -- 48
-width$ -- 43
-write$ -- 359
+while$ -- 49
+width$ -- 44
+write$ -- 369
 (There were 4 warnings)

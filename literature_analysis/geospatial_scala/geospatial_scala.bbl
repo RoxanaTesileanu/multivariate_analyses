@@ -210,6 +210,13 @@ E.~Anderson, Z.~Bai, C.~Bischof, S.~Blackford, J.~Demmel, {Du Croz, J.},
 P.~Dawkins, \emph{Paul's notes on linear algebra}, ser. Math {Tutorial} {Lamar}
   {University}.\hskip 1em plus 0.5em minus 0.4em\relax Lamar University, 2005.
 
+\bibitem{icl_javadoc_2017}
+\BIBentryALTinterwordspacing
+{Univ. of Tennessee}, {Berkeley Univ. of California}, and {Denver Univ. of
+  Colorado}, ``{LAPACK Java API},'' 2017. [Online]. Available:
+  \url{http://icl.cs.utk.edu/projectsfiles/f2j/javadoc/index.html}
+\BIBentrySTDinterwordspacing
+
 \bibitem{odersky_programming_2010}
 M.~Odersky, L.~Spoon, and B.~Venners, \emph{Programming in {Scala}},
   2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax Walnut Creek: Artima, 2010.
