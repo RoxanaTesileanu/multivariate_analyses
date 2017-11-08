@@ -514,6 +514,22 @@ java.lang.ArrayIndexOutOfBoundsException: 2
   at com.github.fommil.netlib.F2jLAPACK.dgesv(F2jLAPACK.java:481)
   ... 42 elided
 
+scala> lapack.dgesv(3,1,A, 3, Array(3,1), b, 3, res8)
+<console>:23: error: type mismatch;
+ found   : Array[Array[Double]]
+ required: Array[Double]
+       lapack.dgesv(3,1,A, 3, Array(3,1), b, 3, res8)
+                        ^
+<console>:23: error: type mismatch;
+ found   : Array[Array[Double]]
+ required: Array[Double]
+       lapack.dgesv(3,1,A, 3, Array(3,1), b, 3, res8)
+                                          ^
+
+
+--------------------------------------------------------------
+
+
 
 
      
