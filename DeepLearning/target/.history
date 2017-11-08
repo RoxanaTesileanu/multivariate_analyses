@@ -8,8 +8,6 @@ console
 reload
 console
 reload
-console
-reload
 consol
 console
 reload
@@ -497,4 +495,6 @@ console
 reload
 console
 exit
+console
+reload
 console
