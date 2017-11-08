@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  8 NOV 2017 10:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  8 NOV 2017 10:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1309,11 +1309,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 963--995
  []
 
 [29] [30]
-
-LaTeX Warning: Citation `dawknis_pauls_2005' on page 31 undefined on input line
- 1026.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 1004--1027
 
  []
@@ -1805,10 +1800,6 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1433.
 
 Package rerunfilecheck Info: File `geospatial_scala.out' has not changed.
 (rerunfilecheck)             Checksum: 19C68F0452F9DBA83688B16E3F0CBB03;3253.
-
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1433.
  )
 (\end occurred inside a group at level 1)
@@ -1816,10 +1807,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1433.
 ### semi simple group (level 1) entered at line 1142 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6458 strings out of 493029
- 92626 string characters out of 6136234
+ 6457 strings out of 493029
+ 92606 string characters out of 6136234
  195196 words of memory out of 5000000
- 9756 multiletter control sequences out of 15000+600000
+ 9755 multiletter control sequences out of 15000+600000
  21821 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,9n,31p,1441b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1840,10 +1831,10 @@ c/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.
 pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texm
 f/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public
 /cm-super/sfti1000.pfb>
-Output written on geospatial_scala.pdf (48 pages, 454551 bytes).
+Output written on geospatial_scala.pdf (48 pages, 454310 bytes).
 PDF statistics:
- 793 PDF objects out of 1000 (max. 8388607)
- 715 compressed objects within 8 object streams
+ 794 PDF objects out of 1000 (max. 8388607)
+ 716 compressed objects within 8 object streams
  158 named destinations out of 1000 (max. 500000)
  318 words of extra memory for PDF output out of 10000 (max. 10000000)
 
