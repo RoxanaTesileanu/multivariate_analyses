@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
 "com.github.rwl" % "core-lapack" % "0.1",
 
 // https://mvnrepository.com/artifact/com.github.fommil.netlib/core
-//"com.github.fommil.netlib" % "core" % "1.1.2",
+"com.github.fommil.netlib" % "core" % "1.1.2",
 
 //"org.apache.spark" % "spark-core_2.11" % "2.1.1" % "provided",
 //"org.apache.spark" % "spark-mllib_2.11" % "2.1.1" % "provided",

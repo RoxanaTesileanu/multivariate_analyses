@@ -317,5 +317,203 @@ Also not working.
 
 
 
+A is a 3x3 matrix -> n =3
+nrhs =1 
+ipiv = n 
+b
+n = 3
+
+______________________________________________
+
+scala> val A : Array[Array[Double]]= Array(Array(3,1,0), Array(-1, 2, 2), Array(5, 0, -1))
+A: Array[Array[Double]] = Array(Array(3.0, 1.0, 0.0), Array(-1.0, 2.0, 2.0), Array(5.0, 0.0, -1.0))
+
+scala> val b : Array[Array[Double]]= Array(Array(6, -7, 10))
+b: Array[Array[Double]] = Array(Array(6.0, -7.0, 10.0))
+
+scala> import com.github.fommil.netlib.LAPACK.{getInstance => lapack}
+import com.github.fommil.netlib.LAPACK.{getInstance=>lapack}
+
+scala> lapack.
+Display all 723 possibilities? (y or n)
+dbdsdc   dlaed7     dlasd3   dpttrf   lsamen   slaed5     slasd1   sptsv    
+dbdsqr   dlaed8     dlasd4   dpttrs   sbdsdc   slaed6     slasd2   sptsvx   
+ddisna   dlaed9     dlasd5   dptts2   sbdsqr   slaed7     slasd3   spttrf   
+dgbbrd   dlaeda     dlasd6   drscl    sdisna   slaed8     slasd4   spttrs   
+dgbcon   dlaein     dlasd7   dsbev    second   slaed9     slasd5   sptts2   
+dgbequ   dlaev2     dlasd8   dsbevd   sgbbrd   slaeda     slasd6   srscl    
+dgbrfs   dlaexc     dlasda   dsbevx   sgbcon   slaein     slasd7   ssbev    
+dgbsv    dlag2      dlasdq   dsbgst   sgbequ   slaev2     slasd8   ssbevd   
+dgbsvx   dlag2s     dlasdt   dsbgv    sgbrfs   slaexc     slasda   ssbevx   
+dgbtf2   dlags2     dlaset   dsbgvd   sgbsv    slag2      slasdq   ssbgst   
+dgbtrf   dlagtf     dlasq1   dsbgvx   sgbsvx   slag2d     slasdt   ssbgv    
+dgbtrs   dlagtm     dlasq2   dsbtrd   sgbtf2   slags2     slaset   ssbgvd   
+dgebak   dlagts     dlasq3   dsecnd   sgbtrf   slagtf     slasq1   ssbgvx   
+dgebal   dlagv2     dlasq4   dsgesv   sgbtrs   slagtm     slasq2   ssbtrd   
+dgebd2   dlahqr     dlasq5   dspcon   sgebak   slagts     slasq3   sspcon   
+dgebrd   dlahr2     dlasq6   dspev    sgebal   slagv2     slasq4   sspev    
+dgecon   dlahrd     dlasr    dspevd   sgebd2   slahqr     slasq5   sspevd   
+dgeequ   dlaic1     dlasrt   dspevx   sgebrd   slahr2     slasq6   sspevx   
+dgees    dlaisnan   dlassq   dspgst   sgecon   slahrd     slasr    sspgst   
+dgeesx   dlaln2     dlasv2   dspgv    sgeequ   slaic1     slasrt   sspgv    
+dgeev    dlals0     dlaswp   dspgvd   sgees    slaisnan   slassq   sspgvd   
+dgeevx   dlalsa     dlasy2   dspgvx   sgeesx   slaln2     slasv2   sspgvx   
+dgegs    dlalsd     dlasyf   dsprfs   sgeev    slals0     slaswp   ssprfs   
+dgegv    dlamc1     dlatbs   dspsv    sgeevx   slalsa     slasy2   sspsv    
+dgehd2   dlamc2     dlatdf   dspsvx   sgegs    slalsd     slasyf   sspsvx   
+dgehrd   dlamc3     dlatps   dsptrd   sgegv    slamc1     slatbs   ssptrd   
+dgelq2   dlamc4     dlatrd   dsptrf   sgehd2   slamc2     slatdf   ssptrf   
+dgelqf   dlamc5     dlatrs   dsptri   sgehrd   slamc3     slatps   ssptri   
+dgels    dlamch     dlatrz   dsptrs   sgelq2   slamc4     slatrd   ssptrs   
+dgelsd   dlamrg     dlatzm   dstebz   sgelqf   slamc5     slatrs   sstebz   
+dgelss   dlaneg     dlauu2   dstedc   sgels    slamch     slatrz   sstedc   
+dgelsx   dlangb     dlauum   dstegr   sgelsd   slamrg     slatzm   sstegr   
+dgelsy   dlange     dlazq3   dstein   sgelss   slaneg     slauu2   sstein   
+dgeql2   dlangt     dlazq4   dstemr   sgelsx   slangb     slauum   sstemr   
+dgeqlf   dlanhs     dopgtr   dsteqr   sgelsy   slange     slazq3   ssteqr   
+dgeqp3   dlansb     dopmtr   dsterf   sgeql2   slangt     slazq4   ssterf   
+dgeqpf   dlansp     dorg2l   dstev    sgeqlf   slanhs     sopgtr   sstev    
+dgeqr2   dlanst     dorg2r   dstevd   sgeqp3   slansb     sopmtr   sstevd   
+dgeqrf   dlansy     dorgbr   dstevr   sgeqpf   slansp     sorg2l   sstevr   
+dgerfs   dlantb     dorghr   dstevx   sgeqr2   slanst     sorg2r   sstevx   
+dgerq2   dlantp     dorgl2   dsycon   sgeqrf   slansy     sorgbr   ssycon   
+dgerqf   dlantr     dorglq   dsyev    sgerfs   slantb     sorghr   ssyev    
+dgesc2   dlanv2     dorgql   dsyevd   sgerq2   slantp     sorgl2   ssyevd   
+dgesdd   dlapll     dorgqr   dsyevr   sgerqf   slantr     sorglq   ssyevr   
+dgesv    dlapmt     dorgr2   dsyevx   sgesc2   slanv2     sorgql   ssyevx   
+dgesvd   dlapy2     dorgrq   dsygs2   sgesdd   slapll     sorgqr   ssygs2   
+dgesvx   dlapy3     dorgtr   dsygst   sgesv    slapmt     sorgr2   ssygst   
+dgetc2   dlaqgb     dorm2l   dsygv    sgesvd   slapy2     sorgrq   ssygv    
+dgetf2   dlaqge     dorm2r   dsygvd   sgesvx   slapy3     sorgtr   ssygvd   
+dgetrf   dlaqp2     dormbr   dsygvx   sgetc2   slaqgb     sorm2l   ssygvx   
+dgetri   dlaqps     dormhr   dsyrfs   sgetf2   slaqge     sorm2r   ssyrfs   
+dgetrs   dlaqr0     dorml2   dsysv    sgetrf   slaqp2     sormbr   ssysv    
+dggbak   dlaqr1     dormlq   dsysvx   sgetri   slaqps     sormhr   ssysvx   
+dggbal   dlaqr2     dormql   dsytd2   sgetrs   slaqr0     sorml2   ssytd2   
+dgges    dlaqr3     dormqr   dsytf2   sggbak   slaqr1     sormlq   ssytf2   
+dggesx   dlaqr4     dormr2   dsytrd   sggbal   slaqr2     sormql   ssytrd   
+dggev    dlaqr5     dormr3   dsytrf   sgges    slaqr3     sormqr   ssytrf   
+dggevx   dlaqsb     dormrq   dsytri   sggesx   slaqr4     sormr2   ssytri   
+dggglm   dlaqsp     dormrz   dsytrs   sggev    slaqr5     sormr3   ssytrs   
+dgghrd   dlaqsy     dormtr   dtbcon   sggevx   slaqsb     sormrq   stbcon   
+dgglse   dlaqtr     dpbcon   dtbrfs   sggglm   slaqsp     sormrz   stbrfs   
+dggqrf   dlar1v     dpbequ   dtbtrs   sgghrd   slaqsy     sormtr   stbtrs   
+dggrqf   dlar2v     dpbrfs   dtgevc   sgglse   slaqtr     spbcon   stgevc   
+dggsvd   dlarf      dpbstf   dtgex2   sggqrf   slar1v     spbequ   stgex2   
+dggsvp   dlarfb     dpbsv    dtgexc   sggrqf   slar2v     spbrfs   stgexc   
+dgtcon   dlarfg     dpbsvx   dtgsen   sggsvd   slarf      spbstf   stgsen   
+dgtrfs   dlarft     dpbtf2   dtgsja   sggsvp   slarfb     spbsv    stgsja   
+dgtsv    dlarfx     dpbtrf   dtgsna   sgtcon   slarfg     spbsvx   stgsna   
+dgtsvx   dlargv     dpbtrs   dtgsy2   sgtrfs   slarft     spbtf2   stgsy2   
+dgttrf   dlarnv     dpocon   dtgsyl   sgtsv    slarfx     spbtrf   stgsyl   
+dgttrs   dlarra     dpoequ   dtpcon   sgtsvx   slargv     spbtrs   stpcon   
+dgtts2   dlarrb     dporfs   dtprfs   sgttrf   slarnv     spocon   stprfs   
+dhgeqz   dlarrc     dposv    dtptri   sgttrs   slarra     spoequ   stptri   
+dhsein   dlarrd     dposvx   dtptrs   sgtts2   slarrb     sporfs   stptrs   
+dhseqr   dlarre     dpotf2   dtrcon   shgeqz   slarrc     sposv    strcon   
+disnan   dlarrf     dpotrf   dtrevc   shsein   slarrd     sposvx   strevc   
+dlabad   dlarrj     dpotri   dtrexc   shseqr   slarre     spotf2   strexc   
+dlabrd   dlarrk     dpotrs   dtrrfs   sisnan   slarrf     spotrf   strrfs   
+dlacn2   dlarrr     dppcon   dtrsen   slabad   slarrj     spotri   strsen   
+dlacon   dlarrv     dppequ   dtrsna   slabrd   slarrk     spotrs   strsna   
+dlacpy   dlartg     dpprfs   dtrsyl   slacn2   slarrr     sppcon   strsyl   
+dladiv   dlartv     dppsv    dtrti2   slacon   slarrv     sppequ   strti2   
+dlae2    dlaruv     dppsvx   dtrtri   slacpy   slartg     spprfs   strtri   
+dlaebz   dlarz      dpptrf   dtrtrs   sladiv   slartv     sppsv    strtrs   
+dlaed0   dlarzb     dpptri   dtzrqf   slae2    slaruv     sppsvx   stzrqf   
+dlaed1   dlarzt     dpptrs   dtzrzf   slaebz   slarz      spptrf   stzrzf   
+dlaed2   dlas2      dptcon   ieeeck   slaed0   slarzb     spptri            
+dlaed3   dlascl     dpteqr   ilaenv   slaed1   slarzt     spptrs            
+dlaed4   dlasd0     dptrfs   ilaver   slaed2   slas2      sptcon            
+dlaed5   dlasd1     dptsv    iparmq   slaed3   slascl     spteqr            
+dlaed6   dlasd2     dptsvx   lsame    slaed4   slasd0     sptrfs            
+
+scala> lapack.
+     | 
+     | 
+You typed two blank lines.  Starting a new command.
+
+scala> lapack.dgesv(3,1,A.flatten, 3, 3, b.flatten, 3, 1)
+<console>:15: error: type mismatch;
+ found   : Int(3)
+ required: Array[Int]
+       lapack.dgesv(3,1,A.flatten, 3, 3, b.flatten, 3, 1)
+                                      ^
+<console>:15: error: type mismatch;
+ found   : Int(1)
+ required: org.netlib.util.intW
+       lapack.dgesv(3,1,A.flatten, 3, 3, b.flatten, 3, 1)
+                                                       ^
+
+scala> lapack.dgesv(3,1,A.flatten, 3, Array(3,1), b.flatten, 3, 1)
+<console>:15: error: type mismatch;
+ found   : Int(1)
+ required: org.netlib.util.intW
+       lapack.dgesv(3,1,A.flatten, 3, Array(3,1), b.flatten, 3, 1)
+                                                                ^
+
+scala> lapack.dgesv(3,1,A.flatten, 3, Array(3,1), b.flatten, 3, org.netlib.utilW(1))
+<console>:15: error: object utilW is not a member of package org.netlib
+       lapack.dgesv(3,1,A.flatten, 3, Array(3,1), b.flatten, 3, org.netlib.utilW(1))
+                                                                           ^
+
+scala> import org.netlib.util._
+import org.netlib.util._
+
+scala> lapack.dgesv(3,1,A.flatten, 3, Array(3,1), b.flatten, 3, org.netlib.utilW(1))
+<console>:18: error: object utilW is not a member of package org.netlib
+       lapack.dgesv(3,1,A.flatten, 3, Array(3,1), b.flatten, 3, org.netlib.utilW(1))
+                                                                           ^
+
+scala> lapack.dgesv(3,1,A.flatten, 3, Array(3,1), b.flatten, 3, org.netlib.utilW(1))
+<console>:18: error: object utilW is not a member of package org.netlib
+       lapack.dgesv(3,1,A.flatten, 3, Array(3,1), b.flatten, 3, org.netlib.utilW(1))
+                                                                           ^
+
+scala> import org.netlib.util
+   final package util
+
+scala> import org.netlib.
+arpack   blas   err   lapack   util
+
+scala> import org.netlib.util.
+ArraySpec   EasyIn   MatConv   StrictUtil   Util       doubleW   intW   
+Dummy       Etime    Second    StringW      booleanW   floatW           
+
+scala> import org.netlib.util.intW._
+import org.netlib.util.intW._
+
+scala> lapack.dgesv(3,1,A.flatten, 3, Array(3,1), b.flatten, 3, org.netlib.util.intW(3))
+<console>:21: error: object org.netlib.util.intW is not a value
+       lapack.dgesv(3,1,A.flatten, 3, Array(3,1), b.flatten, 3, org.netlib.util.intW(3))
+                                                                                ^
+
+scala> lapack.dgesv(3,1,A.flatten, 3, Array(3,1), b.flatten, 3, 1)
+<console>:21: error: type mismatch;
+ found   : Int(1)
+ required: org.netlib.util.intW
+       lapack.dgesv(3,1,A.flatten, 3, Array(3,1), b.flatten, 3, 1)
+                                                                ^
+
+scala> org.netlib.util.intW
+   object intW
+
+scala> new org.netlib.util.intW = 1
+<console>:19: error: missing argument list for constructor intW in class intW
+       new org.netlib.util.intW = 1
+       ^
+
+scala> new org.netlib.util.intW(1)
+res8: org.netlib.util.intW = org.netlib.util.intW@5b10361c
+
+scala> lapack.dgesv(3,1,A.flatten, 3, Array(3,1), b.flatten, 3, res8)
+java.lang.ArrayIndexOutOfBoundsException: 2
+  at org.netlib.lapack.Dgetf2.dgetf2(lapack.f)
+  at org.netlib.lapack.Dgetrf.dgetrf(lapack.f)
+  at org.netlib.lapack.Dgesv.dgesv(lapack.f)
+  at com.github.fommil.netlib.F2jLAPACK.dgesv(F2jLAPACK.java:481)
+  ... 42 elided
+
+
 
      
