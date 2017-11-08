@@ -961,7 +961,6 @@ Using some examples the overlay and proximity tools of GDAL will be presented. T
 \subsection{Introduction into spatial data analysis}
 
 In its essence geostatistics adds georeferenced spatial information to the vector of recorded variables of each individual observation, which represents a spatial location \footnote {Section 3.1 is taken from \cite{tesileanu_geostatistics_2017}}.
-.
  It further adds into models the space dependent random error. 
 In this document I state that the classical multivariate techniques like multiple regression analysis or multidimensional scaling, can include this spatial perspective into modeling by treating the X and Y coordinates as "classical" variables like in variable-based multivariate statistics, or, by adding the X and Y differences between points to the Euclidean distance like in object-based multivariate techniques, thus reducing the space dependent random error to the "classical" random error of linear models.   
 Another basic principle of geostatistics is the recognition of local variation as opposed to the global variation of the entire dataset. 
@@ -1005,7 +1004,7 @@ In order to start building the multivariate statistical models, a library is req
 In this work I use LAPACK (Linear Algebra Package) and ATLAS (Automatically Tuned Linear Algebra Software).
  The later provides the Fortran interface to the portably efficient BLAS (Basic Linear Algebra Subprograms) implementation \cite{sourceforge_atlas_2017} on which LAPACK is based \cite{icl_install_2007}.
  LAPACK and BLAS are provided by the University of Tennessee, Berkeley University of California and Denver University of Colorado \cite{icl_lapack_2017} \cite{icl_blas_2017}. 
-They are both written in Fortran and are freely-available software packages (see \href{http://www.netlib.org/lapack/}{http://www.netlib.org/lapack/}. 
+They are both written in Fortran and are freely-available software packages (see \href{http://www.netlib.org/lapack/}{http://www.netlib.org/lapack/}). 
 \\
 \\
 On Ubuntu you can install ATLAS and LAPACK using the following commands \cite{canonical_lapack_nodate} \cite{canonical_atlas_nodate} \cite{canonical_askubuntu_nodate}:
