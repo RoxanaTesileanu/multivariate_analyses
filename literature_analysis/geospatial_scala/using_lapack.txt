@@ -306,6 +306,14 @@ Unspecified value parameters x$5, x$6, x$7...
 
 _______________new REPL session ____________________
 
+From https://darrenjw.wordpress.com/tag/numerical/:
+Example:
+
+blas.dtrsv("L", "N", "N", A.cols, A.toArray, A.rows, yc.data, 1)
+
+Also not working.
+
+----------------------------------------------------
 
 
 
