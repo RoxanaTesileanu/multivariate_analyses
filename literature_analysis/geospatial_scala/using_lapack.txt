@@ -135,7 +135,15 @@ scala> lapack.dgesv(x$1 = 3, x$2 = 1, x$3 = A.flatten, x$8 =b.flatten)
               ^
 
 
- 
+cala> lapack.dgesv()
+<console>:16: error: overloaded method value dgesv with alternatives:
+  (x$1: Int,x$2: Int,x$3: Array[Double],x$4: Int,x$5: Int,x$6: Array[Int],x$7: Int,x$8: Array[Double],x$9: Int,x$10: Int,x$11: org.netlib.util.intW)Unit <and>
+  (x$1: Int,x$2: Int,x$3: Array[Double],x$4: Int,x$5: Array[Int],x$6: Array[Double],x$7: Int,x$8: org.netlib.util.intW)Unit
+ cannot be applied to ()
+       lapack.dgesv()
+              ^
+
+
 
 
      
