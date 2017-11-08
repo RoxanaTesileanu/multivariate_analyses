@@ -20,4 +20,11 @@ My first research questions I need to deal with are:
 
 ________________________________________   
 
+Suppose I have the matrix A which is a Scala 2D Array, a vector x of unknowns, and a vector b of constants (entries for the response variable):
+
+val A = Array(Array(3,1,0), Array(-1, 2, 2), Array(5, 0, -1))
+val b = Array(6, -7, 10)
+import com.github.fommil.netlib.LAPACK.{getInstance => lapack}
+lapack.dgesv(....??.....)
+
 
