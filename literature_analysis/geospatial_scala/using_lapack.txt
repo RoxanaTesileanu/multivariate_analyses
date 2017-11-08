@@ -57,6 +57,12 @@ public static void DGESV(int n,
                          double[][] b,
                          intW info)
 
+Scala Implementation:
+
+lapack.dgesv(3, 1, A, b)
+
+Testing the code in Scala REPL:
+
 
 
      
