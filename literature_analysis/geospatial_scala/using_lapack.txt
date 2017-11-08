@@ -33,8 +33,11 @@ lapack.dgesv(....??.....)
 
 From the java api for DGESV (http://icl.cs.utk.edu/projectsfiles/f2j/javadoc/index.html) the arguments for is are:
 
+Input:
 N - is an integer, and denotes the number of linear equations (for my case from above is 3)
 
 NRHS - the no. of column of b (in my case 1)
 LDA - is the leading dimension of A (I guess it is the size, i.e. (3,3))
+
+Output:
 IPIV -  
