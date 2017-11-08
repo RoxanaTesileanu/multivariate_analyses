@@ -287,10 +287,20 @@ scala> org.netlib.lapack.Dgesv(3,1,A,b)
 scala> new lapack.Dgesv()
 res1: org.netlib.lapack.Dgesv = org.netlib.lapack.Dgesv@69f00ef4
 
-cala> new lapack.Dgesv(3,1,A,b)
+scala> new lapack.Dgesv(3,1,A,b)
 <console>:18: error: too many arguments for constructor Dgesv: ()org.netlib.lapack.Dgesv
        new lapack.Dgesv(3,1,A,b)
        ^
+
+
+scala> lapack.Dgesv
+Dgesv   Dgesvd   Dgesvx
+
+scala> lapack.Dgesv.dgesv(3,1,A,b)
+<console>:18: error: not enough arguments for method dgesv: (x$1: Int, x$2: Int, x$3: Array[Double], x$4: Int, x$5: Int, x$6: Array[Int], x$7: Int, x$8: Array[Double], x$9: Int, x$10: Int, x$11: org.netlib.util.intW)Unit.
+Unspecified value parameters x$5, x$6, x$7...
+       lapack.Dgesv.dgesv(3,1,A,b)
+                         ^
 
 
 
