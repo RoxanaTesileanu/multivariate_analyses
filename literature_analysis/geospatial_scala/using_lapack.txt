@@ -102,13 +102,15 @@ import com.github.fommil.netlib.LAPACK.{getInstance=>lapack}
 scala> import org.netlib.util._
 import org.netlib.util._
 
-cala> lapack.dgesv(3,1,A,b)
+scala> lapack.dgesv(3,1,A,b)
 <console>:18: error: overloaded method value dgesv with alternatives:
   (x$1: Int,x$2: Int,x$3: Array[Double],x$4: Int,x$5: Int,x$6: Array[Int],x$7: Int,x$8: Array[Double],x$9: Int,x$10: Int,x$11: org.netlib.util.intW)Unit <and>
   (x$1: Int,x$2: Int,x$3: Array[Double],x$4: Int,x$5: Array[Int],x$6: Array[Double],x$7: Int,x$8: org.netlib.util.intW)Unit
  cannot be applied to (Int, Int, Array[Array[Double]], Array[Array[Double]])
        lapack.dgesv(3,1,A,b)
               ^
+
+OK, I'VE REDUCED THE ERROR MESSAGE BUT STILL NOT WORKING.
 
 
  
