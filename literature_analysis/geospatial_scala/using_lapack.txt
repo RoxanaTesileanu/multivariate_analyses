@@ -20,6 +20,10 @@ My first research questions I need to deal with are:
 
 ________________________________________   
 
+SOLVING SYSTEMS OF LINEAR EQUATIONS WITH DGESV ROUTINE:
+
+Ax=b
+
 Suppose I have the matrix A which is a Scala 2D Array, a vector x of unknowns, and a vector b of constants (entries for the response variable):
 
 val A = Array(Array(3,1,0), Array(-1, 2, 2), Array(5, 0, -1))
