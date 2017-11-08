@@ -144,6 +144,8 @@ cala> lapack.dgesv()
               ^
 __________________ new REPL session __________________________
 
+USING ONLY THE org.netlib PACKAGE
+
 scala> val A : Array[Array[Double]]= Array(Array(3,1,0), Array(-1, 2, 2), Array(5, 0, -1))
 A: Array[Array[Double]] = Array(Array(3.0, 1.0, 0.0), Array(-1.0, 2.0, 2.0), Array(5.0, 0.0, -1.0))
 
