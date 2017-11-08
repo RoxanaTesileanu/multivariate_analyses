@@ -257,6 +257,36 @@ Dummy       Etime    Second    StringW      booleanW   floatW
 scala> import org.netlib.util._
 import org.netlib.util._
 
+cala> import org.netlib.lapack
+import org.netlib.lapack
+
+scala> lapack.Dgesv(3,1,A,b)
+<console>:18: error: object org.netlib.lapack.Dgesv is not a value
+       lapack.Dgesv(3,1,A,b)
+              ^
+
+________new REPL session ________________
+
+scala> val A : Array[Array[Double]]= Array(Array(3,1,0), Array(-1, 2, 2), Array(5, 0, -1))
+A: Array[Array[Double]] = Array(Array(3.0, 1.0, 0.0), Array(-1.0, 2.0, 2.0), Array(5.0, 0.0, -1.0))
+
+scala> val b : Array[Array[Double]]= Array(Array(6, -7, 10))
+b: Array[Array[Double]] = Array(Array(6.0, -7.0, 10.0))
+
+scala> import org.netlib.util._
+import org.netlib.util._
+
+scala> import org.netlib.lapack
+import org.netlib.lapack
+
+scala> org.netlib.lapack.Dgesv(3,1,A,b)
+<console>:18: error: object org.netlib.lapack.Dgesv is not a value
+       org.netlib.lapack.Dgesv(3,1,A,b)
+                         ^
+
+scala> new lapack.Dgesv()
+res1: org.netlib.lapack.Dgesv = org.netlib.lapack.Dgesv@69f00ef4
+
 
 
 
