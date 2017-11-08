@@ -40,4 +40,4 @@ NRHS - the no. of column of b (in my case 1)
 LDA - is the leading dimension of A (I guess it is the size, i.e. (3,3))
 
 Output:
-IPIV -  
+IPIV - the pivot indices that define the permutation P (I guess it represents the operations of row reduction necessary to get the L and U matrices...)  
