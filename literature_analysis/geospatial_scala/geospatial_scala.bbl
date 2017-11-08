@@ -217,6 +217,12 @@ P.~Dawkins, \emph{Paul's notes on linear algebra}, ser. Math {Tutorial} {Lamar}
   \url{http://icl.cs.utk.edu/projectsfiles/f2j/javadoc/index.html}
 \BIBentrySTDinterwordspacing
 
+\bibitem{intel_mkl_2017}
+\BIBentryALTinterwordspacing
+{Intel}, ``{Intel Math Kernel Library LAPACK Examples}.'' [Online]. Available:
+  \url{https://software.intel.com/sites/products/documentation/doclib/mkl_sa/11/mkl_lapack_examples/index.htm#dgesv_ex.c.htm}
+\BIBentrySTDinterwordspacing
+
 \bibitem{odersky_programming_2010}
 M.~Odersky, L.~Spoon, and B.~Venners, \emph{Programming in {Scala}},
   2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax Walnut Creek: Artima, 2010.
