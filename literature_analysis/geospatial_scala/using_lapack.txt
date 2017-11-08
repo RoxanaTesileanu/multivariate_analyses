@@ -75,6 +75,17 @@ A: Array[Array[Double]] = Array(Array(3.0, 1.0, 0.0), Array(-1.0, 2.0, 2.0), Arr
 scala> val b : Array[Array[Double]]= Array(Array(6, -7, 10))
 b: Array[Array[Double]] = Array(Array(6.0, -7.0, 10.0))
 
+cala> lapack.dgesv(3,1,A,b)
+<console>:11: error: Class org.netlib.util.intW not found - continuing with a stub.
+       import com.github.fommil.netlib.LAPACK.{getInstance => lapack}
+              ^
+<console>:15: error: overloaded method value dgesv with alternatives:
+  (x$1: Int,x$2: Int,x$3: Array[Double],x$4: Int,x$5: Int,x$6: Array[Int],x$7: Int,x$8: Array[Double],x$9: Int,x$10: Int,x$11: (some other)org.netlib.util.intW(in <none>))Unit <and>
+  (x$1: Int,x$2: Int,x$3: Array[Double],x$4: Int,x$5: Array[Int],x$6: Array[Double],x$7: Int,x$8: org.netlib.util.intW(in <none>))Unit
+ cannot be applied to (Int, Int, Array[Array[Double]], Array[Array[Double]])
+       lapack.dgesv(3,1,A,b)
+              ^
+
 
 
      
