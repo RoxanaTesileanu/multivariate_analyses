@@ -530,6 +530,21 @@ scala> lapack.dgesv(3,1,A, 3, Array(3,1), b, 3, res8)
 --------------------------------------------------------------
 
 
+lapack.dgesv(3,1,A.flatten, 3, Array(3,1), b.flatten, 3, res8)
+
+scala> lapack.dgesv(3,1,A.flatten, 3, Array(3,3), b.flatten, 3, res8)
+java.lang.ArrayIndexOutOfBoundsException: 2
+  at org.netlib.lapack.Dgetf2.dgetf2(lapack.f)
+  at org.netlib.lapack.Dgetrf.dgetrf(lapack.f)
+  at org.netlib.lapack.Dgesv.dgesv(lapack.f)
+  at com.github.fommil.netlib.F2jLAPACK.dgesv(F2jLAPACK.java:481)
+  ... 42 elided
+
+scala> lapack.dgesv(3,1,A.flatten, 3, Array(3,3), b.flatten, 1, res8)
+ ** On entry to DGESV  parameter number  7 had an illegal value
+
+Exception: sbt.TrapExitSecurityException thrown from the UncaughtExceptionHandler in thread "run-main-1"
+ _______________________________new REPL session _________________
 
 
-     
+   
