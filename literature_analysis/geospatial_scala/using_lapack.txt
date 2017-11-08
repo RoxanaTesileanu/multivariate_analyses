@@ -47,4 +47,16 @@ IPIV - the pivot indices that define the permutation P (I guess it represents th
 
 B - the input/output -> input is the array with the response variable entries and the output is the array with the system solution 
 
-INFO - =0 successful exit; <0 the i-th argument has an illegal value; >0 factor U is singular, so the solution could not be computed.     
+INFO - =0 successful exit; <0 the i-th argument has an illegal value; >0 factor U is singular, so the solution could not be computed.
+
+DGESV Method Detail:
+public static void DGESV(int n,
+                         int nrhs,
+                         double[][] a,
+                         int[] ipiv,
+                         double[][] b,
+                         intW info)
+
+
+
+     
