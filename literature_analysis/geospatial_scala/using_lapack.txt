@@ -142,6 +142,114 @@ cala> lapack.dgesv()
  cannot be applied to ()
        lapack.dgesv()
               ^
+__________________ new REPL session __________________________
+
+scala> val A : Array[Array[Double]]= Array(Array(3,1,0), Array(-1, 2, 2), Array(5, 0, -1))
+A: Array[Array[Double]] = Array(Array(3.0, 1.0, 0.0), Array(-1.0, 2.0, 2.0), Array(5.0, 0.0, -1.0))
+
+scala> val b : Array[Array[Double]]= Array(Array(6, -7, 10))
+b: Array[Array[Double]] = Array(Array(6.0, -7.0, 10.0))
+
+scala> import org.netlib.lapack
+   final package lapack
+
+scala> import org.netlib.
+arpack   blas   err   lapack   util
+
+scala> import org.netlib.lapack.
+Display all 723 possibilities? (y or n)
+Dbdsdc   Dlaed7     Dlasd3   Dpttrf   Lsamen   Slaed5     Slasd1   Sptsv    
+Dbdsqr   Dlaed8     Dlasd4   Dpttrs   Sbdsdc   Slaed6     Slasd2   Sptsvx   
+Ddisna   Dlaed9     Dlasd5   Dptts2   Sbdsqr   Slaed7     Slasd3   Spttrf   
+Dgbbrd   Dlaeda     Dlasd6   Drscl    Sdisna   Slaed8     Slasd4   Spttrs   
+Dgbcon   Dlaein     Dlasd7   Dsbev    Second   Slaed9     Slasd5   Sptts2   
+Dgbequ   Dlaev2     Dlasd8   Dsbevd   Sgbbrd   Slaeda     Slasd6   Srscl    
+Dgbrfs   Dlaexc     Dlasda   Dsbevx   Sgbcon   Slaein     Slasd7   Ssbev    
+Dgbsv    Dlag2      Dlasdq   Dsbgst   Sgbequ   Slaev2     Slasd8   Ssbevd   
+Dgbsvx   Dlag2s     Dlasdt   Dsbgv    Sgbrfs   Slaexc     Slasda   Ssbevx   
+Dgbtf2   Dlags2     Dlaset   Dsbgvd   Sgbsv    Slag2      Slasdq   Ssbgst   
+Dgbtrf   Dlagtf     Dlasq1   Dsbgvx   Sgbsvx   Slag2d     Slasdt   Ssbgv    
+Dgbtrs   Dlagtm     Dlasq2   Dsbtrd   Sgbtf2   Slags2     Slaset   Ssbgvd   
+Dgebak   Dlagts     Dlasq3   Dsecnd   Sgbtrf   Slagtf     Slasq1   Ssbgvx   
+Dgebal   Dlagv2     Dlasq4   Dsgesv   Sgbtrs   Slagtm     Slasq2   Ssbtrd   
+Dgebd2   Dlahqr     Dlasq5   Dspcon   Sgebak   Slagts     Slasq3   Sspcon   
+Dgebrd   Dlahr2     Dlasq6   Dspev    Sgebal   Slagv2     Slasq4   Sspev    
+Dgecon   Dlahrd     Dlasr    Dspevd   Sgebd2   Slahqr     Slasq5   Sspevd   
+Dgeequ   Dlaic1     Dlasrt   Dspevx   Sgebrd   Slahr2     Slasq6   Sspevx   
+Dgees    Dlaisnan   Dlassq   Dspgst   Sgecon   Slahrd     Slasr    Sspgst   
+Dgeesx   Dlaln2     Dlasv2   Dspgv    Sgeequ   Slaic1     Slasrt   Sspgv    
+Dgeev    Dlals0     Dlaswp   Dspgvd   Sgees    Slaisnan   Slassq   Sspgvd   
+Dgeevx   Dlalsa     Dlasy2   Dspgvx   Sgeesx   Slaln2     Slasv2   Sspgvx   
+Dgegs    Dlalsd     Dlasyf   Dsprfs   Sgeev    Slals0     Slaswp   Ssprfs   
+Dgegv    Dlamc1     Dlatbs   Dspsv    Sgeevx   Slalsa     Slasy2   Sspsv    
+Dgehd2   Dlamc2     Dlatdf   Dspsvx   Sgegs    Slalsd     Slasyf   Sspsvx   
+Dgehrd   Dlamc3     Dlatps   Dsptrd   Sgegv    Slamc1     Slatbs   Ssptrd   
+Dgelq2   Dlamc4     Dlatrd   Dsptrf   Sgehd2   Slamc2     Slatdf   Ssptrf   
+Dgelqf   Dlamc5     Dlatrs   Dsptri   Sgehrd   Slamc3     Slatps   Ssptri   
+Dgels    Dlamch     Dlatrz   Dsptrs   Sgelq2   Slamc4     Slatrd   Ssptrs   
+Dgelsd   Dlamrg     Dlatzm   Dstebz   Sgelqf   Slamc5     Slatrs   Sstebz   
+Dgelss   Dlaneg     Dlauu2   Dstedc   Sgels    Slamch     Slatrz   Sstedc   
+Dgelsx   Dlangb     Dlauum   Dstegr   Sgelsd   Slamrg     Slatzm   Sstegr   
+Dgelsy   Dlange     Dlazq3   Dstein   Sgelss   Slaneg     Slauu2   Sstein   
+Dgeql2   Dlangt     Dlazq4   Dstemr   Sgelsx   Slangb     Slauum   Sstemr   
+Dgeqlf   Dlanhs     Dopgtr   Dsteqr   Sgelsy   Slange     Slazq3   Ssteqr   
+Dgeqp3   Dlansb     Dopmtr   Dsterf   Sgeql2   Slangt     Slazq4   Ssterf   
+Dgeqpf   Dlansp     Dorg2l   Dstev    Sgeqlf   Slanhs     Sopgtr   Sstev    
+Dgeqr2   Dlanst     Dorg2r   Dstevd   Sgeqp3   Slansb     Sopmtr   Sstevd   
+Dgeqrf   Dlansy     Dorgbr   Dstevr   Sgeqpf   Slansp     Sorg2l   Sstevr   
+Dgerfs   Dlantb     Dorghr   Dstevx   Sgeqr2   Slanst     Sorg2r   Sstevx   
+Dgerq2   Dlantp     Dorgl2   Dsycon   Sgeqrf   Slansy     Sorgbr   Ssycon   
+Dgerqf   Dlantr     Dorglq   Dsyev    Sgerfs   Slantb     Sorghr   Ssyev    
+Dgesc2   Dlanv2     Dorgql   Dsyevd   Sgerq2   Slantp     Sorgl2   Ssyevd   
+Dgesdd   Dlapll     Dorgqr   Dsyevr   Sgerqf   Slantr     Sorglq   Ssyevr   
+Dgesv    Dlapmt     Dorgr2   Dsyevx   Sgesc2   Slanv2     Sorgql   Ssyevx   
+Dgesvd   Dlapy2     Dorgrq   Dsygs2   Sgesdd   Slapll     Sorgqr   Ssygs2   
+Dgesvx   Dlapy3     Dorgtr   Dsygst   Sgesv    Slapmt     Sorgr2   Ssygst   
+Dgetc2   Dlaqgb     Dorm2l   Dsygv    Sgesvd   Slapy2     Sorgrq   Ssygv    
+Dgetf2   Dlaqge     Dorm2r   Dsygvd   Sgesvx   Slapy3     Sorgtr   Ssygvd   
+Dgetrf   Dlaqp2     Dormbr   Dsygvx   Sgetc2   Slaqgb     Sorm2l   Ssygvx   
+Dgetri   Dlaqps     Dormhr   Dsyrfs   Sgetf2   Slaqge     Sorm2r   Ssyrfs   
+Dgetrs   Dlaqr0     Dorml2   Dsysv    Sgetrf   Slaqp2     Sormbr   Ssysv    
+Dggbak   Dlaqr1     Dormlq   Dsysvx   Sgetri   Slaqps     Sormhr   Ssysvx   
+Dggbal   Dlaqr2     Dormql   Dsytd2   Sgetrs   Slaqr0     Sorml2   Ssytd2   
+Dgges    Dlaqr3     Dormqr   Dsytf2   Sggbak   Slaqr1     Sormlq   Ssytf2   
+Dggesx   Dlaqr4     Dormr2   Dsytrd   Sggbal   Slaqr2     Sormql   Ssytrd   
+Dggev    Dlaqr5     Dormr3   Dsytrf   Sgges    Slaqr3     Sormqr   Ssytrf   
+Dggevx   Dlaqsb     Dormrq   Dsytri   Sggesx   Slaqr4     Sormr2   Ssytri   
+Dggglm   Dlaqsp     Dormrz   Dsytrs   Sggev    Slaqr5     Sormr3   Ssytrs   
+Dgghrd   Dlaqsy     Dormtr   Dtbcon   Sggevx   Slaqsb     Sormrq   Stbcon   
+Dgglse   Dlaqtr     Dpbcon   Dtbrfs   Sggglm   Slaqsp     Sormrz   Stbrfs   
+Dggqrf   Dlar1v     Dpbequ   Dtbtrs   Sgghrd   Slaqsy     Sormtr   Stbtrs   
+Dggrqf   Dlar2v     Dpbrfs   Dtgevc   Sgglse   Slaqtr     Spbcon   Stgevc   
+Dggsvd   Dlarf      Dpbstf   Dtgex2   Sggqrf   Slar1v     Spbequ   Stgex2   
+Dggsvp   Dlarfb     Dpbsv    Dtgexc   Sggrqf   Slar2v     Spbrfs   Stgexc   
+Dgtcon   Dlarfg     Dpbsvx   Dtgsen   Sggsvd   Slarf      Spbstf   Stgsen   
+Dgtrfs   Dlarft     Dpbtf2   Dtgsja   Sggsvp   Slarfb     Spbsv    Stgsja   
+Dgtsv    Dlarfx     Dpbtrf   Dtgsna   Sgtcon   Slarfg     Spbsvx   Stgsna   
+Dgtsvx   Dlargv     Dpbtrs   Dtgsy2   Sgtrfs   Slarft     Spbtf2   Stgsy2   
+Dgttrf   Dlarnv     Dpocon   Dtgsyl   Sgtsv    Slarfx     Spbtrf   Stgsyl   
+Dgttrs   Dlarra     Dpoequ   Dtpcon   Sgtsvx   Slargv     Spbtrs   Stpcon   
+Dgtts2   Dlarrb     Dporfs   Dtprfs   Sgttrf   Slarnv     Spocon   Stprfs   
+Dhgeqz   Dlarrc     Dposv    Dtptri   Sgttrs   Slarra     Spoequ   Stptri   
+Dhsein   Dlarrd     Dposvx   Dtptrs   Sgtts2   Slarrb     Sporfs   Stptrs   
+Dhseqr   Dlarre     Dpotf2   Dtrcon   Shgeqz   Slarrc     Sposv    Strcon   
+Disnan   Dlarrf     Dpotrf   Dtrevc   Shsein   Slarrd     Sposvx   Strevc   
+Dlabad   Dlarrj     Dpotri   Dtrexc   Shseqr   Slarre     Spotf2   Strexc   
+Dlabrd   Dlarrk     Dpotrs   Dtrrfs   Sisnan   Slarrf     Spotrf   Strrfs   
+Dlacn2   Dlarrr     Dppcon   Dtrsen   Slabad   Slarrj     Spotri   Strsen   
+Dlacon   Dlarrv     Dppequ   Dtrsna   Slabrd   Slarrk     Spotrs   Strsna   
+Dlacpy   Dlartg     Dpprfs   Dtrsyl   Slacn2   Slarrr     Sppcon   Strsyl   
+Dladiv   Dlartv     Dppsv    Dtrti2   Slacon   Slarrv     Sppequ   Strti2   
+Dlae2    Dlaruv     Dppsvx   Dtrtri   Slacpy   Slartg     Spprfs   Strtri   
+Dlaebz   Dlarz      Dpptrf   Dtrtrs   Sladiv   Slartv     Sppsv    Strtrs   
+Dlaed0   Dlarzb     Dpptri   Dtzrqf   Slae2    Slaruv     Sppsvx   Stzrqf   
+Dlaed1   Dlarzt     Dpptrs   Dtzrzf   Slaebz   Slarz      Spptrf   Stzrzf   
+Dlaed2   Dlas2      Dptcon   Ieeeck   Slaed0   Slarzb     Spptri            
+Dlaed3   Dlascl     Dpteqr   Ilaenv   Slaed1   Slarzt     Spptrs            
+Dlaed4   Dlasd0     Dptrfs   Ilaver   Slaed2   Slas2      Sptcon            
+Dlaed5   Dlasd1     Dptsv    Iparmq   Slaed3   Slascl     Spteqr            
+Dlaed6   Dlasd2     Dptsvx   Lsame    Slaed4   Slasd0     Sptrfs            
+
 
 
 
