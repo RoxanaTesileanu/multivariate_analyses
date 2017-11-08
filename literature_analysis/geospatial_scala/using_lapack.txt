@@ -75,7 +75,7 @@ A: Array[Array[Double]] = Array(Array(3.0, 1.0, 0.0), Array(-1.0, 2.0, 2.0), Arr
 scala> val b : Array[Array[Double]]= Array(Array(6, -7, 10))
 b: Array[Array[Double]] = Array(Array(6.0, -7.0, 10.0))
 
-cala> lapack.dgesv(3,1,A,b)
+scala> lapack.dgesv(3,1,A,b)
 <console>:11: error: Class org.netlib.util.intW not found - continuing with a stub.
        import com.github.fommil.netlib.LAPACK.{getInstance => lapack}
               ^
@@ -85,7 +85,10 @@ cala> lapack.dgesv(3,1,A,b)
  cannot be applied to (Int, Int, Array[Array[Double]], Array[Array[Double]])
        lapack.dgesv(3,1,A,b)
               ^
+I'VE ADDED TO THE build.sbt FILE THE :
+"net.sourceforge.f2j" % "arpack_combined_all" % "0.1"
 
+_________ 
 
 
      

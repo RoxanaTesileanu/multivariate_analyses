@@ -11,12 +11,12 @@ libraryDependencies ++= Seq(
 
 
 // https://mvnrepository.com/artifact/com.github.fommil.netlib/core
-"com.github.fommil.netlib" % "core" % "1.1.2"
+"com.github.fommil.netlib" % "core" % "1.1.2",
 
 //"org.apache.spark" % "spark-core_2.11" % "2.1.1" % "provided",
 //"org.apache.spark" % "spark-mllib_2.11" % "2.1.1" % "provided",
 // https://mvnrepository.com/artifact/net.sourceforge.f2j/arpack_combined_all
-//"net.sourceforge.f2j" % "arpack_combined_all" % "0.1"
+"net.sourceforge.f2j" % "arpack_combined_all" % "0.1"
 
 //"org.gdal" % "gdal" % "1.11.2" ,
 //"org.locationtech.geogig" % "geogig-geotools" % "1.2.0-RC1",
