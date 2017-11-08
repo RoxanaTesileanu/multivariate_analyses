@@ -35,4 +35,5 @@ From the java api for DGESV (http://icl.cs.utk.edu/projectsfiles/f2j/javadoc/ind
 
 N - is an integer, and denotes the number of linear equations (for my case from above is 3)
 
-NRHS - the no. of column of b (in my case 1) 
+NRHS - the no. of column of b (in my case 1)
+LDA - is the leading dimension of A (I guess it is the size 
