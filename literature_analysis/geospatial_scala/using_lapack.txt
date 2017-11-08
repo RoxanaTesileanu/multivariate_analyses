@@ -16,7 +16,7 @@ __________________________________________
 My first research questions I need to deal with are:
 - how can I turn a Scala 2D Array into a Fortran matrix which I can decompose with LAPACK?
 - is the netlib core-1.1.2.jar as easy to use in Scala as the GDAL.jar? 
-(i.e. how exactly can I access its functions?)
+(i.e. how exactly can I access its functions in Scala, with Scala types(?!)?)
 
 ________________________________________   
 
@@ -31,7 +31,7 @@ val b = Array(6, -7, 10)
 import com.github.fommil.netlib.LAPACK.{getInstance => lapack}
 lapack.dgesv(....??.....)
 
-From the java api for DGESV (http://icl.cs.utk.edu/projectsfiles/f2j/javadoc/index.html) the arguments for is are:
+From the java api for DGESV (http://icl.cs.utk.edu/projectsfiles/f2j/javadoc/index.html) the arguments for it are:
 
 Input:
 N - is an integer, and denotes the number of linear equations (for my case from above is 3)
