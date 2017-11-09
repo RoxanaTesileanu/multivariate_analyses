@@ -38,8 +38,6 @@ reload
 console
 reload
 console
-reload
-console
 :q
 exit
 quit
@@ -497,4 +495,6 @@ reload
 console
 reload
 cosnsole
+console
+reload
 console

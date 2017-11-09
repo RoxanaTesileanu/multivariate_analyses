@@ -721,4 +721,21 @@ I'll TRY TO DIG OUT THE PARAMETERS:
 https://software.intel.com/en-us/mkl-developer-reference-c-matrix-layout-for-lapack-routines
 -----------------------------------------------------------
 
-_
+cala> :load usingLapack2.scala
+Loading usingLapack2.scala...
+import org.netlib.lapack
+import org.netlib.util.intW._
+defined object UsingLapack2
+
+scala> import UsingLapack2._
+import UsingLapack2._
+
+scala> lapack.Dgesv.dgesv(noArows, nrhs, matrixA.flatten, aoffset, lda, ipiv, ipivoffset, b, boffset, ldb, info)
+
+scala> b
+res1: Array[Double] = Array(-58.33333333333337, 25.666666666666682, 41.33333333333336)
+
+scala> ipiv
+res2: Array[Int] = Array(1, 2, 3)
+
+----------------------------------------------------
