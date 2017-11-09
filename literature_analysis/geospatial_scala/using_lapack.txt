@@ -739,3 +739,45 @@ scala> ipiv
 res2: Array[Int] = Array(1, 2, 3)
 
 ----------------------------------------------------
+
+scala> :load usingLapack2.scala
+Loading usingLapack2.scala...
+import org.netlib.lapack
+import org.netlib.util.intW._
+defined object UsingLapack2
+
+scala> import UsingLapack2._
+import UsingLapack2._
+
+scala> result
+res0: (Array[Double], Array[Int]) = (Array(-58.33333333333337, 25.666666666666682, 41.33333333333336),Array(1, 2, 3))
+
+scala> println(result)
+([D@2a272b99,[I@53c00f94)
+
+scala> for (i <- result) println(i)
+<console>:20: error: value foreach is not a member of (Array[Double], Array[Int])
+       for (i <- result) println(i)
+                 ^
+
+scala> println(result._1)
+[D@2a272b99
+
+scala> for (i <- result._1) println i
+<console>:20: error: value i is not a member of Unit
+       for (i <- result._1) println i
+                                    ^
+
+scala> for (i <- result._1) println (i)
+-58.33333333333337
+25.666666666666682
+41.33333333333336
+
+scala> for (i <- result._2) println (i)
+1
+2
+3
+
+
+
+
