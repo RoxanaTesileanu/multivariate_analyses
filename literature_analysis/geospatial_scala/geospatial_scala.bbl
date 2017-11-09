@@ -196,15 +196,14 @@ Canonical, ``{Ask Ubuntu}.'' [Online]. Available: \url{https://askubuntu.com}
   \url{https://mvnrepository.com/}
 \BIBentrySTDinterwordspacing
 
-\bibitem{wilkinson_statistical_2017}
-D.~Wilkinson, \emph{Statistical computing with {Scala}: a functional approach
-  to data science}, 2017.
-
 \bibitem{anderson_lapack_1999}
 E.~Anderson, Z.~Bai, C.~Bischof, S.~Blackford, J.~Demmel, {Du Croz, J.},
   A.~Greenbaum, {Hammarling, S.}, {McKenney, A.}, and {Soresen, D.},
   \emph{{LAPACK} {Users}' {Guide}}, 3rd~ed.\hskip 1em plus 0.5em minus
   0.4em\relax Philadelphia: SIAM, 1999.
+
+\bibitem{seymour_using_2017}
+K.~Seymour, ``Using the dgesv routine in {Java} - e-mail communication,'' 2017.
 
 \bibitem{dawkins_pauls_2005}
 P.~Dawkins, \emph{Paul's notes on linear algebra}, ser. Math {Tutorial} {Lamar}
@@ -212,8 +211,7 @@ P.~Dawkins, \emph{Paul's notes on linear algebra}, ser. Math {Tutorial} {Lamar}
 
 \bibitem{icl_javadoc_2017}
 \BIBentryALTinterwordspacing
-{Univ. of Tennessee}, {Berkeley Univ. of California}, and {Denver Univ. of
-  Colorado}, ``{LAPACK Java API},'' 2017. [Online]. Available:
+K.~Seymour, ``Lapack java api,'' 2017. [Online]. Available:
   \url{http://icl.cs.utk.edu/projectsfiles/f2j/javadoc/index.html}
 \BIBentrySTDinterwordspacing
 
