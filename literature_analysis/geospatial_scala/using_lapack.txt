@@ -559,4 +559,10 @@ import UsingLapack._
 scala> lapack.dges
 dgesc2   dgesdd   dgesv   dgesvd   dgesvx
 
-   
+cala> lapack.dgesv(noArows, nrhs, matrixA.flatten, lda, ipiv, b.flatten, ldb, info)
+Nov 09, 2017 9:53:49 AM com.github.fommil.netlib.LAPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemLAPACK
+Nov 09, 2017 9:53:49 AM com.github.fommil.netlib.LAPACK <clinit>
+WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefLAPACK
+
+  
