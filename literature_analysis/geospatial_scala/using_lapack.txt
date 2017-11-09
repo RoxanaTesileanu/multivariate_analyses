@@ -680,6 +680,17 @@ scala> lapack.Dgesv.dgesv(noArows, nrhs, matrixA.flatten, aoffset, lda, ipiv, ip
 
 NO VISIBLE RESULT. NO OUTPUT. BUT NO ERROR MESSAGES.....
 
+IF I MODIFY A PARAMETER I DO GET AN ERROR MESSAGE:
+scala> lapack.Dgesv.dgesv(noArows, nrhs, matrixA.flatten, aoffset, lda, ipiv, ipivoffset, b.flatten, boffset+1, ldb, info)
+java.lang.ArrayIndexOutOfBoundsException: 3
+  at org.netlib.blas.Dtrsm.dtrsm(blas.f)
+  at org.netlib.lapack.Dgetrs.dgetrs(lapack.f)
+  at org.netlib.lapack.Dgesv.dgesv(lapack.f)
+  ... 42 elided
+
+THIS MIGHT MEAN I'VE PROBABLY HAD SOME RESULT BEFORE BUT I COUDN'T ACCESS IT. 
+
+__________________________________________________________ 
 _________________________________________________________
 
 
