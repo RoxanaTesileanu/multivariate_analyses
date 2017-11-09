@@ -5,7 +5,9 @@ Affiliation: INCDS BV
 
 https://statr.me/2015/09/an-overview-of-linear-algebra-libraries-in-scala-java/
 
-la4j 
+la4j.org
+
+ 
 
 
 
