@@ -667,4 +667,15 @@ public static void dgesv(int n,
 -------------------------------------------------------------
 
 
+scala> :load usingLapack2.scala
+Loading usingLapack2.scala...
+import org.netlib.lapack
+import org.netlib.util.intW._
+defined object UsingLapack2
+
+scala> import UsingLapack2._
+import UsingLapack2._
+
+scala> lapack.Dgesv.dgesv(noArows, nrhs, matrixA.flatten, aoffset, lda, ipiv, ipivoffset, b.flatten, boffset, ldb, info)
+
 

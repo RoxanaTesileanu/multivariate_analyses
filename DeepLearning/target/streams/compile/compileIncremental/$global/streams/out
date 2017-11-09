@@ -2,14 +2,38 @@
 [0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
 [0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set(/home/roxana/Private/multivariate_analyses/DeepLearning/usingLapack2.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/home/roxana/Private/multivariate_analyses/DeepLearning/usingLapack2.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/roxana/Private/multivariate_analyses/DeepLearning/usingLapack2.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/roxana/Private/multivariate_analyses/DeepLearning/usingLapack2.scala)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.11/classes...[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.15:component from component compiler for Scala 2.11.10[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.15:component from component compiler for Scala 2.11.10[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 3532c0fc, interfacing (CompilerInterface) with Scala compiler version 2.11.10[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/home/roxana/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.10.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.11/classes:/home/roxana/Private/multivariate_analyses/DeepLearning/lib/core-lapack-0.1.jar:/home/roxana/Private/multivariate_analyses/DeepLearning/lib/gdal-2.2.1.jar:/home/roxana/Private/multivariate_analyses/DeepLearning/lib/jeo-gdal-0.7.jar:/home/roxana/Private/multivariate_analyses/DeepLearning/lib/gt2-api-2.4.3.jar:/home/roxana/Private/multivariate_analyses/DeepLearning/lib/geoapi-2.0.jar:/home/roxana/Private/multivariate_analyses/DeepLearning/lib/arpack_combined_all-0.1.jar:/home/roxana/Private/multivariate_analyses/DeepLearning/lib/jsr108-0.01.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar:/lib/gdal-2.2.1.jar:/home/roxana/.ivy2/cache/org.scalafx/scalafx_2.11/jars/scalafx_2.11-8.0.92-R10.jar:/home/roxana/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.10.jar:/home/roxana/.ivy2/cache/org.scala-lang/scala-swing/jars/scala-swing-2.10.2.jar:/home/roxana/.ivy2/cache/com.github.rwl/core-lapack/jars/core-lapack-0.1.jar:/home/roxana/.ivy2/cache/com.github.fommil.netlib/core/jars/core-1.1.2.jar:/home/roxana/.ivy2/cache/net.sourceforge.f2j/arpack_combined_all/jars/arpack_combined_all-0.1.jar[0m
+[0m[[0mdebug[0m] [0mScala compilation took 2.536389863 s[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /home/roxana/Private/multivariate_analyses/DeepLearning/usingLapack2.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /home/roxana/Private/multivariate_analyses/DeepLearning/usingLapack2.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/roxana/Private/multivariate_analyses/DeepLearning/usingLapack2.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/home/roxana/Private/multivariate_analyses/DeepLearning/usingLapack2.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The /home/roxana/Private/multivariate_analyses/DeepLearning/usingLapack2.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	b, ipivoffset, boffset, aoffset.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
+[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Previously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
+[0m[[0mdebug[0m] [0m[naha] All newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
