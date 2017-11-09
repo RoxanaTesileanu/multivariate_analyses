@@ -21,45 +21,45 @@ Warning--missing publisher in hengl_practical_2009
 Warning--edition ordinal word "Revised" may be too high (or improper) for conversion in carroll_mathematical_1997
 
 Done.
-You've used 43 entries,
+You've used 44 entries,
             4087 wiz_defined-function locations,
-            1012 strings with 12537 characters,
-and the built_in function-call counts, 17377 in all, are:
-= -- 1247
-> -- 330
-< -- 31
-+ -- 159
-- -- 72
-* -- 669
-:= -- 2897
-add.period$ -- 85
-call.type$ -- 43
-change.case$ -- 33
-chr.to.int$ -- 78
-cite$ -- 46
-duplicate$ -- 1402
-empty$ -- 1855
-format.name$ -- 87
-if$ -- 3973
+            1017 strings with 12687 characters,
+and the built_in function-call counts, 18270 in all, are:
+= -- 1323
+> -- 351
+< -- 41
++ -- 171
+- -- 75
+* -- 712
+:= -- 3026
+add.period$ -- 87
+call.type$ -- 44
+change.case$ -- 34
+chr.to.int$ -- 102
+cite$ -- 47
+duplicate$ -- 1463
+empty$ -- 1918
+format.name$ -- 91
+if$ -- 4182
 int.to.chr$ -- 0
-int.to.str$ -- 43
-missing$ -- 295
-newline$ -- 190
-num.names$ -- 42
-pop$ -- 941
+int.to.str$ -- 44
+missing$ -- 304
+newline$ -- 193
+num.names$ -- 43
+pop$ -- 960
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 6
-skip$ -- 1369
+skip$ -- 1438
 stack$ -- 0
-substring$ -- 167
-swap$ -- 787
-text.length$ -- 5
+substring$ -- 224
+swap$ -- 842
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 43
+type$ -- 44
 warning$ -- 3
-while$ -- 50
-width$ -- 45
-write$ -- 378
+while$ -- 55
+width$ -- 46
+write$ -- 388
 (There was 1 error message)

@@ -190,6 +190,11 @@ Canonical, ``{lapack package in Ubuntu}.'' [Online]. Available:
 Canonical, ``{Ask Ubuntu}.'' [Online]. Available: \url{https://askubuntu.com}
 \BIBentrySTDinterwordspacing
 
+\bibitem{doolin_jlapack_1999}
+D.~M. Doolin, J.~Dongarra, and K.~Seymour, ``{JLAPACK} - compiling {LAPACK}
+  {Fortran} to {Java},'' \emph{Scientific Programming}, vol.~7, pp. 111--138,
+  1999.
+
 \bibitem{mvn_repo_2017}
 \BIBentryALTinterwordspacing
 {MvnRepository}, ``{Maven Repository}.'' [Online]. Available:

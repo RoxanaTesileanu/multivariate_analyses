@@ -1020,7 +1020,7 @@ It might also be necessary to install the JLAPACK package and the Fortran-to-Jav
 \$ sudo apt-get install libjlapack-java f2j\\
 \\
 \\
-The JLAPACK 
+The JLAPACK package provides the LAPACK nummerical subroutines translated from Fortran to Java. It uses a Fortran-to-Java translator, f2j \cite{doolin_jlapack_1999}.  
 In order to import LAPACK in Scala, you need to add the package containing it to the build.sbt file of the Scala project ("net.sourceforge.f2j" \% "arpack\underline{\space}combined\underline{\space}all" \% "0.1" \cite{mvn_repo_2017}).  
 Afterwards, you can import it in Scala REPL using the command:
 \\
