@@ -559,10 +559,31 @@ import UsingLapack._
 scala> lapack.dges
 dgesc2   dgesdd   dgesv   dgesvd   dgesvx
 
-cala> lapack.dgesv(noArows, nrhs, matrixA.flatten, lda, ipiv, b.flatten, ldb, info)
+scala> lapack.dgesv(noArows, nrhs, matrixA.flatten, lda, ipiv, b.flatten, ldb, info)
 Nov 09, 2017 9:53:49 AM com.github.fommil.netlib.LAPACK <clinit>
 WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeSystemLAPACK
 Nov 09, 2017 9:53:49 AM com.github.fommil.netlib.LAPACK <clinit>
 WARNING: Failed to load implementation from: com.github.fommil.netlib.NativeRefLAPACK
 
-  
+cala> lapack.dgesv(3,1, UsingLapack.matrixA, 3, Array(3,3,3), UsingLapack.b, 3, new org.netlib.util.intW(0))
+<console>:17: error: type mismatch;
+ found   : Array[Array[Double]]
+ required: Array[Double]
+       lapack.dgesv(3,1, UsingLapack.matrixA, 3, Array(3,3,3), UsingLapack.b, 3, new org.netlib.util.intW(0))
+                                     ^
+<console>:17: error: type mismatch;
+ found   : Array[Array[Double]]
+ required: Array[Double]
+       lapack.dgesv(3,1, UsingLapack.matrixA, 3, Array(3,3,3), UsingLapack.b, 3, new org.netlib.util.intW(0))
+                                                                           ^
+
+scala> lapack.dgesv(3,1, UsingLapack.matrixA.flatten, 3, Array(3,3,3), UsingLapack.b.flatten, 3, new org.netlib.util.intW(0))
+
+scala> lapack.dgesv(3,1, UsingLapack.matrixA.flatten, 3, Array(3,3,3), UsingLapack.b.flatten, 3, new org.netlib.util.intW(0))
+
+scala> res.getClass
+res4: Class[Unit] = void
+
+-----------------------------------------------
+
+ 
