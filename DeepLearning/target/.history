@@ -28,12 +28,6 @@ reload
 console
 reload
 console
-reload
-console
-reload
-console
-reload
-console
 :q
 exit
 quit
@@ -495,6 +489,12 @@ console
 reload
 console
 reload
+console
+reload
+console
+reload
+console
+run UsingLapack2.scala
 console
 reload
 console

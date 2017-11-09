@@ -15,5 +15,5 @@ var boffset = 0
 val ldb= 3
 var info = new org.netlib.util.intW(2)
 lapack.Dgesv.dgesv(noArows, nrhs, matrixA.flatten, aoffset, lda, ipiv, ipivoffset, b, boffset, ldb, info)
-println(b, ipiv)
+val result = (b, ipiv)
 }
