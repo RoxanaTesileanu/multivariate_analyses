@@ -678,4 +678,9 @@ import UsingLapack2._
 
 scala> lapack.Dgesv.dgesv(noArows, nrhs, matrixA.flatten, aoffset, lda, ipiv, ipivoffset, b.flatten, boffset, ldb, info)
 
+NO VISIBLE RESULT. NO OUTPUT. BUT NO ERROR MESSAGES.....
 
+_________________________________________________________
+
+
+_
