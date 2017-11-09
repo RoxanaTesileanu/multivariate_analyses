@@ -1014,19 +1014,37 @@ On Ubuntu you can install ATLAS and LAPACK using the following commands \cite{ca
 \$ sudo apt-get install liblapack-dev liblapack-doc-man liblapack-doc liblapack-pic liblapack3 liblapack-test \\
 \\
 \\
-In order to import LAPACK in Scala, you need to add the package containing it to the build.sbt file of the Scala project ("com.github.fommil.netlib" \% "core" \% "1.1.2" \cite{mvn_repo_2017}).  
-Afterwards, you can import it in Scala REPL using the command \cite{wilkinson_statistical_2017}:
+In order to import LAPACK in Scala, you need to add the package containing it to the build.sbt file of the Scala project ("net.sourceforge.f2j" \% "arpack\underline{\space}combined\underline{\space}all" \% "0.1" \cite{mvn_repo_2017}).  
+Afterwards, you can import it in Scala REPL using the command:
 \\
 \\
-import com.github.fommil.netlib.LAPACK.\{getInstance => lapack\}\\
+import org.netlib.lapack\\
 \\
 \\
 You can check the routines provided by LAPLACK using the TAB-autocompletion on the lapack instance. Among these, the driver routines for solving systems of linear equations for a general matrix (xGESV) or for linear least squares problems (xGELS for QR factorization, or xGELSS for SVD factorization) \cite{anderson_lapack_1999}. 
 You could for example try out to solve the system of equations $A\textbf{x}=\textbf{b}$, where \textit{A} is a coefficient matrix (each row of \textit{A} represents an observation, and each cell within an observation represents the entry for a recorded explanatory variable), \textbf{x} is a vector (column matrix) of unknowns from the system of equations and \textbf{b} is a vector (column matrix) containing the entries of the response variable (see \cite{dawkins_pauls_2005}) \footnote{Note that vectors are expressed with small bold characters and matrices with italic capitals} \footnote{The solution to the system of equations $A\textbf{x}=\textbf{b}$ is found using the inverse of \textit{A}, i.e. \textit{A$^{-1}$}, as following: $\textbf{x}=\textit{A$^{-1}$}\textbf{b}$.
  This is why it is important to have an invertible matrix in order to be able to find a solution. The inverse of \textit{A} is found using the row reduction method from the relationship: $AI=A^{-1}I$ or using the determinant of A also by row reduction or using more complex methods.
  Or, the solution to $A\textbf{x}=\textbf{b}$ can be found through the LU decomposition of \textit{A}, but if \textit{A} is not invertible, then the U matrix is a zero matrix and the solution to the system of equations cannot be found \cite{icl_javadoc_2017} \cite{intel_mkl_2017}. A square matrix is invertible only if its determinant doesn't equal 0, so not all matrices are invertible (in this case they are called singular matrices). See \cite{dawkins_pauls_2005} for more details. In statistics it is important to have invertible matrices, i.e. for which the determinant is not 0 \cite{quinn_experimental_2002}.}:
+\\
+\\
+import org.netlib.lapack\\
+import org.netlib.util.intW.\underline{\space}\\
+val noArows = 3\\
+val nrhs = 1\\
+val matrixA : Array[Array[Double]] = Array(Array(3, 1, 0), Array(-1, 2, 2), Array(5, 0, -1))\\
+var aoffset = 0\\
+val lda = 3\\
+var ipiv : Array[Int] = Array(0,0,0)\\
+var ipivoffset = 0\\
+var b  : Array[Double] = Array(6, -7, 10)\\
+var boffset = 0\\
+val ldb= 3\\
+var info = new org.netlib.util.intW(2)\\
+lapack.Dgesv.dgesv(noArows, nrhs, matrixA.flatten, aoffset, lda, ipiv, ipivoffset, b, boffset, ldb, info)\\
+println(b, ipiv)\\
+\\
+\\
 
- 
 \subsection {Computing statistical matrices for multivariate analyses}
 
  
