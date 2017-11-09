@@ -626,4 +626,23 @@ Exception: sbt.TrapExitSecurityException thrown from the UncaughtExceptionHandle
 _________________________________________________________________
 
 
+scala> :load usingLapack2.scala
+Loading usingLapack2.scala...
+import org.netlib.lapack
+import org.netlib.util.intW._
+defined object UsingLapack2
+
+scala> import UsingLapack2._
+import UsingLapack2._
+
+scala> UsingLapack2.
+b   info   ipiv   lda   ldb   matrixA   noArows   nrhs
+
+scala> lapack.Dgesv.dgesv(3,1, UsingLapack.matrixA.flatten, 1,1, Array(3,3,3), 3, UsingLapack.b.flatten, 3,3, UsingLapack.info)
+ ** On entry to DGESV  parameter number  4 had an illegal value
+
+Exception: sbt.TrapExitSecurityException thrown from the UncaughtExceptionHandler in thread "run-main-1"
+
+------------------------------------------------------------
+
 
