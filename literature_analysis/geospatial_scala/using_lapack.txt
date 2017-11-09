@@ -547,4 +547,16 @@ Exception: sbt.TrapExitSecurityException thrown from the UncaughtExceptionHandle
  _______________________________new REPL session _________________
 
 
+scala> :load usingLapack.scala
+Loading usingLapack.scala...
+import com.github.fommil.netlib.LAPACK.{getInstance=>lapack}
+import org.netlib.util.intW._
+defined object UsingLapack
+
+scala> import UsingLapack._
+import UsingLapack._
+
+scala> lapack.dges
+dgesc2   dgesdd   dgesv   dgesvd   dgesvx
+
    
