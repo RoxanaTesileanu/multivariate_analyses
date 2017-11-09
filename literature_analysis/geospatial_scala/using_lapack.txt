@@ -702,6 +702,8 @@ res8: Array[Double] = Array(-58.33333333333337, 25.666666666666682, 41.333333333
 
 
 NOT THE CORRECT SOLUTION THOUGH!
+I'll TRY TO DIG OUT THE PARAMETERS:
+https://software.intel.com/en-us/mkl-developer-reference-c-matrix-layout-for-lapack-routines
 -----------------------------------------------------------
 
 _
