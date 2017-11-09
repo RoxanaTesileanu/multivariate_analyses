@@ -1199,7 +1199,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.5!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.14.3!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 420ms :: artifacts dl 13ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 507ms :: artifacts dl 13ms[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT compile produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT runtime produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT test produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-test.xml[0m
@@ -1213,5 +1213,5 @@
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT docs produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT pom produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#deeplearning_2.11;0.1-SNAPSHOT scala-tool produced in /home/roxana/Private/multivariate_analyses/DeepLearning/target/resolution-cache/reports/default-deeplearning_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (420ms resolve - 13ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (507ms resolve - 13ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

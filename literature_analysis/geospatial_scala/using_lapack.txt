@@ -591,4 +591,39 @@ res7: Array[Array[Double]] = Array(Array(6.0, -7.0, 10.0))
 
 -----------------------------------------------
 
- 
+cala> :load usingLapack2.scala
+Loading usingLapack2.scala...
+import org.netlib.lapack
+import org.netlib.util.intW._
+defined object UsingLapack2
+
+scala> import UsingLapack._
+import UsingLapack._
+
+scala> lapack.Dge
+Dgebak   Dgeequ   Dgegs    Dgelqf   Dgelsy   Dgeqr2   Dgesc2   Dgetc2   
+Dgebal   Dgees    Dgegv    Dgels    Dgeql2   Dgeqrf   Dgesdd   Dgetf2   
+Dgebd2   Dgeesx   Dgehd2   Dgelsd   Dgeqlf   Dgerfs   Dgesv    Dgetrf   
+Dgebrd   Dgeev    Dgehrd   Dgelss   Dgeqp3   Dgerq2   Dgesvd   Dgetri   
+Dgecon   Dgeevx   Dgelq2   Dgelsx   Dgeqpf   Dgerqf   Dgesvx   Dgetrs   
+
+scala> lapack.Dgesv(3,1, UsingLapack.matrixA.flatten, 3, Array(3,3,3), UsingLapack.b.flatten, 3, UsingLapack.info)
+<console>:19: error: object org.netlib.lapack.Dgesv is not a value
+       lapack.Dgesv(3,1, UsingLapack.matrixA.flatten, 3, Array(3,3,3), UsingLapack.b.flatten, 3, UsingLapack.info)
+              ^
+
+scala> lapack.Dgesv.dgesv(3,1, UsingLapack.matrixA.flatten, 3, Array(3,3,3), UsingLapack.b.flatten, 3, UsingLapack.info)
+<console>:19: error: not enough arguments for method dgesv: (x$1: Int, x$2: Int, x$3: Array[Double], x$4: Int, x$5: Int, x$6: Array[Int], x$7: Int, x$8: Array[Double], x$9: Int, x$10: Int, x$11: org.netlib.util.intW)Unit.
+Unspecified value parameters x$9, x$10, x$11.
+       lapack.Dgesv.dgesv(3,1, UsingLapack.matrixA.flatten, 3, Array(3,3,3), UsingLapack.b.flatten, 3, UsingLapack.info)
+                         ^
+
+scala> lapack.Dgesv.dgesv(3,1, UsingLapack.matrixA.flatten, 3,1, Array(3,3,3), 3, UsingLapack.b.flatten, 3,3, UsingLapack.info)
+ ** On entry to DGESV  parameter number  4 had an illegal value
+
+Exception: sbt.TrapExitSecurityException thrown from the UncaughtExceptionHandler in thread "run-main-0"
+
+_________________________________________________________________
+
+
+
