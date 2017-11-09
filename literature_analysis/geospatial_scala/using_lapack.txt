@@ -643,6 +643,28 @@ scala> lapack.Dgesv.dgesv(3,1, UsingLapack.matrixA.flatten, 1,1, Array(3,3,3), 3
 
 Exception: sbt.TrapExitSecurityException thrown from the UncaughtExceptionHandler in thread "run-main-1"
 
-------------------------------------------------------------
+
+-----------------------------------------------------------
+More details on the dgesv method:
+http://icl.cs.utk.edu/projectsfiles/f2j/javadoc/org/netlib/lapack/Dgesv.html#Dgesv()
+
+Method detail:
+ dgesv
+
+public static void dgesv(int n,
+                         int nrhs,
+                         double[] a,
+                         int _a_offset,
+                         int lda,
+                         int[] ipiv,
+                         int _ipiv_offset,
+                         double[] b,
+                         int _b_offset,
+                         int ldb,
+                         intW info)
+
+
+-------------------------------------------------------------
+
 
 
