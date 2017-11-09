@@ -584,6 +584,11 @@ scala> lapack.dgesv(3,1, UsingLapack.matrixA.flatten, 3, Array(3,3,3), UsingLapa
 scala> res.getClass
 res4: Class[Unit] = void
 
+
+scala> UsingLapack.b
+res7: Array[Array[Double]] = Array(Array(6.0, -7.0, 10.0))
+
+
 -----------------------------------------------
 
  
