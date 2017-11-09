@@ -700,6 +700,8 @@ scala> lapack.Dgesv.dgesv(noArows, nrhs, matrixA.flatten, aoffset, lda, ipiv, ip
 scala> b
 res8: Array[Double] = Array(-58.33333333333337, 25.666666666666682, 41.33333333333336)
 
+
+NOT THE CORRECT SOLUTION THOUGH!
 -----------------------------------------------------------
 
 _
