@@ -66,10 +66,6 @@ reload
 console
 reload
 console
-reload
-console
-reload
-console
 :q
 exit
 quit
@@ -497,4 +493,8 @@ console
 reload
 console
 sbt
+console
+reload
+console
+reload
 console
