@@ -700,6 +700,21 @@ scala> lapack.Dgesv.dgesv(noArows, nrhs, matrixA.flatten, aoffset, lda, ipiv, ip
 scala> b
 res8: Array[Double] = Array(-58.33333333333337, 25.666666666666682, 41.33333333333336)
 
+scala> var ipiv = Array(0,0,0)
+ipiv: Array[Int] = Array(0, 0, 0)
+
+scala> var b= Array(6.0, -7.0 , 10.0)
+b: Array[Double] = Array(6.0, -7.0, 10.0)
+
+scala> lapack.Dgesv.dgesv(noArows, nrhs, matrixA.flatten, aoffset, lda, ipiv, ipivoffset, b, boffset, ldb, info)
+
+scala> ipiv
+res33: Array[Int] = Array(1, 2, 3)
+
+scala> b
+res34: Array[Double] = Array(-58.33333333333337, 25.666666666666682, 41.33333333333336)
+
+
 
 NOT THE CORRECT SOLUTION THOUGH!
 I'll TRY TO DIG OUT THE PARAMETERS:
