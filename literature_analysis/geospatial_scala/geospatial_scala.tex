@@ -1106,7 +1106,7 @@ Now, back to the implementation code of the dgesv function. As previously mentio
 \item the leading dimension of \textit{A} which represents its number of rows, 
 \item the Array[Int] which represents a dummy array which will be overwritten by dgesv and which will store the IPIV array (the array which stores the pivot indices that define the permutation matrix \textit{P}), \footnote{The IPIV(i) array shows which row was interchanged at the the i\textsuperscript{th} step row \cite{nag_ltd._nag_nodate}.}  
 \item the starting index of the IPIV array,
-\item the \textbf{b} column vector with the constants of the linear system, i.e. the right hand side,
+\item the \textbf{b} column vector with the constants of the linear system, i.e. the right hand side; during the dgesv routine, \textbf{b} gets overritten and will contain the solution of the system,
 \item the starting index of the \textbf{b} column vector, 
 \item the leading dimension of \textbf{b} which is the no. of rows of the column vector,
 \item and the info argument which is an Int of type org.netlib.util.intW and which will be overritten with the output information message of dgesv, and should be 0 on success \cite{nag_ltd._nag_nodate}.
