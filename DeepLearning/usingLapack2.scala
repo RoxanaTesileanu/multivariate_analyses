@@ -1,3 +1,8 @@
+/* 
+@author: Roxana Tesileanu, INCDS BV, roxana.te@web.de
+
+*/
+
 import org.netlib.lapack
 import org.netlib.util.intW._
 
@@ -19,3 +24,7 @@ val result = (b, ipiv)
 for (i<- result._1) println (i)
 for (i<- result._2) println (i)
 }
+
+/*
+
+*/
