@@ -1172,7 +1172,11 @@ The present document was edited using Latex \cite{claudio_latex-tutorial.com_nod
 
 \begin{appendices}
 \section {Point coordinates for code snippet 3}
+
 The following point coordinates were looked up on Google Maps (WGS84 / Pseudo-Mercator) and were used in section 2.3.2 to create the example vector layer. Please note they are for educational purposes.
+\\
+\\
+@author: Roxana Tesileanu, INCDS BV, roxana.te@web.de
 \\
 \\
 //points for Tampa Hill, BV, entered clockwise\\
@@ -1324,6 +1328,10 @@ The following point coordinates were looked up on Google Maps (WGS84 / Pseudo-Me
 \\
 
 \section {Scala source file: readPointCoord.scala}
+
+@author: Roxana Tesileanu, INCDS BV, roxana.te@web.de\\
+\\
+\\
 package com.mai.GeospatialScala\\
 import scala.io.\underline{\space}\\
 object ReadPointCoordFromFile \{ 
@@ -1361,6 +1369,11 @@ val pointsStArea = dataStArea.map(i => (i(0).toDouble, i(1).toDouble))\\
 \\
 
 \section {Scala source file: createGeoms.scala}
+
+
+@author: Roxana Tesileanu, INCDS BV, roxana.te@web.de\\
+\\
+\\
 package com.mai.GeospatialScala\\
 import ReadPointCoordFromFile.\underline{\space}\\
 \\
@@ -1414,6 +1427,10 @@ for (poly <- multiPolyPolys) multiPolygonEx.AddGeometry(poly)\\
 \\
 \\
 \section {Scala source file: createVLayer.scala}
+
+@author: Roxana Tesileanu, INCDS BV, roxana.te@web.de\\
+\\
+\\
 package com.mai.GeospatialScala\\
 
 import ReadPointCoordFromFile.\underline{\space}\\
