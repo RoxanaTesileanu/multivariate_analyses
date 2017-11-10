@@ -1076,9 +1076,9 @@ Now, back to the implementation code of the dgesv function. As previously mentio
 \item the Array[Int] which represents a dummy array which will be overwritten by dgesv and which will store the IPIV array (the array which stores the pivot indices that define the permutation matrix \textit{P}. The IPIV(i) array shows which row was interchanged at the the i\textsuperscript{th} step row \cite{nag_ltd._nag_nodate}.  
 \item the starting index of the IPIV array 
 \item the \textbf{b} column vector with the constants of the linear system, i.e. the right hand side
-\item  
-\item
-\item
+\item the starting index of the \textbf{b} column vector 
+\item the leading dimension of \textbf{b} which is the no. of rows
+\item 
 \end{itemize}    
     
 \subsection {Computing statistical matrices for multivariate analyses}
