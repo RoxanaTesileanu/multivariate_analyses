@@ -1078,7 +1078,11 @@ Now, back to the implementation code of the dgesv function. As previously mentio
 \item the \textbf{b} column vector with the constants of the linear system, i.e. the right hand side,
 \item the starting index of the \textbf{b} column vector, 
 \item the leading dimension of \textbf{b} which is the no. of rows of the column vector,
-\item and the info argument which is an Int of type org.netlib.util.intW and which will be overritten with the output information message of dgesv, and should be 0 on success \cite{nag_ltd._nag_nodate}. 
+\item and the info argument which is an Int of type org.netlib.util.intW and which will be overritten with the output information message of dgesv, and should be 0 on success \cite{nag_ltd._nag_nodate}.
+\\
+\\
+Using the above code a linear system of type $Ax=b$ was solved using LAPACK dgesv, and, at the same time we made use of Scala types and also the output was a Scala type. 
+ 
 \end{itemize}    
     
 \subsection {Computing statistical matrices for multivariate analyses}
