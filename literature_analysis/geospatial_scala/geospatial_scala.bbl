@@ -207,12 +207,23 @@ E.~Anderson, Z.~Bai, C.~Bischof, S.~Blackford, J.~Demmel, {Du Croz, J.},
   \emph{{LAPACK} {Users}' {Guide}}, 3rd~ed.\hskip 1em plus 0.5em minus
   0.4em\relax Philadelphia: SIAM, 1999.
 
+\bibitem{golub_matrix_2013}
+G.~H. Golub and {Van Loan, C. F.}, \emph{Matrix {Computations}}, 4th~ed.\hskip
+  1em plus 0.5em minus 0.4em\relax The John Hopkins University Press, 2013.
+
+\bibitem{nag_ltd._nag_nodate}
+N.~Ltd., ``{NAG} {Fortran} {Library} {Routine} {Document} {F}07aaf ({DGESV}).''
+
 \bibitem{seymour_using_2017}
 K.~Seymour, ``Using the dgesv routine in {Java} - e-mail communication,'' 2017.
 
 \bibitem{dawkins_pauls_2005}
 P.~Dawkins, \emph{Paul's notes on linear algebra}, ser. Math {Tutorial} {Lamar}
   {University}.\hskip 1em plus 0.5em minus 0.4em\relax Lamar University, 2005.
+
+\bibitem{odersky_programming_2010}
+M.~Odersky, L.~Spoon, and B.~Venners, \emph{Programming in {Scala}},
+  2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax Walnut Creek: Artima, 2010.
 
 \bibitem{icl_javadoc_2017}
 \BIBentryALTinterwordspacing
@@ -225,10 +236,6 @@ K.~Seymour, ``Lapack java api,'' 2017. [Online]. Available:
 {Intel}, ``{Intel Math Kernel Library LAPACK Examples}.'' [Online]. Available:
   \url{https://software.intel.com/sites/products/documentation/doclib/mkl_sa/11/mkl_lapack_examples/index.htm#dgesv_ex.c.htm}
 \BIBentrySTDinterwordspacing
-
-\bibitem{odersky_programming_2010}
-M.~Odersky, L.~Spoon, and B.~Venners, \emph{Programming in {Scala}},
-  2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax Walnut Creek: Artima, 2010.
 
 \bibitem{trask_grokking_2017}
 A.~Trask, \emph{Grokking deep learning}.\hskip 1em plus 0.5em minus 0.4em\relax
