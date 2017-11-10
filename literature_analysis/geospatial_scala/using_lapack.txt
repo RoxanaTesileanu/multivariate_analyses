@@ -780,7 +780,49 @@ scala> for (i <- result._2) println (i)
 
 _____________________________________________________
 
+THE CORRECT SOLUTION:
 
+
+import org.netlib.lapack
+import org.netlib.util.intW._
+
+object UsingLapack2{
+
+val noArows = 3
+val nrhs = 1
+val matrixA : Array[Array[Double]] = Array(Array(3, 1, 0), Array(-1, 2, 2), Array(5, 0, -1))
+var aoffset = 0
+val lda = 3
+var ipiv : Array[Int] = Array.fill(noArows)(0)
+var ipivoffset = 0
+var b  : Array[Double] = Array(6, -7, 10)
+var boffset = 0
+val ldb= 3
+var info = new org.netlib.util.intW(0)
+lapack.Dgesv.dgesv(noArows, nrhs, (matrixA.transpose).flatten, aoffset, lda, ipiv, ipivoffset, b, boffset, ldb, info)
+val result = (b, ipiv)
+for (i<- result._1) println (i)
+for (i<- result._2) println (i)
+}
+
+
+scala> :load usingLapack2.scala
+Loading usingLapack2.scala...
+import org.netlib.lapack
+import org.netlib.util.intW._
+defined object UsingLapack2
+
+scala> import UsingLapack2._
+import UsingLapack2._
+
+scala> b
+0.3333333333333336
+4.999999999999999
+-8.333333333333332
+3
+2
+3
+res0: Array[Double] = Array(0.3333333333333336, 4.999999999999999, -8.333333333333332)
 
 
 
