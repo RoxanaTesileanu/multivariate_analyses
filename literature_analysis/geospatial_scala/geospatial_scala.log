@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  10 NOV 2017 20:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  10 NOV 2017 21:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -81,13 +81,46 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count99
+\calc@Bcount=\count100
+\calc@Adimen=\dimen112
+\calc@Bdimen=\dimen113
+\calc@Askip=\skip46
+\calc@Bskip=\skip47
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count101
+\calc@Cskip=\skip48
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count102
+\l_MT_multwidth_dim=\dimen114
+\origjot=\skip49
+\l_MT_shortvdotswithinadjustabove_dim=\dimen115
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen116
+\l_MT_above_intertext_sep=\dimen117
+\l_MT_below_intertext_sep=\dimen118
+\l_MT_above_shortintertext_sep=\dimen119
+\l_MT_below_shortintertext_sep=\dimen120
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
@@ -108,10 +141,10 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count99
+\Gread@gobject=\count103
 ))
-\Gin@req@height=\dimen112
-\Gin@req@width=\dimen113
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
@@ -126,27 +159,27 @@ Package: cite 2015/02/27  v 5.5
 )
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen114
-\lightrulewidth=\dimen115
-\cmidrulewidth=\dimen116
-\belowrulesep=\dimen117
-\belowbottomsep=\dimen118
-\aboverulesep=\dimen119
-\abovetopsep=\dimen120
-\cmidrulesep=\dimen121
-\cmidrulekern=\dimen122
-\defaultaddspace=\dimen123
-\@cmidla=\count100
-\@cmidlb=\count101
-\@aboverulesep=\dimen124
-\@belowrulesep=\dimen125
-\@thisruleclass=\count102
-\@lastruleclass=\count103
-\@thisrulewidth=\dimen126
+\heavyrulewidth=\dimen123
+\lightrulewidth=\dimen124
+\cmidrulewidth=\dimen125
+\belowrulesep=\dimen126
+\belowbottomsep=\dimen127
+\aboverulesep=\dimen128
+\abovetopsep=\dimen129
+\cmidrulesep=\dimen130
+\cmidrulekern=\dimen131
+\defaultaddspace=\dimen132
+\@cmidla=\count104
+\@cmidlb=\count105
+\@aboverulesep=\dimen133
+\@belowrulesep=\dimen134
+\@thisruleclass=\count106
+\@lastruleclass=\count107
+\@thisrulewidth=\dimen135
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count104
+\c@float@type=\count108
 \float@exts=\toks22
 \float@box=\box28
 \@float@everytoks=\toks23
@@ -154,9 +187,9 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count105
-\c@@ppsavesec=\count106
-\c@@ppsaveapp=\count107
+\c@@pps=\count109
+\c@@ppsavesec=\count110
+\c@@ppsaveapp=\count111
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -215,14 +248,14 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen127
-\Hy@linkcounter=\count108
-\Hy@pagecounter=\count109
+\@linkdim=\dimen136
+\Hy@linkcounter=\count112
+\Hy@pagecounter=\count113
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count110
+\Hy@SavedSpaceFactor=\count114
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -234,17 +267,17 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count111
+\c@Hy@tempcnt=\count115
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen128
-\Fld@menulength=\count112
-\Field@Width=\dimen129
-\Fld@charsize=\dimen130
+\XeTeXLinkMargin=\dimen137
+\Fld@menulength=\count116
+\Field@Width=\dimen138
+\Fld@charsize=\dimen139
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -254,24 +287,24 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count113
-\c@Item=\count114
-\c@Hfootnote=\count115
+\Hy@abspage=\count117
+\c@Item=\count118
+\c@Hfootnote=\count119
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count116
-\c@bookmark@seq@number=\count117
+\Fld@listcount=\count120
+\c@bookmark@seq@number=\count121
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip46
+\Hy@SectionHShift=\skip50
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -283,33 +316,33 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 (./geospatial_scala.aux)
 \openout1 = `geospatial_scala.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
-\scratchdimen=\dimen131
+\scratchcounter=\count122
+\scratchdimen=\dimen140
 \scratchbox=\box30
-\nofMPsegments=\count119
-\nofMParguments=\count120
+\nofMPsegments=\count123
+\nofMParguments=\count124
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count121
-\MPscratchDim=\dimen132
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen141
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
 \everyMPtoPDFconversion=\toks25
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -327,7 +360,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 21.
+Package hyperref Info: Link coloring OFF on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -335,11 +368,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count124
+\c@section@level=\count128
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
 
 (./geospatial_scala.out) (./geospatial_scala.out)
 \@outlinefile=\write3
@@ -356,93 +389,93 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 \newpage
+l.27 \newpage
               [2]
-Overfull \hbox (8.52832pt too wide) in paragraph at lines 34--62
+Overfull \hbox (8.52832pt too wide) in paragraph at lines 35--63
 \T1/cmr/m/n/10 (EPFL) ([]http://www.scala-lang.org/[]) to per-form geospa-tial 
 data anal-y-ses. GDAL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--62
+Underfull \hbox (badness 10000) in paragraph at lines 35--63
 
  []
 
 
-Overfull \hbox (2.10043pt too wide) in paragraph at lines 34--62
+Overfull \hbox (2.10043pt too wide) in paragraph at lines 35--63
 \T1/cmr/m/n/10 to your sys-tem ([]https://launchpad.net/ ubun-tugis/+archive/ub
 untu/ppa[]). This
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--62
+Underfull \hbox (badness 10000) in paragraph at lines 35--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--62
+Underfull \hbox (badness 10000) in paragraph at lines 35--63
 
  []
 
 
-Overfull \hbox (0.34512pt too wide) in paragraph at lines 34--62
+Overfull \hbox (0.34512pt too wide) in paragraph at lines 35--63
 \T1/cmr/m/n/10 Next, you in-stall GDAL on your ma-chine with the com-mands [[]4
 []] [[]5[]] ([]http://www 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--62
+Underfull \hbox (badness 10000) in paragraph at lines 35--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--62
+Underfull \hbox (badness 10000) in paragraph at lines 35--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--62
+Underfull \hbox (badness 10000) in paragraph at lines 35--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--62
+Underfull \hbox (badness 10000) in paragraph at lines 35--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--62
+Underfull \hbox (badness 10000) in paragraph at lines 35--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--62
+Underfull \hbox (badness 10000) in paragraph at lines 35--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--62
+Underfull \hbox (badness 10000) in paragraph at lines 35--63
 
  []
 
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 64--68
+Underfull \hbox (badness 10000) in paragraph at lines 65--69
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 69.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 70.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 69.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 70.
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--94
+Underfull \hbox (badness 10000) in paragraph at lines 77--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--94
+Underfull \hbox (badness 10000) in paragraph at lines 77--95
 
  []
 
@@ -454,7 +487,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.109 \\
+l.110 \\
         
 ? 
 
@@ -464,299 +497,299 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.110 T
+l.111 T
        he following paragraphs will help you navigate through the VIM file, ...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--128
+Underfull \hbox (badness 10000) in paragraph at lines 111--129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--128
+Underfull \hbox (badness 10000) in paragraph at lines 111--129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--128
+Underfull \hbox (badness 10000) in paragraph at lines 111--129
 
  []
 
 
-Overfull \hbox (16.85608pt too wide) in paragraph at lines 110--128
+Overfull \hbox (16.85608pt too wide) in paragraph at lines 111--129
 \T1/cmr/m/n/10 You can undo changes by us-ing the "u" key and redo changes the 
 us-ing "<CTRL>r". 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--128
+Underfull \hbox (badness 10000) in paragraph at lines 111--129
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 135--178
+Underfull \hbox (badness 10000) in paragraph at lines 136--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--178
+Underfull \hbox (badness 10000) in paragraph at lines 136--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--178
+Underfull \hbox (badness 10000) in paragraph at lines 136--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--178
+Underfull \hbox (badness 10000) in paragraph at lines 136--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--178
+Underfull \hbox (badness 10000) in paragraph at lines 136--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--178
+Underfull \hbox (badness 10000) in paragraph at lines 136--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--178
+Underfull \hbox (badness 10000) in paragraph at lines 136--179
 
  []
 
 
-Overfull \hbox (1.98935pt too wide) in paragraph at lines 135--178
+Overfull \hbox (1.98935pt too wide) in paragraph at lines 136--179
 \T1/cmr/m/n/10 win-dow use ":q". To find help on a spe-cific com-mand use ":hel
 p some$[]$command",
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 186--213
+Underfull \hbox (badness 10000) in paragraph at lines 187--214
 
  []
 
 
-Overfull \hbox (2.44073pt too wide) in paragraph at lines 186--213
+Overfull \hbox (2.44073pt too wide) in paragraph at lines 187--214
 \T1/cmr/m/n/10 Installing SBT re-quires a look at the SBT home-page ([]http://w
 ww.scala-sbt.org/[])
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--213
+Underfull \hbox (badness 10000) in paragraph at lines 187--214
 
  []
 
 
-Overfull \hbox (55.95764pt too wide) in paragraph at lines 186--213
+Overfull \hbox (55.95764pt too wide) in paragraph at lines 187--214
 \T1/cmr/m/n/10 $ echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /
 etc/apt/sources.list.d/sbt.list 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--213
+Underfull \hbox (badness 10000) in paragraph at lines 187--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--213
+Underfull \hbox (badness 10000) in paragraph at lines 187--214
 
  []
 
 
-Overfull \hbox (178.6499pt too wide) in paragraph at lines 186--213
+Overfull \hbox (178.6499pt too wide) in paragraph at lines 187--214
 \T1/cmr/m/n/10 $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --r
 ecv 2EE0EA64E40A89B84B2DF73499E82A75642AC823 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--213
+Underfull \hbox (badness 10000) in paragraph at lines 187--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--213
+Underfull \hbox (badness 10000) in paragraph at lines 187--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--213
+Underfull \hbox (badness 10000) in paragraph at lines 187--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--213
+Underfull \hbox (badness 10000) in paragraph at lines 187--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--213
+Underfull \hbox (badness 10000) in paragraph at lines 187--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--213
+Underfull \hbox (badness 10000) in paragraph at lines 187--214
 
  []
 
 
-Overfull \hbox (25.71393pt too wide) in paragraph at lines 186--213
+Overfull \hbox (25.71393pt too wide) in paragraph at lines 187--214
 \T1/cmr/m/n/10 If you are us-ing rpm dis-tri-bu-tions visit the SBT down-load p
 age (hrefhttp://www.scala-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--213
+Underfull \hbox (badness 10000) in paragraph at lines 187--214
 
  []
 
 [6]
-Overfull \hbox (31.74133pt too wide) in paragraph at lines 216--273
+Overfull \hbox (31.74133pt too wide) in paragraph at lines 217--274
  []\T1/cmr/bx/n/10 Creating a Scala pro-jet[] \T1/cmr/m/n/10 Now, we will cre-a
 te a Scala project called Scala$[]$Playground
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--273
+Underfull \hbox (badness 10000) in paragraph at lines 217--274
 
  []
 
 
-Overfull \hbox (8.57108pt too wide) in paragraph at lines 216--273
+Overfull \hbox (8.57108pt too wide) in paragraph at lines 217--274
 \T1/cmr/m/n/10 tory. Next, cre-ate a di-rec-tory called Scala$[]$Playground ("$
  mkdir Scala$[]$Playground
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--273
+Underfull \hbox (badness 10000) in paragraph at lines 217--274
 
  []
 
 
-Overfull \hbox (1.9986pt too wide) in paragraph at lines 216--273
+Overfull \hbox (1.9986pt too wide) in paragraph at lines 217--274
 \T1/cmr/m/n/10 The ls com-mand should print now for the Scala$[]$Playground two
  con-tents: project
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--273
+Underfull \hbox (badness 10000) in paragraph at lines 217--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--273
+Underfull \hbox (badness 10000) in paragraph at lines 217--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--273
+Underfull \hbox (badness 10000) in paragraph at lines 217--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--273
+Underfull \hbox (badness 10000) in paragraph at lines 217--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--273
+Underfull \hbox (badness 10000) in paragraph at lines 217--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--273
+Underfull \hbox (badness 10000) in paragraph at lines 217--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--273
+Underfull \hbox (badness 10000) in paragraph at lines 217--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--273
+Underfull \hbox (badness 10000) in paragraph at lines 217--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--273
+Underfull \hbox (badness 10000) in paragraph at lines 217--274
 
  []
 
 
-Overfull \hbox (43.2663pt too wide) in paragraph at lines 216--273
+Overfull \hbox (43.2663pt too wide) in paragraph at lines 217--274
 \T1/cmr/m/n/10 rec-to-ries: the Scala$[]$Playground/target di-rec-tory and the 
 Scala$[]$Playground/project/target
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--273
+Underfull \hbox (badness 10000) in paragraph at lines 217--274
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 276--286
+Underfull \hbox (badness 10000) in paragraph at lines 277--287
 
  []
 
 [8]
-Overfull \hbox (1.19214pt too wide) in paragraph at lines 297--308
+Overfull \hbox (1.19214pt too wide) in paragraph at lines 298--309
 \T1/cmr/m/n/10 ing (see [[]12[]] for an in-tro-duc-tion in Spark), ScalaNLP ([]
 http://www.scalanlp.org/[])
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--308
+Underfull \hbox (badness 10000) in paragraph at lines 298--309
 
  []
 
 
-Overfull \hbox (12.95316pt too wide) in paragraph at lines 297--308
+Overfull \hbox (12.95316pt too wide) in paragraph at lines 298--309
 \T1/cmr/m/n/10 For GUI pro-gram-ming, the best known li-braries are Scala.swing
  ([]http://www.scala-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--308
+Underfull \hbox (badness 10000) in paragraph at lines 298--309
 
  []
 
 [9] <fig1.jpg, id=328, 819.06pt x 481.8pt>
 File: fig1.jpg Graphic file (type jpg)
  <use fig1.jpg>
-Package pdftex.def Info: fig1.jpg used on input line 331.
+Package pdftex.def Info: fig1.jpg used on input line 332.
 (pdftex.def)             Requested size: 345.0pt x 202.94275pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--334
+Underfull \hbox (badness 10000) in paragraph at lines 312--335
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--334
+Underfull \hbox (badness 10000) in paragraph at lines 312--335
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--334
+Underfull \hbox (badness 10000) in paragraph at lines 312--335
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--334
+Underfull \hbox (badness 10000) in paragraph at lines 312--335
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--334
+Underfull \hbox (badness 10000) in paragraph at lines 312--335
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--334
+Underfull \hbox (badness 10000) in paragraph at lines 312--335
 
  []
 
@@ -767,7 +800,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.336 \\
+l.337 \\
         
 ? 
 
@@ -777,46 +810,46 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.337 \paragraph
+l.338 \paragraph
                 {Using internal Scala libraries}
 ? 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 339--355
+Underfull \hbox (badness 10000) in paragraph at lines 340--356
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--355
+Underfull \hbox (badness 10000) in paragraph at lines 340--356
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--355
+Underfull \hbox (badness 10000) in paragraph at lines 340--356
 
  []
 
 [11 <./fig1.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 378--382
+Underfull \hbox (badness 10000) in paragraph at lines 379--383
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 385--400
+Underfull \hbox (badness 10000) in paragraph at lines 386--401
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--400
+Underfull \hbox (badness 10000) in paragraph at lines 386--401
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--400
+Underfull \hbox (badness 10000) in paragraph at lines 386--401
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--400
+Underfull \hbox (badness 10000) in paragraph at lines 386--401
 
  []
 
@@ -828,58 +861,58 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.402 Y
+l.403 Y
        ou can find a shapefile on the internet at one of the sources indicat...
 
 ? 
 
-Overfull \hbox (6.55304pt too wide) in paragraph at lines 402--425
+Overfull \hbox (6.55304pt too wide) in paragraph at lines 403--426
 []\T1/cmr/m/n/10 http://gisgeography.com/best-free-gis-data-sources-raster-vect
 or/[] and try the fol-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--425
+Underfull \hbox (badness 10000) in paragraph at lines 403--426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--425
+Underfull \hbox (badness 10000) in paragraph at lines 403--426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--425
+Underfull \hbox (badness 10000) in paragraph at lines 403--426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--425
+Underfull \hbox (badness 10000) in paragraph at lines 403--426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--425
+Underfull \hbox (badness 10000) in paragraph at lines 403--426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--425
+Underfull \hbox (badness 10000) in paragraph at lines 403--426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--425
+Underfull \hbox (badness 10000) in paragraph at lines 403--426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--425
+Underfull \hbox (badness 10000) in paragraph at lines 403--426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--425
+Underfull \hbox (badness 10000) in paragraph at lines 403--426
 
  []
 
@@ -890,42 +923,42 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.428 I
+l.429 I
        n order to access the vector geodata, we make the OGR drivers availab...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 428--438
+Underfull \hbox (badness 10000) in paragraph at lines 429--439
 
  []
 
 [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 462--497
+Underfull \hbox (badness 10000) in paragraph at lines 463--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 462--497
+Underfull \hbox (badness 10000) in paragraph at lines 463--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 462--497
+Underfull \hbox (badness 10000) in paragraph at lines 463--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 462--497
+Underfull \hbox (badness 10000) in paragraph at lines 463--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 462--497
+Underfull \hbox (badness 10000) in paragraph at lines 463--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 462--497
+Underfull \hbox (badness 10000) in paragraph at lines 463--498
 
  []
 
@@ -937,575 +970,575 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.500 I
+l.501 I
        n this code I will use the ETRS1989/LAEA, the Pulkovo1942(58)/ Stereo...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--716
+Underfull \hbox (badness 10000) in paragraph at lines 501--717
 
  []
 
 [17] [18] [19] [20] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 717--722
+Underfull \hbox (badness 10000) in paragraph at lines 718--723
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 746--782
+Underfull \hbox (badness 10000) in paragraph at lines 747--783
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--782
+Underfull \hbox (badness 10000) in paragraph at lines 747--783
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--782
+Underfull \hbox (badness 10000) in paragraph at lines 747--783
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--782
+Underfull \hbox (badness 10000) in paragraph at lines 747--783
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--782
+Underfull \hbox (badness 10000) in paragraph at lines 747--783
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 783--790
+Underfull \hbox (badness 10000) in paragraph at lines 784--791
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 783--790
+Underfull \hbox (badness 10000) in paragraph at lines 784--791
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 792--858
+Underfull \hbox (badness 10000) in paragraph at lines 793--859
 
  []
 
 
-Overfull \hbox (30.08896pt too wide) in paragraph at lines 792--858
+Overfull \hbox (30.08896pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val cur-rent-Po-si-tion = new org.gdal.ogr.Geometry(org.gdal.ogr
 .ogrConstants.wkbPoint) 
  []
 
 
-Overfull \hbox (53.16666pt too wide) in paragraph at lines 792--858
+Overfull \hbox (53.16666pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val mul-ti-PointHP1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogr
 Constants.wkbMultiPoint) 
  []
 
 
-Overfull \hbox (132.61838pt too wide) in paragraph at lines 792--858
+Overfull \hbox (132.61838pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val ge-oms-ForMP = for (p<- pointsHP1) yield new org.gdal.ogr.Ge
 ometry(org.gdal.ogr.ogrConstants.wkbPoint) 
  []
 
 
-Overfull \hbox (9.89944pt too wide) in paragraph at lines 792--858
+Overfull \hbox (9.89944pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val road1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.
 wkbLineString) 
  []
 
 
-Overfull \hbox (9.89944pt too wide) in paragraph at lines 792--858
+Overfull \hbox (9.89944pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val road2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.
 wkbLineString) 
  []
 
 
-Overfull \hbox (9.89944pt too wide) in paragraph at lines 792--858
+Overfull \hbox (9.89944pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val road3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.
 wkbLineString) 
  []
 
 
-Overfull \hbox (29.6724pt too wide) in paragraph at lines 792--858
+Overfull \hbox (29.6724pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val gp-sTrack1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConst
 ants.wkbLineString) 
  []
 
 
-Overfull \hbox (63.7474pt too wide) in paragraph at lines 792--858
+Overfull \hbox (63.7474pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val mul-ti-Li-neEx = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrC
 onstants.wkbMultiLineString) 
  []
 
 
-Overfull \hbox (36.64291pt too wide) in paragraph at lines 792--858
+Overfull \hbox (36.64291pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val habi-tat-Patch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogr
 Constants.wkbPolygon) 
  []
 
 
-Overfull \hbox (40.69748pt too wide) in paragraph at lines 792--858
+Overfull \hbox (40.69748pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val habi-ta-tRing = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrCo
 nstants.wkbLinearRing) 
  []
 
 
-Overfull \hbox (36.64291pt too wide) in paragraph at lines 792--858
+Overfull \hbox (36.64291pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val habi-tat-Patch2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogr
 Constants.wkbPolygon) 
  []
 
 
-Overfull \hbox (45.69626pt too wide) in paragraph at lines 792--858
+Overfull \hbox (45.69626pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val habi-ta-tRing2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrC
 onstants.wkbLinearRing) 
  []
 
 
-Overfull \hbox (36.64291pt too wide) in paragraph at lines 792--858
+Overfull \hbox (36.64291pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val habi-tat-Patch3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogr
 Constants.wkbPolygon) 
  []
 
 
-Overfull \hbox (45.69626pt too wide) in paragraph at lines 792--858
+Overfull \hbox (45.69626pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val habi-ta-tRing3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrC
 onstants.wkbLinearRing) 
  []
 
 
-Overfull \hbox (3.53989pt too wide) in paragraph at lines 792--858
+Overfull \hbox (3.53989pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val stArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants
 .wkbPolygon) 
  []
 
 
-Overfull \hbox (35.8931pt too wide) in paragraph at lines 792--858
+Overfull \hbox (35.8931pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val ringStArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConst
 ants.wkbLinearRing) 
  []
 
 
-Overfull \hbox (69.27383pt too wide) in paragraph at lines 792--858
+Overfull \hbox (69.27383pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val mul-ti-Poly-gonEx = new org.gdal.ogr.Geometry(org.gdal.ogr.o
 grConstants.wkbMultiPolygon) 
  []
 
 
-Overfull \hbox (10.91309pt too wide) in paragraph at lines 792--858
+Overfull \hbox (10.91309pt too wide) in paragraph at lines 793--859
 \T1/cmr/m/n/10 val mul-ti-Poly-Polys = Ar-ray(habitatPatch1, habi-tat-Patch2, h
 abi-tat-Patch3, stArea) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--858
+Underfull \hbox (badness 10000) in paragraph at lines 793--859
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--858
+Underfull \hbox (badness 10000) in paragraph at lines 793--859
 
  []
 
 [25] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 868--873
+Underfull \hbox (badness 10000) in paragraph at lines 869--874
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 875--922
+Underfull \hbox (badness 10000) in paragraph at lines 876--923
 
  []
 
 
-Overfull \hbox (1.66534pt too wide) in paragraph at lines 875--922
+Overfull \hbox (1.66534pt too wide) in paragraph at lines 876--923
 \T1/cmr/m/n/10 ([]https://github.com/RoxanaTesileanu/multivariate$[]$analyses/t
 ree/master/Deep 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 875--922
+Underfull \hbox (badness 10000) in paragraph at lines 876--923
 
  []
 
 
-Overfull \hbox (20.82733pt too wide) in paragraph at lines 875--922
+Overfull \hbox (20.82733pt too wide) in paragraph at lines 876--923
 \T1/cmr/m/n/10 val fd1 = new org.gdal.ogr.FieldDefn("Type", org.gdal.ogr.ogrCon
 stants.OFTString) 
  []
 
 
-Overfull \hbox (13.46802pt too wide) in paragraph at lines 875--922
+Overfull \hbox (13.46802pt too wide) in paragraph at lines 876--923
 \T1/cmr/m/n/10 val fd2 = new org.gdal.ogr.FieldDefn("ID", org.gdal.ogr.ogrConst
 ants.OFTInteger) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 875--922
+Underfull \hbox (badness 10000) in paragraph at lines 876--923
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 875--922
+Underfull \hbox (badness 10000) in paragraph at lines 876--923
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 875--922
+Underfull \hbox (badness 10000) in paragraph at lines 876--923
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 923--931
+Underfull \hbox (badness 10000) in paragraph at lines 924--932
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 923--931
+Underfull \hbox (badness 10000) in paragraph at lines 924--932
 
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 938--939
+Underfull \hbox (badness 10000) in paragraph at lines 939--940
 
  []
 
 
-Overfull \hbox (1.9986pt too wide) in paragraph at lines 944--945
+Overfull \hbox (1.9986pt too wide) in paragraph at lines 945--946
 \T1/cmr/m/n/10 (https://esdac.jrc.ec.europa.eu/content/saline-and-sodic-soils-e
 uropean-union) -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 963--994
+Underfull \hbox (badness 10000) in paragraph at lines 964--995
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 963--994
+Underfull \hbox (badness 10000) in paragraph at lines 964--995
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 963--994
+Underfull \hbox (badness 10000) in paragraph at lines 964--995
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 963--994
+Underfull \hbox (badness 10000) in paragraph at lines 964--995
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 963--994
+Underfull \hbox (badness 10000) in paragraph at lines 964--995
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 963--994
+Underfull \hbox (badness 10000) in paragraph at lines 964--995
 
  []
 
 [29] [30]
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1043
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1043
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1043
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1043
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1043
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1043
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1043
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1043
 
  []
 
 
-Overfull \hbox (25.68726pt too wide) in paragraph at lines 1003--1042
+Overfull \hbox (25.68726pt too wide) in paragraph at lines 1004--1043
 \T1/cmr/m/n/10 to the build.sbt file of the Scala project ("net.sourceforge.f2j
 " % "arpack$[]$combined$[]$all"
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1043
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1043
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1043
 
  []
 
 
-Overfull \hbox (7.85718pt too wide) in paragraph at lines 1003--1042
+Overfull \hbox (7.85718pt too wide) in paragraph at lines 1004--1043
 \T1/cmr/m/n/10 You can check the rou-tines pro-vided by LAPLACK us-ing the TAB-
 autocompletion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1043
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1042
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1043
 
  []
 
 [31] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 1062--1094
+Underfull \hbox (badness 10000) in paragraph at lines 1063--1095
 
  []
 
 
-Overfull \hbox (6.1087pt too wide) in paragraph at lines 1062--1094
+Overfull \hbox (6.1087pt too wide) in paragraph at lines 1063--1095
 \T1/cmr/m/n/10 lapack.Dgesv.dgesv(noArows, nrhs, (ma-trixA.transpose).flatten, 
 aoff-set, lda, ipiv,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1062--1094
+Underfull \hbox (badness 10000) in paragraph at lines 1063--1095
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1062--1094
+Underfull \hbox (badness 10000) in paragraph at lines 1063--1095
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1062--1094
+Underfull \hbox (badness 10000) in paragraph at lines 1063--1095
 
  []
 
 [33] [34]
-Underfull \hbox (badness 10000) in paragraph at lines 1105--1109
+Underfull \hbox (badness 10000) in paragraph at lines 1106--1110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1123--1138
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1123--1138
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1123--1138
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1123--1138
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1139
 
  []
 
 [35]
-Overfull \hbox (5.9212pt too wide) in paragraph at lines 1140--1140
+Overfull \hbox (5.9212pt too wide) in paragraph at lines 1141--1141
 []\T1/cmr/bx/n/12 Classifying with Dis-crim-i-nant Func-tion Anal-y-sis (DFA) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1147--1154
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1155
 
  []
 
 
-Overfull \hbox (3.9148pt too wide) in paragraph at lines 1147--1154
+Overfull \hbox (3.9148pt too wide) in paragraph at lines 1148--1155
 \T1/cmr/m/n/10 Scala source files can be down-loaded at []https://github.com/Ro
 xanaTesileanu/mu 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1147--1154
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1155
 
  []
 
 
-Overfull \hbox (5.04938pt too wide) in paragraph at lines 1160--1161
+Overfull \hbox (5.04938pt too wide) in paragraph at lines 1161--1162
 []\T1/cmr/m/n/10 INSERT HERE THE EX-AM-PLES FROM THE KNN DOC-U-MEN-TA-TION!!! 
  []
 
 [36]
-Overfull \hbox (5.04938pt too wide) in paragraph at lines 1166--1167
+Overfull \hbox (5.04938pt too wide) in paragraph at lines 1167--1168
 []\T1/cmr/m/n/10 INSERT HERE THE EX-AM-PLES FROM THE KNN DOC-U-MEN-TA-TION!!! 
  []
 
 
-Overfull \hbox (38.57399pt too wide) in paragraph at lines 1183--1183
+Overfull \hbox (38.57399pt too wide) in paragraph at lines 1184--1184
 []\T1/cmr/bx/n/14.4 Combined ap-proaches: the MANOVA-KNN pipeline 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1203
+Underfull \hbox (badness 10000) in paragraph at lines 1188--1204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1203
+Underfull \hbox (badness 10000) in paragraph at lines 1188--1204
 
  []
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 1206--1212
+Underfull \hbox (badness 10000) in paragraph at lines 1207--1213
 
  []
 
 (./geospatial_scala.bbl
-Overfull \hbox (0.44342pt too wide) in paragraph at lines 1216--2
+Overfull \hbox (0.44342pt too wide) in paragraph at lines 1217--2
 \T1/cmr/m/n/10 multivariate$[]$analyses project repos-i-tory: []https://github.
 com/RoxanaTesileanu/ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1216--2
+Underfull \hbox (badness 10000) in paragraph at lines 1217--2
 
  []
 
 
-Overfull \hbox (17.57813pt too wide) in paragraph at lines 1216--2
+Overfull \hbox (17.57813pt too wide) in paragraph at lines 1217--2
 \T1/cmr/m/n/10 The present doc-u-ment was edited us-ing La-tex [[]50[]] ([]http
 s://www.latex-project.org/[]).
  []
 
 
-Overfull \hbox (29.21417pt too wide) in paragraph at lines 1216--2
+Overfull \hbox (29.21417pt too wide) in paragraph at lines 1217--2
 \T1/cmr/m/n/10 The source .tex file of the present doc-u-ment is also avail-abl
 e in the multivariate$[]$analyses
  []
@@ -1543,416 +1576,416 @@ _ of _ the _
 ** loaded for the language `Deutch'. Using the pattern for
 ** the default language instead.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1381
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1382
 
  []
 
 [42] [43] [44]
-Overfull \hbox (21.01993pt too wide) in paragraph at lines 1382--1382
+Overfull \hbox (21.01993pt too wide) in paragraph at lines 1383--1383
 []\T1/cmr/bx/n/14.4 Scala source file: read-Point-Co-ord.scala 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1384--1425
+Underfull \hbox (badness 10000) in paragraph at lines 1385--1426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1384--1425
+Underfull \hbox (badness 10000) in paragraph at lines 1385--1426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1384--1425
+Underfull \hbox (badness 10000) in paragraph at lines 1385--1426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1384--1425
+Underfull \hbox (badness 10000) in paragraph at lines 1385--1426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1384--1425
+Underfull \hbox (badness 10000) in paragraph at lines 1385--1426
 
  []
 
 [45]
-Underfull \hbox (badness 10000) in paragraph at lines 1429--1485
+Underfull \hbox (badness 10000) in paragraph at lines 1430--1486
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1429--1485
+Underfull \hbox (badness 10000) in paragraph at lines 1430--1486
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1429--1485
+Underfull \hbox (badness 10000) in paragraph at lines 1430--1486
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1429--1485
+Underfull \hbox (badness 10000) in paragraph at lines 1430--1486
 
  []
 
 
-Overfull \hbox (30.08896pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (30.08896pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val cur-rent-Po-si-tion = new org.gdal.ogr.Geometry(org.gdal.ogr
 .ogrConstants.wkbPoint) 
  []
 
 
-Overfull \hbox (53.16666pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (53.16666pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val mul-ti-PointHP1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogr
 Constants.wkbMultiPoint) 
  []
 
 
-Overfull \hbox (132.61838pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (132.61838pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val ge-oms-ForMP = for (p<- pointsHP1) yield new org.gdal.ogr.Ge
 ometry(org.gdal.ogr.ogrConstants.wkbPoint) 
  []
 
 
-Overfull \hbox (9.89944pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (9.89944pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val road1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.
 wkbLineString) 
  []
 
 
-Overfull \hbox (9.89944pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (9.89944pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val road2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.
 wkbLineString) 
  []
 
 
-Overfull \hbox (9.89944pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (9.89944pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val road3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants.
 wkbLineString) 
  []
 
 
-Overfull \hbox (29.6724pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (29.6724pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val gp-sTrack1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConst
 ants.wkbLineString) 
  []
 
 
-Overfull \hbox (63.7474pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (63.7474pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val mul-ti-Li-neEx = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrC
 onstants.wkbMultiLineString) 
  []
 
 
-Overfull \hbox (36.64291pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (36.64291pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val habi-tat-Patch1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogr
 Constants.wkbPolygon) 
  []
 
 
-Overfull \hbox (45.69626pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (45.69626pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val habi-ta-tRing1 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrC
 onstants.wkbLinearRing) 
  []
 
 
-Overfull \hbox (36.64291pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (36.64291pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val habi-tat-Patch2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogr
 Constants.wkbPolygon) 
  []
 
 
-Overfull \hbox (45.69626pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (45.69626pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val habi-ta-tRing2 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrC
 onstants.wkbLinearRing) 
  []
 
 
-Overfull \hbox (36.64291pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (36.64291pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val habi-tat-Patch3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogr
 Constants.wkbPolygon) 
  []
 
 
-Overfull \hbox (45.69626pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (45.69626pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val habi-ta-tRing3 = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrC
 onstants.wkbLinearRing) 
  []
 
 
-Overfull \hbox (3.53989pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (3.53989pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val stArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConstants
 .wkbPolygon) 
  []
 
 
-Overfull \hbox (35.8931pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (35.8931pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val ringStArea = new org.gdal.ogr.Geometry(org.gdal.ogr.ogrConst
 ants.wkbLinearRing) 
  []
 
 
-Overfull \hbox (69.27383pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (69.27383pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val mul-ti-Poly-gonEx = new org.gdal.ogr.Geometry(org.gdal.ogr.o
 grConstants.wkbMultiPolygon) 
  []
 
 
-Overfull \hbox (10.91309pt too wide) in paragraph at lines 1429--1485
+Overfull \hbox (10.91309pt too wide) in paragraph at lines 1430--1486
 \T1/cmr/m/n/10 val mul-ti-Poly-Polys = Ar-ray(habitatPatch1, habi-tat-Patch2, h
 abi-tat-Patch3, stArea) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1429--1485
+Underfull \hbox (badness 10000) in paragraph at lines 1430--1486
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1429--1485
+Underfull \hbox (badness 10000) in paragraph at lines 1430--1486
 
  []
 
 [46] [47]
-Overfull \hbox (2.52104pt too wide) in paragraph at lines 1485--1485
+Overfull \hbox (2.52104pt too wide) in paragraph at lines 1486--1486
 []\T1/cmr/bx/n/14.4 Scala source file: cre-at-eVLayer.scala 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1487--1492
+Underfull \hbox (badness 10000) in paragraph at lines 1488--1493
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1487--1492
+Underfull \hbox (badness 10000) in paragraph at lines 1488--1493
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1487--1492
+Underfull \hbox (badness 10000) in paragraph at lines 1488--1493
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1493--1534
+Underfull \hbox (badness 10000) in paragraph at lines 1494--1535
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1493--1534
+Underfull \hbox (badness 10000) in paragraph at lines 1494--1535
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1493--1534
+Underfull \hbox (badness 10000) in paragraph at lines 1494--1535
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1493--1534
+Underfull \hbox (badness 10000) in paragraph at lines 1494--1535
 
  []
 
 
-Overfull \hbox (144.69986pt too wide) in paragraph at lines 1493--1534
+Overfull \hbox (144.69986pt too wide) in paragraph at lines 1494--1535
 \T1/cmr/m/n/10 val lyr = ds.CreateLayer("RoadsAndGPSTracks", googleMapSR, org.g
 dal.ogr.ogrConstants.wkbMultiLineString) 
  []
 
 
-Overfull \hbox (20.82733pt too wide) in paragraph at lines 1493--1534
+Overfull \hbox (20.82733pt too wide) in paragraph at lines 1494--1535
 \T1/cmr/m/n/10 val fd1 = new org.gdal.ogr.FieldDefn("Type", org.gdal.ogr.ogrCon
 stants.OFTString) 
  []
 
 
-Overfull \hbox (13.46802pt too wide) in paragraph at lines 1493--1534
+Overfull \hbox (13.46802pt too wide) in paragraph at lines 1494--1535
 \T1/cmr/m/n/10 val fd2 = new org.gdal.ogr.FieldDefn("ID", org.gdal.ogr.ogrConst
 ants.OFTInteger) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1493--1534
+Underfull \hbox (badness 10000) in paragraph at lines 1494--1535
 
  []
 
 [48]
-Underfull \hbox (badness 10000) in paragraph at lines 1535--1536
+Underfull \hbox (badness 10000) in paragraph at lines 1536--1537
 
  []
 
 
-Overfull \hbox (2.84117pt too wide) in paragraph at lines 1537--1537
+Overfull \hbox (2.84117pt too wide) in paragraph at lines 1538--1538
 []\T1/cmr/bx/n/14.4 Scala source file: us-ingLapack2.scala 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1539--1556
+Underfull \hbox (badness 10000) in paragraph at lines 1540--1557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1539--1556
+Underfull \hbox (badness 10000) in paragraph at lines 1540--1557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1539--1556
+Underfull \hbox (badness 10000) in paragraph at lines 1540--1557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1539--1556
+Underfull \hbox (badness 10000) in paragraph at lines 1540--1557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1539--1556
+Underfull \hbox (badness 10000) in paragraph at lines 1540--1557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1557--1576
+Underfull \hbox (badness 10000) in paragraph at lines 1558--1577
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1557--1576
+Underfull \hbox (badness 10000) in paragraph at lines 1558--1577
 
  []
 
 
-Overfull \hbox (6.1087pt too wide) in paragraph at lines 1557--1576
+Overfull \hbox (6.1087pt too wide) in paragraph at lines 1558--1577
 \T1/cmr/m/n/10 lapack.Dgesv.dgesv(noArows, nrhs, (ma-trixA.transpose).flatten, 
 aoff-set, lda, ipiv,
  []
 
 [49]
 
-! LaTeX Error: \begin{appendices} on input line 1225 ended by \end{document}.
+! LaTeX Error: \begin{appendices} on input line 1226 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1577 \end {document}
+l.1578 \end {document}
                       
 ? 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1577.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1578.
 [50]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1577.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1578.
  (./geospatial_scala.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1577.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1577.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1578.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1578.
 
 Package rerunfilecheck Info: File `geospatial_scala.out' has not changed.
 (rerunfilecheck)             Checksum: C50EE603744D60B780EB90D0B6127082;3338.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1577.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1578.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 1225 (\begingroup)
+### semi simple group (level 1) entered at line 1226 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6485 strings out of 493029
- 93088 string characters out of 6136234
- 195563 words of memory out of 5000000
- 9765 multiletter control sequences out of 15000+600000
+ 7027 strings out of 493029
+ 102526 string characters out of 6136234
+ 207766 words of memory out of 5000000
+ 10297 multiletter control sequences out of 15000+600000
  21821 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,14n,31p,897b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,17n,31p,897b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -1972,7 +2005,7 @@ m1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti
 1000.pfb>
-Output written on geospatial_scala.pdf (52 pages, 489300 bytes).
+Output written on geospatial_scala.pdf (52 pages, 489308 bytes).
 PDF statistics:
  875 PDF objects out of 1000 (max. 8388607)
  791 compressed objects within 8 object streams
