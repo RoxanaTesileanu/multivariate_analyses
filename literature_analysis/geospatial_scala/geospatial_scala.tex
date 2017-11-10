@@ -1059,7 +1059,7 @@ for (i<-result.\underline{\space}2) println(i)\\
 \\
 The scala source file for the above gdesv implementation is in Appendix E and on my GitHub profile under the multivariate\underline{\space}analyses repositry (the DeepLearning directory). So, what exactly does the above piece of code?
  In order to implement the dgesv subroutine, I've first imported the needed packages, then prepared the 11 arguments needed by the dgesv function. The dgesv function solves the linear system $A\textbf{x}=\textbf{b}$ using the LU decomposition of \textit{A}, i.e. using the relatioship: $LU=A$, where \textit{L} is a lower triangular matrix and \textit{U} is an upper triangular matrix. 
-Briefly, it takes the linear system $LUx=b$ and sets $Ux=y$ and $Ly=b$ \cite{dawkins_pauls_2005} \cite{golub_matrix_2013}.    
+Briefly, it takes the linear system $LUx=b$ and sets $Ux=y$ and $Ly=b$ \cite{dawkins_pauls_2005} \cite{golub_matrix_2013}. These two-steps procedure makes it easier to find the solution, as finding y from $Ly=b$ is easier because it is a lower triangular matrix, and then knowing y makes it easier to solve for x from $Ux=y$ also because it is easier to solve equations with triangular matrices than with general square matrices.    
 \subsection {Computing statistical matrices for multivariate analyses}
 
  
