@@ -54,7 +54,7 @@
 \contentsline {section}{\numberline {7}Conclusions}{39}{section.7}
 \contentsline {section}{Appendices}{42}{section*.24}
 \contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{42}{Appendix.a.A}
-\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{45}{Appendix.a.B}
-\contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{46}{Appendix.a.C}
+\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{46}{Appendix.a.B}
+\contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{47}{Appendix.a.C}
 \contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{48}{Appendix.a.D}
 \contentsline {section}{Appendix \numberline {E}Scala source file: usingLapack2.scala}{49}{Appendix.a.E}

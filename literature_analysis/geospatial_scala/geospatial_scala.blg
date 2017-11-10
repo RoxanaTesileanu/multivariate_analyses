@@ -8,11 +8,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: MyLibrary.bib
-I was expecting a `,' or a `}'---line 501 of file MyLibrary.bib
- : 
- : @misc{icl_javadoc_2017,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -21,45 +16,45 @@ Warning--missing publisher in hengl_practical_2009
 Warning--edition ordinal word "Revised" may be too high (or improper) for conversion in carroll_mathematical_1997
 
 Done.
-You've used 48 entries,
+You've used 50 entries,
             4087 wiz_defined-function locations,
-            1037 strings with 13208 characters,
-and the built_in function-call counts, 20451 in all, are:
-= -- 1480
-> -- 403
+            1044 strings with 13528 characters,
+and the built_in function-call counts, 21266 in all, are:
+= -- 1532
+> -- 428
 < -- 57
-+ -- 195
-- -- 84
-* -- 805
-:= -- 3346
-add.period$ -- 95
-call.type$ -- 48
-change.case$ -- 38
++ -- 207
+- -- 90
+* -- 838
+:= -- 3480
+add.period$ -- 99
+call.type$ -- 50
+change.case$ -- 40
 chr.to.int$ -- 141
-cite$ -- 51
-duplicate$ -- 1639
-empty$ -- 2124
-format.name$ -- 103
-if$ -- 4695
+cite$ -- 53
+duplicate$ -- 1706
+empty$ -- 2202
+format.name$ -- 110
+if$ -- 4874
 int.to.chr$ -- 0
-int.to.str$ -- 48
-missing$ -- 334
-newline$ -- 205
-num.names$ -- 47
-pop$ -- 1045
+int.to.str$ -- 50
+missing$ -- 352
+newline$ -- 215
+num.names$ -- 49
+pop$ -- 1106
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 6
-skip$ -- 1608
+skip$ -- 1664
 stack$ -- 0
-substring$ -- 297
-swap$ -- 956
+substring$ -- 299
+swap$ -- 993
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 48
+type$ -- 50
 warning$ -- 3
-while$ -- 65
-width$ -- 50
-write$ -- 419
-(There was 1 error message)
+while$ -- 67
+width$ -- 52
+write$ -- 437
+(There were 3 warnings)
