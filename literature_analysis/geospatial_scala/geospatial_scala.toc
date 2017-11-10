@@ -57,3 +57,4 @@
 \contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{44}{Appendix.a.B}
 \contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{45}{Appendix.a.C}
 \contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{46}{Appendix.a.D}
+\contentsline {section}{Appendix \numberline {E}Scala source file: usingLapack2.scala}{47}{Appendix.a.E}
