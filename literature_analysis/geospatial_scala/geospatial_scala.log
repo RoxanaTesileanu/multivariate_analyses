@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  10 NOV 2017 12:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  10 NOV 2017 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1309,90 +1309,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 963--994
  []
 
 [29] [30]
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1066
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1066
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1066
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1066
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1066
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1066
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1066
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1066
 
  []
 
 
-Overfull \hbox (25.68726pt too wide) in paragraph at lines 1003--1065
+Overfull \hbox (25.68726pt too wide) in paragraph at lines 1003--1066
 \T1/cmr/m/n/10 to the build.sbt file of the Scala project ("net.sourceforge.f2j
 " % "arpack$[]$combined$[]$all"
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1066
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1066
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1066
 
  []
 
 
-Overfull \hbox (7.85718pt too wide) in paragraph at lines 1003--1065
+Overfull \hbox (7.85718pt too wide) in paragraph at lines 1003--1066
 \T1/cmr/m/n/10 You can check the rou-tines pro-vided by LAPLACK us-ing the TAB-
 autocompletion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1066
 
  []
 
 
-Overfull \hbox (6.1087pt too wide) in paragraph at lines 1003--1065
+Overfull \hbox (6.1087pt too wide) in paragraph at lines 1003--1066
 \T1/cmr/m/n/10 lapack.Dgesv.dgesv(noArows, nrhs, (ma-trixA.transpose).flatten, 
 aoff-set, lda, ipiv,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1066
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1066
 
  []
 
@@ -1480,7 +1480,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1171--2
 
 
 Overfull \hbox (17.57813pt too wide) in paragraph at lines 1171--2
-\T1/cmr/m/n/10 The present doc-u-ment was edited us-ing La-tex [[]46[]] ([]http
+\T1/cmr/m/n/10 The present doc-u-ment was edited us-ing La-tex [[]48[]] ([]http
 s://www.latex-project.org/[]).
  []
 
@@ -1522,7 +1522,7 @@ _ of _ the _
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Deutch'. Using the pattern for
 ** the default language instead.
-)
+[40])
 Underfull \hbox (badness 10000) in paragraph at lines 1183--1336
 
  []
@@ -1617,7 +1617,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1183--1336
 
  []
 
-[40] [41] [42] [43]
+[41] [42] [43]
 Overfull \hbox (21.01993pt too wide) in paragraph at lines 1337--1337
 []\T1/cmr/bx/n/14.4 Scala source file: read-Point-Co-ord.scala 
  []
@@ -1805,7 +1805,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1442--1447
 
  []
 
-
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 1448--1489
 
  []
@@ -1848,7 +1848,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1448--1489
 
  []
 
-[46]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1490--1491
 
  []
@@ -1925,10 +1925,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1532.
 ### semi simple group (level 1) entered at line 1180 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6471 strings out of 493029
- 92835 string characters out of 6136234
- 195388 words of memory out of 5000000
- 9761 multiletter control sequences out of 15000+600000
+ 6475 strings out of 493029
+ 92921 string characters out of 6136234
+ 195470 words of memory out of 5000000
+ 9763 multiletter control sequences out of 15000+600000
  21821 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,9n,31p,897b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1950,10 +1950,10 @@ er/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></us
 r/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-supe
 r/sfti1000.pfb>
-Output written on geospatial_scala.pdf (50 pages, 469029 bytes).
+Output written on geospatial_scala.pdf (50 pages, 471650 bytes).
 PDF statistics:
- 836 PDF objects out of 1000 (max. 8388607)
- 755 compressed objects within 8 object streams
- 166 named destinations out of 1000 (max. 500000)
+ 842 PDF objects out of 1000 (max. 8388607)
+ 761 compressed objects within 8 object streams
+ 168 named destinations out of 1000 (max. 500000)
  326 words of extra memory for PDF output out of 10000 (max. 10000000)
 

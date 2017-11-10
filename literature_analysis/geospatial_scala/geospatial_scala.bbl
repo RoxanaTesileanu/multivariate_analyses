@@ -237,6 +237,16 @@ K.~Seymour, ``Lapack java api,'' 2017. [Online]. Available:
   \url{https://software.intel.com/sites/products/documentation/doclib/mkl_sa/11/mkl_lapack_examples/index.htm#dgesv_ex.c.htm}
 \BIBentrySTDinterwordspacing
 
+\bibitem{press_numerical_1992}
+{Press, W.H.}, {Teukolsky, S. A.}, {Vetterling, W. T.}, and {Flannery, B. P.},
+  \emph{Numerical {Recipes} in {Fortran} 77: {The} {Art} of {Scientific}
+  {Computing}}, 2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge
+  University Press, 1992, vol.~1.
+
+\bibitem{poole_rooks_2000}
+{Poole, G.} and {Neal, L.}, ``The {Rook}'s pivoting strategy,'' \emph{Journal
+  of Computational and Applied Mathematics}, vol. 123, pp. 353--369, 2000.
+
 \bibitem{trask_grokking_2017}
 A.~Trask, \emph{Grokking deep learning}.\hskip 1em plus 0.5em minus 0.4em\relax
   Shelter Island: Manning Publications Co., 2017.
