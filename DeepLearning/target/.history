@@ -1,3 +1,12 @@
+console
+reload
+console
+reload
+console
+reload
+console
+reload
+console
 reload
 console
 reload
@@ -488,13 +497,4 @@ cosnsole
 console
 reload
 console
-reload
-console
-reload
-console
-reload
-console
-run UsingLapack2.scala
-console
-reload
-console
+exit

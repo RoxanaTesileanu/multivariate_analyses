@@ -13,7 +13,7 @@ var ipivoffset = 0
 var b  : Array[Double] = Array(6, -7, 10)
 var boffset = 0
 val ldb= 3
-var info = new org.netlib.util.intW(2)
+var info = new org.netlib.util.intW(0)
 lapack.Dgesv.dgesv(noArows, nrhs, matrixA.flatten, aoffset, lda, ipiv, ipivoffset, b, boffset, ldb, info)
 val result = (b, ipiv)
 for (i<- result._1) println (i)
