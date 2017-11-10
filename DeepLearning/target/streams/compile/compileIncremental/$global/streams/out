@@ -17,13 +17,13 @@
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.11/classes...[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.15:component from component compiler for Scala 2.11.10[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.15:component from component compiler for Scala 2.11.10[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 1faa4517, interfacing (CompilerInterface) with Scala compiler version 2.11.10[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 4ca9e497, interfacing (CompilerInterface) with Scala compiler version 2.11.10[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/home/roxana/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.10.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/home/roxana/Private/multivariate_analyses/DeepLearning/target/scala-2.11/classes:/home/roxana/Private/multivariate_analyses/DeepLearning/lib/core-lapack-0.1.jar:/home/roxana/Private/multivariate_analyses/DeepLearning/lib/gdal-2.2.1.jar:/home/roxana/Private/multivariate_analyses/DeepLearning/lib/jeo-gdal-0.7.jar:/home/roxana/Private/multivariate_analyses/DeepLearning/lib/gt2-api-2.4.3.jar:/home/roxana/Private/multivariate_analyses/DeepLearning/lib/geoapi-2.0.jar:/home/roxana/Private/multivariate_analyses/DeepLearning/lib/arpack_combined_all-0.1.jar:/home/roxana/Private/multivariate_analyses/DeepLearning/lib/jsr108-0.01.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar:/lib/gdal-2.2.1.jar:/home/roxana/.ivy2/cache/org.scalafx/scalafx_2.11/jars/scalafx_2.11-8.0.92-R10.jar:/home/roxana/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.10.jar:/home/roxana/.ivy2/cache/org.scala-lang/scala-swing/jars/scala-swing-2.10.2.jar:/home/roxana/.ivy2/cache/com.github.rwl/core-lapack/jars/core-lapack-0.1.jar:/home/roxana/.ivy2/cache/com.github.fommil.netlib/core/jars/core-1.1.2.jar:/home/roxana/.ivy2/cache/net.sourceforge.f2j/arpack_combined_all/jars/arpack_combined_all-0.1.jar[0m
-[0m[[0mdebug[0m] [0mScala compilation took 3.536006914 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 0.769017302 s[0m
 [0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
 [0m[[0mdebug[0m] [0m[naha] 	Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m
