@@ -1061,7 +1061,7 @@ The scala source file for the above gdesv implementation is in Appendix E and on
  In order to implement the dgesv subroutine, I've first imported the needed packages, then prepared the 11 arguments needed by the dgesv function. The dgesv function solves the linear system $A\textbf{x}=\textbf{b}$ using the LU decomposition of \textit{A}, i.e. using the relatioship: $LU=A$, where \textit{L} is a lower triangular matrix and \textit{U} is an upper triangular matrix. 
 Briefly, it takes the linear system $LU\textbf{x}=\textbf{b}$ and sets $U\textbf{x}=\textbf{y}$ and $L\textbf{y}=\textbf{b}$ \cite{dawkins_pauls_2005} \cite{golub_matrix_2013}.
  This two-steps procedure makes it easier to find the solution, as finding \textbf{y} from $L\textbf{y}=\textbf{b}$ is easier because \textit{L} is a lower triangular matrix, and then knowing \textbf{y} makes it easier to solve for \textbf{x} from $U\textbf{x}=\textbf{y}$ also because it is easier to solve equations with triangular matrices than with general square matrices \cite{dawkins_pauls_2005} \cite{golub_matrix_2013}.
-The LU decomposition (also called LU factorization) is a high-level algebraic implementation of the Gaussian elimination procedure \cite{golub_matrix_2013}. 
+The LU decomposition (also called LU factorization) is a high-level algebraic implementation of the Gaussian elimination procedure, which improves the efficiency of matrix algorithms \cite{golub_matrix_2013}. 
  
     
 \subsection {Computing statistical matrices for multivariate analyses}
