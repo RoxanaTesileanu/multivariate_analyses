@@ -32,7 +32,7 @@
 \BOOKMARK [2][-]{subsection.6.1}{The learning pipeline for reducing error}{section.6}% 32
 \BOOKMARK [2][-]{subsection.6.2}{Dealing with local variation: the adaptive KNN}{section.6}% 33
 \BOOKMARK [1][-]{section.7}{Conclusions}{}% 34
-\BOOKMARK [1][-]{section*.24}{Appendices}{}% 35
+\BOOKMARK [1][-]{section*.26}{Appendices}{}% 35
 \BOOKMARK [1][-]{Appendix.a.A}{Appendix Point coordinates for code snippet 3}{}% 36
 \BOOKMARK [1][-]{Appendix.a.B}{Appendix Scala source file: readPointCoord.scala}{}% 37
 \BOOKMARK [1][-]{Appendix.a.C}{Appendix Scala source file: createGeoms.scala}{}% 38
