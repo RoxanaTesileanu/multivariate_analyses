@@ -30,6 +30,3 @@ for (i<- result._1) println (i)
 for (i<- result._2) println (i)
 }
 
-/*
-
-*/
