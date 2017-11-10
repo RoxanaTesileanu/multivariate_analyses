@@ -1081,7 +1081,7 @@ Now, back to the implementation code of the dgesv function. As previously mentio
 \item and the info argument which is an Int of type org.netlib.util.intW and which will be overritten with the output information message of dgesv, and should be 0 on success \cite{nag_ltd._nag_nodate}.
 \\
 \\
-Using the above code a linear system of type $Ax=b$ was solved using LAPACK dgesv, and, at the same time I've made use of Scala types and also the output was represented as a Scala type. This is an important aspect in further development steps.  
+Using the above code a linear system of type $Ax=b$ was solved using LAPACK dgesv, and, at the same time I've made use of Scala types and also the output was represented as a Scala type. This is an important aspect in further development steps of the statistical algorithms, as it doesn't "overload" the family of types used.  
  
 \end{itemize}    
     
