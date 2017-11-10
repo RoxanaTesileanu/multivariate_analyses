@@ -1,6 +1,11 @@
 /* 
+This source file represents an implementation example of the LAPACK subroutine dgesv in Scala.  
 @author: Roxana Tesileanu, INCDS BV, roxana.te@web.de
-
+References:
+K. Seymour - LAPACK F2J Javadoc
+M. Odersky - Programming in Scala
+M. Lewis - Introduction into Programming and Problem Solvin in Scala
+Nag Ltd. - NAG Fortran Library Document F07AAF (DGESV)
 */
 
 import org.netlib.lapack
