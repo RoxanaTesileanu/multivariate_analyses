@@ -1003,7 +1003,7 @@ I will also use the classification of Cressie (1993) \cite{cressie_statistics_19
 In order to start building the multivariate statistical models, a library is required which offers computing solutions for linear algebra problems like solving systems of simulataneous equations (for multiple linear regression models), and, QR or SVD decomposition of statistical matrices (for MANOVA). 
 In this work I use LAPACK (Linear Algebra Package) and ATLAS (Automatically Tuned Linear Algebra Software).
  The later provides the Fortran interface to the portably efficient BLAS (Basic Linear Algebra Subprograms) implementation \cite{sourceforge_atlas_2017} on which LAPACK is based \cite{icl_install_2007}.
- LAPACK and BLAS are provided by the University of Tennessee, Berkeley University of California and Denver University of Colorado \cite{icl_lapack_2017} \cite{icl_blas_2017}. 
+ LAPACK and BLAS are provided by the University of Tennessee, Berkeley University of California, Denver University of Colorado and Nag Ltd. \cite{icl_lapack_2017} \cite{icl_blas_2017}. 
 They are both written in Fortran and are freely-available software packages (see \href{http://www.netlib.org/lapack/}{http://www.netlib.org/lapack/}). 
 \\
 \\
@@ -1014,7 +1014,7 @@ On Ubuntu you can install ATLAS and LAPACK using the following commands \cite{ca
 \$ sudo apt-get install liblapack-dev liblapack-doc-man liblapack-doc liblapack-pic liblapack3 liblapack-test \\
 \\
 \\
-It might also be necessary to install the JLAPACK package and the Fortran-to-Java compiler in order to access the LAPACK routines. You can install it using:
+It might also be necessary to install the JLAPACK package and the Fortran-to-Java compiler in order to access the LAPACK routines. You can install it using \cite{canonical_libjlapack_nodate} \cite{canonical_f2j_nodate}:
 \\
 \\
 \$ sudo apt-get install libjlapack-java f2j\\
@@ -1036,6 +1036,29 @@ You could for example try out to solve the system of equations $A\textbf{x}=\tex
 \footnote{The solution to the system of equations $A\textbf{x}=\textbf{b}$ is found using the inverse of \textit{A}, i.e. \textit{A$^{-1}$}, as following: $\textbf{x}=\textit{A$^{-1}$}\textbf{b}$.
  This is why it is important to have an invertible matrix in order to be able to find a solution. The inverse of \textit{A} is found using the row reduction method from the relationship: $AI=A^{-1}I$ or using the determinant of A also by row reduction or using more complex methods.
  Or, the solution to $A\textbf{x}=\textbf{b}$ can be found through the LU decomposition of \textit{A}, but if \textit{A} is not invertible, then the U matrix is a zero matrix and the solution to the system of equations cannot be found \cite{icl_javadoc_2017} \cite{intel_mkl_2017}. A square matrix is invertible only if its determinant doesn't equal 0, so not all matrices are invertible (in this case they are called singular matrices). See \cite{dawkins_pauls_2005} for more details. In statistics it is important to have invertible matrices, i.e. for which the determinant is not 0 \cite{quinn_experimental_2002}.}:
+\\
+\\
+solve $A\textbf{x}=\textbf{b}$, where\\
+\begin{equation}
+A = 
+\left[
+\begin{matrix}
+3 & 1 & 0 \\
+-1 & 2 & 2 \\
+5 & 0 & -1
+\end{matrix}
+\right]
+\end{equation} 
+and 
+\begin{equation}
+b=
+\left[
+\begin{matrix}
+6\\
+-7\\
+10
+\end{matrix}
+\right]
 \\
 \\
 import org.netlib.lapack\\
