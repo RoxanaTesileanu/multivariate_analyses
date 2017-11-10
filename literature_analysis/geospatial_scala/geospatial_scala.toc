@@ -53,7 +53,7 @@
 \contentsline {subsection}{\numberline {6.2}Dealing with local variation: the adaptive KNN}{38}{subsection.6.2}
 \contentsline {section}{\numberline {7}Conclusions}{38}{section.7}
 \contentsline {section}{Appendices}{41}{section*.24}
-\contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{41}{Appendix.a.A}
+\contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{42}{Appendix.a.A}
 \contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{45}{Appendix.a.B}
 \contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{46}{Appendix.a.C}
 \contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{47}{Appendix.a.D}
