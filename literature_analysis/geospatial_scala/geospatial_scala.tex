@@ -1063,8 +1063,23 @@ Briefly, it takes the linear system $LU\textbf{x}=\textbf{b}$ and sets $U\textbf
  This two-steps procedure makes it easier to find the solution, as finding \textbf{y} from $L\textbf{y}=\textbf{b}$ is easier because \textit{L} is a lower triangular matrix, and then knowing \textbf{y} makes it easier to solve for \textbf{x} from $U\textbf{x}=\textbf{y}$ also because it is easier to solve equations with triangular matrices than with general square matrices \cite{dawkins_pauls_2005} \cite{golub_matrix_2013}.
 The LU decomposition (also called LU factorization) is a high-level algebraic implementation of the Gaussian elimination procedure, which improves the efficiency of matrix algorithms \cite{golub_matrix_2013}. Given the fact that LU decomposition works using permutations (i.e. operations meaned to implement the swapping of rows and columns of the \textit{A} matrix within the Gaussian elimination), the decomposition of \textit{A} can also be written as: $A= PLU$, where \textit{P} is the permutation matrix \cite{anderson_lapack_1999} \cite{golub_matrix_2013}. 
 There are several ways to obtain a permutation matrix \textit{P}: partial pivoting (used by dgesv \cite{anderson_lapack_1999}), complete pivoting, and Rook's pivoting \cite{golub_matrix_2013}, where pivoting means swapping rows and columns in order to get 0s under and above a leading 1 (\href{https://people.richland.edu/james/lecture/m116/matrices/pivot.html}{https://people.richland.edu/james/lecture/m116/matrices/pivot.html}).
- Partial pivoting involves swapping of rows, complete pivoting involves swapping rows and columns \cite{press_numerical_1992} and Rook's pivoting provides a more stable version of pivoting using a geometric analysis of Gaussian elimination \cite{poole_rooks_2000}. 
-    
+ Partial pivoting involves swapping of rows, complete pivoting involves swapping rows and columns \cite{press_numerical_1992} and Rook's pivoting provides a more stable version of pivoting using a geometric analysis of Gaussian elimination \cite{poole_rooks_2000}.
+\\
+\\
+Now, back to the implementation code of the dgesv function. As previously mentioned, this function takes 11 arguments: 
+\begin{itemize}
+\item 
+\item
+\item
+\item
+\item
+\item
+\item
+\item
+\item
+\item
+\item
+\end{itemize}    
     
 \subsection {Computing statistical matrices for multivariate analyses}
 
