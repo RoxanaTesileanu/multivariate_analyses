@@ -3,7 +3,7 @@
 \title {Geospatial analysis in Scala}
 \date {October 2017}
 
-\usepackage {amsmath}
+\usepackage {amsmath, amsfonts}
 \usepackage {mathtools}
 \usepackage {graphicx}
 \usepackage {verbatim}
@@ -13,6 +13,8 @@
 \usepackage [titletoc, toc, title] {appendix}
 \usepackage {hyperref}
 \usepackage [T1]{fontenc}
+\usepackage {halloweenmath}
+\usepackage {array}
 
 \author {Roxana Tesileanu \\
 \\
@@ -1061,7 +1063,9 @@ b=
 \end{matrix}
 \right]
 \end{align*}
-
+\\
+\\
+\paragraph{ Coding pitfall: $\mathwitch$} When using dgesv make sure to use the transposed version of the intended Arrays! A row vector is actually interpreted as a column vector and vice-versa. A 2D Array like \textit{A} is interpreted as \textit{A\textsuperscript{T}}. The bellow code will clarify how this can be overcome.     
 \paragraph{Code snippet 6: using LAPACK dgesv to solve linear equation systems}
 This code snippet implements the dgesv subroutine using \textit{A} and \textbf{b} from above:
 \\
