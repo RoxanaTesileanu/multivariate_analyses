@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  11 NOV 2017 09:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  11 NOV 2017 09:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1489,8 +1489,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1065--1068
 ! Argument of \@sect has an extra }.
 <inserted text> 
                 \par 
-l.1068 \paragraph{ Coding pitfall: $\mathwitch$} W
-                                                  hen using dgesv make sure ...
+l.1068 \paragraph{Coding pitfall: $\mathwitch$} W
+                                                 hen using dgesv make sure t...
 
 ? 
 Runaway argument?
@@ -1498,8 +1498,8 @@ Runaway argument?
 ! Paragraph ended before \@sect was complete.
 <to be read again> 
                    \par 
-l.1068 \paragraph{ Coding pitfall: $\mathwitch$} W
-                                                  hen using dgesv make sure ...
+l.1068 \paragraph{Coding pitfall: $\mathwitch$} W
+                                                 hen using dgesv make sure t...
 
 ? 
 
@@ -2089,7 +2089,7 @@ fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf
 /fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/
 cm-super/sfti0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pf
 b></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on geospatial_scala.pdf (52 pages, 504337 bytes).
+Output written on geospatial_scala.pdf (52 pages, 504347 bytes).
 PDF statistics:
  889 PDF objects out of 1000 (max. 8388607)
  802 compressed objects within 9 object streams
