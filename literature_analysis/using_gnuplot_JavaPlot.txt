@@ -25,4 +25,7 @@ scala> p.addPlot("sin(x)")
 
 scala> p.plot()
 
+AND THE PLOT APPEARED!
+_____________________________________________________
+
 
