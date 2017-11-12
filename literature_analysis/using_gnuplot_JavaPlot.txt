@@ -8,6 +8,10 @@ Add the following dependency to your build.sbt file:
 // https://mvnrepository.com/artifact/com.panayotis/javaplot
 libraryDependencies += "com.panayotis" % "javaplot" % "0.5.0"
 
+The first example bellow is from:
+https://stackoverflow.com/questions/9331548/javaplot-and-gnuplot
+and works perfectly. 
+ 
 _______________new REPL session ___________________
 
 scala> import com.panayotis.gnuplot.JavaPlot
