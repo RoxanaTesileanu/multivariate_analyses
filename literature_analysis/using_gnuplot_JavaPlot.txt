@@ -16,6 +16,9 @@ and from
 http://javaplot.panayotis.com/example.html
 
 and works perfectly!
+
+The javadoc is at:
+http://javaplot.panayotis.com/doc/index.html
  
 _______________new REPL session ___________________
 
