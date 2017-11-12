@@ -12,6 +12,9 @@ libraryDependencies ++= Seq(
 
 "com.github.rwl" % "core-lapack" % "0.1",
 
+"org.rogach" % "s4gnuplot" % "0.2.0",
+
+
 // https://mvnrepository.com/artifact/com.github.fommil.netlib/core
 "com.github.fommil.netlib" % "core" % "1.1.2",
 
@@ -71,6 +74,8 @@ libraryDependencies ++= Seq(
 resolvers += "osgeo" at "http://download.osgeo.org/webdav/geotools"
 resolvers += "boundless" at "http://repo.boundlessgeo.com/main"
 resolvers += "imageio" at "http://maven.geo-solutions.it"
+
+resolvers += "s4gnuplot gihub maven repo" at "https://github.com/Rogach/org.rogach/raw/master/"
 
 unmanagedJars in Compile += Attributed.blank(file("/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar"))
 
