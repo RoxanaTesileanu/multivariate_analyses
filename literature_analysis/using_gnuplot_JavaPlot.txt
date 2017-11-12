@@ -1,7 +1,14 @@
-Unsing 
+Using the Java wrapper of Gnuplot, JavaPlot, in Scala   
 Author: Roxana Tesileanu, INCDS BV, roxana.te@web.de
 
+JavaPlot is a pure Java programming interface library for GNUPlot.
 
+
+Add the following dependency to your build.sbt file:
+// https://mvnrepository.com/artifact/com.panayotis/javaplot
+libraryDependencies += "com.panayotis" % "javaplot" % "0.5.0"
+
+_______________new REPL session ___________________
 
 scala> import com.panayotis.gnuplot.JavaPlot
 import com.panayotis.gnuplot.JavaPlot
