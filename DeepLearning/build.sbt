@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
 "com.github.rwl" % "core-lapack" % "0.1",
 
 // https://mvnrepository.com/artifact/com.panayotis/javaplot
-libraryDependencies += "com.panayotis" % "javaplot" % "0.5.0"
+ "com.panayotis" % "javaplot" % "0.5.0",
 
 //"org.rogach" % "s4gnuplot" % "0.2.0",
 
