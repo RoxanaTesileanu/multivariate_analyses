@@ -1,0 +1,21 @@
+Unsing 
+Author: Roxana Tesileanu, INCDS BV, roxana.te@web.de
+
+
+
+scala> import com.panayotis.gnuplot.JavaPlot
+import com.panayotis.gnuplot.JavaPlot
+
+scala> val p = new JavaPlot()
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@36a47ce6
+
+scala> p.addPlot("sin(x)"))
+<console>:1: error: ';' expected but ')' found.
+p.addPlot("sin(x)"))
+                   ^
+
+scala> p.addPlot("sin(x)")
+
+scala> p.plot()
+
+
