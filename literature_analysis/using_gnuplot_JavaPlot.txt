@@ -115,11 +115,23 @@ OK.
 scala> import com.panayotis.gnuplot.dataset.FileDataSet
 import com.panayotis.gnuplot.dataset.FileDataSet
 
+scala> new FileDataSet(new java.io.File ("prices.dat"))
+java.lang.NumberFormatException: The point added with value "pqr" and index 1 is not valid with parser com.panayotis.gnuplot.dataset.parser.DoubleDataParser
+  at com.panayotis.gnuplot.dataset.GenericDataSet.checkData(GenericDataSet.java:123)
+  at com.panayotis.gnuplot.dataset.GenericDataSet.add(GenericDataSet.java:111)
+  at com.panayotis.gnuplot.dataset.FileDataSet.<init>(FileDataSet.java:59)
+  ... 42 elided
+
+
+
 scala> val ds = new FileDataSet(scala.io.Source.fromFile("prices.dat"))
 <console>:13: error: type mismatch;
  found   : scala.io.BufferedSource
  required: java.io.File
        val ds = new FileDataSet(scala.io.Source.fromFile("prices.dat"))
                                                         ^
+
+scala> new FileDataSet(new java.io.File ("prices"))
+res58: com.panayotis.gnuplot.dataset.FileDataSet = com.panayotis.gnuplot.dataset.FileDataSet@5ac9be17
 
 
