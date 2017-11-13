@@ -31,11 +31,6 @@ import com.panayotis.gnuplot.JavaPlot
 scala> val p = new JavaPlot()
 p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@36a47ce6
 
-scala> p.addPlot("sin(x)"))
-<console>:1: error: ';' expected but ')' found.
-p.addPlot("sin(x)"))
-                   ^
-
 scala> p.addPlot("sin(x)")
 
 scala> p.plot()
@@ -57,30 +52,6 @@ scala> p.plot()
 
 OK.
 -------------------------------------------------------------
-
-scala> val xs = Array(1,2,3,4,5,6)
-xs: Array[Int] = Array(1, 2, 3, 4, 5, 6)
-
-scala> val ys = xs.map(_ = 0.5)
-<console>:13: error: reassignment to val
-       val ys = xs.map(_ = 0.5)
-                         ^
-
-scala> val ys = xs.map(_ + 0.5)
-ys: Array[Double] = Array(1.5, 2.5, 3.5, 4.5, 5.5, 6.5)
-
-scala> p.addPlot("xs,ys, with points pt 7")
-
-scala> p.plot()
-
-scala> val p = new JavaPlot()
-p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@3bfc6bdc
-
-scala> p.addPlot("xs,ys, with points pt 7")
-
-scala> p.plot()
-
-------------------------------------------
 
 PLOTTING TWO FUNCTIONS:
 scala> val p = new JavaPlot()
@@ -118,31 +89,8 @@ OK.
 scala> import com.panayotis.gnuplot.dataset.FileDataSet
 import com.panayotis.gnuplot.dataset.FileDataSet
 
-scala> new FileDataSet(new java.io.File ("prices.dat"))
-java.lang.NumberFormatException: The point added with value "pqr" and index 1 is not valid with parser com.panayotis.gnuplot.dataset.parser.DoubleDataParser
-  at com.panayotis.gnuplot.dataset.GenericDataSet.checkData(GenericDataSet.java:123)
-  at com.panayotis.gnuplot.dataset.GenericDataSet.add(GenericDataSet.java:111)
-  at com.panayotis.gnuplot.dataset.FileDataSet.<init>(FileDataSet.java:59)
-  ... 42 elided
-
-
-
-scala> val ds = new FileDataSet(scala.io.Source.fromFile("prices.dat"))
-<console>:13: error: type mismatch;
- found   : scala.io.BufferedSource
- required: java.io.File
-       val ds = new FileDataSet(scala.io.Source.fromFile("prices.dat"))
-                                                        ^
-
 scala> new FileDataSet(new java.io.File ("prices"))
 res58: com.panayotis.gnuplot.dataset.FileDataSet = com.panayotis.gnuplot.dataset.FileDataSet@5ac9be17
-
-scala> val p = new JavaPlot()
-p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@119ffccd
-
-scala> p.addPlot("res58")
-
-scala> p.plot()
 
 scala> res58.
 add   getDimensions   getPointValue   size
@@ -296,21 +244,11 @@ a: Array[Array[Double]] = Array(Array(1.0, 1.5), Array(2.0, 2.2), Array(3.0, 3.0
 scala> val p = new JavaPlot()
 p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@2c3ef63a
 
-scala> val ds= new DataSetPlot(a)
-<console>:14: error: not found: type DataSetPlot
-       val ds= new DataSetPlot(a)
-                   ^
-
 scala> import com.panayotis.gnuplot.plot.DataSetPlot
 import com.panayotis.gnuplot.plot.DataSetPlot
 
 scala> val ds= new DataSetPlot(a)
 ds: com.panayotis.gnuplot.plot.DataSetPlot = {title="Datafile 31"}
-
-scala> p.addPlot(s)
-<console>:16: error: not found: value s
-       p.addPlot(s)
-                 ^
 
 scala> p.addPlot(ds)
 
@@ -347,11 +285,6 @@ import com.panayotis.gnuplot.plot.DataSetPlot
 
 scala> val ds = new DataSetPlot(data3)
 ds: com.panayotis.gnuplot.plot.DataSetPlot = {title="Datafile 32"}
-
-scala> p.addPlot(ds)
-<console>:15: error: not found: value p
-       p.addPlot(ds)
-       ^
 
 scala> val p = new JavaPlot
 p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@617e85d4
