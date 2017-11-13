@@ -374,19 +374,13 @@ OK.
 
 ------------------------------------------
 
+CHECKING THE STLE OPTIONS: 
+
 scala> import com.panayotis.gnuplot.style.PlotStyle
 import com.panayotis.gnuplot.style.PlotStyle
 
 scala> import com.panayotis.gnuplot.style.Style
 import com.panayotis.gnuplot.style.Style
-
-scala> val sty = ((AbstractPlot) p.getPlots().get(1)).getPlotStyle()
-<console>:1: error: ')' expected but '.' found.
-val sty = ((AbstractPlot) p.getPlots().get(1)).getPlotStyle()
-                           ^
-<console>:1: error: ';' expected but ')' found.
-val sty = ((AbstractPlot) p.getPlots().get(1)).getPlotStyle()
-                                             ^
 
 scala> p.
 addGraph         getLayout       getPreInit    set              setPersist    
@@ -410,12 +404,6 @@ java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
   at java.util.ArrayList.rangeCheck(ArrayList.java:657)
   at java.util.ArrayList.get(ArrayList.java:433)
   ... 42 elided
-
-scala> res35.get()
-<console>:17: error: not enough arguments for method get: (x$1: Int)com.panayotis.gnuplot.plot.Plot.
-Unspecified value parameter x$1.
-       res35.get()
-                ^
 
 scala> res35.
 add           forEach    lastIndexOf      removeIf     sort          
@@ -452,16 +440,6 @@ scala> val p = new JavaPlot
 p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@3d2dd901
 
 scala> p.addPlot(ds)
-
-scala> p.plot.getClass
-   override def getClass(): Class[Unit]
-
-scala> p.setParameters(sty)
-<console>:18: error: type mismatch;
- found   : com.panayotis.gnuplot.style.PlotStyle
- required: com.panayotis.gnuplot.GNUPlotParameters
-       p.setParameters(sty)
-                       ^
 
 scala> p.getLayout
 res47: com.panayotis.gnuplot.layout.GraphLayout = com.panayotis.gnuplot.layout.AutoGraphLayout@47a0975b
@@ -509,13 +487,6 @@ containsValue      hashCode       replace       setTitle
 scala> ds.getPlotStyle
 res73: com.panayotis.gnuplot.style.PlotStyle = {}
 
-scala> res73.setStyle(sty)
-<console>:19: error: type mismatch;
- found   : com.panayotis.gnuplot.style.PlotStyle
- required: com.panayotis.gnuplot.style.Style
-       res73.setStyle(sty)
-                      ^
-
 scala> res73.setStyle(Style.POINTS)
 
 scala> res73.setPointType(5)
@@ -537,30 +508,14 @@ scala> p.addPlot(ds)
 scala> val sty = ds.getPlotStyle
 sty: com.panayotis.gnuplot.style.PlotStyle = {pointtype=5, pointsize=3}
 
-scala> sty.setPointType(NamedPlotColor.GOLDERNROD)
-<console>:19: error: value GOLDERNROD is not a member of object com.panayotis.gnuplot.style.NamedPlotColor
-       sty.setPointType(NamedPlotColor.GOLDERNROD)
-                                       ^
-
-scala> sty.setPointType(NamedPlotColor.RED)
-<console>:19: error: type mismatch;
- found   : com.panayotis.gnuplot.style.NamedPlotColor(RED)
- required: Int
-       sty.setPointType(NamedPlotColor.RED)
-                                       ^
-
 scala> sty.setLineType(NamedPlotColor.BLUE)
-
-scala> p.addPlot
-<console>:19: error: ambiguous reference to overloaded definition,
-both method addPlot in class JavaPlot of type (x$1: com.panayotis.gnuplot.dataset.DataSet)Unit
-and  method addPlot in class JavaPlot of type (x$1: String)Unit
-match expected type ?
-       p.addPlot
-         ^
 
 scala> p.plot
 
+
 OK.
+
 ----------------------------------------
+
+
 
