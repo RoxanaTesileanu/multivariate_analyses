@@ -134,4 +134,50 @@ scala> val ds = new FileDataSet(scala.io.Source.fromFile("prices.dat"))
 scala> new FileDataSet(new java.io.File ("prices"))
 res58: com.panayotis.gnuplot.dataset.FileDataSet = com.panayotis.gnuplot.dataset.FileDataSet@5ac9be17
 
+scala> val p = new JavaPlot()
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@119ffccd
+
+scala> p.addPlot("res58")
+
+scala> p.plot()
+
+scala> res58.
+add   getDimensions   getPointValue   size
+
+scala> res58.size
+res64: Int = 21
+
+------------------------------------------
+
+scala> import com.panayotis.gnuplot.JavaPlot
+import com.panayotis.gnuplot.JavaPlot
+
+scala> import com.panayotis.gnuplot.dataset.FileDataSet
+import com.panayotis.gnuplot.dataset.FileDataSet
+
+scala> new FileDataSet(new java.io.File ("prices"))
+res0: com.panayotis.gnuplot.dataset.FileDataSet = com.panayotis.gnuplot.dataset.FileDataSet@de5360f
+
+scala> val p = new JavaPlot()
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@2ed9cead
+
+scala> p.addPlot("res0")
+
+scala> p.plot()
+
+scala> val p = new JavaPlot()
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@428747a1
+
+scala> p.addPlot("sin(x)")
+
+scala> p.plot()
+
+scala> val p = new JavaPlot()
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@57af9824
+
+scala> p.addPlot(res0)
+
+scala> p.plot()
+--------------------------------------------------
+
 
