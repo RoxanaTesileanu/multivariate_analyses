@@ -548,6 +548,8 @@ OK.
 
 --------------------------------------------
 
+TRYING TO SEE HOW THE LAYOUT WORKS:
+
 cala> val p = new JavaPlot
 p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@55928a2a
 
