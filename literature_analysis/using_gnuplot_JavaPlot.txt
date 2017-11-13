@@ -279,6 +279,38 @@ scala> val ds = new ArrayDataSet(a)
 
 ????
 ------------------------------------------
+USING AN ARRAY AS INPUT:
 
+scala> val a = Array(
+     | Array(1.0, 1.5),
+     | Array(2.0, 2.2),
+     | Array(3.0, 3.0)
+     | )
+a: Array[Array[Double]] = Array(Array(1.0, 1.5), Array(2.0, 2.2), Array(3.0, 3.0))
 
+scala> val p = new JavaPlot()
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@2c3ef63a
 
+scala> val ds= new DataSetPlot(a)
+<console>:14: error: not found: type DataSetPlot
+       val ds= new DataSetPlot(a)
+                   ^
+
+scala> import com.panayotis.gnuplot.plot.DataSetPlot
+import com.panayotis.gnuplot.plot.DataSetPlot
+
+scala> val ds= new DataSetPlot(a)
+ds: com.panayotis.gnuplot.plot.DataSetPlot = {title="Datafile 31"}
+
+scala> p.addPlot(s)
+<console>:16: error: not found: value s
+       p.addPlot(s)
+                 ^
+
+scala> p.addPlot(ds)
+
+scala> p.plot
+
+OK.
+
+---------------------------------------------
