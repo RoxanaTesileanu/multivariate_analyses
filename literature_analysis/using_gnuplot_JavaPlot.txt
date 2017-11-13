@@ -19,6 +19,9 @@ and works perfectly!
 
 The javadoc is at:
 http://javaplot.panayotis.com/doc/index.html
+
+I'll try to implement some examaples from P. K. Janert ("Gnuplot in Action - Understanding Data with Graphs", 2010, Manning). 
+
  
 _______________new REPL session ___________________
 
