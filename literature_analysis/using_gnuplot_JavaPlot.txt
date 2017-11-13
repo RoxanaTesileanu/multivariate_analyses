@@ -234,3 +234,51 @@ scala> p.plot()
 
 IT CREATES THE PLOT. I WOULD LIKE TO SELECT THE COLUMNS INSIDE THE DS. 
 
+
+------------------------------------------
+I WOULD ACTUALLY LIKE TO USE ARRAYS AS INPUT:
+
+scala> import com.panayotis.gnuplot.dataset.ArrayDataSet
+import com.panayotis.gnuplot.dataset.ArrayDataSet
+
+scala> import com.panayotis.gnuplot.JavaPlot
+import com.panayotis.gnuplot.JavaPlot
+
+scala> 
+
+scala> val a = Array(1,2,5,7,9)
+a: Array[Int] = Array(1, 2, 5, 7, 9)
+
+scala> val p = new JavaPlot
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@5744914d
+
+scala> val ds = new ArrayDataSet(a)
+<console>:14: error: overloaded method constructor ArrayDataSet with alternatives:
+  (x$1: Array[Array[String]])com.panayotis.gnuplot.dataset.ArrayDataSet <and>
+  (x$1: Array[Array[Long]])com.panayotis.gnuplot.dataset.ArrayDataSet <and>
+  (x$1: Array[Array[Int]])com.panayotis.gnuplot.dataset.ArrayDataSet <and>
+  (x$1: Array[Array[Float]])com.panayotis.gnuplot.dataset.ArrayDataSet <and>
+  (x$1: Array[Array[Double]])com.panayotis.gnuplot.dataset.ArrayDataSet
+ cannot be applied to (Array[Int])
+       val ds = new ArrayDataSet(a)
+                ^
+
+scala> val a: Array[Int] = Array(1,2,5,7,9)
+a: Array[Int] = Array(1, 2, 5, 7, 9)
+
+scala> val ds = new ArrayDataSet(a)
+<console>:14: error: overloaded method constructor ArrayDataSet with alternatives:
+  (x$1: Array[Array[String]])com.panayotis.gnuplot.dataset.ArrayDataSet <and>
+  (x$1: Array[Array[Long]])com.panayotis.gnuplot.dataset.ArrayDataSet <and>
+  (x$1: Array[Array[Int]])com.panayotis.gnuplot.dataset.ArrayDataSet <and>
+  (x$1: Array[Array[Float]])com.panayotis.gnuplot.dataset.ArrayDataSet <and>
+  (x$1: Array[Array[Double]])com.panayotis.gnuplot.dataset.ArrayDataSet
+ cannot be applied to (Array[Int])
+       val ds = new ArrayDataSet(a)
+                ^
+
+????
+------------------------------------------
+
+
+
