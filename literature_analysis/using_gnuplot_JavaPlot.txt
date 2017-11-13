@@ -518,4 +518,21 @@ OK.
 ----------------------------------------
 
 
+cala> p.addPlot(ds)
+
+scala> p.addPlot("x")
+
+scala> p.plot
+
+scala> val p = new JavaPlot
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@48c2d24e
+
+scala> p.addPlot(ds)
+
+scala> p.newGraph()
+
+scala> p.addPlot("sin(x)")
+
+scala> p.plot
+
 
