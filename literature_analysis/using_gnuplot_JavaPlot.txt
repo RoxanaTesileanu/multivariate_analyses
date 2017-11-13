@@ -539,10 +539,14 @@ scala> p.newGraph()
 
 scala> p.addPlot("sin(x)")
 
+
+scala> p.setMultiTitle("A multiplot example")
+
 scala> p.plot
 
 OK.
 
 --------------------------------------------
+
 
 
