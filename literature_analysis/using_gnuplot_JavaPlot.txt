@@ -548,5 +548,72 @@ OK.
 
 --------------------------------------------
 
+cala> val p = new JavaPlot
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@55928a2a
+
+scala> p.addPlot(ds)
+
+scala> p.newGraph()
+
+scala> p.addPlot("sin(x)")
+
+scala> val la = new StripeLayout()
+la: com.panayotis.gnuplot.layout.StripeLayout = com.panayotis.gnuplot.layout.StripeLayout@43c8324b
+
+scala> la.setColumns(100)
+
+scala> p.getPage().setLayout(la)
+
+scala> p.plot
+
+scala> val p = new JavaPlot
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@70ff336d
+
+scala> p.addPlot(ds)
+
+scala> p.newGraph()
+
+scala> p.addPlot("sin(x)")
+
+scala> la.setColumns(9999)
+
+scala> p.getPage().setLayout(la)
+
+scala> p.plot
+
+scala> val p = new JavaPlot
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@1812c324
+
+scala> p.set
+set              setKey          setParameters   setTerminal   
+setGNUPlotPath   setMultiTitle   setPersist      setTitle      
+
+scala> p.setKey()
+<console>:20: error: not enough arguments for method setKey: (x$1: com.panayotis.gnuplot.JavaPlot.Key)Unit.
+Unspecified value parameter x$1.
+       p.setKey()
+               ^
+
+scala> 
+
+scala> ds.
+appendProperties   entrySet       isEmpty       replaceAll           size       
+clear              equals         keySet        retrieveData         toString   
+clone              forEach        merge         retrieveDefinition   unset      
+compute            get            put           set                  values     
+computeIfAbsent    getDataSet     putAll        setDataSet                      
+computeIfPresent   getOrDefault   putIfAbsent   setPlotStyle                    
+containsKey        getPlotStyle   remove        setSmooth                       
+containsValue      hashCode       replace       setTitle                        
+
+scala> sty.
+appendProperties   containsValue   isEmpty       replace        setPointType   
+clear              entrySet        keySet        replaceAll     setStyle       
+clone              equals          merge         set            size           
+compute            forEach         put           setFill        toString       
+computeIfAbsent    get             putAll        setLineType    unset          
+computeIfPresent   getOrDefault    putIfAbsent   setLineWidth   values         
+containsKey        hashCode        remove        setPointSize                  
+
 
 
