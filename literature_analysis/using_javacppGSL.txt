@@ -1,0 +1,10 @@
+Using JavaCPP Presets for GSL
+Author: Roxana Tesileanu, INCDS BV, roxana.te@web.de
+
+Add the following to the build.sbt file:
+ "org.bytedeco.javacpp-presets" % "gsl" % "2.2.1-1.3"
+
+----------in REPL ----------------
+
+
+
