@@ -90,5 +90,21 @@ scala> p.plot()
 OK.
 
 ----------------------------------------------
+CHOSING THE RANGES FOR X-Y AXES:
+
+
+scala> val p = new JavaPlot()
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@49f75537
+
+scala> p.
+addGraph         getLayout       getPreInit    set              setPersist    
+addPlot          getPage         getTerminal   setGNUPlotPath   setTerminal   
+getAxis          getParameters   newGraph      setKey           setTitle      
+getCommands      getPlots        newGraph3D    setMultiTitle                  
+getGNUPlotPath   getPostInit     plot          setParameters                  
+
+scala> p.addPlot("[] [-2:2] sin(x), x")
+
+scala> p.plot()
 
 
