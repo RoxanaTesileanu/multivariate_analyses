@@ -319,6 +319,7 @@ scala> p.plot
 OK.
 
 ---------------------------------------------
+READ DATA FROM FILE, THEN USE IT IN FORM OF ARRAYS AS INPUT FOR THE JAVAPLOT:
 
 scala> val src = scala.io.Source.fromFile("prices")
 src: scala.io.BufferedSource = non-empty iterator
@@ -355,4 +356,6 @@ scala> p.addPlot(ds)
 
 scala> p.plot()
 
+OK.
 
+-----------------------------------
