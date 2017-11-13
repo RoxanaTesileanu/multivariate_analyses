@@ -374,7 +374,7 @@ OK.
 
 ------------------------------------------
 
-CHECKING THE STLE OPTIONS: 
+CHECKING THE STYLE OPTIONS: 
 
 scala> import com.panayotis.gnuplot.style.PlotStyle
 import com.panayotis.gnuplot.style.PlotStyle
@@ -516,13 +516,19 @@ scala> p.plot
 OK.
 
 ----------------------------------------
+MORE DATASETS IN ONE PLOT:
 
-
-cala> p.addPlot(ds)
+scala> p.addPlot(ds)
 
 scala> p.addPlot("x")
 
 scala> p.plot
+
+OK.
+
+-----------------------------------------
+
+A MULTIPLOT:
 
 scala> val p = new JavaPlot
 p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@48c2d24e
@@ -534,5 +540,9 @@ scala> p.newGraph()
 scala> p.addPlot("sin(x)")
 
 scala> p.plot
+
+OK.
+
+--------------------------------------------
 
 
