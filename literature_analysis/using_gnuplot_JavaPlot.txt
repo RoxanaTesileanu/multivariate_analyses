@@ -148,6 +148,8 @@ scala> res58.size
 res64: Int = 21
 
 ------------------------------------------
+PLOTTTING WITH DATA FROM FILE:
+
 
 scala> import com.panayotis.gnuplot.JavaPlot
 import com.panayotis.gnuplot.JavaPlot
@@ -161,23 +163,11 @@ res0: com.panayotis.gnuplot.dataset.FileDataSet = com.panayotis.gnuplot.dataset.
 scala> val p = new JavaPlot()
 p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@2ed9cead
 
-scala> p.addPlot("res0")
-
-scala> p.plot()
-
-scala> val p = new JavaPlot()
-p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@428747a1
-
-scala> p.addPlot("sin(x)")
-
-scala> p.plot()
-
-scala> val p = new JavaPlot()
-p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@57af9824
-
 scala> p.addPlot(res0)
 
 scala> p.plot()
+
+OK.
 --------------------------------------------------
 
 
