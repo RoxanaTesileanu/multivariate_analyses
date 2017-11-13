@@ -334,4 +334,21 @@ OK. (only that the name of the Datafile is on the plot too)
 
 ----------------------------------------------
 
+cala> val p = new JavaPlot
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@3daa93de
+
+scala> p.addPlot(ds)
+
+scala> p.setTitle("Prices")
+
+scala> p.getAxis("x").setLable("Year")
+<console>:15: error: value setLable is not a member of com.panayotis.gnuplot.plot.Axis
+       p.getAxis("x").setLable("Year")
+                      ^
+
+scala> p.getAxis("x").setLabel("Year")
+
+scala> p.getAxis("y").setLabel("Price")
+
+scala> p.plot
 
