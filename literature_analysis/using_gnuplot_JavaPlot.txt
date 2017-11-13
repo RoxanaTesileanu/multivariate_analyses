@@ -312,7 +312,26 @@ scala> p.plot()
 OK.
 
 ----------------------------------------
+SETTING A TITLE AND AN X-LABEL:
 
+scala> val p = new JavaPlot
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@2c367bf3
 
+scala> p.addPlot(ds)
+
+scala> p.setTitle("Prices")
+
+scala> p.getAxix("x").setLabel("Year", "Arial", 20)
+<console>:15: error: value getAxix is not a member of com.panayotis.gnuplot.JavaPlot
+       p.getAxix("x").setLabel("Year", "Arial", 20)
+         ^
+
+scala> p.getAxis("x").setLabel("Year", "Arial", 20)
+
+scala> p.plot
+
+OK. (only that the name of the Datafile is on the plot too)
+
+----------------------------------------------
 
 
