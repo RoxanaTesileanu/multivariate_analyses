@@ -103,8 +103,13 @@ getAxis          getParameters   newGraph      setKey           setTitle
 getCommands      getPlots        newGraph3D    setMultiTitle                  
 getGNUPlotPath   getPostInit     plot          setParameters                  
 
-scala> p.addPlot("[] [-2:2] sin(x), x")
+scala> p.addPlot("[] [-2:2] sin(x), x")	
+
+THE FIRST PAIR OF SQUARE BRACKETS IS FOR THE X RANGE AND THE SECOND FOR THE Y RANGE! 
 
 scala> p.plot()
+
+OK.
+----------------------------------------------------------
 
 
