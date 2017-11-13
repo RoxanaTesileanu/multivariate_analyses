@@ -524,6 +524,7 @@ scala> res73.setPointSize(9)
 
 scala> p.plot
 
-
+OK. ON THE DS VAL YOU CAN SET THE STYLE. 
+-----------------------------------------------------------
 
 
