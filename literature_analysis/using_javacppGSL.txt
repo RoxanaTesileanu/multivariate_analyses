@@ -4320,3 +4320,15 @@ gsl_wavelet_workspace
 gsl_wavelet_workspace_alloc                             
 gsl_wavelet_workspace_free                              
 
+scala> val y = gsl_sf_bessel_J0(x)
+java.lang.UnsatisfiedLinkError: no jnigsl in java.library.path
+  at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1867)
+  at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+  at java.lang.System.loadLibrary(System.java:1122)
+  at org.bytedeco.javacpp.Loader.loadLibrary(Loader.java:804)
+  at org.bytedeco.javacpp.Loader.load(Loader.java:613)
+  at org.bytedeco.javacpp.Loader.load(Loader.java:530)
+  at org.bytedeco.javacpp.gsl.<clinit>(gsl.java:10)
+  ... 42 elided
+
+
