@@ -496,6 +496,34 @@ quit
 cala> sty
 res49: com.panayotis.gnuplot.style.PlotStyle = {pointtype=5, pointsize=8}
 
+cala> ds.
+appendProperties   entrySet       isEmpty       replaceAll           size       
+clear              equals         keySet        retrieveData         toString   
+clone              forEach        merge         retrieveDefinition   unset      
+compute            get            put           set                  values     
+computeIfAbsent    getDataSet     putAll        setDataSet                      
+computeIfPresent   getOrDefault   putIfAbsent   setPlotStyle                    
+containsKey        getPlotStyle   remove        setSmooth                       
+containsValue      hashCode       replace       setTitle                        
+
+scala> ds.getPlotStyle
+res73: com.panayotis.gnuplot.style.PlotStyle = {}
+
+scala> res73.setStyle(sty)
+<console>:19: error: type mismatch;
+ found   : com.panayotis.gnuplot.style.PlotStyle
+ required: com.panayotis.gnuplot.style.Style
+       res73.setStyle(sty)
+                      ^
+
+scala> res73.setStyle(Style.POINTS)
+
+scala> res73.setPointType(5)
+
+scala> res73.setPointSize(9)
+
+scala> p.plot
+
 
 
 
