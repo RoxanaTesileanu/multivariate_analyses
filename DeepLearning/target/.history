@@ -1,9 +1,3 @@
-console
-reload
-console
-:q
-exit
-quit
 exit
 console
 reload
@@ -497,4 +491,10 @@ console
 reload
 console
 exit
+console
+reload
+console
+reload
+console
+reload
 console

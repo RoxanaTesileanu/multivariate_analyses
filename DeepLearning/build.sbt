@@ -2,14 +2,15 @@ name := "DeepLearning"
 scalaVersion := "2.11.10"
 fork in run := true
 
-
+//addSbtPlugin("org.bytedeco" % "sbt-javacpp" % "1.11")
 
 //scalaVersion := "2.10.1"
 libraryDependencies ++= Seq(
 "org.scalafx" %% "scalafx" % "8.0.92-R10",
  "org.scala-lang" % "scala-swing" % "2.10.2",
 
-
+// https://mvnrepository.com/artifact/org.bytedeco.javacpp-presets/gsl
+ "org.bytedeco.javacpp-presets" % "gsl" % "2.2.1-1.3",
 "com.github.rwl" % "core-lapack" % "0.1",
 
 // https://mvnrepository.com/artifact/com.panayotis/javaplot
