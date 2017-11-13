@@ -279,6 +279,11 @@ scala> val ds = new ArrayDataSet(a)
 
 ????
 ------------------------------------------
+FROM: 
+
+https://sourceforge.net/p/gnujavaplot/hg/ci/6d7d4b4b303db3cad8d6596eef6274c1bda7ef5d/tree/demo/src/demo.java
+
+
 USING AN ARRAY AS INPUT:
 
 scala> val a = Array(
