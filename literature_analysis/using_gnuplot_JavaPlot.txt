@@ -40,6 +40,8 @@ scala> p.plot()
 AND THE PLOT APPEARED!
 _____________________________________________________
 
+PLOTTING ONE FUNCTION:
+
 scala> import com.panayotis.gnuplot.JavaPlot
 import com.panayotis.gnuplot.JavaPlot
 
@@ -50,6 +52,7 @@ scala> p.addPlot("besj0(x)")
 
 scala> p.plot()
 
+OK.
 -------------------------------------------------------------
 
 scala> val xs = Array(1,2,3,4,5,6)
@@ -76,11 +79,16 @@ scala> p.plot()
 
 ------------------------------------------
 
+PLOTTING TWO FUNCTIONS:
 scala> val p = new JavaPlot()
 p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@7b769db4
 
 scala> p.addPlot("sin(x), x")
 
 scala> p.plot()
+
+OK.
+
+----------------------------------------------
 
 
