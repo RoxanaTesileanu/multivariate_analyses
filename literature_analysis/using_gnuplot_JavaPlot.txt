@@ -297,7 +297,9 @@ OK.
 
 -----------------------------------
 
-cala> import com.panayotis.gnuplot.JavaPlot
+A 3D PLOT:
+
+scala> import com.panayotis.gnuplot.JavaPlot
 import com.panayotis.gnuplot.JavaPlot
 
 scala> val p = new JavaPlot(true)
@@ -306,6 +308,11 @@ p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@77c9c93f
 scala> p.addPlot("sin(x)*y")
 
 scala> p.plot()
+
+OK.
+
+----------------------------------------
+
 
 
 
