@@ -374,6 +374,59 @@ OK.
 
 ------------------------------------------
 
+scala> import com.panayotis.gnuplot.style.PlotStyle
+import com.panayotis.gnuplot.style.PlotStyle
+
+scala> import com.panayotis.gnuplot.style.Style
+import com.panayotis.gnuplot.style.Style
+
+scala> val sty = ((AbstractPlot) p.getPlots().get(1)).getPlotStyle()
+<console>:1: error: ')' expected but '.' found.
+val sty = ((AbstractPlot) p.getPlots().get(1)).getPlotStyle()
+                           ^
+<console>:1: error: ';' expected but ')' found.
+val sty = ((AbstractPlot) p.getPlots().get(1)).getPlotStyle()
+                                             ^
+
+scala> p.
+addGraph         getLayout       getPreInit    set              setPersist    
+addPlot          getPage         getTerminal   setGNUPlotPath   setTerminal   
+getAxis          getParameters   newGraph      setKey           setTitle      
+getCommands      getPlots        newGraph3D    setMultiTitle                  
+getGNUPlotPath   getPostInit     plot          setParameters                  
+
+scala> p.getPlots
+res35: java.util.List[com.panayotis.gnuplot.plot.Plot] = [{title="Datafile 36"}]
+
+scala> res35.
+add           forEach    lastIndexOf      removeIf     sort          
+addAll        get        listIterator     replaceAll   spliterator   
+clear         indexOf    parallelStream   retainAll    stream        
+contains      isEmpty    remove           set          subList       
+containsAll   iterator   removeAll        size         toArray       
+
+scala> res35.get(1)
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+  at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+  at java.util.ArrayList.get(ArrayList.java:433)
+  ... 42 elided
+
+scala> res35.get()
+<console>:17: error: not enough arguments for method get: (x$1: Int)com.panayotis.gnuplot.plot.Plot.
+Unspecified value parameter x$1.
+       res35.get()
+                ^
+
+scala> res35.
+add           forEach    lastIndexOf      removeIf     sort          
+addAll        get        listIterator     replaceAll   spliterator   
+clear         indexOf    parallelStream   retainAll    stream        
+contains      isEmpty    remove           set          subList       
+containsAll   iterator   removeAll        size         toArray       
+
+scala> res35.get(0)
+res38: com.panayotis.gnuplot.plot.Plot = {title="Datafile 36"}
+
 
 
 
