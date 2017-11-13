@@ -40,4 +40,47 @@ scala> p.plot()
 AND THE PLOT APPEARED!
 _____________________________________________________
 
+scala> import com.panayotis.gnuplot.JavaPlot
+import com.panayotis.gnuplot.JavaPlot
+
+scala> val p = new JavaPlot()
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@66263ce0
+
+scala> p.addPlot("besj0(x)")
+
+scala> p.plot()
+
+-------------------------------------------------------------
+
+scala> val xs = Array(1,2,3,4,5,6)
+xs: Array[Int] = Array(1, 2, 3, 4, 5, 6)
+
+scala> val ys = xs.map(_ = 0.5)
+<console>:13: error: reassignment to val
+       val ys = xs.map(_ = 0.5)
+                         ^
+
+scala> val ys = xs.map(_ + 0.5)
+ys: Array[Double] = Array(1.5, 2.5, 3.5, 4.5, 5.5, 6.5)
+
+scala> p.addPlot("xs,ys, with points pt 7")
+
+scala> p.plot()
+
+scala> val p = new JavaPlot()
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@3bfc6bdc
+
+scala> p.addPlot("xs,ys, with points pt 7")
+
+scala> p.plot()
+
+------------------------------------------
+
+scala> val p = new JavaPlot()
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@7b769db4
+
+scala> p.addPlot("sin(x), x")
+
+scala> p.plot()
+
 
