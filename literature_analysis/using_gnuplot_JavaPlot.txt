@@ -173,4 +173,22 @@ scala> p.plot()
 OK.
 --------------------------------------------------
 
+cala> val p = new JavaPlot()
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@28a92f9e
+
+scala> p.addPlot(res0+"using 1:2")
+
+scala> p.plot()
+
+scala> import com.panayotis.gnuplot.plot.DataSetPlot
+import com.panayotis.gnuplot.plot.DataSetPlot
+
+scala> DataSetPlot(res0)
+<console>:16: error: object com.panayotis.gnuplot.plot.DataSetPlot is not a value
+       DataSetPlot(res0)
+       ^
+
+scala> new DataSetPlot(res0)
+res33: com.panayotis.gnuplot.plot.DataSetPlot = {title="Datafile 15"}
+
 
