@@ -527,4 +527,40 @@ scala> p.plot
 OK. ON THE DS VAL YOU CAN SET THE STYLE. 
 -----------------------------------------------------------
 
+CHANGING STYLE: COLOR, POINT TYPE, POINT SIZE
+
+scala> val p = new JavaPlot
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@17df33a9
+
+scala> p.addPlot(ds)
+
+scala> val sty = ds.getPlotStyle
+sty: com.panayotis.gnuplot.style.PlotStyle = {pointtype=5, pointsize=3}
+
+scala> sty.setPointType(NamedPlotColor.GOLDERNROD)
+<console>:19: error: value GOLDERNROD is not a member of object com.panayotis.gnuplot.style.NamedPlotColor
+       sty.setPointType(NamedPlotColor.GOLDERNROD)
+                                       ^
+
+scala> sty.setPointType(NamedPlotColor.RED)
+<console>:19: error: type mismatch;
+ found   : com.panayotis.gnuplot.style.NamedPlotColor(RED)
+ required: Int
+       sty.setPointType(NamedPlotColor.RED)
+                                       ^
+
+scala> sty.setLineType(NamedPlotColor.BLUE)
+
+scala> p.addPlot
+<console>:19: error: ambiguous reference to overloaded definition,
+both method addPlot in class JavaPlot of type (x$1: com.panayotis.gnuplot.dataset.DataSet)Unit
+and  method addPlot in class JavaPlot of type (x$1: String)Unit
+match expected type ?
+       p.addPlot
+         ^
+
+scala> p.plot
+
+OK.
+----------------------------------------
 
