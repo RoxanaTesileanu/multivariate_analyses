@@ -188,7 +188,49 @@ scala> DataSetPlot(res0)
        DataSetPlot(res0)
        ^
 
+
+scala> import com.panayotis.gnuplot.plot.DataSetPlot
+import com.panayotis.gnuplot.plot.DataSetPlot
+
 scala> new DataSetPlot(res0)
 res33: com.panayotis.gnuplot.plot.DataSetPlot = {title="Datafile 15"}
 
+cala> val d = new DataSetPlot()
+d: com.panayotis.gnuplot.plot.DataSetPlot = {title="Datafile 19"}
+
+scala> d.
+appendProperties   equals         merge                set            
+clear              forEach        put                  setDataSet     
+clone              get            putAll               setPlotStyle   
+compute            getDataSet     putIfAbsent          setSmooth      
+computeIfAbsent    getOrDefault   remove               setTitle       
+computeIfPresent   getPlotStyle   replace              size           
+containsKey        hashCode       replaceAll           toString       
+containsValue      isEmpty        retrieveData         unset          
+entrySet           keySet         retrieveDefinition   values         
+
+scala> d.setDataSet(res0)
+
+scala> d.
+appendProperties   equals         merge                set            
+clear              forEach        put                  setDataSet     
+clone              get            putAll               setPlotStyle   
+compute            getDataSet     putIfAbsent          setSmooth      
+computeIfAbsent    getOrDefault   remove               setTitle       
+computeIfPresent   getPlotStyle   replace              size           
+containsKey        hashCode       replaceAll           toString       
+containsValue      isEmpty        retrieveData         unset          
+entrySet           keySet         retrieveDefinition   values         
+
+scala> val p = new JavaPlot()
+p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@26ac0346
+
+scala> p.add
+addGraph   addPlot
+
+scala> p.addPlot(d)
+
+scala> p.plot()
+
+IT CREATES THE PLOT. I WOULD LIKE TO SELECT THE COLUMNS INSIDE THE DS. 
 
