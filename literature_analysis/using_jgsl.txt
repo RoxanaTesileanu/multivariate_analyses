@@ -6,6 +6,16 @@ http://jgsl.sourceforge.net/
 The JGSL is a collection of Java classes that wrap around the GNU Scientific Library.
 
 Add the jgsl.jar to the lib directory of the Scala project.
-Install gsl on Ubuntu with $sudo apt get install gsl-bin libsl-dbg libgsl0dbl-dev libgsl0dbl (https://askubuntu.com/questions/490465/install-gnu-scientific-library-gsl-on-ubuntu-14-04-via-terminal)
+Install gsl on Ubuntu with $sudo apt get install gsl-bin libsl-dbg libgsl-dev (https://askubuntu.com/questions/490465/install-gnu-scientific-library-gsl-on-ubuntu-14-04-via-terminal)
+
+----------------new REPL session -----------------------
+
+scala> import ch.visnet.jgsl
+import ch.visnet.jgsl
+
+scala> jgsl.
+class-use   sf
+
+
 
   
