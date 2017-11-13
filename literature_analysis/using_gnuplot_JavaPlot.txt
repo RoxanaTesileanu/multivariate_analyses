@@ -319,3 +319,12 @@ scala> p.plot
 OK.
 
 ---------------------------------------------
+
+scala> val src = scala.io.Source.fromFile("prices")
+src: scala.io.BufferedSource = non-empty iterator
+
+scala> val data = src.getLines.map(_.split(" ")).toArray
+data: Array[Array[String]] = Array(Array(1975, 49, 162), Array(1976, 52, 144), Array(1977, 67, 140), Array(1978, 53, 122), Array(1979, 67, 125), Array(1980, 46, 117), Array(1981, 60, 116), Array(1982, 50, 113), Array(1983, 66, 96), Array(1984, 70, 101), Array(1985, 91, 93), Array(1986, 133, 92), Array(1987, 127, 95), Array(1988, 136, 79), Array(1989, 154, 78), Array(1990, 127, 85), Array(1991, 147, 71), Array(1992, 146, 54), Array(1993, 133, 51), Array(1994, 144, 49), Array(1995, 158, 43))
+
+scala> src.close()
+
