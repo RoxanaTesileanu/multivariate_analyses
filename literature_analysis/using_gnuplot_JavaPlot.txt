@@ -493,6 +493,9 @@ res48: String =
 e
 quit
 "
+cala> sty
+res49: com.panayotis.gnuplot.style.PlotStyle = {pointtype=5, pointsize=8}
+
 
 
 
