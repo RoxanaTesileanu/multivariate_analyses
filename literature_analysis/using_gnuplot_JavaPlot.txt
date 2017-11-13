@@ -357,7 +357,7 @@ scala> p.plot
 OK.
 
 ---------------------------------------
-
+SETTING X- AND Y- RANGES (BOUNDARIES):
 
 scala> val p = new JavaPlot
 p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@770960d9
@@ -369,5 +369,11 @@ scala> p.getAxis("y").setBoundaries(80, 100)
 scala> p.addPlot(ds)
 
 scala> p.plot
+
+OK.
+
+------------------------------------------
+
+
 
 
