@@ -333,8 +333,9 @@ scala> p.plot
 OK. (only that the name of the Datafile is on the plot too)
 
 ----------------------------------------------
+SETTING THE X- AND Y-LABELS AND THE TITLE:
 
-cala> val p = new JavaPlot
+scala> val p = new JavaPlot
 p: com.panayotis.gnuplot.JavaPlot = com.panayotis.gnuplot.JavaPlot@3daa93de
 
 scala> p.addPlot(ds)
@@ -351,4 +352,10 @@ scala> p.getAxis("x").setLabel("Year")
 scala> p.getAxis("y").setLabel("Price")
 
 scala> p.plot
+
+
+OK.
+
+---------------------------------------
+
 
