@@ -427,6 +427,9 @@ containsAll   iterator   removeAll        size         toArray
 scala> res35.get(0)
 res38: com.panayotis.gnuplot.plot.Plot = {title="Datafile 36"}
 
+cala> val sty = new PlotStyle
+sty: com.panayotis.gnuplot.style.PlotStyle = {}
+
 
 
 
