@@ -11,8 +11,14 @@ libraryDependencies ++= Seq(
 
 // https://mvnrepository.com/artifact/org.bytedeco.javacpp-presets/gsl
 
+"org.bytedeco" % "javacpp" % "1.3.3",
+
+"org.bytedeco" % "javacpp-presets" % "1.3" pomOnly(),
+"org.bytedeco" % "javacpp-presets-platform" % "1.3" pomOnly(),
+"org.bytedeco.javacpp-presets" % "gsl-platform" % "2.2.1-1.3",
+
  //"org.bytedeco" % "sbt-javacpp" % "1.3.3", 
-//"org.bytedeco.javacpp-presets" % "gsl" % "2.2.1-1.3",
+//"org.bytedeco.javacpp-presets" % "gsl-platform" % "2.4-1.3.4-SNAPSHOT",
 //"com.github.rwl" % "core-lapack" % "0.1",
 
 // https://mvnrepository.com/artifact/com.panayotis/javaplot
@@ -22,7 +28,7 @@ libraryDependencies ++= Seq(
 
 
 // https://mvnrepository.com/artifact/com.github.fommil.netlib/core
-//"com.github.fommil.netlib" % "core" % "1.1.2",
+"com.github.fommil.netlib" % "core" % "1.1.2",
 
 //"org.apache.spark" % "spark-core_2.11" % "2.1.1" % "provided",
 //"org.apache.spark" % "spark-mllib_2.11" % "2.1.1" % "provided",
@@ -77,7 +83,7 @@ libraryDependencies ++= Seq(
 
 )
 
-javaCppPresetLibs ++= Seq("gsl" -> "2.2.1-1.3")
+//javaCppPresetLibs ++= Seq("gsl" -> "2.4-1.3.4-SNAPSHOT")
 
 resolvers += "osgeo" at "http://download.osgeo.org/webdav/geotools"
 resolvers += "boundless" at "http://repo.boundlessgeo.com/main"
