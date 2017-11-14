@@ -1138,12 +1138,18 @@ Approaches of supervised learning to solve prediction tasks can be classified ac
 The individual entries $a_{ij}$ of the data matrix \textit{A}, contain the values of the recorded variables.
  These values may represent continuous, discrete or categorical variables \cite{carroll_mathematical_1997}.
  If there is one response variable and more predictor variables, we could use multiple linear regression (if the response variable as well as the predictor variables are continuous) or multifactor ANOVA (if the response variable is continuous and the predictor variables are categorical).
- If we have more than one response variables, we have composites of response variables, and according to their type we could use multifactor MANOVA (if there are more continuous response variables and more categorical predictor variables) or PCA which reduces the number of continuous variables to a smaller number of newly derived variables called "components" \cite{carroll_mathematical_1997} \cite{quinn_experimental_2002}. 
-Furthermore, if we analyse the dataset by columns, we chose a variable-based approach (R-mode analyses), and, if we chose to analyse it by rows, we chose an object-based approach (Q-mode analyses) \cite{quinn_experimental_2002}.    
+ If we have more than one response variables, we have composites of response variables, and according to their type we could use multifactor MANOVA (if there are more continuous response variables and more categorical predictor variables) or canonical correlation (if we would like to investigate the correlation between one set of variables and another set of variables for the same objects) \cite{quinn_experimental_2002} \cite{murphy_machine_2012}. In a general sense, supervised learning deals with either regression (continuous predictor variables) or classification (categorical predictor variables) to predict new outcomes \cite{murphy_machine_2012}.   
+\\
+\\
+Unsupervised learning primarly aims at dimensionality reduction, as in PCA which reduces the number of continuous variables to a smaller number of newly derived variables called "components" \cite{carroll_mathematical_1997} \cite{quinn_experimental_2002} or at discovering clusters as in cluster analysis.
+\\
+\\ 
+Furthermore, we can approach a dataset either by columns, chosing a variable-based multivariate technique (R-mode analyses), or by rows, chosing an object-basedmultivariate technique (Q-mode analyses) \cite{quinn_experimental_2002}.    
 There is a broad range of multivariate techniques. In this book I aim at developing the basic understanding of the most commonly used ones. 
 \\
 \\
-Now, how do probabilities come into a dataset?   
+Now, how do probabilities come into a dataset?
+   
 \subsection {Computing statistical matrices for multivariate analyses}
 
  
