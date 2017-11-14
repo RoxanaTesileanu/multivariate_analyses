@@ -77,6 +77,8 @@ libraryDependencies ++= Seq(
 
 )
 
+javaCppPresetLibs ++= Seq("gsl" -> "2.2.1-1.3")
+
 resolvers += "osgeo" at "http://download.osgeo.org/webdav/geotools"
 resolvers += "boundless" at "http://repo.boundlessgeo.com/main"
 resolvers += "imageio" at "http://maven.geo-solutions.it"
