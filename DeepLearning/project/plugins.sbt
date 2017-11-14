@@ -1,1 +1,1 @@
-//addSbtPlugin("org.bytedeco" % "sbt-javacpp" % "1.3.4")
+//addSbtPlugin("org.bytedeco" % "sbt-javacpp" % "1.3.3")

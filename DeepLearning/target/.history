@@ -1,6 +1,3 @@
-version
-libraryDependencies
-exit
 console
 reload
 console
@@ -497,4 +494,7 @@ console
 reload
 console
 reload
+console
+eixt
+exit
 console
