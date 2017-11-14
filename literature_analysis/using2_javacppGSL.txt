@@ -1,0 +1,6 @@
+Using JavaCPP for GNU Scientific Library (GSL)
+Author: Roxana Tesileanu, INCDS BV, roxana.te@web.de
+Date: November 2017
+
+
+
