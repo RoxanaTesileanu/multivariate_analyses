@@ -2,5 +2,17 @@ Using JavaCPP for GNU Scientific Library (GSL)
 Author: Roxana Tesileanu, INCDS BV, roxana.te@web.de
 Date: November 2017
 
+cala> import org.bytedeco.javacpp._
+import org.bytedeco.javacpp._
+
+scala> import org.bytedeco.javacpp.gsl._
+import org.bytedeco.javacpp.gsl._
+
+scala> val x = 5.0
+x: Double = 5.0
+
+scala> val y = gsl_sf_bessel_J0(x)
+y: Double = -0.17759677131433826
+
 
 
