@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  14 NOV 2017 11:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  14 NOV 2017 11:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2070,7 +2070,7 @@ r/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-supe
 r/sfti0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr
 /share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on geospatial_scala.pdf (53 pages, 517248 bytes).
+Output written on geospatial_scala.pdf (53 pages, 517412 bytes).
 PDF statistics:
  907 PDF objects out of 1000 (max. 8388607)
  818 compressed objects within 9 object streams
