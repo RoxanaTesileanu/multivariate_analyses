@@ -265,6 +265,11 @@ M.~Odersky, L.~Spoon, and B.~Venners, \emph{Programming in {Scala}},
 T.~Hastie and R.~Tibshirani, \emph{The {Elements} of {Statistical} {Learning}},
   2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2013.
 
+\bibitem{murphy_machine_2012}
+K.~P. Murphy, \emph{Machine {Learning} {A} {Probabilistic}
+  {Perspective}}.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge: MIT Press,
+  2012.
+
 \bibitem{trask_grokking_2017}
 A.~Trask, \emph{Grokking deep learning}.\hskip 1em plus 0.5em minus 0.4em\relax
   Shelter Island: Manning Publications Co., 2017.

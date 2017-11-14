@@ -55,7 +55,7 @@
 \contentsline {section}{\numberline {6}Combined approaches: the MANOVA-KNN pipeline}{38}{section.6}
 \contentsline {subsection}{\numberline {6.1}The learning pipeline for reducing error}{38}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Dealing with local variation: the adaptive KNN}{39}{subsection.6.2}
-\contentsline {section}{\numberline {7}Conclusions}{39}{section.7}
+\contentsline {section}{\numberline {7}Conclusions}{40}{section.7}
 \contentsline {section}{Appendices}{43}{section*.27}
 \contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{43}{Appendix.a.A}
 \contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{47}{Appendix.a.B}
