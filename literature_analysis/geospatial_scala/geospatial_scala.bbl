@@ -261,6 +261,10 @@ M.~Odersky, L.~Spoon, and B.~Venners, \emph{Programming in {Scala}},
 {Poole, G.} and {Neal, L.}, ``The {Rook}'s pivoting strategy,'' \emph{Journal
   of Computational and Applied Mathematics}, vol. 123, pp. 353--369, 2000.
 
+\bibitem{hastie_elements_2013}
+T.~Hastie and R.~Tibshirani, \emph{The {Elements} of {Statistical} {Learning}},
+  2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2013.
+
 \bibitem{trask_grokking_2017}
 A.~Trask, \emph{Grokking deep learning}.\hskip 1em plus 0.5em minus 0.4em\relax
   Shelter Island: Manning Publications Co., 2017.
