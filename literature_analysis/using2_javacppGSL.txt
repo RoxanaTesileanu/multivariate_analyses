@@ -2,7 +2,19 @@ Using JavaCPP for GNU Scientific Library (GSL)
 Author: Roxana Tesileanu, INCDS BV, roxana.te@web.de
 Date: November 2017
 
-cala> import org.bytedeco.javacpp._
+In order to use GSL in Scala one must add the following dependencies to the build.sbt file (other methods might work too, but I only got this one working):
+
+"org.bytedeco" % "javacpp" % "1.3.3",
+"org.bytedeco" % "javacpp-presets" % "1.3" pomOnly(),
+"org.bytedeco" % "javacpp-presets-platform" % "1.3" pomOnly(),
+"org.bytedeco.javacpp-presets" % "gsl-platform" % "2.2.1-1.3"
+
+_____________ in REPL ___________________
+
+Example from:
+https://github.com/bytedeco/javacpp-presets/tree/master/gsl
+
+scala> import org.bytedeco.javacpp._
 import org.bytedeco.javacpp._
 
 scala> import org.bytedeco.javacpp.gsl._
@@ -13,6 +25,8 @@ x: Double = 5.0
 
 scala> val y = gsl_sf_bessel_J0(x)
 y: Double = -0.17759677131433826
+
+___________________________________________
 
 
 
