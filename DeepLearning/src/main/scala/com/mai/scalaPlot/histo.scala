@@ -18,6 +18,7 @@ val p = new JavaPlot
 val pstyle = ds.GetPlotStyle
 pstyle.setStyle(Style.HISTOGRAMS)
 pstyle.setStyle(Style.HISTEPS)
+pstyle.setStyle(Style.BOXES)
 p.addPlot(ds)
 p.plot
 }
