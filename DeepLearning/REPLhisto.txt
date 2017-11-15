@@ -1,0 +1,32 @@
+import com.panayotis.gnuplot.GNUPlot
+import com.panayotis.gnuplot.GNUPlotParameters
+import com.panayotis.gnuplot.JavaPlot
+import com.panayotis.gnuplot.plot.DataSetPlot
+import com.panayotis.gnuplot.style.PlotStyle
+import com.panayotis.gnuplot.style.Style
+val classes = Array(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0,8.0)
+val data = classes.zip(TreeProb.probCounts)
+val data2 = data.map( i => Array(i._1, i._2) )
+val ds = new DataSetPlot(data2)
+val p = new JavaPlot
+p.addPlot(ds)
+ds.getPlotStyle
+res1.setStyle(Style.HISTOGRAMS)
+p.plot
+val p = new JavaPlot
+p.addPlot(ds)
+p.plot
+val p = new JavaPlot
+res1.setStyle(Style.POINTS)
+p.plot
+p.addPlot(ds)
+p.plot
+res1.setStyle(Style.HISTOGRAMS)
+res1.setStyle(Style.HISTEPS)
+p.addPlot(ds)
+p.plot
+val p = new JavaPlot
+res1.setStyle(Style.BOXES)
+p.addPlot(ds)
+p.plot
+res1

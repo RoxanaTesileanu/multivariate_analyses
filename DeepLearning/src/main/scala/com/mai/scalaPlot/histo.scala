@@ -1,3 +1,12 @@
+/* 
+Script example for drawing a histogram with JavaPlot in Scala.
+Author: Roxana Tesileanu, INCDS BV, roxana.te@web.de
+References:
+Philipp K. Janert, "Gnuplot in Action", 2010, Manning
+Panayotis Katsaloulis, "JavaPlot" , http://javaplot.panayotis.com/, 2017
+EPFL, Scala Standard Library, 2017
+*/
+
 import com.panayotis.gnuplot.JavaPlot
 import com.panayotis.gnuplot.style.Style // HISTOGRAM
 import com.panayotis.gnuplot.style.PlotStyle
@@ -41,3 +50,4 @@ p.plot
 }
 
 */
+
