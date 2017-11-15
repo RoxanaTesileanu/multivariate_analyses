@@ -31,6 +31,10 @@ pstyle.setStyle(Style.HISTOGRAMS)
 pstyle.setStyle(Style.HISTEPS)
 pstyle.setStyle(Style.BOXES)
 p.addPlot(ds)
+p.setTitle("Discrete Probability Distribution of tree DBH classes")
+p.getAxis("x").setLabel("DBH classes")
+p.getAxis("y").setLabel("probability of DBH classes")
+p.setKey(JavaPlot.Key.OFF)
 p.plot
 }
 
