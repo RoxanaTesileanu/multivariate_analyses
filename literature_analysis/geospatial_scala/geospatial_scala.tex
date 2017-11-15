@@ -1170,6 +1170,7 @@ class 1 & class 2 & class 3 & class 4 & class 5 & class 6 & class 7 & class 8 \\
 \end{tabular}
 \end{table} 
 From table 1 we can compute the probability of each class by dividing each class count by the total count 255
+\footnote{Negative probabilities are not allowed, a probability can only take values from 0 to 1.} 
 \footnote{The sum of these probabilities is 1.00. Due to rounding errors, this is not the case for table 2, but using Arrays to store variables and to do calculations on them using the [Double] Scala type, overcomes this problem \cite{lewis_introduction_2017}.},
  obtaining the information from table 2 \cite{lial_calculus_2012}:
 \begin{table} [h!]
@@ -1204,7 +1205,7 @@ For a discrete probability function, the area of each bar gives the probability 
  The sum of the probabilities all possible values of our discrete random variable is 1.00, thus the area under all bars is 1.00.
  This is an easy way of integrating under a function.
  When we have a discrete probability distribution, we use the geometry rules of finding areas of bars.
- When we have a continuous probability distribution (like the Gaussian distribution, for example) and its shape doesn't allow us to use such simple methods, we integrate using integration algorithms which find out the area, thus the probability for an interval of values [a,b]: $P(a \leq X \leq b)=\int^b_a f(x) dx$\cite{lial_calculus_2012}. Because a continuous probability function includes all possible outcomes/values of a continuous random variable, the sum of these probabilities is 1. This is the reason why the area under a continuous probability function is 1. Such functions are called \textbf{probability density functions}. Discrete as well as continuous probability functions can be probability density functions if the integration over their range of possible values is 1. Negative probabilities are not allowed, a probability can only take values from 0 to 1.               
+ When we have a continuous probability distribution (like the Gaussian distribution, for example) and its shape doesn't allow us to use such simple methods, we integrate using integration algorithms which find out the area, thus the probability for an interval of values [a,b]: $P(a \leq X \leq b)=\int^b_a f(x) dx$\cite{lial_calculus_2012}. Because a continuous probability function includes all possible outcomes/values of a continuous random variable, the sum of these probabilities is 1. This is the reason why the area under a continuous probability function is 1. Such functions are called \textbf{probability density functions}. Discrete as well as continuous probability functions can be probability density functions if the integration over their range of possible values is 1.               
 
 
 \subsection {Computing statistical matrices for multivariate analyses}
