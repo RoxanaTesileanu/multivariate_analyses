@@ -13,8 +13,9 @@ val data = classes.zip(probCounts)
 val data2 = data.map( i => Array(i._1, i._2) )
 val ds = new DataSetPlot(data2)
 val p = new JavaPlot
-val sty = ds.getPlotStyle
-sty.setStyle(Style.HISTOGRAMS)
+val histSty = new com.panayotis.gnuplot.style.PlotStyle
+histSty.setStyle(style.HISTOGRAMS)
+ds.setPlotStyle(histSty)
 p.addPlot(ds)
 p.plot
 }
