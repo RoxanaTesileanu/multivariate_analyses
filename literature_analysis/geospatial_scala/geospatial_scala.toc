@@ -45,20 +45,20 @@
 \contentsline {subsection}{\numberline {4.1}Predicting with Multiple Linear Regression (MLR) analysis}{38}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Examining group differences with Multivariate Analysis of Variance (MANOVA)}{38}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Vizualizing MANOVA residuals: spatial residual map}{38}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Classifying with Discriminant Function Analysis (DFA)}{38}{subsection.4.4}
-\contentsline {section}{\numberline {5}Object-based multivariate analyses}{38}{section.5}
-\contentsline {subsection}{\numberline {5.1} Implementing the k-Nearest Neighbors classifier}{38}{subsection.5.1}
+\contentsline {subsection}{\numberline {4.4}Classifying with Discriminant Function Analysis (DFA)}{39}{subsection.4.4}
+\contentsline {section}{\numberline {5}Object-based multivariate analyses}{39}{section.5}
+\contentsline {subsection}{\numberline {5.1} Implementing the k-Nearest Neighbors classifier}{39}{subsection.5.1}
 \contentsline {paragraph}{Basic vector operations}{39}{section*.21}
-\contentsline {paragraph}{Reading files for classification tasks}{39}{section*.22}
-\contentsline {paragraph}{KNN classification function}{39}{section*.23}
-\contentsline {paragraph}{Testing framework}{39}{section*.24}
+\contentsline {paragraph}{Reading files for classification tasks}{40}{section*.22}
+\contentsline {paragraph}{KNN classification function}{40}{section*.23}
+\contentsline {paragraph}{Testing framework}{40}{section*.24}
 \contentsline {section}{\numberline {6}Combined approaches: the MANOVA-KNN pipeline}{40}{section.6}
 \contentsline {subsection}{\numberline {6.1}The learning pipeline for reducing error}{40}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Dealing with local variation: the adaptive KNN}{41}{subsection.6.2}
-\contentsline {section}{\numberline {7}Conclusions}{41}{section.7}
+\contentsline {section}{\numberline {7}Conclusions}{42}{section.7}
 \contentsline {section}{Appendices}{45}{section*.27}
 \contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{45}{Appendix.a.A}
-\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{48}{Appendix.a.B}
-\contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{49}{Appendix.a.C}
+\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{49}{Appendix.a.B}
+\contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{50}{Appendix.a.C}
 \contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{51}{Appendix.a.D}
 \contentsline {section}{Appendix \numberline {E}Scala source file: usingLapack2.scala}{52}{Appendix.a.E}
