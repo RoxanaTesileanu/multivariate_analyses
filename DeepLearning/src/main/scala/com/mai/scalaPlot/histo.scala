@@ -2,6 +2,7 @@
 Script example for drawing a histogram with JavaPlot in Scala.
 Author: Roxana Tesileanu, INCDS BV, roxana.te@web.de
 References:
+Margaret L. Lial, Raymond N. Greenwell, Nathan P. Ritchey, "Calculus with Applications", 10th ed., 2012, Pearson
 Philipp K. Janert, "Gnuplot in Action", 2010, Manning
 Panayotis Katsaloulis, "JavaPlot" , http://javaplot.panayotis.com/, 2017
 EPFL, Scala Standard Library, 2017
