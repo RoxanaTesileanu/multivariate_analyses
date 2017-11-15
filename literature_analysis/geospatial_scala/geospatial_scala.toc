@@ -45,9 +45,9 @@
 \contentsline {subsection}{\numberline {4.1}Predicting with Multiple Linear Regression (MLR) analysis}{37}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Examining group differences with Multivariate Analysis of Variance (MANOVA)}{37}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Vizualizing MANOVA residuals: spatial residual map}{37}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Classifying with Discriminant Function Analysis (DFA)}{37}{subsection.4.4}
-\contentsline {section}{\numberline {5}Object-based multivariate analyses}{37}{section.5}
-\contentsline {subsection}{\numberline {5.1} Implementing the k-Nearest Neighbors classifier}{37}{subsection.5.1}
+\contentsline {subsection}{\numberline {4.4}Classifying with Discriminant Function Analysis (DFA)}{38}{subsection.4.4}
+\contentsline {section}{\numberline {5}Object-based multivariate analyses}{38}{section.5}
+\contentsline {subsection}{\numberline {5.1} Implementing the k-Nearest Neighbors classifier}{38}{subsection.5.1}
 \contentsline {paragraph}{Basic vector operations}{38}{section*.21}
 \contentsline {paragraph}{Reading files for classification tasks}{38}{section*.22}
 \contentsline {paragraph}{KNN classification function}{38}{section*.23}
