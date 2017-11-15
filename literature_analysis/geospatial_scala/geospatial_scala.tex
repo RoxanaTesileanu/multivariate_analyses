@@ -1205,7 +1205,11 @@ For a discrete probability function, the area of each bar gives the probability 
  The sum of the probabilities all possible values of our discrete random variable is 1.00, thus the area under all bars is 1.00.
  This is an easy way of integrating under a function.
  When we have a discrete probability distribution, we use the geometry rules of finding areas of bars.
- When we have a continuous probability distribution (like the Gaussian distribution, for example) and its shape doesn't allow us to use such simple methods, we integrate using integration algorithms which find out the area, thus the probability for an interval of values [a,b]: $P(a \leq X \leq b)=\int^b_a f(x) dx$\cite{lial_calculus_2012}. Because a continuous probability function includes all possible outcomes/values of a continuous random variable, the sum of these probabilities is 1. This is the reason why the area under a continuous probability function is 1. Such functions are called \textbf{probability density functions}. Discrete as well as continuous probability functions can be probability density functions if the integration over their range of possible values is 1.               
+ When we have a continuous probability distribution (like the Gaussian distribution, for example) and its shape doesn't allow us to use such simple methods, we integrate using integration algorithms which find out the area, thus the probability for an interval of values [a,b]: $P(a \leq X \leq b)=\int^b_a f(x) dx$\cite{lial_calculus_2012}.
+ Because a continuous probability function includes all possible outcomes/values of a continuous random variable, the sum of these probabilities is 1.
+ This is the reason why the area under a continuous probability function is 1. Such functions are called \textbf{probability density functions}. 
+Continuous probability functions can be probability density functions if the integration over their range of possible values is 1 \cite{lial_calculus_2012}. 
+An important distinction between discrete probability distributions and probability density functions (which are continuous), is that in a discrete distribution, the probability that a random variable X takes one of the possible values is given for every possible value of X. In a probability density function, the probability that X equals a specific value say c is $\int^c_c f(x) fx = 0$, the area under a point is 0,                  
 
 
 \subsection {Computing statistical matrices for multivariate analyses}
