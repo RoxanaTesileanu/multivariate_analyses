@@ -50,15 +50,15 @@
 \contentsline {subsection}{\numberline {5.1} Implementing the k-Nearest Neighbors classifier}{38}{subsection.5.1}
 \contentsline {paragraph}{Basic vector operations}{38}{section*.21}
 \contentsline {paragraph}{Reading files for classification tasks}{38}{section*.22}
-\contentsline {paragraph}{KNN classification function}{38}{section*.23}
+\contentsline {paragraph}{KNN classification function}{39}{section*.23}
 \contentsline {paragraph}{Testing framework}{39}{section*.24}
 \contentsline {section}{\numberline {6}Combined approaches: the MANOVA-KNN pipeline}{39}{section.6}
 \contentsline {subsection}{\numberline {6.1}The learning pipeline for reducing error}{39}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Dealing with local variation: the adaptive KNN}{40}{subsection.6.2}
-\contentsline {section}{\numberline {7}Conclusions}{40}{section.7}
+\contentsline {section}{\numberline {7}Conclusions}{41}{section.7}
 \contentsline {section}{Appendices}{44}{section*.27}
 \contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{44}{Appendix.a.A}
-\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{47}{Appendix.a.B}
-\contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{48}{Appendix.a.C}
+\contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{48}{Appendix.a.B}
+\contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{49}{Appendix.a.C}
 \contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{50}{Appendix.a.D}
 \contentsline {section}{Appendix \numberline {E}Scala source file: usingLapack2.scala}{51}{Appendix.a.E}
