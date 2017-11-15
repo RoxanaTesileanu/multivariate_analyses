@@ -5,6 +5,7 @@ References:
 Margaret L. Lial, Raymond N. Greenwell, Nathan P. Ritchey, "Calculus with Applications", 10th ed., 2012, Pearson
 Philipp K. Janert, "Gnuplot in Action", 2010, Manning
 Panayotis Katsaloulis, "JavaPlot" , http://javaplot.panayotis.com/, 2017
+Mark C. Lewis, "Introduction into Programming and Problem Solving using Scala", 2017, CRC
 EPFL, Scala Standard Library, 2017
 */
 
