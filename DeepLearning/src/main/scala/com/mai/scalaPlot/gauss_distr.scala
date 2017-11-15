@@ -7,5 +7,6 @@ def Gauss (x: Double, mu:Double, sigma:Double) = 1.0/(sigma*sqrt(2*Pi))*exp( -po
 
 val mu = 50
 val sigma = 100
+var i = 0
 val xs = Array.fill(100)({i +=1; i})
 }
