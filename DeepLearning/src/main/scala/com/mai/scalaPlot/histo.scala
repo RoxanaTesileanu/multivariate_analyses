@@ -14,6 +14,7 @@ val data2 = data.map( i => Array(i._1, i._2) )
 val ds = new DataSetPlot(data2)
 val p = new JavaPlot
 val sty = ds.getPlotStyle
+sty.setStyle(Style.HISTOGRAMS)
 p.addPlot(ds)
 p.plot
 }
