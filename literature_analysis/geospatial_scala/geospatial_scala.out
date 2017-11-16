@@ -21,3 +21,22 @@
 \BOOKMARK [2][-]{subsection.3.1}{Introduction into spatial data analysis}{section.3}% 21
 \BOOKMARK [2][-]{subsection.3.2}{Using LAPACK for building multivariate statistical models}{section.3}% 22
 \BOOKMARK [2][-]{subsection.3.3}{From datasets to probability models}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.4}{Commonly used probability density functions}{section.3}% 24
+\BOOKMARK [2][-]{subsection.3.5}{Computing statistical matrices for multivariate analyses}{section.3}% 25
+\BOOKMARK [1][-]{section.4}{Variable-based multivariate analyses}{}% 26
+\BOOKMARK [2][-]{subsection.4.1}{Predicting with Multiple Linear Regression \(MLR\) analysis}{section.4}% 27
+\BOOKMARK [2][-]{subsection.4.2}{Examining group differences with Multivariate Analysis of Variance \(MANOVA\)}{section.4}% 28
+\BOOKMARK [2][-]{subsection.4.3}{Vizualizing MANOVA residuals: spatial residual map}{section.4}% 29
+\BOOKMARK [2][-]{subsection.4.4}{Classifying with Discriminant Function Analysis \(DFA\)}{section.4}% 30
+\BOOKMARK [1][-]{section.5}{Object-based multivariate analyses}{}% 31
+\BOOKMARK [2][-]{subsection.5.1}{ Implementing the k-Nearest Neighbors classifier}{section.5}% 32
+\BOOKMARK [1][-]{section.6}{Combined approaches: the MANOVA-KNN pipeline}{}% 33
+\BOOKMARK [2][-]{subsection.6.1}{The learning pipeline for reducing error}{section.6}% 34
+\BOOKMARK [2][-]{subsection.6.2}{Dealing with local variation: the adaptive KNN}{section.6}% 35
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 36
+\BOOKMARK [1][-]{section*.27}{Appendices}{}% 37
+\BOOKMARK [1][-]{Appendix.a.A}{Appendix Point coordinates for code snippet 3}{}% 38
+\BOOKMARK [1][-]{Appendix.a.B}{Appendix Scala source file: readPointCoord.scala}{}% 39
+\BOOKMARK [1][-]{Appendix.a.C}{Appendix Scala source file: createGeoms.scala}{}% 40
+\BOOKMARK [1][-]{Appendix.a.D}{Appendix Scala source file: createVLayer.scala}{}% 41
+\BOOKMARK [1][-]{Appendix.a.E}{Appendix Scala source file: usingLapack2.scala}{}% 42
