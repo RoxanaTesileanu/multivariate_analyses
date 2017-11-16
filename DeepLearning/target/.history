@@ -1,10 +1,6 @@
 console
 exit
 console
-exit
-console
-exit
-console
 exi
 exit
 console
@@ -497,4 +493,8 @@ console
 reload
 console
 exit
+console
+reload
+console
+reload
 console

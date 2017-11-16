@@ -1,4 +1,5 @@
 import com.panayotis.gnuplot.JavaPlot
+import com.panayotis.gnuplot.plot.DataSetPlot
 import scala.math._
 
 object GaussDistr{
