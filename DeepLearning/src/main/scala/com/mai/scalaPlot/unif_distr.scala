@@ -12,8 +12,8 @@ def Unif (x:Double, a: Double, b:Double) : Double = if (x>= a & x<=b) 1/(b-a) el
 val a = 3.0
 val b = 7.0
 var i = 0.0
-val xs = Array.fill(10)({i +=0.01; i})
-
+val fillno = 10.0/0.01
+val xs = Array.fill(fillno.toInt)({i +=0.01; i})
 val data = xs.map( i => Unif(i, a, b) )
 val data2 = xs.zip(data)
 val data3 = data2.map( i => Array(i._1, i._2) )
@@ -21,7 +21,7 @@ val p = new JavaPlot
 val ds = new DataSetPlot(data3)
 val pstyle = ds.getPlotStyle
 
-pstyle.setStyle(Style.POINTS)
+pstyle.setStyle(Style.FILLEDCURVES)
 p.getAxis("y").setBoundaries(0,1.0)
 p.getAxis("x").setBoundaries(0,10)
 p.addPlot(ds)
