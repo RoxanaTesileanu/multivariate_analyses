@@ -2,7 +2,7 @@
 Script example for drawing a uniform probability density function with JavaPlot in Scala.
 Author: Roxana Tesileanu, INCDS BV, roxana.te@web.de
 References:
-Simom Jackman, "Bayesian Data Analysis for Social Sciences"
+Simom Jackman, "Bayesian Data Analysis for Social Sciences", 2009, Wiley
 Margaret L. Lial, Raymond N. Greenwell, Nathan P. Ritchey, "Calculus with Applications", 10th ed., 2012, Pearson
 Philipp K. Janert, "Gnuplot in Action", 2010, Manning
 Panayotis Katsaloulis, "JavaPlot" , http://javaplot.panayotis.com/, 2017
