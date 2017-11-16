@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  16 NOV 2017 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  16 NOV 2017 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1709,7 +1709,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1285--1294
 [40]
 ! Undefined control sequence.
 l.1305 ...ed using the formula $E(x)=\displaysytle
-                                                  \sum_{i=1}^{n}x_i p_i $, f...
+                                                  \sum_{i=1}^{n}x_i p_i$, fo...
 
 ? 
 ! Undefined control sequence.
