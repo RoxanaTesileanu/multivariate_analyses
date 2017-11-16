@@ -20,8 +20,8 @@ val data3 = data2.map( i => Array(i._1, i._2) )
 val p = new JavaPlot
 val ds = new DataSetPlot(data3)
 val pstyle = ds.getPlotStyle
-pstyle.setStyle(Style.HISTOGRAMS)
-pstyle.setStyle(Style.HISTEPS)
+
+pstyle.setStyle(Style.POINTS)
 p.getAxis("y").setBoundaries(0,1.0)
 p.addPlot(ds)
 p.setTitle("Continuous Uniform Probability Distribution")
