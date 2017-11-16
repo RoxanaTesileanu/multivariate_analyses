@@ -38,6 +38,11 @@ p.getAxis("y").setBoundaries(0,1.0)
 p.getAxis("x").setBoundaries(0,10)
 p.addPlot(ds)
 p.setTitle("Continuous Uniform Probability Distribution")
+p.getAxis("x").setLabel("x")
+p.getAxis("y").setLabel("p(x)")
+p.getAxis("y").setBoundaries(0,1.0)
+p.getAxis("y").setBoundaries(0,1.0)
+p.getAxis("y").setBoundaries(0,1.0)
 p.setKey(JavaPlot.Key.OFF)
 p.plot
 }
