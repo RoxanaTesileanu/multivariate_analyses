@@ -5,5 +5,8 @@ object UnifDistr {
 
 def Unif (x:Double, a: Double, b:Double) : Double = if (x>= a & x<=b) 1/(b-a) else 0
 
+val a = 3.0
+val b = 7.0
+
 
 }
