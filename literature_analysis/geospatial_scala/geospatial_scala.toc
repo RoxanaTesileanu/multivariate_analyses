@@ -40,7 +40,8 @@
 \contentsline {paragraph}{Code snippet 6: using LAPACK dgesv to solve linear equation systems}{33}{section*.19}
 \contentsline {paragraph}{Code snippet 6: explanation}{34}{section*.20}
 \contentsline {subsection}{\numberline {3.3}From datasets to probability models}{36}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Computing statistical matrices for multivariate analyses}{41}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.4}Commonly used probability density functions}{40}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Computing statistical matrices for multivariate analyses}{41}{subsection.3.5}
 \contentsline {section}{\numberline {4}Variable-based multivariate analyses}{41}{section.4}
 \contentsline {subsection}{\numberline {4.1}Predicting with Multiple Linear Regression (MLR) analysis}{41}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Examining group differences with Multivariate Analysis of Variance (MANOVA)}{41}{subsection.4.2}
