@@ -40,25 +40,25 @@
 \contentsline {paragraph}{Code snippet 6: using LAPACK dgesv to solve linear equation systems}{33}{section*.19}
 \contentsline {paragraph}{Code snippet 6: explanation}{34}{section*.20}
 \contentsline {subsection}{\numberline {3.3}From datasets to probability models}{36}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Computing statistical matrices for multivariate analyses}{39}{subsection.3.4}
-\contentsline {section}{\numberline {4}Variable-based multivariate analyses}{39}{section.4}
-\contentsline {subsection}{\numberline {4.1}Predicting with Multiple Linear Regression (MLR) analysis}{39}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Examining group differences with Multivariate Analysis of Variance (MANOVA)}{39}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Vizualizing MANOVA residuals: spatial residual map}{39}{subsection.4.3}
+\contentsline {subsection}{\numberline {3.4}Computing statistical matrices for multivariate analyses}{40}{subsection.3.4}
+\contentsline {section}{\numberline {4}Variable-based multivariate analyses}{40}{section.4}
+\contentsline {subsection}{\numberline {4.1}Predicting with Multiple Linear Regression (MLR) analysis}{40}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Examining group differences with Multivariate Analysis of Variance (MANOVA)}{40}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Vizualizing MANOVA residuals: spatial residual map}{40}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Classifying with Discriminant Function Analysis (DFA)}{40}{subsection.4.4}
 \contentsline {section}{\numberline {5}Object-based multivariate analyses}{40}{section.5}
 \contentsline {subsection}{\numberline {5.1} Implementing the k-Nearest Neighbors classifier}{40}{subsection.5.1}
-\contentsline {paragraph}{Basic vector operations}{40}{section*.21}
+\contentsline {paragraph}{Basic vector operations}{41}{section*.21}
 \contentsline {paragraph}{Reading files for classification tasks}{41}{section*.22}
 \contentsline {paragraph}{KNN classification function}{41}{section*.23}
 \contentsline {paragraph}{Testing framework}{41}{section*.24}
-\contentsline {section}{\numberline {6}Combined approaches: the MANOVA-KNN pipeline}{41}{section.6}
-\contentsline {subsection}{\numberline {6.1}The learning pipeline for reducing error}{41}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Dealing with local variation: the adaptive KNN}{42}{subsection.6.2}
+\contentsline {section}{\numberline {6}Combined approaches: the MANOVA-KNN pipeline}{42}{section.6}
+\contentsline {subsection}{\numberline {6.1}The learning pipeline for reducing error}{42}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Dealing with local variation: the adaptive KNN}{43}{subsection.6.2}
 \contentsline {section}{\numberline {7}Conclusions}{43}{section.7}
-\contentsline {section}{Appendices}{46}{section*.27}
+\contentsline {section}{Appendices}{47}{section*.27}
 \contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{47}{Appendix.a.A}
 \contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{50}{Appendix.a.B}
 \contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{51}{Appendix.a.C}
-\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{52}{Appendix.a.D}
-\contentsline {section}{Appendix \numberline {E}Scala source file: usingLapack2.scala}{53}{Appendix.a.E}
+\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{53}{Appendix.a.D}
+\contentsline {section}{Appendix \numberline {E}Scala source file: usingLapack2.scala}{54}{Appendix.a.E}

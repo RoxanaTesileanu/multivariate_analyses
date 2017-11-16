@@ -1214,19 +1214,37 @@ An important distinction between discrete probability distributions and probabil
 Another way of expressing probabilities is using the \textbf{cumulative distribution function}, which gives the probability that a radom variable X is less than or equal to an arbitrary value t. If f is a probability density function of a random variable X with a range of [a,b], then the cumulative distribution function is defined as: $F(x)=P(X \leq t)=\int^t_a f(x) dx$.                    
 \\
 \\
-\textbf{Every probability distribution is characterized using its location, spread and shape} \cite{isaaks_applied_1989} \cite{webster_geostatistics_2007}.
+\textbf{Every probability distribution is characterized using its location, spread and shape} \cite{quinn_experimental_2002} \cite{isaaks_applied_1989} \cite{webster_geostatistics_2007}.
  Measures of location aim at finding the center of the distribution and the commonly used one are the mean, median and mode. 
 Measures of spread aim at describing how much a variable varies over its range of values and include variance, standard deviation, interquartile range. 
 Finally, measures of shape describe the shape of the distribution and include the coefficient of skewness (describing the symmetry of a distribution) and kurtosis (describing the peakedness of a distribution). 
 \\
 \\
 For recalling these measures their formulae are provided below.
- For a random continuous variable X with values x from 1 to i within its range, the interval [a,b], and having a probability distribution p(x):
+ For a recorded random continuous variable X with values x from 1 to i within its range, the interval [a,b], and having a probability distribution p(x):
 \\
 \\
-MEAN \tab $\bar{x}=\frac{1}{n}\displaystyle\sum_{i=1}^{n}x_i $ \\
-MEDIAN \tab $ $  
-
+MEAN \tab $\bar{x}=\frac{1}{n}\displaystyle\sum_{i=1}^{n}x_i$
+\\
+\\
+\\
+\\
+MEDIAN \footnote{The median is the midpoint of the observed values if they are arranged in increasing order. Half of the values are below the median and half of the values are above the median. Once the data are ranked the formula for median can be applied.} 
+\tab $x_{median}=$ 
+\begin{cases}
+$x_{(n+1)/2}$ if n odd \\
+$(x_{n/2}+x_{(n/2)+1})/2$ if n even
+\end{cases} 
+\\
+\\
+\\
+\\
+MODE The mode is the most frequent value in a distribution. The class with the highest probability on the histogram contains the mode. If in a histogram the class interval is small then the mid-value of the most frequent class may be taken as the mode.
+\\
+\\
+\\
+\\
+VARIANCE 
 
 
       
