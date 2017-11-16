@@ -1,21 +1,3 @@
-console
-exit
-console
-exi
-exit
-console
-exit
-console
-exit
-profile
-console
-exit
-console
-exit
-console
-exit
-console
-run FirstGUI.scala
 reload
 run FirstGUI.scala
 exit
@@ -493,6 +475,24 @@ console
 reload
 console
 exit
+console
+reload
+console
+reload
+console
+reload
+console
+reload
+console
+reload
+console
+reload
+console
+reload
+console
+reload
+console
+reload
 console
 reload
 console
