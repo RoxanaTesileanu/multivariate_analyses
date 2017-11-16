@@ -1,5 +1,3 @@
-sbt
-console
 exit
 console
 cosnsole
@@ -447,6 +445,8 @@ reload
 console
 reload
 consol
+console
+reload
 console
 reload
 console
