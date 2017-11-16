@@ -26,7 +26,7 @@ val data2 = data.map( i => Array(i._1, i._2) )
 val ds = new DataSetPlot(data2)
 
 val p = new JavaPlot
-val pstyle = ds.GetPlotStyle
+val pstyle = ds.getPlotStyle
 pstyle.setStyle(Style.HISTOGRAMS)
 pstyle.setStyle(Style.HISTEPS)
 pstyle.setStyle(Style.BOXES)
