@@ -14,5 +14,11 @@ val xs = Array.fill(10)({i +=1; i})
 val data = xs.map( i => Unif(i, a, b) )
 
 val p = new JavaPlot
-
+val ds = new DataSetPlot(data)
+val pstyle = ds.getPlotStyle
+pstyle.setStyle(Style.LINES)
+p.addPlot(ds)
+p.setTitle("Continuous Uniform Probability Distribution")
+p.setKey(JavaPlot.Key.OFF)
+p.plot
 }
