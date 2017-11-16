@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  16 NOV 2017 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  16 NOV 2017 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1712,6 +1712,11 @@ l.1305 ...ed using the formula $E(x)=\displaysytle
                                                   \sum_{i=1}^{n}x_i p_i $, f...
 
 ? 
+! Undefined control sequence.
+l.1306 ...cript{i} as follows: $V(x)=\displaysytle
+                                                  \sum_{i=1}^{n}(x_i-E(x))^2...
+
+? 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1321--1336
 
@@ -1758,12 +1763,12 @@ Overfull \hbox (5.04938pt too wide) in paragraph at lines 1358--1359
 []\T1/cmr/m/n/10 INSERT HERE THE EX-AM-PLES FROM THE KNN DOC-U-MEN-TA-TION!!! 
  []
 
-
+[42]
 Overfull \hbox (5.04938pt too wide) in paragraph at lines 1364--1365
 []\T1/cmr/m/n/10 INSERT HERE THE EX-AM-PLES FROM THE KNN DOC-U-MEN-TA-TION!!! 
  []
 
-[42]
+
 Overfull \hbox (38.57399pt too wide) in paragraph at lines 1381--1381
 []\T1/cmr/bx/n/14.4 Combined ap-proaches: the MANOVA-KNN pipeline 
  []
@@ -2272,7 +2277,7 @@ onts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm
 </usr/share/texmf/fonts/type1/public/cm-super/sfti0700.pfb></usr/share/texmf/fo
 nts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfti1000.pfb>
-Output written on geospatial_scala.pdf (58 pages, 588872 bytes).
+Output written on geospatial_scala.pdf (58 pages, 588930 bytes).
 PDF statistics:
  1014 PDF objects out of 1200 (max. 8388607)
  915 compressed objects within 10 object streams
