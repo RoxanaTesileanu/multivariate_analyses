@@ -49,13 +49,13 @@
 \contentsline {section}{\numberline {5}Object-based multivariate analyses}{40}{section.5}
 \contentsline {subsection}{\numberline {5.1} Implementing the k-Nearest Neighbors classifier}{40}{subsection.5.1}
 \contentsline {paragraph}{Basic vector operations}{40}{section*.21}
-\contentsline {paragraph}{Reading files for classification tasks}{40}{section*.22}
-\contentsline {paragraph}{KNN classification function}{40}{section*.23}
+\contentsline {paragraph}{Reading files for classification tasks}{41}{section*.22}
+\contentsline {paragraph}{KNN classification function}{41}{section*.23}
 \contentsline {paragraph}{Testing framework}{41}{section*.24}
 \contentsline {section}{\numberline {6}Combined approaches: the MANOVA-KNN pipeline}{41}{section.6}
 \contentsline {subsection}{\numberline {6.1}The learning pipeline for reducing error}{41}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Dealing with local variation: the adaptive KNN}{42}{subsection.6.2}
-\contentsline {section}{\numberline {7}Conclusions}{42}{section.7}
+\contentsline {section}{\numberline {7}Conclusions}{43}{section.7}
 \contentsline {section}{Appendices}{46}{section*.27}
 \contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{46}{Appendix.a.A}
 \contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{50}{Appendix.a.B}
