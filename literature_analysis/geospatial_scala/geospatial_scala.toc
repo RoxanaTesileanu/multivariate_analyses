@@ -61,5 +61,5 @@
 \contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{50}{Appendix.a.A}
 \contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{53}{Appendix.a.B}
 \contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{54}{Appendix.a.C}
-\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{55}{Appendix.a.D}
+\contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{56}{Appendix.a.D}
 \contentsline {section}{Appendix \numberline {E}Scala source file: usingLapack2.scala}{57}{Appendix.a.E}
