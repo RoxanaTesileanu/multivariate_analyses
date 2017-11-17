@@ -1195,12 +1195,14 @@ Because each probability is associated with a single diameter class, table 2 pra
  Such a function is called a probability function \cite{lial_calculus_2012} or a probability model \cite{pfeffer_practical_2016}. 
 Table 2 represents a discrete probability function because it has a finite domain (class 1 to class 8 represent a discrete variable).
  Probability functions with an infinite domain within some real number interval (values like 43.25 cm DBH are possible and represent a continuous variable) are called continuous probability distributions.  
-Discrete probability models are best vizualized using a histogram. The bars of the histogram have the same width and their heights are determined by the probabilities of the possible values (i.e. class 1 to class 8). See \ref{fig: discrete prob}. 
+Discrete probability models are best vizualized using a histogram. The bars of the histogram have the same width and their heights are determined by the probabilities of the possible values (i.e. class 1 to class 8). See fig. \ref{fig: discrete prob}.
 \begin{figure} [H]
 \includegraphics[width=\linewidth] {fig2.jpg}
 \caption{An empirical discrete probability function of a sample.}
 \label{fig: discrete prob}
 \end{figure}
+\\
+\\
 For a discrete probability function, the area of each bar gives the probability of a particular DBH class, each bar representing a rectangle with a width = 1 and a height of P(X=x), where X is the discrete random variable (i.e. the DBH class) and x is a possible value of X \cite{lial_calculus_2012}.
  The area of a rectangle is its width multiplied by its height. So, if we want to find out the probability that a tree falls in a class between class 4 and class 7, $P(class 4 \leq class of tree \leq class 7)$, we have to find the area of the bars involved in this calculation and add them up.
  Because it involves class 4, class 5, class 6 and class 7, we get $P(class 4)+P(class 5)+P(class 6)+P(class 7)$, i.e $1(0.2627) + 1(0.2901) + 1(0.1960) + 1(0.0470)$, which is 0.7958.
@@ -1298,7 +1300,7 @@ In practice, even if we sample from a population and we have a distribution of s
 \\
 UNIFORM DISTRIBUTION \\
 The Uniform distribution is the simplest probability distribution. 
-It implies the same probability for the entire range, [a,b], of a random continuous variable X \cite{jackman_bayesian_2009} \cite{lial_calculus_2012} \cite{pfeffer_practical_2016}:
+It implies the same probability for the entire range, [a,b], of a random continuous variable X and is used to express the fact that no value of X is believed to be more possible than the other values of X \cite{jackman_bayesian_2009} \cite{lial_calculus_2012} \cite{pfeffer_practical_2016}:
 \tab
 \begin{equation}
  p(x)= 
@@ -1307,7 +1309,7 @@ It implies the same probability for the entire range, [a,b], of a random continu
 0 & \text{if} \quad x\notin [a,b]
 \end{cases} 
 \end{equation}
-See \ref{fig: unif distr} for an example of a uniform probability density function. 
+See fig. \ref{fig: unif distr} for an example of a uniform probability density function. 
 \begin{figure} [H]
 \includegraphics[width=\linewidth] {fig3.jpg}
 \caption{The continuous Uniform probability distribution for a continuous variable X taking values between 3 and 7 which all have the same probability of 0.25 (i.e. $1/(b-a)=1/(7-3)$) of being the outcome.}
