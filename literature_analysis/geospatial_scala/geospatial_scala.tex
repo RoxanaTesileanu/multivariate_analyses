@@ -1202,11 +1202,11 @@ Discrete probability models are best vizualized using a histogram. The bars of t
 \end{figure}
 For a discrete probability function, the area of each bar gives the probability of a particular DBH class, each bar representing a rectangle with a width = 1 and a height of P(X=x), where X is the discrete random variable (i.e. the DBH class) and x is a possible value of X \cite{lial_calculus_2012}.
  The area of a rectangle is its width multiplied by its height. So, if we want to find out the probability that a tree falls in a class between class 4 and class 7, $P(class 4 \leq class of tree \leq class 7)$, we have to find the area of the bars involved in this calculation and add them up.
- Because it involves class 4, class 5, class 6 and class 7, we get $P(class 4)+P(class 5)+P(class 6)+P(class 7)$, i.e 0.2627+0.2901+0.1960+0.0470, which is 0.7958.
- The sum of the probabilities all possible values of our discrete random variable is 1.00, thus the area under all bars is 1.00.
+ Because it involves class 4, class 5, class 6 and class 7, we get $P(class 4)+P(class 5)+P(class 6)+P(class 7)$, i.e $1(0.2627) + 1(0.2901) + 1(0.1960) + 1(0.0470)$, which is 0.7958.
+ The sum of the probabilities of all possible values of our discrete random variable is 1.00, thus the total area under the bars is 1.00.
  This is an easy way of integrating under a function.
  When we have a discrete probability distribution, we use the geometry rules of finding areas of bars.
- When we have a continuous probability distribution (like the Gaussian distribution, for example) and its shape doesn't allow us to use such simple methods, we integrate using integration algorithms which find out the area, thus the probability for an interval of values [a,b]: $P(a \leq X \leq b)=\int^b_a f(x) dx$\cite{lial_calculus_2012}.
+ When we have a continuous probability distribution (like the Gaussian distribution, for example) and its shape doesn't allow us to use such simple methods, we integrate using integration algorithms which find out the area, thus the probability for an interval of values [a,b]: $P(a \leq X \leq b)=\int^b_a f(x) \mathrm{d}x$\cite{lial_calculus_2012}.
  Because a continuous probability function includes all possible outcomes/values of a continuous random variable, the sum of these probabilities is 1.
  This is the reason why the area under a continuous probability function is 1. Such functions are called \textbf{probability density functions}. 
 Continuous probability functions can be probability density functions if the integration over their range of possible values is 1 \cite{lial_calculus_2012}. 
@@ -1256,6 +1256,11 @@ STANDARD DEVIATION \footnote{The standard deviation is simply the square root of
 \\
 \\
 \\
+INTERQUARTILE RANGE
+\\
+\\
+\\
+\\
 SKEWNESS \footnote{Skewness is also called the third moment about the mean. Variance is also called the second moment about the mean. And the fourth moment about the mean is the kurtosis.}
 \tab  $skewness =\frac{1}{n-1}\displaystyle\sum_{i=1}^{n}(x_i-\bar{x})^3$
 \\
@@ -1284,8 +1289,9 @@ In practice, even if we sample from a population and we have a distribution of s
 
 - Uniform distribution\\
 - Normal distribution \\
+- Beta distribution \\
+- Binomial distribution \\
 - Poisson distribution \\
-- Beta distribution
 \\
 \\
 UNIFORM DISTRIBUTION \\
@@ -1299,12 +1305,14 @@ It implies the same probability for the entire range, [a,b], of a random continu
 0 & \text{if} \quad x\notin [a,b]
 \end{cases} 
 \end{equation}
+See figure 3 for an example of a uniform probability density function. 
 We conventionally write the fact that X is uniformly distributed on the interval [a,b] as \textit{x $\sim$ Unif(a,b)} \cite{jackman_bayesian_2009}.
 Like the sample distribution functions can be characterized by the mean, variance and shape, the probability density functions can also be characterized by these measures. 
 The mean of a probability density function is called the expected value of p(x) and is written as E(x) and the variance of the probability density function is written as V(x). 
 If for discrete probability density functions the mean is calculated using the formula $E(x)=\displaysytle\sum_{i=1}^{n}x_i p_i$, for continuous probability density functions the mean is found by $E(x)=\int_a^bxp(x)\mathrm{d}x$ \cite{lial_calculus_2012}.
-With regard to the variance, for discrete probability functions V(x) is calculated based on the expected value and the x\textsubscript{i} values with their respective p\textsubscript{i} as follows: $V(x)=\displaysytle\sum_{i=1}^{n}(x_i-E(x))^2p_i$. For continuous probability density fucntions the variance V(x) is calculated similarly but using integration again: $V(x)=\int_a^b(x_i-E(x))^2p(x)\mathrm{d}x$.    
-According to the above formulae, the E(x) and V(x) for the Uniform density are: $E(x)=\frac{b+a}{2}$ and $V(x)=\frac{(b-a)^2}{12}$ \footnote{See \cite{lial_calculus_2012} for the integration steps needed to get to the E(x) and V(x) of the Uniform distribution.}.   
+With regard to the variance, for discrete probability functions V(x) is calculated based on the expected value and the x\textsubscript{i} values with their respective p\textsubscript{i} as follows: $V(x)=\displaysytle\sum_{i=1}^{n}(x_i-E(x))^2p_i$.
+ For continuous probability density functions the variance V(x) is calculated similarly but using integration again: $V(x)=\int_a^b(x_i-E(x))^2p(x)\mathrm{d}x$.    
+According to the above formulae for continuous probability functions, the E(x) and V(x) for the Uniform density are: $E(x)=\frac{b+a}{2}$ and $V(x)=\frac{(b-a)^2}{12}$ \footnote{See \cite{lial_calculus_2012} for the integration steps needed to get to the E(x) and V(x) of the Uniform distribution.}.   
 \\
 \\
 NORMAL DISTRIBUTION 
