@@ -297,6 +297,12 @@ T.~Hastie and R.~Tibshirani, ``Discriminant {Adaptive} {Nearest} {Neighbor}
   {Classification} and {Regression},'' \emph{IEEE Trans. Pattern Anal. Match.
   Intell.}, vol.~18, no.~6, pp. 607--616, 1996.
 
+\bibitem{panayotis_javaplot_2017}
+\BIBentryALTinterwordspacing
+P.~Katsaloulis, ``{JavaPlot},'' 2017. [Online]. Available:
+  \url{http://javaplot.panayotis.com/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{claudio_latex-tutorial.com_nodate}
 \BIBentryALTinterwordspacing
 C.~Vellage, ``\BIBforeignlanguage{Deutch}{{LaTeX}-{Tutorial}.com}.'' [Online].
