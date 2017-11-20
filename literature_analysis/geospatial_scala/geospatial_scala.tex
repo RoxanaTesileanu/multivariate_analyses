@@ -113,7 +113,7 @@ The following paragraphs will help you navigate through the VIM file, and, proce
 \\
 To move the cursor you use: "l" (or right arrow), "h" (or left arrow), "j" (meaning going down one line), or "k" (meaning going up one line). 
 Moving inside the current line is possible with "0" (to go to the beginning of the current line) and "\$" (to go to the end of the current line). 
-To go to the end of the file, i.e. to the last line of the file you use "G" and to go to the beginning of the file, i.e. to the first line you use "gg".
+To go to the end of the file, i.e. to the last line of the file you use "<SHIFT>g" and to go to the beginning of the file, i.e. to the first line you use "gg".
  To go to a specific line you use "numbergg" (for example: 2gg to go the the second line).
 \\
 \\
@@ -397,7 +397,6 @@ The OGR package of GDAL contains the classes used for geoprocessing vector data.
 The first step in accessing any vector data is to open the data source. For this you need to use a driver specific to the data format. Each vector data format has its own driver, which is used to read and write a particular format \cite{garrard_geoprocessing_2016}.\\
 In order to make the configured OGR drivers available we call the RegisterAll() function at the beginning of the analysis. The RegisterAll() function is placed in the package OGR of the GDAL library, in the class ogr, so we need to call it using org.gdal.ogr.ogr.RegisterAll() (or, we can also import the class to save typing, but it remains unclear where the function resides inside GDAL).                     
 \paragraph{ Code snippet 1: accessing a shapefile using OGR in Scala} 
-\\
 You can find a shapefile on the internet at one of the sources indicated under \href{http://gisgeography.com/best-free-gis-data-sources-raster-vector/}{http://gisgeography.com/best-free-gis-data-sources-raster-vector/} and try the following snippet with your shapefile using the Scala REPL in SBT while you are in the Scala project's directory: \\
 \\
 org.gdal.ogr.ogr.RegisterAll() \\
@@ -423,7 +422,6 @@ feat0 : org.gdal.ogr.Feature = org.gdal.ogr.Feature@3164b9a0\\
 dataSource.delete() \\
 
 \paragraph {Code snippet 1: Explanation}
-\\
 In order to access the vector geodata, we make the OGR drivers available with RegisterAll(). 
 Then, we create a variable called dataSource in which we store the DataSource object. We obtain it by opening the shapefile (or any other OGR file format) with Open(). 
 We check how many layers (i.e. datasets) are available in the DataSource object by calling GetLayerCount on it. 
@@ -495,7 +493,6 @@ The second spatial reference from above is a projected one. It has a PROJCS entr
 The function GetSpatialRef called on a layer returns a SpatialReference object. Georeferenced data already have such an object defined, if not the GetSpatialRef function returns null. In order to create a SpatialReference object for your layers and geometries you need to firstly create an empty SpatialReference object, then you have to import into the empty SpatialReference object the information on the SRS you want to use, turning it into a valid SpatialReference object.        
  
 \paragraph {Code snippet 2: creating a SpatialReference object using OGR in Scala}
-\\
 In this code I will use the ETRS1989/LAEA, the Pulkovo1942(58)/ Stereo70 and the WGS84/Pseudo-Mercator SRS. The first one is the SRS for all Europe and it is used for statistical mapping at all scales and other purposes where true area representation is required (\href{http://spatialreference.org/ref/epsg/3035/}{http://spatialreference.org/ref/epsg/\\3035/}), the second SRS is for Romania and is used in large and medium scale topographic mapping and engineering surveys (\href{http://spatialreference.org/ref/epsg/3844/}{http://spatialreference.org/ref/eps\\g/3844/}), and the third is used for rendering maps in GoogleMaps, OpenStreetMap, Bing a.o. (\href{http://epsg.io/3857}{http://epsg.io/3857}). 
 Google Earth uses WGS84 with geographic coordinates (lat/lon), unprojected, with EPSG code 4326 (\href{https://gis.stackexchange.com}{https://gis.s\\tackexchange.com}) (see the first SRS example at page 7, section 2.3.1). 
 \\
@@ -1111,8 +1108,6 @@ Now, back to the implementation code of the dgesv function. As previously mentio
 \item the leading dimension of \textbf{b} which is the no. of rows of the column vector,
 \item and the info argument which is an Int of type org.netlib.util.intW and which will be overritten with the output information message of dgesv, and should be 0 on success \cite{nag_ltd._nag_nodate}.
 \end{itemize}    
-\\
-\\
 Using the above code a linear system of type $A\textbf{x}=\textbf{b}$ was solved using LAPACK dgesv, and, at the same time I've made use of Scala types and also the output was represented as a Scala type. This is an important aspect in further development steps of the statistical algorithms, as it doesn't "overload" the family of types used.  
 
 \subsection{From datasets to probability models}
@@ -1197,8 +1192,6 @@ Discrete probability models are best vizualized using a histogram. The bars of t
 \caption{An empirical discrete probability function of a sample.}
 \label{fig: discrete prob}
 \end{figure}
-\\
-\\
 For a discrete probability function, the area of each bar gives the probability of a particular DBH class, each bar representing a rectangle with a width = 1 and a height of P(X=x), where X is the discrete random variable (i.e. the DBH class) and x is a possible value of X \cite{lial_calculus_2012}.
  The area of a rectangle is its width multiplied by its height. So, if we want to find out the probability that a tree falls in a class between class 4 and class 7, $P(class 4 \leq class of tree \leq class 7)$, we have to find the area of the bars involved in this calculation and add them up.
  Because it involves class 4, class 5, class 6 and class 7, we get $P(class 4)+P(class 5)+P(class 6)+P(class 7)$, i.e $1(0.2627) + 1(0.2901) + 1(0.1960) + 1(0.0470)$, which is 0.7958.
@@ -1314,8 +1307,8 @@ See fig. \ref{fig: unif distr} for an example of a uniform probability density f
 We conventionally write the fact that X is uniformly distributed on the interval [a,b] as \textit{x $\sim$ Unif(a,b)} \cite{jackman_bayesian_2009}.
 Like the sample distribution functions can be characterized by the mean, variance and shape, the probability density functions can also be characterized by these measures. 
 The mean of a probability density function is called the expected value of p(x) and is written as E(x) and the variance of the probability density function is written as V(x). 
-If for discrete probability density functions the mean is calculated using the formula $E(x)=\displaysytle\sum_{i=1}^{n}x_i p_i$, for continuous probability density functions the mean is found by $E(x)=\int_a^bxp(x)\mathrm{d}x$ \cite{lial_calculus_2012}.
-With regard to the variance, for discrete probability functions V(x) is calculated based on the expected value and the x\textsubscript{i} values with their respective p\textsubscript{i} as follows: $V(x)=\displaysytle\sum_{i=1}^{n}(x_i-E(x))^2p_i$.
+If for discrete probability density functions the mean is calculated using the formula $E(x)=\sum_{i=1}^{n}x_i p_i$, for continuous probability density functions the mean is found by $E(x)=\int_a^bxp(x)\mathrm{d}x$ \cite{lial_calculus_2012}.
+With regard to the variance, for discrete probability functions V(x) is calculated based on the expected value and the x\textsubscript{i} values with their respective p\textsubscript{i} as follows: $V(x)=\sum_{i=1}^{n}(x_i-E(x))^2p_i$.
  For continuous probability density functions the variance V(x) is calculated similarly but using integration again: $V(x)=\int_a^b(x_i-E(x))^2p(x)\mathrm{d}x$.    
 According to the above formulae for continuous probability functions, the E(x) and V(x) for the Uniform density are: $E(x)=\frac{b+a}{2}$ and $V(x)=\frac{(b-a)^2}{12}$ \footnote{See \cite{lial_calculus_2012} for the integration steps needed to get to the E(x) and V(x) of the Uniform distribution.}.   
 \\
@@ -1808,4 +1801,5 @@ for (i<- result.\underline{\space}1) println (i)\\
 for (i<- result.\underline{\space}2) println (i)\\
 \}
 
-\end {document}
+\end{appendices}
+\end{document}
