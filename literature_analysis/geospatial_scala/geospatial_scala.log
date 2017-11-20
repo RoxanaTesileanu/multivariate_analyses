@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  20 NOV 2017 11:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  20 NOV 2017 11:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1637,7 +1637,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1307--1320
 
  []
 
-[41 <./fig3.jpg>]
+[41 <./fig3.jpg>] [42]
 Underfull \hbox (badness 10000) in paragraph at lines 1356--1371
 
  []
@@ -1657,7 +1657,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1356--1371
 
  []
 
-[42]
+
 Overfull \hbox (5.9212pt too wide) in paragraph at lines 1373--1373
 []\T1/cmr/bx/n/12 Classifying with Dis-crim-i-nant Func-tion Anal-y-sis (DFA) 
  []
@@ -1688,7 +1688,7 @@ Overfull \hbox (5.04938pt too wide) in paragraph at lines 1399--1400
 []\T1/cmr/m/n/10 INSERT HERE THE EX-AM-PLES FROM THE KNN DOC-U-MEN-TA-TION!!! 
  []
 
-
+[44]
 Overfull \hbox (38.57399pt too wide) in paragraph at lines 1416--1416
 []\T1/cmr/bx/n/14.4 Combined ap-proaches: the MANOVA-KNN pipeline 
  []
@@ -1703,12 +1703,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1420--1436
 
  []
 
-[44]
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 1439--1445
 
  []
 
-[45] (./geospatial_scala.bbl
+(./geospatial_scala.bbl
 Overfull \hbox (0.44342pt too wide) in paragraph at lines 1449--2
 \T1/cmr/m/n/10 multivariate$[]$analyses project repos-i-tory: []https://github.
 com/RoxanaTesileanu/ 
@@ -1758,7 +1758,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--106
 0 _ Geostatistics _
  []
 
-
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 108--112
 []$\T1/cmr/m/n/10 https : / / www . researchgate . net / publication / 31950554
 8 _ Introduction _
@@ -1770,7 +1770,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--112
 _ of _ the _
  []
 
-[47] [48] [49]
+[48] [49]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `Deutch'. Using the pattern for
 ** the default language instead.
@@ -1869,7 +1869,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1466--1619
 
  []
 
-[50] [51] [52]
+[50] [51] [52] [53]
 Overfull \hbox (21.01993pt too wide) in paragraph at lines 1620--1620
 []\T1/cmr/bx/n/14.4 Scala source file: read-Point-Co-ord.scala 
  []
@@ -1899,7 +1899,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1622--1663
 
  []
 
-[53]
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 1667--1723
 
  []
@@ -2037,7 +2037,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1667--1723
 
  []
 
-[54] [55]
+[55]
 Overfull \hbox (2.52104pt too wide) in paragraph at lines 1723--1723
 []\T1/cmr/bx/n/14.4 Scala source file: cre-at-eVLayer.scala 
  []
@@ -2170,7 +2170,7 @@ Here is how much of TeX's memory you used:
  10967 multiletter control sequences out of 15000+600000
  24988 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,13n,40p,897b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,13n,40p,897b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -2195,10 +2195,10 @@ lic/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm120
 xmf/fonts/type1/public/cm-super/sfti0700.pfb></usr/share/texmf/fonts/type1/publ
 ic/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000
 .pfb>
-Output written on geospatial_scala.pdf (60 pages, 615248 bytes).
+Output written on geospatial_scala.pdf (60 pages, 615729 bytes).
 PDF statistics:
- 1050 PDF objects out of 1200 (max. 8388607)
- 948 compressed objects within 10 object streams
+ 1052 PDF objects out of 1200 (max. 8388607)
+ 950 compressed objects within 10 object streams
  215 named destinations out of 1000 (max. 500000)
  352 words of extra memory for PDF output out of 10000 (max. 10000000)
 
