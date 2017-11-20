@@ -1309,7 +1309,7 @@ Like the sample distribution functions can be characterized by the mean, varianc
 The mean of a probability density function is called the expected value of p(x) and is written as E(x) and the variance of the probability density function is written as V(x). 
 If for discrete probability density functions the mean is calculated using the formula $E(x)=\sum_{i=1}^{n}x_i p_i$, for continuous probability density functions the mean is found by $E(x)=\int_a^bxp(x)\mathrm{d}x=\mu$ \cite{lial_calculus_2012}.
 With regard to the variance, for discrete probability functions V(x) is calculated based on the expected value and the x\textsubscript{i} values with their respective p\textsubscript{i} as follows: $V(x)=\sum_{i=1}^{n}(x_i-E(x))^2p_i$.
- For continuous probability density functions the variance V(x) is calculated similarly but using integration again: $V(x)=\int_a^b(x_i-E(x))^2p(x)\mathrm{d}x = \sigma^2$.    
+ For continuous probability density functions the variance V(x) is calculated similarly but using integration again: $V(x)=\int_a^b(x_i-\mu)^2p(x)\mathrm{d}x = \sigma^2$.    
 According to the above formulae for continuous probability functions, the E(x) and V(x) for the Uniform density are: $E(x)=\frac{b+a}{2}=\mu$ and $V(x)=\frac{(b-a)^2}{12}=\sigma^2$ \footnote{See \cite{lial_calculus_2012} for the integration steps needed to get to the E(x) and V(x) of the Uniform distribution.}.   
 \\
 \\
@@ -1341,7 +1341,7 @@ V(x) = \int_{-\infty}^{+\infty} \left( x_i - \mu \right)^2  \left(1 /\sigma \sqr
 \sqrt{V(x)}= \sigma \footnote{$\sigma$ is called standard deviation of the mean.}
 \end{equation*}
 Now, that the origins of $\mu$ and $\sigma$, the two parameters of every Normal distribution, are clear, we can see that there are infinitely many possible combinations of mean and variance, thus an infinite number of possible Normal distributions \cite{quinn_experimental_2002}.  
-
+Each Normal probability distribution has an associated bell-shaped Normal curve. 
 \subsection {Computing statistical matrices for multivariate analyses}
 
  
