@@ -108,8 +108,6 @@ Under Linux you can install VIM using the package tools at hand (like e.g. dpkg,
 \item to exit VIM type ":wq" to quit and save changes, or ":q!" to discard changes (both in command mode);
 \item pressing <ESC> will not just place you in command mode but also cancel an unwanted and partially completed command in command mode.
 \end{itemize}
-\\
-\\
 The following paragraphs will help you navigate through the VIM file, and, process text (append, delete, copy, paste, search and replace, edit multiple files and get help). 
 \\
 \\
@@ -335,10 +333,8 @@ Figure \ref{fig: fig1} presents the contents of the build.sbt file of a Scala pr
 \caption{The contents of the build.sbt file of a Scala project with three external dependencies and one internal dependency (if more than one .jar file is needed, then they should be placed in the project's lib directory instead of specifying them in the build.sbt file).}
 \label{fig: fig1}
 \end{figure}   
-\\
-\\
-\paragraph{Using internal Scala libraries}
 
+\paragraph{Using internal Scala libraries}
 Sometimes it is necessary to use internal libraries in form of .jar files.
  Jar files are automatically created from compiled source files by setting the variable "exportJars" of the build.sbt file to true (exportJars := true).
  The process of .jar creation is called packaging.
