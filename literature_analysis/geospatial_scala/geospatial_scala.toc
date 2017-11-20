@@ -52,7 +52,7 @@
 \contentsline {paragraph}{Basic vector operations}{44}{section*.21}
 \contentsline {paragraph}{Reading files for classification tasks}{44}{section*.22}
 \contentsline {paragraph}{KNN classification function}{44}{section*.23}
-\contentsline {paragraph}{Testing framework}{44}{section*.24}
+\contentsline {paragraph}{Testing framework}{45}{section*.24}
 \contentsline {section}{\numberline {6}Combined approaches: the MANOVA-KNN pipeline}{45}{section.6}
 \contentsline {subsection}{\numberline {6.1}The learning pipeline for reducing error}{45}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Dealing with local variation: the adaptive KNN}{46}{subsection.6.2}
