@@ -51,7 +51,7 @@
 \contentsline {section}{\numberline {5}Object-based multivariate analyses}{44}{section.5}
 \contentsline {subsection}{\numberline {5.1} Implementing the k-Nearest Neighbors classifier}{44}{subsection.5.1}
 \contentsline {paragraph}{Basic vector operations}{44}{section*.22}
-\contentsline {paragraph}{Reading files for classification tasks}{44}{section*.23}
+\contentsline {paragraph}{Reading files for classification tasks}{45}{section*.23}
 \contentsline {paragraph}{KNN classification function}{45}{section*.24}
 \contentsline {paragraph}{Testing framework}{45}{section*.25}
 \contentsline {section}{\numberline {6}Combined approaches: the MANOVA-KNN pipeline}{45}{section.6}
