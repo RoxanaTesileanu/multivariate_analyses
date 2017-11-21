@@ -1373,8 +1373,29 @@ For now, note that the elements of $\boldsymbol{\Sigma}$ are the covariances bet
 \\
 \\
 Conventionally, we write the fact that the observations of the set M are distributed according to a multivariate normal density as $\mathbf{m} \sim N(\boldsymbol{\mu}, \boldsymbol{\Sigma})$ \cite{jackman_bayesian_2009}.
-
-
+For a bivariate Normal distribution we can write:
+\begin{equation*}
+\mathbf{m} = 
+left[ \begin{array}{c} 
+n_1 \\
+n_2
+\end{array}
+  right]
+\sim N left(
+left[
+\begin{array}{c}
+\mu_1 \\
+\mu_2
+\end{array}
+right],
+\begin{array}{cc}
+left[
+\Sigma_11 & \Sigma_12 \\
+\Sigma_21 & \Sigma_22
+right]
+right)
+\end{array}
+\end{equation*}
   
 BETA DISTRIBUTION\\
 The Beta distribution is commonly used as a prior probability distribution for binary variables in Bayesian analyses (e.g. within the beta-binomial model \cite{jackman_bayesian_2009}, \cite{pfeffer_practical_2016}) \cite{quinn_experimental_2002}.  
