@@ -57,10 +57,10 @@
 \contentsline {section}{\numberline {6}Combined approaches: the MANOVA-KNN pipeline}{46}{section.6}
 \contentsline {subsection}{\numberline {6.1}The learning pipeline for reducing error}{46}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Dealing with local variation: the adaptive KNN}{47}{subsection.6.2}
-\contentsline {section}{\numberline {7}Conclusions}{47}{section.7}
-\contentsline {section}{Appendices}{51}{section*.28}
+\contentsline {section}{\numberline {7}Conclusions}{48}{section.7}
+\contentsline {section}{Appendices}{52}{section*.28}
 \contentsline {section}{Appendix \numberline {A}Point coordinates for code snippet 3}{52}{Appendix.a.A}
 \contentsline {section}{Appendix \numberline {B}Scala source file: readPointCoord.scala}{55}{Appendix.a.B}
 \contentsline {section}{Appendix \numberline {C}Scala source file: createGeoms.scala}{56}{Appendix.a.C}
 \contentsline {section}{Appendix \numberline {D}Scala source file: createVLayer.scala}{57}{Appendix.a.D}
-\contentsline {section}{Appendix \numberline {E}Scala source file: usingLapack2.scala}{58}{Appendix.a.E}
+\contentsline {section}{Appendix \numberline {E}Scala source file: usingLapack2.scala}{59}{Appendix.a.E}
