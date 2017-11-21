@@ -16,6 +16,7 @@
 \usepackage {halloweenmath}
 \usepackage {tabto}
 \usepackage {amssymb}
+\usepackage {array}
 \author {Roxana Tesileanu \\
 \\
 \href{mailto: roxana.te@web.de}{roxana.te@web.de} \\
@@ -1376,25 +1377,23 @@ Conventionally, we write the fact that the observations of the set M are distrib
 For a bivariate Normal distribution we can write:
 \begin{equation*}
 \mathbf{m} = 
-left[ \begin{array}{c} 
+\begin{bmatrix}  
 n_1 \\
 n_2
-\end{array}
-  right]
-\sim N left(
-left[
-\begin{array}{c}
+\end{bmatrix} 
+\sim N \begin{pmatrix} 
+\begin{array}{c} left[
 \mu_1 \\
 \mu_2
-\end{array}
-right],
+right]
+\end{array}, &
 \begin{array}{cc}
 left[
 \Sigma_11 & \Sigma_12 \\
 \Sigma_21 & \Sigma_22
 right]
-right)
 \end{array}
+\end{pmatrix}
 \end{equation*}
   
 BETA DISTRIBUTION\\
