@@ -14,47 +14,48 @@ Database file #1: MyLibrary.bib
 Warning--edition ordinal word "Second Edition" may be too high (or improper) for conversion in webster_geostatistics_2007
 Warning--missing publisher in hengl_practical_2009
 Warning--edition ordinal word "Revised" may be too high (or improper) for conversion in carroll_mathematical_1997
+Warning--empty year in marden_multivariate_2015
 
 Done.
-You've used 57 entries,
+You've used 58 entries,
             4087 wiz_defined-function locations,
-            1072 strings with 14250 characters,
-and the built_in function-call counts, 24134 in all, are:
-= -- 1731
-> -- 490
+            1076 strings with 14356 characters,
+and the built_in function-call counts, 24450 in all, are:
+= -- 1753
+> -- 494
 < -- 63
-+ -- 233
-- -- 103
-* -- 949
-:= -- 3934
-add.period$ -- 113
-call.type$ -- 57
++ -- 235
+- -- 104
+* -- 957
+:= -- 3992
+add.period$ -- 115
+call.type$ -- 58
 change.case$ -- 45
 chr.to.int$ -- 159
-cite$ -- 60
-duplicate$ -- 1943
-empty$ -- 2537
-format.name$ -- 127
-if$ -- 5556
+cite$ -- 62
+duplicate$ -- 1968
+empty$ -- 2578
+format.name$ -- 128
+if$ -- 5630
 int.to.chr$ -- 0
-int.to.str$ -- 57
-missing$ -- 396
-newline$ -- 238
-num.names$ -- 56
-pop$ -- 1250
+int.to.str$ -- 58
+missing$ -- 400
+newline$ -- 241
+num.names$ -- 57
+pop$ -- 1264
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 6
-skip$ -- 1899
+skip$ -- 1929
 stack$ -- 0
 substring$ -- 316
-swap$ -- 1115
+swap$ -- 1126
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 57
-warning$ -- 3
-while$ -- 76
-width$ -- 59
-write$ -- 490
-(There were 3 warnings)
+type$ -- 58
+warning$ -- 4
+while$ -- 77
+width$ -- 60
+write$ -- 497
+(There were 4 warnings)
