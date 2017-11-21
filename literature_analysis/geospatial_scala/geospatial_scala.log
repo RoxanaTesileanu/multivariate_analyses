@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  21 NOV 2017 11:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  21 NOV 2017 11:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1451,7 +1451,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1115--1147
 
  []
 
-[35] [36] <fig2.jpg, id=667, 642.4pt x 481.8pt>
+[35] [36] <fig2.jpg, id=668, 642.4pt x 481.8pt>
 File: fig2.jpg Graphic file (type jpg)
  <use fig2.jpg>
 Package pdftex.def Info: fig2.jpg used on input line 1191.
@@ -1627,7 +1627,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1283--1293
 
  []
 
-[40] <fig3.jpg, id=722, 642.4pt x 481.8pt>
+[40] <fig3.jpg, id=723, 642.4pt x 481.8pt>
 File: fig3.jpg Graphic file (type jpg)
  <use fig3.jpg>
 Package pdftex.def Info: fig3.jpg used on input line 1303.
@@ -2201,10 +2201,10 @@ ublic/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1
 texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/pu
 blic/cm-super/sfti0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti08
 00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on geospatial_scala.pdf (61 pages, 645838 bytes).
+Output written on geospatial_scala.pdf (61 pages, 645937 bytes).
 PDF statistics:
- 1092 PDF objects out of 1200 (max. 8388607)
- 986 compressed objects within 10 object streams
+ 1093 PDF objects out of 1200 (max. 8388607)
+ 987 compressed objects within 10 object streams
  220 named destinations out of 1000 (max. 500000)
  352 words of extra memory for PDF output out of 10000 (max. 10000000)
 
