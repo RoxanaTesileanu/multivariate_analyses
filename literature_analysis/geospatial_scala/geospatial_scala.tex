@@ -1370,7 +1370,9 @@ If for a univariate Normal distribution, each observation $\mathbf{x_i}$ of a va
 For a bivariate Normal distribution, with \textbf{m\textsubscript{i}} expressed as $\mathbf{m\textsubscript{i}}= (n_{i1}, n_{i2})$, the mean of the bivariate Normal distribution is expressed as a nx1 matrix $\boldsymbol{\mu}=[\mu_1, \mu_2]'$ \footnote{The nx1 matrix has the form of a column vector.}
 and the variance V(x) becomes a variance-covariance matrix $\boldsymbol{\Sigma}$ \cite{jackman_bayesian_2009} \cite{marden_multivariate_2015} which will be implemented in Scala in section 3.5. 
 For now, note that the elements of $\boldsymbol{\Sigma}$ are the covariances between the variables contained in the set \textit{N}, and, that $\boldsymbol{\Sigma}$ represents the multivariate equivalent for V(x) \cite{marden_multivariate_2015}.     
-
+\\
+\\
+Conventionally, we write the fact that the observations of the set M are distributed according to a multivariate normal density as $\mathbf{m} \sim N(\boldsymbol{\mu}, \boldsymbol{\Sigma})$ \cite{jackman_bayesian_2009}.  
 BETA DISTRIBUTION\\
 The Beta distribution is commonly used as a prior probability distribution for binary variables in Bayesian analyses (e.g. within the beta-binomial model \cite{jackman_bayesian_2009}, \cite{pfeffer_practical_2016}) \cite{quinn_experimental_2002}.  
 
