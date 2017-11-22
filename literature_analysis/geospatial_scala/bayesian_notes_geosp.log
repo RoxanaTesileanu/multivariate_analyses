@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  22 NOV 2017 13:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  22 NOV 2017 13:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -510,7 +510,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
 Package rerunfilecheck Info: File `bayesian_notes_geosp.out' has not changed.
-(rerunfilecheck)             Checksum: E17B68DED045464649D96016ABC0F9E7;190.
+(rerunfilecheck)             Checksum: 1C116D9870017704E2145E4F6CFADD75;190.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
@@ -533,7 +533,7 @@ onts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
 </usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fo
 nts/type1/public/cm-super/sfti1000.pfb>
-Output written on bayesian_notes_geosp.pdf (4 pages, 184240 bytes).
+Output written on bayesian_notes_geosp.pdf (4 pages, 184238 bytes).
 PDF statistics:
  135 PDF objects out of 1000 (max. 8388607)
  114 compressed objects within 2 object streams
