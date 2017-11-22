@@ -1,1 +1,2 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {paragraph}{Notation for statistical inference}{2}{section*.2}
