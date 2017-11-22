@@ -2,3 +2,4 @@
 \contentsline {subsection}{\numberline {1.1}Notation for statistical inference}{2}{subsection.1.1}
 \contentsline {paragraph}{Parameters, data and predictions}{2}{section*.2}
 \contentsline {paragraph}{Bayesian inference}{2}{section*.3}
+\contentsline {subsection}{\numberline {1.2}Baye's Rule}{2}{subsection.1.2}
