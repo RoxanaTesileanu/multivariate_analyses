@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.23)  23 NOV 2017 13:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.23)  23 NOV 2017 13:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -464,15 +464,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--85
 
  []
 
-[2]
-
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 108.
-
-
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 108
-.
-
-(./bayesian_notes_geosp.bbl
+[2] (./bayesian_notes_geosp.bbl
 Overfull \hbox (2.91504pt too wide) in paragraph at lines 110--2
 \T1/cmr/m/n/10 ileanu/multivariate$[]$analyses/blob/master/literature$[]$analys
 is/geospatial$[]$scala/b 
@@ -522,11 +514,11 @@ Package rerunfilecheck Info: File `bayesian_notes_geosp.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 7486 strings out of 494953
- 108729 string characters out of 6180976
+ 7492 strings out of 494953
+ 108788 string characters out of 6180976
  203116 words of memory out of 5000000
- 10632 multiletter control sequences out of 15000+600000
- 16060 words of font info for 48 fonts, out of 8000000 for 9000
+ 10635 multiletter control sequences out of 15000+600000
+ 16987 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  29i,6n,28p,573b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/roxana/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </home/
@@ -535,16 +527,17 @@ xmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/roxana/.texmf-var/fo
 nts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/roxana/.texmf-var/fonts/pk/ljf
 our/jknappen/ec/ecbx1440.600pk> </home/roxana/.texmf-var/fonts/pk/ljfour/jknapp
 en/ec/ecrm1200.600pk> </home/roxana/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm
-1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on bayesian_notes_geosp.pdf (5 pages, 137604 bytes).
+1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on bayesian_notes_geosp.pdf (5 pages, 144678 bytes).
 PDF statistics:
- 385 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
+ 389 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
  25 named destinations out of 1000 (max. 500000)
  25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
