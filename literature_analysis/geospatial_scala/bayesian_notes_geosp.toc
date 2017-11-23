@@ -4,3 +4,4 @@
 \contentsline {paragraph}{Bayesian inference}{2}{section*.3}
 \contentsline {subsection}{\numberline {1.2}Bayes' Rule}{2}{subsection.1.2}
 \contentsline {paragraph}{Prediction}{3}{section*.4}
+\contentsline {paragraph}{Likelihood}{3}{section*.5}
