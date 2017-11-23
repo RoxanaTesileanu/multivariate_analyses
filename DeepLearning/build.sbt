@@ -87,6 +87,7 @@ resolvers += "imageio" at "http://maven.geo-solutions.it"
 //resolvers += "s4gnuplot gihub maven repo" at "https://github.com/Rogach/org.rogach/raw/master/"
 
 unmanagedJars in Compile += Attributed.blank(file("/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar"))
+// JavaFX is not installed on Ubuntu, so the jfxrt.jar is not by default in the jre lib. You have to install it with "$ sudo apt install openjfx"
 
 unmanagedJars in Compile += Attributed.blank(file("/lib/gdal-2.2.1.jar"))
 
