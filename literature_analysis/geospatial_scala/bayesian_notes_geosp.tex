@@ -98,6 +98,14 @@ Leaving the $p(y)$ off, we get the UNNORMALIZED POSTERIOR DENSITY which is the r
 \begin{equation*}
 p(\theta | y) \propto p(\theta)p(y|\theta)
 \end{equation*}
+
+\paragraph {Prediction}
+Make inferences about an unknown observable (predictive inferences).
+Before the data are considered, the distribution of the unknown but observable $y$ is:
+\begin{equation*}
+p(y) = \int p(y, \theta) \mathrm{d} \theta = \int p(\theta) p(y| \theta) \mathrm{d} \theta
+\end{equation*}
+This is called the \textbf{marginal distribution of $\boldmath{y}$} and it is also called the \textbf{prior predictive distribution}.
 \section* {Note}
 This document is "under construction".
  It contains older notes of mine on Bayesian data analysis.
