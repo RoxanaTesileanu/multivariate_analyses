@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.23)  23 NOV 2017 11:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.23)  23 NOV 2017 12:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -465,35 +465,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--85
  []
 
 [2] (./bayesian_notes_geosp.bbl
-Overfull \hbox (2.91504pt too wide) in paragraph at lines 99--2
+Overfull \hbox (2.91504pt too wide) in paragraph at lines 103--2
 \T1/cmr/m/n/10 ileanu/multivariate$[]$analyses/blob/master/literature$[]$analys
 is/geospatial$[]$scala/b 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--2
+Underfull \hbox (badness 10000) in paragraph at lines 103--2
 
  []
 
 
-Overfull \hbox (3.66486pt too wide) in paragraph at lines 99--2
+Overfull \hbox (3.66486pt too wide) in paragraph at lines 103--2
 \T1/cmr/m/n/10 nu/multivariate$[]$analyses/tree/master/DeepLearning/src/main/sc
 ala/com/mai/ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--2
+Underfull \hbox (badness 10000) in paragraph at lines 103--2
 
  []
 
 
-Overfull \hbox (12.57935pt too wide) in paragraph at lines 99--2
+Overfull \hbox (12.57935pt too wide) in paragraph at lines 103--2
 \T1/cmr/m/n/10 The present doc-u-ment was edited us-ing La-tex [[]5[]] ([]https
 ://www.latex-project.org/[]).
  []
 
 
-Overfull \hbox (29.21417pt too wide) in paragraph at lines 99--2
+Overfull \hbox (29.21417pt too wide) in paragraph at lines 103--2
 \T1/cmr/m/n/10 The source .tex file of the present doc-u-ment is also avail-abl
 e in the multivariate$[]$analyses
  []
@@ -503,15 +503,15 @@ e in the multivariate$[]$analyses
 ** loaded for the language `Deutch'. Using the pattern for
 ** the default language instead.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
  [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
  (./bayesian_notes_geosp.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 123.
 Package rerunfilecheck Info: File `bayesian_notes_geosp.out' has not changed.
 (rerunfilecheck)             Checksum: 1C116D9870017704E2145E4F6CFADD75;190.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 123.
  ) 
 Here is how much of TeX's memory you used:
  7485 strings out of 494953
@@ -520,7 +520,7 @@ Here is how much of TeX's memory you used:
  10632 multiletter control sequences out of 15000+600000
  16060 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,6n,28p,573b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,6n,28p,573b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/roxana/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </home/
 roxana/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/roxana/.te
 xmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/roxana/.texmf-var/fo
@@ -533,9 +533,9 @@ en/ec/ecrm1200.600pk> </home/roxana/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on bayesian_notes_geosp.pdf (5 pages, 136047 bytes).
+Output written on bayesian_notes_geosp.pdf (5 pages, 136708 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
+ 382 PDF objects out of 1000 (max. 8388607)
  122 compressed objects within 2 object streams
  24 named destinations out of 1000 (max. 500000)
  25 words of extra memory for PDF output out of 10000 (max. 10000000)
