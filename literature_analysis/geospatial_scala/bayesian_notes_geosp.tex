@@ -108,7 +108,11 @@ p(y) = \int p(y, \theta) \mathrm{d} \theta = \int p(\theta) p(y| \theta) \mathrm
 This is called the \textbf{marginal distribution of} $\mathbf{y}$ and it is also called the \textbf{prior predictive distribution}.
 After the data $y$ have been observed, we can predict an unknown observable, $\tilde{y}$, from the same process.
 The distribution of $\tilde{y}$ is called the \textbf{posterior predictive distribution}. It is CONDITIONAL ON THE OBSERVED $y$:
-
+\begin{equation*}
+p(\tilde{y} | y) = \int p(\tilde{y}, \theta | y) \mathrm{d} \theta\\
+ = \int p(\tilde{y} | \theta, y) p(\theta | y) \mathrm{d} \theta \\
+ = \int p(\tilde{y} | \theta) p(\theta | y) \mathrm{d} \theta
+\end{equation*}
 
 \section* {Note}
 This document is "under construction".
