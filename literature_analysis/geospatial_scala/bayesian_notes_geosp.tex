@@ -89,7 +89,11 @@ The joint probability mass or density function can be written as a PRODUCT OF TW
 \begin{equation*}
 p(\theta, y) = p(\theta)p(y | \theta)
 \end{equation*}
- 
+Simply CONDITIONING ON THE KNOWN DATA, using the Bayes' Rule yields the POSTERIOR DENSITY:
+\begin {equation*}
+p(\theta | y) = \frac{p(\theta, y}{p(y)}= \frac{p(\theta)p(y | \theta)}{p(y)}
+\end{equation*}  
+where $p(y)= \int p(\theta) p(y| \theta) \mathrm{d} \theta$ (for $\theta$ continuous).
 
 \section* {Note}
 This document is "under construction".
