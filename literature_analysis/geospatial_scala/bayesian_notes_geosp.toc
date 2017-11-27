@@ -5,3 +5,4 @@
 \contentsline {subsection}{\numberline {1.2}Bayes' Rule}{2}{subsection.1.2}
 \contentsline {paragraph}{Prediction}{3}{section*.4}
 \contentsline {paragraph}{Likelihood}{3}{section*.5}
+\contentsline {paragraph}{Example for a single-parameter problem}{3}{section*.6}
