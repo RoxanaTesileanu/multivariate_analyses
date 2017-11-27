@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  27 NOV 2017 12:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  27 NOV 2017 12:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -470,35 +470,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--136
  []
 
 [3] (./bayesian_notes_geosp.bbl
-Overfull \hbox (2.91504pt too wide) in paragraph at lines 144--2
+Overfull \hbox (2.91504pt too wide) in paragraph at lines 146--2
 \T1/cmr/m/n/10 ileanu/multivariate$[]$analyses/blob/master/literature$[]$analys
 is/geospatial$[]$scala/b 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--2
+Underfull \hbox (badness 10000) in paragraph at lines 146--2
 
  []
 
 
-Overfull \hbox (3.66486pt too wide) in paragraph at lines 144--2
+Overfull \hbox (3.66486pt too wide) in paragraph at lines 146--2
 \T1/cmr/m/n/10 nu/multivariate$[]$analyses/tree/master/DeepLearning/src/main/sc
 ala/com/mai/ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--2
+Underfull \hbox (badness 10000) in paragraph at lines 146--2
 
  []
 
 
-Overfull \hbox (12.57935pt too wide) in paragraph at lines 144--2
+Overfull \hbox (12.57935pt too wide) in paragraph at lines 146--2
 \T1/cmr/m/n/10 The present doc-u-ment was edited us-ing La-tex [[]5[]] ([]https
 ://www.latex-project.org/[]).
  []
 
 
-Overfull \hbox (29.21417pt too wide) in paragraph at lines 144--2
+Overfull \hbox (29.21417pt too wide) in paragraph at lines 146--2
 \T1/cmr/m/n/10 The source .tex file of the present doc-u-ment is also avail-abl
 e in the multivariate$[]$analyses
  []
@@ -508,15 +508,15 @@ e in the multivariate$[]$analyses
 ** loaded for the language `Deutch'. Using the pattern for
 ** the default language instead.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
  [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
  (./bayesian_notes_geosp.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
 Package rerunfilecheck Info: File `bayesian_notes_geosp.out' has not changed.
 (rerunfilecheck)             Checksum: 1C116D9870017704E2145E4F6CFADD75;190.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
  ) 
 Here is how much of TeX's memory you used:
  7496 strings out of 493029
@@ -525,7 +525,7 @@ Here is how much of TeX's memory you used:
  10886 multiletter control sequences out of 15000+600000
  16987 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,6n,28p,573b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,6n,28p,573b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
@@ -540,7 +540,7 @@ blic/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm10
 00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/t
 exmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/pub
 lic/cm-super/sfti1000.pfb>
-Output written on bayesian_notes_geosp.pdf (6 pages, 206161 bytes).
+Output written on bayesian_notes_geosp.pdf (6 pages, 214718 bytes).
 PDF statistics:
  158 PDF objects out of 1000 (max. 8388607)
  133 compressed objects within 2 object streams
