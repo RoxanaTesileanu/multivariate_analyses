@@ -93,7 +93,7 @@ Simply CONDITIONING ON THE KNOWN DATA, using the Bayes' Rule yields the POSTERIO
 \begin {equation*}
 p(\theta | y) = \frac{p(\theta, y)}{p(y)}= \frac{p(\theta)p(y | \theta)}{p(y)}
 \end{equation*}  
-where $p(y)= \int p(\theta) p(y| \theta) \mathrm{d} \theta$ (for $\theta$ continuous), and $1/p(y)$ represents the constant of proportionality ensuring that the posterior density integrates to 1 \cite{jackman_bayesian_2009}. The constant of proportionality can be formally written as \cite{jackman_bayesian_2009}: 
+where $p(y)= \int p(\theta) p(y| \theta) \mathrm{d} \theta$ (for $\theta$ continuous), and $1/p(y)$ represents the constant of proportionality ensuring that the posterior density integrates to 1  as a proper probability density must \cite{jackman_bayesian_2009}. The constant of proportionality can be formally written as \cite{jackman_bayesian_2009}: 
 \begin {equation*}
 [\int p(y|\theta) p(\theta) \mathrm{d} \theta]^{-1}
 \end {equation*}
