@@ -534,22 +534,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 206.
  (./bayesian_notes_geosp.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 206.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 206.
-
-
-Package rerunfilecheck Warning: File `bayesian_notes_geosp.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `bayesian_notes_geosp.out':
-(rerunfilecheck)             Before: C48DA9BFBE7414A49842CA86A01042D3;248
-(rerunfilecheck)             After:  D66A268D99222AD94FA8207F661864FD;340.
+Package rerunfilecheck Info: File `bayesian_notes_geosp.out' has not changed.
+(rerunfilecheck)             Checksum: D66A268D99222AD94FA8207F661864FD;340.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 206.
  ) 
 Here is how much of TeX's memory you used:
- 7502 strings out of 493029
- 108886 string characters out of 6136234
+ 7503 strings out of 493029
+ 108902 string characters out of 6136234
  208956 words of memory out of 5000000
- 10887 multiletter control sequences out of 15000+600000
+ 10888 multiletter control sequences out of 15000+600000
  16987 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,6n,28p,573b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -567,10 +560,10 @@ blic/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm10
 00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/t
 exmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/pub
 lic/cm-super/sfti1000.pfb>
-Output written on bayesian_notes_geosp.pdf (7 pages, 222089 bytes).
+Output written on bayesian_notes_geosp.pdf (7 pages, 222185 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
+ 177 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
  34 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
