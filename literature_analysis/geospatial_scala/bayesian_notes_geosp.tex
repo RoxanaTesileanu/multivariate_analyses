@@ -229,7 +229,12 @@ p(\theta | y) \propto \theta^r (1-\theta)^{n-r} \theta^{\alpha -1} (1-\theta)^{\
 = \theta^{r + \alpha -1} (1- \theta)^{n-1+\beta -1} \\
 = Beta(\alpha +r, \beta +n -r) 
 \end {equation*}
-
+Once again regarding the conjugate Beta prior, $p(\theta; \alpha, \beta) \propto \theta^{\alpha -1} (1-\theta)^{\beta -1} $, the interpretation of its parameters in data equivalent terms makes it possible to specify conjugate priors for PROBABILITY, RATES AND PROPORTIONS. The interpretations is: 
+\begin {itemize}
+\item we have $\alpha - 1$ successes
+\item we have $\beta - 1$ failures
+\item we have $\alpha + \beta - 2 $ total trials (n)
+\end{itemize}  
  
 \section* {Note}
 This document is "under construction".
