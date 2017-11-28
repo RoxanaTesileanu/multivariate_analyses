@@ -180,7 +180,7 @@ Why is probability a reasonable way of quantifying uncertainty? Uncertainty is r
 
 \subsection{Estimating a probability from binomial data}
 
-In the simple binomial model, the aim is to estimate an unknown population proportion from the results of a sequence of Bernoulli trials, that is, data \textbf{y} is either 0 (failure) or 1 (success).
+In the simple beta-binomial model, the aim is to estimate an unknown population proportion from the results of a sequence of Bernoulli trials, that is, data \textbf{y} is either 0 (failure) or 1 (success).
 Because of the exchangeability, the data can be summarized by the total number of successes denoted by $y$ in the $n$ trials. 
 The binomial sampling model is:
 \begin {equation*}
@@ -192,7 +192,9 @@ y
 \end {equation*} 
 Example: estimation of the sex ratio within a population of human births.
 Let $y$ be the number of girls in $n$ recorded births.
-To perform Bayesian inference in the binomial model, we must specify a prior distribution.   
+To perform Bayesian inference in the binomial model, we must specify a prior distribution for $\theta$. 
+ For the beginning, assume that the prior distribution for $\theta$ is uniform in the interval [0,1]. 
+   
    
 
 \section* {Note}
