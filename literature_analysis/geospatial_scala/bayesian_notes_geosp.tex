@@ -200,8 +200,11 @@ p(\theta | y) \propto \theta^y (1- \theta)^{n-y}
 \end {equation*}   
 The binomial coefficient, does not depend on the unknown parameter $\theta$ and so it can be treated as a constant when calculating the posterior density of $\theta$. 
 We can recognize the kernel of a Beta density. 
-The unnormalized posterior density for binomial parameter $\theta$ becomes more precise with increasing $n$ for the same proportion of successes.
-     
+The unnormalized posterior density for binomial parameter $\theta$ (the Beta kernel) becomes more precise with increasing $n$ for the same proportion of successes.
+We conventionally write the result (i.e. the posterior density)  as:
+\begin {equation*}
+p(\theta | y) \sim Beta(y+1, n-y+1)
+\end {equation*}     
 
 \section* {Note}
 This document is "under construction".
