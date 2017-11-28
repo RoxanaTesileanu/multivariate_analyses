@@ -205,7 +205,13 @@ We conventionally write the result (i.e. the posterior density)  as:
 \begin {equation*}
 p(\theta | y) \sim Beta(y+1, n-y+1)
 \end {equation*}     
-In order to describe the posterior density, commonly used summaries of location are the mean, median, and mode(s) of the distribution; variation is commonly summarized by the standard deviation, the interquartile range and other quantiles. 
+In order to describe the posterior density, commonly used summaries of location are the mean, median, and mode(s) of the distribution; variation is commonly summarized by the standard deviation, the interquartile range and other quantiles.
+
+\paragraph{Informative prior distributions}
+The prior distribution can be seen as representing a population of possible parameter values, from which the $\theta$ of current interest has been drawn.
+Sometimes we don't have such a population, and in this case, we must express our knowledge (and uncertainty i.e. probability) about $\theta$ and should include all plausible values of $\theta$.   
+
+ 
 \section* {Note}
 This document is "under construction".
  It contains older notes of mine on Bayesian data analysis.
