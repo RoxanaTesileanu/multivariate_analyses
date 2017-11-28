@@ -223,7 +223,12 @@ From Jackman 2009:\\
 \textbf{Conjugacy of Beta prior, Binomial data: Given a Binomial likelihood over r successes in n Bernoulli trials, each independent conditional on an unknown success parameter $\theta \in [0,1]$ then the prior density $p(\theta)=Beta(\alpha, \beta)$ is conjugate with respect to the binomial likelihood, generating the posterior density $p(\theta | r,n) = Beta (\alpha +r, \beta +n -r)$}.
 \\
 \\
-
+To obtain the posterior Beta according to Bayes' Rule (posterior $\propto$ likelihood x prior):
+\begin {equation*}
+p(\theta | y) \propto \theta^r (1-\theta)^{n-r} \theta^{\alpha -1} (1-\theta)^{\beta -1}\\
+= \theta^{r + \alpha -1} (1- \theta)^{n-1+\beta -1} \\
+= Beta(\alpha +r, \beta +n -r) 
+\end {equation*}
 
  
 \section* {Note}
