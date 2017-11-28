@@ -10,3 +10,4 @@
 \contentsline {paragraph}{Bayesian Updating as Information Accumulation}{5}{section*.8}
 \contentsline {paragraph}{Probability as a measure of uncertainty}{5}{section*.9}
 \contentsline {section}{\numberline {2}Single-parameter models}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Estimating a probability from binomial data}{5}{subsection.2.1}
