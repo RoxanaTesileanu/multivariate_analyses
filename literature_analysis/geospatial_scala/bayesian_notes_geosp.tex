@@ -210,8 +210,14 @@ In order to describe the posterior density, commonly used summaries of location 
 \paragraph{Informative prior distributions}
 The prior distribution can be seen as representing a population of possible parameter values, from which the $\theta$ of current interest has been drawn.
 Sometimes we don't have such a population, and in this case, we must express our knowledge (and uncertainty i.e. probability) about $\theta$ and should include all plausible values of $\theta$.   
-
- 
+Beta densities are conjugate priors with respect to binomial likelihood. 
+The Beta density takes two shape parameters as its arguments ($\alpha$, $\beta$). 
+It is confined to the unit interval.
+(The Uniform density is a special case of Beta density arising when $\alpha=\beta=1$.)
+The Beta kernel is $\theta^{\alpha -1} (1-\theta)^{\beta -1} $.
+So the prior is:
+$p(\theta) \propto \theta^{\alpha -1} (1-\theta)^{\beta -1} $
+  
 \section* {Note}
 This document is "under construction".
  It contains older notes of mine on Bayesian data analysis.
