@@ -41,3 +41,37 @@ val Arr1 = Array(0.2, 0.3, 0.4)
 Arr1.map(i=> i +1)
 Arr1.foreach(_ + 12)
 val Arr2 = Arr1.foreach(_ + 12)
+val myWeights = Array(Array(0.1, 0.1, -0.3), Array(0.1, 0.2, 0.0), Array(0.0, 1.3, 0.1))
+def matrixMultipl (a:Array[Array[Double]], b: Array[Array[Double]]) : Array[Array[Double]] = {
+val tb = b.transpose
+assert( tb(0).length == a(0).length, "Matrices cannot be multiplied!")
+val c = for (i <- a) yield (tb.map { j => dot(j, i) })
+c
+}
+def neural_network (myWeights: Array[Array[Double]], myInputs: Array[Array[Double]]): Array[Array[Double]] = {
+ assert(myWeights(0).length == myInputs(0).length, "Matrices cannot be multiplied!") 
+ val myInTranspose = myInputs.transpose
+ val matMultiplication= matrixMultipl(myWeights, myInputs)
+ matMultiplication
+}
+val myWeights = Array(Array(0.1, 0.1, -0.3), Array(0.1, 0.2, 0.0), Array(0.0, 1.3, 0.1))
+val myInputs =  Array(Array(8.5, 0.65, 1.2))
+def neural_network (myWeights: Array[Array[Double]], myInputs: Array[Array[Double]]): Array[Array[Double]] = {
+  val myInTranspose = myInputs.transpose
+ assert(myWeights(0).length == myInputs(0).length, "Matrices cannot be multiplied!")  
+ val matMultiplication= matrixMultipl(myWeights, myInputs)
+ matMultiplication
+}
+def neural_network (myWeights: Array[Array[Double]], myInputs: Array[Array[Double]]): Array[Array[Double]] = {
+  val myInTranspose = myInputs.transpose
+ assert(myWeights(0).length == myInTranspose(0).length, "Matrices cannot be multiplied!")  
+ val matMultiplication= matrixMultipl(myWeights, myInputs)
+ matMultiplication
+}
+def neural_network (myWeights: Array[Array[Double]], myInputs: Array[Array[Double]]): Array[Array[Double]] = {
+  val myInTranspose = myInputs.transpose
+ assert(myWeights(0).length == myInputs(0).length, "Matrices cannot be multiplied!")  
+ val matMultiplication= matrixMultipl(myWeights, myInTranspose)
+ matMultiplication
+}
+neural_network(myWeights, myInputs)
