@@ -17,3 +17,8 @@ myOp
 }
 val elementwiseAddition = arrayOp(Array(0.1, 0.2, 0), Array(8.5, 0.65, 1.2),_ + _) 
 val elementwiseMultiplication = arrayOp(Array(0.1, 0.2, 0), Array(8.5, 0.65, 1.2), _ * _)
+val elementwiseMultiplication = arrayOp(Array(0.1, 0.2, 0), Array(8.5, 0.65, 1.2), _ * _)
+def arrayOpAdd (myW: Array[Double], myI : Array[Double]) : Array[Double] = {
+val elementwiseAddition = arrayOp(myW, myI, _+_)
+elementwiseAddition
+}
