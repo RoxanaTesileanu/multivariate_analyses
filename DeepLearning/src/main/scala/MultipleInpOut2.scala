@@ -10,7 +10,7 @@ def neural_network (myWeights: Array[Array[Double]], myInputs: Array[Array[Doubl
   val myInTranspose = myInputs.transpose
  assert(myWeights(0).length == myInputs(0).length, "Matrices cannot be multiplied!")  
  val matMultiplication= matrixMultipl(myWeights, myInTranspose)
- matMultiplication
+ matMultiplication.transpose
 }
 
 //got the same answer as in Andrew's book.
