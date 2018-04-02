@@ -75,3 +75,4 @@ def neural_network (myWeights: Array[Array[Double]], myInputs: Array[Array[Doubl
  matMultiplication
 }
 neural_network(myWeights, myInputs)
+res12.transpose
