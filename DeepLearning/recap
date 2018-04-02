@@ -10,3 +10,9 @@ val myPairs = myWeights zip myInputs
 val pairsProd = myPairs.map(p => (p._1 * p._2))
 pairsProd.sum
 }
+def arrayOp (myWeights : Array[Double], myInputs : Array[Double], f: (Double, Double)=> Double) = {
+val myPairs = myWeights zip myInputs
+val myOp = myPairs map (p=> (f(p._1, p._2)))
+myOp
+}
+val elementwiseAddition = arrayOp(Array(0.1, 0.2, 0), Array(8.5, 0.65, 1.2),_ + _) 
