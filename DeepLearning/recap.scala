@@ -22,3 +22,22 @@ def arrayOpAdd (myW: Array[Double], myI : Array[Double]) : Array[Double] = {
 val elementwiseAddition = arrayOp(myW, myI, _+_)
 elementwiseAddition
 }
+def dot (a : Array[Double], b: Array[Double]) : Double = {
+assert(a.length == b.length, "The dot product cannot be computed!")
+val pairs = a zip b
+val pairProd = for (p <- pairs) yield {p._1 * p._2}
+val dot = pairProd.sum
+dot
+}
+val Arr = Array(Array(1,2,3,4), Array(5,6,7,8))
+def matrixMultipl (a:Array[Array[Double]], b: Array[Array[Double]]) : Array[Array[Double]] = {
+val tb = b.transpose
+assert( tb(0).length == a(0).length, "Matrices cannot be multiplied!")
+val c = for (i <- a) yield (tb.map { j => dot(j, i) })
+c
+}
+Arr
+val Arr1 = Array(0.2, 0.3, 0.4)
+Arr1.map(i=> i +1)
+Arr1.foreach(_ + 12)
+val Arr2 = Arr1.foreach(_ + 12)
