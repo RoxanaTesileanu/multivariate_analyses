@@ -74,5 +74,5 @@ def neural_network (myWeights: Array[Array[Double]], myInputs: Array[Array[Doubl
  val matMultiplication= matrixMultipl(myWeights, myInTranspose)
  matMultiplication
 }
-neural_network(myWeights, myInputs)
-res12.transpose
+val result = neural_network(myWeights, myInputs)
+val finalResult = result.transpose
