@@ -77,4 +77,14 @@ res13: Array[Array[Double]] = Array(Array(0.1, 0.2, 0.3), Array(0.5, 0.5, 0.5))
 scala> transpMat2
 res14: Array[Array[Double]] = Array(Array(1.0, 2.0, 3.0), Array(1.0, 2.5, 3.5))
 
+scala> def matrixMultipl2 (a: Array[Array[Double]], b: Array[Array[Double]]): Array[Array[Double]] = {
+     | val tb = b.transpose
+     | assert(tb(0).length == a(0).length, "Matrices cannot be multiplied")
+     | val c = a.map(i => tb.map(j => dot(i,j)))
+     | c
+     | }
+matrixMultipl2: (a: Array[Array[Double]], b: Array[Array[Double]])Array[Array[Double]]
+
+scala> matrixMultipl2(myMat1, mat2)
+res25: Array[Array[Double]] = Array(Array(1.4, 1.65), Array(3.0, 3.5))
 
