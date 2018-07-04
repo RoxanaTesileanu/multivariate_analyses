@@ -91,7 +91,7 @@ res25: Array[Array[Double]] = Array(Array(1.4, 1.65), Array(3.0, 3.5))
 
 
 
-Using nested map to filter (instead of a for expression): 
+Using map and indexWhere to filter, and nested map to alter each element of an nested array (instead of a for expression): 
 
 scala> val index= Range(1, mat1.length); val mForFilter = mat1 zip index
 index: scala.collection.immutable.Range = Range(1, 2)
