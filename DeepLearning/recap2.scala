@@ -161,4 +161,35 @@ res71: Array[Boolean] = Array(true, false)
 scala>  mForFilter.map(i => (i._1)).map( g => (g(0)==0.1 && g(1)==0.2 && g(2)==0.3)).indexWhere(_ == true) 
 res72: Int = 0
 
+For altering nested arrays:
+
+scala>  mForFilter.map(i => (i._1).map( g => g + i._2)) 
+res76: Array[Array[Double]] = Array(Array(1.1, 1.2, 1.3), Array(2.5, 2.5, 2.5))
+
+scala> mForFilter
+res77: Array[(Array[Double], Int)] = Array((Array(0.1, 0.2, 0.3),1), (Array(0.5, 0.5, 0.5),2))
+
+ALTERNATIVE FOR FILTERING using zip and map:
+
+scala> Array(0.1, 0.2) == Array(0.1, 0.2)
+res0: Boolean = false
+
+scala> Array(0.1, 0.2).map(i =>  Array(0.1, 0.2).map(j => i == j))
+res1: Array[Array[Boolean]] = Array(Array(true, false), Array(false, true))
+
+scala> Array(0.1, 0.2) zip  Array(0.1, 0.2)
+res3: Array[(Double, Double)] = Array((0.1,0.1), (0.2,0.2))
+
+scala> res3.map(i => (i._1==i._2) )
+res6: Array[Boolean] = Array(true, true)
+
+scala> res3.indexWhere(i => (i._1==i._2)
+     | )
+res9: Int = 0
+
+cala> res3.lastIndexWhere(i => (i._1==i._2)
+     | )
+res17: Int = 1
+
+ok, so I don't have all results!
 
