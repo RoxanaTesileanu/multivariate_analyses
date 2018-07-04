@@ -153,4 +153,12 @@ res54: Array[Boolean] = Array(true, false)
 scala> mForFilter.map(i => (i._1)).indexWhere( g =>  (g(0)==0.1 && g(1) == 0.2 && g(2) == 0.3))
 res60: Int = 0
 
+ALTERNATIVE FOR FILTERING:
+
+scala>  mForFilter.map(i => (i._1)).map( g => (g(0)==0.1 && g(1)==0.2 && g(2)==0.3)) 
+res71: Array[Boolean] = Array(true, false)
+
+scala>  mForFilter.map(i => (i._1)).map( g => (g(0)==0.1 && g(1)==0.2 && g(2)==0.3)).indexWhere(_ == true) 
+res72: Int = 0
+
 
