@@ -191,5 +191,5 @@ cala> res3.lastIndexWhere(i => (i._1==i._2)
      | )
 res17: Int = 1
 
-ok, so I don't have all results!
+ok, so I don't have all results using indexWhere, only the first!
 
