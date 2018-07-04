@@ -148,4 +148,7 @@ scala> res24.map(h => h(0).map(k => if (k != 0) k))
 res28: Array[Array[AnyVal]] = Array(Array(1, (), ()), Array((), (), ()))
 
 
+scala> mForFilter.map(i => (i._1)).indexWhere( g =>  (g(0)==0.1 && g(1) == 0.2 && g(2) == 0.3))
+res60: Int = 0
+
 
