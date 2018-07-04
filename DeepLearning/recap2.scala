@@ -138,4 +138,7 @@ res23: Array[Array[Array[AnyVal]]] = Array(Array(Array(1, (), ()), Array((), 1, 
 scala>  mForFilter.map(i => (i._1).map( g =>  Array(0.1, 0.2, 0.3).forall( j => g==j )))
 res16: Array[Array[Boolean]] = Array(Array(false, false, false), Array(false, false, false))
 
+scala>  mForFilter.map(i => (i._1).map( g => g+1))
+res18: Array[Array[Double]] = Array(Array(1.1, 1.2, 1.3), Array(1.5, 1.5, 1.5))
+
 
