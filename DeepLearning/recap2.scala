@@ -88,3 +88,48 @@ matrixMultipl2: (a: Array[Array[Double]], b: Array[Array[Double]])Array[Array[Do
 scala> matrixMultipl2(myMat1, mat2)
 res25: Array[Array[Double]] = Array(Array(1.4, 1.65), Array(3.0, 3.5))
 
+
+
+
+Using nested map to filter (instead of a for expression): 
+
+scala> val index= Range(1, mat1.length); val mForFilter = mat1 zip index
+index: scala.collection.immutable.Range = Range(1, 2)
+mForFilter: Array[(Array[Double], Int)] = Array((Array(0.1, 0.2, 0.3),1), (Array(0.5, 0.5, 0.5),2))
+
+scala> for (
+     | i <- mForFilter
+     | if i._1== Array(0.1, 0.2, 0.3)
+     | ) println(i)
+
+scala> for (
+     | i<- mForFilter
+     | if i._1== Array(0.1, 0.2, 0.3)
+     | ) yield i._2
+res10: Array[Int] = Array()
+
+scala> mForFilter.map(i=> if (i._1== Array(0.1, 0.2, 0.3)) i._2)
+res12: Array[AnyVal] = Array((), ())
+
+scala> mForFilter(0)
+res13: (Array[Double], Int) = (Array(0.1, 0.2, 0.3),1)
+
+scala> res13._1
+res14: Array[Double] = Array(0.1, 0.2, 0.3)
+
+scala> val arr =  Array(0.1, 0.2, 0.3)
+arr: Array[Double] = Array(0.1, 0.2, 0.3)
+
+scala> arr == Array(0.1, 0.2, 0.3)
+res15: Boolean = false
+
+scala> arr(0) == 0.1
+res16: Boolean = true
+
+cala> arr.map(i => Array(0.1, 0.2, 0.3).map( j=> if (i==j) println ("TRUE")))
+TRUE
+TRUE
+TRUE
+res18: Array[Array[Unit]] = Array(Array((), (), ()), Array((), (), ()), Array((), (), ()))
+
+
