@@ -193,3 +193,12 @@ res17: Int = 1
 
 ok, so I don't have all results using indexWhere, only the first!
 
+scala> res6 zipWithIndex
+warning: there was one feature warning; re-run with -feature for details
+res20: Array[(Boolean, Int)] = Array((true,0), (true,1))
+
+scala> res20.map(i => if (i._1==true) i._2)
+res22: Array[AnyVal] = Array(0, 1)
+
+now I get the indices of all results.
+
