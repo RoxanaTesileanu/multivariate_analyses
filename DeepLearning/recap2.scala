@@ -132,4 +132,7 @@ TRUE
 TRUE
 res18: Array[Array[Unit]] = Array(Array((), (), ()), Array((), (), ()), Array((), (), ()))
 
+scala> mForFilter.map(i => (i._1).map( g =>  Array(0.1, 0.2, 0.3).map( j => if (g==j)  i._2)))
+res23: Array[Array[Array[AnyVal]]] = Array(Array(Array(1, (), ()), Array((), 1, ()), Array((), (), 1)), Array(Array((), (), ()), Array((), (), ()), Array((), (), ())))
+
 
