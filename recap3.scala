@@ -75,6 +75,12 @@ com.microsoft.sqlserver.jdbc.SQLServerException: Cannot open database "employees
   at java.sql.DriverManager.getConnection(DriverManager.java:270)
   ... 42 elided
 
+I'VE CREATED MY OWN DB FOR TESTING HOW THE CONNECTION WORKS (https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-linux-2017#connect-locally):
+
+scala> DriverManager.getConnection("jdbc:sqlserver://127.0.1.1:1433;user=SA;databaseName=TestDB;password=Mysql2018;")
+res80: java.sql.Connection = ConnectionID:67 ClientConnectionId: bf7da3fd-cae9-47b3-9754-8ecd84382d13
+
+
 val source3 = getClass.getResource("/employees.sql")
 
 scala> val source3 = getClass.getResource("/employees.sql")
