@@ -75,7 +75,7 @@ com.microsoft.sqlserver.jdbc.SQLServerException: Cannot open database "employees
   at java.sql.DriverManager.getConnection(DriverManager.java:270)
   ... 42 elided
 
-I'VE CREATED MY OWN DB FOR TESTING HOW THE CONNECTION WORKS (https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-linux-2017#connect-locally):
+I'VE CREATED MY OWN DB FOR TESTING HOW THE CONNECTION WORKS (https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-linux-2017#connect-locally; https://docs.microsoft.com/en-us/sql/connect/jdbc/step-3-proof-of-concept-connecting-to-sql-using-java?view=sql-server-2017, https://docs.microsoft.com/en-us/sql/connect/jdbc/retrieving-result-set-data-sample?view=sql-server-2017):
 
 scala> DriverManager.getConnection("jdbc:sqlserver://127.0.1.1:1433;user=SA;databaseName=TestDB;password=Mysql2018;")
 res80: java.sql.Connection = ConnectionID:67 ClientConnectionId: bf7da3fd-cae9-47b3-9754-8ecd84382d13
@@ -91,6 +91,15 @@ statement: java.sql.Statement = SQLServerStatement:1
 
 scala> val queryRes = statement.executeQuery(sqlCommand)
 queryRes: java.sql.ResultSet = SQLServerResultSet:1
+
+cala> queryRes.getString("quantity")
+res93: String = 154
+
+scala> queryRes.getString("id")
+res94: String = 2
+
+scala> queryRes.getString("name")
+res95: String = orange
 
 
 
