@@ -9,9 +9,9 @@ val source2 = Source.FromURL("https://www.....", "iso....")
 read the lines and transform them to an Array
 
 
-import java sql._
-import com.microsoft.sqlserver.jdbc._
-import java.net.InetAddress
+import java sql._   //it has the Connection, Statement and ResultSet classes
+import com.microsoft.sqlserver.jdbc._  // for the msSQL Server
+import java.net.InetAddress // to get info about your PC and user (actually not needed). You need to know the settings of the mssql-server (user is SA and your password was set at the installation)
 
 scala> InetAddress.getLocalHost()
 res15: java.net.InetAddress = barbu/127.0.1.1
