@@ -2,12 +2,6 @@ console
 exit
 console
 exit
-console
-exit
-console
-exit
-console
-exit
 console 
 exit
 console
@@ -498,3 +492,9 @@ console
 exit
 console
 exit
+console
+import scala.io.Source
+val x = 5
+:q
+scala
+console

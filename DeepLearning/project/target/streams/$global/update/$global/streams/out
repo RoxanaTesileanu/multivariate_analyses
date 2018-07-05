@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/roxana/Private/multivariate_analyses/multivariate_analyses/DeepLearning/project/}deeplearning-build...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/barbu/multivariate_analyses/DeepLearning/project/}deeplearning-build...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#deeplearning-build;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -6009,19 +6009,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 6769ms :: artifacts dl 464ms[0m
-[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT compile produced in /home/roxana/Private/multivariate_analyses/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT runtime produced in /home/roxana/Private/multivariate_analyses/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT test produced in /home/roxana/Private/multivariate_analyses/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT provided produced in /home/roxana/Private/multivariate_analyses/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT optional produced in /home/roxana/Private/multivariate_analyses/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT compile-internal produced in /home/roxana/Private/multivariate_analyses/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT runtime-internal produced in /home/roxana/Private/multivariate_analyses/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT test-internal produced in /home/roxana/Private/multivariate_analyses/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT plugin produced in /home/roxana/Private/multivariate_analyses/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT sources produced in /home/roxana/Private/multivariate_analyses/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT docs produced in /home/roxana/Private/multivariate_analyses/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT pom produced in /home/roxana/Private/multivariate_analyses/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT scala-tool produced in /home/roxana/Private/multivariate_analyses/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (6769ms resolve - 464ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2059ms :: artifacts dl 55ms[0m
+[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT compile produced in /home/barbu/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT runtime produced in /home/barbu/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT test produced in /home/barbu/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT provided produced in /home/barbu/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT optional produced in /home/barbu/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT compile-internal produced in /home/barbu/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT runtime-internal produced in /home/barbu/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT test-internal produced in /home/barbu/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT plugin produced in /home/barbu/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT sources produced in /home/barbu/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT docs produced in /home/barbu/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT pom produced in /home/barbu/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#deeplearning-build;0.1-SNAPSHOT scala-tool produced in /home/barbu/multivariate_analyses/DeepLearning/project/target/resolution-cache/reports/default-deeplearning-build-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (2059ms resolve - 55ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

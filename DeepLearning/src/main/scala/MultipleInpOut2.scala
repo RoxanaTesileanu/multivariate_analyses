@@ -13,4 +13,6 @@ def neural_network (myWeights: Array[Array[Double]], myInputs: Array[Array[Doubl
  matMultiplication.transpose
 }
 
+}
+
 //got the same answer as in Andrew's book.

@@ -4,7 +4,7 @@
 		module="deeplearning-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20171123092806"
+		publication="20180705103945"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
