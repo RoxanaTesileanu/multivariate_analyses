@@ -13,8 +13,30 @@ import java sql._
 import com.microsoft.sqlserver.jdbc._
 import java.net.InetAddress
 
+scala> InetAddress.getLocalHost()
+res15: java.net.InetAddress = barbu/127.0.1.1
+
 scala> InetAddress.getLocalHost.getHostName()
 res22: String = barbu
+
+Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance()
+scala> Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance()
+res64: Any = SQLServerDriver:4
+
+scala> DriverManager.getConnection("jdbc:sqlserver://127.0.1.1;databaseName=employees;user=root;password=mysql;")
+com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 127.0.1.1, port 1433 has failed. Error: "Connection refused. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+  at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:228)
+  at com.microsoft.sqlserver.jdbc.SQLServerException.ConvertConnectExceptionToSQLServerException(SQLServerException.java:285)
+  at com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2437)
+  at com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:641)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:2245)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:1921)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:1762)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1077)
+  at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:623)
+  at java.sql.DriverManager.getConnection(DriverManager.java:664)
+  at java.sql.DriverManager.getConnection(DriverManager.java:270)
+  ... 42 elided
 
 
 DriverManager.getConnection("jdbc:sqlserver://barbu;databaseName=employees;user=barbu;password=mysql;")
@@ -32,6 +54,26 @@ com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the ho
   at java.sql.DriverManager.getConnection(DriverManager.java:270)
   ... 42 elided
 
+
+scala> DriverManager.getConnection("jdbc:sqlserver://127.0.1.1:1433;user=SA;databaseName=employees;password=Mysql2018;") 
+com.microsoft.sqlserver.jdbc.SQLServerException: Cannot open database "employees" requested by the login. The login failed. ClientConnectionId:ddaba4ee-f4a6-428a-a1d6-5ac944e42a76
+  at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+  at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:256)
+  at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:108)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:4548)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:3409)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.access$100(SQLServerConnection.java:85)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:3373)
+  at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7344)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:2713)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:2261)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:1921)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:1762)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1077)
+  at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:623)
+  at java.sql.DriverManager.getConnection(DriverManager.java:664)
+  at java.sql.DriverManager.getConnection(DriverManager.java:270)
+  ... 42 elided
 
 val source3 = getClass.getResource("/employees.sql")
 
@@ -160,5 +202,5 @@ res13: Object = java.io.BufferedInputStream@7343baad
 
 
 // References:The book of Mark Lewis,  Alex Fruzenshtein, http://fruzenshtein.com/scala-working-with-resources-folders-files/,Microsoft JDBC Drived: https://docs.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-2017
-
+https://docs.microsoft.com/en-us/sql/connect/jdbc/step-3-proof-of-concept-connecting-to-sql-using-java?view=sql-server-2017
 // The employees.sql db from: https://github.com/datacharmer/test_db
