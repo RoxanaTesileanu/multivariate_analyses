@@ -1,0 +1,39 @@
+Welcome to Scala version 2.11.6 (OpenJDK 64-Bit Server VM, Java 1.8.0_171).
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> res14: Array[Double] = Array(0.1, 0.2, 0.3)
+<console>:1: error: ';' expected but '=' found.
+       res14: Array[Double] = Array(0.1, 0.2, 0.3)
+                            ^
+
+scala> 
+
+scala> 
+
+scala> 
+
+scala> 
+$intp                            Left                              Vector         netscape           
+::                               List                              _root_         org                
+AbstractMethodError              NoSuchElementException            actors         project            
+AnyRef                           NullPointerException              annotation     rdgps              
+ArrayIndexOutOfBoundsException   NumberFormatException             asInstanceOf   ref                
+BigDecimal                       Numeric                           beans          reflect            
+BigInt                           Ordered                           classOf        runtime            
+BufferedIterator                 Ordering                          collection     scala              
+ClassCastException               PartialOrdering                   com            spark_output.txt   
+Either                           PartiallyOrdered                  compat         src                
+Equiv                            Range                             concurrent     sun                
+Error                            Right                             io             sys                
+Exception                        RuntimeException                  isInstanceOf   target             
+Fractional                       Seq                               java           text               
+IllegalArgumentException         Stream                            javafx         toString           
+IndexOutOfBoundsException        StringBuilder                     javax          tools              
+IndexedSeq                       StringIndexOutOfBoundsException   jdk            util               
+Integral                         Throwable                         jline          xml                
+InterruptedException             Traversable                       lib                               
+Iterable                         TraversableOnce                   math                              
+Iterator                         UnsupportedOperationException     myRDD.txt                         
+
+scala> 
