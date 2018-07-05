@@ -6,6 +6,9 @@ fork in run := true
 
 //scalaVersion := "2.10.1"
 libraryDependencies ++= Seq(
+
+"com.microsoft.sqlserver" % "mssql-jdbc" % "6.4.0.jre8",
+
 "org.scalafx" %% "scalafx" % "8.0.92-R10",
  "org.scala-lang" % "scala-swing" % "2.10.2",
 
