@@ -16,3 +16,4 @@ source3: java.net.URL = file:/home/barbu/multivariate_analyses/DeepLearning/targ
 
 // References: Alex Fruzenshtein, http://fruzenshtein.com/scala-working-with-resources-folders-files/
 // and book of Mark Lewis.
+// The employees.sql db from: https://github.com/datacharmer/test_db
