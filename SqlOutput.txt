@@ -1,0 +1,70 @@
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+
+(1 rows affected)
+id     firstname                 lastname                  gender departmentno startingdate     salary    
+------ ------------------------- ------------------------- ------ ------------ ---------------- ----------
+     1 Mike                      Mueller                   m                 3       2010-06-01    4500.00
+     2 Berta                     Hoffmann                  f                 1       2010-06-15    4000.00
+     3 Adam                      Spencer                   m                 1       2010-06-15    3500.00
+     4 Maria                     Bye                       f                 2       2010-06-15    3500.00
+     5 Ben                       Luck                      m                 2       2010-06-30    3500.00
+     6 Rik                       Meier                     m                 3       2010-06-30    4000.00
+     7 Luise                     Dale                      f                 3       2010-06-30    4500.00
+     8 Claude                    Strom                     m                 3       2010-06-30    4000.00
+
+(8 rows affected)
+firstname                 startingdate    
+------------------------- ----------------
+Mike                            2010-06-01
+Berta                           2010-06-15
+Adam                            2010-06-15
+Maria                           2010-06-15
+Ben                             2010-06-30
+Rik                             2010-06-30
+Luise                           2010-06-30
+Claude                          2010-06-30
+
+(8 rows affected)
+id     firstname                 lastname                  gender departmentno startingdate     salary    
+------ ------------------------- ------------------------- ------ ------------ ---------------- ----------
+     2 Berta                     Hoffmann                  f                 1       2010-06-15    4000.00
+     3 Adam                      Spencer                   m                 1       2010-06-15    3500.00
+
+(2 rows affected)
+lastname                  salary    
+------------------------- ----------
+Mueller                      4500.00
+Dale                         4500.00
+
+(2 rows affected)
+lastname                  departmentno salary    
+------------------------- ------------ ----------
+Mueller                              3    4500.00
+Meier                                3    4000.00
+Dale                                 3    4500.00
+Strom                                3    4000.00
+
+(4 rows affected)
+
+Network packet size (bytes): 4096
+1 xact[s]:
+Clock Time (ms.): total      3606  avg   3606.0 (0.3 xacts per sec.)
+
