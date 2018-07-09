@@ -1,4 +1,4 @@
-CREATE DATABASE STAFFMEMBERSCOPY	--creates a database with name staffmemberscopy
+CREATE DATABASE STAFFMEMBERS	--creates a database with name staffmembers
 CREATE TABLE personaldata 	--creates a table within the DB, with the columns id, firstname, lastname, etc.	
 	(
 	id	SMALLINT NOT NULL,
