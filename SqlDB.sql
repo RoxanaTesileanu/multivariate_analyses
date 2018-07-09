@@ -33,15 +33,32 @@ INSERT INTO personaldata
 INSERT INTO personaldata
 	VALUES (8, "Claude", "Strom", "m",3, "30-june-10", 4000.00)
 
-CREATE TABLE departments	#create a second table within the DB 
+CREATE TABLE departments	#create a second table within the DB, with two columns: departmentno and departmentname 
 	(departmentno	SMALLINT NOT NULL,
 	departmentname	CHAR(15)
 	)
-INSERT INTO departments
+INSERT INTO departments		# create some rows for the table departments
 	VALUES (1, "administration")
 INSERT INTO departments
 	VALUES (2, "transport")
 INSERT INTO departments
 	VALUES (3, "pr")
+
+# Some queries:
+
+SELECT * FROM personaldata	#selects all rows of a table, * means all
+
+SELECT firstname, startingdate FROM personaldata	#selects the two columns (firstname and startingdate) from a table
+
+SELECT * FROM personaldata WHERE departmentno=1		#selects all entries from personaldata where the deptno is 1
+
+# instead of = one can use >, <, <> (not equal), <=, >=
+
+SELECT lastname, salary FROM personaldata WHERE salary>4000.00 #selects the lastname for the salary >4000.00
+
+SELECT lastname, departmentno, salary FROM personaldata WHERE departmentno=3 AND salary>3000.00
+#selects the lastname from the table with the deptno. 1 and a salary > 4000.00 (two conditions: dept 1 and salar>4000.00)
+
+
 
 # from Kuhlmann and Muellmerstadt "Datenbanksprache SQL" 1994
