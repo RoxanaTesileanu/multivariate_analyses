@@ -60,5 +60,8 @@ SELECT lastname, departmentno, salary FROM personaldata WHERE departmentno=3 AND
 --selects the lastname from the table with the deptno. 1 and a salary > 4000.00 (two conditions: dept 1 and salar>4000.00)
 
 
+/*EXECUTE THE SCRIPT WITH THE FOLLOWING COMMAND: $ sqlcmd -S localhost -U SA -p -i SqlDB.sql
+OR USE THE FOLLOWING COMMAND THE REDIRECT THE OUTPUT TO A FILE: $ sqlcmd -S localhost -U SA -p i- SqlDB.sql -o SqlOutput.txt
+*/
 
 -- from Kuhlmann and Muellmerstadt "Datenbanksprache SQL" 1994
