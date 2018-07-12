@@ -245,6 +245,19 @@ res13: Object = java.io.BufferedInputStream@7343baad
 //4) Reading data within an OpenStack cloud
 
 
-// References:The book of Mark Lewis,  Alex Fruzenshtein, http://fruzenshtein.com/scala-working-with-resources-folders-files/,Microsoft JDBC Drived: https://docs.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-2017
+/* References:
+
+Mark Lewis, Introduction into Problem Solving Using Scala, 2017.  
+
+Alex Fruzenshtein, http://fruzenshtein.com/scala-working-with-resources-folders-files/
+
+Microsoft Documentation for the Microsoft MS Sql-Server and JDBC Driver: https://docs.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-2017
 https://docs.microsoft.com/en-us/sql/connect/jdbc/step-3-proof-of-concept-connecting-to-sql-using-java?view=sql-server-2017
-// The employees.sql db from: https://github.com/datacharmer/test_db
+
+The employees.sql db from: https://github.com/datacharmer/test_db
+
+Kyle Banker, Peter Bakkum, Shaun Verch, Douglas Garrett, Tim Hawkins, MongoDB in Action, 2nd edition, Manning, 2016.
+
+V.K. Cody Baumgardner, OpenStack in Action, Manning, 2016. 
+
+*/
