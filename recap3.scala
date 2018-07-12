@@ -1,4 +1,14 @@
-// Reading different types of sources into Scala
+/* Reading different types of sources into Scala:
+
+1) .txt files, .csv files and FromURL data (package scala.io.Source)
+2) from MSSQL-Server (library com.microsoft.sqlserver.jdbc)
+To come:
+3) from MongoDB Server (library ....)
+4) within Openstack (NoSQL and SQL DBs ....)
+*/
+
+//1) Reading txt files, csv files and FromURL data
+
 import scala.io.Source
 
 val source = Source.fromFile("myData.txt")
@@ -8,6 +18,8 @@ source.close
 val source2 = Source.FromURL("https://www.....", "iso....")
 read the lines and transform them to an Array
 
+
+//2) Reading data from the MS SQL-Server 
 
 import java sql._   //it has the Connection, Statement and ResultSet classes
 import com.microsoft.sqlserver.jdbc._  // for the msSQL Server
@@ -227,6 +239,10 @@ getContent     getHost          getProtocol   getUserInfo   openStream       toS
 scala> source4.getContent
 res13: Object = java.io.BufferedInputStream@7343baad
 
+//3) Reading data from Mongo DB Server
+
+
+//4) Reading data within an OpenStack cloud
 
 
 // References:The book of Mark Lewis,  Alex Fruzenshtein, http://fruzenshtein.com/scala-working-with-resources-folders-files/,Microsoft JDBC Drived: https://docs.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-2017
