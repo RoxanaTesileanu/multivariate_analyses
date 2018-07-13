@@ -3,7 +3,7 @@
 1) .txt files, .csv files and FromURL data (package scala.io.Source)
 2) from MSSQL-Server (library com.microsoft.sqlserver.jdbc)
 To come:
-3) from MongoDB Server (library ....)
+3) from MongoDB Server (package  "org.mongodb.scala" %% "mongo-scala-driver" % "2.4.0" )
 4) within Openstack (NoSQL and SQL DBs ....)
 */
 
@@ -240,6 +240,36 @@ scala> source4.getContent
 res13: Object = java.io.BufferedInputStream@7343baad
 
 //3) Reading data from Mongo DB Server
+
+scala> import org.mongodb.scala._
+import org.mongodb.scala._
+
+scala> val mongoClient: MongoClient = MongoClient()Iul 13, 2018 10:56:57 AM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Opened connection [connectionId{localValue:9, serverValue:1}] to localhost:27017
+Iul 13, 2018 10:56:57 AM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 0]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5730694}
+
+Iul 13, 2018 10:57:11 AM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+mongoClient: org.mongodb.scala.MongoClient = MongoClient(com.mongodb.async.client.MongoClientImpl@6e01d9e0)
+
+
+scala> val database:MongoDatabase = mongoClient.getDatabase("myTest")
+database: org.mongodb.scala.MongoDatabase = MongoDatabase(com.mongodb.async.client.MongoDatabaseImpl@491518f1)
+
+scala> database.
+canEqual           drop                  listCollections   productPrefix    watch                writeConcern   
+codecRegistry      equals                name              readConcern      withCodecRegistry                   
+copy               getCollection         productArity      readPreference   withReadConcern                     
+createCollection   hashCode              productElement    runCommand       withReadPreference                  
+createView         listCollectionNames   productIterator   toString         withWriteConcern                    
+
+scala> database.getCollection("persons")
+res0: org.mongodb.scala.MongoCollection[org.mongodb.scala.Document] = MongoCollection(com.mongodb.async.client.MongoCollectionImpl@3936f66f)
+
+scala> val doc: Document = Document("name"-> "Maria")
+doc: org.mongodb.scala.Document = Document((name,BsonString{value='Maria'}))
+
 
 
 //4) Reading data within an OpenStack cloud
