@@ -1,11 +1,27 @@
+val ScalatraVersion = "2.5.4"
 name := "DeepLearning"
 scalaVersion := "2.11.10"
+lazy val root = (project in file(".")).enablePlugins(play.sbt.PlayScala)
 fork in run := true
+
+
 
 
 
 //scalaVersion := "2.10.1"
 libraryDependencies ++= Seq(
+
+"org.playframework.anorm" %% "anorm" % "2.6.1",
+"org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test,
+
+
+//"org.scalatra" %% "scalatra" % ScalatraVersion,
+  //"org.scalatra" %% "scalatra-scalatest" % ScalatraVersion % "test",
+  //"ch.qos.logback" % "logback-classic" % "1.2.3" % "runtime",
+  //"javax.servlet" % "javax.servlet-api" % "3.1.0" % "provided",
+//"org.eclipse.jetty" % "jetty-webapp" % "9.4.11.v20180605",
+//"org.eclipse.jetty" % "jetty-server" % "9.4.11.v20180605",
+//"org.eclipse.jetty" % "jetty-servlet" % "9.4.11.v20180605",
 
 "com.microsoft.sqlserver" % "mssql-jdbc" % "6.4.0.jre8",
 
@@ -117,6 +133,13 @@ unmanagedJars in Compile += Attributed.blank(file("/lib/gdal-2.2.1.jar"))
 //resolvers ++= Seq("scalaz-bintray" at "http://dl.bintray.com/scalaz/releases",
 //"Newcastle mvn repo" at "https://www.staff.ncl.ac.uk/d.j.wilkinson/mvn/")
 
+resolvers += Classpaths.typesafeReleases
+resolvers += Resolver.sonatypeRepo("snapshots")
+
+
+
+//enablePlugins(SbtTwirl)
+//enablePlugins(ScalatraPlugin)
 
 /* References:
 

@@ -1,26 +1,33 @@
-[0m[[0mdebug[0m] [0mjavaOptions: List()[0m
-java.lang.RuntimeException: No main class detected.
-	at scala.sys.package$.error(package.scala:27)
-	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$46$$anonfun$apply$47$$anonfun$29.apply(Defaults.scala:775)
-	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$46$$anonfun$apply$47$$anonfun$29.apply(Defaults.scala:775)
-	at scala.Option.getOrElse(Option.scala:120)
-	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$46$$anonfun$apply$47.apply(Defaults.scala:775)
-	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$46$$anonfun$apply$47.apply(Defaults.scala:774)
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
-	at sbt.std.Transform$$anon$4.work(System.scala:63)
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
-	at sbt.Execute.work(Execute.scala:237)
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-[0m[[31merror[0m] [0m(compile:[31mrun[0m) No main class detected.[0m
+[0m[[0m[0mdebug[0m] [0m[0mjavaOptions: List()[0m
+[0m[[0m[31merror[0m] [0m[0mjava.nio.file.NoSuchFileException: /lib/gdal-2.2.1.jar[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.nio.file.Files.readAttributes(Files.java:1737)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.nio.file.FileTreeWalker.getAttributes(FileTreeWalker.java:219)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:276)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.nio.file.FileTreeWalker.walk(FileTreeWalker.java:322)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.nio.file.Files.walkFileTree(Files.java:2662)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.nio.file.Files.walkFileTree(Files.java:2742)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.AbstractBackgroundJobService.hash(DefaultBackgroundJobService.scala:212)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.AbstractBackgroundJobService.syncTo$1(DefaultBackgroundJobService.scala:192)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.AbstractBackgroundJobService.$anonfun$copyClasspath$2(DefaultBackgroundJobService.scala:201)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:234)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foreach(List.scala:389)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:234)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:227)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.map(List.scala:295)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.AbstractBackgroundJobService.copyClasspath(DefaultBackgroundJobService.scala:201)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$5(Defaults.scala:1183)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$bgRunTask$5$adapted(Defaults.scala:1180)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool.$anonfun$run$1(DefaultBackgroundJobService.scala:366)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.Try$.apply(Try.scala:209)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.BackgroundThreadPool$BackgroundRunnable.run(DefaultBackgroundJobService.scala:289)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Thread.java:748)[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) java.nio.file.NoSuchFileException: /lib/gdal-2.2.1.jar[0m
