@@ -1,18 +1,41 @@
 val ScalatraVersion = "2.5.4"
 name := "DeepLearning"
 scalaVersion := "2.11.10"
-lazy val root = (project in file(".")).enablePlugins(play.sbt.PlayScala)
+//lazy val root = (project in file(".")).enablePlugins(play.sbt.PlayScala)
 fork in run := true
 
 
 
-
-
-//scalaVersion := "2.10.1"
 libraryDependencies ++= Seq(
 
-"org.playframework.anorm" %% "anorm" % "2.6.1",
-"org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test,
+
+ "org.mongodb.scala" %% "mongo-scala-driver" % "2.4.0",
+
+"com.microsoft.sqlserver" % "mssql-jdbc" % "6.4.0.jre8",
+
+"org.scalafx" %% "scalafx" % "8.0.92-R10",
+ "org.scala-lang" % "scala-swing" % "2.10.2",
+
+
+"org.bytedeco" % "javacpp" % "1.3.3",
+"org.bytedeco" % "javacpp-presets" % "1.3" pomOnly(),
+"org.bytedeco" % "javacpp-presets-platform" % "1.3" pomOnly(),
+"org.bytedeco.javacpp-presets" % "gsl-platform" % "2.2.1-1.3",
+
+
+ "com.panayotis" % "javaplot" % "0.5.0",
+
+"net.sourceforge.f2j" % "arpack_combined_all" % "0.1",
+
+"com.github.fommil.netlib" % "core" % "1.1.2"
+
+
+
+// https://mvnrepository.com/artifact/org.bytedeco.javacpp-presets/gsl
+
+
+//"org.playframework.anorm" %% "anorm" % "2.6.1",
+//"org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test,
 
 
 //"org.scalatra" %% "scalatra" % ScalatraVersion,
@@ -23,31 +46,16 @@ libraryDependencies ++= Seq(
 //"org.eclipse.jetty" % "jetty-server" % "9.4.11.v20180605",
 //"org.eclipse.jetty" % "jetty-servlet" % "9.4.11.v20180605",
 
-"com.microsoft.sqlserver" % "mssql-jdbc" % "6.4.0.jre8",
-
-"org.scalafx" %% "scalafx" % "8.0.92-R10",
- "org.scala-lang" % "scala-swing" % "2.10.2",
-
-// https://mvnrepository.com/artifact/org.bytedeco.javacpp-presets/gsl
-
-"org.bytedeco" % "javacpp" % "1.3.3",
-"org.bytedeco" % "javacpp-presets" % "1.3" pomOnly(),
-"org.bytedeco" % "javacpp-presets-platform" % "1.3" pomOnly(),
-"org.bytedeco.javacpp-presets" % "gsl-platform" % "2.2.1-1.3",
-
 
  
 // https://mvnrepository.com/artifact/com.panayotis/javaplot
- "com.panayotis" % "javaplot" % "0.5.0",
 
 
 // https://mvnrepository.com/artifact/com.github.fommil.netlib/core
-"com.github.fommil.netlib" % "core" % "1.1.2",
 
 //"org.apache.spark" % "spark-core_2.11" % "2.1.1" % "provided",
 //"org.apache.spark" % "spark-mllib_2.11" % "2.1.1" % "provided",
 // https://mvnrepository.com/artifact/net.sourceforge.f2j/arpack_combined_all
-"net.sourceforge.f2j" % "arpack_combined_all" % "0.1"
 
 //"org.gdal" % "gdal" % "1.11.2" ,
 //"org.locationtech.geogig" % "geogig-geotools" % "1.2.0-RC1",
@@ -139,7 +147,7 @@ resolvers += Resolver.sonatypeRepo("snapshots")
 
 
 //enablePlugins(SbtTwirl)
-//enablePlugins(ScalatraPlugin)
+//enablePlugins(ScalatraPlugin, JettyPlugin)
 
 /* References:
 

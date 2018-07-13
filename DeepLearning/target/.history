@@ -8,12 +8,6 @@ reload
 console
 reload
 console
-reload
-console
-reload
-console
-reload
-console
 exit
 console
 exit
@@ -498,3 +492,9 @@ run
 sbt run 
 run 
 run
+run firstGUI
+console
+run
+new playframework/play-scala-seed.g8
+run
+console

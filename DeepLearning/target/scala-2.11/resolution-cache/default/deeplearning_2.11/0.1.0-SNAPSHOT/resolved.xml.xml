@@ -4,7 +4,7 @@
 		module="deeplearning_2.11"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20180712223923"
+		publication="20180713105253"
 	>
 		<description>
 		DeepLearning
@@ -32,8 +32,7 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.10" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.10" conf="scala-tool->default,optional(default);compile->default(compile)"/>
-		<dependency org="org.playframework.anorm" name="anorm_2.11" rev="2.6.1" conf="compile->default(compile)"/>
-		<dependency org="org.scalatestplus.play" name="scalatestplus-play_2.11" rev="3.1.2" conf="test->default(compile)"/>
+		<dependency org="org.mongodb.scala" name="mongo-scala-driver_2.11" rev="2.4.0" conf="compile->default(compile)"/>
 		<dependency org="com.microsoft.sqlserver" name="mssql-jdbc" rev="6.4.0.jre8" conf="compile->default(compile)"/>
 		<dependency org="org.scalafx" name="scalafx_2.11" rev="8.0.92-R10" conf="compile->default(compile)"/>
 		<dependency org="org.scala-lang" name="scala-swing" rev="2.10.2" conf="compile->default(compile)"/>
@@ -46,7 +45,7 @@
 		</dependency>
 		<dependency org="org.bytedeco.javacpp-presets" name="gsl-platform" rev="2.2.1-1.3" conf="compile->default(compile)"/>
 		<dependency org="com.panayotis" name="javaplot" rev="0.5.0" conf="compile->default(compile)"/>
-		<dependency org="com.github.fommil.netlib" name="core" rev="1.1.2" conf="compile->default(compile)"/>
 		<dependency org="net.sourceforge.f2j" name="arpack_combined_all" rev="0.1" conf="compile->default(compile)"/>
+		<dependency org="com.github.fommil.netlib" name="core" rev="1.1.2" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
